@@ -1,0 +1,159 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+% New root
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
+{\box0\lower0.4pt\box2}}
+% End new root
+
+\begin{document}
+\section{Successioni per ricorrenza}
+
+Una successione per ricorrenza è una successione definita stabilendo l'elemento di partenza \(a_0\) e l'espressione per il valore successivo \(a_{n+1}\).\\
+E' sempre definita su una semiretta dei numeri naturali: non può esistere un valore per cui non è definito un elemento ma è definito il suo successivo.\\\\
+
+\(
+	\begin{cases}
+	a_0 = \alpha\\
+	a_{n+1} = f(a_n)
+	\end{cases}
+\)\\\\
+
+\section{Successioni per ricorrenza monotone}
+Una successione per ricorrenza è monotona se il suo risultato non ha mai punti critici, ovvero \(\)
+
+\subsection{Esercizio}
+\paragraph{Ipotesi}
+\(\begin{cases}
+	a_0 = \alpha\\
+	a_{n+1} = \sqrt{a_n} + 100
+\end{cases}\)\\\\
+
+\paragraph{Tesi}
+\(\forall n \in \mathbb{N}, a_n \geq 0\)
+
+\paragraph{Dimostrazione}
+Inizio dell'induzione:\\
+Se \(\alpha \geq 0 \), allora \(\alpha \in S\)\\\\
+Passo induttivo:\\
+\(n \in S \implies n+1 \in S \)\\
+\(a_n \geq 0 \implies a_{n+1} \geq 0\)\\
+\(\sqrt{a_n} + 100 \geq 0\)\\
+\(\sqrt{\alpha} \geq -100\)\\
+\(\alpha \geq 0\)
+
+\subsection{Esercizio}
+\paragraph{Ipotesi}
+\(\begin{cases}
+	a_0 = \alpha\\
+	a_{n+1} = \frac{a_n}{2} + 3
+\end{cases}\)
+
+\paragraph{Tesi}
+Limite della ricorrenza.
+
+\paragraph{Svolgimento}
+\(a_0 = \alpha\)\\
+\(a_1 = \frac{a_0}{2} + 3 = \frac{\alpha}{2} + 3\)\\
+\(a_2 = \frac{\frac{\alpha}{2} + 3}{2} + 3 = \frac{\alpha}{4} + \frac{3}{2} + 3\)\\
+\(a_n = \frac{\alpha}{2^n} + 3 * (1 + \frac{1}{2} + \frac{1}{4} + \dots + \frac{1}{2^{n-1}})\)\\
+\(a_n = \frac{\alpha}{2^n} + 3 * \displaystyle\sum_{i=\alpha}^{n-1} \frac{1}{2^i}\)\\
+Congetturo il valore della somma:\\
+[svolgimento omesso]\\
+\(= 2(1 - \frac{1}{2^n})\)\\
+Ora posso calcolare il limite:\\
+[svolgimento omesso]\\
+\(= 6\)\\
+
+\section{Un modo più veloce}
+\(a_n \to l\)\\
+\(a_{n+1} \to l\)\\
+\(a_{n+1} = \frac{a_n}{2} + 3\)\\
+\(\frac{a_n}{2} \to \frac{l}{2}\)\\
+\(l = \frac{l}{2} + 3\)\\
+\(l = 6\)\\\\
+
+Ma \(a_n\) ha veramente limite? Se è \textbf{monotona}, ha sempre un limite.\\
+Se non ha limite, non possiamo usare questo metodo, perchè darà come risultato \(\frac{\infty}{\infty}\), una forma di indecisione.
+
+\subsection{Esempio}
+\(\begin{cases}
+	a_0 = \alpha\\
+	a_{n+1} = \sqrt{a_n + 2}
+\end{cases}\)
+
+\paragraph{Svolgimento}
+\(\begin{cases}
+	y = x\\
+	y = \sqrt{x + 2}
+\end{cases}\)\\
+
+\(\begin{cases}
+	y = x\\
+	x = \sqrt{x + 2}
+\end{cases}\)\\
+
+\(\begin{cases}
+	y = x\\
+	x^2 = x + 2
+\end{cases}\)\\
+
+\(\begin{cases}
+	y = x\\
+	x^2 - x - 2 = 0
+\end{cases}\)\\
+
+\(\begin{cases}
+	y = 2\\
+	x = 2
+\end{cases}\)\\
+
+\(l = 2\)
+
+\subsection{Esercizio}
+\(\begin{cases}
+	a_0 = \alpha\\
+	a_{n+1} = \sqrt{a_n + 2}
+\end{cases}\)\\
+Dimostrare per induzione che \(\alpha \geq 2 \implies \forall n, a_n \geq 2\).
+
+\paragraph{Ipotesi}
+\(S = \{n \in \mathbb{N} : a_n \geq 2\}\)
+
+\paragraph{Tesi}
+\(S = \mathbb{N}\)
+
+\paragraph{Dimostrazione}
+\subparagraph{Passo base}
+\(
+	a_0 \geq 2\\
+	0 \in S
+\)
+
+\subparagraph{Passo induttivo}
+\(
+	n \in S \implies n+1 \in S\\
+	a_n \geq 2 \implies a_{n+1} \geq 2\\
+	a_n \geq 2 \implies \sqrt{a_n + 2} \geq 2\\
+\)\\
+Per ipotesi, \(a_n \geq 2\), quindi \(a_n + 2 \geq 2 + 2 = 4\) e allora \(\sqrt{a_n + 2} \geq \sqrt{4} = 2\).
+
+\subparagraph{Passo monotono}
+Perchè la successione sia monotona, dobbiamo verificare che \(a_n+1 \leq a_n\).\\
+
+\(\sqrt{a_n + 2} \leq a_n\)\\
+Arrivo alla soluzione \(a_n \leq -1 \bigcup a_n \geq 2\).\\
+Tengo solo \(a_n \geq 2\). Gli altri non sono numeri naturali.
+
+\subparagraph{Passo finale}
+\(a_n\) monotona \(\implies a_n \to l\).\\
+Dunque, esiste un limite, finito o infinito che sia.\\
+[todo] 
+
+\end{document}

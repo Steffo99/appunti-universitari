@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{centernot}
+% New symbols
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}
+{\box0\lower0.4pt\box2}}
+\newcommand{\iu}{\mathrm{i}\mkern1mu}
+% End new symbols
+\begin{document}
+\section{Punti di estremo}
+
+\subsection{Massimo globale}
+Si dice che \(M\) è \textbf{massimo} globale per \(f\) su \([a, b]\), e che \(x_M \in [a, b]\) è \textbf{punto di massimo} per \(f\) se:
+\[\forall x \in [a, b], f(x) \leq f(x_M)\]
+
+\subsection{Minimo globale}
+Si dice che \(m\) è \textbf{minimo} globale per \(f\) su \([a, b]\), e che \(x_M \in [a, b]\) è \textbf{punto di minimo} per \(f\) se:
+\[\forall x \in [a, b], f(x) \geq f(x_m)\]
+
+\subsection{Massimo locale}
+Si dice che \(M\) è \textbf{massimo locale} per \(f\) su \([a, b]\) e \(x_M\) è \textbf{punto di massimo locale} se:
+\[\exists \delta > 0 : \forall x in [a, b] \cap (x_M - \delta, x_M + \delta), f(x) \leq f(x_M) = M\]
+
+\subsection{Minimo locale}
+Si dice che \(m\) è \textbf{minimo locale} per \(f\) su \([a, b]\) e \(x_M\) è \textbf{punto di minimo locale} se:
+\[\exists \delta > 0 : \forall x in [a, b] \cap (x_m - \delta, x_m + \delta), f(x) \geq f(x_m) = m\]
+
+\subsection{Massimo locale stretto}
+Si dice che \(M\) è \textbf{massimo locale stretto} per \(f\) su \([a, b]\) e \(x_M\) è \textbf{punto di massimo locale stretto} se:
+\[\exists \delta > 0 : \forall x in [a, b] \cap (x_M - \delta, x_M + \delta), f(x) < f(x_M) = M\]
+
+\subsection{Minimo locale stretto}
+Si dice che \(m\) è \textbf{minimo locale stretto} per \(f\) su \([a, b]\) e \(x_M\) è \textbf{punto di minimo locale stretto} se:
+\[\exists \delta > 0 : \forall x in [a, b] \cap (x_m - \delta, x_m + \delta), f(x) > f(x_m) = m\]
+
+\section{Problemi di massimo e minimo}
+Dove si trovano i punti di massimo e minimo per una funzione?
+\[f : [a, b] \to \mathbb{R}\]
+\[f : \mathbb{R} \to \mathbb{R}\]
+Si trovano dove la \textit{derivata prima si annulla}! Ma non sempre...\\
+Ad esempio, \(f(x) = |x|\) ha un punto di minimo globale in \(x = 0\).\\
+Inoltre, se \(f : [a, b]\), \(a\) e \(b\) sono \textit{sicuramente} punti di massimo o minimo locale, e potrebbero essere anche punti di massimo o minimo globale.
+
+\section{Teorema di Fermat}
+Sia \(f : [a, b] \to \mathbb{R}\), \textit{derivabile} in \(x_0 \in (a, b)\).\\
+Se \(x_0\) è \textit{punto di estremo locale}, allora \(f'(x_0) = 0\).\\
+
+\paragraph{Dimostrazione}
+\[\exists \delta > 0 : \forall x \in (a, b) \cap (x_0 - \delta, x_0 + \delta), f(x) \geq f(x_0)\]
+Se \(x < x_0\), allora \(\frac{f(x) - f(x_0)}{x - x_0} \leq 0\).\\
+Se \(x > x_0\), allora \(\frac{f(x) - f(x_0)}{x - x_0} \geq 0\).\\
+Passando al limite di entrambe:
+\[x < x_0 \implies \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0} \leq 0\]
+\[x > x_0 \implies \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0} \geq 0\]
+Il limite appena calcolato è la derivata prima rispettivamente sinistra e destra di \(x_0\).\\
+Essendo però \(f\) \textit{derivabile} in quell'intervallo, allora derivate sinistra e destra coincidono, dunque \(f'(x_0) = 0\).
+
+\section{Teorema di Rolle}
+\paragraph{Ipotesi}
+Sia \(f : [a, b] \to \mathbb{R}\).\\
+\(f\) \textit{continua} su \([a, b]\)\\
+\(f\) \textit{derivabile} su \((a, b)\)\\
+\(f(a) = f(b)\)
+
+\paragraph{Tesi}
+\[\exists c \in (a, b) : f'(c) = 0\]
+
+\paragraph{Dimostrazione}
+Essendo \(f\) \textit{continua} su \([a, b]\), essa ammette massimo e minimo per il \textsc{Teorema di Weierstrass}.
+\[\exists x_m, x_M \in [a, b] : \forall x \in [a, b], f(x_m) \leq f(x) \leq f(x_M)\]
+Abbiamo due casi:\\
+- i due estremi coincidono con \(x_m\) e \(x_M\), creando allora una funzione costante di derivata prima sempre \(= 0\)
+- altrimenti, almeno uno tra \(x_m\) e \(x_M\) è \textit{interno} all'intervallo (a, b), e per il \textsc{Teorema di Fermat} allora \(\exists c : f'(c) = 0\).
+
+\section{Teorema di Cauchy}
+\paragraph{Ipotesi}
+Siano \(f, g : [a, b] \to \mathbb{R}\) tali che:
+\(f, g\) \textit{continue} su \([a, b]\)\\
+\(f, g\) \textit{derivabili} su \((a, b)\)
+
+\paragraph{Tesi}
+\[\exists c \in (a, b) : (f(b) - f(a)) g'(c) = (g(b) - g(a)) f'(c)\]
+
+\paragraph{Dimostrazione}
+Costruisco la funzione \(w(x) = (f(b) - f(a)) g(x) = (g(b) - g(a)) f(x)\).\\
+Calcolo \(w(a)\) e \(w(b)\) (omesso per orario), e scopro \(w(a) = w(b)\).\\
+Inoltre, \(w\) è \textit{continua} su \([a, b]\), e \textit{derivabile} su \((a, b)\).
+Dal \textsc{Teorema di Rolle} applicato a \(w\), \(\exists c \in (a, b) : w'(c) = 0\)
+
+\end{document}

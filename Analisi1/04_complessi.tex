@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{centernot}
+% New symbols
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}
+{\box0\lower0.4pt\box2}}
+\newcommand{\iu}{\mathrm{i}\mkern1mu}
+% End new symbols
+\begin{document}
+
+\section{Equazioni in \(\mathbb{C}\)}
+Come possiamo fare a risolvere equazioni in numeri complessi?\\
+Una possibile soluzione è quella di applicare la definizione di numero complesso \(z = a + \iu b\).\\
+Effettuiamo le seguenti sostituzioni:
+\[Re z = a\]
+\[Im z = b\]
+\[z = a + \iu b\]
+\[\bar{z} = a - \iu b\]
+Spostando tutti gli elementi al primo membro, giungeremo ad avere al secondo membro \(= 0 + 0i\); possiamo allora fare un sistema con la parte reale e la parte immaginaria del primo membro e risolverlo per a e b; infine, dovremo verificare manualmente tutte le soluzioni trovate in questo modo.
+
+\subsection{Esempio}
+[todo, non l'ho copiato]
+
+\subsection{Altro esempio}
+\[\begin{cases}
+    z \bar{w} = \iu\\
+    |z|^2 w + z = 1
+\end{cases}\]
+Passiamo la seconda equazione ai coniugati.
+\[\bar{|z|^2 w + z = 1} = \bar{1} = 1\]
+\[\bar{|z|^2} \bar{w} + \bar{z} = 1\]
+Vado a ricavare \(z\) dalla prima equazione.\\
+Se \(z \neq 0\), allora...
+\[\bar{w} = \frac{\iu}{z}\]
+E obbligatoriamente \(z \neq 0\), perchè altrimenti l'equazione non sarebbe verificata.\\
+Sappiamo che il modulo \(|z|^2 = (Re z)^2 + (Im z)^2 = z \bar{z}\), dunque tornando alla seconda equazione:
+\[\frac{z \bar{z} \iu}{z} + \bar{z} = 1\]
+\[\bar{z} \iu + \bar{z} = 1\]
+Risolvo la seconda equazione:
+\[a\iu + a + b - b\iu - 1 = 0\]
+\[\begin{cases}
+    a + b - 1 = 0\\
+    a = b
+\end{cases}\]
+\[a = b = \frac{1}{2}\]
+\[z = \frac{1}{2} + \frac{\iu}{2}\]
+\[\bar{w} = \frac{\iu}{z} = \frac{\iu}{\frac{1}{2} + \frac{\iu}{2}} = \frac{2 \iu + 2}{2} = 1 + \iu\]
+
+\section{Forma trigonometrica dei numeri complessi}
+Possiamo rappresentare i numeri complessi in un'altra forma, invece che quella algebrica.\\
+Rappresentiamo un complesso composto da un modulo \(\rho\) e un argomento \(\theta\) corrispondente all'angolo formato da il semiasse positivo del piano cartesiano e la semiretta che congiunge z e l'origine.
+\[\rho = \sqrt{a^2 + b^2}\]
+\[\begin{cases}
+    a = Re z = |z| \cos(\theta)\\
+    b = Im z = |z| \sin(\theta)
+\end{cases}\]
+[esempi omessi tanto sono sulle dispense]
+
+\section{Teorema}
+Siano \(z = \rho (\cos(\theta) + \iu \sin(\theta))\) e \(w = r (\cos \phi + \iu \sin(\theta))\), allora:
+\[zw = \rho r (\cos(\theta + \phi) + \iu \sin(\theta + \phi)\]
+\[\frac{z}{w} = \frac{\rho}{r} (\cos(\theta - \phi) + \iu \sin(\theta - \phi))\]
+
+\subsection{Potenza di un complesso}
+\[z^n = \rho^n (\cos(n \rho) + \iu sin (n \rho))\]
+
+\subsubsection{Esempio}
+Calcolare \((1 + \iu)^{16}\).
+
+\paragraph{Svolgimento}
+Troviamo la forma trigonometrica: 
+\[1 + \iu = \sqrt{2} (\cos(\frac{\pi}{4}) + \iu \sin({\pi}{4}))\]
+\[(1 + \iu)^{16} = 2^4 (\cos(4 \pi) + \iu sin(4 \pi))\]
+
+\subsubsection{Esempio}
+\[i^{2018} = i^{504 * 4} * i^{2} = -1\]
+
+\section{Radici ennesime di numeri complessi}
+Sia \(w \in \mathbb{C}, w \neq 0\), allora esistono \(n\) radici ennesime complesse \(z_0, z_1, ..., z_{n-1}\) di \(w\), tali che:
+\[z^n_i = w \qquad i=0, ..., n-1\]
+Inoltre:
+\[w = r (\cos(\phi) + \iu \sin(\phi))\]
+\[z_K = \rho_K (\cos(\phi_K) + \iu \sin(\phi_K)) \qquad k = 0, ..., n-1\]
+\[\rho_K = r^{\frac{1}{n}}\]
+\[\phi_K = \frac{\phi}{n} + \frac{2 \pi K}{n}\]
+
+\end{document}
