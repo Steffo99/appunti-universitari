@@ -2,4 +2,5 @@
 *.fls
 *.log
 *.synctex.gz
+*.aux
 xx_*

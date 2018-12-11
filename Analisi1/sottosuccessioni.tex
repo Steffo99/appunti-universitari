@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+% New root
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
+{\box0\lower0.4pt\box2}}
+% End new root
+
+\begin{document}
+
+\section{Sottosuccessioni}
+
+Si dice \textbf{sottosuccessione} di una successione \(\{a_n\}_n\) la composizione \(a_n \circ K\) dove \(K : \mathbb{N} \to \mathbb{N}\) è strettamente crescente.\\
+\((a_n \circ K)(n) = a_{K_n} = a_{2n}\)\\
+Praticamente sono successioni il cui dominio non è \(\mathbb{N}\), ma solo una parte di esso, ed è dato da un'altra successione \(K_n\).\\\\
+Se \(a_n \to l \in \mathbb{R}\), allora anche \(a_{K_n} \to l\).\\
+Se \(\forall K : \mathbb{N} \to \mathbb{N}, a_{K_n} \to l\), allora \(a_n \to l\).\\
+Se una successione ha \textbf{limite} \(l\), tutte le estratte hanno lo \textbf{stesso limite}.\\
+Viceversa, se tutte le sottosuccessioni hanno lo \textbf{stesso limite} \(l\), allora anche la principale ha \textbf{limite} \(l\).\\
+Se esistono due sottosuccessioni con \textbf{limiti diversi}, allora la successione di partenza \textbf{non ha limite}.\\\\
+Posso utilizzare le sottosuccessioni per trovare il limite di una successione solo quando l'unione del dominio di queste dia come risultato \(\mathbb{N}\).\\
+
+\section{Teorema di bisezione}
+Se in un intervallo "di limite" c'è almeno un punto di accumulazione, allora anche dividendolo in due parti il punto di accumulazione rimarrà in almeno una di queste due.
+
+\section{Punto limite}
+Se \(a_n\) ha una sottosuccessione convergente a l, si dice che l è un \textbf{punto limite}.
+
+\section{Enunciato teorema di Bolzano-Weierstrass}
+Sia \(\{a_n\}_n\) una \textbf{successione limitata}.\\
+Allora, esiste almeno una sottosuccessione \(a_{K_n}\) di \(a_n\) \textbf{convergente}.
+
+\section{Dimostrazione teorema di B-W}
+Siccome \(\{a_n\}\) è limitata, allora esistono \(\alpha_0, \beta_0 \in \mathbb{R}, \alpha_0 \leq a_n \leq \beta_0\).\\
+Chiamiamo \(I_0 = [\alpha_0, \beta_0]\) l'intervallo tra questi due punti.\\
+Prendiamo l'insieme \(A_0 = \{n : a_n \in I_0\}\) di tutti i punti all'interno di questo intervallo.\\
+\(A_0\) contiene infiniti valori, essendo una successione in \(\mathbb{N}\).\\
+Applichiamo il teorema di bisezione: il punto medio dell'intervallo è \(\mu_0 = \frac{\alpha_0 + \beta_0}{2}\).\\
+L'intervallo ora risulta diviso in \(I_0 = [\alpha_0, \mu_0] \cup [\mu_0, \beta_0]\).\\
+Per il teorema di bisezione, almeno uno tra \([\alpha_0, \mu_0]\) e \([\mu_0, \beta_0]\) è infinito.\\
+Se l'infinito è \([\alpha_0, \mu_0]\), allora \(\alpha_1 = \alpha_0\) e \(\beta_1 = \mu_0\).\\
+Se l'infinito è \([\mu_0, \beta_0]\), allora \(\alpha_1 = \mu_0\) e \(\beta_1 = \beta_0)\).\\
+In ogni caso, \(\alpha_0 \leq \alpha_1 \leq \beta_1 \leq \beta_0\)\\
+Creiamo un nuovo intervallo \(I_1 = [\alpha_1, \beta_1]\).\\\\
+Ripetiamo il procedimento di bisezione con \(\alpha_1\) e \(\beta_1\): dovremmo ottenere ancora un risultato dimezzato.\\
+Dopo n passi, otteniamo un intervallo \(I_n = [\alpha_n, \beta_n]\) infinitamente piccolo.\\
+Dunque, \(\alpha_0 \leq \alpha_1 \leq \alpha_2 \leq \dots \leq \alpha_n \leq \beta_n \leq \dots \leq \beta_2 \leq \beta_1 \leq \beta_0\).\\\\
+\(\beta_n - \alpha_n = \frac{\beta_0 - \alpha_0}{2^n}\)\\
+\(A_n = \{m : a_m \in I_n\}\) è infinito.\\
+Possiamo dimostrare per induzione che le precedenti tre righe sono vere \(\forall n \in \mathbb{N}\).
+Dunque, \(\{\alpha_n\}\) è una successione \textbf{monotona crescente}, e ha limite \(l\), e \(\{\beta_n\}\) è una successione \textbf{monotona decrescente}, ed essa ha limite \(m\).\\\\
+Sapendo per la \textsc{gerarchia degli infiniti} che \(\frac{\beta_0 - \alpha_0}{2^n}\) tende a 0, allora possiamo anche dire che \(\beta_n - \alpha_n\) tende a 0, quindi \(l = m\).\\
+\(\forall n\), prendo \(K_n \in A_0, a_{K_n} \in I_n, \alpha_n \leq a_{K_n} \leq \beta_n\).\\
+Per il \textsc{teorema dei carabinieri}, visto che \(\alpha_n\) e \(\beta_n\) tendono ad l, allora anche \(a_{K_n}\) tenderà ad l.\\\\
+Se \(a_n\) è \textbf{limitata}, allora \(a_n\) ha un \textbf{punto limite}, ma non viceversa.
+
+\end{document}

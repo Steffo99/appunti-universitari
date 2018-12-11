@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{centernot}
+% New symbols
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}
+{\box0\lower0.4pt\box2}}
+% End new symbols
+\begin{document}
+
+\section{Equazioni di numeri complessi}
+Come possiamo fare a risolvere equazioni in numeri complessi?\\
+Una possibile soluzione è quella di applicare la definizione di numero complesso \(z = a + \i b\).\\
+Effettuiamo le seguenti sostituzioni:
+\[Re z = a\]
+\[Im z = b\]
+\[z = a + \i b\]
+\[zsegnato = a - \i b\]
+Probabilmente giungeremo a un risultato \(= 0 + 0i\); 
+
+\end{document}

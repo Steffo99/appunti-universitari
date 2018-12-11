@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+% New root
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
+{\box0\lower0.4pt\box2}}
+% End new root
+
+\begin{document}
+
+\section{Intorno}
+Si dice \textbf{intorno} di un numero \(x_0 \in \mathbb{R}\) un qualsiasi intervallo aperto del tipo:\\
+\((x_0 - \delta, x_0 + \delta)\)
+
+\section{Punti isolati}
+Si dice \textbf{punto isolato} un numero \(x_0 \in \mathbb{R}\) se esiste un intorno \(U\) di \(x_0\) tale che al suo interno sia presente solo il punto stesso e nient'altro.
+\(U \bigcup A = {x_0}\)
+
+\section{Punti di accumulazione}
+Si dice \textbf{punto di accumulazione} un punto tale che non possano esistere suoi intorni che includano il punto stesso come unico elemento.\\
+Sono gli opposti dei punti isolati.
+\(U \bigcap A \ {X_0} \neq \emptyset\).
+
+\section{Definizione topologica di limite}
+[todo]\\\\
+\(\forall U_l\) intorno di l\\
+\(\exists V_{x_0}\) intorno di \(x_0\)\\
+\(: x \in V_{x_0}\)\\
+\(x \neq x_0 \implies f(x) \in U_l\)
+
+\section{Limite finito all'infinito}
+\(\lim_{x \to +\infty} f(x) = l \in \mathbb{R}\)\\
+\(\forall \epsilon > 0, \exists K > 0 : \forall x > K, l - \epsilon < f(x) < l + \epsilon\)\\\\
+\(\lim_{x \to -\infty} f(x) = l \in \mathbb{R}\)\\
+\(\forall \epsilon > 0, \exists K > 0 : \forall x < K, l - \epsilon < f(x) < l + \epsilon\)\\\\
+\(\epsilon\) è l'ampiezza della "striscia" in cui stanno i valori di f(x), \(K\) è la "barriera" dei valori della x e \(l\) è il valore del limite, ovvero "l'altezza" a cui si trova la striscia.
+
+\section{Limite infinito all'infinito}
+\[\lim_{x \to +\infty} f(x) = +\infty \in \mathbb{R}\]
+\[\forall H > 0, \exists K > 0 : \forall x > K, f(x) > H\]\\
+\[\lim_{x \to -\infty} f(x) = +\infty \in \mathbb{R}\]
+\[\forall H > 0, \exists K < 0 : \forall x < K, f(x) > H\] \\
+\[\lim_{x \to +\infty} f(x) = -\infty \in \mathbb{R}\]
+\[\forall H < 0, \exists K > 0 : \forall x > K, f(x) < H\]
+\[\lim_{x \to -\infty} f(x) = -\infty \in \mathbb{R}\]
+\[\forall H < 0, \exists K < 0 : \forall x < K, f(x) < H\]
+
+\section{Asintoto obliquo}
+La funzione f ha la retta \(y = mx + q\) come \textbf{asintoto obliquo} per \(x \to +\infty\) se:
+\[\lim_{x \to +\infty} (f(x) - mx - q) = 0\]
+
+f ha asintoto obliquo se e solo se:
+\[\lim_{x \to +\infty} \frac{f(x)}{x} = m \neq 0 \neq \infty\]
+\[\lim_{x \to +\infty} (f(x) - mx) = q \neq \infty\]
+\\
+Esempio:
+\(f(x) = e^x + 2x + 1\) ha asintoto obliquo se \(x \to -\infty\):\\
+\[\lim_{x \to -\infty} \frac{e^x + 2x + 1}{x} = 2\]
+\[\lim_{x \to -\infty} (e^x + 2x + 1 - 2x) = 1\]
+
+\section{Limite infinito al finito}
+\[\lim_{x \to x_0} f(x) = +\infty\]
+\[\forall H > 0, \exists \delta > 0 : \forall x \neq x_0, | x - x_0 | < \delta \implies f(x) > H\]
+\[\lim_{x \to x_0} f(x) = -\infty\]
+\[\forall H < 0, \exists \delta > 0 : \forall x \neq x_0, | x - x_0 | < \delta \implies f(x) < H\]
+
+\section{Asintoto verticale}
+\[\lim_{x \to 0^+} \log x = -\infty\]
+
+\end{document}
+

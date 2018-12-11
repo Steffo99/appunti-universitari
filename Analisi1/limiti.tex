@@ -1,0 +1,182 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+% New symbols
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}
+{\box0\lower0.4pt\box2}}
+% End new symbols
+
+\begin{document}
+\section{Definizione topologica di limite}
+\[\lim_{x \to x_0} f(x) = l\]
+\[\forall U_l \exists V_{x_0} : \forall x \neq x_0, (x \in V_{x_0} \implies f(x) \in U_l)\]
+
+\section{Limite finito al finito}
+\[\lim_{x \to x_0} f(x) = l \Leftrightarrow\]
+\[\forall \epsilon > 0, \exists \delta > 0 : \forall x \neq x_0, |x - x_0| < \delta\]
+Se un limite esiste, e in un certo punto il suo limite è uguale al valore del punto, allora \(f\) è \textbf{continua} in quel punto.
+
+\section{Funzioni continue}
+Sia \(f : \subseteq \mathbb{R} \to \mathbb{R}\), e sia \(x_0\) un \textit{punto di accumulazione} per il dominio \(D\) della funzione, appartenente al dominio della funzione.\\
+f(x) è \textbf{continua} in \(x_0\) se:
+\[\lim_{x \to x_0} f(x) = f(x_0)\]
+Diciamo che è continua in generale se la formula superiore è vera \(\forall x \in D\).\\
+La continuità è infatti un concetto locale: i valori esterni al dominio sono ignorati.
+
+\subsection{Esempio}
+\[f(x) =
+\begin{cases}
+    1\quad se \quad x \geq 0\\
+    0\quad se \quad x < 0
+\end{cases}\]
+\[\lim_{x \to 1} f(x) = f(1) = 1\]
+In 1, \(f\) è continua, perchè il suo limite esiste ed è uguale a 1.
+\[\nexists \lim_{x \to 0} f(x)\]
+In 0, \(f\) non è continua, perchè il suo limite non esiste.
+
+\subsection{Esempio}
+\[\lim_{x \to x_0} f(x)\]
+\[f(x) =
+\begin{cases}
+    1\quad se \quad x \neq 0\\
+    0\quad se \quad x = 0
+\end{cases}\]
+\[\lim_{x \to 0} f(x) = 1\]
+In 0, \(f\) non è continua, perchè il suo limite esiste, ma è diverso da 0,
+
+\subsection{Esempio}
+\[f(x) = \frac{1}{x}\]
+E' una funzione continua? Sì, perchè è continua per tutti i punti del suo dominio. 0, infatti, non è nel suo dominio.
+
+\section{Definizione successionale di limite}
+La \textit{definizione topologica di limite} è equivalente alla seguente definizione:
+\[\lim_{x \to x_0} f(x) = l\]
+\[\Updownarrow\]
+\[\forall \{x_n\}_{n \neq 0 \in \mathbb{N}}; (x_n \to x_0) \implies f(x_n) \to l\]
+
+\section{Funzioni asintotiche}
+Si dice che due funzioni sono \textbf{asintotiche} per \(x \to x_0\) se:
+\[\lim_{x \to x_0} \frac{f(x)}{g(x)} = 1\]
+Dunque, si dice che \(f\) è asintotico a \(g\) in \(x_0\):
+\[\sin x \sim x \qquad x \to 0\]
+
+\section{Limiti notevoli}
+\subsection{Seno di x su x}
+\[\lim_{x \to 0} \frac{\sin x}{x} = 1\]
+\[\sin x \sim x \qquad x \to 0\]
+
+\subsubsection{Esempio}
+\[sin(n) \not\sim n \qquad x \to +\infty\]
+\[lim_{x \to +\infty} \frac{sin n}{n} = 0\]
+
+\subsection{Tangente di x su x}
+\[\lim_{x \to 0} \frac{\tan x}{x} = 1\]
+\[\tan x \sim x \qquad x \to 0\]
+
+\subsection{Arcotangente di x su x}
+\[\lim_{x \to 0} \frac{\arctan x}{x} = 1\]
+\[\arctan x \sim x \qquad x \to 0\]
+
+\subsubsection{Esempio}
+\[\lim_{n \to +\infty} \arctan \frac{1}{n^2} = 0\]
+\[\arctan \frac{1}{n^2} \sim \frac{1}{n^2} \qquad n \to +\infty\]
+
+\subsubsection{Esempio}
+\[\lim_{x \to +\infty} \frac{\arctan n^2}{n^2} = 0\]
+\(n^2 \to +\infty\), non tende a 0, quindi non possiamo applicare il limite notevole.
+
+\subsection{Quello che fa un mezzo}
+\[\lim_{x \to 0} \frac{1 - cos x}{x^2} = \frac{1}{2}\]
+\[\lim_{x \to 0} \frac{1 - cos x}{\frac{1}{2} x^2} = 1\]
+\[(1 - cos x) \sim (\frac{1}{2} x^2) \qquad x \to 0\]
+
+\subsection{Naturale}
+\[\lim_{x \to 0} \frac{e^x - 1}{x} = 1\]
+\[(e^x - 1) \sim x \qquad x \to 0\]
+
+\subsubsection{Esempio}
+\[\lim_{n \to +\infty} \frac{e^\frac{1}{n} - 1}{\frac{1}{n}} = 1\]
+L'argomento \(\frac{1}{n}\), per n che tende a più infinito, tende a 0; pertanto, possiamo applicare il limite notevole.
+
+\subsubsection{Esempio}
+\[\lim_{n \to +\infty} \frac{e^{\frac{1}{\sqrt{n}}} - 1}{\frac{1}{\sqrt{n}}} = 1\]
+
+\subsubsection{Esempio}
+\[\lim_{n \to +\infty} \frac{e^{\frac{1}{\sqrt{n}}}}{\frac{1}{\sqrt{n}}} = +\infty\]
+
+\subsubsection{Esempio}
+\[\lim_{n \to \infty} \frac{e^{\frac{1}{x}}}{\frac{1}{x}} \nexists\]
+Questo limite non esiste, perchè per \(n \to +\infty\) vale \(+\infty\), mentre per \(n \to -\infty\) vale \(0\).
+
+\subsubsection{Esempio}
+\[\lim_{n \to +\infty} \frac{e^{\frac{1}{n^2}} - 1}{\frac{1}{n}} =\]
+\[\lim_{n \to +\infty} (\frac{e^{\frac{1}{n^2}} - 1}{\frac{1}{n^2}} * \frac{1}{n}) = 0\]
+
+\subsubsection{Altri esempi}
+Non avevo voglia di scriverli, quindi li ho omessi.
+
+\subsection{Risulta e}
+\[\lim_{x \to +\infty} (1 + \frac{1}{x})^x\]
+
+\subsection{Logaritmico}
+\[\lim_{x \to 0} \frac{\log(1+x)}{x} = 1\]
+\[\log(1+x) \sim x \qquad x \to 0\]
+
+\subsubsection{Esempio}
+\[\lim_{x \to +\infty} \frac{\log(1+x)}{x} = 0\]
+
+\subsection{L'ultima}
+\[\lim_{x \to 0^+} x \log x = 0\]
+
+\subsubsection{Esempio}
+\[\lim_{x \to 0^+} x^x = e^(x \log x) = 1\]
+\[\lim_{x \to +\infty} x^x = e^(x \log x) = +\infty\]
+
+\section{Esempi}
+\subsubsection{Esempio}
+\[\lim_{x \to +\infty} \frac{\sin x + 2x^2 + e^{-x}}{2x - 2x^2 + e^{-x}} = -1\]
+Prevale \(2x^2\), perchè \(e^{-x}\) tende a 0.
+
+\subsubsection{Esempio}
+\[\lim_{x \to 0} \frac{\sin x + 2x^2 + e^{-x}}{2x - 2x^2 + e^{-x}} = 0\]
+Prevale \(e^{-x}\), perchè è l'unico che non tende a 0, tendendo invece a 1.
+
+\subsubsection{Esempio}
+\[\lim_{x \to 0} \frac{| x - \pi |}{x - \pi} = -1\]
+Perchè il valore assoluto diventa \(\pi - x\), e dopo prevale \(-x\).
+
+\subsubsection{Esempio}
+\[\lim_{x \to \pi} \frac{| x - \pi |}{x - \pi} = +-1\]
+Dipende da che direzione ci approcciamo a \(\pi\): per \(x \to \pi^+\), il limite vale 1, ma per \(x \to \pi^-\), il limite vale -1.
+
+\subsubsection{Esempio}
+\[\lim_{x \to \pi} \frac{\cos x + 1}{(x - \pi)^2} = [0/0]\]
+\[z = x - \pi\]
+\[\lim_{z \to 0} \frac{\cos (z + \pi) + 1}{(z + \pi - \pi)^2}\]
+\[\lim_{z \to 0} \frac{\cos z \cos \pi - \sin z \sin \pi + 1}{z^2}\]
+\[\lim_{z \to 0} \frac{-\cos z + 1}{z^2} = \frac{1}{2}\]
+Applichiamo il cambio di variabile in modo di avere un limite per 0: dopo, applichiamo la formula del coseno della somma.
+
+\subsubsection{Esempio}
+\[\lim_{x \to 0} \frac{log(1+x) - sin x}{x + sin x} = [0/0]\]
+\[\lim_{x \to 0} \frac{log(1+x)}{x + sin x} - \frac{sin x}{x + sin x}\]
+\[\lim_{x \to 0} \frac{log(1+x)}{x (1 + \frac{sin x}{x})} - \frac{sin x}{x (1 + \frac{sin x}{x})}\]
+\[\frac{1}{1 + 1} - \frac{1}{1 + 1} = 0\]
+Separiamo il limite in due: è un'operazione che funziona solo se nessuno dei due nuovi limiti risulta infinito o indeterminato.
+
+\subsubsection{Esempio}
+\[\lim_{x \to 0} \frac{\cos x - 2^x}{\arctan(\log(\sin \sqrt{x} + 1))} = [0/0]\]
+\[\lim_{x \to 0} \frac{\cos x - x^2 + 1 - 1}{\arctan(\log(\sin \sqrt{x} + 1))}\]
+Per \(x \to 0\), \(\sin \sqrt{x} \sim \sqrt{x}\); \(\log (1 + z) \sim z\); \(\arctan z \sim z\), dunque.
+\[\lim_{x \to 0} \frac{\cos x - x^2 + 1 - 1}{\sqrt{x}}\]
+\[\lim_{x \to 0} \frac{\cos x - 1}{\sqrt{x} - \lim_{x \to 0}\frac{x^2} + 1 - 1}{\sqrt{x}}\]
+\[\lim_{x \to 0} \frac{-\frac{1}{2}x^2}{\sqrt{x}} - \lim_{x \to 0}\frac{x^2 - 1}{\sqrt{x}}\]
+\[0 - 0 = 0\]
+
+\end{document}

@@ -1,0 +1,202 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{centernot}
+% New symbols
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}
+{\box0\lower0.4pt\box2}}
+% End new symbols
+
+\begin{document}
+
+\section{Le Serie}
+
+\[\sum^{\infty}_{n=0}a_n\]
+
+Se \(\sum^{\infty}_{n=0}a_n = L\), la serie è \textbf{convergente}; se \(\sum^{\infty}_{n=0}a_n = \infty\), la serie è \textbf{divergente}.
+
+\subsection{Condizione necessaria}
+\[\sum^{\infty}_{n=0}a_n < +\infty \quad \implies \quad a_n \to 0\]
+\[a_n \not\to 0 \quad \implies \quad \sum^{\infty}_{n=0}a_n non convergente\]
+
+\subsection{Serie a termini non negativi definitivamente}
+\[\sum^{\infty}_{n=0}a_n \qquad a_n \geq 0\]
+Se la successione delle somme parziali è \textit{definitivamente} monotona, allora \textbf{ha limite}, e quindi \textbf{esiste}, convergendo o divergendo.\\
+Possiamo applicare dei particolari criteri per capirlo.
+
+\subsection{Criteri}
+
+\subsubsection{Criterio del confronto}
+Siano \(\{a_n\}\) e \(\{b_n\}\) due successioni a termini reali \textit{non negativi}, tali che \textit{definitivamente} \(a_n \leq b_n\).\\
+Allora...
+\[\sum^{\infty}_{n=0} b_n < +\infty \implies \sum a_n < +\infty\]
+\[\sum^{\infty}_{n=0} a_n = +\infty \implies \sum b_n = +\infty\]
+Si usa principalmente quando la serie converge ma non è dimostrabile convenzionalmente.
+
+\subsubsection{Criterio del confronto asintotico}
+Siano \(\{a_n\}\) e \(\{b_n\}\) due successioni a termini reali \textit{positivi}, tali che \(a_n \sim b_n\).\\
+Allora \(\sum a_n\) e \(\sum b_n\) hanno lo stesso carattere (entrambe convergono, entrambe divergono, etc).\\
+\\
+Solitamente si applica per i limiti notevoli.
+
+\subsubsection{Criterio del rapporto}
+\[\lim_{n \to +\infty} \frac{a_{n+1}}{a_n} =
+\begin{cases}
+L < 1 \quad \implies \quad \sum a_n \neq \infty\\
+L > 1 \quad \implies \quad \sum a_n = \infty\\
+L = 1 \quad \implies \quad unknown
+\end{cases}\]
+
+\subsubsection{Criterio della radice}
+Sia \(\{a_n\}_{n \in \mathbb{N}^+}\).\\
+Supponiamo che \(\lim_{n \to +\infty} \sqrt{a_n}^n = L\).
+Allora...
+\[\begin{cases}
+L < 1 \quad \implies \quad \sum a_n convergente\\
+L > 1 \quad \implies \quad \sum a_n divergente\\
+L = 1 \quad \quad unknown
+\end{cases}\]
+
+\subsection{Serie a termini qualunque}
+
+\subsubsection{Criterio di Leibniz}
+\[\sum^{\infty}_{n=0} (-1)^n a_n\]
+Se:
+\[\begin{cases}
+a_n \geq 0
+a_n \geq a_{n+1}
+a_n \to 0
+\end{cases}\]
+
+\subsubsection{Criterio di convergenza assoluta}
+Se:
+\[\sum^{\infty}_{n=0} |a_n| = \infty\]
+Allora:
+\[\sum^{\infty}_{n=0} a_n = \infty\]
+
+\subsection{Dimostrazione dei criteri}
+\subsubsection{Criterio del confronto}
+
+\[S_n = \sum^n_{k=1} a_k\]
+\[S_n^* = \sum^n_{k=1} b_k\]
+
+\subsubsection{Criterio del confronto asintotico}
+\[\lim_{n \to +\infty} \frac{a_n}{b_n} = 1\]
+Usiamo la definizione di limite:
+\[\forall \epsilon > 0 \exists n' : \forall n \geq n', 1 - \epsilon \leq \frac{a_n}{b_n} \leq 1 + \epsilon\]
+\[b_n * (1 - \epsilon) \leq \frac{a_n}{b_n} \leq b_n * (1 + \epsilon)\]
+Ho ora un'espressione a cui è applicabile il criterio del confronto.
+
+Per la proprietà di monotonia:
+\[0 \leq a_k \leq b_k \quad \implies \quad 0 \leq S_n \leq S_n^*\]
+
+\subsubsection{Criterio della radice}
+\[\forall \epsilon > 0, \exists n' : \forall n \geq n', L - \frac{\epsilon}{2} \leq \sqrt{a_n}^n \leq L + \frac{\epsilon}{2}\]
+Per il funzionamento stesso della radice:
+\[L < 1 \implies \exists \epsilon > 0 : L + \epsilon < 1; L < 1 - \epsilon\]
+Dunque...
+\[\sqrt{a_n}^n \leq 1 - \epsilon + \frac{\epsilon}{2} = 1 - \frac{\epsilon}{2}\]
+Ho finalmente raggiunto un punto in cui posso usare il criterio del confronto:
+\[\sum a_n \leq \sum (1 - \frac{\epsilon}{2})^2\]
+
+\section{Tipi di esercizi}
+Gli esercizi con le serie principalmente sono di tre tipi: calcolare la somma (il valore) di una serie, studiare la convergenza di una serie e studiare la convergenza di una serie che varia in base a un parametro.\\
+
+\subsection{Serie geometriche}
+
+\[\sum^{\infty}_{n=0}q^n\qquad se |q| < 1 \quad = \frac{1}{1-q}\]
+
+\subsubsection{Esempio serie geometrica}
+Calcolare \(\sum^{\infty}_{n=0}\frac{1}{2^n}\).\\
+
+\subsection{Serie armonica generalizzata}
+\[\sum^{\infty}_{n=0} \frac{1}{n^\alpha} \quad
+\begin{cases}
+\neq \infty \quad se \quad \alpha > 1\\
+= \infty \quad se \quad \alpha \leq 1
+\end{cases}
+\]
+
+\paragraph{Svolgimento}
+E' una serie geometrica di ragione \(\frac{1}{2}\), quindi la somma vale \(\frac{1}{1-\frac{1}{2}} = 2\).
+
+\subsubsection{Serie geometrica nascosta}
+Calcolare \(\sum^{\infty}_{n=0}\frac{2^{n-1}}{3^n}\).\\
+
+\paragraph{Svolgimento}
+C'è una serie geometrica nascosta: è possibile convertire la somma in \(\frac{1}{2} \sum^{\infty}_{n=0}(\frac{2}{3})^n\), che è una serie geometrica di ragione \(\frac{2}{3}\).\\
+Dunque, la somma vale \(\frac{1}{1-\frac{2}{3}} = \frac{3}{2}\).
+
+\subsubsection{Serie geometrica con inizio spostato}
+Calcolare \(\sum^{\infty}_{n=1}(\log(3) - 1)^n\).
+
+\paragraph{Svolgimento}
+Verifichiamo che la ragione sia effettivamente \(< 1\): \(log(3) - 1 < 1\) è vero.\\
+Si converte la serie in \(\sum^{\infty}_{n=0}((\log(3) - 1)^n) - 1\).\\
+E' diventata una serie geometrica di ragione \(\log(3) - 1\) a cui dovrà essere sottratto 1 dal risultato finale.
+
+\subsection{Condizione necessaria}
+Studia la convergenza di \(\sum^{\infty}_{n=1}(1 + \frac{1}{n!})^n\).
+
+\paragraph{Svolgimento}
+\[\sum^{\infty}_{n=1} (e^{n log(1 + \frac{1}{n!})})\]
+\[\sum^{\infty}_{n=1} (e^{n \frac{1}{n!})})\]
+\[e^{n \frac{1}{n!}} \to 1\]
+Dato che l'argomento delle serie non è infinitesimo, allora possiamo dire che la serie non converge.
+
+\subsection{Dipendenti da parametro}
+Calcolare per quali valori di x la serie seguente converge.
+\[\sum^{\infty}_{n=1} (\frac{x-2}{4})^n\]
+
+\paragraph{Svolgimento}
+Riconosciamo che è una serie geometrica, e sappiamo che converge se la sua ragione è \(|r| < 1\).\\
+Calcoliamo per quali valori è presente quella ragione:
+\[| \frac{x-2}{4} | < 1\]
+\[-1 < \frac{x-2}{4} | < 1\]
+\[-2 < x < 6\]
+
+\subsection{Criterio del confronto difficile}
+\[\sum^{\infty}_{n=1} \frac{\log^2 n}{n \sqrt{n}}\]
+\[\lim_{n \to +\infty} \frac{\log^2 n}{n \sqrt{n}} = 0\]
+Non concludo nulla da questo limite; devo usare un criterio.
+\[\sum^{\infty}_{n=1} \frac{\log^2 n}{n \sqrt{n}}\]
+\[\sum^{\infty}_{n=1} \frac{\log^2 n}{n^{\frac{3}{2}}}\]
+\[\lim_{n \to \infty} \frac{log n}{n^\alpha} = 0\]
+\[\log n \leq n^\alpha\]
+\[\log n \leq n^\frac{1}{8}\]
+\[\log^2 n \leq n^\frac{1}{4}\]
+\[\frac{log^2 n}{n \sqrt{n}} \leq \frac{n^\frac{1}{4}}{n \sqrt{n}} = \frac{1}{n^{\frac{5}{4}}}\]
+Applichiamo poi il teorema di confronto.
+[TBD]
+
+\subsection{Criterio di confronto asintotico difficile}
+Determinare per quali valori di \(\alpha > 0\) la serie converge.
+\[\sum^\infty_{n=1} \frac{1 + e^{-n}}{\sqrt{n^\alpha} + log n}\]
+Non posso usare la condizione necessaria, perchè \(a_n \to 0\).\\
+Applico il criterio del confronto asintotico.
+\[a_n \sim \frac{1}{n^\frac{\alpha}{2}}\]
+E' una serie armonica generalizzata.\\
+Per \(\alpha > 2\), la serie converge, mentre per \(\alpha \leq 2\) la serie diverge.
+
+\subsection{Criterio della radice}
+\[\sum_{n=1}^\infty \frac{e^{n^2}}{n^{2n}}\]
+\[\sqrt{a_n}^n = (\frac{e^{n^2}}{n^{2n}}^{\frac{1}{n}}\]
+\[= \frac{e^n}{n^2} \to +\infty\]
+
+\subsection{Criterio del rapporto}
+\[\sum^\infty_{n=1} \frac{e^{n^2}}{n^{2n}}\]
+\[\frac{a_{n+1}}{a_n} \to L\]
+\[\frac{e^{(n+1)^2}}{(n+1)^{2(n+1)}} * \frac{n^{2n}}{e^{n^2}}\]
+\[\frac{e^{2n+1}}{(n+1)^2} * (\frac{n}{n+1})^2n\]
+\[\frac{e^{2n+1}}{(n+1)^2} * (\frac{1}{1+\frac{1}{n})^2n}\]
+\[\lim_{n \to \infty} \frac{e^{2n+1}}{(n+1)^2} * (\frac{1}{1+\frac{1}{n})^2n}\]
+\[+\infty * \frac{1}{e} = +\infty\]
+\(+\infty > 1\), dunque la serie diverge.
+
+\end{document}
