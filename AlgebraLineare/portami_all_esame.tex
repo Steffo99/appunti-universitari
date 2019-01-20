@@ -1,0 +1,121 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{centernot}
+\usepackage{bm}
+\usepackage{fullpage}
+
+% Iniziate a scrivere da qua in poi
+\begin{document}
+
+\section{Moltiplicazioni tra matrici}
+
+\[
+    \begin{bmatrix}
+        a & b \\
+        c & d \\
+    \end{bmatrix}
+    * 
+    \begin{bmatrix}
+        e & f \\
+        g & h \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        ae + cf & be + df \\
+        ag + ch & bg + dh \\
+    \end{bmatrix}
+\]
+
+\section{Invertibilità di una matrice}
+
+Si può verificare se una matrice \( A \) quadrata di ordine \( n \) è invertibile verificando una di queste definizioni equivalenti:
+
+\begin{itemize}
+\item Il determinante non è nullo: \( \det A\neq 0 \).
+\item Il rango di \( A \) è \( n \).
+\item La trasposta \( A^{T} \) è una matrice invertibile.
+\item Tutte le righe/colonne di \( A \) sono linearmente indipendenti.
+\item Tutte le righe/colonne di \( A \) formano una base di \( \mathbb{K} ^{n} \).
+\item Il numero 0 non è un autovalore di \( A \).
+\item \( A \) è trasformabile mediante algoritmo di Gauss-Jordan in una matrice con \( n \) pivot.
+\end{itemize}
+
+\section{Stabilire esistenza di funzione lineare}
+
+Per controllare se esiste o no una funzione lineare è sufficiente verificare che sia valida la proprietà di linearità:\\
+\begin{itemize}
+\item Se due vettori sono linearmente indipendenti, anche i risultati della funzione devono essere linearmente indipendenti.
+\end{itemize}
+Può essere controllata velocemente vedendo se si verificano le seguenti condizioni:
+\begin{itemize}
+\item Se due vettori di ingresso sono uno multiplo dell'altro, allora anche i vettori di uscita devono essere uno multiplo dell'altro per la stessa costante.
+\item Se un vettore di ingresso è dato dalla somma di (multipli di) altri, allora anche il vettore di uscita deve essere dato dalla somma di (multipli degli) stessi.
+\end{itemize}
+
+\section{Determinazione di matrice associata}
+
+Vogliamo trovare la matrice associata (\(A\)) di una funzione rispetto a delle nuove basi, ad esempio \(< (1, 2, 3), (4, 5, 6), (7, 8, 9)\).\\
+
+Procediamo disponendo in verticale gli elementi delle basi, in questo modo:
+\[
+    M = 
+    \begin{matrix}
+        1 & 4 & 7 \\
+        2 & 5 & 8 \\
+        3 & 6 & 9 \\
+    \end{matrix}
+\]
+
+Troviamo la matrice inversa con il metodo di Gauss-Jordan:
+\[
+...
+\]
+
+Calcoliamo il risultato di:
+\[
+    B = M^{-1} * A * M
+\]
+
+Il risultato \(B\) sarà la nostra nuova matrice associata.
+
+\section{Diagonalizzabilità}
+Una matrice è \textsc{diagonalizzabile} se ha \textbf{tanti autovalori quanto il suo rango}.\\
+Per trovare gli autovalori trovare dove il polinomio caratteristico (determinante della matrice fatta come quella qui sotto) è uguale a 0:
+\[
+    \begin{vmatrix}
+        1 - x & 2     & 3 \\
+        4     & 5 - x & 6 \\
+        7     & 8     & 9 - x \\
+    \end{vmatrix}
+    = 0
+\]
+
+\section{Stabilire se una funzione è lineare}
+
+Se tutti i termini della funzione sono \textbf{polinomi omogenei} di primo grado (non ci sono potenze superiori a 1), allora è automaticamente \textsc{lineare}.
+
+\section{Immagine}
+
+Le \textsc{basi dell'immagine} di una funzione sono i \textbf{vettori linearmente indipendenti} che la generano.
+
+\section{Iniettività e suriettività}
+
+Una funzione lineare è \textsc{iniettiva} se \textbf{il nucleo è di dimensione 0}, ovvero se l'unico valore che fa risultare 0 alla funzione è il vettore nullo.\\
+\\
+Una funzione lineare è \textsc{suriettiva} se la dimensione dell'immagine è minore o uguale al rango della funzione (degli input, il rango della matrice associata): \(dim(Im(F)) = rk(M_F)\).\\
+
+\subsection{Matrici quadrate}
+
+Se la funzione è un \textbf{automorfismo} (campo input = campo output), allora \(iniettivita' \Leftrightarrow suriettivita'\).
+
+\section{Somma diretta}
+
+Un sottospazio è \textsc{somma diretta} se i due sottospazi di cui viene fatta la somma \textbf{non hanno basi in comune}, e quindi \(dim(\pmb{U} \cap \pmb{W}) = 0\).
+
+\subsection{Trovare basi che diano una somma diretta}
+
+Per trovare basi che diano una somma diretta, è sufficiente \textbf{trovare basi linearmente indipendenti} con quelle che già abbiamo: solitamente parti della base canonica funzionano alla perfezione.
+
+\end{document}

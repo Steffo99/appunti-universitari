@@ -6,3 +6,5 @@
 xx_*
 .vscode
 *a.out
+*.bbl
+*.blg
