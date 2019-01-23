@@ -1,0 +1,107 @@
+% !TeX root = ./teoremiprincipali.tex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{centernot}
+\usepackage{bm}
+\usepackage{fullpage}
+\usepackage{multicol}
+
+\begin{document}
+
+\section{Teorema di Bolzano-Weierstrass}
+
+\subsection{Definizioni preliminari}
+Nessuna.
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Successione \(a_n\) \textbf{limitata} (superiormente e inferiormente).
+\columnbreak
+    \subsection{Tesi}
+    Esistono \textsc{infinite sottosuccessioni} (relative alla successione iniziale) convergenti.
+\end{multicols}
+
+\subsection{Dimostrazione}
+
+Chiamiamo \(A_0\) l'insieme che contiene tutti i punti della successione.\\
+Eseguiamo la seguente procedura per \(k = 0\).
+\begin{enumerate}
+    \item Chiamiamo \([\alpha_k, \beta_k]\) i due estremi dell'intervallo della successione.\\
+          Prendiamo il punto medio tra i due estremi, e chiamiamolo \(\gamma_k\).\\
+          Osserviamo che \(\alpha_k \leq \gamma_k \leq \beta_k\), e che la dimensione \(d_k\) dell'intervallo \([\alpha_k, \gamma_k] = [\gamma_k, \beta_k]\) è la metà di \([\alpha_k, \beta_k]\).
+    \item Creiamo due insiemi di punti della successione: uno con i punti tra \([\alpha_k, \gamma_k]\) e uno con i punti tra \(]\gamma_k, \beta_k]\).
+    \item Almeno uno dei due insiemi ha un numero infinito di punti: prendiamolo, e chiamiamolo \(A_{k+1}\).
+\end{enumerate}
+Possiamo ripetere questa procedura un numero infinito di volte: possiamo notare che le dimensioni dell'intervallo \(d_k = (\frac{d_0}{2^k}) \to 0\); dato che \(A_k\) contiene infiniti punti, possiamo creare una sottosuccessione che includa solo punti contenuti in \(A_k\).\\
+Essa sarà convergente per il teorema dei carabinieri ad un valore \(L\) tale che \(\alpha_0 \leq \dots \leq \alpha_k \leq L \leq \beta_k \leq \dots \leq \beta_0\).
+
+\newpage
+
+\section{Polinomio di Taylor con resto di Peano}
+
+\subsection{Definizioni preliminari}
+\[P_{n, x_0}(x) = (\sum^{n}_{m = 0} \frac{f^{(m)}(x_0) * (x - x_0)^m}{m!})\]
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzione \(f(x) :\ ]a, b[ \to \mathbb{R}\), \textbf{derivabile} \(n\) volte in \(x_0\) e \(n - 1\) volte in \(]a, b[\).\\
+    Punto \(x_0 \in\ ]a, b[\).
+\columnbreak
+    \subsection{Tesi}
+    La funzione \(f(x)\) è \textsc{approssimabile} nel punto \(x_0\) con il polinomio \(P_{n, x_0}(x) + o(x - x_0)^n\) di grado \(n\).
+\end{multicols}
+
+\subsection{Dimostrazione}
+
+Notiamo che \(P^{n}_{n, x_0}(x_0) = f^{(n)}(x_0)\).\\
+Proviamo a calcolare il seguente limite, che ci sarà utile nel prossimo passaggio:
+\[\lim_{x \to x_0} \frac{f(x) - P_{n - 1, x_0}(x)}{(x - x_0)^n} =^{DH} \lim_{x \to x_0} \frac{f^{(1)}(x) - P^{(1)}_{n - 1, x_0}(x)}{n * (x - x_0)^{n - 1}} =^{\infty DH} \lim_{x \to x_0} \frac{f^{(n - 1)}(x) - P^{(n - 1)}_{n - 1, x_0}(x)}{n! * (x - x_0)^{1}} =\]
+\[= \lim_{x \to x_0} \frac{f^{(n - 1)}(x) - f^{(n - 1)}(x_0)}{n! * (x - x_0)}\]
+Ora siamo pronti a calcolare il limite con \(n\) invece che \(n - 1\):
+\[\lim_{x \to x_0} \frac{f(x) - P_{n, x_0}(x)}{(x - x_0)^n}\]
+Estraiamo un termine dal polinomio:
+\[\lim_{x \to x_0} \frac{f(x) - P_{n - 1, x_0}(x) - \frac{f^{(n)}(x_0) * (x - x_0){n!}}{x - x_0}}{(x - x_0)^n}\]
+Raccogliamo termini in modo da formare il limite precedente:
+\[\lim_{x \to x_0} ( \frac{f(x) - P_{n - 1, x_0}(x)}{(x - x_0)^n} - \frac{\frac{f^{(n)}(x_0) * (x - x_0)^n}{n!}}{(x - x_0)^n} ) \]
+Facciamo uscire dal limite le costanti:
+\[- \frac{f^{(n)}(x_0)}{n!} + \lim_{x \to x_0} \frac{f(x) - P_{n - 1, x_0}(x)}{(x - x_0)^n}\]
+Per il limite precedente:
+\[- \frac{f^{(n)}(x_0)}{n!} + \lim_{x \to x_0} \frac{f^{(n - 1)}(x) - f^{(n - 1)}(x_0)}{n! * (x - x_0)}\]
+Raccogliamo \(\frac{1}{n!}\):
+\[\frac{1}{n!} (- f^{(n)}(x_0) + \lim_{x \to x_0} \frac{f^{(n - 1)}(x) - f^{(n - 1)}(x_0)}{(x - x_0)})\]
+Abbiamo ottenuto un rapporto incrementale, il che significa che:
+\[\frac{1}{n!} (- f^{(n)}(x_0) + f^{(n)}(x_0)) = 0\]
+
+\newpage
+
+\section{Teorema di esistenza degli zeri}
+
+\subsection{Definizioni preliminari}
+Nessuna.
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzione \(f(x)\) \textbf{continua} in \([a_0, b_0]\).
+\columnbreak
+    \subsection{Tesi}
+    Esiste \textsc{almeno un punto} in cui \(f(x) = 0\).
+\end{multicols}
+
+\subsection{Dimostrazione}
+
+Notiamo che \(f(a_0) * f(b_0) \leq 0\) (ovvero è negativa).\\
+Definiamo la seguente procedura:
+\begin{enumerate}
+    \item Bisezioniamo l'intervallo \([a_n, b_n]\) in \([a_n, z_n]\) e \([z_n, b_n]\).
+    \item Almeno uno dei due intervalli è tale che \(f(inizio) * f(fine) \leq 0\) (negativo).
+    \item Prendiamo un intervallo per il quale il prodotto precedente è negativo, e chiamiamolo \([a_{n+1}, b_{n+1}]\).
+\end{enumerate}
+Ripetendo infinite volte la procedura, partendo dall'intervallo \([a_0, b_0]\), otterremo un intervallo sempre più "verticalmente stretto" \([a_n, b_n]\).\\
+Possiamo notare che \(a_0 \leq a_n \leq b_n \leq b_0\), e che entrambe le successioni tendono allo stesso numero \(a_n \to x\) e \(b_n \to x\).\\
+Possiamo considerare quindi quel numero come punto singolo.\\
+Calcoliamo nuovamente \(f(a_n) * f(b_n)\): sappiamo che risulta essere \(\leq 0\), ma possiamo sostituire il limite: \(f(x) * f(x) \leq 0\).\\
+Dunque, abbiamo che \(f(x)^2 \leq 0\), e quindi che \(f(x) = 0\).
+
+\end{document}
