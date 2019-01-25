@@ -12,9 +12,6 @@
 
 \section{Teorema di Bolzano-Weierstrass}
 
-\subsection{Definizioni preliminari}
-Nessuna.
-
 \begin{multicols}{2}
     \subsection{Ipotesi}
     Successione \(a_n\) \textbf{limitata} (superiormente e inferiormente).
@@ -78,9 +75,6 @@ Abbiamo ottenuto un rapporto incrementale, il che significa che:
 
 \section{Teorema di esistenza degli zeri}
 
-\subsection{Definizioni preliminari}
-Nessuna.
-
 \begin{multicols}{2}
     \subsection{Ipotesi}
     Funzione \(f(x) : [a_0, b_0] \to \mathbb{R}\) \textbf{continua}.
@@ -107,9 +101,6 @@ Dunque, abbiamo che \(f(x)^2 \leq 0\), e quindi che \(f(x) = 0\).
 \newpage
 
 \section{Teorema di Weierstrass}
-
-\subsection{Definizioni preliminari}
-Nessuna.
 
 \begin{multicols}{2}
     \subsection{Ipotesi}
@@ -142,8 +133,6 @@ La stessa cosa, ma con \(inf(f) = -sup(-f)\).
 
 \section{Teorema di Fermat}
 
-\subsection{Definizioni preliminari}
-
 \begin{multicols}{2}
     \subsection{Ipotesi}
     Funzione \(f(x) : [a, b] \to \mathbb{R}\) \textbf{derivabile} in un punto \(x_0 \in\ ]a, b[\).\\
@@ -166,9 +155,75 @@ La stessa cosa, ma con \(-f\).
 
 \newpage
 
-\section{}
+\section{Teorema di Fermat}
 
-\subsection{Definizioni preliminari}
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzione \(f(x)\) tale che
+    \begin{itemize}
+        \item sia \textbf{continua} in \([a, b]\)
+        \item sia \textbf{derivabile} in \([a, b]\)
+        \item \(f(a) = f(b)\)    
+    \end{itemize}
+\columnbreak
+    \subsection{Tesi}
+    \(\exists x_0 : f'(x_0) = 0\) (ovvero la funzione è \textsc{costante} o ha \textsc{almeno un punto stazionario})
+\end{multicols}
+
+\subsection{Dimostrazione}
+Se la funzione è \textbf{continua}, allora per il \textit{teorema di Weierstrass} sappiamo che ha almeno un punto di massimo \(x_M\) e uno di minimo \(x_m\) in \([a, b]\).\\
+Se i valori di entrambi i due punti coincidono con \(f(a) = f(b)\), allora la funzione è \textsc{costante}.\\
+Se almeno uno dei due valori è diverso da \(f(a) = f(b)\), allora per il \textit{teorema di Fermat} \(f'(x_0) = 0\).
+
+\newpage
+
+\section{Teorema di Cauchy}
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzioni \(f(x)\) e \(g(x)\) tale che
+    \begin{itemize}
+        \item siano \textbf{continue} in \([a, b]\)
+        \item siano \textbf{derivabili} in \([a, b]\)
+    \end{itemize}
+\columnbreak
+    \subsection{Tesi}
+    \(\exists c : ((f(a) - f(b))g'(c) = (g(a) - g(b))f'(c))\)
+\end{multicols}
+
+\subsection{Dimostrazione}
+Creiamo una funzione \(w\) tale che \(w(x) = (f(a) - f(b))g(x) - (g(a) - g(b))f(x))\).\\
+Essendo formata dalla differenza di due funzioni \textbf{continue}, è anche essa continua.\\
+Essendo formata dalla differenza di due funzioni \textbf{derivabili}, è anche essa derivabile.\\
+Sostituendo, notiamo che \(w(a) = w(b)\).\\
+Allora, per il teorema di Rolle, sappiamo che ha un punto stazionario \(c\) tale che \(w'(c) = 0\).\\
+Con \(w'(c) = 0\), abbiamo che \(\exists c : ((f(a) - f(b))g'(c) = (g(a) - g(b))f'(c))\).
+
+\subsection{Significato geometrico}
+Il significato geometrico del teorema di Cauchy è che presa una qualsiasi curva, essa ha almeno un punto in cui la pendenza è uguale alla pendenza della retta tra i punti a e b.
+
+\newpage
+
+\section{Teorema di Lagrange}
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzione \(f(x)\) tale che
+    \begin{itemize}
+        \item sia \textbf{continua} in \([a, b]\)
+        \item sia \textbf{derivabile} in \([a, b]\)
+    \end{itemize}
+\columnbreak
+    \subsection{Tesi}
+    \(\exists c : f'(c) = \frac{f(b) - f(a)}{b - a}\)
+\end{multicols}
+
+\subsection{Dimostrazione}
+Il \textit{Teorema di Cauchy}, con \(g(x) = x\).
+
+\newpage
+
+\section{}
 
 \begin{multicols}{2}
     \subsection{Ipotesi}
