@@ -77,7 +77,8 @@ Abbiamo ottenuto un rapporto incrementale, il che significa che:
 
 \begin{multicols}{2}
     \subsection{Ipotesi}
-    Funzione \(f(x) : [a_0, b_0] \to \mathbb{R}\) \textbf{continua}.
+    Funzione \(f(x) : [a_0, b_0] \to \mathbb{R}\) \textbf{continua}.\\
+    \(f(a_0) = f(b_0)\).
 \columnbreak
     \subsection{Tesi}
     Esiste \textsc{almeno un punto} in cui \(f(x) = 0\).
@@ -85,7 +86,7 @@ Abbiamo ottenuto un rapporto incrementale, il che significa che:
 
 \subsection{Dimostrazione}
 
-Notiamo che \(f(a_0) * f(b_0) \leq 0\) (ovvero è negativa).\\
+Notiamo che \(f(a_0) * f(b_0) \leq 0\) (ovvero è negativa, cioè hanno due segni diversi).\\
 Definiamo la seguente procedura:
 \begin{enumerate}
     \item Bisezioniamo l'intervallo \([a_n, b_n]\) in \([a_n, z_n]\) e \([z_n, b_n]\).
@@ -94,9 +95,8 @@ Definiamo la seguente procedura:
 \end{enumerate}
 Ripetendo infinite volte la procedura, partendo dall'intervallo \([a_0, b_0]\), otterremo un intervallo sempre più "verticalmente stretto" \([a_n, b_n]\).\\
 Possiamo notare che \(a_0 \leq a_n \leq b_n \leq b_0\), e che entrambe le successioni tendono allo stesso numero \(a_n \to x\) e \(b_n \to x\).\\
-Possiamo considerare quindi quel numero come punto singolo.\\
 Calcoliamo nuovamente \(f(a_n) * f(b_n)\): sappiamo che risulta essere \(\leq 0\), ma possiamo sostituire il limite: \(f(x) * f(x) \leq 0\).\\
-Dunque, abbiamo che \(f(x)^2 \leq 0\), e quindi che \(f(x) = 0\).
+Dunque, abbiamo che \(f(x)^2 \leq 0\), e quindi che \(\exists x : f(x) = 0\).
 
 \newpage
 
@@ -115,8 +115,8 @@ Chiamiamo \(M = sup(f)\) l'estremo superiore della funzione f: vogliamo dimostra
 Dobbiamo quindi \textsc{trovare un valore} \(x\) tale che \(f(x) = M\).\\
 Creiamo una successione \(y_n\) che ci aiuti a trovare il valore di \(f(x)\):
 \begin{itemize}
-    \item Se \(M = +\infty\), allora \(y_n = n\) (e la successione \(\to +\infty\)).
-    \item Se \(M \neq +\infty\), allora \(y_n = M - \frac{1}{n}\) (e la successione \(\to M\)).
+    \item Se \(M = +\infty\), allora \(y_n = n\) (in modo che la successione \(\to +\infty\)).
+    \item Se \(M \neq +\infty\), allora \(y_n = M - \frac{1}{n}\) (in modo che la successione \(\to M\)).
 \end{itemize}
 Possiamo dire che \(y_n < M\), ed essendo \(M\) il minimo dei maggioranti di \(f : [a, b]\):
 \[\forall n, \exists x_n : (y_n < f(x_n) \leq M) \land (a < x_n \leq b) \]
@@ -145,17 +145,17 @@ La stessa cosa, ma con \(inf(f) = -sup(-f)\).
 
 \subsection{Dimostrazione per il minimo locale}
 Sappiamo che se \(x_0\) è un \textbf{minimo locale}, esiste obbligatoriamente un intorno \(I \subset [a, b]\) in cui \(\forall x \in I, f(x_0) \leq f(x)\).\\
-Possiamo provare a calcolare il rapporto incrementale (senza limite): \(\frac{f(x) - f(x_0)}{x - x_0}\).\\
+Possiamo provare a calcolare il suo rapporto incrementale: \(\lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}\).\\
 Notiamo che mentre il numeratore è sempre positivo, il denominatore cambia in base a se \(x > x_0\).\\
 Allora, \(f'_-(x_0) \leq 0\), e \(f'_+(x_0) \geq 0\).\\
-Essendo la funzione \textbf{derivabile}, l'unica possibilità è che \(f(x_0) = 0\).
+Essendo la funzione \textbf{derivabile}, e quindi \(f'_-(x) = f'_+(x)\) l'unica possibilità è che \(f(x_0) = 0\).
 
 \subsection{Dimostrazione per il massimo locale}
 La stessa cosa, ma con \(-f\).
 
 \newpage
 
-\section{Teorema di Fermat}
+\section{Teorema di Rolle}
 
 \begin{multicols}{2}
     \subsection{Ipotesi}
@@ -223,16 +223,66 @@ Il \textit{Teorema di Cauchy}, con \(g(x) = x\).
 
 \newpage
 
-\section{}
+\section{Teorema della media integrale}
 
 \begin{multicols}{2}
     \subsection{Ipotesi}
+    \begin{enumerate}
+        \item Funzione \(f(x)\) \textbf{integrabile} in \([a, b]\)
+        \item Funzione \(f(x)\) \textbf{continua}
+    \end{enumerate}
 \columnbreak
     \subsection{Tesi}
+    \begin{enumerate}
+        \item \(inf(f) \leq \frac{1}{b - a} \int_a^b f(x) \leq sup(f) \)
+        \item \(\exists z : (\frac{1}{b - a} \int_a^b f(x) = f(z))\)
+    \end{enumerate}
 \end{multicols}
 
 \subsection{Dimostrazione}
+Per la definizione di integrale, se \(inf(f) < f(x) < sup(f)\), allora \(inf(f) < \frac{1}{b - a} \int_a^b f(x) < sup(f) \).\\
+Se la funzione è anche \textbf{continua}, allora per \textit{Weierstrass} esistono un massimo \(M\) e un minimo \(m\).\\
+Allora, \(\forall x, m \leq f(x) \leq M\).\\
+Ma per la definizione di integrale, \(m = \int_a^b m dx \leq \int_a^b f(x) dx \leq \int_a^b M dx = M \).\\
+E in particolare, \(m \leq \frac{1}{b - a} \int_a^b f(x) dx \leq M\).
 
+\newpage
 
+\section{Teorema fondamentale del calcolo integrale}
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzione \(f(x)\) \textbf{integrabile} in \(]a, b[\)\\
+    Funzione \(G(x) : ]a, b[\) \textbf{primitiva} di \(f(x)\)
+\columnbreak
+    \subsection{Tesi}
+    \(\int_a^b f(x) dx = G(b) - G(a) = [G(x)]^b_a\)
+\end{multicols}
+
+\subsection{Dimostrazione}
+Prolunghiamo la primitiva \(G(x)\) per continuità:
+\begin{itemize}
+    \item \(G(a^+) = \lim_{x \to a^+} f(x)\)
+    \item \(G(b^-) = \lim_{x \to b^-} f(x)\)
+\end{itemize}
+La primitiva ora è continua in \([a, b]\).\\
+Possiamo allora partizionarla in un numero infinito di intervalli \([a, x_i] = \dots = [x_j, b]\).\\
+Per il \textit{teorema di Lagrange}, \(\forall\ partizione\ "n" [c, d], \exists z : G(d_n) - G(c_n) = G'(z_n)(d_n - c_n) = f(z_n)(d_n - c_n)\).\\
+Allora, possiamo dire che \(G(b) - G(a) = \sum_{j = 0}^n f(z_j)(d_j - c_j) = S_j\).\\
+Abbiamo dunque una somma di Cauchy-Riemann, e possiamo dire che \(G(b) - G(a) = \int_a^b f(x)\).
+
+\newpage
+
+\section{Secondo teorema fondamentale del calcolo integrale}
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzione \(f(x)\) \textbf{integrabile}.\\
+    Funzione \(F(x) = \int_{x_0}^x f(x) dx\)
+\columnbreak
+    \subsection{Tesi}
+    Funzione \(F(x)\) \textsc{continua}
+    \(f(x)\ continua \implies F'(x) = f(x)\)
+\end{multicols}
 
 \end{document}
