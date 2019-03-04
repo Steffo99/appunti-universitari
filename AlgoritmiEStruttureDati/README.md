@@ -4,23 +4,22 @@ Docente: [**Manuela Montangero**](mailto:manuela.montangero@unimore.it)
 
 Crediti: **9 CFU** (72 ore di lezione)
 
+Orario di ricevimento: **Giovedì dalle 14:30 alle 16:30**  
+_Mandare una mail prima, altrimenti potrebbe andarsene_
+
+
+#### Regole particolari per le email
+
+- Oggetto "ASD"
+- Mail **firmata** con **nome e cognome**
+- Mail spedita dall'**account Unimore**
+
 ### Materiale
 
 Libri:
 - **Introduzione agli Algoritmi e Strutture Dati** di _T.H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein_ `ISBN?`
 
-**[Dolly FIM](https://dolly.fim.unimore.it)**
-
-### Regole di ricevimento
-
-Orario di ricevimento: **Giovedì dalle 14:30 alle 16:30**  
-_Mandare una mail prima, altrimenti potrebbe andarsene_
-
-### Regole particolari per le email
-
-- Oggetto "ASD"
-- Mail **firmata** con **nome e cognome**
-- Mail spedita dall'**account Unimore**
+**[Dolly (FIM)](https://dolly.fim.unimore.it/2018/course/view.php?id=26)**
 
 ### Tutorato
 
