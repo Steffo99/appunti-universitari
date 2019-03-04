@@ -2,9 +2,14 @@
 
 Docente: [**Manuela Montangero**](mailto:manuela.montangero@unimore.it)
 
-Libro: **Introduzione agli Algoritmi e Strutture Dati** di _T.H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein_
-
 Crediti: **9 CFU** (72 ore di lezione)
+
+### Materiale
+
+Libri:
+- **Introduzione agli Algoritmi e Strutture Dati** di _T.H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein_ `ISBN?`
+
+**[Dolly FIM](https://dolly.fim.unimore.it)**
 
 ### Regole di ricevimento
 
