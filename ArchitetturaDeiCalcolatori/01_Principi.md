@@ -40,3 +40,8 @@ La CPU prova sempre ad accedere alle memorie più in alto di questa lista, effet
 - [Tape storage](https://en.wikipedia.org/wiki/Magnetic_tape_data_storage) (enorme, ma lentissimo)
 
 I _miss_ rallentano l'esecuzione dei programmi, in quanto causano ritardi nel ritrovamento dei dati, passando da _meno di 1 µs_ per le cache a _più di 1 ms_ per gli hard disk.
+
+Inoltre, esistono due tipi di cache, anch'essi gerarchizzati:
+
+- [SRAM](https://it.wikipedia.org/wiki/SRAM)
+- [DRAM](https://it.wikipedia.org/wiki/DRAM)
