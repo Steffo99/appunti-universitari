@@ -12,6 +12,8 @@ Libri:
 
 **[Sito web](http://algo.ing.unimo.it/people/andrea/Didattica/Architetture/index.html)**
 
+[Slides 2017](http://dolly.fim.unimore.it/2017/course/view.php?id=57)
+
 ### Esame
 
 - Prova scritta

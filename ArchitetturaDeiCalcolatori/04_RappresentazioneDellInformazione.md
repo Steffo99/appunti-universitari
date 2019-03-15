@@ -1,0 +1,2 @@
+# Rappresentazione dell'informazione
+
