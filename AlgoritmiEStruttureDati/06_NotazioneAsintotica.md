@@ -119,6 +119,10 @@ Blah blah blah `\exists c_1, c_2 > 0, n_0 \geq 0 : \forall n \geq n_0, c_1 * g(n
 
 ## Problemi algoritmici
 
+Un problema algoritmico è un problema matematico che si vuole provare a risolvere con un algoritmo.
+
+> Dati 10 numeri, voglio sapere se sono in ordine crescente oppure no.
+
 ### Problema trattabile
 
 Per definire un problema algoritmico **trattabile**, il nostro problema deve avere _almeno un algoritmo_ con un upper bound _polinomiale_; il tempo impiegato da un computer rimane ragionevole.
@@ -136,3 +140,15 @@ Se non esistono algoritmi per risolvere un problema, allora questo si dice **irr
 ### Problemi in NP?
 
 Esistono anche tanti problemi di cui non si è ancora scoperto un modo per dimostrare se essi siano trattabili o intrattabili.
+
+### Upper e lower bound di problemi
+
+Si può anche trovare un _upper bound_ e un _lower bound_ per un problema, ma bisogna generalizzare di più.
+
+L'**upper bound di un problema** è il minimo upper bound di tutti gli algoritmi che lo risolvono; deve esistere almeno un algoritmo che lo risolva che abbia lo stesso _upper bound_. E' praticamente il tempo migliore per risolvere il problema dato.
+
+Il **lower bound di un problema** è il minimo lower bound di tutti gli algoritmi che lo risolvono; non deve esistere nemmeno un algoritmo che abbia un lower bound migliore. E' il numero assolutamente minimo di operazioni richieste, non si può fare meglio di così.
+
+In particolare, abbiamo che l'_upper bound di un algoritmo_ `\implies` l'_upper bound del suo problema_, e il _lower bound di un problema_ `\implies` il _lower bound di un suo algoritmo_.
+
+Generalmente, il _lower bound di un problema_ è una rappresentazione abbastanza accurata della sua difficoltà.

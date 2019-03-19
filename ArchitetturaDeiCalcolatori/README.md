@@ -1,4 +1,4 @@
-# Algoritmi e Strutture Dati
+# Architettura dei Calcolatori
 
 Docente: [**Andrea Mariongiu**](mailto:andrea.mariongiu@unimore.it)
 
