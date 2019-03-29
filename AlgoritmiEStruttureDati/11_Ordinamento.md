@@ -82,5 +82,23 @@ Quando rimangono solo le _sentinelle_ significa che abbiamo aggiunto tutti gli e
 > |   |   |   |   | ∞ |
 > |   |   |   |   | ∞ | 
 
-### Pseudocodice
+# Mergesort+merge
+
+## Costo computazionale
+
+```latex
+T(n) =\\
+\\
+\theta(1) \qquad n=1
+2 T(\frac{n}{2}) + \theta(n) \qquad n \neq 1
+```
+
+Applicando il Master Theorem, otteniamo:
+
+```latex
+T(n) =\\
+\\
+\theta(1) \qquad n=1
+O(n log n) \qquad n \neq 1
+```
 
