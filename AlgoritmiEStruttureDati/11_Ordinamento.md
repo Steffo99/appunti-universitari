@@ -102,3 +102,28 @@ T(n) =\\
 O(n log n) \qquad n \neq 1
 ```
 
+# Lower bound dell'ordinamento per confronto
+
+Per calcolare il lower bound del problema, dobbiamo pensare a tutte le possibili permutazioni della sequenza: esse sono `n!`.
+
+Ogni nuovo confronto riduce l'insieme delle permutazioni "compatibili", fino ad avere una sola possibilità.
+
+Il caso peggiore è quando le permutazioni compatibili (insieme A) `A \geq \frac{n!}{2}`.
+
+Concatenando tutti i casi peggiori, abbiamo la sequenza ordinata dopo `i` passi.
+
+```latex
+n! \leq (\frac{n}{2})^\frac{n}{2}\\
+```
+
+Applichiamo un logaritmo da entrambi i lati.
+
+```latex
+\log(n!) \leq \log((\frac{n}{2})^\frac{n}{2})\\
+```
+
+```latex
+\log(n!) \leq \frac{n}{2} \log \frac{n}{2}\\
+```
+
+Da qui, continuare a casa come esercizio per arrivare a `Omega(n log n)`.
