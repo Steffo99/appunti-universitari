@@ -118,12 +118,4 @@ n! \leq (\frac{n}{2})^\frac{n}{2}\\
 
 Applichiamo un logaritmo da entrambi i lati.
 
-```latex
-\log(n!) \leq \log((\frac{n}{2})^\frac{n}{2})\\
-```
-
-```latex
-\log(n!) \leq \frac{n}{2} \log \frac{n}{2}\\
-```
-
-Da qui, continuare a casa come esercizio per arrivare a `Omega(n log n)`.
+Prendere da Wikipedia.
