@@ -114,6 +114,8 @@ Concatenando tutti i casi peggiori, abbiamo la sequenza ordinata dopo `i` passi.
 
 ```latex
 n! \leq (\frac{n}{2})^\frac{n}{2}\\
+n! \leq \frac{n}{2} \log(\frac{n}{2})\\
+n! \in \Omega(n \log(n))
 ```
 
 Applichiamo un logaritmo da entrambi i lati.

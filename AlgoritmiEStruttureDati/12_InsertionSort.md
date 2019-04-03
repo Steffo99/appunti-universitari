@@ -20,7 +20,7 @@ def insertion_sorted(lista):
         while divisore_magg >= 0 and lista[divisore_magg-1] > lista[divisore_magg]:
             # Scambio la posizione dei due elementi con gli indici specificati
             # Funzione inventata 
-            lista.swap(divisore_magg, divisore_magg-1)
+            lista[divisore_magg], lista[divisore_magg-1] = lista[divisore_magg-1], lista[divisore_magg]
             # Diminuisco il separatore di 1
             divisore_magg -= 1
 ```

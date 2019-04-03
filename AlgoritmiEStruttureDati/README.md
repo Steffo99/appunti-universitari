@@ -27,7 +27,7 @@ Tutor: [**Gianluca d'Addese**](mailto:tutoratoalgoritmi@gmail.com)
 
 Cosa: **Esercizi sugli argomenti visti a lezione** e **preparatori all'esame**
 
-Quando: **Martedì dalle 16:00 alle 18:00**
+Quando: **Mercoledì dalle 09:00 alle 11:00**...?
 
 ### Esame
 

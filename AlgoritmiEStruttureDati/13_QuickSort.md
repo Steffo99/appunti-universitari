@@ -23,9 +23,9 @@ def partition(lista, inizio, fine):
     cs = inizio
     for ce in range(inizio, fine):
         if lista[ce] <= lista[fine]:
-            lista.swap(cs, ce)
+            lista[cs], lista[ce] = lista[ce], lista[cs]
             cs += 1
-    lista.swap(fine, cs)
+    lista[fine], lista[ce] = lista[ce], lista[fine]
     return cs
 ```
 
@@ -39,7 +39,6 @@ T(n)\\
 \theta(1) \qquad per\ n = 1
 T(q) + T(dim_lista - pivot - 1) + \theta(n) \qquad per\ n > 1
 ```
-*END TODO
 
 Se la partizione è bilanciata, ovvero `q ~ \frac{n}{2},` ~~in qualche modo~~ otteniamo
 ```latex
