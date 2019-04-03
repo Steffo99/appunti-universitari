@@ -59,7 +59,7 @@ Proviamo a calcolare il seguente limite, che ci sarà utile nel prossimo passagg
 Ora siamo pronti a calcolare il limite con \(n\) invece che \(n - 1\):
 \[\lim_{x \to x_0} \frac{f(x) - P_{n, x_0}(x)}{(x - x_0)^n}\]
 Estraiamo un termine dal polinomio:
-\[\lim_{x \to x_0} \frac{f(x) - P_{n - 1, x_0}(x) - \frac{f^{(n)}(x_0) * (x - x_0){n!}}{x - x_0}}{(x - x_0)^n}\]
+\[\lim_{x \to x_0} \frac{f(x) - P_{n - 1, x_0}(x) - \frac{f^{(n)}(x_0) * (x - x_0)^n}{n!}}{(x - x_0)^n}\]
 Raccogliamo termini in modo da formare il limite precedente:
 \[\lim_{x \to x_0} ( \frac{f(x) - P_{n - 1, x_0}(x)}{(x - x_0)^n} - \frac{\frac{f^{(n)}(x_0) * (x - x_0)^n}{n!}}{(x - x_0)^n} ) \]
 Facciamo uscire dal limite le costanti:
@@ -240,7 +240,7 @@ Il \textit{Teorema di Cauchy}, con \(g(x) = x\).
 \end{multicols}
 
 \subsection{Dimostrazione}
-Per la definizione di integrale, se \(inf(f) < f(x) < sup(f)\), allora \(inf(f) < \frac{1}{b - a} \int_a^b f(x) < sup(f) \).\\
+Per la definizione di integrale, \(inf(f) < f(x) < sup(f)\), quindi anche \(inf(f) < \frac{1}{b - a} \int_a^b f(x) < sup(f) \).\\
 Se la funzione è anche \textbf{continua}, allora per \textit{Weierstrass} esistono un massimo \(M\) e un minimo \(m\).\\
 Allora, \(\forall x, m \leq f(x) \leq M\).\\
 Ma per la definizione di integrale, \(m = \int_a^b m dx \leq \int_a^b f(x) dx \leq \int_a^b M dx = M \).\\
