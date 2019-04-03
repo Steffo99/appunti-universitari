@@ -14,7 +14,8 @@ Il nostro obiettivo è trovare l'upper bound più preciso possibile per la nostr
 
 ### O()
 
-> "O grande"
+> "O grande"  
+> O di g(n)
 
 Date due funzioni `f(n) : N -> R` e `g(n) : N -> R`, diremo che `f(n) ∈ O(g(n))` se e soltanto se `∃ c > 0, n_0 ≥ 0` tali che `∀ n ≥ 0, f(n) ≤ c * g(n)`
 
@@ -36,86 +37,91 @@ Quando una funzione è _O grande_ di un altra, significa che asintoticamente la 
 #### Espressioni di O()
 
 | Espressione O() | Nome |
---------------------------
+|-----------------|------|
 | `O(1)` | Costante |
 | `O(log log n)` | loglog |
 | `O(log n)` | Logaritmica |
-| `O(\sqrt^c{n}\quad per\ c > 1` | Sublineare |
+| `O(\sqrt^c{n}` (per c ≥ 1) | Sublineare |
 | `O(n)` | Lineare |
 | `O(n log n)` | nlogn |
 | `O(n²)` | Quadratica |
 | `O(n³)` | Cubica |
-| `O(n^k)\quad per\ k \geq 1` | Polinomiale |
-| `O(a^n)\quad per\ a > 1` | Esponenziale |
+| `O(n^k)` (per k ≥ 1) | Polinomiale |
+| `O(a^n)` (per a ≥ 1) | Esponenziale |
 | `O(n!)` | Fattoriale |
 
-Notiamo che, se un certo algoritmo appartiene a una certa espressione, appartiene anche a quelli dell'ordine più alto; ad esempio, se `A \in O(n)`, allora anche `A \in O(n!)`.
+Notiamo che, se un certo algoritmo appartiene a una certa espressione, appartiene anche a quelli dell'ordine più alto; ad esempio, se `A ∈ O(n)`, allora anche `A ∈ O(n!)`.
 
 ##### Polinomiale
 
 Spesso, il tempo richiesto da una funzione è O grande di un polinomio di grado K, ovvero `f(n) ∈ O(n^k)`.
 
 > **Come dimostriamo che il tempo è uguale al grado massimo del polinomio?**  
-> Per `n > 0 \and 0 \leq i \leq k`:  
-> `a_k n^k + a_{k-1} n^{k-1} + \dots + a_1 n + a_0 \leq`
-> `\leq |a_k| n^k + |a_{k-1}| n^k + \dots + |a_1| n^k + |a_0| n^k = (|a_k| + |a_{k-1}| + \dots + |a_1| + |a_0|) n^k`
+> Per `n > 0 \and 0 ≤ i ≤ k`:  
+> `a_k n^k + a_{k-1} n^{k-1} + … + a_1 n + a_0 ≤ |a_k| n^k + |a_{k-1}| n^k + … + |a_1| n^k + |a_0| n^k = (|a_k| + |a_{k-1}| + … + |a_1| + |a_0|) n^k`
 
 #### Proprietà di O()
 
-1. `f(n) \in O(g(n)) \implies \forall a > 0, a * f(n) \in O(g(n))`.
-2. `f(n) \in O(g(n)), d(n) \in O(h(n)) \implies f(n) + d(n) \in O(g(n) + h(n)) \implies O(max\{g(n), h(n)\})`
-3. `f(n) \in O(g(n)), d(n) \in O(h(n)) \implies f(n) * d(n) \in O(g(n) * h(n))`
-4. nonsense?
+1. `f(n) ∈ O(g(n)) -> ∀ a > 0, a * f(n) ∈ O(g(n))`.
+2. `f(n) ∈ O(g(n)), d(n) ∈ O(h(n)) -> f(n) + d(n) ∈ O(g(n) + h(n)) -> O(max\{g(n), h(n)\})`
+3. `f(n) ∈ O(g(n)), d(n) ∈ O(h(n)) -> f(n) * d(n) ∈ O(g(n) * h(n))`
+
+In pratica, se una funzione è la **somma di più termini**, basta guardare l'`O()` _più grande_ tra tutti i suoi termini;  
+se invece una funzione è un **prodotto di più termini**, si possono omettere tutte le costanti, e l'`O()` finale sarà dato dal prodotto degli `O()` dei termini.
 
 ## Lower bound
 
 Possiamo anche stimare il _lower bound_, il limite inferiore: il numero minimo di operazioni che viene effettuato nel caso migliore.
 
-> Omega()
+### Ω()
 
-### Omega()
+> "Omega"  
+> Omega di g(n)
 
-Diremo che `f(n) \in \omega(g(n))` se e solo se `\exists c > 0, n_0 \geq 0 : \forall n \geq n_0 f(n) \geq c * g(n)`.
+Diremo che `f(n) ∈ Ω(g(n))` se e solo se `∃ c > 0, n_0 ≥ 0 : ∀ n ≥ n_0 f(n) ≥ c * g(n)`.
 
-#### Espressioni di Omega()
+#### Espressioni di Ω()
 
-| Espressione Omega() | Nome |
---------------------------
-| `Omega(1)` | Costante |
-| `Omega(log log n)` | loglog |
-| `Omega(log n)` | Logaritmica |
-| `Omega(\sqrt^c{n}\quad per\ c > 1` | Sublineare |
-| `Omega(n)` | Lineare |
-| `Omega(n log n)` | nlogn |
-| `Omega(n²)` | Quadratica |
-| `Omega(n³)` | Cubica |
-| `Omega(n^k)\quad per\ k \geq 1` | Polinomiale |
-| `Omega(a^n)\quad per\ a > 1` | Esponenziale |
-| `Omega(n!)` | Fattoriale |
+| Espressione Ω() | Nome |
+|-----------------|------|
+| `Ω(n!)` | Fattoriale |
+| `Ω(a^n)` (per a ≥ 1) | Esponenziale |
+| `Ω(n^k)` (per k ≥ 1) | Polinomiale |
+| `Ω(n³)` | Cubica |
+| `Ω(n²)` | Quadratica |
+| `Ω(n log n)` | nlogn |
+| `Ω(n)` | Lineare |
+| `Ω(\sqrt^c{n}` (per c ≥ 1) | Sublineare |
+| `Ω(log n)` | Logaritmica |
+| `Ω(log log n)` | loglog |
+| `Ω(1)` | Costante |
 
 ## Tight bound
 
 Se notiamo che _upper_ e _lower bound_ coincidono, allora otteniamo un **tight bound**: sappiamo che il costo dell'algoritmo è sempre stimato da esso.
 
-> Theta()
+### θ()
 
-Blah blah blah `\exists c_1, c_2 > 0, n_0 \geq 0 : \forall n \geq n_0, c_1 * g(n) \leq f(n) \leq c_2 * g(n)`
+> "Theta"  
+> Theta di g(n)
 
-#### Espressioni di Theta()
+Diciamo che `f(n) ∈ θ(g(n))` se e solo se `∃ c_1, c_2 > 0, n_0 ≥ 0 : ∀ n ≥ n_0, c_1 * g(n) ≤ f(n) ≤ c_2 * g(n)`.
 
-| Espressione Omega() | Nome |
---------------------------
-| `Theta(1)` | Costante |
-| `Theta(log log n)` | loglog |
-| `Theta(log n)` | Logaritmica |
-| `Theta(\sqrt^c{n}\quad per\ c > 1` | Sublineare |
-| `Theta(n)` | Lineare |
-| `Theta(n log n)` | nlogn |
-| `Theta(n²)` | Quadratica |
-| `Theta(n³)` | Cubica |
-| `Theta(n^k)\quad per\ k \geq 1` | Polinomiale |
-| `Theta(a^n)\quad per\ a > 1` | Esponenziale |
-| `Theta(n!)` | Fattoriale |
+#### Espressioni di θ()
+
+| Espressione θ() | Nome |
+|-----------------|------|
+| `θ(1)` | Costante |
+| `θ(log log n)` | loglog |
+| `θ(log n)` | Logaritmica |
+| `θ(\sqrt^c{n})` (per c ≥ 1) | Sublineare |
+| `θ(n)` | Lineare |
+| `θ(n log n)` | nlogn |
+| `θ(n²)` | Quadratica |
+| `θ(n³)` | Cubica |
+| `θ(n^k)` (per k ≥ 1) | Polinomiale |
+| `θ(a^n)` (per a ≥ 1) | Esponenziale |
+| `θ(n!)` | Fattoriale |
 
 ## Problemi algoritmici
 
@@ -125,17 +131,17 @@ Un problema algoritmico è un problema matematico che si vuole provare a risolve
 
 ### Problema trattabile
 
-Per definire un problema algoritmico **trattabile**, il nostro problema deve avere _almeno un algoritmo_ con un upper bound _polinomiale_; il tempo impiegato da un computer rimane ragionevole.
+Per definire un problema algoritmico **trattabile**, il nostro problema deve avere _almeno un algoritmo_ con un _upper bound polinomiale_; il tempo impiegato da un computer rimane ragionevole.
 
 ### Problema intrattabile
 
-Se un problema non è _trattabile_, si dice che è **intrattabile**.
+Se un problema non ha nessun algoritmo con _upper bound polinomiale_, allora si dice che è **intrattabile**.
 
 ### Problema irrisolvibile
 
-Se non esistono algoritmi per risolvere un problema, allora questo si dice **irrisolvibile**.
+Se non esistono algoritmi per risolvere un problema, nemmeno con _upper bound fattoriale_, allora questo si dice **irrisolvibile**.
 
-> Dato un algoritmo con certi input, riusciamo a capire con un algoritmo se la sua esecuzione termina o no?
+> [Dato un algoritmo con certi input, riusciamo a capire con un algoritmo se la sua esecuzione termina o no?](https://en.wikipedia.org/wiki/Halting_problem)
 
 ### Problemi in NP?
 
@@ -149,6 +155,7 @@ L'**upper bound di un problema** è il minimo upper bound di tutti gli algoritmi
 
 Il **lower bound di un problema** è il minimo lower bound di tutti gli algoritmi che lo risolvono; non deve esistere nemmeno un algoritmo che abbia un lower bound migliore. E' il numero assolutamente minimo di operazioni richieste, non si può fare meglio di così.
 
-In particolare, abbiamo che l'_upper bound di un algoritmo_ `\implies` l'_upper bound del suo problema_, e il _lower bound di un problema_ `\implies` il _lower bound di un suo algoritmo_.
+In particolare, abbiamo che l'_upper bound di un algoritmo_ -> l'_upper bound del suo problema_,  
+e il _lower bound di un problema_ -> il _lower bound di un suo algoritmo_.
 
 Generalmente, il _lower bound di un problema_ è una rappresentazione abbastanza accurata della sua difficoltà.
