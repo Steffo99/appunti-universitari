@@ -41,7 +41,7 @@ Quando una funzione è _O grande_ di un altra, significa che asintoticamente la 
 | `O(1)` | Costante |
 | `O(log log n)` | loglog |
 | `O(log n)` | Logaritmica |
-| `O(\sqrt^c{n}` (per c ≥ 1) | Sublineare |
+| ![LaTeX](https://latex.codecogs.com/png.latex?O(n^{1/c})) (per c ≥ 1) | Sublineare |
 | `O(n)` | Lineare |
 | `O(n log n)` | nlogn |
 | `O(n²)` | Quadratica |
@@ -58,7 +58,7 @@ Spesso, il tempo richiesto da una funzione è O grande di un polinomio di grado 
 
 > **Come dimostriamo che il tempo è uguale al grado massimo del polinomio?**  
 > Per `n > 0 \and 0 ≤ i ≤ k`:  
-> `a_k n^k + a_{k-1} n^{k-1} + … + a_1 n + a_0 ≤ |a_k| n^k + |a_{k-1}| n^k + … + |a_1| n^k + |a_0| n^k = (|a_k| + |a_{k-1}| + … + |a_1| + |a_0|) n^k`
+> ![LaTeX](https://latex.codecogs.com/png.latex?a_k%20n^k%20+%20a_{k-1}%20n^{k-1}%20+%20%E2%80%A6%20+%20a_1%20n%20+%20a_0%20%E2%89%A4%20|a_k|%20n^k%20+%20|a_{k-1}|%20n^k%20+%20%E2%80%A6%20+%20|a_1|%20n^k%20+%20|a_0|%20n^k%20=%20(|a_k|%20+%20|a_{k-1}|%20+%20%E2%80%A6%20+%20|a_1|%20+%20|a_0|)%20n^k)
 
 #### Proprietà di O()
 
@@ -91,7 +91,7 @@ Diremo che `f(n) ∈ Ω(g(n))` se e solo se `∃ c > 0, n_0 ≥ 0 : ∀ n ≥ n_
 | `Ω(n²)` | Quadratica |
 | `Ω(n log n)` | nlogn |
 | `Ω(n)` | Lineare |
-| `Ω(\sqrt^c{n}` (per c ≥ 1) | Sublineare |
+| ![LaTeX](https://latex.codecogs.com/png.latex?\Omega(n^{1/c})) (per c ≥ 1) | Sublineare |
 | `Ω(log n)` | Logaritmica |
 | `Ω(log log n)` | loglog |
 | `Ω(1)` | Costante |
@@ -114,7 +114,7 @@ Diciamo che `f(n) ∈ θ(g(n))` se e solo se `∃ c_1, c_2 > 0, n_0 ≥ 0 : ∀ 
 | `θ(1)` | Costante |
 | `θ(log log n)` | loglog |
 | `θ(log n)` | Logaritmica |
-| `θ(\sqrt^c{n})` (per c ≥ 1) | Sublineare |
+| ![LaTeX](https://latex.codecogs.com/png.latex?\Theta(n^{1/c})) (per c ≥ 1) | Sublineare |
 | `θ(n)` | Lineare |
 | `θ(n log n)` | nlogn |
 | `θ(n²)` | Quadratica |
