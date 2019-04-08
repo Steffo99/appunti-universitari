@@ -72,8 +72,8 @@ Permettono di caricre / scaricare dati dalla memoria.
 
 Consentono di effettuare operazioni di logica.
 
-- and
-- or
+- `and`
+- `or`
 - ...
 
 ### Operazioni di shift
@@ -84,9 +84,26 @@ Consentono di spostare i bit di un registro di alcune posizioni, moltiplicando o
 
 Consentono di saltare ad un'altra serie di istruzioni se certe condizioni si verificano. 
 
+- `blt`: minore di, signed
+- `bge`: maggiore di, signed
+- `bltu`: minore di, unsigned
+- `bgeu`: maggiore di, unsigned
+
 ### Operazioni non-condizionali
 
 Consentono di saltare ad un'altra serie di istruzioni in qualunque caso.
+
+#### Chiamare una procedura
+
+> `jal x1, ProcedureLabel`
+
+Salva l'indirizzo dell'istruzione successiva in x1, poi salta a ProcedureLabel.
+
+#### Ritornare da una procedura
+
+> `jalr x0, 0(x1)`
+
+Ritorna all'indirizzo puntato da `x1`.
 
 ## Memoria
 
