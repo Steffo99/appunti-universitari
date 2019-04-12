@@ -125,3 +125,38 @@ Possiamo usare la **sign extension** quando abbiamo un dato che vogliamo portare
 [0]101 0101 --> 0000 0000 [0]101 0101
 [1]100 0000 --> 1111 1111 [1]100 0000
 ```
+
+### Operazioni di sincronizzazione
+
+- `lr`: load reserved
+- `sc`: store conditional
+
+#### Load reserved
+
+```
+lr rd, (rs1)
+```
+
+> Non ho la minima idea di come funzioni.
+
+Controlla se `rs1` è bloccato; se sì, mette un valore != 0 in `rd`...?
+
+> Forse... crea un lock in `rd`?
+
+#### Store conditional
+
+```
+sc rd, rs2, (rs1)
+```
+
+> Non ho la minima idea di come funzioni.
+
+Copia il dato da `rs2` a `rs1`, se non è bloccato, e metti `x0` in `rd`...?
+
+> Carica un dato... se ho ancora il lock, altrimenti, metti `x0` in `rd`.
+
+#### Unlock
+
+```
+sd x0, 0(x20)
+```
