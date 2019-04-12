@@ -56,3 +56,51 @@ Ha i seguenti metodi:
 Utilizzando una lista possiamo realizzare una pila!
 
 La direzione dei puntatori sarà dall'ultimo al primo, che non punterà più a nessuno.
+
+Il costo di tutti i metodi è `\Theta(1)`!
+
+### Coda (Queue)
+
+Vedi la pila, ma segue la strategia **First in, first out** (il primo inserito sarà il primo a essere estratto).
+
+Ha i seguenti metodi:
+- nuovaCoda()
+- eVuota() -> `bool`
+- enqueue(`T dato`)
+- first()
+- dequeue()
+
+#### Implementazione tramite lista
+
+Posso implementare la coda con una lista, ma per realizzare l'implementazione più efficiente devo tenere anche un puntatore all'ultimo elemento della coda, in modo da non doverla scorrere ogni volta che voglio effettuare un'operazione.
+
+Chiamiamo i due puntatori `head` e `tail` rispettivamente.
+
+## Albero radicato (Tree)
+
+Un albero radicato è una struttura per organizzare i dati in una struttura non-lineare.
+
+Ogni elemento dell'albero ha un genitore, ma può avere tanti figli!
+
+I nodi superiori al padre vengono chiamati _antenati_, mentre quelli inferiori ai figli vengono chiamati _discendenti_.
+
+Un nodo che non ha padre è detto _radice_, un nodo che non ha figli è detto _foglia_, un nodo che ha padre e figli è un _nodo interno_.
+
+Hanno una **natura ricorsiva**: un albero qualunque posso vederlo come una radice con tanti alberi come figli!
+
+### Definizione
+
+```python
+def __init__(nodi, archi, radice):
+    ...
+```
+
+V = insieme di nodi
+
+E = insieme di archi
+
+R = radice
+
+`\forall (padre, figlio), (padre' figlio) \in E \implies padre = padre'`
+
+`\notexists (padre, radice) \in E`
