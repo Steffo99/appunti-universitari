@@ -86,21 +86,64 @@ I nodi superiori al padre vengono chiamati _antenati_, mentre quelli inferiori a
 
 Un nodo che non ha padre è detto _radice_, un nodo che non ha figli è detto _foglia_, un nodo che ha padre e figli è un _nodo interno_.
 
-Hanno una **natura ricorsiva**: un albero qualunque posso vederlo come una radice con tanti alberi come figli!
-
-### Definizione
-
-```python
-def __init__(nodi, archi, radice):
-    ...
-```
-
-V = insieme di nodi
-
-E = insieme di archi
-
-R = radice
-
 `\forall (padre, figlio), (padre' figlio) \in E \implies padre = padre'`
 
 `\notexists (padre, radice) \in E`
+
+Hanno una **natura ricorsiva**: un albero qualunque posso vederlo come una radice con tanti alberi come figli!
+
+La **distanza** tra il nodo radice e i suoi discendenti è detta _livello_: i figli immediati sono livello 1, i loro figli livello 2, etc.; il livello massimo è detto _altezza_, _profondità_ oppure _livello h_, ed è `1 \leq h \leq n-1`.
+
+Un albero ha sempre `n-1` archi.
+
+Gli alberi possono essere _`d`-ari_: ogni nodo di questi alberi può avere massimo `d` figli; si dicono _completi_ se tutti i nodi hanno 0 o `d` figli, e mai una numero in mezzo.
+
+E' _bilanciato_ se le foglie sono quasi tutte alla stessa altezza.
+
+### Albero binario completo perfettamente bilanciato
+
+Ha sempre `2^h` foglie e `2^{h+1}-1` (`\sum_i=0^n 2^i`) nodi; è dimostrabile per induzione!
+
+L'altezza è `\theta(log n)`.
+
+### Ordine di visita
+
+#### Depth first search (DFS)
+
+##### Previsita (preorder)
+
+Visita prima la radice, poi tutti i sotto alberi uno dopo l'altro.
+
+1. **V:** Radice
+2. Preorder(figlio1)
+3. Preorder(figlio2)
+4. ...
+
+##### Postvisita (postorder)
+
+Visita gli alberi, poi la radice.
+
+1. Preorder(figlio1)
+2. Preorder(figlio2)
+3. ...
+4. **V:** Radice
+
+##### Invisita (inorder)
+
+Visita la radice... a metà degli alberi.
+
+1. Preorder(figlio1)
+2. **V:** Radice
+3. Preorder(figlio2)
+4. ...
+
+#### Breadth first search (BFS)
+
+Visita ogni livello.
+
+1. **V:** Radice
+2. **V:** Livello 1
+3. **V:** Livello 2
+4. ...
+
+Si implementa facilmente con una coda.
