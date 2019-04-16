@@ -137,6 +137,32 @@ Visita la radice... a metà degli alberi.
 3. Preorder(figlio2)
 4. ...
 
+
+###### Dimostrazione per induzione
+
+`d` è il costo fuori dalla ricorsione.
+
+```latex
+T(n) \leq 2dn + d
+```
+
+**Caso base:**
+```latex
+T(0) \leq d\\
+0 \leq d
+```
+
+**Passo induttivo:**
+```latex
+T(n) \leq 2dn + d
+```
+Sappiamo che i nodi in uno dei due sotto alberi sono `0 \leq K \leq n-1`, mentre nell'altro `n - K - 1`.
+
+Allora, abbiamo che:
+```latex
+T(n) \leq T(K) + T(n - K - 1) + d \leq 2dK + d + 2d(n - K - 1) + d = 2dK + 2d + 2dn - 2dK - 2d = 2dn
+```
+
 #### Breadth first search (BFS)
 
 Visita ogni livello.
@@ -147,3 +173,40 @@ Visita ogni livello.
 4. ...
 
 Si implementa facilmente con una coda.
+
+```python
+def bfs(radice):
+    c = Queue()
+    c.enqueue(radice)
+    while not c.is_empty():
+        nodo = c.dequeue()
+        print(nodo)
+        for figlio in nodo.figli:
+            nodo.enqueue(figlio)
+```
+
+### Implementazione degli alberi
+
+Anche qui possiamo scegliere se usare una rappresentazione con array o con nodi e puntatori.
+
+#### Vettore
+
+E' suggerito se l'albero è regolare; più è simile a un albero d-ario completo, meglio è.
+
+#### Nodi e puntatori
+
+Più adatta ad alberi irregolari.
+
+Se l'albero è regolare, creiamo il numero esatto di campi:
+
+- Valore
+- Figlio1
+- Figlio2
+- _Opzionale:_ Padre
+
+Se un albero è irregolare, creiamo una specie di lista:
+
+- Valore
+- Primo figlio
+- Prossimo fratello
+- _Opzionale:_ Padre
