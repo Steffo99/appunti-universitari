@@ -88,3 +88,7 @@ Selezionando diversamente il pivot (non prendendolo sempre alla fine) ci avvicin
 4 7 3 |¦ [{1}]
 [] {1} [4 7 3]
 ```
+
+## Note per l'esame
+
+> Elementi da soli _non_ vengono presi come pivot!
