@@ -91,4 +91,6 @@ Selezionando diversamente il pivot (non prendendolo sempre alla fine) ci avvicin
 
 ## Note per l'esame
 
+> La domanda che fa sempre è **"Qual è la sequenza di pivot utilizzata?"**
+
 > Elementi da soli _non_ vengono presi come pivot!
