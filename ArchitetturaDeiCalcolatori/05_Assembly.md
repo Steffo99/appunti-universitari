@@ -160,3 +160,6 @@ Copia il dato da `rs2` a `rs1`, se non è bloccato, e metti `x0` in `rd`...?
 ```
 sd x0, 0(x20)
 ```
+
+## Operazioni floating point
+
