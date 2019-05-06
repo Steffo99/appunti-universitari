@@ -9,3 +9,4 @@ xx_*
 *.bbl
 *.blg
 extra/
+riscv-tools/
