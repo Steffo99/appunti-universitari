@@ -99,6 +99,45 @@ Ci può essere utile per capire quali nodi appartengono a quali alberi e se il g
 
 > //TODO: ripassare qui
 
+##### Grafi diretti
+
+Posso fare la stessa DFS dei grafi indiretti, ma devo considerare solo gli archi uscenti.
+
+Non funziona però l'algoritmo usato per individuare i cicli.
+
+Abbiamo quattro tipi di archi:
+- _Tree_, archi che ci fanno **scoprire un nuovo nodo**
+- _Back_, archi che ci portano ad un **antenato**
+- _Forward_, archi che ci portano a un **discendente**
+- _Cross_, archi che **connettono due sottoalberi** diversi
+
+Per determinare se un grafo diretto ha un ciclo, possiamo fare una visita in profondità e **cercare gli archi _Back_**. 
+
+Usiamo due array inizializzati a 0 chiamati `pre` e `post`, che ci indica se un nodo è stato scoperto e se è terminata la visita.  
+Inoltre, creiamo una variabile `clock` che avanza ad ogni evento.  
+Alla scoperta di un nuovo nodo, mettiamo il valore attuale di `clock` all'interno di `pre[n]`.
+Alla fine della visita di un nodo invece mettiamo il valore di `clock` in `post[n]`.
+
+Possiamo identificare gli archi in questo modo _durante la visita_:
+- _Tree_: `pre[dst] == 0`
+- _Back_: `pre[dst] < pre[src] && post[dst] == 0`
+- _Forward_: `pre[src] < pre[dst] && post[dst] > 0`
+- _Cross_: Tutti gli altri (`post[dst] < pre[src]`)
+
+Possiamo identificare gli archi in questo modo _a fine visita_:
+- _Tree_: `pre[src] < pre[dst] < post[dst] < post[src]`
+- _Back_: `pre[src] < pre[dst] < post[dst] < post[src]`
+- _Forward_: `pre[dst] < pre[dst] < post[dst] < pre[src]`
+- _Cross_: `pre[dst] < post[dst] < pre[src] < post[src]`
+
 #### Breadth First Search
 
 I nodi vicini vengono `yield`ed prima di quelli lontani.
+
+## DAG (Direct Acyclic Graph)
+
+E' un grafo diretto senza cicli.
+
+Possiamo effettuare un ordinamento tra i nodi, detto **ordine topologico**: effettuiamo una procedura di _linearizzazione_.
+
+I primi elementi dei DAG sono detti _Source_ (_Sorgente_), mentre gli ultimi sono detti _Sink_ (_Pozzo_).
