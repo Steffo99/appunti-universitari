@@ -141,3 +141,12 @@ E' un grafo diretto senza cicli.
 Possiamo effettuare un ordinamento tra i nodi, detto **ordine topologico**: effettuiamo una procedura di _linearizzazione_.
 
 I primi elementi dei DAG sono detti _Source_ (_Sorgente_), mentre gli ultimi sono detti _Sink_ (_Pozzo_).
+
+## Componenti fortemente connesse (in grafi diretti)
+
+1. Per ogni coppia di nodi `\forall u, v \in V' : \exists un cammino u->v in G'`
+2. Massimale (non può diventare più grande)
+
+Se un grafo ha **una sola** _componente fortemente connessa_ allora l'intero grafo è _fortemente connesso_.
+
+> Praticamente una componente fortemente connessa è un gruppo di nodi tra i quali si può viaggiare liberamente da e a qualsiasi nodo al suo interno.
