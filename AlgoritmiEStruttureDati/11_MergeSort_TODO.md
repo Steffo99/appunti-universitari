@@ -5,7 +5,7 @@ Vogliamo sviluppare un algoritmo che, dati n valori, li ordini, in modo da averl
 ## Specifiche
 
 - **Input:** A[n]
-- **Output:** B, \forall i < n, A[i] \leq A[i+1]
+- **Output:** B, ∀ i < n, A[i] ≤ A[i+1]
 
 ## Sviluppo
 
@@ -89,8 +89,8 @@ Quando rimangono solo le _sentinelle_ significa che abbiamo aggiunto tutti gli e
 ```latex
 T(n) =\\
 \\
-\theta(1) \qquad n=1
-2 T(\frac{n}{2}) + \theta(n) \qquad n \neq 1
+Θ(1) \qquad n=1
+2 T(\frac{n}{2}) + Θ(n) \qquad n \neq 1
 ```
 
 Applicando il Master Theorem, otteniamo:
@@ -98,7 +98,7 @@ Applicando il Master Theorem, otteniamo:
 ```latex
 T(n) =\\
 \\
-\theta(1) \qquad n=1
+Θ(1) \qquad n=1
 O(n log n) \qquad n \neq 1
 ```
 
@@ -108,14 +108,14 @@ Per calcolare il lower bound del problema, dobbiamo pensare a tutte le possibili
 
 Ogni nuovo confronto riduce l'insieme delle permutazioni "compatibili", fino ad avere una sola possibilità.
 
-Il caso peggiore è quando le permutazioni compatibili (insieme A) `A \geq \frac{n!}{2}`.
+Il caso peggiore è quando le permutazioni compatibili (insieme A) `A ≥ \frac{n!}{2}`.
 
 Concatenando tutti i casi peggiori, abbiamo la sequenza ordinata dopo `i` passi.
 
 ```latex
-n! \leq (\frac{n}{2})^\frac{n}{2}\\
-n! \leq \frac{n}{2} \log(\frac{n}{2})\\
-n! \in \Omega(n \log(n))
+n! ≤ (\frac{n}{2})^\frac{n}{2}\\
+n! ≤ \frac{n}{2} \log(\frac{n}{2})\\
+n! ∈ \Omega(n \log(n))
 ```
 
 Applichiamo un logaritmo da entrambi i lati.

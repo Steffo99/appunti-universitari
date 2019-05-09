@@ -4,7 +4,7 @@
 
 - **Insieme totalmente ordinato** (N, Q, R, ma non C)
 - Albero **binario**
-- Per ogni nodo con valore `x`, se un valore `v` è nel sottoalbero di sinistra allora `v \leq x`, mentre se è nel sottoalbero di destra allora `v > x`.  
+- Per ogni nodo con valore `x`, se un valore `v` è nel sottoalbero di sinistra allora `v ≤ x`, mentre se è nel sottoalbero di destra allora `v > x`.  
   Posso, quindi, trovare i valori desiderati in `Theta(h)`.
 - Posso stampare tutti i valori in ordine crescente in `O(n)`.
 - Trovare il valore minimo è in `Theta(h)`, e uguale il valore massimo.

@@ -26,11 +26,11 @@ Se
 ```latex
 T(n) =\\
 \\
-\theta(1) \qquad n=n_0\\
+Θ(1) \qquad n=n_0\\
 aT(\frac{n}{b}) + O(n^d) \qquad n>n_0\\
 a > 0\\
 b > 0\\
-d \geq 0
+d ≥ 0
 ```
 
 Ovvero, se la dimensione dell'input viene divisa ad ogni ciclo da una costante b, è polinomiale e il caso base è costante...

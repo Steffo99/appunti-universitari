@@ -5,7 +5,7 @@
 ### Requisiti
 
 L'algoritmo può essere applicato solo sui numeri interi e se siamo a conoscenza del più grande dei numeri contenuti nell'array.  
-L'input, quindi, deve essere una **sequenza di interi** `A`, e un valore `k` tale che `\forall n \in A, 0 \leq n \leq K`.
+L'input, quindi, deve essere una **sequenza di interi** `A`, e un valore `k` tale che `∀ n ∈ A, 0 \leq n \leq K`.
 
 ### Pseudocodice
 

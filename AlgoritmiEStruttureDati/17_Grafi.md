@@ -144,7 +144,7 @@ I primi elementi dei DAG sono detti _Source_ (_Sorgente_), mentre gli ultimi son
 
 ## Componenti fortemente connesse (in grafi diretti)
 
-1. Per ogni coppia di nodi `\forall u, v \in V' : \exists un cammino u->v in G'`
+1. Per ogni coppia di nodi `∀ u, v ∈ V' : ∃ un cammino u->v in G'`
 2. Massimale (non può diventare più grande)
 
 Se un grafo ha **una sola** _componente fortemente connessa_ allora l'intero grafo è _fortemente connesso_.
