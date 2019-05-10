@@ -148,3 +148,25 @@ I primi elementi dei DAG sono detti _Source_ (_Sorgente_), mentre gli ultimi son
 Se un grafo è **una sola** _componente fortemente connessa_ allora si dice che l'intero grafo è _fortemente connesso_.
 
 > Praticamente una componente fortemente connessa è un gruppo di nodi tra i quali si può viaggiare liberamente da e a qualsiasi nodo al suo interno.
+
+## Trasposto
+
+In un grafo diretto, il **trasposto** di un grafo G è G con gli archi che vanno nella direzione opposta.
+
+Facendo una **DFS nel trasposto** scopro i nodi che hanno un cammino verso di me.
+
+Ogni albero della visita in profondità della trasposta è una _componente fortemente connessa_.
+
+## Grafo delle componenti fortemente connesse
+
+Il grafo delle componenti fortemente connesse è sempre un **DAG**, in quanto se ci fossero dei cicli, allora le componenti con il ciclo si unirebbero.
+
+## Relazioni tra `post`
+
+In una componente fortemente connessa, il `post` massimo è sempre maggiore del `post` della componente trasposta.
+
+## Costo algoritmo
+
+1. DFS(G) -> `O(nodi+archi)`
+2. Calcolo G^T -> `O(archi)` con liste di adiacenza, `O(n^2)` con matrice
+3. DFS(G^T) -> `O(nodi+archi)`
