@@ -4,14 +4,14 @@
 
 - **Insieme totalmente ordinato** (N, Q, R, ma non C)
 - Albero **binario**
-- Per ogni nodo con valore `x`, se un valore `v` è nel sottoalbero di sinistra allora `v \leq x`, mentre se è nel sottoalbero di destra allora `v > x`.  
-  Posso, quindi, trovare i valori desiderati in `Theta(h)`.
+- Per ogni nodo con valore `x`, se un valore `v` è nel sottoalbero di sinistra allora `v ≤ x`, mentre se è nel sottoalbero di destra allora `v > x`.  
+  Posso, quindi, trovare i valori desiderati in `θ(h)`.
 - Posso stampare tutti i valori in ordine crescente in `O(n)`.
-- Trovare il valore minimo è in `Theta(h)`, e uguale il valore massimo.
-- L'inserimento di una nuova chiave è in `Theta(h)`.
+- Trovare il valore minimo è in `θ(h)`, e uguale il valore massimo.
+- L'inserimento di una nuova chiave è in `θ(h)`.
 - L'altezza cambia in base a quanto l'albero è bilanciato: più è bilanciato, più tende a `log n`; più è sbilanciato, più tende a `n`.
-- Cancellare una foglia è molto semplice ed è in `Theta(h)`.
-- Cancellare un ramo... è un po' complesso. E' comunque in `Theta(h)`.
+- Cancellare una foglia è molto semplice ed è in `θ(h)`.
+- Cancellare un ramo... è un po' complesso. E' comunque in `θ(h)`.
 
 ## Cancellazione ricorsiva
 

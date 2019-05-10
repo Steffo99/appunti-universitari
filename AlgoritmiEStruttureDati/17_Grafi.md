@@ -97,8 +97,6 @@ L'algoritmo è `O(n * numero-di-archi)`.
 
 Ci può essere utile per capire quali nodi appartengono a quali alberi e se il grafo contiene o no un ciclo.
 
-> //TODO: ripassare qui
-
 ##### Grafi diretti
 
 Posso fare la stessa DFS dei grafi indiretti, ma devo considerare solo gli archi uscenti.
@@ -107,8 +105,8 @@ Non funziona però l'algoritmo usato per individuare i cicli.
 
 Abbiamo quattro tipi di archi:
 - _Tree_, archi che ci fanno **scoprire un nuovo nodo**
-- _Back_, archi che ci portano ad un **antenato**
 - _Forward_, archi che ci portano a un **discendente**
+- _Back_, archi che ci portano ad un **antenato**
 - _Cross_, archi che **connettono due sottoalberi** diversi
 
 Per determinare se un grafo diretto ha un ciclo, possiamo fare una visita in profondità e **cercare gli archi _Back_**. 
@@ -120,14 +118,14 @@ Alla fine della visita di un nodo invece mettiamo il valore di `clock` in `post[
 
 Possiamo identificare gli archi in questo modo _durante la visita_:
 - _Tree_: `pre[dst] == 0`
-- _Back_: `pre[dst] < pre[src] && post[dst] == 0`
 - _Forward_: `pre[src] < pre[dst] && post[dst] > 0`
+- _Back_: `pre[dst] < pre[src] && post[dst] == 0`
 - _Cross_: Tutti gli altri (`post[dst] < pre[src]`)
 
 Possiamo identificare gli archi in questo modo _a fine visita_:
-- _Tree_: `pre[src] < pre[dst] < post[dst] < post[src]`
-- _Back_: `pre[src] < pre[dst] < post[dst] < post[src]`
+- _Tree_: `pre[dst] < pre[dst] < post[dst] < pre[src]`
 - _Forward_: `pre[dst] < pre[dst] < post[dst] < pre[src]`
+- _Back_: `pre[src] < pre[dst] < post[dst] < post[src]`
 - _Cross_: `pre[dst] < post[dst] < pre[src] < post[src]`
 
 #### Breadth First Search
@@ -144,9 +142,9 @@ I primi elementi dei DAG sono detti _Source_ (_Sorgente_), mentre gli ultimi son
 
 ## Componenti fortemente connesse (in grafi diretti)
 
-1. Per ogni coppia di nodi `\forall u, v \in V' : \exists un cammino u->v in G'`
+1. Per ogni coppia di nodi `∀ u, v ∈ V' : ∃ un cammino u->v in G'`
 2. Massimale (non può diventare più grande)
 
-Se un grafo ha **una sola** _componente fortemente connessa_ allora l'intero grafo è _fortemente connesso_.
+Se un grafo è **una sola** _componente fortemente connessa_ allora si dice che l'intero grafo è _fortemente connesso_.
 
 > Praticamente una componente fortemente connessa è un gruppo di nodi tra i quali si può viaggiare liberamente da e a qualsiasi nodo al suo interno.

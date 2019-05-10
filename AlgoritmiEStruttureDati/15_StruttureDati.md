@@ -57,7 +57,7 @@ Utilizzando una lista possiamo realizzare una pila!
 
 La direzione dei puntatori sarà dall'ultimo al primo, che non punterà più a nessuno.
 
-Il costo di tutti i metodi è `\Theta(1)`!
+Il costo di tutti i metodi è `Θ(1)`!
 
 ### Coda (Queue)
 
@@ -86,13 +86,13 @@ I nodi superiori al padre vengono chiamati _antenati_, mentre quelli inferiori a
 
 Un nodo che non ha padre è detto _radice_, un nodo che non ha figli è detto _foglia_, un nodo che ha padre e figli è un _nodo interno_.
 
-`\forall (padre, figlio), (padre' figlio) \in E \implies padre = padre'`
+`∀ (padre, figlio), (padre' figlio) ∈ E \implies padre = padre'`
 
-`\notexists (padre, radice) \in E`
+`\notexists (padre, radice) ∈ E`
 
 Hanno una **natura ricorsiva**: un albero qualunque posso vederlo come una radice con tanti alberi come figli!
 
-La **distanza** tra il nodo radice e i suoi discendenti è detta _livello_: i figli immediati sono livello 1, i loro figli livello 2, etc.; il livello massimo è detto _altezza_, _profondità_ oppure _livello h_, ed è `1 \leq h \leq n-1`.
+La **distanza** tra il nodo radice e i suoi discendenti è detta _livello_: i figli immediati sono livello 1, i loro figli livello 2, etc.; il livello massimo è detto _altezza_, _profondità_ oppure _livello h_, ed è `1 ≤ h ≤ n-1`.
 
 Un albero ha sempre `n-1` archi.
 
@@ -104,7 +104,7 @@ E' _bilanciato_ se le foglie sono quasi tutte alla stessa altezza.
 
 Ha sempre `2^h` foglie e `2^{h+1}-1` (`\sum_i=0^n 2^i`) nodi; è dimostrabile per induzione!
 
-L'altezza è `\theta(log n)`.
+L'altezza è `Θ(log n)`.
 
 ### Ordine di visita
 
@@ -143,24 +143,24 @@ Visita la radice... a metà degli alberi.
 `d` è il costo fuori dalla ricorsione.
 
 ```latex
-T(n) \leq 2dn + d
+T(n) ≤ 2dn + d
 ```
 
 **Caso base:**
 ```latex
-T(0) \leq d\\
-0 \leq d
+T(0) ≤ d\\
+0 ≤ d
 ```
 
 **Passo induttivo:**
 ```latex
-T(n) \leq 2dn + d
+T(n) ≤ 2dn + d
 ```
-Sappiamo che i nodi in uno dei due sotto alberi sono `0 \leq K \leq n-1`, mentre nell'altro `n - K - 1`.
+Sappiamo che i nodi in uno dei due sotto alberi sono `0 ≤ K ≤ n-1`, mentre nell'altro `n - K - 1`.
 
 Allora, abbiamo che:
 ```latex
-T(n) \leq T(K) + T(n - K - 1) + d \leq 2dK + d + 2d(n - K - 1) + d = 2dK + 2d + 2dn - 2dK - 2d = 2dn
+T(n) ≤ T(K) + T(n - K - 1) + d ≤ 2dK + d + 2d(n - K - 1) + d = 2dK + 2d + 2dn - 2dK - 2d = 2dn
 ```
 
 #### Breadth first search (BFS)

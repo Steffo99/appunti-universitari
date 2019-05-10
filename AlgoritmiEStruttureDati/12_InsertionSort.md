@@ -27,4 +27,4 @@ def insertion_sorted(lista):
 
 ## Costo computazionale
 
-Nel caso peggiore, dobbiamo eseguire `1+2+3+4+5+\dots = \frac{(n-1)(n)}{2}` confronti: è un tight bound - `\theta(n)`!
+Nel caso peggiore, dobbiamo eseguire `1+2+3+4+5+… = \frac{(n-1)(n)}{2}` confronti: è un tight bound - `Θ(n)`!

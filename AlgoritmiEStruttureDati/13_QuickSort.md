@@ -31,29 +31,29 @@ def partition(lista, inizio, fine):
 
 ### Costo
 
-Il costo della funzione è dato dalla somma dei costi per realizzare il _Quick sort_ dei due sottoinsiemi, più il costo di partition, `\theta(n)`.
+Il costo della funzione è dato dalla somma dei costi per realizzare il _Quick sort_ dei due sottoinsiemi, più il costo di partition, `Θ(n)`.
 
 ```latex
 T(n)\\
 =\\
-\theta(1) \qquad per\ n = 1
-T(q) + T(dim_lista - pivot - 1) + \theta(n) \qquad per\ n > 1
+Θ(1) \qquad per\ n = 1
+T(q) + T(dim_lista - pivot - 1) + Θ(n) \qquad per\ n > 1
 ```
 
 Se la partizione è bilanciata, ovvero `q ~ \frac{n}{2},` ~~in qualche modo~~ otteniamo
 ```latex
-T(n) = 2 T(\frac{n}{2}) + \theta(n)
+T(n) = 2 T(\frac{n}{2}) + Θ(n)
 ```
 
 > Non date da mangiare sequenze ordinate al Quicksort, gli è indigesta.
 
 Se la partizione è sbilanciata, ovvero abbiamo una delle due sottoliste sempre vuota e i numeri sono già ordinati, allora:
 ```latex
-T(n) = T(n-1) + \theta(n)\\
-= T(n-2) + \theta(n-1) + \theta(n)\\
-= T(n-3) + \theta(n-2) + \theta(n-1) + \theta(n)\\
-= \dots
-\in \theta(n^2)
+T(n) = T(n-1) + Θ(n)\\
+= T(n-2) + Θ(n-1) + Θ(n)\\
+= T(n-3) + Θ(n-2) + Θ(n-1) + Θ(n)\\
+= …
+∈ Θ(n^2)
 ```
 
 Possiamo dimostrare che le partizioni bilanciate sono più quelle delle sbilanciate; dunque, in media, il costo del _Quick sort_ tenda a `O(n log n)`.

@@ -1,12 +1,12 @@
 # Che bello! Adoro l'assembly!
-# Le probabilità che questo programma non funzioni sono altissime.
+# Questo programma funziona, è verificato!
 .global _start
 
 # La sezione .data contiene i dati del programma
 .section .data
 
     # Creo una variabile con etichetta "ciao"
-    ciao: .byte "0", "\n"
+    ciao: .string "0\n\0"
 
 # La sezione .rodata contiene i dati del programma in sola lettura
 .section .rodata
@@ -24,9 +24,9 @@
     print:
         ecall                               # PRINT(a0, a1, a2)
         lbu      t0, 0(a1)                  # Carica il byte con il 0
-        addi     t0, 1                      # Aggiungici 1
+        addi     t0, t0, 1                      # Aggiungici 1
         sb		 t0, 0(a1)                  # Ricaricalo in memoria
-        subi     t1, 1                      # Togli 1 dal numero di cicli rimasti
+        addi     t1, t1, -1                      # Togli 1 dal numero di cicli rimasti
         bne		 t1, zero, print            # Se rimangono dei cicli, torna indietro e falli!
     end:
         li      a7, 93                      # Tutti i programmi terminano chiamando la syscall 93, EXIT()
