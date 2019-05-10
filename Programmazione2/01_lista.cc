@@ -1,6 +1,11 @@
 #include "01_lista.hh"
 
 template <class T>
+List<T>::List() {
+    start = nullptr;
+} 
+
+template <class T>
 bool List<T>::empty() {
     return start == nullptr;
 } 
@@ -49,16 +54,20 @@ void List<T>::insert(T value, int position) {
 }
 
 template <class T>
-PointerNode<T>* List<T>::pop(int position) {
+T List<T>::pop(int position) {
     PointerNode<T>* current;
     if(position == 0) {
         current = start;
         start = start->next;
+        return current->value;
     }
     PointerNode<T>* previous = getNode(position - 1);
     current = previous->next;
     PointerNode<T>* next = current->next;
     previous->next = next;
-    return current;
+    return current->value;
 }
 
+template class List<int>;
+template class List<float>;
+template class List<char>;

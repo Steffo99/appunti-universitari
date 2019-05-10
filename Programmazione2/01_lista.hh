@@ -1,5 +1,3 @@
-#pragma once
-
 template <class T> struct Node {
     T value;
 };
@@ -14,12 +12,12 @@ template <class T> struct DoublePointerNode : public PointerNode<T> {
 
 template <class T> struct List {
     PointerNode<T>* start;
-    
+    List();
     bool empty();
     int length();
     PointerNode<T>* getNode(int position);
     T getValue(int position);
     void append(T value);
     void insert(T value, int position);
-    PointerNode<T>* pop(int position = 0);
+    T pop(int position = 0);
 };
