@@ -170,3 +170,23 @@ In una componente fortemente connessa, il `post` massimo è sempre maggiore del 
 1. DFS(G) -> `O(nodi+archi)`
 2. Calcolo G^T -> `O(archi)` con liste di adiacenza, `O(n^2)` con matrice
 3. DFS(G^T) -> `O(nodi+archi)`
+
+## Breadth-first search 
+
+Possiamo usare una **Breadth-first search** per determinare i nodi raggiungibili con un cammino lungo `X`, oppure per determinare tutti i cammini più brevi per raggiungere un certo nodo nel mio grafo.
+
+La implementiamo in modo **iterativo**, utilizzando una coda in cui mettere i nodi.
+
+```python
+queue = [starting_node]
+
+while queue:
+    node = queue.pop(0)
+    for neighbour in node:
+        queue.append(neighbour)
+        ...
+```
+
+Nota: nella coda, abbiamo sempre nodi con massima differenza di distanza 1.
+
+Possiamo usare un array lungo `nodi` per trovare la distanza e un altro array lungo `nodi` per avere una reference al nodo genitore, in modo da poter risalire al percorso effettuato.
