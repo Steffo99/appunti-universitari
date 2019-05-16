@@ -1,6 +1,9 @@
 #!/bin/bash
 # Sintassi: ./run.sh nomefile
 # Non mettete l'estensione!
+# Potrebbe esserci bisogno di installare xterm prima
+# Se non funziona, installatelo con
+# sudo apt install xterm
 
 echo "Cleaning phase"
 rm "$1.o"
