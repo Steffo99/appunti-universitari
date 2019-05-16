@@ -1,4 +1,7 @@
 #!/bin/bash
+# Sintassi: ./run.sh nomefile
+# Non mettete l'estensione!
+
 echo "Cleaning phase"
 rm "$1.o"
 rm "$1.elf"
