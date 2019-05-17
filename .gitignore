@@ -10,3 +10,5 @@ xx_*
 *.blg
 extra/
 riscv-tools/
+*.elf
+*.o
