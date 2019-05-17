@@ -13,6 +13,10 @@ Nullifica però l'algoritmo di Dijkstra, perchè si formerebbero dei cicli.
 
 ## Algoritmo di Dijkstra
 
+### Requisiti
+
+- Grafo senza pesi negativi
+
 ### Costo
 
 - Inizializzazione: `O(n)`
@@ -50,7 +54,6 @@ class Node:
         self.number = number
 
     @property
-    data = [Info() for node in
     def connections(self): ...
 
 
@@ -59,7 +62,9 @@ def dijkstra(graph, start):
     queue = PriorityQueue()
     while queue:
         node = queue.pop()
+        # Rilassamento del nodo
         for arc in node.connections:
+            # Rilassamento dell'arco
             other = arc.other(node)
             if data[node.number].distance + arc.cost < data[other].distance:
                 data[other].distance = data[node.number].distance + arc.cost
@@ -67,3 +72,53 @@ def dijkstra(graph, start):
                 data[v].previous = node
     return data
 ```
+
+### Visualizzazione
+
+[Visualgo](https://visualgo.net/en/sssp)
+
+## Algoritmo con pesi negativi
+
+### Requisiti
+
+- Il nostro grafo deve essere un _DAG_: lo dobbiamo linearizzare.
+- L'inizio può essere solo il primo nodo del grafo linearizzato.
+
+### Implementazione
+
+```python
+def search(graph):
+    # Assumo che il grafo sia già stato linearizzato
+    # Rilasso tutti i nodi in ordine, perchè so che per ogni nodo, tutti i nodi precedenti sono già stati visitati.
+    for node in graph.nodes:
+        for arc in node.connections:
+            # Rilassamento dell'arco
+            other = arc.other(node)
+            if data[node.number].distance + arc.cost < data[other].distance:
+                data[other].distance = data[node.number].distance + arc.cost
+                queue.decrease_priority_for(other, data[other].distance)
+                data[v].previous = node
+    return data
+```
+
+## Algoritmo di Bellman-Ford
+
+L'algoritmo di Bellman-Ford rilassa tutti i nodi tante volte quanto la lunghezza del cammino più lungo possibile all'interno del grafo (`nodi - 1`).
+
+### Implementazione
+
+```python
+def bellmanford(graph):
+    for i in range(len(graph.nodes) - 1):
+        for arc in graph.arcs:
+            # TL;DR rilassa l'arco
+            arc.relax()
+    for arc in graph.arcs:
+        if arc.relax():
+            raise Exception("Negative loop detected")
+    return graph
+```
+
+### Visualizzazione
+
+[Visualgo](https://visualgo.net/en/sssp)
