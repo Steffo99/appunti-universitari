@@ -54,3 +54,4 @@ Per ora ho scoperto queste:
 - [it.wikiversity.org](https://it.wikiversity.org/wiki/Materia:Architetture_degli_elaboratori)
 - [stackoverflow.com](https://stackoverflow.com/questions/tagged/riscv)
 - [softwareengineering.stackexchange.com](https://softwareengineering.stackexchange.com/questions/tagged/assembly)
+- [rv8.io](https://rv8.io/isa.html)
