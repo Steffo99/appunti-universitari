@@ -115,7 +115,7 @@ Concatenando tutti i casi peggiori, abbiamo la sequenza ordinata dopo `i` passi.
 ```latex
 n! ≤ (\frac{n}{2})^\frac{n}{2}\\
 n! ≤ \frac{n}{2} \log(\frac{n}{2})\\
-n! ∈ \Omega(n \log(n))
+n! ∈ Ω(n \log(n))
 ```
 
 Applichiamo un logaritmo da entrambi i lati.
