@@ -16,3 +16,21 @@ class PriorityQueue:
     def pop() -> Element: ...
     def decrease_priority_for(elem: Element, priority: int): ...
 ```
+
+## Implementazione con lista
+
+Implementando la coda con priorità con una lista...
+
+- `insert()` costa `O(1)`
+- `minimum()` costa `O(n)`
+- `pop()` costa `O(n)`
+- `decrease_priority_for()` costa `O(n)`
+
+## Implementazione con lista ordinata
+
+Implementando la coda con priorità con una lista ordinata...
+
+- `insert()` costa `O(n)`
+- `minimum()` costa `O(1)`
+- `pop()` costa `O(1)`
+- `decrease_priority_for()` costa `O(n)`
