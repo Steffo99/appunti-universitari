@@ -11,10 +11,32 @@ L'ordinamento "tradizionale" è detto _ordinamento tramite confronto_: funziona 
 
 E' un problema risolto: è dimostrabile che il suo **lower bound** è **`Ω(n log n)`**; possiamo quindi dire che qualsiasi algoritmo di ordinamento è in `Ω(n log n)`, e se riusciamo a trovare un algoritmo di ordinamento in `O(n log n)` siamo riusciti a raggiungere il massimo dell'efficienza.
 
-##### Dimostrazione
+### Dimostrazione
 
 Consideriamo **tutte le possibili permutazioni** della sequenza da ordinare: sono `n!`.
 
 Per ogni confronto che effettuiamo, **riduciamo la quantità di permutazioni** correttamente ordinate; prima o poi, rimarrà **una sola possibilità**.
 
-**TODO**
+**TODO, non trovo la spiegazione corretta!**
+
+### Esempi
+
+Algoritmi che effettuano l'ordinamento tramite confronto sono:
+- _Bubble sort_
+- _Merge sort_
+- _Insertion sort_
+- _Quick sort_
+- E tanti, tanti altri!
+
+## Ordinamento con altri mezzi
+
+Esistono algoritmi che ricavano informazioni in altri modi, diversi dal confronto.
+
+Essi possono avere un lower bound più basso di `O(n log n)`, però hanno spesso limitazioni sul loro utilizzo.
+
+### Esempi
+
+- _Counting sort_, indicizza i valori da ordinare
+- _Radix sort_, guarda singolarmente le cifre dei valori
+- _Sleep sort_, sfrutta i thread e la funzione sleep per ordinare valori
+- E altri ancora!
