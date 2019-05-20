@@ -1,14 +1,16 @@
 # Divide et impera
 
-Un modo efficace per risolvere un problema è di usare il metodo "divide et impera (et combina)".
+Un modo efficace per risolvere un problema è di usare il metodo _divide et impera (et combina)_.
 
-- **Divide**: Divido il problema in tanti _sottoproblemi_.
-- **Impera**: Risolvo ciascuno dei sottoproblemi indipendentemente dal resto.
-- **Combina**: Combino i risultati dei sottoproblemi per risolvere il problema principale.
+- _Divide_: Divido il problema in **tanti sottoproblemi**.
+- _Impera_: **Risolvo indipendentemente dal resto** ciascuno dei sottoproblemi.
+- _Combina_: **Combino** i risultati dei sottoproblemi per **risolvere il problema principale**.
+
+__SONO ARRIVATO QUI, IL RESTO E' TODO__
 
 ## Ricorsione
 
-#### Note rilevanti
+### Note rilevanti
 
 Quando scriviamo una **funzione ricorsiva**, dobbiamo sempre prima o poi finire a un _caso base_.
 
