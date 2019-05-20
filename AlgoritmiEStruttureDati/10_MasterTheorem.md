@@ -1,5 +1,5 @@
-## Il Master Theorem
-## Il teorema dell'esperto
+# Il Master Theorem
+# Il teorema dell'esperto
 
 Dato un algoritmo così:
 
