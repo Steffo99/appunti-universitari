@@ -20,8 +20,8 @@ Nullifica però l'algoritmo di Dijkstra, perchè si formerebbero dei cicli.
 ### Costo
 
 - Inizializzazione: `O(n)`
-- Creazione coda priorità: `O(queue.__init__)`
-- Ciclo: `O(n * queue.pop + m * queue.decrease_priority_for)`
+- Creazione coda priorità: `O(n log n)`
+- Ciclo: `O((n + m) log n)`
 
 #### Considerando la queue come una lista
 

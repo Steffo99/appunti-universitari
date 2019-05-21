@@ -1,16 +1,29 @@
 # Counting sort
 
-## Sviluppo
+Il _counting sort_ è un approccio diverso all'ordinamento. Infatti, **non usa il confronto**, ma **conta le ripetizioni** e ordina in base a quelle.
 
-### Requisiti
+Ha lo svantaggio però di poter essere utilizzato solo su sequenze di numeri interi, e solo se **siamo a conoscenza del minimo e del massimo** dei numeri contenuti nell'array.  
 
-L'algoritmo può essere applicato solo sui numeri interi e se siamo a conoscenza del più grande dei numeri contenuti nell'array.  
-L'input, quindi, deve essere una **sequenza di interi** `A`, e un valore `k` tale che `∀ n ∈ A, 0 \leq n \leq K`.
+Consideriamo il minimo come zero.  
+L'input allora sarà una sequenza di interi `A`, e il valore del massimo `k`, tale che `∀ n ∈ A, 0 \leq n \leq K`.
 
-### Pseudocodice
+Esistono due versioni del counting sort: una **instabile** che sovrascrive i dati da ordinare e una **stabile** che invece li sposta.
+
+## Funzionamento
+
+**TODO! Guarda il pseudocodice nel frattempo, è commentato!**
+
+## Costo computazionale
+
+`2 + O(k) + O(n) + O(k + n) -> O(k + n)`
+
+Notiamo che se `k` è costante, l'algoritmo è `O(n)`, estremamente efficiente.
+
+## Pseudocodice
 
 ```python
 def counting_sort(lista: typing.List[int], k: int):
+    """Ordina in-place una lista con il counting sort."""
     # Trovo la dimensione della lista
     dim = len(lista)
     # Creo l'indice dei numeri, in modo che sia lungo k e pieno di 0
@@ -24,22 +37,9 @@ def counting_sort(lista: typing.List[int], k: int):
         for _ in range(val):
             indice[count] = pos
             count += 1
-```
 
-### Costo computazionale
-
-`2 + O(k) + O(n) + O(k + n) -> O(k + n)`
-
-Notiamo che se `k` è costante, l'algoritmo è `O(n)`, estremamente efficiente.
-
-# Stabilizzando il sort
-
-Vogliamo realizzare un counting sort che però sposti gli elementi invece che sovrascriverli.
-
-### Pseudocodice
-
-```python
-def counting_sorted(lista: typing.List, k):
+def stable_counting_sorted(lista: typing.List, k):
+    """Ordina stabilmente una lista con il counting sort stabile, e restituiscila."""
     # Trovo la dimensione della lista
     dim = len(lista)
     # Creo l'indice dei numeri, in modo che sia lungo k e pieno di 0

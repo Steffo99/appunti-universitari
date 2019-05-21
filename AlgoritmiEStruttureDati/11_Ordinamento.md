@@ -5,6 +5,11 @@ Un problema molto frequente nell'informatica consiste nell'**ordinare efficiente
 Esistono [tantissimi](https://it.wikipedia.org/wiki/Algoritmo_di_ordinamento) algoritmi per effettuare l'ordinamento.  
 L'**efficienza** di ciascuno **varia** di caso in caso: alcuni sono estremamente efficienti se quasi tutti i numeri sono già nell'ordine giusto; altri, invece, potrebbero impiegare tantissimo tempo.
 
+In termini matematici, abbiamo:
+
+- **Input:** A[n]
+- **Output:** B, ∀ i < n, A[i] ≤ A[i+1]
+
 ## Ordinamento tramite confronto
 
 L'ordinamento "tradizionale" è detto _ordinamento tramite confronto_: funziona sempre, e **non ha altri modi di ottenere informazioni** se non con l'operazione logica di confronto tra i dati.
@@ -26,6 +31,7 @@ Algoritmi che effettuano l'ordinamento tramite confronto sono:
 - _Merge sort_
 - _Insertion sort_
 - _Quick sort_
+- _Heap sort_
 - E tanti, tanti altri!
 
 ## Ordinamento con altri mezzi

@@ -1,7 +1,5 @@
 # Un caso particolare del Master Theorem
 
-
-
 Se
 ```latex
 T(n) =\\
@@ -24,5 +22,5 @@ O(n^d log n) \qquad d = log_b a
 O(n^{log_b e}) \qquad d < log_b a
 ```
 
-In pratica, se il costo dominante è quello della parte "fissa" dell'algoritmo, esso sarà `O(n^d)`, mentre se il costo dominante è quello delle chiamate ricorsive, esso sarà `O(n^{log_b e})`.  
-Se nessuno dei due è dominante... si dividono circa in parti uguali, creando un costo di `O(n^d log n)`.
+> In pratica, se il costo dominante è quello della parte "fissa" dell'algoritmo, esso sarà `O(n^d)`, mentre se il costo dominante è quello delle chiamate ricorsive, esso sarà `O(n^{log_b e})`.  
+> Se nessuno dei due è dominante... si dividono circa in parti uguali, creando un costo di `O(n^d log n)`.
