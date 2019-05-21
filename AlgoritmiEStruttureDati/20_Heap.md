@@ -11,6 +11,7 @@ class Heap:
     def insert(self, value): "Inserisci un nuovo valore nell'albero."
     def _heapify_children(self, i): "Ripristina le proprietà dell'heap per il nodo all'indice specificato e i suoi figli."
     def pop(self): "Restituisce la chiave con il valore minimo, e la elimina."
+    def from_list(l): "Crea un heap da una lista."
 ```
 
 #### Proprietà strutturale
@@ -105,4 +106,33 @@ class Heap:
         except IndexError:
             # La foglia non ha figli: ho finito!
             return
+
+    def pop(self):
+        """Restituisce la chiave con il valore minimo, e la elimina.
+        
+        Costo:
+            O(log n)"""
+        # Mi salvo il valore della radice
+        value = self.array[0]
+        # Sostituisco la radice con l'ultima foglia a destra
+        self.array[0], self.array[self.next_value] = self.array[self.next_value], self.array[0]
+        ### Non bisognerebbe eliminare la foglia...?
+        # Riordino l'heap
+        self._heapify_children(0)
+        return value
+
+
+    @staticmethod
+    def from_list(l):
+        """Crea un heap da una lista.
+        
+        Costo:
+            O(n log n), ma si può abbassare"""
+        heap = Heap(len(l)))
+        heap.array = Array.from_list(l)  # Pseudocodice
+        heap.next_value = len(l)
+        # Cominciamo a riordinare l'heap dalla fine, in modo che rispetti le proprietà
+        for index in range(self.next_value, 0, -1):
+            self._heapify_children(index)
+
 ```
