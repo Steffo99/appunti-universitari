@@ -1,6 +1,6 @@
 # Merge sort
 
-È una soluzione **ricorsiva** all'ordinamento per confronto.
+Il _merge sort_ è una soluzione **ricorsiva** all'ordinamento per confronto.
 
 ## Funzionamento
 

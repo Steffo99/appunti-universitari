@@ -2,13 +2,6 @@
 
 ## Sequenza lineare
 
-### Array
-
-Una sequenza di dati **di lunghezza conosciuta**, tutti dello stesso tipo e di una dimensione fissa, immagazzinata in **blocchi di memoria contigui**.
-
-Posso accedere ai vari blocchi di memoria conoscendo la loro _posizione relativa_ al primo elemento.
-
-Effettuo, dunque, un _accesso diretto_, perchè posso calcolare la posizione del blocco in `O(1)`.
 
 ### Liste
 
