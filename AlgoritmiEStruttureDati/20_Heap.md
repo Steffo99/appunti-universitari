@@ -132,7 +132,7 @@ class Heap:
         heap.array = Array.from_list(l)  # Pseudocodice
         heap.next_value = len(l)
         # Cominciamo a riordinare l'heap dalla fine, in modo che rispetti le proprietà
-        for index in range(self.next_value, 0, -1):
-            self._heapify_children(index)
+        for index in range(heap.next_value, 0, -1):
+            heap._heapify_children(index)
 
 ```
