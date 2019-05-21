@@ -34,3 +34,12 @@ Implementando la coda con priorità con una lista ordinata...
 - `minimum()` costa `O(1)`
 - `pop()` costa `O(1)`
 - `decrease_priority_for()` costa `O(n)`
+
+## Implementazione con heap
+
+Implementando la coda con priorità con un heap...
+
+- `insert()` costa `O(1)`
+- `minimum()` costa `O(log n)`
+- `pop()` costa `O(log n)`
+- `decrease_priority_for()` costa `O(log n)`
