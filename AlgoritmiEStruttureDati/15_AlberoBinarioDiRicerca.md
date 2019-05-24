@@ -1,3 +1,5 @@
+> TODO: Reformat this.
+
 # Albero binario di ricerca
 
 ## Proprietà

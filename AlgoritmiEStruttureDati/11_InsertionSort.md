@@ -1,6 +1,7 @@
 # Insertion sort
 
-L'_insertion sort_ è una soluzione **iterativa** all'ordinamento per confronto.
+L'_insertion sort_ è
+ una soluzione **iterativa** all'ordinamento per confronto.
 
 ## Funzionamento
 
