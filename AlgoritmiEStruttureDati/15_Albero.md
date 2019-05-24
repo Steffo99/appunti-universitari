@@ -1,38 +1,64 @@
-> TODO: Reformat this.
-
 # Albero (Tree)
 
-Un _albero radicato_ è una struttura per organizzare i dati in una struttura non-lineare.
+Un _albero radicato_ è una struttura dati di **natura ricorsiva** che organizza i dati in maniera **non-lineare**.
 
-Ogni elemento dell'albero ha un genitore, ma può avere tanti figli!
+## Proprietà
 
-I nodi superiori al padre vengono chiamati _antenati_, mentre quelli inferiori ai figli vengono chiamati _discendenti_.
+- Ogni nodo dell'albero ha un **unico genitore**: `∀ (padre, figlio), (padre' figlio) ∈ E \implies padre = padre'`
+- Ogni nodo dell'albero può avere **un numero qualsiasi di figli**.
+<!---->
+- I **nodi superiori al padre** vengono chiamati _antenati_.
+- I **nodi inferiori ai figli** vengono chiamati _discendenti_.
+<!---->
+- Nodi **senza padre** sono detti _radice_: `\notexists (padre, radice) ∈ E`
+- Nodi **con padre e figli** sono detti _rami_ o interni.
+- Nodi **senza figli** sono detti _foglie_.
+<!---->
+- La **distanza** tra il nodo radice e i suoi discendenti è detta _livello_:
+  - I figli immediati sono di livello 1.
+  - I "nipoti" (figli dei figli) sono di livello 2.
+  - I figli dei nipoti sono livello 3.
+  - E così via.
+- Il **livello massimo** all'interno di un albero è detto _altezza_, _profondità_ oppure _h_, ed è sempre `1 ≤ h ≤ n-1`.
+<!---->
+- Un albero ha sempre `n-1` archi.
 
-Un nodo che non ha padre è detto _radice_, un nodo che non ha figli è detto _foglia_, un nodo che ha padre e figli è un _nodo interno_.
+## Alberi particolari
 
-`∀ (padre, figlio), (padre' figlio) ∈ E \implies padre = padre'`
+### Alberi `d`-ari
 
-`\notexists (padre, radice) ∈ E`
+Un albero _`d`-ario_ è un particolare tipo di albero che **limita il numero massimo di figli di un nodo** a `d`.
 
-Hanno una **natura ricorsiva**: un albero qualunque posso vederlo come una radice con tanti alberi come figli!
+> Un albero _binario_ può avere **massimo 2 figli** per ogni nodo; un albero _ternario_ ne può avere **3**; un albero _`17`-ario_ ne potrà avere **17**
 
-La **distanza** tra il nodo radice e i suoi discendenti è detta _livello_: i figli immediati sono livello 1, i loro figli livello 2, etc.; il livello massimo è detto _altezza_, _profondità_ oppure _livello h_, ed è `1 ≤ h ≤ n-1`.
+#### Alberi completi
 
-Un albero ha sempre `n-1` archi.
+Un albero `d`-ario si dice _completo_ se **tutti i nodi hanno 0 o `d` figli**, e mai una numero in mezzo.
 
-Gli alberi possono essere _`d`-ari_: ogni nodo di questi alberi può avere massimo `d` figli; si dicono _completi_ se tutti i nodi hanno 0 o `d` figli, e mai una numero in mezzo.
+#### Alberi bilanciati
 
-E' _bilanciato_ se le foglie sono quasi tutte alla stessa altezza.
+Un albero `d`-ario si dice _bilanciato_ se **tutti i livelli eccetto l'ultimo** hanno il numero massimo di figli.
 
-### Albero binario completo perfettamente bilanciato
+#### Alberi perfettamente bilanciati
 
-Ha sempre `2^h` foglie e `2^{h+1}-1` (`\sum_i=0^n 2^i`) nodi; è dimostrabile per induzione!
+Un albero `d`-ario si dice _perfettamente bilanciato_ se **tutti i livelli incluso l'ultimo** hanno il numero massimo di figli.
 
-L'altezza è `Θ(log n)`.
+##### Particolarità degli alberi binari perfettamente bilanciati
 
-### Ordine di visita
+Si può dimostrare per induzione che:
+- Hanno sempre `2^h` foglie.
+- Hanno sempre `2^{h+1}-1` (`\sum_i=0^n 2^i`) nodi.
+- L'altezza è in `Θ(log n)`.
 
-#### Depth first search (DFS)
+## Ordine di visita
+
+Possiamo visitare i nodi di un albero in **tanti ordini diversi**, in base all'uso che vogliamo fare dei valori dei nodi.
+
+### Depth-First Search (DFS)
+
+La _depth-first search_
+
+>TODO!
 
 ##### Previsita (preorder)
 

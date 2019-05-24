@@ -1,17 +1,33 @@
 # Counting sort
 
-Il _counting sort_ è un approccio diverso all'ordinamento. Infatti, **non usa il confronto**, ma **conta le ripetizioni** e ordina in base a quelle.
+Il _counting sort_ è un approccio diverso all'ordinamento: **non usa il confronto**!
 
-Ha lo svantaggio però di poter essere utilizzato solo su sequenze di numeri interi, e solo se **siamo a conoscenza del minimo e del massimo** dei numeri contenuti nell'array.  
+## Requisiti
 
-Consideriamo il minimo come zero.  
-L'input allora sarà una sequenza di interi `A`, e il valore del massimo `k`, tale che `∀ n ∈ A, 0 \leq n \leq K`.
+Il counting sort può essere utilizzato solo su **sequenze di numeri interi**, e solo se **siamo a conoscenza del minimo e del massimo** dei numeri contenuti nell'array, ed essi non sono troppo distanti uno dall'altro.  
+(La memoria occupata dal counting sort aumenta linearmente con la differenza tra minimo e massimo!)
 
-Esistono due versioni del counting sort: una **instabile** che sovrascrive i dati da ordinare e una **stabile** che invece li sposta.
+Per semplicità, consideriamo il **minimo `0`**.  
+L'input allora sarà una sequenza di interi `A`, e il valore del **massimo `k`**, tale che `∀ n ∈ A, 0 \leq n \leq K`.
 
 ## Funzionamento
 
-**TODO! Guarda il pseudocodice nel frattempo, è commentato!**
+Il counting sort **conta le ripetizioni** delle chiavi nella sequenza originale e in seguito **sovrascrive i valori** della sequenza con i valori ordinati ripetuti il numero di volte che sono stati individuati nella sequenza.
+
+> ```
+> 1 4 5 3 4 1 4 2 5 1
+> ```
+>
+> L'`1` appare 3 volte, il `2` 1 volta, il `3` 1 volta, il `4` tre volte e il `5` due volte.
+>
+> La sequenza viene quindi così sovrascritta:
+> ```
+> 1 1 1 3 4 1 4 2 5 1  # Sovrascriviamo la sequenza con 1 ripetuto 3 volte
+> 1 1 1 2 3 4 4 4 5 1  # Sovrascriviamo la sequenza con 2, 3, 4 ripetuti rispettivamente 1 1 e 3 volte
+> 1 1 1 2 3 4 4 4 5 5  # Sovrascriviamo la sequenza con 5 ripetuto 2 volte: abbiamo finito!
+> ```  
+
+Esiste anche una **versione stabile** del counting sort che, invece che sovrascrivere, **sposta i valori**, mantenendo le informazioni aggiuntive nel caso invece che interi fossero altri tipi di dati.
 
 ## Costo computazionale
 
