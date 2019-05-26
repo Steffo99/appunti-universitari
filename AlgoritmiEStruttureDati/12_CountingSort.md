@@ -31,19 +31,32 @@ Esiste anche una **versione stabile** del counting sort che, invece che sovrascr
 
 ## Costo computazionale
 
+| Upper bound | Lower bound | Tight bound |
+|-------------|-------------|-------------|
+| `O(k + n)` | `Ω(k + n)` | **`θ(k + n)`** |
+
+L'algoritmo è composto da quattro parti:
+- Ricerca del minimo e massimo (in `θ(n)`)
+- Inizializzazione dell'indice (in `θ(k)`)
+- Conteggio dei numeri (in `θ(n)`)
+- Sovrascrittura dei numeri (in `θ(k + n)`)
+
 `2 + O(k) + O(n) + O(k + n) -> O(k + n)`
 
-Notiamo che se `k` è costante, l'algoritmo è `O(n)`, estremamente efficiente.
+Notiamo che `k` è costante, l'algoritmo è `O(n)`, estremamente efficiente.
 
 ## Pseudocodice
 
 ```python
-def counting_sort(lista: typing.List[int], k: int):
+def counting_sort(lista: typing.List[int]):
     """Ordina in-place una lista con il counting sort."""
     # Trovo la dimensione della lista
     dim = len(lista)
+    # Trovo il massimo e il minimo all'interno della lista
+    minimo = min(lista)
+    massimo = max(lista)
     # Creo l'indice dei numeri, in modo che sia lungo k e pieno di 0
-    indice = [0 for _ in range(dim)]
+    indice = [0 for _ in range(minimo, massimo+1)]
     # Conto i numeri presenti, scorrendo su lista e aggiungendo 1 al numero corrispondente
     for i in range(dim):
         indice[lista[i]] += 1
@@ -54,12 +67,15 @@ def counting_sort(lista: typing.List[int], k: int):
             indice[count] = pos
             count += 1
 
-def stable_counting_sorted(lista: typing.List, k):
+def stable_counting_sorted(lista: typing.List[int], k: int) -> typing.List[int]:
     """Ordina stabilmente una lista con il counting sort stabile, e restituiscila."""
     # Trovo la dimensione della lista
     dim = len(lista)
+    # Trovo il massimo e il minimo all'interno della lista
+    minimo = min(lista)
+    massimo = max(lista)
     # Creo l'indice dei numeri, in modo che sia lungo k e pieno di 0
-    indice = [0 for _ in range(dim)]
+    indice = [0 for _ in range(minimo, massimo+1)]
     # Conto i numeri presenti, scorrendo su lista e aggiungendo 1 al numero corrispondente
     for i in range(dim):
         indice[lista[i]] += 1

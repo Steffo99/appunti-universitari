@@ -11,7 +11,13 @@ Poi, aggiungo uno alla volta i numeri della parte non ordinata a quella ordinata
 
 ## Costo computazionale
 
-Nel caso peggiore, dobbiamo eseguire `1+2+3+4+5+… = \frac{(n-1)(n)}{2}` confronti: è un tight bound - `Θ(n)`!
+| Upper bound | Lower bound | Tight bound |
+|-------------|-------------|-------------|
+| `O(n²)` | `Ω(n)` | - |
+
+Nel _caso migliore_ (**lista già ordinata**), il numero da inserire è già nella posizione giusta, quindi non devo effettuare altri confronti oltre il primo, rendendo il lower bound dell'algoritmo `Ω(n)`.
+
+Nel _caso peggiore_ (**lista nell'ordine inverso**), dobbiamo confrontare il numero da inserire con tutti gli altri nella parte ordinata: dobbiamo allora eseguire `1+2+3+4+5+… = \frac{(n-1)(n)}{2}` confronti; ciò significa che l'upper bound è `O(n²)`!
 
 ## Pseudocodice
 
@@ -30,3 +36,7 @@ def insertion_sorted(lista):
             # Diminuisco il separatore di 1
             divisore_magg -= 1
 ```
+
+## Visualizzazione
+
+[visualgo.net](https://visualgo.net/bn/sorting)

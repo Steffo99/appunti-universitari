@@ -129,3 +129,7 @@ Anche per il tight bound abbiamo una notazione equivalente a O grande e Omega gr
 Diciamo che `f(n) ∈ θ(g(n))` se e solo se `∃ c_1, c_2 > 0, n_0 ≥ 0 : ∀ n ≥ n_0, c_1 * g(n) ≤ f(n) ≤ c_2 * g(n)`.
 
 Ha la particolarità che non valgono tutte le proprietà degli altri due: va usata quindi con cautela!
+
+## Risorse utili
+
+[khanacademy.org](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-big-theta-notation)

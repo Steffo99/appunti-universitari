@@ -1,4 +1,4 @@
-# Albero (Tree)
+# Albero radicato
 
 Un _albero radicato_ è una struttura dati di **natura ricorsiva** che organizza i dati in maniera **non-lineare**.
 
@@ -56,27 +56,23 @@ Possiamo visitare i nodi di un albero in **tanti ordini diversi**, in base all'u
 
 ### Depth-First Search (DFS)
 
-La _depth-first search_
+La _depth-first search_ visita **tutti i sottoalberi di un figlio** prima di passare ad un altro; essa sfrutta la natura ricorsiva degli alberi.
 
->TODO!
+#### DFS previsita (preorder)
 
-##### Previsita (preorder)
+La _DFS previsita_ visita la **radice per prima**, poi tutti i sottoalberi formati dai figli uno dopo l'altro.
 
-Visita prima la radice, poi tutti i sotto alberi uno dopo l'altro.
-
-1. **V:** Radice
-2. Preorder(figlio1)
-3. Preorder(figlio2)
-4. ...
+> 1. __Visita radice__
+> 2. DFS_preorder(figlio1)
+> 3. DFS_preorder(figlio2)
 
 ##### Postvisita (postorder)
 
 Visita gli alberi, poi la radice.
 
-1. Preorder(figlio1)
-2. Preorder(figlio2)
-3. ...
-4. **V:** Radice
+> 1. Preorder(figlio1)
+> 2. Preorder(figlio2)
+> 3. Visita: Radice
 
 ##### Invisita (inorder)
 

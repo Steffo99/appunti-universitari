@@ -55,20 +55,26 @@ Quando **rimangono solo le sentinelle** significa che abbiamo aggiunto tutti gli
 
 ## Costo computazionale
 
+| Upper bound | Lower bound | Tight bound |
+|-------------|-------------|-------------|
+| `O(n log n)` | `Ω(n log n)` | **`θ(n log n)`** |
+
+Il merge sort è un algoritmo ricorsivo con un **caso base in tempo costante** e che **richiama sè stesso 2 volte**.
+
 ```latex
 T(n) =\\
 \\
-Θ(1) \qquad n=1
+Θ(1) \qquad n=1\\
 2 T(\frac{n}{2}) + Θ(n) \qquad n \neq 1
 ```
 
-Applicando il Master Theorem, otteniamo:
+Applicando il **caso particolare del Master Theorem**, otteniamo:
 
 ```latex
 T(n) =\\
 \\
-Θ(1) \qquad n=1
-O(n log n) \qquad n \neq 1
+Θ(1) \qquad n=1\\
+Θ(n log n) \qquad n \neq 1
 ```
 
 ## Pseudocodice
@@ -88,3 +94,9 @@ def merge_sorted(part):
     # Combina
     return merge(sort_a, sort_b)
 ```
+
+## Visualizzazione
+
+[hackerearth.com](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/)
+
+[visualgo.net](https://visualgo.net/bn/sorting) (Nota: visualizza solo la fase _Unisci_ del sort)
