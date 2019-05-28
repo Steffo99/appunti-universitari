@@ -6,22 +6,16 @@ Una _lista_ è una sequenza di dati immagazzinata in **blocchi di memoria qualsi
 
 Ogni dato ha un **riferimento** alla collocazione di memoria **successiva** (un puntatore): insieme, sono detti un _nodo_.
 
-Un _nodo_ di una lista è così strutturato:
-
-```python
-class LinkedList:
-    def __init__(self, value, next: typing.Optional[Node] = None):
-        self.value = value
-        self.next: typing.Optional[Node] = next
-```
-
 E' di **natura ricorsiva**: qualsiasi nodo di una lista può essere visto come inizio della lista con sè stesso e i suoi successivi.
 
 ## Metodi
 
 ```python
 class LinkedList:
-    def __init__(self): ...
+    def __init__(self, value, next: typing.Optional[Node] = None):
+        self.value = value
+        self.next: typing.Optional[Node] = next
+
     def is_empty(self) -> bool: "Restituisce se la lista è vuota o no."
     def is_full(self) -> bool: "Restituisce se la lista è piena o no.
     def append(self, value): "Aggiunge un nuovo elemento in testa alla lista."

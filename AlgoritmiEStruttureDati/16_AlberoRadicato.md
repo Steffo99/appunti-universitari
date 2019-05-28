@@ -15,10 +15,10 @@ Un _albero radicato_ è una struttura dati di **natura ricorsiva** che organizza
 - Nodi **senza figli** sono detti _foglie_.
 <!---->
 - La **distanza** tra il nodo radice e i suoi discendenti è detta _livello_:
-  - I figli immediati sono di livello 1.
-  - I "nipoti" (figli dei figli) sono di livello 2.
-  - I figli dei nipoti sono livello 3.
-  - E così via.
+    - I figli immediati sono di livello 1.
+    - I "nipoti" (figli dei figli) sono di livello 2.
+    - I figli dei nipoti sono livello 3.
+    - E così via.
 - Il **livello massimo** all'interno di un albero è detto _altezza_, _profondità_ oppure _h_, ed è sempre `1 ≤ h ≤ n-1`.
 <!---->
 - Un albero ha sempre `n-1` archi.
@@ -50,20 +50,15 @@ Si può dimostrare per induzione che:
 - Hanno sempre `2^{h+1}-1` (`\sum_i=0^n 2^i`) nodi.
 - L'altezza è in `Θ(log n)`.
 
-## Ordine di visita
+## Implementazione degli alberi
 
-Possiamo visitare i nodi di un albero in **tanti ordini diversi**, in base all'uso che vogliamo fare dei valori dei nodi.
+Possiamo scegliere se usare una rappresentazione con array o con nodi e puntatori: ognuna ha vantaggi e svantaggi diversi.
 
-
-### Implementazione degli alberi
-
-Anche qui possiamo scegliere se usare una rappresentazione con array o con nodi e puntatori.
-
-#### Vettore
+### Implementazione tramite array
 
 E' suggerito se l'albero è regolare; più è simile a un albero d-ario completo, meglio è.
 
-#### Nodi e puntatori
+### Implementazione tramite nodi e puntatori
 
 Più adatta ad alberi irregolari.
 

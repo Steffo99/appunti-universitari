@@ -4,7 +4,7 @@ Un _array_ è sequenza di dati di **lunghezza conosciuta**, tutti dello **stesso
 
 ## Proprietà
 
-Posso accedere ai vari blocchi di memoria conoscendo la loro **posizione relativa al primo** elemento.
+- E' possibile accedere a tutti i blocchi di memoria conoscendo la loro **posizione relativa al primo** elemento.
 
 ## Metodi
 
