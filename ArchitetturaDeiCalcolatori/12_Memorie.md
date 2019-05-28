@@ -15,6 +15,14 @@ In ordine di velocità, sono:
 
 ## Cache
 
+### Cache L1
+
+Piccola, ma miss penalty bassa
+
+### Cache L2
+
+Molto grande, ma miss penalty alta
+
 ### Direct mapping
 
 Una cache _direct mapped_ associa a ogni indirizzo di RAM un **indice** uguale agli **N bit meno significativi** dell'indirizzo dell'inferiore, e un **tag** uguale agli **N bit più significativi**.
@@ -94,3 +102,31 @@ E' possibile utilizzare un **write buffer** invece che fare attendere il tempo d
 - Il buffer potrebbe riempirsi, neganode i vantaggi
 - Il buffer utilizza memoria che forse sarebbe stata più utile come cache
 ```
+
+### Fully associative
+
+Ogni dato può essere messo in qualunque indirizzo della cache.
+
+Richiede che l'indirizzo di origine venga salvato assieme al dato, e tanti comparatori.
+
+### Set associative
+
+Divido tutti i blocchi di cache in vie.
+
+Ogni via può contenere `n` dati.
+
+Un set è l'insieme dei dati che hanno lo stesso index ma sono in vie diverse.
+
+Ogni dato può essere messo in qualunque indirizzo del set a cui appartiene.
+
+Identifico il numero di set di appartenenza facendo `indirizzo % numerodiset`.
+
+Una cache `1`-way Set Associative è una cache Direct Mapped, mentre una cache `numeroentries`-way Set Associative è una cache Fully Associative.
+
+Quando non c'è spazio in un set, rimpiazzo un dato secondo la politica **Least Recently Used**, rimuovendo il dato usato meno recentemente. Posso usare anche la politica **Random**, se ho un'alta associatività.
+
+#### Performance
+
+Più una cache è associativa, più il miss rate sarà ridotto, ma l'associatività richiede un maggior numero di comparatori e potenzialmente più ritardi nella restituzione del dato.
+
+Inoltre, la percentuale di miss non diminuisce linearmente con il numero di vie: dopo un certo numero di vie, i guadagni sono molto ridotti.
