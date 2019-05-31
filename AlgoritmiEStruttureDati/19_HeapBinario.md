@@ -1,6 +1,16 @@
 # Heap binario
 
-L'**heap binario** (o semplicemente **heap**) è un albero binario quasi completo bilanciato a sinistra.
+L'_heap binario_ è un **albero binario bilanciato a sinistra**.
+
+## Proprietà
+
+- _Proprietà strutturale_:
+    - L'albero è **perfettamente bilanciato** in tutti i livelli tranne l'ultimo
+    - Nell'ultimo livello, le foglie occupano le **posizioni più a sinistra** possibili
+- _Proprietà di ordinamento_:
+    - La chiave di un qualsiasi nodo è **più piccola** di tutte quelle dei nodi **del suo sottoalbero**
+
+## Metodi
 
 ```python
 class Heap:
@@ -14,23 +24,13 @@ class Heap:
     def from_list(l): "Crea un heap da una lista."
 ```
 
-#### Proprietà strutturale
-
-L'albero è completo tranne per l'ultimo livello, che ha solo alcune foglie ammassate a sinistra.
-
-Questa è detta la **proprietà strutturale** dell'heap.
-
-#### Proprietà di ordinamento
-
-La chiave in un qualsiasi nodo deve essere più piccola di tutte quelle nel suo sottoalbero.
-
-Questa è detta la **proprietà di ordinamento** dell'heap.
-
 ## Implementazione con un array
 
-Possiamo implementare l'albero utilizzando un array con le chiavi dell'albero memorizzate nell'ordine breadth-first.
+Possiamo implementare l'albero utilizzando un array con le chiavi dell'albero memorizzate nell'ordine _breadth-first_.
 
 L'indice del figlio sinistro può essere trovato a `2i+1`, mentre l'indice del figlio sinistro può essere trovato a `2i+2`; il genitore è a `i//2-1`.
+
+### Pseudocodice
 
 ```python
 class Heap:
@@ -121,7 +121,6 @@ class Heap:
         self._heapify_children(0)
         return value
 
-
     @staticmethod
     def from_list(l):
         """Crea un heap da una lista.
@@ -134,5 +133,4 @@ class Heap:
         # Cominciamo a riordinare l'heap dalla fine, in modo che rispetti le proprietà
         for index in range(heap.next_value, 0, -1):
             heap._heapify_children(index)
-
 ```
