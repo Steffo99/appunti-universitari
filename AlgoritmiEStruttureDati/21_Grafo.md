@@ -57,9 +57,17 @@ Un grafo si dice _fortemente connesso_ se l'insieme `V` coincide con l'insieme d
 
 Inoltre, se creiamo un nuovo grafo, in cui **ogni nodo rappresenta una componente fortemente connessa** del nostro grafo iniziale, **otteniamo un DAG**, perchè tutti i cicli sono stati integrati nella componente.
 
-### Trasposto
+### Trasposto di un grafo
 
 Il _trasposto_ di un **grafo diretto** `G` è il grafo stesso con gli archi che però vanno nella **direzione opposta**.
+
+### Grafo pesato
+
+Un _grafo pesato_ è un particolare grafo che associa a ciascun arco un **costo** per attraversarlo.
+
+#### Costi negativi
+
+I costi possono anche essere negativi: rappresenteranno allora un **guadagno** ottenuto attraversando il nodo.
 
 ## Implementazione tramite matrice di adiacenza
 

@@ -14,9 +14,11 @@ In termini matematici, abbiamo:
 
 L'ordinamento "tradizionale" è detto _ordinamento tramite confronto_: funziona sempre, e **non ha altri modi di ottenere informazioni** se non con l'operazione logica di confronto tra i dati.
 
+### Limiti
+
 E' un problema risolto: è dimostrabile che il suo **lower bound** è **`Ω(n log n)`**; possiamo quindi dire che qualsiasi algoritmo di ordinamento è in `Ω(n log n)`, e se riusciamo a trovare un algoritmo di ordinamento in `O(n log n)` siamo riusciti a raggiungere il massimo dell'efficienza.
 
-### Dimostrazione
+#### Dimostrazione
 
 Consideriamo **tutte le possibili permutazioni** della sequenza da ordinare: sono `n!`.
 
