@@ -38,6 +38,14 @@ Alla fine della visita di un nodo invece mettiamo il valore di `clock` in `post[
 
 Se un **grafo non diretto** contiene degli **archi Back**, allora esso **conterrà un ciclo**.
 
+#### DFS nel grafo trasposto
+
+Se effettuo una DFS sul trasposto di un grafo, posso **scoprire i nodi che hanno un cammino verso l'origine**.
+
+#### DFS nella componente fortemente connessa
+
+Se effettuo una DFS in una componente fortemente connessa e nella sua trasposta, il **`post` della trasposta sarà sempre minore** del `post` della componente originale.
+
 ### Costo computazionale
 
 - Tempo: `O(nodi + archi)`

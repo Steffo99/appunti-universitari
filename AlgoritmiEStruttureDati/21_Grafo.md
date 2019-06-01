@@ -42,6 +42,25 @@ Su di esso possiamo effettuare un ordinamento, detto _linearizzazione_, tra i no
 
 I primi elementi dei DAG sono detti _Source_ (_Sorgente_), mentre gli ultimi sono detti _Sink_ (_Pozzo_).
 
+### Grafo fortemente connesso
+
+Un insieme di nodi `V` di un **grafo diretto** `G` si dice una _componente fortemente connessa_ se:
+
+1. Per ogni coppia di nodi `∀ u, v ∈ V' : ∃ un cammino u->v in G'`
+2. Massimale (non può diventare più grande)
+
+> Praticamente una componente fortemente connessa è un gruppo di nodi tra i quali si può viaggiare liberamente da e a qualsiasi nodo al suo interno.
+
+Un grafo si dice _fortemente connesso_ se l'insieme `V` coincide con l'insieme dei nodi del grafo `G`.
+
+> Se partendo da qualsiasi nodo di un grafo riesco ad arrivare a qualsiasi altro nodo, allora il grafo è fortemente connesso.
+
+Inoltre, se creiamo un nuovo grafo, in cui **ogni nodo rappresenta una componente fortemente connessa** del nostro grafo iniziale, **otteniamo un DAG**, perchè tutti i cicli sono stati integrati nella componente.
+
+### Trasposto
+
+Il _trasposto_ di un **grafo diretto** `G` è il grafo stesso con gli archi che però vanno nella **direzione opposta**.
+
 ## Implementazione tramite matrice di adiacenza
 
 Possiamo implementare un grafo creando una **matrice di `bool` di dimensione `n * n`** in cui le **caselle collegate sono vere** e le caselle non collegate sono false.
@@ -72,6 +91,8 @@ Possiamo implementare un grafo creando una **matrice di `bool` di dimensione `n 
 
 Le matrici di adiacenza portano alla realizzazione di algoritmi molto veloci: verificare l'esistenza di un arco è in `O(1)`!
 
+Abbiamo però penalità significative quando vogliamo effettuare operazioni sugli archi: ad esempio, trovare il trasposto di un grafo implementato con una matrice di adiacenza è in `O(nodi²)`.
+
 #### Memoria
 
 E' poco efficiente in quanto a memoria: l'upper bound è in `O(n^2)`. 
@@ -94,45 +115,8 @@ Un'alternativa alla matrice di adiacenza è quella di creare un'**array di liste
 
 Utilizzando le liste di adiacenza, il tempo richiesto per verificare l'esistenza di un arco sale a `O(max-out-degree)`.
 
+E' efficace però quando il problema che vogliamo risolvere riguarda operazioni su archi: trovare la trasposta è in `O(archi)`.
+
 #### Memoria 
 
 La memoria richiesta dalle liste di adiacenza è minore di quella delle matrici: l'upper bound è in `O(nodi + archi)`.
-
->TODO
-
-## Componenti fortemente connesse (in grafi diretti)
-
-1. Per ogni coppia di nodi `∀ u, v ∈ V' : ∃ un cammino u->v in G'`
-2. Massimale (non può diventare più grande)
-
-Se un grafo è **una sola** _componente fortemente connessa_ allora si dice che l'intero grafo è _fortemente connesso_.
-
-> Praticamente una componente fortemente connessa è un gruppo di nodi tra i quali si può viaggiare liberamente da e a qualsiasi nodo al suo interno.
-
-## Trasposto
-
-In un grafo diretto, il **trasposto** di un grafo G è G con gli archi che vanno nella direzione opposta.
-
-Facendo una **DFS nel trasposto** scopro i nodi che hanno un cammino verso di me.
-
-Ogni albero della visita in profondità della trasposta è una _componente fortemente connessa_.
-
-## Grafo delle componenti fortemente connesse
-
-Il grafo delle componenti fortemente connesse è sempre un **DAG**, in quanto se ci fossero dei cicli, allora le componenti con il ciclo si unirebbero.
-
-## Relazioni tra `post`
-
-In una componente fortemente connessa, il `post` massimo è sempre maggiore del `post` della componente trasposta.
-
-## Costo algoritmo
-
-1. DFS(G) -> `O(nodi+archi)`
-2. Calcolo G^T -> `O(archi)` con liste di adiacenza, `O(n^2)` con matrice
-3. DFS(G^T) -> `O(nodi+archi)`
-
-Risultato: `O(nodi+archi)` o `O(n^2)`
-
-## Breadth-first search 
-
-Possiamo usare una **Breadth-first search** per determinare i nodi raggiungibili con un cammino lungo `X`, oppure per determinare tutti i cammini più brevi per raggiungere un certo nodo nel mio grafo.
