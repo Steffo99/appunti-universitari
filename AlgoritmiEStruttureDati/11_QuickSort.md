@@ -42,9 +42,9 @@ Osserviamo come si formi una partizione con **zero elementi** e una con tre.
 
 ## Costo computazionale
 
-| Upper bound | Lower bound | Tight bound |
-|-------------|-------------|-------------|
-| `O(n²)` | `Ω(n log n)` | - |
+| Categoria | Upper bound | Lower bound | Tight bound |
+|-----------|-------------|-------------|-------------|
+| Tempo | `O(n²)` | `Ω(n log n)` | - |
 
 Il costo della funzione è dato dalla somma del costo per **dividere in due partizioni** con il costo per realizzare il **Quick sort delle due sottopartizioni**
 

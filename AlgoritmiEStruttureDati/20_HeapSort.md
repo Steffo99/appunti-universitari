@@ -10,4 +10,8 @@ Una volta applicate le proprietà dell'heap, chiamiamo una versione particolare 
 
 ## Costo computazionale
 
-`O(n log n)`
+| Categoria | Upper bound | Lower bound | Tight bound |
+|-----------|-------------|-------------|-------------|
+| Tempo | `O(n log n)` | `Ω(n log n)` | **`θ(n log n)`** |
+
+

@@ -15,18 +15,11 @@ Una _pila_ è una struttura dati contenente **valori omogenei**.
 ```python
 class Stack:
     def __init__(self): "Crea una nuova pila."
-    def is_empty(self): "Restituisce vero se la pila è vuota."
+    def is_empty(self) -> bool: "Restituisce vero se la pila è vuota."
     def push(self, data): "Aggiunge un dato alla pila."
-    def top(self): "Restituisce il primo dato della pila."
-    def pop(self): "Restituisce il primo dato della pila e lo rimuove."
+    def top(self) -> ...: "Restituisce il primo dato della pila."
+    def pop(self) -> ...: "Restituisce il primo dato della pila e lo rimuove."
 ```
-
-Ha i seguenti metodi:
-- nuovaPila()
-- eVuota() -> `bool`
-- push(`T dato`)
-- top()
-- pop()
 
 ## Implementazione tramite lista
 
@@ -35,3 +28,7 @@ Utilizzando una lista possiamo realizzare una pila!
 La direzione dei puntatori sarà dall'ultimo al primo, che non punterà più a nessuno.
 
 Il costo di tutti i metodi è `Θ(1)`!
+
+## Visualizzazione
+
+[visualgo.net](https://visualgo.net/en/list)

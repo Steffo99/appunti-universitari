@@ -134,3 +134,7 @@ class Heap:
         for index in range(heap.next_value, 0, -1):
             heap._heapify_children(index)
 ```
+
+## Visualizzazione
+
+[visualgo.net](https://visualgo.net/en/heap)

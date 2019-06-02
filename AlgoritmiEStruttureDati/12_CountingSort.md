@@ -31,9 +31,9 @@ Esiste anche una **versione stabile** del counting sort che, invece che sovrascr
 
 ## Costo computazionale
 
-| Upper bound | Lower bound | Tight bound |
-|-------------|-------------|-------------|
-| `O(k + n)` | `Ω(k + n)` | **`θ(k + n)`** |
+| Categoria | Upper bound | Lower bound | Tight bound |
+|-----------|-------------|-------------|-------------|
+| Tempo | `O(k + n)` | `Ω(k + n)` | **`θ(k + n)`** |
 
 L'algoritmo è composto da quattro parti:
 - Ricerca del minimo e massimo (in `θ(n)`)

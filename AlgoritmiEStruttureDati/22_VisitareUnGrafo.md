@@ -48,8 +48,14 @@ Se effettuo una DFS in una componente fortemente connessa e nella sua trasposta,
 
 ### Costo computazionale
 
-- Tempo: `O(nodi + archi)`
-- Memoria: `O(nodi)`
+| Categoria | Upper bound | Lower bound | Tight bound |
+|-----------|-------------|-------------|-------------|
+| Tempo | `O(nodi + archi)` | `Ω(nodi + archi)` | **`θ(nodi + archi)`** |
+| Memoria | `O(nodi)` | `Ω(nodi)` | **`θ(nodi)`** |
+
+### Visualizzazione
+
+[visualgo.net](https://visualgo.net/en/dfsbfs)
 
 ## Breadth-first search
 
@@ -57,8 +63,10 @@ La BFS ci può risultare utile per **trovare tutti i nodi a una certa distanza**
 
 ### Costo computazionale
 
-- Tempo: `O(nodi + archi)`
-- Memoria: `O(nodi)`
+| Categoria | Upper bound | Lower bound | Tight bound |
+|-----------|-------------|-------------|-------------|
+| Tempo | `O(nodi + archi)` | `Ω(nodi + archi)` | **`θ(nodi + archi)`** |
+| Memoria | `O(nodi + archi)` | `Ω(nodi + archi)` | **`θ(nodi + archi)`** |
 
 ### Pseudocodice
 
@@ -80,3 +88,7 @@ while queue:
 ```
 
 > Nella coda, la distanza massima tra un nodo e l'altro è 1.
+
+### Visualizzazione
+
+[visualgo.net](https://visualgo.net/en/dfsbfs)

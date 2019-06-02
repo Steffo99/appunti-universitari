@@ -45,6 +45,10 @@ def delete(tree, key):
     return tree
 ```
 
+## Visualizzazione
+
+[visualgo.net](https://visualgo.net/en/bst)
+
 ## Approfondimenti
 
 Esistono alberi più avanzati che mantengono le proprietà degli alberi binari di ricerca, ma che si autobilanciano, come il [Red Black Tree](https://it.wikipedia.org/wiki/RB-Albero).

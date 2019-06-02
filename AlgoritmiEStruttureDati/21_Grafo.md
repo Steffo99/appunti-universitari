@@ -128,3 +128,7 @@ E' efficace però quando il problema che vogliamo risolvere riguarda operazioni 
 #### Memoria 
 
 La memoria richiesta dalle liste di adiacenza è minore di quella delle matrici: l'upper bound è in `O(nodi + archi)`.
+
+## Visualizzazione
+
+[visualgo.net](https://visualgo.net/en/graphds)

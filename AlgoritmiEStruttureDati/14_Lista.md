@@ -32,3 +32,7 @@ class LinkedList:
 #### `List.forward(index)`
 
 Per raggiungere l'`n`-esimo elemento, bisogna _scorrere tutti gli elementi prima di esso_: è dunque un **accesso sequenziale** in **`O(n)`**.
+
+## Visualizzazione
+
+[visualgo.net](https://visualgo.net/en/list)

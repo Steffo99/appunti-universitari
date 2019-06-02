@@ -55,9 +55,9 @@ Quando **rimangono solo le sentinelle** significa che abbiamo aggiunto tutti gli
 
 ## Costo computazionale
 
-| Upper bound | Lower bound | Tight bound |
-|-------------|-------------|-------------|
-| `O(n log n)` | `Ω(n log n)` | **`θ(n log n)`** |
+| Categoria | Upper bound | Lower bound | Tight bound |
+|-----------|-------------|-------------|-------------|
+| Tempo | `O(n log n)` | `Ω(n log n)` | **`θ(n log n)`** |
 
 Il merge sort è un algoritmo ricorsivo con un **caso base in tempo costante** e che **richiama sè stesso 2 volte**.
 

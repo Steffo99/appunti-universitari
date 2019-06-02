@@ -11,9 +11,9 @@ Poi, aggiungo uno alla volta i numeri della parte non ordinata a quella ordinata
 
 ## Costo computazionale
 
-| Upper bound | Lower bound | Tight bound |
-|-------------|-------------|-------------|
-| `O(n²)` | `Ω(n)` | - |
+| Categoria | Upper bound | Lower bound | Tight bound |
+|-----------|-------------|-------------|-------------|
+| Tempo | `O(n²)` | `Ω(n)` | - |
 
 Nel _caso migliore_ (**lista già ordinata**), il numero da inserire è già nella posizione giusta, quindi non devo effettuare altri confronti oltre il primo, rendendo il lower bound dell'algoritmo `Ω(n)`.
 
