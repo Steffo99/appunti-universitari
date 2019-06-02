@@ -33,6 +33,8 @@ L'algoritmo smette di funzionare nel caso in cui siano presenti **costi negativi
 |-----------|-------------|
 | Tempo | `O(nodi + archi) log nodi)` |
 
+### Scomposizione
+
 - Inizializzazione: `O(nodi)`
 - Creazione coda priorità: `O(nodi log nodi)`
 - Ciclo: `O((nodi + archi) log nodi)`

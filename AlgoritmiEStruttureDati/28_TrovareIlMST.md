@@ -1,4 +1,4 @@
-# Trovare il minimum spanning tree
+ Trovare il minimum spanning tree
 
 Un altro problema ricorrente riguardante i grafi è trovare il _minimum spanning tree_ di un dato grafo non diretto.
 
