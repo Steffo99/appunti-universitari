@@ -42,6 +42,10 @@ Su di esso possiamo effettuare un ordinamento, detto _linearizzazione_, tra i no
 
 I primi elementi dei DAG sono detti _Source_ (_Sorgente_), mentre gli ultimi sono detti _Sink_ (_Pozzo_).
 
+#### Albero
+
+Un **albero** può essere considerato un DAG con una **sorgente singola** e le **foglie come pozzi**.
+
 ### Grafo fortemente connesso
 
 Un insieme di nodi `V` di un **grafo diretto** `G` si dice una _componente fortemente connessa_ se:
@@ -68,6 +72,12 @@ Un _grafo pesato_ è un particolare grafo che associa a ciascun arco un **costo*
 #### Costi negativi
 
 I costi possono anche essere negativi: rappresenteranno allora un **guadagno** ottenuto attraversando il nodo.
+
+### Minimum spanning tree
+
+Un _minimum spanning tree_ è il **sottoinsieme degli archi** di un **grafo non diretto** che **connettono tutti i nodi** con il **minor costo possibile**.
+
+I MST hanno [molte proprietà](https://en.wikipedia.org/wiki/Minimum_spanning_tree#Properties); sono troppe da scrivere qui, e probabilmente non ci interesseranno nemmeno.
 
 ## Implementazione tramite matrice di adiacenza
 

@@ -1,4 +1,4 @@
- Algoritmo di Kruskal
+# Algoritmo di Kruskal
 
 ## Funzionamento
 
