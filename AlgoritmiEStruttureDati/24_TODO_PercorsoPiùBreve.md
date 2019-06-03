@@ -10,6 +10,10 @@ Una sottocategoria del problema del percorso più breve è il caso in cui ci int
 
 Si può notare che se il grafo contiene **costi negativi** allora è possibile che il percorso più breve non esista, in quanto diventa possibile la comparsa di **cicli di costo infinitamente negativo**.
 
+Si dice che il percorso più breve ha una _sottostruttura ottimale_, perchè, >TODO<
+
+> Se per raggiungere `C` il percorso migliore è `A->B->C`, allora il percorso migliore per raggiungere `B` sarà `A->B`.
+
 ### Esempi
 
 Alcuni algoritmi che trovano il percorso più breve sono:

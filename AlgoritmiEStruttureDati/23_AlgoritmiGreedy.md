@@ -1,6 +1,6 @@
 # Algoritmi greedy
 
-Un modo per risolvere problemi algoritmici può essere usare una _tecnica greedy_.
+Un modo per risolvere problemi algoritmici può essere usare una **tecnica** _greedy_.
 
 Le tecniche greedy consistono nel effettuare tanti piccoli passi, ed effettuare una **scelta** in base ai dati **locali al passo attuale**.
 

@@ -9,6 +9,7 @@ In ordine di velocità, sono:
 - Registers
 - Cache L1
 - Cache L2
+- Cache L`X`
 - Random Access Memory
 - Solid State Drive
 - Hard Disk Drive
