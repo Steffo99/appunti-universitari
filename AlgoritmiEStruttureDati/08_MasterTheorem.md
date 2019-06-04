@@ -1,4 +1,4 @@
-# Il Master Theorem
+# Master Theorem
 
 Il _Master Theorem_ è uno dei teoremi più importanti dell'algoritmica.
 
