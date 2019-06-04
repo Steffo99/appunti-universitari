@@ -1,6 +1,8 @@
-# Progettare algoritmi
+# Modelli algoritmici
 
-Per progettare un algoritmo, abbiamo bisogno di sapere quali istruzioni sono accettabili per il nostro esecutore.
+Per progettare un algoritmo, abbiamo bisogno di sapere le proprietà del nostro esecutore, ovvero il suo _modello algoritmico_.
+
+> Ad esempio, dobbiamo sapere quali istruzioni è in grado di eseguire, e quanto tempo queste istruzioni richiedono.
 
 ## Il modello RAM
 
