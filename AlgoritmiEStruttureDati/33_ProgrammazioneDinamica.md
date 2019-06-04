@@ -4,7 +4,12 @@ La _programmazione dinamica_ è una **tecnica** di programmazione che prevede l'
 
 Tutti i problemi in cui si può applicare si possono risolvere anche con la **ricorsione**, ma a differenza della ricorsione, questa tecnica riesce ad evitare di ricalcolare la soluzione per ogni chiamata ricorsiva, ottenendo quindi tempi molto migliori.
 
+Si può applicare solo se un problema ha una **sottostruttura ottimale**, ovvero se la soluzione ottima di un sottoproblema è inclusa nella soluzione ottima del problema. 
+
 ## Esempi
+
+- _Problema dello zaino_
+- ...
 
 > Il cammino minimo per raggiungere un nodo in un DAG è dato da `arco.costo + arco.primo_nodo.costo_cammino_minimo()`.
 >

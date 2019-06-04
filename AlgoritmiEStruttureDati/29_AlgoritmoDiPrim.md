@@ -1,18 +1,20 @@
-> TODO: controllare, l'ho fatto ad occhi chiusi
-
 # Algoritmo di Prim
+
+L'_Algoritmo di Prim_ è un altro algoritmo **greedy** che **trova il minimum spanning tree** di un grafo.
 
 ## Funzionamento
 
-Creo una **coda con priorità** in cui inserisco tutti gli archi visibili dal mio albero, in cui il **costo** di ognuno è la chiave della coda.
+Creo una **coda con priorità** in cui inserisco tutti gli archi visibili dal mio albero, in cui la chiave è il **costo dell'arco**.
 
-Per trovare l'arco con costo più piccolo posso **estrarre un arco** dalla coda: la priorità ci garantisce che esso è l'arco meno costoso.
+Per trovare l'arco con costo più piccolo posso **estrarre un arco** dalla coda: la priorità ci garantisce che esso è l'**arco meno costoso**.
 
-Aggiungo un nuovo nodo all'albero, e con esso, aggiungo alla coda tutti gli archi non diretti a un nodo all'interno dell'albero.
+Aggiungo allora un nuovo nodo all'albero, e con esso, **aggiungo alla coda** tutti gli **archi che scoprono un nuovo nodo**.
 
 ## Costo computazionale
 
-`O(max(n, m) log n)` credo?
+| Categoria | Upper bound |
+|-----------|-------------|
+| Tempo | `O(archi + nodi log nodi)` |
 
 ## Pseudocodice
 
