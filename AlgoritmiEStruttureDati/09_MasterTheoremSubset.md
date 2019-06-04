@@ -1,4 +1,4 @@
-# Un caso particolare del Master Theorem
+# Caso particolare del Master Theorem
 
 Se
 ```latex
