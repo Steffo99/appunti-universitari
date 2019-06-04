@@ -1,11 +1,13 @@
 # Problema dello zaino
 
-Sei un ladro, e devi mettere **più refurtiva possibile** nello zaino per scappare.  
-Lo zaino può portare **al massimo `dim` kili**.
-
-Quali oggetti scegli?
+Il problema dello zaino è un problema _pseudo-trattabile_: non abbiamo dimostrazioni di se sia trattabile o intrattabile.
 
 ## Descrizione
+
+> Sei un ladro, e devi mettere **più refurtiva possibile** nello zaino per scappare.  
+> Lo zaino può portare **al massimo `dim` kili**.
+>
+> **Quali** (e quanti) oggetti scegli?
 
 | Input | Output |
 |-------|--------|
@@ -33,9 +35,10 @@ Calcolare `K(dim)` avrà allora un costo di `O(n * dim)`:
 - `n`, perchè trovare il massimo è un'operazione lineare
 - `dim`, perchè `dim` sono tutti i casi tra i quali devo andare a provare
 
-Però, `dim` può essere un numero qualsiasi, che potrebbe includere `n!`: allora, la funzione non è polinomiale.
+Il costo computazionale, allora, è in `O(n * dim)`. 
 
-> Perchè?
+Però, il **tempo richiesto** dal nostro algoritmo dipende non dalla lunghezza dell'input, bensì dal **valore numerico** di `dim`, che corrisponde alla dimensione dell'array delle soluzioni.  
+Allora, si dice che l'algoritmo è in **tempo _pseudo-polinomiale_**.
 
 ### Problema senza ripetizione
 
