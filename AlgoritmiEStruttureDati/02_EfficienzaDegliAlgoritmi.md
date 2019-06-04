@@ -1,4 +1,4 @@
-# Algoritmi efficienti
+# Efficienza degli algoritmi
 
 Un buon algoritmo deve essere **efficiente**, ovvero deve usare il minimo delle risorse necessarie, come _usare il minimo di tempo possibile_.
 
