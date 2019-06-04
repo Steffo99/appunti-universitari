@@ -6,7 +6,7 @@ Un _problema algoritmico_ è un problema matematico che si vuole provare a risol
 
 ## Caterigorizzazione
 
-I problemi algoritmici si dividono in tre categorie: problemi _trattabili, problemi _intrattabili_ e problemi _irrisolvibili_.
+I problemi algoritmici si dividono in tre categorie: problemi _trattabili_, problemi _intrattabili_ e problemi _irrisolvibili_.
 
 ### Problema trattabile
 
