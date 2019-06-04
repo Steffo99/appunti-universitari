@@ -1,4 +1,4 @@
-# Cosa si studia in questa materia?
+# Il nome del corso
 
 ## Cosa sono gli algoritmi?
 
