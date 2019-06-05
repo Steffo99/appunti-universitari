@@ -14,9 +14,4 @@ Dato un algoritmo:
 
 Allora, il suo upper bound avrà la formula:
 
-```latex
-T(n) =\\
-\\
-T(n_0) \qquad n=n_0\\
-T(n_1) + T(n_2) + T(n_3) + T(n_a) \qquad n > n_0
-```
+![](https://quicklatex.com/cache3/89/ql_08d29a7e55d561a900570bc83b93ff89_l3.png)
