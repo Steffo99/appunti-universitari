@@ -29,6 +29,10 @@ Le codifiche di un file compresso devono rispettare la proprietà del _Codice a 
 
 Creiamo allora un _albero di decodifica_: un **albero binario** che, leggendo uno ad uno i bit codificati, ci permette di arrivare al **valore del codice presente sulle foglie** dell'albero.
 
+Gli alberi di decodifica sono sempre **completi**.
+
+> Un albero di decodifica incompleto sarebbe non ottimizzato!
+
 #### Esempi
 
 - .png
