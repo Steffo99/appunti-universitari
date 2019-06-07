@@ -55,3 +55,31 @@ Si creano due percorsi:
 Continuo a creare percorsi, creando una specie di albero binario.
 
 Se a un certo punto vedo che `valore = x, peso = K` e `valore < x, peso = K`, allora posso escludere automaticamente tutto il sottoalbero destro, perchè non può essere migliore del sinistro: allora, sarò riuscito a ridurre il numero dei casi rispetto alla ricorsione.
+
+### Problema in due variabili
+
+`K(j, w)` = massimo valore ottenibile con uno zaino di capacità `w` scegliendo gli item da `1` a `j`.
+
+Non possiamo più applicare la soluzione bruteforce, perchè abbiamo due variabili, `j` e `w`.
+
+Allora, prendo l'elemento `j`. Esso può essere o non essere nella soluzione: mi calcolo entrambe le alternative, e mi tengo l'alternativa dal valore più alto.
+
+Se `j` non è nella soluzione, il risultato diventerà `K(j-1, w)`; se invece è nella soluzione, il risultato sarà `j.valore + K(j-1, w-j.peso)`.
+
+In pratica, prendiamo
+
+```latex
+K(j, w) = max
+\begin{cases}
+    V_j + K(j-1, w-w_j)
+    K(j-1, w)
+\end{cases}
+```
+
+Costruisco allora una matrice con `j` su un asse e `w` sull'altro.  
+Riempio le caselle con il valore di `K(j, w)`.  
+Nella casella con `K(j, w)` avremo la soluzione ottima.
+
+Il tempo necessario per riempire tutte le caselle è nuovamente `O(n * w)`, ancora **pseudopolinomiale**.
+
+Per sapere che oggetti ho messo o no devo tenere traccia in qualche modo della catena del calcolo, usando, ad esempio, una pila.
