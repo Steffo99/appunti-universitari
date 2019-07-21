@@ -23,7 +23,7 @@ banana.o: banana.cpp banana.h
 	echo "Banana!"
 
 # Possiamo definire variabili proprio come in sh
-FLAG = "-Wall"
+FLAG = -Wall
 projectbandiera: main.o banana.o
 	g++ $(FLAG) -o projectbandiera main.o banana.o
 
