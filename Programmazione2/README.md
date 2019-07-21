@@ -34,6 +34,7 @@ Quantità: 30 ore
 Prerequisiti:
 - Programmazione 1
 - Avere dimestichezza con il pc
+- ~~Comprensione avanzata di consegne incomplete~~
 
 - Prova scritta di teoria
   - Media pesata: 35%
@@ -41,5 +42,6 @@ Prerequisiti:
 - Prova di programmazione pratica
   - Media pesata: 65%
   - Implementazione di programma in tempo limitato 
+  - 1 punto bonus se viene usato il Raspberry Pi
 - Orale facoltativo
   - Migliorativo
