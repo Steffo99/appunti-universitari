@@ -1,2 +1,0 @@
-# Cosa vedremo?
-
