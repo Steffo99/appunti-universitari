@@ -9,10 +9,8 @@ Orario di ricevimento: **Lunedì dalle 14:00 alle 16:00** o _su appuntamento_
 ## Materiale
 
 Libri:
-- [Probabilità e Statistica per ingegneria e scienze, Marco Boella](www.pearson.it/opera/pearson/21-4121-probabilita_e_statistica_per_ingegneria_e_scienze) (ISBN: 9788871926186)
+- [Probabilità e Statistica per ingegneria e scienze, M. Boella](www.pearson.it/opera/pearson/21-4121-probabilita_e_statistica_per_ingegneria_e_scienze) (ISBN: 9788871926186)
 
 ## Esame
 
 Orale
-
-## Note
