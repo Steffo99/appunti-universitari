@@ -1,5 +1,9 @@
 # Algoritmi e Strutture Dati
 
+Credo che questo sia il set di appunti più completo che ho preso durante il primo anno.
+
+Potete studiarlo tranquillamente per l'esame! ^^
+
 ## Indice
 
 - [Informazioni sul corso](00_InformazioniSulCorso.md)
