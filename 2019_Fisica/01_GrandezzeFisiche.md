@@ -1,6 +1,4 @@
-# 
-
-## Grandezza fisica
+# Grandezze fisiche
 
 Una _grandezza fisica_ è una proprietà misurabile di un fenomeno, **distinguibile qualitativamente** (grande, piccolo, etc) e **determinabile quanititativamente** (1 m³, 1 cm³, etc).
 
@@ -29,3 +27,25 @@ Sono innumerevoli, alcuni esempi sono:
 - Forza (accelerazione * massa)
 - ...
 
+## Grandezze vettoriali
+
+Le _grandezze vettoriali_ sono grandezze definite da un insieme di:
+
+- intensità
+- direzione
+- verso
+
+Vettori bidimensionali si possono descrivere anche con 2 scalari indicanti l'intensità nelle due direzioni cardinali:
+
+- intensità x
+- intensità y
+
+
+Si potrebbero considerare come una struct in qualche linguaggio di programmazione:
+
+```cs
+public struct Vector2 {
+    public double x;
+    public double y;
+}
+```
