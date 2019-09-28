@@ -1,4 +1,4 @@
-# Statistica e Probabilità
+# Programmazione ad Oggetti
 
 Docente: **Giacomo Cabri** ([email](mailto:giacomo.cabri@unimore.it)), **Nicola Capodieci** ([email](mailto:nicola.capodieci@unimore.it))
 
