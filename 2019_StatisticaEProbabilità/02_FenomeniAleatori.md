@@ -69,7 +69,7 @@ A \cap B = {\omeghino \in \omega | \omeghino \in A\ or\ \omeghino \in B}
 
 Possiamo effettuare la differenza tra due sottoinsiemi, ma non ci è molto utile, in quanto si può comporre con intersezioni e negazioni: `A \ D = A \cap ¬D = {2, 5}`
 
-## \corsivo{f} (sigma-algebra)
+## \corsivo{f} (sigma-algebra, famiglia degli eventi)
 
 \corsivo{f} è detta la _sigma-algebra_, ed è l'insieme di tutti i risultati di operazioni effettuabili tra gli eventi: sono presenti in questo insieme l'insieme vuoto, l'insieme pieno e gli insiemi dati da qualsiasi combinazione di negazione, unione e intersezione di due sottoinsiemi.
 
@@ -86,3 +86,7 @@ Tutti i sottoinsiemi dati da operazioni su insiemi \in \corsivo{f} sono a loro v
 Possiamo generare ulteriori sigma-algebre da elementi di \corsivo{f}: 
 
 > `\sigmino (B)` è la sigma-algebra generata da B, ovvero la più piccola f contenente `B`, ovvero `{\empty, B}`.
+
+## \mathbb{P} (Probabilità)
+
+\mathbb{P} = \corsivo{f} → \mathbb{R}+
