@@ -49,3 +49,28 @@ public struct Vector2 {
     public double y;
 }
 ```
+
+### Scomposizione di vettore
+
+Possiamo scomporre un vettore nelle sue componenti con l'ausilio del seno e del coseno:
+
+```latex
+\vec{v_x} = |v| \sin(\alpha)
+\vec{v_y} = |v| \cos(\alpha)
+
+\vec{v} = \vec{v_x} + \vec{v_y}
+```
+
+### Versore
+
+Un _versore_ è un vettore con modulo unitario (è anche detto un **vettore normalizzato**).
+
+### Somma di vettori
+
+La _somma di vettori_ si effettua facendo la somma delle loro componenti cartesiane.
+
+### Differenza di vettori
+
+La _differenza di vettori_ si effettua sommando il sottraendo al vettore sottratto **con verso opposto**.
+
+Rappresenta geometricamente il vettore che va da [todo...]

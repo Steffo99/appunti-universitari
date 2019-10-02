@@ -6,4 +6,4 @@ Con **quanti** piccoli, tutti i job hanno la possibilità di essere eseguiti abb
 
 L'**interattività** con l'utente, quindi, aumenta, ed è possibile avere un sistema multiutente con interfaccia su terminale. 
 
-Risale al 1960.
+Questo sistema risale al 1960.
