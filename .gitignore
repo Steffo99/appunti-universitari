@@ -12,3 +12,4 @@ extra/
 riscv-tools/
 *.elf
 *.o
+**/.idea
