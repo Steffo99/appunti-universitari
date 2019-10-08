@@ -13,3 +13,4 @@ riscv-tools/
 *.elf
 *.o
 **/.idea
+**/out
