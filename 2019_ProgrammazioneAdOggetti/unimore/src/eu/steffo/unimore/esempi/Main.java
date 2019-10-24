@@ -1,4 +1,4 @@
-package eu.steffo.unimore;
+package eu.steffo.unimore.esempi;
 
 public class Main {
 
