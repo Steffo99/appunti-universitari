@@ -1,0 +1,18 @@
+[submodule "7 - Big data analytics/unimore-bda-1"]
+	path = 7 - Big data analytics/A1 - MongoDB
+	url = https://github.com/Steffo99/unimore-bda-1
+[submodule "7 - Big data analytics/unimore-bda-2"]
+	path = 7 - Big data analytics/A2 - Big data
+	url = https://github.com/Steffo99/unimore-bda-2
+[submodule "7 - Big data analytics/unimore-bda-3"]
+	path = 7 - Big data analytics/B1 - Data analytics
+	url = https://github.com/Steffo99/unimore-bda-3
+[submodule "7 - Big data analytics/unimore-bda-4"]
+	path = 7 - Big data analytics/A3 - Neo4J
+	url = https://github.com/Steffo99/unimore-bda-4
+[submodule "7 - Big data analytics/unimore-bda-5"]
+	path = 7 - Big data analytics/B3 - Graph analytics
+	url = https://github.com/Steffo99/unimore-bda-5
+[submodule "7 - Big data analytics/unimore-bda-6"]
+	path = 7 - Big data analytics/B2 - Text analytics
+	url = https://github.com/Steffo99/unimore-bda-6
