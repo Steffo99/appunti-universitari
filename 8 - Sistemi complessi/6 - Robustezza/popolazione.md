@@ -1,0 +1,1 @@
+[[Insieme]] di [[individuo|individui]].

@@ -1,0 +1,1 @@
+Requisito delle [[soluzione|soluzioni]] di un [[problema]] per cui esse non devono creare effetti indesiderati.

@@ -1,0 +1,1 @@
+[[8 - Crittografia applicata/1 - Concetti/2 - Dimostrare la validità delle soluzioni/debolezza]] di alcuni protocolli crittografici che ne annulla le garanzie di sicurezza se la [[chiave simmetrica]] viene utilizzata per cifrare due plaintext diversi.

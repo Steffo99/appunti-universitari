@@ -1,0 +1,1 @@
+Una [[key derivation function]] può opzionalmente diventare una [[funzione contestualizzata]].

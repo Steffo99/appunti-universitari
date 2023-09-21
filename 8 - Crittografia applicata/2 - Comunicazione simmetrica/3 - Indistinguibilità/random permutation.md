@@ -1,0 +1,1 @@
+[[risultato]] di una [[keyed family of pseudo-random permutations]] utilizzato in un [[cifrario a blocchi]].

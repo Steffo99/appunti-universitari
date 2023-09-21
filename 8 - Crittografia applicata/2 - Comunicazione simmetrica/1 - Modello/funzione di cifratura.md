@@ -1,0 +1,1 @@
+[[funzione ideale|Funzione ideale]] che converte un [[plaintext]] in un [[ciphertext]].

@@ -1,0 +1,1 @@
+[[automa cellulare]] con valori [[numero reale|reali]] come [[stato di una cella|stati]].

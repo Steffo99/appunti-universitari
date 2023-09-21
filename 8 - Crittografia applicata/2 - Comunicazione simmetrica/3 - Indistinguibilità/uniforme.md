@@ -1,0 +1,1 @@
+[[Dato]] dalla dimensione fissa.

@@ -1,0 +1,1 @@
+Estensione del [[problema]] di [[crittografia asimmetrica]] in cui si richiede anche di poter cifrare [[grandi quantità di dati]].

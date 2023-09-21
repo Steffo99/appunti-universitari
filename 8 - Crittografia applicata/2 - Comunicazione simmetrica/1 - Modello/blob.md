@@ -1,0 +1,1 @@
+Dato individualmente privo di significato.

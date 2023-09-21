@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"type":"group","id":"aff1540344aec5dc","x":-600,"y":-40,"width":906,"height":450,"label":"Blocco #1"},
+		{"type":"group","id":"5f129b27371d2003","x":360,"y":480,"width":906,"height":450,"label":"Blocco #2"},
+		{"type":"group","id":"4a77478dbe8b3469","x":1360,"y":1000,"width":906,"height":450,"label":"Blocco #3"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/chiave simmetrica.md","id":"9877bbe3ff78bae6","x":-580,"y":155,"width":400,"height":50,"color":"6"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/keyed family of pseudo-random permutations.md","id":"ceb56ed3d87a448c","x":-114,"y":110,"width":400,"height":140,"color":"1"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/plaintext.md","id":"f6a5be7e48515ae7","x":-114,"y":-20,"width":400,"height":50,"color":"3"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/ciphertext.md","id":"e5cbf46b321559ad","x":-114,"y":340,"width":400,"height":50,"color":"4"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/plaintext.md","id":"265cc48343dc9659","x":846,"y":500,"width":400,"height":50,"color":"3"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/keyed family of pseudo-random permutations.md","id":"1736fbdac57911f1","x":846,"y":630,"width":400,"height":140,"color":"1"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/chiave simmetrica.md","id":"8a8b6d763e9ef277","x":380,"y":675,"width":400,"height":50,"color":"6"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/ciphertext.md","id":"b4acb55736a4fde0","x":846,"y":860,"width":400,"height":50,"color":"4"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/plaintext.md","id":"47827686eb6dbf2d","x":1846,"y":1020,"width":400,"height":50,"color":"3"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/keyed family of pseudo-random permutations.md","id":"8de0c70597b0bf2f","x":1846,"y":1150,"width":400,"height":140,"color":"1"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/chiave simmetrica.md","id":"3770eaf1a47b874a","x":1380,"y":1195,"width":400,"height":50,"color":"6"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/ciphertext.md","id":"bce39e17cf1752be","x":1846,"y":1380,"width":400,"height":50,"color":"4"}
+	],
+	"edges":[
+		{"id":"22e3f7b4eb12378d","fromNode":"f6a5be7e48515ae7","fromSide":"bottom","toNode":"ceb56ed3d87a448c","toSide":"top","color":"3"},
+		{"id":"3a68ae4c18b31f4e","fromNode":"ceb56ed3d87a448c","fromSide":"bottom","toNode":"e5cbf46b321559ad","toSide":"top","color":"4"},
+		{"id":"67710f4f0376f650","fromNode":"9877bbe3ff78bae6","fromSide":"right","toNode":"ceb56ed3d87a448c","toSide":"left","color":"6"},
+		{"id":"859362399ca551cc","fromNode":"8a8b6d763e9ef277","fromSide":"right","toNode":"1736fbdac57911f1","toSide":"left","color":"6"},
+		{"id":"d49babd4b473beb8","fromNode":"1736fbdac57911f1","fromSide":"bottom","toNode":"b4acb55736a4fde0","toSide":"top","color":"4"},
+		{"id":"4ddc9349b3fe59d7","fromNode":"265cc48343dc9659","fromSide":"bottom","toNode":"1736fbdac57911f1","toSide":"top","color":"3"},
+		{"id":"712c0074d99f94fb","fromNode":"3770eaf1a47b874a","fromSide":"right","toNode":"8de0c70597b0bf2f","toSide":"left","color":"6"},
+		{"id":"0ab42836e3d8f9ad","fromNode":"8de0c70597b0bf2f","fromSide":"bottom","toNode":"bce39e17cf1752be","toSide":"top","color":"4"},
+		{"id":"6fc73b3c5c075c0c","fromNode":"47827686eb6dbf2d","fromSide":"bottom","toNode":"8de0c70597b0bf2f","toSide":"top","color":"3"}
+	]
+}

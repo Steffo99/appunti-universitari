@@ -1,0 +1,1 @@
+Qualcosa che possono essere consumato per raggiungere un determinato fine.

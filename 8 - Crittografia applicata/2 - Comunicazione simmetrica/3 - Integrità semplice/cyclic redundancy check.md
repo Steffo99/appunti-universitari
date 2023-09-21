@@ -1,0 +1,1 @@
+[[funzione di hashing]].

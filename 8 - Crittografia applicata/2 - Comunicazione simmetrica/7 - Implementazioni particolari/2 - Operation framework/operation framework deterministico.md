@@ -1,0 +1,1 @@
+[[operation framework]] le cui funzioni rispondono agli stessi input con gli stessi output.

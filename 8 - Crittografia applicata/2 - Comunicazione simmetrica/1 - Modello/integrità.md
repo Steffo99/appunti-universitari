@@ -1,0 +1,1 @@
+[[garanzia|Garanzia]] che prevede l'apportazione di modifiche da parte di un [[avversario]] ad un messaggio inviato da uno [[sfidante]] sia rilevabile dal destinatario.

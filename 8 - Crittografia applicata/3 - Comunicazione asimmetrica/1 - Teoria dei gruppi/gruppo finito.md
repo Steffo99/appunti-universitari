@@ -1,0 +1,1 @@
+[[gruppo]] il cui [[ordine di un gruppo|ordine]] è [[finito]].

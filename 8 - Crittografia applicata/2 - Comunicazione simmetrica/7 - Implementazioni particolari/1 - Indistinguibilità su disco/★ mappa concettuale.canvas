@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"type":"group","id":"a1bce457ea339a32","x":340,"y":1380,"width":3240,"height":1000,"color":"6","label":"Wide-block encryption"},
+		{"type":"group","id":"2f6f257aa9b72ece","x":340,"y":260,"width":3240,"height":1000,"color":"6","label":"Narrow-block encryption"},
+		{"type":"group","id":"76ae76d4e27c59b4","x":-780,"y":-340,"width":440,"height":520,"color":"1","label":"Attacco"},
+		{"type":"group","id":"b2a452aaeadc526f","x":340,"y":-340,"width":440,"height":520,"color":"5","label":"Difesa"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/1 - Indistinguibilità su disco/disk encryption.md","id":"cd8fe535338a25f5","x":-200,"y":-280,"width":400,"height":400,"color":"#ffffff"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/1 - Indistinguibilità su disco/disk encryption protocol.md","id":"9f474848063aed99","x":-200,"y":280,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/non-adaptive chosen-ciphertext attacker.md","id":"902f27014d3ad17b","x":-760,"y":-320,"width":400,"height":480},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/indistinguibilità.md","id":"0cbf77db0d75c615","x":360,"y":-320,"width":400,"height":480},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/1 - Indistinguibilità su disco/tweak.md","id":"d72c16a07ee4a654","x":-760,"y":280,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/1 - Indistinguibilità su disco/tweakable operation mode di un cifrario a blocchi.md","id":"ffd4d1803cad7bdf","x":-480,"y":840,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/1 - Indistinguibilità su disco/XOR-encrypt-XOR operation mode.md","id":"ae1a45e810587897","x":920,"y":280,"width":960,"height":960},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/1 - Indistinguibilità su disco/XOR-encrypt-XOR with ciphertext stealing.md","id":"906b5d92b82b02f6","x":2040,"y":280,"width":960,"height":960},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/1 - Indistinguibilità su disco/ciphertext stealing.md","id":"4411e67eac7d01cb","x":3160,"y":560,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/1 - Indistinguibilità su disco/narrow-block encryption.md","id":"7f1a16e96d1fef44","x":360,"y":840,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/1 - Indistinguibilità su disco/wide-block encryption.md","id":"527be2cc35e3b724","x":360,"y":1400,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/1 - Indistinguibilità su disco/super pseudo-random permutation.md","id":"41e1bdf09e8b393a","x":360,"y":1960,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/1 - Indistinguibilità su disco/Adiantum.md","id":"c8a72bcae06355f8","x":920,"y":1400,"width":400,"height":400,"color":"4"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/1 - Indistinguibilità su disco/HCTR2.md","id":"1139402a19bb9644","x":920,"y":1960,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"cd88778d3403de08","fromNode":"cd8fe535338a25f5","fromSide":"left","toNode":"902f27014d3ad17b","toSide":"right","toEnd":"none"},
+		{"id":"f714da4d7155d3ab","fromNode":"cd8fe535338a25f5","fromSide":"right","toNode":"0cbf77db0d75c615","toSide":"left","toEnd":"none"},
+		{"id":"fc02b8c58f3b4919","fromNode":"cd8fe535338a25f5","fromSide":"bottom","toNode":"9f474848063aed99","toSide":"top","toEnd":"none"},
+		{"id":"a1a64e64355d1881","fromNode":"527be2cc35e3b724","fromSide":"bottom","toNode":"41e1bdf09e8b393a","toSide":"top","toEnd":"none"},
+		{"id":"fc4ab71911270588","fromNode":"9f474848063aed99","fromSide":"left","toNode":"d72c16a07ee4a654","toSide":"right","toEnd":"none"},
+		{"id":"ff46f089057664a9","fromNode":"d72c16a07ee4a654","fromSide":"bottom","toNode":"ffd4d1803cad7bdf","toSide":"top","toEnd":"none"},
+		{"id":"e33e0eda49dedf36","fromNode":"9f474848063aed99","fromSide":"bottom","toNode":"ffd4d1803cad7bdf","toSide":"top","toEnd":"none"},
+		{"id":"fd9ffbe900f36550","fromNode":"ffd4d1803cad7bdf","fromSide":"right","toNode":"7f1a16e96d1fef44","toSide":"left","toEnd":"none"},
+		{"id":"e5096341254c8ab0","fromNode":"ffd4d1803cad7bdf","fromSide":"right","toNode":"527be2cc35e3b724","toSide":"left","toEnd":"none"},
+		{"id":"d519f87b09c6e3fc","fromNode":"7f1a16e96d1fef44","fromSide":"right","toNode":"ae1a45e810587897","toSide":"left","toEnd":"none"},
+		{"id":"482e153c09c24ece","fromNode":"ae1a45e810587897","fromSide":"right","toNode":"906b5d92b82b02f6","toSide":"left","toEnd":"none"},
+		{"id":"5242a8316a5ac8f8","fromNode":"906b5d92b82b02f6","fromSide":"right","toNode":"4411e67eac7d01cb","toSide":"left","toEnd":"none"},
+		{"id":"33ccdb39794c5b6f","fromNode":"527be2cc35e3b724","fromSide":"right","toNode":"c8a72bcae06355f8","toSide":"left","toEnd":"none","color":"4"},
+		{"id":"45c86e29d9a753f1","fromNode":"527be2cc35e3b724","fromSide":"right","toNode":"1139402a19bb9644","toSide":"left","toEnd":"none"}
+	]
+}

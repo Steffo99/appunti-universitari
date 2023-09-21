@@ -1,0 +1,1 @@
+[[automa cellulare]] che non altera lo [[stato di una cella|stato]] <span style="color: green;">quiesciente</span> delle [[cella di un automa cellulare|celle]] con vicinato interamente <span style="color: green;">quiesciente</span>.

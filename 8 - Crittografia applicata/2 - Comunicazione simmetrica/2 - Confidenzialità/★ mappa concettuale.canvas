@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"type":"group","id":"ab92ef09bb424b98","x":-460,"y":260,"width":920,"height":1680,"color":"6","label":"Cifrari storici"},
+		{"type":"group","id":"6356a5ab62893ed3","x":-780,"y":-300,"width":440,"height":440,"color":"1","label":"Attacco"},
+		{"type":"group","id":"2ecd607853daeaa0","x":320,"y":-300,"width":440,"height":440,"color":"5","label":"Difesa"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/2 - Confidenzialità/crittografia classica.md","id":"e04b7bb8067114db","x":-200,"y":-280,"width":400,"height":400,"color":"#ffffff"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/2 - Confidenzialità/cifrario a trasposizione.md","id":"4606a8d6f9f09bdd","x":40,"y":280,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/2 - Confidenzialità/cifrario a sostituzione.md","id":"f829e0812fed8dd1","x":-440,"y":280,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/confidenzialità.md","id":"a12bf5b762b91e3a","x":340,"y":-280,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/ciphertext-only attacker.md","id":"27ad5bf8551f9a76","x":-760,"y":-280,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/2 - Confidenzialità/cifrario di Cesare.md","id":"21f527d40ebf17ab","x":-440,"y":760,"width":400,"height":1160}
+	],
+	"edges":[
+		{"id":"2bcae0ce45ed5e7c","fromNode":"e04b7bb8067114db","fromSide":"bottom","toNode":"f829e0812fed8dd1","toSide":"top","toEnd":"none"},
+		{"id":"373d1bdf640c9609","fromNode":"e04b7bb8067114db","fromSide":"bottom","toNode":"4606a8d6f9f09bdd","toSide":"top","toEnd":"none"},
+		{"id":"6269758928c92d9d","fromNode":"a12bf5b762b91e3a","fromSide":"left","toNode":"e04b7bb8067114db","toSide":"right","toEnd":"none"},
+		{"id":"3124b4492101fa4c","fromNode":"27ad5bf8551f9a76","fromSide":"right","toNode":"e04b7bb8067114db","toSide":"left","toEnd":"none"},
+		{"id":"f8c3fcaab87c747b","fromNode":"f829e0812fed8dd1","fromSide":"bottom","toNode":"21f527d40ebf17ab","toSide":"top","toEnd":"none"}
+	]
+}

@@ -1,0 +1,1 @@
+Caratteristica che distingue un livello di un [[grafo multi-livello]] da un altro.

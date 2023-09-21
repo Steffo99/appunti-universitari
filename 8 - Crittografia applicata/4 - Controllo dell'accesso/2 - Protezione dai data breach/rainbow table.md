@@ -1,0 +1,1 @@
+Struttura dati che associa [[hash]] alle [[password]] che li generano.

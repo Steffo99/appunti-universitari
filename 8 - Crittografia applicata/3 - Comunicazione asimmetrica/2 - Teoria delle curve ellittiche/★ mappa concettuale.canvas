@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/2 - Teoria delle curve ellittiche/curva ellittica.md","id":"2d820d3bd05a8d4e","x":-280,"y":-320,"width":400,"height":400,"color":"#ffffff"},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/2 - Teoria delle curve ellittiche/equazione di Weierstrass.md","id":"41b17087545568c7","x":280,"y":-320,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/2 - Teoria delle curve ellittiche/somma di punti su curve ellittiche.md","id":"1ffec67ddca3cba5","x":-560,"y":240,"width":960,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/2 - Teoria delle curve ellittiche/gruppo ciclico su curva ellittica.md","id":"6622ca4345dbca4d","x":-560,"y":800,"width":960,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/2 - Teoria delle curve ellittiche/punto a infinito nelle curve ellittiche.md","id":"d035818432cf220d","x":560,"y":240,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"8dc466e53c657b70","fromNode":"2d820d3bd05a8d4e","fromSide":"right","toNode":"41b17087545568c7","toSide":"left"},
+		{"id":"96a9ec808783e950","fromNode":"2d820d3bd05a8d4e","fromSide":"bottom","toNode":"1ffec67ddca3cba5","toSide":"top"},
+		{"id":"adfc7f4471faa699","fromNode":"1ffec67ddca3cba5","fromSide":"bottom","toNode":"6622ca4345dbca4d","toSide":"top"},
+		{"id":"61daa17f4b8e108c","fromNode":"1ffec67ddca3cba5","fromSide":"right","toNode":"d035818432cf220d","toSide":"left"}
+	]
+}

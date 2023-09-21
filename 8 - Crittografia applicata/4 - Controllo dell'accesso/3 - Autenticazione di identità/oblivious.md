@@ -1,0 +1,1 @@
+Caratteristica di una [[funzione]] in grado di operare su dei [[blinded]] [[parametro|input]]  per restituire un [[blinded]] [[risultato|output]].

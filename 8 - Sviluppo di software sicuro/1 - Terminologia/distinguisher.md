@@ -1,0 +1,1 @@
+Elemento che permette di identificare la presenza o l'assenza di una determinata proprietà.

@@ -1,0 +1,67 @@
+{
+  "items": [
+    {
+      "type": "graph",
+      "ctime": 1686611114254,
+      "title": "Crittografia applicata",
+      "options": {
+        "collapse-filter": false,
+        "search": "path:\"8 - Crittografia applicata\"",
+        "showTags": false,
+        "showAttachments": false,
+        "hideUnresolved": false,
+        "showOrphans": true,
+        "collapse-color-groups": false,
+        "colorGroups": [
+          {
+            "query": "path:\"8 - Crittografia applicata/1 - Concetti\"",
+            "color": {
+              "a": 1,
+              "rgb": 14048348
+            }
+          },
+          {
+            "query": "path:\"8 - Crittografia applicata/2 - Comunicazione simmetrica\"",
+            "color": {
+              "a": 1,
+              "rgb": 14069084
+            }
+          },
+          {
+            "query": "path:\"8 - Crittografia applicata/3 - Comunicazione asimmetrica\"",
+            "color": {
+              "a": 1,
+              "rgb": 6084188
+            }
+          },
+          {
+            "query": "path:\"8 - Crittografia applicata/4 - Controllo dell'accesso\"",
+            "color": {
+              "a": 1,
+              "rgb": 6073814
+            }
+          },
+          {
+            "query": "path:\"8 - Crittografia applicata/5 - Protocolli sicuri\"",
+            "color": {
+              "a": 1,
+              "rgb": 11361494
+            }
+          }
+        ],
+        "collapse-display": false,
+        "showArrow": false,
+        "textFadeMultiplier": -3,
+        "nodeSizeMultiplier": 1.50364583333333,
+        "lineSizeMultiplier": 0.380729166666667,
+        "collapse-forces": false,
+        "centerStrength": 0.177083333333333,
+        "repelStrength": 20,
+        "linkStrength": 1,
+        "linkDistance": 500,
+        "scale": 0.02775319949071854,
+        "close": false
+      }
+    }
+  ]
+}

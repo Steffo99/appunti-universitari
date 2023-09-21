@@ -1,0 +1,1 @@
+[[problema]] in cui si vuole serializzare il [[database delle credenziali]] in modo tale da limitare i danni causati da un [[data breach]].

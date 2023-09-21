@@ -1,0 +1,1 @@
+Stato in cui un [[sistema dinamico]] si trova inizialmente.

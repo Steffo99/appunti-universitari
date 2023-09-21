@@ -1,0 +1,40 @@
+{
+	"nodes":[
+		{"id":"7486561ed81d4450","x":340,"y":-2140,"width":800,"height":3080,"color":"6","type":"group","label":"Crittografia asimmetrica"},
+		{"id":"ee33b01a552467a9","x":1260,"y":-1260,"width":1000,"height":2200,"color":"6","type":"group","label":"Crittografia ibrida"},
+		{"type":"group","id":"06c1dd197e258d8f","x":-1340,"y":-1100,"width":1000,"height":440,"color":"1","label":"Attacco"},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/4 - Crittografia asimmetrica/textbook RSA.md","id":"4e00841406c9cc7b","x":360,"y":-360,"width":760,"height":720},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/4 - Crittografia asimmetrica/funzione toziente.md","id":"7177927c725c6239","x":-200,"y":520,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/4 - Crittografia asimmetrica/problema RSA.md","id":"05ac505c572c5509","x":-200,"y":-360,"width":400,"height":720},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/4 - Crittografia asimmetrica/PKCS1 v15.md","subpath":"#PKCS 1 v1.5","id":"620b419c6b98ae27","x":360,"y":-1240,"width":760,"height":720},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/4 - Crittografia asimmetrica/PKCS1 v20.md","subpath":"#PKCS 1 v2.0","id":"386833fdd9dfcfdb","x":360,"y":-2120,"width":760,"height":720,"color":"4"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/malleabilità.md","id":"7516f9013e99dd4a","x":-200,"y":-1080,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/4 - Crittografia asimmetrica/million message attack.md","id":"4c581f69f9af5ac6","x":-760,"y":-1080,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/padding oracle attack.md","id":"b2f4ec2368ce63fc","x":-1320,"y":-1080,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/4 - Crittografia asimmetrica/elliptic curve integrated encryption scheme.md","id":"7db2bde8e33f0fa4","x":1280,"y":-1240,"width":400,"height":720,"color":"4"},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/4 - Crittografia asimmetrica/crittografia asimmetrica.md","id":"77b2ed1b7122eee5","x":360,"y":520,"width":760,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/4 - Crittografia asimmetrica/congettura della fattorizzazione.md","id":"9357869e3f0392e3","x":-200,"y":1080,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/4 - Crittografia asimmetrica/crittografia ibrida.md","id":"7c6265e52f838f7b","x":1360,"y":520,"width":800,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/4 - Crittografia asimmetrica/integrated encryption scheme.md","id":"0932e61bbc445535","x":1280,"y":-360,"width":400,"height":720},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/4 - Crittografia asimmetrica/key encapsulation.md","id":"658f4bf0bf5ac3ff","x":1840,"y":-360,"width":400,"height":720,"color":"4"},
+		{"id":"888bb894133693bb","x":-760,"y":-200,"width":400,"height":400,"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/4 - Crittografia asimmetrica/trapdoor one-way function.md"}
+	],
+	"edges":[
+		{"id":"6b19ff917847f139","fromNode":"05ac505c572c5509","fromSide":"bottom","toNode":"7177927c725c6239","toSide":"top","toEnd":"none"},
+		{"id":"b0041f62972ca6be","fromNode":"7177927c725c6239","fromSide":"bottom","toNode":"9357869e3f0392e3","toSide":"top","toEnd":"none"},
+		{"id":"85485a28b0f12e9a","fromNode":"7177927c725c6239","fromSide":"right","toNode":"77b2ed1b7122eee5","toSide":"left","toEnd":"none"},
+		{"id":"4cbb673e31b929a6","fromNode":"77b2ed1b7122eee5","fromSide":"right","toNode":"7c6265e52f838f7b","toSide":"left","toEnd":"none"},
+		{"id":"de357458233f2f44","fromNode":"77b2ed1b7122eee5","fromSide":"top","toNode":"4e00841406c9cc7b","toSide":"bottom","toEnd":"none"},
+		{"id":"a122c08e3c2ec715","fromNode":"05ac505c572c5509","fromSide":"right","toNode":"4e00841406c9cc7b","toSide":"left","toEnd":"none"},
+		{"id":"5432ad197e8555d6","fromNode":"4e00841406c9cc7b","fromSide":"top","toNode":"620b419c6b98ae27","toSide":"bottom"},
+		{"id":"57f129b68b29827e","fromNode":"620b419c6b98ae27","fromSide":"top","toNode":"386833fdd9dfcfdb","toSide":"bottom","color":"4"},
+		{"id":"dddb86777c336ca8","fromNode":"4e00841406c9cc7b","fromSide":"left","toNode":"7516f9013e99dd4a","toSide":"right","toEnd":"none"},
+		{"id":"35bca2fe93ecfbfd","fromNode":"620b419c6b98ae27","fromSide":"left","toNode":"7516f9013e99dd4a","toSide":"right","toEnd":"none"},
+		{"id":"5c7d6747d123520c","fromNode":"7516f9013e99dd4a","fromSide":"left","toNode":"4c581f69f9af5ac6","toSide":"right","toEnd":"none"},
+		{"id":"d0a43210b2d284d2","fromNode":"4c581f69f9af5ac6","fromSide":"left","toNode":"b2f4ec2368ce63fc","toSide":"right","toEnd":"none"},
+		{"id":"be7f087d94e7e440","fromNode":"7c6265e52f838f7b","fromSide":"top","toNode":"0932e61bbc445535","toSide":"bottom"},
+		{"id":"5fc59621534e82c8","fromNode":"0932e61bbc445535","fromSide":"top","toNode":"7db2bde8e33f0fa4","toSide":"bottom","color":"4"},
+		{"id":"f3e6856adff26571","fromNode":"7c6265e52f838f7b","fromSide":"top","toNode":"658f4bf0bf5ac3ff","toSide":"bottom","color":"4"},
+		{"id":"58351b28f822380f","fromNode":"05ac505c572c5509","fromSide":"left","toNode":"888bb894133693bb","toSide":"right","toEnd":"none"}
+	]
+}

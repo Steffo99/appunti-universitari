@@ -1,0 +1,1 @@
+[[funzione]] in cui, conoscendo il [[risultato]], non è possibile risalire ai [[parametro|parametri]].

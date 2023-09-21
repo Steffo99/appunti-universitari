@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"type":"group","id":"07b4325bcea16588","x":-2160,"y":-1480,"width":2160,"height":1040,"color":"6","label":"Implementazione informatica"},
+		{"type":"group","id":"265a916a58761e91","x":-2160,"y":-3160,"width":2160,"height":1040,"color":"6","label":"Problema reale"},
+		{"type":"group","id":"73e77ed6be71707e","x":-2160,"y":-2040,"width":2160,"height":480,"color":"6","label":"Astrazione teorica"},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/garanzia.md","id":"f6e86666781953c8","x":-1560,"y":-2000,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/dominio.md","id":"fd893b8dbb1a6d55","x":-2120,"y":-2000,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/vincolo.md","id":"16dfda560025b604","x":-1560,"y":-2560,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/sicurezza.md","id":"fc9c718952e973c5","x":-2120,"y":-2560,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/problema.md","id":"77342348f5a3311b","x":-440,"y":-2560,"width":400,"height":400,"color":"#ffffff"},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/soluzione.md","id":"f9aa781a86d34ec4","x":-1000,"y":-2560,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione ideale.md","id":"c5156ad00be1a77d","x":-1000,"y":-2000,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/procedura.md","id":"0f9a34ac1aa9d5d3","x":-1000,"y":-3120,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione.md","id":"9307c3c4c73326c0","x":-1000,"y":-1440,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/primitiva.md","id":"85502ca62b8c53ac","x":-1560,"y":-1440,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/protocollo.md","id":"8807968561da18d7","x":-440,"y":-1440,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/parametro.md","id":"791e2879bcae8dac","x":-1280,"y":-880,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/risultato.md","id":"dff83c36f0c35f7d","x":-720,"y":-880,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/interfaccia.md","id":"81000f44c2369af8","x":-440,"y":-2000,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"220636041118e90a","fromNode":"c5156ad00be1a77d","fromSide":"bottom","toNode":"9307c3c4c73326c0","toSide":"top"},
+		{"id":"5a714b7df2c8e15d","fromNode":"f9aa781a86d34ec4","fromSide":"bottom","toNode":"c5156ad00be1a77d","toSide":"top"},
+		{"id":"f07b7bc97bac9c37","fromNode":"f6e86666781953c8","fromSide":"bottom","toNode":"85502ca62b8c53ac","toSide":"top"},
+		{"id":"605126f562213308","fromNode":"85502ca62b8c53ac","fromSide":"right","toNode":"9307c3c4c73326c0","toSide":"left","toEnd":"none"},
+		{"id":"e5feebfe5b715c2c","fromNode":"16dfda560025b604","fromSide":"bottom","toNode":"f6e86666781953c8","toSide":"top"},
+		{"id":"666b87d135532ddb","fromNode":"f6e86666781953c8","fromSide":"left","toNode":"fd893b8dbb1a6d55","toSide":"right","toEnd":"none"},
+		{"id":"07d6326e25709386","fromNode":"f9aa781a86d34ec4","fromSide":"left","toNode":"16dfda560025b604","toSide":"right","toEnd":"none"},
+		{"id":"996673b88409f0e6","fromNode":"fc9c718952e973c5","fromSide":"right","toNode":"16dfda560025b604","toSide":"left","toEnd":"none"},
+		{"id":"a41195b96045dbee","fromNode":"77342348f5a3311b","fromSide":"left","toNode":"f9aa781a86d34ec4","toSide":"right","toEnd":"none"},
+		{"id":"7382f8d012c6eb19","fromNode":"9307c3c4c73326c0","fromSide":"right","toNode":"8807968561da18d7","toSide":"left","toEnd":"none"},
+		{"id":"be4510b5b2e77a20","fromNode":"9307c3c4c73326c0","fromSide":"bottom","toNode":"791e2879bcae8dac","toSide":"top"},
+		{"id":"35087da6bc08b3da","fromNode":"9307c3c4c73326c0","fromSide":"bottom","toNode":"dff83c36f0c35f7d","toSide":"top"},
+		{"id":"166efb10f9feab15","fromNode":"f9aa781a86d34ec4","fromSide":"top","toNode":"0f9a34ac1aa9d5d3","toSide":"bottom","toEnd":"none"},
+		{"id":"0ba9a6d2671dbb1d","fromNode":"81000f44c2369af8","fromSide":"bottom","toNode":"8807968561da18d7","toSide":"top"},
+		{"id":"67ff06cf95a65da9","fromNode":"c5156ad00be1a77d","fromSide":"right","toNode":"81000f44c2369af8","toSide":"left","toEnd":"none"},
+		{"id":"a0faa3ce666a6f08","fromNode":"f9aa781a86d34ec4","fromSide":"bottom","toNode":"81000f44c2369af8","toSide":"top"}
+	]
+}

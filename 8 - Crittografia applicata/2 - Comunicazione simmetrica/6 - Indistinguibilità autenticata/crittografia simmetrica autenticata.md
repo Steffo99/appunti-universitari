@@ -1,0 +1,1 @@
+[[problema]] di [[crittografia simmetrica moderna]] in cui si vogliono mantenere [[confidenzialità|confidenziali]] e [[indistinguibilità|indistinguibili]] uno o più [[ciphertext]] da una [[squadra rossa]] che con capacità di [[adaptive chosen-ciphertext attacker]], richiedendo di conseguenza anche garanzie di [[integrità]] e [[autenticità]] dei messaggi.

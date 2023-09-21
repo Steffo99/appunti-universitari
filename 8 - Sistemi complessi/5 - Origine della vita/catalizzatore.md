@@ -1,0 +1,1 @@
+[[Insieme]] di [[molecola|molecole]] richieste nell'ambiente per accelerare <small>(o rallentare, ma non si considera quasi mai l'opzione)</small> una [[reazione chimica]], ma che non vengono consumate.

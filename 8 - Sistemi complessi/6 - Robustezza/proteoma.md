@@ -1,0 +1,1 @@
+[[Insieme]] delle [[proteina|proteine]] formate da un [[genoma]].

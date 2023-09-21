@@ -1,0 +1,1 @@
+[[funzione]] [[invertibile]] solo se si conosce un dato parametro.

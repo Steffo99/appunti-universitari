@@ -1,0 +1,40 @@
+{
+	"nodes":[
+		{"id":"3c59e81ba3d446e8","x":1060,"y":-1340,"width":960,"height":2680,"color":"1","type":"group","label":"Attaccanti"},
+		{"id":"dd31f52fe87419c8","x":-2580,"y":-1060,"width":960,"height":2120,"color":"1","type":"group","label":"Violazioni"},
+		{"id":"29dd5019ec5db8fa","x":-1500,"y":-1060,"width":440,"height":2120,"color":"5","type":"group","label":"Garanzie"},
+		{"type":"file","file":"8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/garanzia.md","id":"0ff7a8e34aeb43d2","x":-760,"y":-200,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/tipo di avversario.md","id":"78f7cfda689b5de0","x":360,"y":-200,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/6 - Falsificazione di firme/contesto di firma digitale.md","id":"f878c36c05711d35","x":-200,"y":-200,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/6 - Falsificazione di firme/no-message attacker.md","id":"a07532e1e6eef02f","x":1080,"y":-1320,"width":920,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/6 - Falsificazione di firme/random-message attacker.md","id":"95169c15bae2b8c0","x":1080,"y":-760,"width":920,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/6 - Falsificazione di firme/known-message attacker.md","id":"454d0f0c39d9cd58","x":1080,"y":-200,"width":920,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/6 - Falsificazione di firme/chosen-message attacker.md","id":"ee7b17627c701ea6","x":1080,"y":360,"width":920,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/6 - Falsificazione di firme/adaptively-chosen-message attacker.md","id":"36a3e6c8b8f6b669","x":1080,"y":920,"width":920,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/6 - Falsificazione di firme/weak existential message forgery.md","id":"74caba0c7667d408","x":-2560,"y":-1040,"width":920,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/6 - Falsificazione di firme/strong existential message forgery.md","id":"923d69f5925283dc","x":-2560,"y":-480,"width":920,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/6 - Falsificazione di firme/selective message forgery.md","id":"2a7aff7ffae94d8c","x":-2560,"y":80,"width":920,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/6 - Falsificazione di firme/any message forgery.md","id":"e18fe07b2a251f5b","x":-2560,"y":640,"width":920,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/6 - Falsificazione di firme/weak existential unforgeability.md","id":"69829cc1044acc6d","x":-1480,"y":-1040,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/6 - Falsificazione di firme/strong existential unforgeability.md","id":"9bdc8c89b6ddee8e","x":-1480,"y":-480,"width":400,"height":400},
+		{"type":"text","text":"","id":"b76d0097327f0e8a","x":-1480,"y":80,"width":400,"height":400},
+		{"type":"text","text":"","id":"6c39e85fa7d81062","x":-1480,"y":640,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"92493b0d38e4f253","fromNode":"f878c36c05711d35","fromSide":"right","toNode":"78f7cfda689b5de0","toSide":"left","toEnd":"none"},
+		{"id":"fa610a4977b5e3cb","fromNode":"f878c36c05711d35","fromSide":"left","toNode":"0ff7a8e34aeb43d2","toSide":"right","toEnd":"none"},
+		{"id":"6b280079afd2fd80","fromNode":"78f7cfda689b5de0","fromSide":"right","toNode":"a07532e1e6eef02f","toSide":"left","toEnd":"none"},
+		{"id":"5e3270ceaf9f578f","fromNode":"78f7cfda689b5de0","fromSide":"right","toNode":"95169c15bae2b8c0","toSide":"left","toEnd":"none"},
+		{"id":"a244dcc7e7201dc3","fromNode":"78f7cfda689b5de0","fromSide":"right","toNode":"454d0f0c39d9cd58","toSide":"left","toEnd":"none"},
+		{"id":"af1a09764ad41981","fromNode":"78f7cfda689b5de0","fromSide":"right","toNode":"ee7b17627c701ea6","toSide":"left","toEnd":"none"},
+		{"id":"bbef9c2f4d1f73f7","fromNode":"78f7cfda689b5de0","fromSide":"right","toNode":"36a3e6c8b8f6b669","toSide":"left","toEnd":"none"},
+		{"id":"c560909e6bc5d00b","fromNode":"0ff7a8e34aeb43d2","fromSide":"left","toNode":"69829cc1044acc6d","toSide":"right","toEnd":"none"},
+		{"id":"8a5a64c1c2feddc3","fromNode":"0ff7a8e34aeb43d2","fromSide":"left","toNode":"9bdc8c89b6ddee8e","toSide":"right","toEnd":"none"},
+		{"id":"fc532fa823b75a6d","fromNode":"9bdc8c89b6ddee8e","fromSide":"left","toNode":"923d69f5925283dc","toSide":"right","toEnd":"none"},
+		{"id":"4e9058d85d792f0c","fromNode":"69829cc1044acc6d","fromSide":"left","toNode":"74caba0c7667d408","toSide":"right","toEnd":"none"},
+		{"id":"e701596c5582c766","fromNode":"0ff7a8e34aeb43d2","fromSide":"left","toNode":"b76d0097327f0e8a","toSide":"right","toEnd":"none"},
+		{"id":"c801bc7274288127","fromNode":"b76d0097327f0e8a","fromSide":"left","toNode":"2a7aff7ffae94d8c","toSide":"right","toEnd":"none"},
+		{"id":"e85342bdf56f8d59","fromNode":"0ff7a8e34aeb43d2","fromSide":"left","toNode":"6c39e85fa7d81062","toSide":"right","toEnd":"none"},
+		{"id":"03e1b991ccd22c15","fromNode":"6c39e85fa7d81062","fromSide":"left","toNode":"e18fe07b2a251f5b","toSide":"right","toEnd":"none"}
+	]
+}

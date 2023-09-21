@@ -1,0 +1,1 @@
+[[grafo multi-livello]] in cui tutti gli [[arco di accoppiamento|archi di accoppiamento]] possibili sono presenti.

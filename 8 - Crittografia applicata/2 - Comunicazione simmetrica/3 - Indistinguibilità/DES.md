@@ -1,0 +1,1 @@
+[[keyed family of pseudo-random permutations]] deprecata.

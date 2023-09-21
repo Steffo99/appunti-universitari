@@ -1,0 +1,1 @@
+Metodo ***inefficace*** di [[generic composition]] in cui viene prima [[autenticazione|autenticato]] il plaintext, e poi plaintext e MAC vengono [[crittografia simmetrica moderna|cifrati]] insieme in un unico ciphertext.

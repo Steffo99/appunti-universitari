@@ -1,0 +1,1 @@
+[[funzione]] esterna che modifica lo [[stato di un pseudo-random number generator]].

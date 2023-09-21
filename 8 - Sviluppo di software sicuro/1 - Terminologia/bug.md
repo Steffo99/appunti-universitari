@@ -1,0 +1,1 @@
+Errore nell'implementazione dei [[requisito|requisiti]] da un programmatore.

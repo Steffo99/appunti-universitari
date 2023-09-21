@@ -1,0 +1,1 @@
+[[8 - Crittografia applicata/1 - Concetti/2 - Dimostrare la validità delle soluzioni/debolezza]] di alcuni [[protocollo|protocolli crittografici]] che ne annulla le garanzie di sicurezza se uno stesso [[nonce]] viene utilizzato per cifrare due plaintext diversi.

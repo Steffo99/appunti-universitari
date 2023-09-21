@@ -1,0 +1,1 @@
+Strumento utilizzabile per fare uso di una [[8 - Sviluppo di software sicuro/1 - Terminologia/vulnerabilità]].

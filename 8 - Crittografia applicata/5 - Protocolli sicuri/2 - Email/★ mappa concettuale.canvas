@@ -1,0 +1,36 @@
+{
+	"nodes":[
+		{"type":"group","id":"a103b8bbc3e4e85f","x":1260,"y":-680,"width":1040,"height":1000,"color":"5","label":"Autenticità del server"},
+		{"type":"group","id":"e8ffc01ba0db99b2","x":1260,"y":480,"width":1040,"height":960,"color":"5","label":"Autenticità dell'user agent"},
+		{"type":"group","id":"cd5c1d3c08995c89","x":140,"y":-580,"width":440,"height":800,"color":"1","label":"Attacco"},
+		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/2 - Email/sender spoofing.md","id":"912e02c9acd64694","x":160,"y":-560,"width":400,"height":200},
+		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/2 - Email/phishing.md","id":"17c6469b0a741e48","x":160,"y":-280,"width":400,"height":200},
+		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/2 - Email/malware attachment.md","id":"a370d03fdf395238","x":160,"y":0,"width":400,"height":200},
+		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/2 - Email/email.md","id":"6acbc7e997113635","x":720,"y":-380,"width":400,"height":400,"color":"#ffffff"},
+		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/2 - Email/sender policy framework.md","id":"4f316a7e7f0fd686","x":1280,"y":-460,"width":440,"height":200},
+		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/2 - Email/domainkeys identified mail.md","id":"61a4a88a14d416ac","x":1280,"y":-100,"width":440,"height":200},
+		{"type":"text","text":"","id":"ee84aa7db46f6dcc","x":875,"y":740,"width":90,"height":90},
+		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/2 - Email/authenticated received chain.md","id":"6dbb85865a9057e3","x":1880,"y":-660,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/2 - Email/domain-based message authentication reporting and conformance.md","id":"d32c181c19b47e7a","x":1880,"y":-100,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/2 - Email/secure mime.md","subpath":"#S/MIME","id":"45dae5a42aab6d17","x":1280,"y":500,"width":440,"height":200},
+		{"type":"file","file":"8 - Crittografia applicata/4 - Controllo dell'accesso/4 - Distribuzione di chiavi/OpenPGP web of trust.md","id":"77af9a8f3c271a21","x":1280,"y":860,"width":440,"height":200},
+		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/2 - Email/posta elettronica certificata.md","id":"30d231607b082ab8","x":1880,"y":500,"width":400,"height":200},
+		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/2 - Email/brand indicators for message identification.md","id":"2e94cbd15efcacf8","x":1280,"y":1220,"width":440,"height":200}
+	],
+	"edges":[
+		{"id":"eca6337cd5fd9e0d","fromNode":"a370d03fdf395238","fromSide":"right","toNode":"6acbc7e997113635","toSide":"left","toEnd":"none"},
+		{"id":"8fc98ac2ba3bc6d4","fromNode":"17c6469b0a741e48","fromSide":"right","toNode":"6acbc7e997113635","toSide":"left","toEnd":"none"},
+		{"id":"cc63ae471280ad22","fromNode":"912e02c9acd64694","fromSide":"right","toNode":"6acbc7e997113635","toSide":"left","toEnd":"none"},
+		{"id":"8555e3d82a738ffc","fromNode":"6acbc7e997113635","fromSide":"right","toNode":"4f316a7e7f0fd686","toSide":"left","toEnd":"none"},
+		{"id":"b44a5b12975ecf98","fromNode":"6acbc7e997113635","fromSide":"right","toNode":"61a4a88a14d416ac","toSide":"left","toEnd":"none"},
+		{"id":"dc2a6d7115cc2fe7","fromNode":"61a4a88a14d416ac","fromSide":"right","toNode":"d32c181c19b47e7a","toSide":"left","toEnd":"none"},
+		{"id":"1aafe05f978cc47c","fromNode":"4f316a7e7f0fd686","fromSide":"right","toNode":"d32c181c19b47e7a","toSide":"left","toEnd":"none"},
+		{"id":"6c971c346129e44c","fromNode":"6acbc7e997113635","fromSide":"bottom","toNode":"ee84aa7db46f6dcc","toSide":"top"},
+		{"id":"89775541dfe5b7db","fromNode":"ee84aa7db46f6dcc","fromSide":"right","toNode":"45dae5a42aab6d17","toSide":"left","toEnd":"none"},
+		{"id":"bc6ce3afe8181a6e","fromNode":"ee84aa7db46f6dcc","fromSide":"right","toNode":"77af9a8f3c271a21","toSide":"left","toEnd":"none"},
+		{"id":"817c64ce7ac0c6c4","fromNode":"4f316a7e7f0fd686","fromSide":"right","toNode":"6dbb85865a9057e3","toSide":"left","toEnd":"none"},
+		{"id":"12e034b4bea15688","fromNode":"61a4a88a14d416ac","fromSide":"right","toNode":"6dbb85865a9057e3","toSide":"left","toEnd":"none"},
+		{"id":"a574b93d92009fa1","fromNode":"45dae5a42aab6d17","fromSide":"right","toNode":"30d231607b082ab8","toSide":"left"},
+		{"id":"5a97a73fa025e8ad","fromNode":"ee84aa7db46f6dcc","fromSide":"bottom","toNode":"2e94cbd15efcacf8","toSide":"left"}
+	]
+}

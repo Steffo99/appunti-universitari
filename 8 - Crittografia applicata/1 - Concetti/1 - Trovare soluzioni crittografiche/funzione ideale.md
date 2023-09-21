@@ -1,0 +1,1 @@
+Definizione formale delle caratteristiche condivise da tutte le possibili [[soluzione|soluzioni]] di un problema.

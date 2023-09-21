@@ -1,0 +1,1 @@
+[[claim]] che denota le [[autorizzazione di utente|autorizzazioni]] concesse all'[[entità]] proprietaria dell'attestato.

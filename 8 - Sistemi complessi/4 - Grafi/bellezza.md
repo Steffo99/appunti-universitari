@@ -1,0 +1,1 @@
+Ulteriore [[pregiudizio]] applicabile nella selezione di nodi di un [[grafo scale-free]].

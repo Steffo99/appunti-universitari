@@ -1,0 +1,1 @@
+[[Insieme]] di **tutti i [[gene|geni]] ereditabili** appartenenti a un [[individuo]].

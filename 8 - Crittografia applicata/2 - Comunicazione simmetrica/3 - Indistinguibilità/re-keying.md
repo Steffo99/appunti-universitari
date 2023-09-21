@@ -1,0 +1,1 @@
+[[mitigazione]] al [[riutilizzo di nonce]] che consiste nel cambiare chiave dopo un certo numero di messaggi scambiati.

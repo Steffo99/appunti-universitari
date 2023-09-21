@@ -1,0 +1,1 @@
+Quantità di [[risorsa|risorse]] necessarie a raggiungere un determinato fine.

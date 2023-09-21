@@ -1,0 +1,1 @@
+[[funzione di hashing crittografico]] moderna, basata su [[SHA1]] e rafforzata.

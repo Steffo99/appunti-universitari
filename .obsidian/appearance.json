@@ -1,0 +1,11 @@
+{
+  "accentColor": "#d14224",
+  "textFontFamily": "",
+  "monospaceFontFamily": "",
+  "theme": "system",
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "canvas-zoom",
+    "canvas-node-placeholder-size"
+  ]
+}

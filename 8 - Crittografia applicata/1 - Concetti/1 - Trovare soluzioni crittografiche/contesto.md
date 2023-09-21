@@ -1,0 +1,1 @@
+Situazione considerata nella valutazione di una [[garanzia]], che descrive le possibilità a cui si va incontro.

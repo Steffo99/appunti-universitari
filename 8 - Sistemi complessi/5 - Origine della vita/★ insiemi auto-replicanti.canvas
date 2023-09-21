@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"cc9e909c8734cf67","type":"file","file":"8 - Sistemi complessi/5 - Origine della vita/insieme auto-replicante.md","x":-400,"y":-120,"width":400,"height":400,"color":"#ffffff"},
+		{"id":"0fea852d1179a445","type":"file","file":"8 - Sistemi complessi/5 - Origine della vita/modello di Kauffman per gli insiemi auto-replicanti.md","x":-400,"y":-680,"width":400,"height":400},
+		{"id":"aeaa94b740eb9e0a","type":"file","file":"8 - Sistemi complessi/5 - Origine della vita/insieme auto-catalitico riflessivo generato da cibo.md","x":160,"y":-120,"width":400,"height":400,"color":"3"},
+		{"id":"ea085e7545050c6a","type":"file","file":"8 - Sistemi complessi/5 - Origine della vita/substrato.md","x":720,"y":-680,"width":400,"height":400},
+		{"id":"dbcfb1b71d832e2d","type":"file","file":"8 - Sistemi complessi/5 - Origine della vita/catalizzatore.md","x":720,"y":-120,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"d8533dea35ae3e2a","fromNode":"cc9e909c8734cf67","fromSide":"top","toNode":"0fea852d1179a445","toSide":"bottom"},
+		{"id":"133654a179197f4c","fromNode":"cc9e909c8734cf67","fromSide":"right","toNode":"aeaa94b740eb9e0a","toSide":"left"},
+		{"id":"23241eb6d37fa4b3","fromNode":"aeaa94b740eb9e0a","fromSide":"right","toNode":"dbcfb1b71d832e2d","toSide":"left"},
+		{"id":"c60c0326f7af8613","fromNode":"aeaa94b740eb9e0a","fromSide":"right","toNode":"ea085e7545050c6a","toSide":"left"}
+	]
+}

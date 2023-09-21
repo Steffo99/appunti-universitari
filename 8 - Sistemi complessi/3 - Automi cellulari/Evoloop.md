@@ -1,0 +1,1 @@
+Successore di [[Langton's Loops]] che implementa [[meccanismi evolutivi]] nei loop.

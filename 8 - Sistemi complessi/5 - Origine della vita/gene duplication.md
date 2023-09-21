@@ -1,0 +1,1 @@
+[[Variazione]] casuale in cui una stringa di [[nucleotide|nucleotidi]] si duplica.

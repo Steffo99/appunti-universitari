@@ -1,0 +1,1 @@
+[[problema]] in cui si vuole verificare che un dato a cui ha avuto accesso un [[adaptive chosen-ciphertext attacker]] sia rimasto [[integrità|integro]].

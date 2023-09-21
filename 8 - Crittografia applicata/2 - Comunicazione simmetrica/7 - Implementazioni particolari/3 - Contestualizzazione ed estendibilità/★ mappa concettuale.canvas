@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"aa275b3f9ddb0d70","x":-500,"y":260,"width":1560,"height":1000,"color":"6","type":"group","label":"cSHAKE e derivati"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/3 - Contestualizzazione ed estendibilità/extendible output function.md","id":"a95b2233e4fd245f","x":-200,"y":-240,"width":400,"height":400,"color":"#ffffff"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/3 - Contestualizzazione ed estendibilità/funzione contestualizzata.md","id":"8d7a4c6f4a70376d","x":360,"y":-240,"width":400,"height":400,"color":"#ffffff"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/3 - Contestualizzazione ed estendibilità/Keccak message authentication code.md","id":"eb9a17dae1d34473","x":-480,"y":840,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/3 - Contestualizzazione ed estendibilità/TupleHash.md","id":"4c34b257497b6ce1","x":80,"y":840,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/3 - Contestualizzazione ed estendibilità/ParallelHash.md","id":"8481d325271f68ff","x":640,"y":840,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/3 - Contestualizzazione ed estendibilità/cSHAKE.md","id":"30bc33b840240d11","x":-480,"y":280,"width":1520,"height":400}
+	],
+	"edges":[
+		{"id":"a99f52ff548dfd2c","fromNode":"8d7a4c6f4a70376d","fromSide":"bottom","toNode":"30bc33b840240d11","toSide":"top","toEnd":"none"},
+		{"id":"1cf594fc20c0ca46","fromNode":"a95b2233e4fd245f","fromSide":"bottom","toNode":"30bc33b840240d11","toSide":"top","toEnd":"none"},
+		{"id":"e1677fd4e3ef7ff4","fromNode":"30bc33b840240d11","fromSide":"bottom","toNode":"eb9a17dae1d34473","toSide":"top","toEnd":"none"},
+		{"id":"3e61281960072e9a","fromNode":"30bc33b840240d11","fromSide":"bottom","toNode":"4c34b257497b6ce1","toSide":"top","toEnd":"none"},
+		{"id":"688f446f09e24dbd","fromNode":"30bc33b840240d11","fromSide":"bottom","toNode":"8481d325271f68ff","toSide":"top","toEnd":"none"}
+	]
+}

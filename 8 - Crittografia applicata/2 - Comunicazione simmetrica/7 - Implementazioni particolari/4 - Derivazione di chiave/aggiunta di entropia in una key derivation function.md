@@ -1,0 +1,1 @@
+Una [[key derivation function]] può opzionalmente introdurre [[entropia]] nella [[chiave derivata]].

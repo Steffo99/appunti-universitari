@@ -1,0 +1,1 @@
+[[Attacco]] in cui l'[[avversario]] impedisce che i suoi bersagli accedano a un dato [[asset]].

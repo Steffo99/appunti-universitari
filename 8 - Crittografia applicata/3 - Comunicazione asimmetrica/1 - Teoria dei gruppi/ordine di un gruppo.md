@@ -1,0 +1,1 @@
+Il numero degli elementi nell'[[insieme]] del [[gruppo]].

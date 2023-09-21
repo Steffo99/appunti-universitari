@@ -1,0 +1,1 @@
+[[attacco]] di [[collision experiment]] per [[SHA1]].

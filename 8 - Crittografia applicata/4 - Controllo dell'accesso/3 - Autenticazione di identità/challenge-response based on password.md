@@ -1,0 +1,1 @@
+[[funzione ideale]] di [[challenge-response]] in cui si vuole utilizzare una [[password]] per [[autenticazione di identità|autenticare l'identità dell'utente]].

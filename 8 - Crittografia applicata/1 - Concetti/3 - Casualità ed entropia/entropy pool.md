@@ -1,0 +1,1 @@
+[[Buffer]] in cui vengono immagazinati temporaneamente dati di uno o più [[true random number generator]] in attesa che essi vengano letti da un [[pseudo-random number generator]].

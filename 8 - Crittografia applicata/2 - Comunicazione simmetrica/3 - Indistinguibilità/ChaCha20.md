@@ -1,0 +1,1 @@
+[[deterministic pseudo-random bitstring generator]] moderno.

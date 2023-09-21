@@ -1,0 +1,36 @@
+{
+	"nodes":[
+		{"type":"group","id":"19f202eef7d804c9","x":-600,"y":-40,"width":906,"height":420,"label":"Blocco #1"},
+		{"type":"group","id":"7c6da0365fc26acc","x":400,"y":440,"width":906,"height":420,"label":"Blocco #2"},
+		{"type":"group","id":"dd56eb2e2f5c0bf7","x":1400,"y":920,"width":906,"height":420,"label":"Blocco #3"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/plaintext.md","id":"f6a5be7e48515ae7","x":-114,"y":-20,"width":400,"height":50,"color":"3"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/XOR.md","id":"45cd6bfae1448dc1","x":-114,"y":100,"width":400,"height":50,"color":"2"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/initialization vector.md","id":"4614426e5ea8b47c","x":-580,"y":100,"width":400,"height":50,"color":"2"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/chiave simmetrica.md","id":"9877bbe3ff78bae6","x":-580,"y":265,"width":400,"height":50,"color":"6"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/keyed family of pseudo-random permutations.md","id":"ceb56ed3d87a448c","x":-114,"y":220,"width":400,"height":140,"color":"1"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/plaintext.md","id":"d1f7d469f3d0fe49","x":886,"y":460,"width":400,"height":50,"color":"3"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/XOR.md","id":"adbd02247a507bde","x":886,"y":580,"width":400,"height":50,"color":"2"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/chiave simmetrica.md","id":"08b801e8a5c35432","x":420,"y":745,"width":400,"height":50,"color":"6"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/keyed family of pseudo-random permutations.md","id":"fc3b47820b152df4","x":886,"y":700,"width":400,"height":140,"color":"1"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/XOR.md","id":"d87a3a68bda96ae7","x":1886,"y":1060,"width":400,"height":50,"color":"2"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/keyed family of pseudo-random permutations.md","id":"36713dd7821cda9e","x":1886,"y":1180,"width":400,"height":140,"color":"1"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/chiave simmetrica.md","id":"ace1889e1ff489fd","x":1420,"y":1225,"width":400,"height":50,"color":"6"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/plaintext.md","id":"93f19401fe83cd08","x":1886,"y":940,"width":400,"height":50,"color":"3"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/ciphertext.md","id":"4eb6e5a9f3d37b15","x":1886,"y":1400,"width":400,"height":50,"color":"4"}
+	],
+	"edges":[
+		{"id":"67710f4f0376f650","fromNode":"9877bbe3ff78bae6","fromSide":"right","toNode":"ceb56ed3d87a448c","toSide":"left","color":"6"},
+		{"id":"4715627db4b7bb94","fromNode":"f6a5be7e48515ae7","fromSide":"bottom","toNode":"45cd6bfae1448dc1","toSide":"top","color":"3"},
+		{"id":"5e44260d742d9032","fromNode":"4614426e5ea8b47c","fromSide":"right","toNode":"45cd6bfae1448dc1","toSide":"left","color":"2"},
+		{"id":"cd43092938be8a38","fromNode":"45cd6bfae1448dc1","fromSide":"bottom","toNode":"ceb56ed3d87a448c","toSide":"top","color":"2"},
+		{"id":"a57ad92418552333","fromNode":"d1f7d469f3d0fe49","fromSide":"bottom","toNode":"adbd02247a507bde","toSide":"top","color":"3"},
+		{"id":"ac23798265ece9af","fromNode":"adbd02247a507bde","fromSide":"bottom","toNode":"fc3b47820b152df4","toSide":"top","color":"2"},
+		{"id":"a873b11b6432e42f","fromNode":"08b801e8a5c35432","fromSide":"right","toNode":"fc3b47820b152df4","toSide":"left","color":"6"},
+		{"id":"848c1a0633fd208f","fromNode":"93f19401fe83cd08","fromSide":"bottom","toNode":"d87a3a68bda96ae7","toSide":"top","color":"3"},
+		{"id":"7d7d7f0efdecdffe","fromNode":"d87a3a68bda96ae7","fromSide":"bottom","toNode":"36713dd7821cda9e","toSide":"top","color":"2"},
+		{"id":"131d4b46135e5e35","fromNode":"36713dd7821cda9e","fromSide":"bottom","toNode":"4eb6e5a9f3d37b15","toSide":"top","color":"4"},
+		{"id":"240a85a2003a7070","fromNode":"ace1889e1ff489fd","fromSide":"right","toNode":"36713dd7821cda9e","toSide":"left","color":"6"},
+		{"id":"9ecbd48c76088d3c","fromNode":"fc3b47820b152df4","fromSide":"bottom","toNode":"d87a3a68bda96ae7","toSide":"left","color":"2"},
+		{"id":"3ad1659ab9312e3d","fromNode":"ceb56ed3d87a448c","fromSide":"bottom","toNode":"adbd02247a507bde","toSide":"left","color":"2"}
+	]
+}

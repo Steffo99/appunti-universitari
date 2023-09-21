@@ -1,0 +1,1 @@
+[[protocollo]] di [[crittografia simmetrica autenticata]] basato sul [[Galois-Counter mode]].

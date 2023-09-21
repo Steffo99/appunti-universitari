@@ -1,0 +1,1 @@
+[[Procedura]] pratica che permette di superare l'ostacolo posto da un [[problema]].

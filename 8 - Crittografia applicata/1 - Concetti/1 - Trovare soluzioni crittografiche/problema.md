@@ -1,0 +1,1 @@
+Ostacolo che impedisce di raggiungere un certo fine pratico.

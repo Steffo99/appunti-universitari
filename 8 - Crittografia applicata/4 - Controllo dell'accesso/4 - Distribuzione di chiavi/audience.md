@@ -1,0 +1,1 @@
+[[claim]] che denota per quale collettivo di [[entità]] è stato rilasciato l'attestato.

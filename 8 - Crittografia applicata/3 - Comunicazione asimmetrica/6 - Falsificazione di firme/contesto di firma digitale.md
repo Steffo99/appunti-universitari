@@ -1,0 +1,1 @@
+[[contesto]] in cui i membri della [[squadra blu]] desiderano archiviare messaggi [[problema di firma digitale|autenticati con firma digitale]], e i membri della [[squadra rossa]] desiderano creare ulteriori messaggi che vengano autenticati con successo, usando determinate capacità e conoscenze.

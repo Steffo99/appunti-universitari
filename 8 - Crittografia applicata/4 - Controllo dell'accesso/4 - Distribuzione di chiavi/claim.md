@@ -1,0 +1,1 @@
+[[Metadato]] di un [[attestato]] che descrive *come* esso può essere usato.

@@ -1,0 +1,1 @@
+[[funzione di password hashing]] simile a [[PBKDF1]].

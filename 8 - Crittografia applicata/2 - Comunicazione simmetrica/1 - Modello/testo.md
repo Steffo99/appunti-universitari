@@ -1,0 +1,1 @@
+Dato che contiene informazioni con un significato semantico.

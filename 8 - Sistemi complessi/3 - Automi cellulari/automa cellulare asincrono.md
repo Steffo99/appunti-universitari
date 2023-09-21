@@ -1,0 +1,1 @@
+[[automa cellulare]] la cui [[regola di transizione]] non è applicata uniformemente a tutte le celle, ma viene applicata in modo **sequenziale** oppure **casuale**.

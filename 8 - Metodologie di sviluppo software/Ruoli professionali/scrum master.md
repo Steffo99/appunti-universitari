@@ -1,0 +1,1 @@
+Membro del team di sviluppo in [[scrum]] che aiuta nell'applicazione di esso, aiutando i membri del team ad applicare tecniche di sviluppo [[agile|agili]], programmando il lavoro e risolvendo eventuali problemi presentati nella [[sprint retrospective]].

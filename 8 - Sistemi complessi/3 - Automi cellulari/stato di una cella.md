@@ -1,0 +1,1 @@
+Valore contenuto in una [[cella di un automa cellulare]].

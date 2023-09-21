@@ -1,0 +1,1 @@
+Insieme di [[agente|agenti]] dagli obiettivi comuni.

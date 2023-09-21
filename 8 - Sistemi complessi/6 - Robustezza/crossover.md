@@ -1,0 +1,1 @@
+[[Variazione]] casuale che avviene quando i [[nucleotide|nucleotidi]] di due diverse stringhe di [[DNA]] si combinano insieme.

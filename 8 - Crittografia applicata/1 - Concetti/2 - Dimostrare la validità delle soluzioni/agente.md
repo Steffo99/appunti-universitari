@@ -1,0 +1,1 @@
+Individuo che effettua determinate azioni all'interno di un [[sistema complesso]].

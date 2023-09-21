@@ -1,0 +1,1 @@
+[[procedura]] per evitare attacchi [[man-in-the-middle]] in [[challenge-response based on public key]] che consiste nel [[problema di firma digitale|firmare]] il [[certificato web]] del [[servizio di autenticazione]] o l'[[identificatore di sessione]] attuale.

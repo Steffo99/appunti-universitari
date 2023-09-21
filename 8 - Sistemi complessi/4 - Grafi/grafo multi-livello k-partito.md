@@ -1,0 +1,1 @@
+[[grafo multi-livello]] in cui non possono esistere [[arco di un grafo|archi]] tra [[nodo di un grafo|nodi]] dello stesso livello.

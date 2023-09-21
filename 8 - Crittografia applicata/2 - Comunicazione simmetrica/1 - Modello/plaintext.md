@@ -1,0 +1,1 @@
+[[testo|Testo]] che uno [[sfidante]] invia ad un altro.

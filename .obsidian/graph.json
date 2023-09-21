@@ -1,0 +1,30 @@
+{
+  "collapse-filter": false,
+  "search": "path:\"8 - Sistemi complessi\"  ",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"8 - Sistemi complessi/4 - Grafi\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 65284
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -3,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.864583333333333,
+  "repelStrength": 20,
+  "linkStrength": 1,
+  "linkDistance": 30,
+  "scale": 0.45050811767578125,
+  "close": true
+}

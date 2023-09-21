@@ -1,0 +1,36 @@
+{
+	"nodes":[
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/rete.md","id":"c972b92cd9f827c1","x":200,"y":-640,"width":400,"height":400},
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/sistema complesso.md","id":"704ce498cfc178b7","x":200,"y":-80,"width":400,"height":400,"color":"#ffffff"},
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/parte di un sistema complesso.md","id":"62bc7b78bf2dddad","x":-360,"y":-80,"width":400,"height":400},
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/adattabilità.md","id":"d7a61d69202c6cf5","x":480,"y":480,"width":400,"height":400},
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/fallimento a cascata.md","id":"8d24657a0cf73078","x":1040,"y":480,"width":400,"height":400},
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/feedback loop.md","id":"fe91ca3d079f6894","x":1600,"y":480,"width":400,"height":400},
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/apertura all'ambiente.md","id":"47a047891aae1cbb","x":-640,"y":480,"width":400,"height":400},
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/non-linearità.md","id":"95a52ad702d8a051","x":-1200,"y":480,"width":400,"height":400},
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/emergenza.md","id":"d976d954bcd2662f","x":-80,"y":480,"width":400,"height":400},
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/caos.md","id":"c223871d5795c5df","x":-1200,"y":1600,"width":400,"height":400},
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/topological mixing.md","id":"6bba28b29323cfae","x":-1480,"y":2160,"width":400,"height":400,"color":"3"},
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/dense periodic orbits.md","id":"71aee901fc33b95e","x":-920,"y":2160,"width":400,"height":400,"color":"3"},
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/criticità auto-organizzata.md","id":"28c1eb34a09342d4","x":-80,"y":1600,"width":400,"height":400},
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/auto-organizzazione.md","id":"6f8cdae01cab1831","x":-80,"y":1040,"width":400,"height":400},
+		{"type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/Landau's phenomenological theory.md","id":"ccde40a01a614b5b","x":-640,"y":1040,"width":400,"height":400,"color":"3"},
+		{"id":"4b003520d5b9d44f","type":"file","file":"8 - Sistemi complessi/2 - Sistemi complessi/pila di sabbia abeliana.md","x":-80,"y":2160,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"a14d99d976258e52","fromNode":"704ce498cfc178b7","fromSide":"top","toNode":"c972b92cd9f827c1","toSide":"bottom"},
+		{"id":"b3475e98a2c8b223","fromNode":"704ce498cfc178b7","fromSide":"left","toNode":"62bc7b78bf2dddad","toSide":"right"},
+		{"id":"c6cf8918ef4182fd","fromNode":"704ce498cfc178b7","fromSide":"bottom","toNode":"d7a61d69202c6cf5","toSide":"top"},
+		{"id":"9d3a8d1d6c5381ec","fromNode":"704ce498cfc178b7","fromSide":"bottom","toNode":"8d24657a0cf73078","toSide":"top"},
+		{"id":"22e7203de10f619d","fromNode":"704ce498cfc178b7","fromSide":"bottom","toNode":"fe91ca3d079f6894","toSide":"top"},
+		{"id":"d69763c3f9082ade","fromNode":"704ce498cfc178b7","fromSide":"bottom","toNode":"d976d954bcd2662f","toSide":"top"},
+		{"id":"0cdfa1165a444fef","fromNode":"704ce498cfc178b7","fromSide":"bottom","toNode":"95a52ad702d8a051","toSide":"top"},
+		{"id":"6fd3b84be0ba2c25","fromNode":"704ce498cfc178b7","fromSide":"bottom","toNode":"47a047891aae1cbb","toSide":"top"},
+		{"id":"455390d6bc26473c","fromNode":"95a52ad702d8a051","fromSide":"bottom","toNode":"c223871d5795c5df","toSide":"top"},
+		{"id":"12859c5b561c3016","fromNode":"c223871d5795c5df","fromSide":"bottom","toNode":"6bba28b29323cfae","toSide":"top"},
+		{"id":"19f8dd22fe2eab69","fromNode":"d976d954bcd2662f","fromSide":"bottom","toNode":"6f8cdae01cab1831","toSide":"top"},
+		{"id":"3005d352e65cf9ff","fromNode":"c223871d5795c5df","fromSide":"bottom","toNode":"71aee901fc33b95e","toSide":"top"},
+		{"id":"f686be0ab6d64865","fromNode":"6f8cdae01cab1831","fromSide":"bottom","toNode":"28c1eb34a09342d4","toSide":"top"},
+		{"id":"13d9c16b87fde0c9","fromNode":"28c1eb34a09342d4","fromSide":"bottom","toNode":"4b003520d5b9d44f","toSide":"top"}
+	]
+}

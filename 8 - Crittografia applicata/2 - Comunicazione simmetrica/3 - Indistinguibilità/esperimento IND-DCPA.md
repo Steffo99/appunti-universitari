@@ -1,0 +1,1 @@
+Variante dell'[[esperimento IND-CPA]] in cui il [[chosen-plaintext attacker]] non può far cifrare più volte lo stesso [[plaintext]].

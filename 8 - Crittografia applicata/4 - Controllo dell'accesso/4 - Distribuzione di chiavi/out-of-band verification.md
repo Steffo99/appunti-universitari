@@ -1,0 +1,1 @@
+"[[soluzione]]" al problema di [[distribuzione chiavi pubbliche]] in cui si utilizza un canale sicuro stabilito in precedenza per [[autenticità|autenticare]] le nuove [[chiave pubblica|chiavi pubbliche]].

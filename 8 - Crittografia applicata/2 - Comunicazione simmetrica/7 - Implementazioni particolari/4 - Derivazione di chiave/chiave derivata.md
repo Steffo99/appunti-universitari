@@ -1,0 +1,1 @@
+[[chiave simmetrica]] ottenuta come risultato di una [[key derivation function]].

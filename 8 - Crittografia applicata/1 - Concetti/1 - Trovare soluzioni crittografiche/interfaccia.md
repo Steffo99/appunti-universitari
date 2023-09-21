@@ -1,0 +1,1 @@
+Insieme di [[funzione ideale|funzioni ideali]] che sono parte della stessa soluzione.

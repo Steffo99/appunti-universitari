@@ -1,0 +1,1 @@
+[[problema]] in cui si vuole verificare che un dato [[irrational attacker|soggetto a interferenze casuali]] sia rimasto [[integrità|integro]].

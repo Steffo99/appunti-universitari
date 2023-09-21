@@ -1,0 +1,1 @@
+[[grafo]] in cui tutti gli [[arco di un grafo|archi]] possibili sono presenti.

@@ -1,0 +1,1 @@
+Modello che determina quali tipi di [[regola di transizione|regole]] è possibile inserire in una [[access control list]].

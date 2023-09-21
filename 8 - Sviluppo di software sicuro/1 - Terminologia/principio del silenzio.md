@@ -1,0 +1,1 @@
+Principio secondo il quale gli [[asset]] devono emettere il minimo livello di output necessario a svolgere la loro funzione.

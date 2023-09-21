@@ -1,0 +1,1 @@
+[[Pattern]] di [[cella di un automa cellulare|celle]] che effettua [[periodo|periodicamente]] una [[ŧraslazione]].

@@ -1,0 +1,10 @@
+**/*.mp4
+**/*.mkv
+**/*.sync-confict-*
+
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash
+
+0 - Generale/★ esami.canvas
+**/0 - Materiale di studio/

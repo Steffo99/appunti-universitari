@@ -1,0 +1,1 @@
+[[funzione di hashing]] che aggiunge più possibili output al [[bit di parità]].

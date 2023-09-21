@@ -1,0 +1,1 @@
+[[grafo]] formato connettendo due nodi scelti casualmente per un certo numero di volte, ma in cui la probabilità che un nodo venga selezionato per un collegamento è moltiplicata per la [[degree centrality]] del nodo stesso.

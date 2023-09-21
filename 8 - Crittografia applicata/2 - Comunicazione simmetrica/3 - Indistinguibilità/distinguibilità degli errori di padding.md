@@ -1,0 +1,1 @@
+[[8 - Crittografia applicata/1 - Concetti/2 - Dimostrare la validità delle soluzioni/debolezza]] di un [[funzione|protocollo]] di [[crittografia moderna]] che si verifica quando la [[funzione di decifratura]] permette di distinguere gli errori di [[padding]] dagli errori di decifratura generici.

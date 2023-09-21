@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"c188dbf313d459d7","type":"file","file":"8 - Sistemi complessi/4 - Grafi/ipergrafo.md","x":-320,"y":-400,"width":400,"height":400,"color":"#ffffff"},
+		{"id":"90af73a6d8ea19dc","type":"file","file":"8 - Sistemi complessi/4 - Grafi/eccentricità di un nodo.md","x":-320,"y":160,"width":400,"height":400},
+		{"id":"fef8f9c8bfe96648","type":"file","file":"8 - Sistemi complessi/4 - Grafi/iperrete.md","x":-320,"y":-960,"width":400,"height":400},
+		{"id":"93b988b74103f46d","type":"file","file":"8 - Sistemi complessi/4 - Grafi/iperarco.md","x":-880,"y":-400,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"78f5d19ee9378a3f","fromNode":"c188dbf313d459d7","fromSide":"bottom","toNode":"90af73a6d8ea19dc","toSide":"top"},
+		{"id":"7cad2504f7d775c9","fromNode":"c188dbf313d459d7","fromSide":"left","toNode":"93b988b74103f46d","toSide":"right"},
+		{"id":"d66b40752cae172c","fromNode":"c188dbf313d459d7","fromSide":"top","toNode":"fef8f9c8bfe96648","toSide":"bottom"}
+	]
+}

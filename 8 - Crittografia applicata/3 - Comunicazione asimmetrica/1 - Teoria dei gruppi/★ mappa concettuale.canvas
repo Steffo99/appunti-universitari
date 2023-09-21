@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/1 - Teoria dei gruppi/gruppo.md","id":"b0b1eb928801b20d","x":-480,"y":-760,"width":960,"height":640},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/1 - Teoria dei gruppi/gruppo ciclico.md","id":"9f4e74c79252c034","x":-480,"y":40,"width":960,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/1 - Teoria dei gruppi/gruppo moltiplicativo.md","id":"9dc6325795bc84b5","x":640,"y":-360,"width":400,"height":240},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/1 - Teoria dei gruppi/gruppo additivo.md","id":"19ea77acbb19e3bd","x":640,"y":-760,"width":400,"height":240},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/1 - Teoria dei gruppi/ordine di un gruppo.md","id":"06ff5b7ad2e02c6d","x":-200,"y":-1320,"width":400,"height":400,"color":"#ffffff"},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/1 - Teoria dei gruppi/gruppo finito.md","id":"e337db164039003d","x":-760,"y":-1320,"width":400,"height":120},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/1 - Teoria dei gruppi/gruppo infinito.md","id":"85939a32c6c70335","x":-760,"y":-1040,"width":400,"height":120},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/1 - Teoria dei gruppi/gruppo di Galois.md","id":"8b8aa09a75ab2e1a","x":1200,"y":-560,"width":400,"height":240},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/1 - Teoria dei gruppi/sottogruppo.md","id":"b99c532d2bac9cd9","x":-1040,"y":-560,"width":400,"height":240},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/1 - Teoria dei gruppi/generatore di un gruppo ciclico.md","id":"ba78030b01f07217","x":-1040,"y":40,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/3 - Comunicazione asimmetrica/1 - Teoria dei gruppi/gruppo ciclico di modulo primo.md","id":"178cf680710ecba6","x":-760,"y":600,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"ac0cfbbfb8e9c949","fromNode":"b0b1eb928801b20d","fromSide":"bottom","toNode":"9f4e74c79252c034","toSide":"top","toEnd":"none"},
+		{"id":"218a10ec1bab0327","fromNode":"b0b1eb928801b20d","fromSide":"right","toNode":"9dc6325795bc84b5","toSide":"left","toEnd":"none"},
+		{"id":"e01b0cc0837d93a1","fromNode":"b0b1eb928801b20d","fromSide":"right","toNode":"19ea77acbb19e3bd","toSide":"left","toEnd":"none"},
+		{"id":"f599979d05eef85d","fromNode":"b0b1eb928801b20d","fromSide":"left","toNode":"b99c532d2bac9cd9","toSide":"right","toEnd":"none"},
+		{"id":"e6ab5993a63bb7d5","fromNode":"b0b1eb928801b20d","fromSide":"top","toNode":"06ff5b7ad2e02c6d","toSide":"bottom","toEnd":"none"},
+		{"id":"2be0c721d2b38765","fromNode":"06ff5b7ad2e02c6d","fromSide":"left","toNode":"85939a32c6c70335","toSide":"right","toEnd":"none"},
+		{"id":"faecc6c3e966426b","fromNode":"06ff5b7ad2e02c6d","fromSide":"left","toNode":"e337db164039003d","toSide":"right","toEnd":"none"},
+		{"id":"8f4dfe0fff30a3b5","fromNode":"19ea77acbb19e3bd","fromSide":"right","toNode":"8b8aa09a75ab2e1a","toSide":"left","toEnd":"none"},
+		{"id":"0e619e930b261413","fromNode":"9dc6325795bc84b5","fromSide":"right","toNode":"8b8aa09a75ab2e1a","toSide":"left","toEnd":"none"},
+		{"id":"463ac5beb8bc799b","fromNode":"9f4e74c79252c034","fromSide":"left","toNode":"ba78030b01f07217","toSide":"right","toEnd":"none"},
+		{"id":"dadf31123a30fb96","fromNode":"ba78030b01f07217","fromSide":"top","toNode":"b99c532d2bac9cd9","toSide":"bottom","toEnd":"none"},
+		{"id":"84d48aabc1e326d7","fromNode":"9f4e74c79252c034","fromSide":"bottom","toNode":"178cf680710ecba6","toSide":"top","toEnd":"none"},
+		{"id":"0a766652a8c16064","fromNode":"ba78030b01f07217","fromSide":"bottom","toNode":"178cf680710ecba6","toSide":"top","toEnd":"none"}
+	]
+}

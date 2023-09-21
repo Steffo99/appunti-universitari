@@ -1,0 +1,1 @@
+[[grafo]] in cui partendo da un qualsiasi [[nodo di un grafo|nodo]] è possibile raggiungere qualsiasi altro.

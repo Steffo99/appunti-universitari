@@ -1,0 +1,1 @@
+[[blob|Blob]] che, dati certi prerequisiti, può essere riconvertito nel corrispondente [[plaintext]].

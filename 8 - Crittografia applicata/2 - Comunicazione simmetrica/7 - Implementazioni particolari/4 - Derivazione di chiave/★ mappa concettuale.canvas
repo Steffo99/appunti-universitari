@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"type":"group","id":"ab3641b58a16342c","x":-1020,"y":-1300,"width":2680,"height":1000,"color":"6","label":"Processo di key derivation"},
+		{"type":"group","id":"45743028691901af","x":-740,"y":-180,"width":2120,"height":1000,"color":"6","label":"HKDF"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/4 - Derivazione di chiave/input key material.md","id":"d356511633ba6237","x":-1000,"y":-720,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/4 - Derivazione di chiave/HKDF-Extract.md","id":"15ef71c13587a660","x":-720,"y":-160,"width":960,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/4 - Derivazione di chiave/aggiunta di entropia in una key derivation function.md","id":"b42b5e32508f7fe1","x":-720,"y":-1280,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/4 - Derivazione di chiave/contestualizzazione di una key derivation function.md","id":"7d36e75443d7beea","x":960,"y":-1280,"width":400,"height":400},
+		{"type":"text","text":"","id":"cd96734ac238ef3b","x":-840,"y":-1680,"width":80,"height":80},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/4 - Derivazione di chiave/key derivation.md","id":"825ac99555a32457","x":120,"y":-2400,"width":400,"height":400,"color":"#ffffff"},
+		{"type":"text","text":"","id":"d95785fa0350f1a9","x":1400,"y":-1680,"width":80,"height":80},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/4 - Derivazione di chiave/key derivation function.md","id":"4dfb0778cd20e8ca","x":-160,"y":-1840,"width":960,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/4 - Derivazione di chiave/HKDF-Expand.md","id":"1709dc4fb3fe8dd1","x":400,"y":-160,"width":960,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/4 - Derivazione di chiave/expansion di una key derivation function.md","id":"371d4a98b6c4eef2","x":680,"y":-720,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/4 - Derivazione di chiave/pseudo-random key.md","id":"76fdd0b3651a0982","x":120,"y":-720,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/4 - Derivazione di chiave/extraction di una key derivation function.md","id":"e898362bc18cf0cd","x":-440,"y":-720,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/4 - Derivazione di chiave/HKDF.md","id":"ec63e5d0f2db3af0","x":120,"y":400,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/4 - Derivazione di chiave/chiave derivata.md","id":"a7aa887167c8ec5f","x":1240,"y":-720,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"75f2ef5ee06402dc","fromNode":"15ef71c13587a660","fromSide":"bottom","toNode":"ec63e5d0f2db3af0","toSide":"top","toEnd":"none"},
+		{"id":"3be71cb2317132cd","fromNode":"1709dc4fb3fe8dd1","fromSide":"bottom","toNode":"ec63e5d0f2db3af0","toSide":"top","toEnd":"none"},
+		{"id":"0cc29715ea9522cc","fromNode":"e898362bc18cf0cd","fromSide":"bottom","toNode":"15ef71c13587a660","toSide":"top","toEnd":"none"},
+		{"id":"433b7152e1fc1403","fromNode":"371d4a98b6c4eef2","fromSide":"bottom","toNode":"1709dc4fb3fe8dd1","toSide":"top","toEnd":"none"},
+		{"id":"3d1a92e98166f518","fromNode":"d356511633ba6237","fromSide":"right","toNode":"e898362bc18cf0cd","toSide":"left"},
+		{"id":"c88729cff3cd2d57","fromNode":"e898362bc18cf0cd","fromSide":"right","toNode":"76fdd0b3651a0982","toSide":"left"},
+		{"id":"0ade680a1909984a","fromNode":"76fdd0b3651a0982","fromSide":"right","toNode":"371d4a98b6c4eef2","toSide":"left"},
+		{"id":"604ca590163cb03b","fromNode":"371d4a98b6c4eef2","fromSide":"right","toNode":"a7aa887167c8ec5f","toSide":"left"},
+		{"id":"5ea08a0b29a57ebf","fromNode":"371d4a98b6c4eef2","fromSide":"top","toNode":"7d36e75443d7beea","toSide":"bottom","toEnd":"none"},
+		{"id":"2a832225021e927e","fromNode":"e898362bc18cf0cd","fromSide":"top","toNode":"b42b5e32508f7fe1","toSide":"bottom","toEnd":"none"},
+		{"id":"bae571ee056b32ed","fromNode":"4dfb0778cd20e8ca","fromSide":"bottom","toNode":"e898362bc18cf0cd","toSide":"top","toEnd":"none"},
+		{"id":"70769641332a4a91","fromNode":"4dfb0778cd20e8ca","fromSide":"bottom","toNode":"371d4a98b6c4eef2","toSide":"top","toEnd":"none"},
+		{"id":"8c2e593e5047e7fa","fromNode":"4dfb0778cd20e8ca","fromSide":"left","toNode":"cd96734ac238ef3b","toSide":"right","toEnd":"none"},
+		{"id":"48529596f1f4222c","fromNode":"4dfb0778cd20e8ca","fromSide":"right","toNode":"d95785fa0350f1a9","toSide":"left","toEnd":"none"},
+		{"id":"0f027ae16348e3a1","fromNode":"cd96734ac238ef3b","fromSide":"bottom","toNode":"d356511633ba6237","toSide":"top","toEnd":"none"},
+		{"id":"ed2495bc405710af","fromNode":"d95785fa0350f1a9","fromSide":"bottom","toNode":"a7aa887167c8ec5f","toSide":"top","toEnd":"none"},
+		{"id":"cfab6bd1a0a019fc","fromNode":"4dfb0778cd20e8ca","fromSide":"top","toNode":"825ac99555a32457","toSide":"bottom","toEnd":"none"}
+	]
+}

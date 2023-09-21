@@ -1,0 +1,1 @@
+Descrizione formale dell'insieme di conoscenze e possibilità disponibili alla [[squadra rossa]].

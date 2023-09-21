@@ -1,0 +1,1 @@
+[[automa cellulare]] progettato per implementare facilmente logica booleana.

@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"type":"group","id":"2c4ebbbb538e321d","x":-340,"y":-540,"width":2120,"height":1360,"color":"6","label":"Autorizzazione"},
+		{"type":"group","id":"690b77e863905479","x":-340,"y":-1500,"width":2120,"height":840,"color":"6","label":"Autenticazione"},
+		{"type":"file","file":"8 - Crittografia applicata/4 - Controllo dell'accesso/1 - Modello/credenziale.md","id":"c8738c235adc8377","x":240,"y":-1480,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/4 - Controllo dell'accesso/1 - Modello/servizio di autenticazione.md","id":"17a283e34857be3e","x":800,"y":-1480,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/4 - Controllo dell'accesso/1 - Modello/database delle credenziali.md","id":"4339020052d0fdca","x":1360,"y":-1480,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/4 - Controllo dell'accesso/1 - Modello/identificazione.md","id":"4e76e41c897222cb","x":-320,"y":-880,"width":400,"height":200},
+		{"type":"text","text":"","id":"5e063731569ecbb0","x":-320,"y":-520,"width":400,"height":200},
+		{"type":"file","file":"8 - Crittografia applicata/4 - Controllo dell'accesso/1 - Modello/autorizzazione di utente.md","id":"c54c78b54b92b448","x":240,"y":-520,"width":400,"height":200},
+		{"type":"file","file":"8 - Crittografia applicata/4 - Controllo dell'accesso/1 - Modello/autenticazione di identità.md","id":"bce5cef0dabdf289","x":240,"y":-880,"width":400,"height":200},
+		{"type":"file","file":"8 - Crittografia applicata/4 - Controllo dell'accesso/1 - Modello/access control list.md","id":"98a9d44f8faa5bdd","x":240,"y":-160,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/4 - Controllo dell'accesso/1 - Modello/access control model.md","id":"35a77671f1204efa","x":240,"y":400,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/4 - Controllo dell'accesso/1 - Modello/user agent.md","id":"25e75ed0a57d8864","x":-877,"y":-800,"width":400,"height":400,"color":"#ffffff"}
+	],
+	"edges":[
+		{"id":"8a8275e272dd3f3a","fromNode":"4e76e41c897222cb","fromSide":"right","toNode":"bce5cef0dabdf289","toSide":"left","toEnd":"none"},
+		{"id":"5f5b0aa385a3d3b3","fromNode":"5e063731569ecbb0","fromSide":"right","toNode":"c54c78b54b92b448","toSide":"left","toEnd":"none"},
+		{"id":"f6aff0a2f9348808","fromNode":"bce5cef0dabdf289","fromSide":"top","toNode":"c8738c235adc8377","toSide":"bottom","toEnd":"none"},
+		{"id":"0ce534cd65d4b155","fromNode":"c54c78b54b92b448","fromSide":"bottom","toNode":"98a9d44f8faa5bdd","toSide":"top","toEnd":"none"},
+		{"id":"9c07f78c975c0ffa","fromNode":"98a9d44f8faa5bdd","fromSide":"bottom","toNode":"35a77671f1204efa","toSide":"top","toEnd":"none"},
+		{"id":"8f6ab4dea5cb3862","fromNode":"c8738c235adc8377","fromSide":"right","toNode":"17a283e34857be3e","toSide":"left","toEnd":"none"},
+		{"id":"eb44693c1c40dacc","fromNode":"17a283e34857be3e","fromSide":"right","toNode":"4339020052d0fdca","toSide":"left","toEnd":"none"},
+		{"id":"3c5f31d274b207be","fromNode":"25e75ed0a57d8864","fromSide":"right","toNode":"4e76e41c897222cb","toSide":"left","toEnd":"none"},
+		{"id":"27b3211b0badcaa9","fromNode":"25e75ed0a57d8864","fromSide":"right","toNode":"5e063731569ecbb0","toSide":"left","toEnd":"none"}
+	]
+}

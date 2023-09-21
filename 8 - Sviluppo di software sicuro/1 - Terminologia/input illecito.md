@@ -1,0 +1,1 @@
+[[Input]] che ha un effetto ***non voluto*** dallo sviluppatore.

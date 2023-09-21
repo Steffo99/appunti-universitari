@@ -1,0 +1,42 @@
+{
+	"nodes":[
+		{"id":"6c2e21eb331f5cd5","type":"file","file":"8 - Sistemi complessi/4 - Grafi/grafo.md","x":-720,"y":-1840,"width":400,"height":400,"color":"#ffffff"},
+		{"id":"2a293cc183750ff1","type":"file","file":"8 - Sistemi complessi/4 - Grafi/distanza tra nodi di un grafo.md","x":-1280,"y":-1840,"width":400,"height":400},
+		{"id":"ab2b26a1bfd0713f","type":"file","file":"8 - Sistemi complessi/4 - Grafi/grafo casuale.md","x":-1280,"y":-1280,"width":400,"height":400},
+		{"id":"d45a437fe74b91fd","type":"file","file":"8 - Sistemi complessi/4 - Grafi/grafo small-world.md","x":-720,"y":-1280,"width":400,"height":400},
+		{"id":"4b397b17d2088d51","type":"file","file":"8 - Sistemi complessi/4 - Grafi/grafo a reticolo.md","x":-160,"y":-1280,"width":400,"height":400},
+		{"id":"f7793d093bef2904","type":"file","file":"8 - Sistemi complessi/4 - Grafi/grafo scale-free.md","x":400,"y":-1280,"width":400,"height":400},
+		{"id":"23f0482a49f7defc","type":"file","file":"8 - Sistemi complessi/4 - Grafi/bellezza.md","x":400,"y":-720,"width":400,"height":400},
+		{"id":"05c4a378bd4353d4","type":"file","file":"8 - Sistemi complessi/4 - Grafi/grafo connesso.md","x":-160,"y":-1840,"width":400,"height":400},
+		{"id":"21b9168c34fd6402","type":"file","file":"8 - Sistemi complessi/4 - Grafi/grafo sparso.md","x":-160,"y":-2400,"width":400,"height":400},
+		{"id":"f6ffdc5ed80e0b25","type":"file","file":"8 - Sistemi complessi/4 - Grafi/grafo denso.md","x":400,"y":-2400,"width":400,"height":400},
+		{"id":"9005d41bfc560766","type":"file","file":"8 - Sistemi complessi/4 - Grafi/grafo completo.md","x":960,"y":-2400,"width":400,"height":400},
+		{"id":"733461d917046848","type":"file","file":"8 - Sistemi complessi/4 - Grafi/percorso euleriano.md","x":-720,"y":-2400,"width":400,"height":400},
+		{"id":"de40e376c53b5bdf","type":"file","file":"8 - Sistemi complessi/4 - Grafi/circuito euleriano.md","x":-720,"y":-2960,"width":400,"height":400},
+		{"id":"c118a4867a7be34d","type":"file","file":"8 - Sistemi complessi/4 - Grafi/coefficiente di clustering.md","x":-1280,"y":-2960,"width":400,"height":400},
+		{"id":"c8dc15e8b41ca15c","type":"file","file":"8 - Sistemi complessi/4 - Grafi/eccentricità di un nodo.md","x":-1840,"y":-1560,"width":400,"height":400},
+		{"id":"415c9835a616cc34","type":"file","file":"8 - Sistemi complessi/4 - Grafi/raggio di un grafo.md","x":-2400,"y":-1840,"width":400,"height":400},
+		{"id":"ac6748810a3e351f","type":"file","file":"8 - Sistemi complessi/4 - Grafi/diametro di un grafo.md","x":-2400,"y":-1280,"width":400,"height":400},
+		{"id":"a1727a8f2725bb6a","type":"file","file":"8 - Sistemi complessi/4 - Grafi/lunghezza caratteristica di un grafo.md","x":-1840,"y":-2120,"width":400,"height":400},
+		{"id":"cc6066f7e7e5ee7d","type":"file","file":"8 - Sistemi complessi/4 - Grafi/percolation threshold.md","x":-1280,"y":-2400,"width":400,"height":400,"color":"3"}
+	],
+	"edges":[
+		{"id":"4a5bbeb9d3099c8a","fromNode":"6c2e21eb331f5cd5","fromSide":"left","toNode":"2a293cc183750ff1","toSide":"right"},
+		{"id":"b6c94d3ff0d0d8ad","fromNode":"6c2e21eb331f5cd5","fromSide":"bottom","toNode":"d45a437fe74b91fd","toSide":"top"},
+		{"id":"e4c111475b3989fd","fromNode":"6c2e21eb331f5cd5","fromSide":"right","toNode":"05c4a378bd4353d4","toSide":"left"},
+		{"id":"c5ffb80ff5e2b3a6","fromNode":"6c2e21eb331f5cd5","fromSide":"right","toNode":"21b9168c34fd6402","toSide":"left"},
+		{"id":"4a15588b4c4cf8f3","fromNode":"21b9168c34fd6402","fromSide":"right","toNode":"f6ffdc5ed80e0b25","toSide":"left"},
+		{"id":"44e65ee0b99819c9","fromNode":"6c2e21eb331f5cd5","fromSide":"bottom","toNode":"4b397b17d2088d51","toSide":"top"},
+		{"id":"1c151b148774698b","fromNode":"6c2e21eb331f5cd5","fromSide":"bottom","toNode":"f7793d093bef2904","toSide":"top"},
+		{"id":"5ebd10d6458ea3e6","fromNode":"6c2e21eb331f5cd5","fromSide":"bottom","toNode":"ab2b26a1bfd0713f","toSide":"top"},
+		{"id":"514b6c5bdcde98d0","fromNode":"6c2e21eb331f5cd5","fromSide":"top","toNode":"733461d917046848","toSide":"bottom"},
+		{"id":"abc0a5a3364f8f43","fromNode":"733461d917046848","fromSide":"top","toNode":"de40e376c53b5bdf","toSide":"bottom"},
+		{"id":"21c0388687023a7e","fromNode":"f7793d093bef2904","fromSide":"bottom","toNode":"23f0482a49f7defc","toSide":"top"},
+		{"id":"53f87d41c37e92c2","fromNode":"6c2e21eb331f5cd5","fromSide":"left","toNode":"c118a4867a7be34d","toSide":"right"},
+		{"id":"bade4f37ea325fa3","fromNode":"2a293cc183750ff1","fromSide":"left","toNode":"c8dc15e8b41ca15c","toSide":"right"},
+		{"id":"88f91e4b43388038","fromNode":"c8dc15e8b41ca15c","fromSide":"left","toNode":"ac6748810a3e351f","toSide":"right"},
+		{"id":"660f3021747df6e1","fromNode":"c8dc15e8b41ca15c","fromSide":"left","toNode":"415c9835a616cc34","toSide":"right"},
+		{"id":"708c13ea92f7a9d4","fromNode":"2a293cc183750ff1","fromSide":"left","toNode":"a1727a8f2725bb6a","toSide":"right"},
+		{"id":"7e067e7595844d3e","fromNode":"f6ffdc5ed80e0b25","fromSide":"right","toNode":"9005d41bfc560766","toSide":"left"}
+	]
+}

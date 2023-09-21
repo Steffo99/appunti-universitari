@@ -1,0 +1,1 @@
+[[Modello matematico]] che prova a rappresentare un [[fenomeno]] reale che si evolve nel [[tempo]].

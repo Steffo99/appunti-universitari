@@ -1,0 +1,1 @@
+[[gruppo]] in cui l'[[operazione]] è l'[[addizione]].

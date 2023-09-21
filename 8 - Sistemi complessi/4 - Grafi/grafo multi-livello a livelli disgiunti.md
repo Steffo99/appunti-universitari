@@ -1,0 +1,1 @@
+[[grafo multi-livello]] in cui ogni [[nodo di un grafo|nodo]] è presente in un solo livello.

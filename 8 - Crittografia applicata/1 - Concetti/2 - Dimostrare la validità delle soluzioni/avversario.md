@@ -1,0 +1,1 @@
+[[agente|Agente]] della [[squadra rossa]].

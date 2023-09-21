@@ -1,0 +1,1 @@
+[[8 - Crittografia applicata/1 - Concetti/2 - Dimostrare la validità delle soluzioni/debolezza]] di un protocollo di [[crittografia simmetrica moderna]] che si presenta quando l'[[initialization vector]] non è selezionato in modo [[casualità crittografica|imprevedibile]].

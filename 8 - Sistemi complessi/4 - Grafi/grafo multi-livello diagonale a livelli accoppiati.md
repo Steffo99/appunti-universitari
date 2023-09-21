@@ -1,0 +1,1 @@
+[[grafo multi-livello diagonale]] pesato in cui, per ogni coppia di livelli, tutti gli [[arco di un grafo|archi]] che li connettono hanno gli stessi pesi.

@@ -1,0 +1,1 @@
+[[Violazione]] in cui l'[[avversario]] ottiene accesso alla [[chiave simmetrica]].

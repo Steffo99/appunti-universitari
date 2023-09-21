@@ -1,0 +1,1 @@
+Campo che denota l'[[entità]] che il [[certificato web]] associa alla chiave pubblica.

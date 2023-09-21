@@ -1,0 +1,1 @@
+Particolare [[percorso euleriano]] con inizio e fine sullo stesso [[nodo di un grafo|nodo]].

@@ -1,0 +1,1 @@
+[[risorsa]] che quantifica la potenza di elaborazione disponibile.

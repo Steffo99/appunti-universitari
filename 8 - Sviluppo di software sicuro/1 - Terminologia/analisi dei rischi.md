@@ -1,0 +1,1 @@
+Documento che stima i possibili [[rischio|rischi]] a cui è esposto un [[asset]].

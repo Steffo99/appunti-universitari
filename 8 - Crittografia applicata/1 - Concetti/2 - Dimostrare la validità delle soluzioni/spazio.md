@@ -1,0 +1,1 @@
+[[risorsa]] che quantifica la memoria di archiviazione disponibile.
