@@ -1,1 +1,1 @@
-[[funzione]] in cui, conoscendo il [[risultato]], non è possibile risalire ai [[parametro|parametri]].
+[[funzione]] in cui, conoscendo il [[risultato]], non è possibile risalire ai [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/parametro|parametri]].

@@ -1,7 +1,7 @@
-Fase di un [[processo di sviluppo software]] in cui si determina ***come è formata*** la [[soluzione]] che si vuole sviluppare.
+Fase di un [[processo di sviluppo software]] in cui si determina ***come è formata*** la [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/soluzione]] che si vuole sviluppare.
 
 In essa:
-- si utilizzano [[design pattern]] per soddisfare il [[documento dei requsiti]] in una [[soluzione]] pratica
+- si utilizzano [[design pattern]] per soddisfare il [[documento dei requsiti]] in una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/soluzione]] pratica
 - si compilano tutti i [[design pattern]] selezionati in un [[artefatto]] detto [[specifica]]
 
 Talvolta ci si avvale di [[diagramma|diagrammi]] per rendere più chiari i concetti modellati, come:

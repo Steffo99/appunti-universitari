@@ -1,0 +1,1 @@
+Metodo utilizzato per misurare la [[dimensione dell'input]] di un 

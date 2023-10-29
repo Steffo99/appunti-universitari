@@ -8,17 +8,12 @@
     {
       "id": "me4XBNQC4rwzQFLlvIAn0",
       "name": "System",
-      "value": "#65342a"
+      "value": "#5c0f00"
     },
     {
       "id": "fc3lLaITDn62PYbzBhqxl",
       "name": "To do",
-      "value": "#dac38b"
-    },
-    {
-      "id": "hEs1KsnMgHNA_g4pwAxtt",
-      "name": "Done",
-      "value": "#696969"
+      "value": "#d7a628"
     }
   ],
   "fileColors": [
@@ -91,7 +86,7 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "7 - High performance computing/★ glossario ad alta performance.md",
+      "path": "7 - High performance computing/★ glossario.md",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
@@ -115,14 +110,6 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "8 - Metodologie di sviluppo software",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "7 - High performance computing",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
       "path": "8 - Crittografia applicata/3 - Comunicazione asimmetrica/2 - Teoria delle curve ellittiche/★ mappa concettuale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
@@ -131,28 +118,8 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "0 - Generale/★ esami.canvas",
-      "color": "7j7Pqog0VHMVVAfazMNlb"
-    },
-    {
       "path": "0 - Generale",
       "color": "7j7Pqog0VHMVVAfazMNlb"
-    },
-    {
-      "path": "7 - Big data analytics",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "7 - Introduction to quantum information processing",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "8 - Crittografia applicata",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
     },
     {
       "path": "8 - Crittografia applicata/3 - Comunicazione asimmetrica/5 - Firma digitale/★ mappa concettuale.canvas",
@@ -183,76 +150,8 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/6b-unit-testing.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/6a-introduzione.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/5f-controllo-input.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/5e-sincronizzazione.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/5d-riduzione-superficie-attacco.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/5c-regola-silenzio.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/5b-minimo-privilegio.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/5a-introduzione.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/4f-input-non-controllato.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/4e-corse-critiche.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/4d-eccessiva-esposizione-asset.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/4c-eccessiva-verbosita-output.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/4a-introduzione.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/3-definizioni.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/4b-esecuzione-privilegi-elevati.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
       "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Integrità semplice/★ mappa concettuale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/6c-analisi-statica.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sviluppo di software sicuro/0 - Materiale di studio/Slides/6d-analisi-dinamica.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
     },
     {
       "path": "8 - Sistemi complessi/2 - Sistemi complessi/★ sistemi complessi.canvas",
@@ -275,18 +174,6 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/01_introduction_p1_V2d.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/01_introduction_p2_V3d.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/000_introd.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
       "path": "8 - Sistemi complessi/1 - Sistemi dinamici/★ sistemi dinamici.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
@@ -299,68 +186,12 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/02_selforganization_P1_V2d.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/02_selforganization_P2d.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
       "path": "8 - Sistemi complessi/2 - Sistemi complessi/Landau's phenomenological theory.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/02_selforganization_P3_V2d.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/03_CA1_intro_emergenced.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/03_CA2_CA1Dd.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/03_CA3_self_replicationd.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/03_CA4_fluidodind.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/03_CA5_modelli_v2d.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/03_CA6_societad.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
       "path": "8 - Sistemi complessi/4 - Grafi/percolation threshold.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/04a_lab_reti_p1_v1_COLOREd.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/04a_lab_reti_p2a_v1d_COLOR.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/04a_lab_reti_p2b_v1d_COLOR.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/04a_lab_reti_p2c_v1d_COLOR.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/04a_lab_reti_p3_v1d.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
     },
     {
       "path": "8 - Sistemi complessi/4 - Grafi/★ grafi multi-livello.canvas",
@@ -379,28 +210,8 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/05_Mreti_v2d.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/05c_HypNet_V3d.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/06a_OOL_protocells_v3d.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
       "path": "8 - Sistemi complessi/5 - Origine della vita/insieme auto-catalitico riflessivo generato da cibo.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/06b_autocat_V4_p1d.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/06b_autocat_V4_p2d.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
     },
     {
       "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/07_RBNd_COLOR.pdf",
@@ -423,20 +234,112 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/08_degener_v1d.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
-      "path": "8 - Sistemi complessi/0 - Materiale di studio/Slides/10_HOT_v1d.pdf",
-      "color": "hEs1KsnMgHNA_g4pwAxtt"
-    },
-    {
       "path": "8 - Sistemi complessi/5 - Origine della vita/modello di Kauffman gene-RBN.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
       "path": "8 - Sistemi complessi/5 - Origine della vita/★ geni come random boolean network.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/1 - Problemi",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/1 - Problemi/★ problemi.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/1 - Problemi/classe di problemi NP-difficili.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/relax and round.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/vertex cover problem.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/relax and round per vertex cover problem.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/minimum perfect matching.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/★ algoritmi di approssimazione.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Broadcast/flooding broadcast v3.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Broadcast/flooding broadcast v2.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/protocollo shout v1.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Routing",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Leader election",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Leader election/2 - Su anello",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Leader election/3 - Su grafo generico",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Broadcast",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Leader election/1 - Concetti",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Big data analytics/★ indice.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "steffo-file-index.json",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
+    },
+    {
+      "path": "steffo-file-index-ignore.json",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
     }
   ]
 }

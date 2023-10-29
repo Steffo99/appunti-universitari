@@ -2,7 +2,7 @@
 aliases: ["benchmark", "bench"]
 ---
 
-[[test]] che misura e verifica l'efficienza della [[soluzione]].
+[[test]] che misura e verifica l'efficienza della [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/soluzione]].
 
 ## Esempio
 

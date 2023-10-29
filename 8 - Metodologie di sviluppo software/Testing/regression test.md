@@ -1,4 +1,4 @@
-[[test]] che verifica la corretta risoluzione di un dato [[bug]] o [[errore]], e l'assenza di [[regressione|regressioni]] in versioni future della [[soluzione]].
+[[test]] che verifica la corretta risoluzione di un dato [[bug]] o [[errore]], e l'assenza di [[regressione|regressioni]] in versioni future della [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/soluzione]].
 
 ```
 from calculator import div

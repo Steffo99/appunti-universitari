@@ -1,1 +1,1 @@
-Requisito delle [[soluzione|soluzioni]] di un [[problema]] per cui esse non devono creare effetti indesiderati.
+Requisito delle [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/soluzione|soluzioni]] di un [[problema]] per cui esse non devono creare effetti indesiderati.

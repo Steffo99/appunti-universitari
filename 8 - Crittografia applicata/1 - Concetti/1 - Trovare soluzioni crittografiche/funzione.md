@@ -1,1 +1,1 @@
-Specifica realizzazione pratica di una data [[funzione ideale]], che, dati zero o più [[parametro|parametri]], emette uno o più [[risultato|risultati]].
+Specifica realizzazione pratica di una data [[funzione ideale]], che, dati zero o più [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/parametro|parametri]], emette uno o più [[risultato|risultati]].

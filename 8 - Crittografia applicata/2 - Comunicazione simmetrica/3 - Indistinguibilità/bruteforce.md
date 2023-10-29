@@ -7,7 +7,7 @@
 
 ## Funzionamento
 
-Consiste nel provare tutti i possibili [[parametro|parametri]] della [[funzione di cifratura]] fino a quando essa non emette il [[ciphertext]] conosciuto.
+Consiste nel provare tutti i possibili [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/parametro|parametri]] della [[funzione di cifratura]] fino a quando essa non emette il [[ciphertext]] conosciuto.
 
 ### Livello di sicurezza
 

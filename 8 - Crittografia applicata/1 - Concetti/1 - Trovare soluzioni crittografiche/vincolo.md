@@ -1,1 +1,1 @@
-Parte di un requisito di [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/sicurezza]] che specifica uno specifico effetto indesiderato che non deve essere prodotto da una [[soluzione]].
+Parte di un requisito di [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/sicurezza]] che specifica uno specifico effetto indesiderato che non deve essere prodotto da una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/soluzione]].

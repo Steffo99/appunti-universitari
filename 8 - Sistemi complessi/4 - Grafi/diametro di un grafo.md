@@ -13,3 +13,5 @@ $$
 	\bigg]
 \bigg]
 $$
+
+È, nel caso peggiore, $archi - 1$.

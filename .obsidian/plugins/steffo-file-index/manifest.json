@@ -1,0 +1,11 @@
+{
+	"id": "steffo-file-index",
+	"name": "File Index",
+	"version": "1.1.0",
+	"minAppVersion": "0.15.0",
+	"description": "Create a metadata file about the files present in the Vault",
+	"author": "Steffo",
+	"authorUrl": "https://www.steffo.eu",
+	"fundingUrl": "https://ko-fi.com/steffo",
+	"isDesktopOnly": false
+}

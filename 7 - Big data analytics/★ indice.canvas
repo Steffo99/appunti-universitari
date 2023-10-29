@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"6b1fd76799ab0012","type":"file","file":"7 - Big data analytics/A2 - Big data/README.md","subpath":"#Redis per applicazioni scalabili, efficienti e veloci","x":-800,"y":-480,"width":880,"height":960},
+		{"id":"e4cbe1c9d5eb9723","type":"file","file":"7 - Big data analytics/A1 - MongoDB/README.md","subpath":"#Ricerca in linguaggio naturale sul dataset Amazon","x":240,"y":-480,"width":880,"height":960},
+		{"id":"7c1c60e823cc24ed","type":"file","file":"7 - Big data analytics/A3 - Neo4J/README.md","subpath":"#Modellazione di un database Neo4J per le dipendenze delle crates del linguaggio Rust","x":1280,"y":-480,"width":880,"height":960},
+		{"id":"77b5537483e2931f","type":"file","file":"7 - Big data analytics/B1 - Data analytics/README.md","subpath":"#Data analytics","x":2320,"y":-480,"width":880,"height":960},
+		{"id":"53e84ca993b4c1bb","type":"file","file":"7 - Big data analytics/B3 - Graph analytics/README.md","subpath":"#Analisi su grafo Neo4J relativo alle dipendenze delle crates del linguaggio Rust","x":3360,"y":-480,"width":880,"height":960},
+		{"id":"1b701e57c527ec45","type":"file","file":"7 - Big data analytics/B2 - Text analytics/README.md","subpath":"#Confronto tra modelli di sentiment analysis per recensioni Amazon","x":4400,"y":-480,"width":880,"height":960},
+		{"id":"b285c5a2a42b4b96","type":"text","text":"# Progetti","x":2140,"y":-800,"width":200,"height":80,"color":"#ffffff"},
+		{"id":"322a35eaca61d03f","x":-800,"y":640,"width":880,"height":960,"type":"link","url":"https://github.com/Steffo99/unimore-bda-1"},
+		{"id":"ad0bf82864f8ab92","x":240,"y":640,"width":880,"height":960,"type":"link","url":"https://github.com/Steffo99/unimore-bda-2"},
+		{"id":"1ea0dbc5af26f1d0","x":1280,"y":640,"width":880,"height":960,"type":"link","url":"https://github.com/Steffo99/unimore-bda-3"},
+		{"id":"583dab4ef85f9ab8","x":2320,"y":640,"width":880,"height":960,"type":"link","url":"https://github.com/Steffo99/unimore-bda-4"},
+		{"id":"8f57ec61410579e3","x":3360,"y":640,"width":880,"height":960,"type":"link","url":"https://github.com/Steffo99/unimore-bda-5"},
+		{"id":"460943111ec9b9eb","x":4400,"y":640,"width":880,"height":960,"type":"link","url":"https://github.com/Steffo99/unimore-bda-6"}
+	],
+	"edges":[
+		{"id":"37eaaf2a85a6f27b","fromNode":"b285c5a2a42b4b96","fromSide":"bottom","toNode":"6b1fd76799ab0012","toSide":"top"},
+		{"id":"d1d8cd4aa5b79a9b","fromNode":"b285c5a2a42b4b96","fromSide":"bottom","toNode":"e4cbe1c9d5eb9723","toSide":"top"},
+		{"id":"0db3535077dc0690","fromNode":"b285c5a2a42b4b96","fromSide":"bottom","toNode":"7c1c60e823cc24ed","toSide":"top"},
+		{"id":"672782657df38254","fromNode":"b285c5a2a42b4b96","fromSide":"bottom","toNode":"77b5537483e2931f","toSide":"top"},
+		{"id":"ba306bf36bf9b65a","fromNode":"b285c5a2a42b4b96","fromSide":"bottom","toNode":"53e84ca993b4c1bb","toSide":"top"},
+		{"id":"60bdd10dcdd3a3ea","fromNode":"b285c5a2a42b4b96","fromSide":"bottom","toNode":"1b701e57c527ec45","toSide":"top"},
+		{"id":"3bc6b70bc61c8a26","fromNode":"6b1fd76799ab0012","fromSide":"bottom","toNode":"322a35eaca61d03f","toSide":"top"},
+		{"id":"370e09a6ce9572bf","fromNode":"e4cbe1c9d5eb9723","fromSide":"bottom","toNode":"ad0bf82864f8ab92","toSide":"top"},
+		{"id":"9dd36277eac4ee70","fromNode":"7c1c60e823cc24ed","fromSide":"bottom","toNode":"1ea0dbc5af26f1d0","toSide":"top"},
+		{"id":"a29210bb95313ec7","fromNode":"77b5537483e2931f","fromSide":"bottom","toNode":"583dab4ef85f9ab8","toSide":"top"},
+		{"id":"efd229189b9a96f1","fromNode":"53e84ca993b4c1bb","fromSide":"bottom","toNode":"8f57ec61410579e3","toSide":"top"},
+		{"id":"9ebb31c9c4e1f357","fromNode":"1b701e57c527ec45","fromSide":"bottom","toNode":"460943111ec9b9eb","toSide":"top"}
+	]
+}

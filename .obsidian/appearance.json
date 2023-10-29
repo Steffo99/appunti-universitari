@@ -2,7 +2,7 @@
   "accentColor": "#d14224",
   "textFontFamily": "",
   "monospaceFontFamily": "",
-  "theme": "system",
+  "theme": "obsidian",
   "baseFontSize": 16,
   "enabledCssSnippets": [
     "canvas-zoom",

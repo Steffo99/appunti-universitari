@@ -2,7 +2,7 @@
 aliases: ["evolutionary model"]
 ---
 
-[[modello iterativo]] in cui la [[soluzione]] realizzata viene ricreata a [[timeboxing|intervalli regolari]], sfruttando le conoscenze ottenute nell'intervallo precedente per trovare una [[soluzione]] migliore.
+[[modello iterativo]] in cui la [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/soluzione]] realizzata viene ricreata a [[timeboxing|intervalli regolari]], sfruttando le conoscenze ottenute nell'intervallo precedente per trovare una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/soluzione]] migliore.
 
 ## #Extra Casi d'uso
 

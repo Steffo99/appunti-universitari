@@ -10,4 +10,4 @@ Ha un [[costo]] significativamente più elevato delle normali [[funzione di hash
 
 Dipende dalle risorse a disposizione dell'[[avversario]].
 
-In passato, il fattore limitante era il [[tempo]], ma con lo sviluppo di [[hardware dedicato all'hashing]], il fattore limitante è diventato prevalentemente lo [[spazio]].
+In passato, il fattore limitante era il [[8 - Crittografia applicata/1 - Concetti/2 - Dimostrare la validità delle soluzioni/tempo]], ma con lo sviluppo di [[hardware dedicato all'hashing]], il fattore limitante è diventato prevalentemente lo [[8 - Crittografia applicata/1 - Concetti/2 - Dimostrare la validità delle soluzioni/spazio]].

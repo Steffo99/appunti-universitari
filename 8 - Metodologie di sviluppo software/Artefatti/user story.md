@@ -2,7 +2,7 @@
 aliases: ["issue"]
 ---
 
-Tecnica di sviluppo per la [[fase di specifica]] e la [[fase di design]] in cui i requisiti vengono specificati come gli obiettivi che l'ideatore vuole raggiungere attraverso la sua [[soluzione]], e non come dettagli tecnici di implementazione.
+Tecnica di sviluppo per la [[fase di specifica]] e la [[fase di design]] in cui i requisiti vengono specificati come gli obiettivi che l'ideatore vuole raggiungere attraverso la sua [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/soluzione]], e non come dettagli tecnici di implementazione.
 
 Sono raccolte in raggruppamenti detti [[epic]].
 

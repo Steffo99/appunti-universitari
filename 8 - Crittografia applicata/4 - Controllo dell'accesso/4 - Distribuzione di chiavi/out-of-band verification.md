@@ -1,1 +1,1 @@
-"[[soluzione]]" al problema di [[distribuzione chiavi pubbliche]] in cui si utilizza un canale sicuro stabilito in precedenza per [[autenticità|autenticare]] le nuove [[chiave pubblica|chiavi pubbliche]].
+"[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/soluzione]]" al problema di [[distribuzione chiavi pubbliche]] in cui si utilizza un canale sicuro stabilito in precedenza per [[autenticità|autenticare]] le nuove [[chiave pubblica|chiavi pubbliche]].

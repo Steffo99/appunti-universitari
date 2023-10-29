@@ -1,1 +1,1 @@
-Definizione formale delle caratteristiche condivise da tutte le possibili [[soluzione|soluzioni]] di un problema.
+Definizione formale delle caratteristiche condivise da tutte le possibili [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/soluzione|soluzioni]] di un problema.

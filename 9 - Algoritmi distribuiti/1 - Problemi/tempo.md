@@ -1,0 +1,3 @@
+Numero di operazioni elementari necessarie all'esecuzione di un [[algoritmo]].
+
+> Non può essere riutilizzato, purtroppo: una volta usato, se n'è andato per sempre...

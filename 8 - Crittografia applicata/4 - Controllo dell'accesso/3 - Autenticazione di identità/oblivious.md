@@ -1,1 +1,1 @@
-Caratteristica di una [[funzione]] in grado di operare su dei [[blinded]] [[parametro|input]]  per restituire un [[blinded]] [[risultato|output]].
+Caratteristica di una [[funzione]] in grado di operare su dei [[blinded]] [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/parametro|input]]  per restituire un [[blinded]] [[risultato|output]].

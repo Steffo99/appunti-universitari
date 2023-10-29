@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "path:\"8 - Sistemi complessi\"  ",
+  "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -8,10 +8,24 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:\"8 - Sistemi complessi/4 - Grafi\"  ",
+      "query": "path:\"8 - Sistemi complessi\"",
       "color": {
         "a": 1,
-        "rgb": 65284
+        "rgb": 16776960
+      }
+    },
+    {
+      "query": "path:\"9 - Algoritmi distribuiti\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 255
+      }
+    },
+    {
+      "query": "path:\"8 - Crittografia applicata\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16728064
       }
     }
   ],
@@ -25,6 +39,6 @@
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 30,
-  "scale": 0.45050811767578125,
+  "scale": 0.14225414259055147,
   "close": true
 }

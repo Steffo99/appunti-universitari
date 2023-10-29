@@ -1,4 +1,4 @@
-Fase di un [[processo di sviluppo software]] in cui si ***modifica*** la [[soluzione]] realizzata per correggere [[bug]] e [[errore|errori]].
+Fase di un [[processo di sviluppo software]] in cui si ***modifica*** la [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/soluzione]] realizzata per correggere [[bug]] e [[errore|errori]].
 
 In essa:
 - si mantengono operativi eventuali [[server]] che [[software-as-a-service|prestano servizi]]
