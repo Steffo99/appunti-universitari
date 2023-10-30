@@ -4,7 +4,7 @@
 
 Una singola [[entità]] vuole fare arrivare un [[messaggio]] a tutte le altre.
 
-### [[restrizioni del modello]]
+### [[restrizioni al modello dei sistemi distribuiti]]
 
 - [[affidabilità totale]]
 - [[full-duplex]]

@@ -1,11 +1,17 @@
-Avvenimento che scatena una risposta in una [[entità]].
+Avvenimento percepito da una [[entità]].
+
+In base al suo [[comportamento]], porta a una [[azione]] diversa.
 
 Può essere:
-- [[evento personale]]
-- [[evento interno]]
-- [[evento esterno]]
+- [[personale]], [[interno]] o [[esterno]]
+- [[individuale]] o [[condiviso]]
 
-> **Evento personale**: Tick di clock.
+> [!EXAMPLE]
+> Un [[tick]] è un evento [[personale]] e [[individuale]].
 
-> **Evento interno**: Ricezione di un messaggio.
+> [!EXAMPLE]
+> Un [[messaggio]] è un evento [[interno]] e [[individuale]].
+
+> [!EXAMPLE]
+> Un [[impulso spontaneo]] è un evento [[esterno]].
 

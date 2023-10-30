@@ -1,5 +1,13 @@
-Insieme di tutte le [[azione|azioni]] di un'[[entità]].
+[[Associazione]] tra [[stato di un'entità]] più [[evento|evento percepito]] verso l'[[azione]] che l'[[entità]] dovrà effettuare.
 
-È [[determinismo|deterministico]]: stessa coppia di [[evento]] e [[stato]] producono la stessa azione.
+$$
+\Large
+\textrm{behaviour}(Entity)
+$$
 
-È [[completo]]: ogni coppia di [[evento]] e [[stato]] deve avere un'azione definita.
+> [!EXAMPLE]
+> Se ti trovi nello [[stato di un'entità|stato]] `SLEEPING`, e ricevi un [[messaggio]] `"Hello!"`, rispondi con `"Hi!"`.
+
+È **[[determinismo|deterministico]]**: stessa coppia di [[evento]] e [[stato]] producono la stessa azione.
+
+È **[[completo]]**: ogni coppia di [[evento]] e [[stato]] deve avere un'azione definita.

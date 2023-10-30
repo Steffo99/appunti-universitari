@@ -1,0 +1,1 @@
+Qualcosa all'interno dell'[[entità]] stessa che si sta considerando.

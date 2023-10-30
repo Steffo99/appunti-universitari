@@ -1,0 +1,1 @@
+Qualcosa che ha effetto su una singola [[entità]].

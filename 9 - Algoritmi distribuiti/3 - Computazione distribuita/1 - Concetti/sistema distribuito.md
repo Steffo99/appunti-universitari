@@ -2,6 +2,5 @@
 aliases:
   - distributed system
 ---
-[[Sistema]] formato da un [[insieme]] di [[entità]].
+[[Sistema]] formato da un [[grafo]] di [[entità]] e la [[rete di comunicazione]] ad esse associato.
 
-> Non solo la computazione è distribuita, anche l'input del sistema potrebbe essere distribuito!

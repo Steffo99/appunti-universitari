@@ -2,7 +2,7 @@
 
 Utilizza un [[token]] per visitare sequenzialmente tutti i nodi del tree.
 
-## #TODO [[restrizioni del modello]]
+## #TODO [[restrizioni al modello dei sistemi distribuiti]]
 
 - Iniziatore singolo
 - [[full-duplex]]

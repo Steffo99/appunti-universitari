@@ -1,9 +1,9 @@
-[[assioma]].
+[[assioma]] del [[sistema distribuito|modello dei sistemi distribuiti]].
 
-Un'[[entità]] può distinguere tra i suoi vicini:
+Un'[[entità]] può sempre distinguere nel suo [[vicinato]]:
 - quanti sono i vicini
 - quali sono i vicini
 
-> Conoscono l'*indirizzo IP* dei suoi vicini!
+> [!EXAMPLE]
+> Conoscono l'indirizzo IP dei loro vicini, ma non quello di tutti gli altri.
 
-> Non è detto che conoscano la rete globale.

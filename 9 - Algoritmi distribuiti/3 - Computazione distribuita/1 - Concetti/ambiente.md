@@ -1,0 +1,1 @@
+Tutto quello che si trova all'esterno di un [[sistema]].

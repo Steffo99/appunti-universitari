@@ -242,16 +242,8 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "9 - Algoritmi distribuiti/1 - Problemi",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "9 - Algoritmi distribuiti/1 - Problemi/★ problemi.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/1 - Problemi/classe di problemi NP-difficili.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
       "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/relax and round.md",
@@ -291,10 +283,6 @@
     },
     {
       "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/protocollo shout v1.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
@@ -340,6 +328,10 @@
     {
       "path": "steffo-file-index-ignore.json",
       "color": "me4XBNQC4rwzQFLlvIAn0"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/★ concetti.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
     }
   ]
 }

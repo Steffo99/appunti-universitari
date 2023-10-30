@@ -2,7 +2,7 @@
 
 Consiste nel creare uno [[spanning tree]] per effettuare efficientemente [[broadcast]] ripetuti.
 
-## [[restrizioni del modello]]
+## [[restrizioni al modello dei sistemi distribuiti]]
 
 #ŦODO 
 

@@ -1,6 +1,6 @@
 #TODO [[algoritmo]] di [[leader election su anello]].
 
-## [[restrizioni del modello]]
+## [[restrizioni al modello dei sistemi distribuiti]]
 
 - [[full-duplex]]
 - [[affidabilità totale]]
