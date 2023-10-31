@@ -1,4 +1,4 @@
-[[problema]] matematico tutt'ora [[irrisolto]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/problema]] matematico tutt'ora [[irrisolto]].
 
 ## Enunciato
 

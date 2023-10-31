@@ -1,1 +1,1 @@
-[[Procedura]] pratica che permette di superare l'ostacolo posto da un [[problema]].
+[[Procedura]] pratica che permette di superare l'ostacolo posto da un [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/problema]].

@@ -1,1 +1,1 @@
-Estensione del [[problema]] di [[crittografia asimmetrica]] in cui si richiede anche di poter cifrare [[grandi quantità di dati]].
+Estensione del [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/problema]] di [[crittografia asimmetrica]] in cui si richiede anche di poter cifrare [[grandi quantità di dati]].

@@ -2,7 +2,7 @@
 aliases: ["problema Rivest-Shamir-Adleman"]
 ---
 
-[[problema]] relativo alla seguente equazione:
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/problema]] relativo alla seguente equazione:
 $$
 \LARGE m^{{\color{orange} e} \times {\color{lime} d}} = m \mod {\color{orange} N}
 $$

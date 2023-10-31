@@ -1,4 +1,4 @@
-[[problema]] relativo alla seguente equazione relativa ai [[gruppi ciclici]]:
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/problema]] relativo alla seguente equazione relativa ai [[gruppi ciclici]]:
 $$
 \LARGE 
 {\color{orange} A}

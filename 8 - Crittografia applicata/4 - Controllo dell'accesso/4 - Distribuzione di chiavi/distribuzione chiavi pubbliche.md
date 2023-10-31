@@ -1,1 +1,1 @@
-[[Problema]] in cui si vuole fare avere a ogni [[user agent]] la [[chiave pubblica]] che identifica correttamente le [[entità]] con cui vuole comunicare.
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/problema]] in cui si vuole fare avere a ogni [[user agent]] la [[chiave pubblica]] che identifica correttamente le [[entità]] con cui vuole comunicare.

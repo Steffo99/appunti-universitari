@@ -1,4 +1,4 @@
-[[Problema]] per [[sistema distribuito|sistemi distribuiti]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/problema]] per [[sistema distribuito|sistemi distribuiti]].
 
 È un [[broadcast]] in cui ci sono più `INITIATOR`.
 

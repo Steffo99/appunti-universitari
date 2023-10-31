@@ -2,7 +2,7 @@
 aliases: ["crittografia su curva ellittica", "elliptic-curve cryptography"]
 ---
 
-[[problema]] relativo alle [[gruppo additivo|somme]] tra punti di [[curva ellittica|curve ellittiche]]:
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/problema]] relativo alle [[gruppo additivo|somme]] tra punti di [[curva ellittica|curve ellittiche]]:
 $$
 \LARGE 
 {\color{orange} \mathbf{A}}

@@ -8,7 +8,7 @@
     {
       "id": "me4XBNQC4rwzQFLlvIAn0",
       "name": "System",
-      "value": "#5c0f00"
+      "value": "#7f7f7f"
     },
     {
       "id": "fc3lLaITDn62PYbzBhqxl",
@@ -86,7 +86,7 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "7 - High performance computing/★ glossario.md",
+      "path": "7 - High performance computing/glossario.md",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
@@ -314,14 +314,6 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Big data analytics/★ indice.canvas",
-      "color": "7j7Pqog0VHMVVAfazMNlb"
-    },
-    {
-      "path": "7 - Introduction to quantum information processing",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "steffo-file-index.json",
       "color": "me4XBNQC4rwzQFLlvIAn0"
     },
@@ -332,6 +324,94 @@
     {
       "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/★ concetti.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "0 - Template",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
+    },
+    {
+      "path": "0 - Template/algoritmo distribuito.md",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
+    },
+    {
+      "path": "0 - Template/problema distribuito.md",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Broadcast/★ broadcast.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/★ spanning tree.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Leader election/★ leader election.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Routing/★ routing.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "7 - Big data analytics/README.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - High performance computing/README.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "X - Introduction to quantum information processing/README.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "8 - Crittografia applicata/README.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "8 - Metodologie di sviluppo software/README.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "8 - Sistemi complessi/README.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "8 - Sviluppo di software sicuro/README.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/README.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Cloud and edge computing/README.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "X - Fondamenti di machine learning/README.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Kernel hacking/README.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Programmazione mobile/README.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "README.md",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "LICENSE.txt",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
     }
   ]
 }

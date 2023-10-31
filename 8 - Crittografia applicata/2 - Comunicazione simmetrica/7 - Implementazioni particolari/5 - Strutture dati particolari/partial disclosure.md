@@ -1,6 +1,6 @@
 # #Extra
 
-[[problema]] di [[crittografia simmetrica moderna]] che vuole consentire che parte dei dati contenuti all'interno del [[ciphertext]] possano essere recuperati senza chiave.
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/problema]] di [[crittografia simmetrica moderna]] che vuole consentire che parte dei dati contenuti all'interno del [[ciphertext]] possano essere recuperati senza chiave.
 
 ## Casi d'uso
 

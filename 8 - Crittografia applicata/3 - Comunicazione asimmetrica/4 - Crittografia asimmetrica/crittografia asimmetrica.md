@@ -1,1 +1,1 @@
-[[problema]] in cui si vogliono mantenere [[confidenzialità|confidenziali]] e [[indistinguibilità|indistinguibili]] uno o più [[testo|testi]], senza però la necessità di conoscere una chiave predeterminata e condivisa tra gli interlocutori.
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/problema]] in cui si vogliono mantenere [[confidenzialità|confidenziali]] e [[indistinguibilità|indistinguibili]] uno o più [[testo|testi]], senza però la necessità di conoscere una chiave predeterminata e condivisa tra gli interlocutori.

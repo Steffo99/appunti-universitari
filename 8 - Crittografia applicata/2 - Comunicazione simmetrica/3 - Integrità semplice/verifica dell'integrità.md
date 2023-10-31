@@ -1,1 +1,1 @@
-[[problema]] in cui si vuole verificare che un dato [[irrational attacker|soggetto a interferenze casuali]] sia rimasto [[integrità|integro]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/problema]] in cui si vuole verificare che un dato [[irrational attacker|soggetto a interferenze casuali]] sia rimasto [[integrità|integro]].
