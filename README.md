@@ -5,35 +5,41 @@ Sono [Steffo](https://www.steffo.eu/), studente del corso di Laurea Magistrale i
 Li [ho pubblicati qui](https://gh.steffo.eu/obsiview/?vault=https%3A%2F%2Fraw.githubusercontent.com%2FSteffo99%2Fappunti-magistrali%2Fmain%2F&path=README.md) nella speranza che ti possano essere utili!
 
 Buona fortuna! :)
-## Insegnamenti
+## Contenuti
 
-### 7 - Primo semestre magistrale
+### `0` - Sistema e materiali di studio
 
-- [Big data analytics](7%20-%20Big%20data%20analytics/README.md)
-- [High performance computing](7%20-%20High%20performance%20computing/README.md)
+- Concetti generali sfusi
+- Template per creazione di nuove pagine
+- Materiali vari di studio (non pubblicati, ma potenzialmente referenziati)
 
-### 8 - Secondo semestre magistrale
+### `7` - Primo semestre magistrale
 
-- [Crittografia applicata](8%20-%20Crittografia%20applicata/README.md)
-- [Metodologie di sviluppo software](8%20-%20Metodologie%20di%20sviluppo%20software/README.md)
-- [Sistemi complessi](8%20-%20Sistemi%20complessi/README.md)
-- [Sviluppo di software sicuro](8%20-%20Sviluppo%20di%20software%20sicuro/README.md)
+- [[★ big data analytics]]
+- [[★ high performance computing]]
 
-### 9 - Terzo semestre magistrale
+### `8` - Secondo semestre magistrale
 
-- [Algoritmi distribuiti](9%20-%20Algoritmi%20distribuiti/README.md)
-- [Cloud and edge computing](9%20-%20Cloud%20and%20edge%20computing/README.md)
-- [Kernel hacking](9%20-%20Kernel%20hacking/README.md)
-- [Programmazione mobile](9%20-%20Programmazione%20mobile/README.md)
+- [[★ crittografia applicata]]
+- [[★ metodologie di sviluppo software]]
+- [[★ sistemi complessi]]
+- [[★ sviluppo di software sicuro]]
 
-### 10 - Quarto semestre magistrale
+### `9` - Terzo semestre magistrale
+
+- [[★ algoritmi distribuiti]]
+- [[★ cloud and edge computing]]
+- [[★ kernel hacking]]
+- [[★ programmazione mobile]]
+
+### `10` - Quarto semestre magistrale
 
 *Non c'è ancora niente qui.*
 
-### X - Work-in-progress
+### `X` - Work-in-progress
 
-- [Introduction to quantum information processing](X%20-%20Introduction%20to%20quantum%20information%20processing/README.md)
-- [Fondamenti di machine learning](X%20-%20Fondamenti%20di%20machine%20learning/README.md)
+- [[★ introduction to quantum information processing]]
+- [[★ fondamenti di machine learning]]
 
 ## Licenza
 

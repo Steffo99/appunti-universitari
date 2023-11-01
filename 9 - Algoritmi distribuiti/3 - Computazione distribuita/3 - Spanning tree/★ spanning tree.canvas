@@ -1,1 +1,9 @@
-{}
+{
+	"nodes":[
+		{"id":"e4db85d4dd9cb928","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/spanning tree construction.md","x":-320,"y":-1280,"width":960,"height":960},
+		{"id":"42f2908da34c9d4d","x":-40,"y":-1840,"width":400,"height":400,"type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/spanning tree.md"}
+	],
+	"edges":[
+		{"id":"0b872430734f1f17","fromNode":"42f2908da34c9d4d","fromSide":"bottom","toNode":"e4db85d4dd9cb928","toSide":"top"}
+	]
+}

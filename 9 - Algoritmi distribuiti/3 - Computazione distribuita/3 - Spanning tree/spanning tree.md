@@ -1,1 +1,1 @@
-[[Sottografo]] [[grafo aciclico|aciclico]] [[grafo connesso|connesso]] che contiene tutti i nodi dell'originale, ma solo un sottoinsieme degli archi.
+Sotto-[[grafo]] [[grafo aciclico|aciclico]] che include **tutti i [[nodo di un grafo|nodi]]**.

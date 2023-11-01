@@ -3,6 +3,7 @@ aliases:
   - arco
   - arco di un sistema distribuito
   - stanza
+  - canale
 ---
 Unità di comunicazione di un [[sistema distribuito]].
 
