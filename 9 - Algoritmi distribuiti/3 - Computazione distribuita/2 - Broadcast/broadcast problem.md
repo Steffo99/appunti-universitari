@@ -11,7 +11,6 @@ Una [[entità]] vuole comunicare un'informazione a tutto il resto del [[sistema 
 
 ## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]]
 
-- [[terminazione locale]]
 - **[[restrizione di comunicazione|Comunicazione]]**
 	- [[iniziatore singolo]]
 - **[[restrizione di affidabilità|Affidabilità]]**
@@ -20,7 +19,8 @@ Una [[entità]] vuole comunicare un'informazione a tutto il resto del [[sistema 
 	- [[grafo connesso]]
 	- [[full-duplex|grafo indiretto]]
 - **[[restrizione di tempo|Tempo]]**
-	- [[ritardo di comunicazione unitario]]
+	- [[ritardo di comunicazione illimitato]]
+	- [[terminazione locale]]
 
 ## [[algoritmo|Algoritmi]]
 

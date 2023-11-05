@@ -17,6 +17,8 @@ Buona fortuna! :)
 
 - [[★ big data analytics]]
 - [[★ high performance computing]]
+- [[★ introduction to quantum information processing]]
+- [[★ privacy e tutela dei dati]]
 
 ### `8` - Secondo semestre magistrale
 
@@ -31,26 +33,19 @@ Buona fortuna! :)
 - [[★ cloud and edge computing]]
 - [[★ kernel hacking]]
 - [[★ programmazione mobile]]
+- [[★ fondamenti di machine learning]]
 
 ### `10` - Quarto semestre magistrale
 
-*Non c'è ancora niente qui.*
+- [[★ tirocinio]]
+- [[★ tesi]]
 
-### `X` - Work-in-progress
-
-- [[★ introduction to quantum information processing]]
-- [[★ fondamenti di machine learning]]
 
 ## Licenza
 
 Questi appunti sono rilasciati sotto la licenza [CreativeCommons-Attribution-ShareAlike International 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 Vedi [LICENSE.txt](LICENSE.txt).
-
-## Finanziami
-
-Se trovi questi appunti utili, e hai qualche soldo che ti avanza, puoi decidere di [offrirmi un gelato](https://ko-fi.com/steffo)!
-
 
 ## Collabora
 
@@ -65,3 +60,7 @@ Penso che lo scambio gratuito di appunti e idee tra studenti universitari sia fo
 Considera di iniziare anche tu a pubblicare gratuitamente i tuoi appunti online come stiamo facendo io e tanti altri miei colleghi-studenti!
 
 Se non sai come fare per pubblicarli e hai bisogno di una mano, sono disponibile a dartela: [contattami a uno dei recapiti che trovi sul mio sito](https://www.steffo.eu/)!
+
+## Finanzia
+
+Se trovi questi appunti utili, e hai qualche soldo che ti avanza, puoi decidere di [offrirmi un gelato](https://ko-fi.com/steffo)!

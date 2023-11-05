@@ -118,10 +118,6 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "0 - Generale",
-      "color": "7j7Pqog0VHMVVAfazMNlb"
-    },
-    {
       "path": "8 - Crittografia applicata/3 - Comunicazione asimmetrica/5 - Firma digitale/★ mappa concettuale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
@@ -282,10 +278,6 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/2 - Su anello",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
@@ -350,7 +342,7 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "X - Introduction to quantum information processing/★ introduction to quantum information processing.md",
+      "path": "7 - Introduction to quantum information processing/★ introduction to quantum information processing.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
@@ -374,7 +366,7 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "X - Fondamenti di machine learning/★ fondamenti di machine learning.md",
+      "path": "9 - Fondamenti di machine learning/★ fondamenti di machine learning.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
@@ -398,20 +390,28 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/terminazione locale.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/terminazione globale.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computation in trees",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
       "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computation in trees/★ computation in trees.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "0 - Piano di studi/★ piano di studi.md",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/traversal+ protocol.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/traversal protocol.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
     }
   ]
 }

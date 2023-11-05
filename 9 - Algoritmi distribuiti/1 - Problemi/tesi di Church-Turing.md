@@ -1,4 +1,4 @@
-[[teorema]].
+[[teorema innominato]].
 
 Dimostra come [[modello di calcolo|modelli di calcolo]] diversi si possano [[simulazione|simulare]] a vicenda con [[costo computazionale]] [[polinomiale]].
 

@@ -1,8 +1,7 @@
-[[algoritmo]] di [[broadcast problem]] che riduce il [[comunicazione|numero di messaggi]] rispetto al [[flooding v2]]. ^6af4aa
+[[algoritmo]] di [[broadcast problem]] che riduce il [[comunicazione|numero di messaggi]] rispetto al [[flooding v2]].
 
-## Funzionamento
-
- Il [[leader]] invia il suo [[messaggio]] iniziale a tutti i vicini, e, se è la prima volta che lo ricevono, loro lo inoltrano a loro volta ai loro vicini ***tranne quello che gliel'ha inviato***.
+> [!Summary]
+>  Il [[leader]] invia il suo [[messaggio]] iniziale a tutti i vicini, e, se è la prima volta che lo ricevono, loro lo inoltrano a loro volta ai loro vicini ***tranne quello che gliel'ha inviato***.
 
 ## [[Comportamento]]
 
@@ -37,12 +36,7 @@ on_receive! {
 
 ### `DONE`
 
-Non fa niente:
-```rust
-on_receive! {
-	_ => {},
-}
-```
+Non fa niente.
 
 ## [[algoritmo corretto|Correttezza]]
 

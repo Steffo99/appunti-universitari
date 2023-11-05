@@ -1,7 +1,10 @@
-[[algoritmo]] di ==PROBLEMA==.
+[[algoritmo]] di [[leader election con fallimenti su grafo completo]].
 
-> [!Summary]
-> ==...==
+## Funzionamento
+
+Usa [[two steps]] come [[broadcast problem|broadcast]].
+
+==TODO==
 
 ## [[Comportamento]]
 

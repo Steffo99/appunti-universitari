@@ -1,8 +1,8 @@
 [[algoritmo]] ***[[algoritmo corretto|incorretto]]*** di [[broadcast problem]].
 
-## Funzionamento
+> [!Summary]
+> Il [[leader]] invia il suo messaggio iniziale a tutti i vicini, e loro lo inoltrano a loro volta ai loro vicini.
 
-Il [[leader]] invia il suo messaggio iniziale a tutti i vicini, e loro lo inoltrano a loro volta ai loro vicini.
 ## [[Comportamento]]
 
 ### `LEADER`

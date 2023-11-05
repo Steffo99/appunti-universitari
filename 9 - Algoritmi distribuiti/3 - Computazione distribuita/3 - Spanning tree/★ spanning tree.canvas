@@ -1,9 +1,28 @@
 {
 	"nodes":[
-		{"id":"e4db85d4dd9cb928","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/spanning tree construction.md","x":-320,"y":-1280,"width":960,"height":960},
-		{"id":"42f2908da34c9d4d","x":-40,"y":-1840,"width":400,"height":400,"type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/spanning tree.md"}
+		{"id":"f48243a62762bc6a","type":"group","x":780,"y":-1300,"width":920,"height":1000,"color":"5","label":"shout protocol"},
+		{"id":"a7b374601b504754","type":"group","x":780,"y":-180,"width":920,"height":1000,"color":"5","label":"traversal protocol"},
+		{"id":"e4db85d4dd9cb928","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/spanning tree construction.md","x":-320,"y":-1280,"width":960,"height":2080},
+		{"id":"42f2908da34c9d4d","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/spanning tree.md","x":-40,"y":-1840,"width":400,"height":400},
+		{"id":"975c4e916151d0da","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/shout protocol.md","x":800,"y":-1280,"width":400,"height":960},
+		{"id":"6affd8da4f6f750a","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Broadcast/flooding v3.md","x":800,"y":-1840,"width":400,"height":400},
+		{"id":"1942e37fcdb3b040","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/shout+ protocol.md","x":1280,"y":-1280,"width":400,"height":960},
+		{"id":"7f269696427c2c8e","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/traversal protocol.md","x":800,"y":-160,"width":400,"height":960},
+		{"id":"b59b4cc2872c280d","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/broadcast tree construction.md","x":-320,"y":960,"width":960,"height":960},
+		{"id":"1ccd23a5dd951996","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/multiple spanning tree construction.md","x":-320,"y":2080,"width":960,"height":960},
+		{"id":"899da42b0ed0d514","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/selective spanning tree transform.md","x":800,"y":2080,"width":400,"height":400},
+		{"id":"e12fb2819e6c8318","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/traversal+ protocol.md","x":1280,"y":-160,"width":400,"height":960},
+		{"id":"289f00f041183fee","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/multiple spanning tree transform.md","x":800,"y":2640,"width":400,"height":400}
 	],
 	"edges":[
-		{"id":"0b872430734f1f17","fromNode":"42f2908da34c9d4d","fromSide":"bottom","toNode":"e4db85d4dd9cb928","toSide":"top"}
+		{"id":"0b872430734f1f17","fromNode":"42f2908da34c9d4d","fromSide":"bottom","toNode":"e4db85d4dd9cb928","toSide":"top"},
+		{"id":"0987f6cc5f169aff","fromNode":"6affd8da4f6f750a","fromSide":"bottom","toNode":"975c4e916151d0da","toSide":"top"},
+		{"id":"1def3d7fb4e72c80","fromNode":"975c4e916151d0da","fromSide":"right","toNode":"1942e37fcdb3b040","toSide":"left"},
+		{"id":"d6cdc039af788cc2","fromNode":"e4db85d4dd9cb928","fromSide":"right","toNode":"f48243a62762bc6a","toSide":"left"},
+		{"id":"10b12980f5c61ace","fromNode":"e4db85d4dd9cb928","fromSide":"right","toNode":"a7b374601b504754","toSide":"left"},
+		{"id":"f1a6a7133261984d","fromNode":"e4db85d4dd9cb928","fromSide":"left","toNode":"b59b4cc2872c280d","toSide":"left"},
+		{"id":"c3f31624437c16fe","fromNode":"e4db85d4dd9cb928","fromSide":"left","toNode":"1ccd23a5dd951996","toSide":"left"},
+		{"id":"3f1c364abc8ee36d","fromNode":"1ccd23a5dd951996","fromSide":"right","toNode":"899da42b0ed0d514","toSide":"left"},
+		{"id":"4b39d4b1f13ff480","fromNode":"1ccd23a5dd951996","fromSide":"right","toNode":"289f00f041183fee","toSide":"left"}
 	]
 }

@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "ea42b6c6a6ada42e",
+    "type": "split",
+    "children": [
+      {
+        "id": "353bd9b9e09f62d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e2c961c3fbc766e",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/★ concetti.canvas",
+                "viewState": {
+                  "x": 569.2194349966362,
+                  "y": -1224.5487072802703,
+                  "zoom": -2.8
+                }
+              }
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3dc78bddd518c3f3",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5fc1d7e0478ba75",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc2c082e511eafc9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4240e87522252410",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "stato di un'enti",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7b02a464bd7f94f4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 282.5
+  },
+  "right": {
+    "id": "4ef3f291c2866b38",
+    "type": "split",
+    "children": [
+      {
+        "id": "a0f58612eee5101f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da0ecf3eab9f1146",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/★ concetti.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "517852a0c1eb77e0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/★ concetti.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7e28c6b81ba7a75b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d08b5edb3d762c99",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/★ concetti.canvas"
+              }
+            }
+          },
+          {
+            "id": "3da04ae84a020b40",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:Create new canvas": true,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "templates:Insert template": false
+    }
+  },
+  "active": "6e2c961c3fbc766e",
+  "lastOpenFiles": [
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/criterio di costo sincrono.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/criterio di costo asincrono.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/★ concetti.canvas",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/restrizione di tempo.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/ritardo di comunicazione unitario.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/ritardo di comunicazione limitato.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/sistema distribuito asincrono.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/tick.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/ritardo di comunicazione illimitato.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/terminazione globale.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/terminazione locale.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/teorema innominato.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/sincronicità.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/edge-broadcast-possibility.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/ft-broad-election.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/leader election con fallimenti su grafo completo.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/two steps.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/consenso con fallimenti su grafo completo.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Broadcast/one step.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Broadcast/flooding v3.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/consenso broadcast.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/restrizione di affidabilità.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/condiviso.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/X - Guasti/component failure.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/X - Guasti/temporary fault.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/X - Guasti/permanent fault.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/X - Guasti/crash fault.md",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/X - Guasti",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/Untitled",
+    "9 - Algoritmi distribuiti/0 - Materiale di studio/Slides/07 - Routing.pdf",
+    "steffo-file-index.sync-conflict-20231102-110633-UV5KNJL.json",
+    "9 - Programmazione mobile/0 - Materiale di studio/Slides/2 - Computer graphics/6 - GLTextures.pdf",
+    "9 - Programmazione mobile/0 - Materiale di studio/Slides/1 - Android/05 - MultiThread.pdf",
+    "9 - Programmazione mobile/0 - Materiale di studio/Slides/1 - Android/01 - IntroMobileOS.pdf",
+    "9 - Programmazione mobile/0 - Materiale di studio/Slides/2 - Computer graphics/8 - GLCS.pdf",
+    "9 - Programmazione mobile/0 - Materiale di studio/Slides/1 - Android/06 - AndroidX&More.pdf",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/★ routing.canvas",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/★ leader election.canvas",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computation in trees/★ computation in trees.canvas",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Routing/★ routing.canvas",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/★ spanning tree.canvas",
+    "9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Broadcast/★ broadcast.canvas",
+    "8 - Crittografia applicata/★ indice.canvas",
+    "7 - Big data analytics/★ indice.canvas",
+    "0 - Generale/★ esami.canvas",
+    "8 - Sistemi complessi/3 - Automi cellulari/modello HPP · regola di transizione.png",
+    "8 - Crittografia applicata/3 - Comunicazione/2 - Garanzie/2 - Indistinguibilità/Pasted image 20230331181648.png"
+  ]
+}

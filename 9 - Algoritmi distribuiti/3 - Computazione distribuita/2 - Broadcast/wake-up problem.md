@@ -6,7 +6,6 @@ Problema per un [[sistema distribuito]], variante del [[broadcast problem]].
 
 ## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]]
 
-- [[terminazione locale]]
 - **[[restrizione di comunicazione|Comunicazione]]**
 	- ***[[iniziatori multipli]]***
 - **[[restrizione di affidabilità|Affidabilità]]**
@@ -15,7 +14,8 @@ Problema per un [[sistema distribuito]], variante del [[broadcast problem]].
 	- [[grafo connesso]]
 	- [[full-duplex|grafo indiretto]]
 - **[[restrizione di tempo|Tempo]]**
-	- [[ritardo di comunicazione unitario]]
+	- [[ritardo di comunicazione illimitato]]
+	- [[terminazione locale]]
 
 ## [[algoritmo|Algoritmi]]
 

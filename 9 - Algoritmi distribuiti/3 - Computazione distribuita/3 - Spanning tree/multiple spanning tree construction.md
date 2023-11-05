@@ -1,4 +1,4 @@
-Problema per un [[sistema distribuito]], che estende il problema di [[spanning tree construction]].
+[[problema di ricerca]] per un [[sistema distribuito]], che estende il problema di [[spanning tree construction]].
 
 ## Definizione
 
@@ -8,7 +8,7 @@ Si vuole [[problema di ricerca|determinare]] uno [[spanning tree]] per il [[sist
 
 - **[[restrizione di comunicazione|Comunicazione]]**
 	- ***[[iniziatori multipli]]***
-	- [[identificatori univoci]]
+	- ***[[identificatori univoci]]***
 - **[[restrizione di affidabilità|Affidabilità]]**
 	- [[affidabilità totale]]
 - **[[restrizione di topologia|Topologia]]**
@@ -16,3 +16,9 @@ Si vuole [[problema di ricerca|determinare]] uno [[spanning tree]] per il [[sist
 	- [[full-duplex|grafo indiretto]]
 - **[[restrizione di tempo|Tempo]]**
 	- [[ritardo di comunicazione unitario]]
+	- [[terminazione locale]]
+
+### [[Algoritmo|Algoritmi]]
+
+- [[multiple spanning tree transform]]
+- [[selective spanning tree transform]]

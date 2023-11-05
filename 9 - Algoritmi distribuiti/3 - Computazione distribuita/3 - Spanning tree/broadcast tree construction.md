@@ -1,8 +1,8 @@
-[[problema di ricerca]] per un [[sistema distribuito]].
+***[[problema di ottimizzazione]]*** per un [[sistema distribuito]], che estende il problema di [[spanning tree construction]].
 
 ## Definizione
 
-Si vuole determinare uno [[spanning tree]] per il [[sistema distribuito]] in modo da poter effettuare efficientemente [[broadcast problem|broadcast]].
+Si vuole ***minimizzare il [[diametro di un grafo|diametro]]*** di uno [[spanning tree]] per il [[sistema distribuito]] in modo da massimizzare l'efficienza del [[broadcast problem|broadcast]].
 
 ## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]]
 
@@ -17,9 +17,6 @@ Si vuole determinare uno [[spanning tree]] per il [[sistema distribuito]] in mod
 	- [[ritardo di comunicazione illimitato]]
 	- [[terminazione locale]]
 
-## [[algoritmo|Algoritmi]]
+## Idea degli [[algoritmo|algoritmi]]
 
-- [[shout protocol]]
-- [[shout+ protocol]]
-- [[traversal protocol]]
-- [[traversal+ protocol]]
+Trovare il [[centrality|centro]] del [[grafo]], poi effettuare una [[breadth-first search]].
