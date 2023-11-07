@@ -49,14 +49,14 @@ $$
 
 In un [[albero]], è impossibile che due [[entità]] vicine vengano scoperte contemporaneamente, pertanto il [[notazione Ω-grande|lower bound]] diminuisce a:
 $$
-\Large 1 \cdot Channels
+\Large Channels
 $$
 
 #### [[restrizioni al modello dei sistemi distribuiti|Restringendo]] a un [[grafo completo]]
 
 In un [[grafo completo]] il [[leader]] può inviare il [[messaggio]] direttamente ai suoi vicini:
 $$
-\Large 1 \cdot Nodes
+\Large Nodes
 $$
 
 ### [[tempo]]
@@ -65,14 +65,14 @@ $$
 
 Il [[grafo]] potrebbe essere un [[cammino]], che richiederebbe che ogni arco venisse attraversato, quindi sicuramente:
 $$
-\Large 1 \cdot Channels
+\Large Channels
 $$
 
 #### [[restrizioni al modello dei sistemi distribuiti|Restringendo]] a un [[albero]] con [[leader]] alla [[radice di un albero|radice]]
 
 Anche un [[albero]] potrebbe essere un [[cammino]] come un [[grafo]] qualsiasi:
 $$
-\Large 1 \cdot Channels
+\Large Channels
 $$
 
 #### [[restrizioni al modello dei sistemi distribuiti|Restringendo]] a un [[grafo completo]]
