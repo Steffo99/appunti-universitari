@@ -143,3 +143,7 @@ In [[notazione asintotica]], è sempre:
 $$
 \Large O(Channels)
 $$
+
+## Duale
+
+Il duale di questo algoritmo è la [[leader election su grafo aciclico]].

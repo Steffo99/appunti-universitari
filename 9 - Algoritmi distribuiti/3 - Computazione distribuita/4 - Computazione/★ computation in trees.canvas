@@ -1,13 +1,13 @@
 {
 	"nodes":[
-		{"id":"f10431539991943d","x":620,"y":-500,"width":440,"height":2040,"color":"5","type":"group","label":"Saturazione"},
+		{"id":"f10431539991943d","type":"group","x":620,"y":-500,"width":440,"height":2040,"color":"5","label":"Saturazione"},
 		{"id":"d9e8c63362870000","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computazione/computazione in grafi aciclici.md","x":-480,"y":-480,"width":960,"height":960},
 		{"id":"eac3f8232a170480","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computazione/tecnica di saturazione per grafi aciclici.md","x":640,"y":-480,"width":400,"height":960},
 		{"id":"da6b01f674dba080","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computazione/computazione in alberi.md","x":-480,"y":560,"width":960,"height":960},
-		{"id":"c217a97b6c1f113a","x":640,"y":560,"width":400,"height":960,"type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computazione/tecnica di saturazione per alberi.md"},
-		{"id":"39e8d6989eaff333","x":-1280,"y":80,"width":400,"height":400,"type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Broadcast/★ broadcast.canvas"},
-		{"id":"4295118739ed5400","x":-1280,"y":560,"width":400,"height":400,"type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/★ spanning tree.canvas"},
-		{"id":"810c6eab5eed44f9","x":-720,"y":480,"width":80,"height":80,"type":"text","text":"# +"}
+		{"id":"c217a97b6c1f113a","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computazione/tecnica di saturazione per alberi.md","x":640,"y":560,"width":400,"height":960},
+		{"id":"39e8d6989eaff333","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Broadcast/★ broadcast.canvas","x":-1280,"y":80,"width":400,"height":400},
+		{"id":"4295118739ed5400","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/★ spanning tree.canvas","x":-1280,"y":560,"width":400,"height":400},
+		{"id":"810c6eab5eed44f9","type":"text","text":"# +","x":-720,"y":480,"width":80,"height":80}
 	],
 	"edges":[
 		{"id":"3cc5d31160347382","fromNode":"d9e8c63362870000","fromSide":"bottom","toNode":"da6b01f674dba080","toSide":"top","fromEnd":"arrow"},

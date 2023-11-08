@@ -278,18 +278,6 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/2 - Su anello",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/3 - Su grafo generico",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/1 - Concetti",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "steffo-file-index.json",
       "color": "me4XBNQC4rwzQFLlvIAn0"
     },
@@ -407,6 +395,10 @@
     },
     {
       "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/traversal protocol.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/leader election su anello controlled-distance.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     }
   ]

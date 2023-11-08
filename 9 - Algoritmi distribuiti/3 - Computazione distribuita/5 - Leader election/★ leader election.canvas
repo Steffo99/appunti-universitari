@@ -1,1 +1,28 @@
-{}
+{
+	"nodes":[
+		{"id":"18ea906d1635d485","type":"group","x":660,"y":900,"width":920,"height":3080,"color":"5","label":"Anello"},
+		{"id":"59e651b187da9388","type":"group","x":660,"y":4100,"width":920,"height":1000,"color":"5","label":"Grafo di diametro noto"},
+		{"id":"740207a9a63c9513","type":"group","x":660,"y":340,"width":920,"height":440,"color":"5","label":"Grafo aciclico"},
+		{"id":"e7d0f7c50e744dfe","type":"group","x":660,"y":-260,"width":920,"height":440,"color":"5","label":"Albero"},
+		{"id":"26a2bda47738d7d8","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/leader election.md","x":-440,"y":-240,"width":960,"height":5320},
+		{"id":"b672c8042ef8c199","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/leader.md","x":-160,"y":-800,"width":400,"height":400},
+		{"id":"c1f4d995f9345928","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/leader election su albero.md","x":680,"y":-240,"width":400,"height":400},
+		{"id":"5c61b7c7c5e2883d","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/leader election su anello all-the-way.md","x":680,"y":920,"width":400,"height":960},
+		{"id":"855e7d4c6a36c000","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/leader election su grafo aciclico.md","x":680,"y":360,"width":400,"height":400},
+		{"id":"1c59488cd9ea817b","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/leader election su anello di dimensione conosciuta all-the-way.md","x":1160,"y":920,"width":400,"height":960},
+		{"id":"bf49d10d32c845a4","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/leader election su anello as-far-as-it-can.md","x":680,"y":1960,"width":400,"height":960},
+		{"id":"90c13d04acf28d97","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/Angluin 1980.md","x":-1000,"y":2220,"width":400,"height":400},
+		{"id":"060624bd1d86f910","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/leader election su anello controlled-distance.md","x":680,"y":3000,"width":400,"height":960},
+		{"id":"57cedce16261c4ec","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/FloodMax.md","x":680,"y":4120,"width":400,"height":960}
+	],
+	"edges":[
+		{"id":"76ba628c35000191","fromNode":"b672c8042ef8c199","fromSide":"bottom","toNode":"26a2bda47738d7d8","toSide":"top"},
+		{"id":"cda326f2ebfde877","fromNode":"26a2bda47738d7d8","fromSide":"left","toNode":"90c13d04acf28d97","toSide":"right"},
+		{"id":"a1a857c258bceb6c","fromNode":"26a2bda47738d7d8","fromSide":"right","toNode":"e7d0f7c50e744dfe","toSide":"left"},
+		{"id":"07e67d6f2da22ee6","fromNode":"26a2bda47738d7d8","fromSide":"right","toNode":"740207a9a63c9513","toSide":"left"},
+		{"id":"63b2664f9a3c7489","fromNode":"5c61b7c7c5e2883d","fromSide":"right","toNode":"1c59488cd9ea817b","toSide":"left"},
+		{"id":"3d8a52267df701d9","fromNode":"5c61b7c7c5e2883d","fromSide":"bottom","toNode":"bf49d10d32c845a4","toSide":"top"},
+		{"id":"34c21c398375393a","fromNode":"26a2bda47738d7d8","fromSide":"right","toNode":"18ea906d1635d485","toSide":"left"},
+		{"id":"29ea3a738fc0be45","fromNode":"26a2bda47738d7d8","fromSide":"right","toNode":"59e651b187da9388","toSide":"left"}
+	]
+}
