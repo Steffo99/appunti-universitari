@@ -1,5 +1,7 @@
 [[algoritmo]] di [[leader election]] su [[anello]].
 
+## [[Comportamento]]
+
 > [!Summary]
 > Effettua iterazioni in cui ogni [[entità]] che potrebbe diventare potenzialmente [[leader]] diffonde il proprio [[identificatore]] a tutte le altre entro una certa distanza.
 

@@ -12,14 +12,14 @@ Una [[entità]] vuole comunicare un'informazione a tutto il resto del [[sistema 
 ## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]]
 
 - **[[restrizione di comunicazione|Comunicazione]]**
-	- [[iniziatore singolo]]
+	- [[half-duplex]]
 - **[[restrizione di affidabilità|Affidabilità]]**
 	- [[affidabilità totale]]
 - **[[restrizione di topologia|Topologia]]**
 	- [[grafo connesso]]
-	- [[full-duplex|grafo indiretto]]
 - **[[restrizione di tempo|Tempo]]**
 	- [[ritardo di comunicazione illimitato]]
+	- [[risveglio singolo]]
 	- [[terminazione locale]]
 
 ## [[algoritmo|Algoritmi]]
@@ -29,7 +29,7 @@ Una [[entità]] vuole comunicare un'informazione a tutto il resto del [[sistema 
 	- [[flooding v2]] ([[algoritmo corretto|corretto]].)
 	- [[flooding v3]] (ottimizzato!)
 
-## [[notazione Ω-grande|Lower bound]] [[costo computazionale|costo computazionale]]
+## [[costo computazionale|Costo computazionale]]
 
 ### [[Comunicazione]]
 
@@ -59,7 +59,7 @@ $$
 \Large Nodes
 $$
 
-### [[tempo]]
+### [[Tempo]]
 
 #### In un [[grafo]] qualsiasi
 

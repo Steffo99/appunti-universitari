@@ -7,14 +7,14 @@ Si vuole ***minimizzare il [[diametro di un grafo|diametro]]*** di uno [[spannin
 ## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]]
 
 - **[[restrizione di comunicazione|Comunicazione]]**
-	- [[iniziatore singolo]]
+	- [[full-duplex]]
 - **[[restrizione di affidabilità|Affidabilità]]**
 	- [[affidabilità totale]]
 - **[[restrizione di topologia|Topologia]]**
 	- [[grafo connesso]]
-	- [[full-duplex|grafo indiretto]]
 - **[[restrizione di tempo|Tempo]]**
 	- [[ritardo di comunicazione illimitato]]
+	- [[risveglio singolo]]
 	- [[terminazione locale]]
 
 ## Idea degli [[algoritmo|algoritmi]]

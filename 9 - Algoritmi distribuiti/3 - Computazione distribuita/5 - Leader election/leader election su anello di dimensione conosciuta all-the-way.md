@@ -1,5 +1,7 @@
 [[algoritmo]] di [[leader election]] che risolve il problema di terminazione della [[leader election su anello all-the-way]] ***introducendo una [[restrizione di topologia]] aggiuntiva.***
 
+## [[Comportamento]]
+
 > [!Summary]
 > Ogni [[entità]] invia il suo [[identificatore]] alla successiva, e gli inoltra gli identificatori ricevuti dalla precedente, tenendo traccia dell'identificatore minimo ricevuto, ***fino a quando non ne conosce tanti quante le [[entità]] del [[sistema distribuito]]***.
 

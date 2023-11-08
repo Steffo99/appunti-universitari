@@ -1,11 +1,13 @@
-[[algoritmo]] di [[computazione in grafi aciclici]].
-
-> [!Summary]
-> Si distribuisce un dato a ogni [[entità]], che effettua la computazione per i dati dei suoi figli e ne invia il risultato al genitore.  
-> 
-> Processati tutti i dati, viene effettuato un [[broadcast problem|broadcast]] ***dalla radice-[[leader]]*** per distribuire i risultati dell'algoritmo a tutti.
+[[algoritmo]] di [[computazione in alberi]].
 
 ## [[Comportamento]]
+
+> [!Summary]
+> Si distribuisce un dato a ogni [[entità]].
+> 
+> Ogni [[entità]] effettua la computazione richiesta con il suo dato, più i dati ricevuti dai figli, inviando successivamente il risultato al genitore.
+> 
+> Una volta che la [[radice di un albero|radice]] ha processato i propri dati, effettua un [[broadcast problem|broadcast]] per distribuire il [[risultato]] a tutti.
 
 ### ***`LEADER`***
 

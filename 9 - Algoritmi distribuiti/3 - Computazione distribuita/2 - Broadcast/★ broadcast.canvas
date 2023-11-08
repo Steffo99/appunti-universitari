@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"1ae79343ecdc2ecf","type":"group","x":1040,"y":540,"width":1640,"height":1000,"color":"5","label":"Flooding"},
+		{"id":"1ae79343ecdc2ecf","type":"group","x":1040,"y":540,"width":1640,"height":1000,"label":"Flooding"},
 		{"id":"1bf892659093d611","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Broadcast/flooding v1.md","x":1060,"y":560,"width":480,"height":960},
 		{"id":"a1841455be06b505","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Broadcast/flooding v2.md","x":1620,"y":560,"width":480,"height":960},
 		{"id":"ea39c9f9c9d31ba6","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Broadcast/flooding v3.md","x":2180,"y":560,"width":480,"height":960},

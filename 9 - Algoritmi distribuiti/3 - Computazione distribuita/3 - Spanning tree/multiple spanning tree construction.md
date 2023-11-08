@@ -7,15 +7,15 @@ Si vuole [[problema di ricerca|determinare]] uno [[spanning tree]] per il [[sist
 ## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]]
 
 - **[[restrizione di comunicazione|Comunicazione]]**
-	- ***[[iniziatori multipli]]***
-	- ***[[identificatori univoci]]***
+	- [[full-duplex]]
 - **[[restrizione di affidabilità|Affidabilità]]**
 	- [[affidabilità totale]]
 - **[[restrizione di topologia|Topologia]]**
 	- [[grafo connesso]]
-	- [[full-duplex|grafo indiretto]]
+	- ***[[identificatori univoci]]***
 - **[[restrizione di tempo|Tempo]]**
 	- [[ritardo di comunicazione unitario]]
+	- ***[[risveglio parziale]]***
 	- [[terminazione locale]]
 
 ### [[Algoritmo|Algoritmi]]

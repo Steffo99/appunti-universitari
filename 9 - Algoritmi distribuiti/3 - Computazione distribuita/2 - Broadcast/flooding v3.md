@@ -1,38 +1,19 @@
 [[algoritmo]] di [[broadcast problem]] che riduce il [[comunicazione|numero di messaggi]] rispetto al [[flooding v2]].
 
+## [[Comportamento]]
+
 > [!Summary]
 >  Il [[leader]] invia il suo [[messaggio]] iniziale a tutti i vicini, e, se è la prima volta che lo ricevono, loro lo inoltrano a loro volta ai loro vicini ***tranne quello che gliel'ha inviato***.
 
-## [[Comportamento]]
+Il [[leader]] è inizializzato allo stato `LEADER`, mentre tutti gli altri sono inizializzati allo stato `SLEEPING`.
 
 ### `LEADER`
 
-All'[[impulso spontaneo|inizio dell'algoritmo]], invia il suo [[messaggio]]:
-```rust
-spontaneously! {
-	send!(*, Message {...});
-	state!(DONE);
-}
-```
-
-Se lo riceve indietro, non fa niente:
-```rust
-on_receive! {
-	_ => {},
-}
-```
+All'[[impulso spontaneo|inizio dell'algoritmo]], invia il suo [[messaggio]] a tutti i vicini, poi passa allo stato `DONE`***.
 
 ### `SLEEPING`
 
-Se riceve il [[messaggio]], lo inoltra a tutti i suoi vicini, poi passa allo stato `DONE`:
-```rust
-on_receive! {
-	_ => {
-		send!(!sender, msg);
-		state!(DONE);
-	},
-}
-```
+Se riceve il [[messaggio]] del `LEADER`, lo inoltra a tutti i vicini ***tranne quello che gliel'ha inviato***, poi passa allo stato `DONE`.
 
 ### `DONE`
 
@@ -40,13 +21,20 @@ Non fa niente.
 
 ## [[algoritmo corretto|Correttezza]]
 
-Vedi [[flooding v2]].
+> [!Success]
+> 
+> Per via dell'ipotesi di [[grafo connesso]], tutte le [[entità]] eventualmente riceveranno e inoltreranno il [[messaggio]] del [[leader]], diventando `DONE`.
 
 ## [[costo computazionale distribuito|Costo computazionale]]
 
+| Costo | [[notazione O-grande]] |
+|-|-|
+| [[comunicazione]] | $O(Channels)$ |
+| [[tempo]] | $O(Channels)$ |
+
 ### [[Comunicazione]]
 
-Il costo computazionale è lo stesso del [[flooding v2]], ma con un trasferimento in meno per ogni [[entità]] che non è il [[leader]]:
+Il costo computazionale è lo stesso del [[flooding v2]], ma ***con un trasferimento in meno per ogni [[entità]] che non è il [[leader]]***:
 $$
 2 \cdot Channels - (Entities - 1)
 $$
@@ -56,13 +44,16 @@ $$
 \Large O(Channels)
 $$
 
-### [[Spazio]]
+> [!Note]
+> 
+> ***Coincide con il lower bound del [[broadcast problem]].***
 
-Un multiplo del [costo di comunicazione](#Comunicazione), sempre [[notazione asintotica|asintotico]] a:
+### [[Tempo]]
+
+Il [[grafo]] potrebbe essere un [[cammino]], che richiederebbe che ogni arco venisse attraversato, quindi sicuramente:
 $$
 \Large O(Channels)
 $$
 
-### [[Tempo]]
-
-Vedi [[flooding v2]].
+> [!Note]
+>Coincide con il lower bound del [[broadcast problem]].

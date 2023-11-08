@@ -7,14 +7,14 @@ Problema per un [[sistema distribuito]], variante del [[broadcast problem]].
 ## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]]
 
 - **[[restrizione di comunicazione|Comunicazione]]**
-	- ***[[iniziatori multipli]]***
+	- [[full-duplex|grafo indiretto]]
 - **[[restrizione di affidabilità|Affidabilità]]**
 	- [[affidabilità totale]]
 - **[[restrizione di topologia|Topologia]]**
 	- [[grafo connesso]]
-	- [[full-duplex|grafo indiretto]]
 - **[[restrizione di tempo|Tempo]]**
 	- [[ritardo di comunicazione illimitato]]
+	- ***[[risveglio parziale]]***
 	- [[terminazione locale]]
 
 ## [[algoritmo|Algoritmi]]
@@ -24,7 +24,7 @@ Problema per un [[sistema distribuito]], variante del [[broadcast problem]].
 	- [[flooding v2]] ([[algoritmo corretto|corretto]].)
 	- [[flooding v3]] (ottimizzato!)
 
-## [[notazione Ω-grande|Lower bound]] [[costo computazionale|costo computazionale]]
+## [[costo computazionale|Costo computazionale]]
 
 ### [[Comunicazione]]
 

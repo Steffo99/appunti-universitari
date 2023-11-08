@@ -1,5 +1,7 @@
 [[algoritmo]] di [[leader election]] su [[anello]].
 
+## [[Comportamento]]
+
 > [!Summary]
 > 
 > Ogni [[entità]] riceve identificatori dalla precedente, tenendo traccia dell'identificatore minimo ricevuto, e inoltra alla successiva qualsiasi cambiamento al proprio minimo.

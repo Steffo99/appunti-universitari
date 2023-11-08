@@ -13,3 +13,6 @@ Ha:
 - [[stato di un'entità|stato]]: **[[individuale]]**
 - [[comportamento]]: **[[condiviso]]**
 - [[output]]: **[[condiviso]]**
+
+> [!Tip]
+> Nell'analogia [[sistema distribuito]]-[[grafo]], un'entità è un [[nodo di un grafo|nodo]].

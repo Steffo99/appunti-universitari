@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"f10431539991943d","type":"group","x":620,"y":-500,"width":440,"height":2040,"label":"Saturazione"},
+		{"id":"d9e8c63362870000","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computazione/computazione in grafi aciclici.md","x":-480,"y":-480,"width":960,"height":960},
+		{"id":"eac3f8232a170480","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computazione/tecnica di saturazione per grafi aciclici.md","x":640,"y":-480,"width":400,"height":960},
+		{"id":"da6b01f674dba080","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computazione/computazione in alberi.md","x":-480,"y":560,"width":960,"height":960},
+		{"id":"c217a97b6c1f113a","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computazione/tecnica di saturazione per alberi.md","x":640,"y":560,"width":400,"height":960}
+	],
+	"edges":[
+		{"id":"3cc5d31160347382","fromNode":"d9e8c63362870000","fromSide":"bottom","toNode":"da6b01f674dba080","toSide":"top","fromEnd":"arrow"},
+		{"id":"a42fc5dd73c9697e","fromNode":"d9e8c63362870000","fromSide":"right","toNode":"eac3f8232a170480","toSide":"left"},
+		{"id":"a4aa89137c417d7c","fromNode":"da6b01f674dba080","fromSide":"right","toNode":"c217a97b6c1f113a","toSide":"left"}
+	]
+}

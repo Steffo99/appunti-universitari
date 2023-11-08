@@ -1,50 +1,36 @@
 [[algoritmo]] di [[broadcast problem]] che risolve l'incorrettezza del [[flooding v1]].
 
+## [[Comportamento]]
+
 > [!Summary]
 > Il [[leader]] invia il suo messaggio iniziale a tutti i vicini, e, ***se è la prima volta che lo ricevono***, loro lo inoltrano a loro volta ai loro vicini.
 
-## [[Comportamento]]
+Il [[leader]] è inizializzato allo stato `LEADER`, mentre tutti gli altri sono inizializzati allo stato `SLEEPING`.
 
 ### `LEADER`
 
-All'[[impulso spontaneo|inizio dell'algoritmo]], invia il suo messaggio:
-```rust
-spontaneously! {
-	send!(*, Message {...});
-	state!(DONE);
-}
-```
-
-Se lo riceve indietro, non fa niente:
-```rust
-on_receive! {
-	_ => {},
-}
-```
+All'[[impulso spontaneo|inizio dell'algoritmo]], invia il suo [[messaggio]] a tutti i vicini, ***poi passa allo stato `DONE`***.
 
 ### `SLEEPING`
 
-Se riceve il messaggio, lo inoltra a tutti i suoi vicini, poi passa allo stato `DONE`:
-```rust
-on_receive! {
-	_ => {
-		send!(*, msg);
-		state!(DONE);
-	},
-}
-```
+Se riceve il [[messaggio]] del `LEADER`, lo inoltra a tutti i vicini, ***poi passa allo stato `DONE`***.
 
-### `DONE`
+### ***`DONE`***
 
-Non fa niente.
+***Ignora qualsiasi cosa riceva.***
 
 ## [[algoritmo corretto|Correttezza]]
 
-Per via dell'ipotesi di [[grafo connesso]], tutte le [[entità]] riceveranno eventualmente il [[messaggio]] inviato.
-
-Con la ricezione del [[messaggio]], eventualmente tutte le [[entità]] diventeranno `DONE`, raggiungendo [[terminazione locale]].
+> [!Success]
+> 
+> Per via dell'ipotesi di [[grafo connesso]], tutte le [[entità]] eventualmente riceveranno e inoltreranno il [[messaggio]] del [[leader]], diventando `DONE`.
 
 ## [[costo computazionale distribuito|Costo computazionale]]
+
+| Costo | [[notazione O-grande]] | 
+|-|-|
+| [[comunicazione]] | $O(Channels)$ |
+| [[tempo]] | $O(Channels)$ |
 
 ### [[Comunicazione]]
 
@@ -63,13 +49,12 @@ $$
 \Large O(Channels)
 $$
 
-### [[Spazio]]
+### [[Tempo]]
 
-Un multiplo del [costo di comunicazione](#Comunicazione), sempre [[notazione asintotica|asintotico]] a:
+Il [[grafo]] potrebbe essere un [[cammino]], che richiederebbe che ogni arco venisse attraversato, quindi sicuramente:
 $$
 \Large O(Channels)
 $$
 
-### [[Tempo]]
-
-Coincide con il lower bound del [[broadcast problem]].
+> [!Note]
+> Coincide con il lower bound del [[broadcast problem]].

@@ -1,38 +1,24 @@
-[[algoritmo]] ***[[algoritmo corretto|incorretto]]*** di [[broadcast problem]].
+[[algoritmo]] di [[broadcast problem]].
+
+## [[Comportamento]]
 
 > [!Summary]
 > Il [[leader]] invia il suo messaggio iniziale a tutti i vicini, e loro lo inoltrano a loro volta ai loro vicini.
 
-## [[Comportamento]]
+Il [[leader]] è inizializzato allo stato `LEADER`, mentre tutti gli altri sono inizializzati allo stato `SLEEPING`.
 
 ### `LEADER`
 
-All'[[impulso spontaneo|inizio dell'algoritmo]], invia il suo messaggio:
-```rust
-spontaneously! {
-	send!(*, Message {...});
-}
-```
+All'[[impulso spontaneo|inizio dell'algoritmo]], invia il suo [[messaggio]] a tutti i vicini.
 
-Se lo riceve indietro, non fa niente:
-```rust
-on_receive! {
-	_ => {},
-}
-```
+Ignora qualsiasi altra cosa riceva.
 
 ### `SLEEPING`
 
-Se riceve il messaggio, lo inoltra a tutti i suoi vicini:
-```rust
-on_receive! {
-	_ => send!(*, msg)
-}
-```
+Se riceve il [[messaggio]] del `LEADER`, lo inoltra a tutti i vicini.
 
 ## [[algoritmo corretto|Correttezza]]
 
-> [!DANGER] Algoritmo incorretto
+> [!Failure]
 > 
-> Questo algoritmo non termina mai!  
-> È riportato qui solo come base per le due versioni successive.
+> Questo algoritmo potrebbe non terminare mai, in quanto due [[entità]] potrebbero inoltrarsi il [[messaggio]] del [[#`LEADER`]] all'infinito.

@@ -1,5 +1,6 @@
 [[restrizione di tempo]].
 
-Specifica che le [[entità]] partecipanti vengono a conoscenza di quando l'algoritmo è terminato per tutti i partecipanti.
+Specifica che, ai fini della risoluzione del [[problema]], il [[algoritmo corretto|requisito di terminazione di un algoritmo]] è soddisfatto quando ***tutte le [[entità]] partecipanti conoscono quando l'intera computazione è terminata***.
 
-È un problema a sè stante, il [[termination detection problem]].
+> [!Example]
+> L'abbiamo visto in [[★ sistemi complessi]]: la [[sincronizzazione del plotone di esecuzione]]!

@@ -7,17 +7,17 @@ Si vuole scegliere un'[[entità]] che diventerà il [[leader]] per un [[algoritm
 ## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]]
 
 - **[[restrizione di comunicazione|Comunicazione]]**
-	- [[iniziatori multipli]]
-	- [[identificatori univoci]]
-		- **[[Angluin 1980]]**: questo problema è irrisolvibile senza identificatori univoci
+	- [[half-duplex]]
 - **[[restrizione di affidabilità|Affidabilità]]**
 	- [[affidabilità totale]]
 - **[[restrizione di topologia|Topologia]]**
-	- [[full-duplex|grafo indiretto]]
 	- [[grafo connesso]]
-	- [[half-duplex|grafo diretto]]
+	- [[identificatori univoci]]
+		- il teorema [[Angluin 1980]] li pone come requisito per la risolvibilità
 - **[[restrizione di tempo|Tempo]]**
 	- [[ritardo di comunicazione unitario]]
+	- [[risveglio parziale]]
+	- [[terminazione locale]]
 
 ## [[algoritmo|Algoritmi]]
 
