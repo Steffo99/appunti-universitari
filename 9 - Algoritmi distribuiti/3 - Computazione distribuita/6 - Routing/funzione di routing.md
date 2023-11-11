@@ -2,13 +2,15 @@
 aliases:
   - routing function
 ---
-[[Funzione]] [[individuale]] che, in un problema di [[routing]], associa ogni [[entità]] con il [[canale di comunicazione]] da utilizzare per raggiungerla.
+[[Funzione]] [[individuale|specifica ogni singola entità]] che, associa ogni [[entità]] con il [[canale di comunicazione]] da utilizzare per raggiungerla.
 
 $$
-\def \varSource {{\color{LimeGreen} Source}}
+\def \varEntity {{\color{LimeGreen} Entity}}
 \def \varDestination {{\color{IndianRed} Destination}}
+\def \varChannel {{\color{SkyBlue} Channel}}
 \Large
-\textrm{Channel}_{\varSource}(\varDestination)
+\textrm{Route}_{\varEntity}(\varDestination) \to \varChannel
 $$
 
-Comunemente implementata come [[routing table]].
+> [!Example]
+> Comunemente implementata con una [[routing table]]!

@@ -27,6 +27,13 @@ Le [[entità]] `PROCESSING` che ricevono il [[messaggio]] ***effettuano nuovamen
 
 Un'[[entità]] `DONE` conosce il [[risultato]] della computazione, e non fa nient'altro.
 
+## [[algoritmo corretto|Correttezza]]
+
+> [!Success]
+> Eventualmente, i messaggi convergeranno obbligatoriamente a due entità, e la loro notifica di terminazione raggiungerà eventualmente tutte le altre.
+> 
+> ==Come si chiamano i problemi risolvibili con la saturazione?==
+
 ## [[costo computazionale distribuito|Costo computazionale]]
 
 ### [[Comunicazione]]

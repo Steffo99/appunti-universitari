@@ -15,7 +15,7 @@ Si vuole [[problema di ricerca|determinare]] uno [[spanning tree]] per il [[sist
 	- ***[[identificatori univoci]]***
 - **[[restrizione di tempo|Tempo]]**
 	- [[ritardo di comunicazione unitario]]
-	- ***[[risveglio parziale]]***
+	- ***[[risveglio multiplo]]***
 	- [[terminazione locale]]
 
 ### [[Algoritmo|Algoritmi]]

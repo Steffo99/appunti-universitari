@@ -29,6 +29,13 @@ Le [[entità]] `PROCESSING` che ricevono il [[messaggio]] ***lo accettano come [
 
 Un'[[entità]] `DONE` conosce il [[risultato]] della computazione, e non fa nient'altro.
 
+## [[algoritmo corretto|Correttezza]]
+
+> [!Success]
+> Eventualmente, i messaggi convergeranno obbligatoriamente alla radice, e la sua notifica di terminazione raggiungerà eventualmente tutte le foglie.
+> 
+> ==Come si chiamano i problemi risolvibili con la saturazione?==
+
 ## [[costo computazionale distribuito|Costo computazionale]]
 
 ### [[Comunicazione]]

@@ -1,19 +1,23 @@
-[[algoritmo]] di [[leader election]] che risolve il problema di terminazione della [[leader election su anello all-the-way]] ***introducendo una [[restrizione di topologia]] aggiuntiva.***
+[[algoritmo]] di [[leader election]] che risolve il problema di terminazione della [[leader election su anello all-the-way]].
+
+## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]] aggiuntive
+
+- **[[restrizione di topologia|Topologia]]**
+	- [[anello]] di ***dimensione nota***
 
 ## [[Comportamento]]
 
 > [!Summary]
 > Ogni [[entità]] invia il suo [[identificatore]] alla successiva, e gli inoltra gli identificatori ricevuti dalla precedente, tenendo traccia dell'identificatore minimo ricevuto, ***fino a quando non ne conosce tanti quante le [[entità]] del [[sistema distribuito]]***.
 
-## [[Comportamento]] aggiuntivo
-
 Si può effettuare il conteggio in due modi:
 - con un [[contatore]] su ogni [[entità]], che conta il numero di [[messaggio|messaggi]] transitati
-- ==con un contatore su un messaggio==
+- con un [[contatore]] su ogni [[messaggio]], che conta il numero di [[entità]] transitate
 
 ## [[algoritmo corretto|Correttezza]]
 
-L'algoritmo termina quando tutte le [[entità]] hanno visto tanti [[messaggio|messaggi]] quante le [[entità]] del [[sistema distribuito]].
+> [!Success]
+> L'algoritmo termina quando tutte le [[entità]] hanno visto tanti [[messaggio|messaggi]] quante le [[entità]] del [[sistema distribuito]].
 
 ## [[costo computazionale distribuito|Costo computazionale]]
 

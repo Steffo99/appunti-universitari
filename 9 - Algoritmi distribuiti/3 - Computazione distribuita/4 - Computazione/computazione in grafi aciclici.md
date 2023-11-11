@@ -7,6 +7,7 @@ Si vuole calcolare qualcosa più efficientemente possibile, distribuendo gli [[9
 ## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]]
 
 - **[[restrizione di comunicazione|Comunicazione]]**
+	- [[dimensione dei messaggi illimitata]]
 	- [[full-duplex|grafo indiretto]]
 - **[[restrizione di affidabilità|Affidabilità]]**
 	- [[affidabilità totale]]
@@ -15,7 +16,7 @@ Si vuole calcolare qualcosa più efficientemente possibile, distribuendo gli [[9
 	- ***[[grafo aciclico]]***
 - **[[restrizione di tempo|Tempo]]**
 	- [[ritardo di comunicazione illimitato]]
-	- ***[[risveglio parziale]]***
+	- ***[[risveglio multiplo]]***
 	- [[terminazione locale]]
 
 ## [[algoritmo|Algoritmi]]

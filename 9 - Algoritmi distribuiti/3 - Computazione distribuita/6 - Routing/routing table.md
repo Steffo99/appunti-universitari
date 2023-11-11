@@ -1,4 +1,4 @@
-In un contesto di [[routing]], [[associazione]] tra [[entità]] da raggiungere e [[canale di comunicazione]] da utilizzare più [[costo]] totale per raggiungerla.
+In un contesto di [[routing]], [[hash table|mappa]] da [[router]] destinatario a [[canale di comunicazione]] da utilizzare più [[costo]] totale per raggiungerla.
 
 $$
 \def \varSource {{\color{LimeGreen} Source}}
@@ -13,3 +13,22 @@ $$
 $$
 
 Implementazione semplice di [[funzione di routing]].
+
+> [!Note]
+> ==Il [[principio di ottimalità]] è il motivo per cui è sufficiente salvare solo il [[canale di comunicazione]]!==
+
+## [[Costo computazionale]]
+
+### [[Search time]]
+
+Un lookup nel [[hash table|dizionario]]:
+$$
+\Large O(\log(Entities))
+$$
+
+### [[Routing memory]]
+
+Lo spazio usato dal [[hash table|dizionario]]:
+$$
+\Large O(Entities \cdot \log(\max(Identifier)))
+$$

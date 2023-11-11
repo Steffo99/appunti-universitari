@@ -7,6 +7,7 @@ Si vuole determinare uno [[spanning tree]] per il [[sistema distribuito]] in mod
 ## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]]
 
 - **[[restrizione di comunicazione|Comunicazione]]**
+	- [[dimensione dei messaggi illimitata]]
 	- [[full-duplex]]
 - **[[restrizione di affidabilità|Affidabilità]]**
 	- [[affidabilità totale]]

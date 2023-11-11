@@ -5,8 +5,6 @@
 > [!Summary]
 > Effettua iterazioni in cui ogni [[entità]] che potrebbe diventare potenzialmente [[leader]] diffonde il proprio [[identificatore]] a tutte le altre entro una certa distanza.
 
-## [[Comportamento]]
-
 ### `CANDIDATE`
 
 All'inizio di ogni iterazione, invia e fa inoltrare il proprio [[identificatore]] ai vicini (in entrambe le direzioni) a distanza $2^{Iteration}$.
@@ -23,26 +21,46 @@ Sapendo sicuramente di non essere il leader, si limita a inoltrare messaggi.
 
 ## [[costo computazionale distribuito|Costo computazionale]]
 
+| Costo | [[notazione O-grande]] | 
+|-|-|
+| [[comunicazione]] | $O(Entities \cdot \log (Entities))$ |
+| [[tempo]] | ... |
+
 ### [[Comunicazione]]
 
-Ad ogni iterazione, ogni candidato invia e riceve su ogni lato:
+Il caso peggiore per le iterazioni sono le iterazioni intermedie (che non sono la prima o l'ultima o il broadcast di terminazione). ==Perchè?==
+
+Ad ogni iterazione intermedia, ogni candidato invia e riceve su ogni lato:
 $$
-\color{Gold} 2 ^ {Iteration}
+\color{Gold} 2 ^ {Iteration_1}
 $$
 Sommando andata e ritorno:
 $$
-{\color{Gold} 2} \cdot 2 ^ {Iteration}
+{\color{Gold} 2} \cdot 2 ^ {Iteration_1}
 $$
 Sommando i due lati:
 $$
-{\color{Gold} 2} \cdot 2 \cdot 2^{Iteration}
+{\color{Gold} 2} \cdot 2 \cdot 2^{Iteration_1}
 $$
-Sommando tutti i `CANDIDATE`:
+I `CANDIDATE` si dimezzano ad ogni iterazione; considerando le iterazioni [[indicizzazione a 1|indicizzate a 1]], sommandoli si ottiene che:
 $$
 {\color{Gold} \mathrm{floor} \left(
-\frac{n}{2^{Iteration - 1} + 1}
+\frac{Entities}{2^{Iteration_1 - 1} + 1}
 \right)}
-\cdot 2 \cdot 2 \cdot 2 ^ {Iteration}
+\cdot 2 \cdot 2 \cdot 2 ^ {Iteration_1}
+$$
+Pertanto, in [[notazione asintotica]] abbiamo:
+$$
+O(Entities \cdot Iteration)
 $$
 
-==Qui la prof fa dei calcoli. Ho troppo sonno per capirli.==
+Il numero di iterazioni è pari al [[logaritmo in base 2]] del numero di [[entità]] del [[sistema distribuito]]:
+$$
+\color{Gold} \mathrm{ceil} \left(
+	\log (Entities)
+\right)
+$$
+Quindi, la [[notazione asintotica]] finale sarà:
+$$
+\large O(Entities \cdot {\color{Gold} \log (Entities)})
+$$

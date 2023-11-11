@@ -12,6 +12,7 @@ Una [[entità]] vuole comunicare un'informazione a tutto il resto del [[sistema 
 ## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]]
 
 - **[[restrizione di comunicazione|Comunicazione]]**
+	- [[dimensione dei messaggi illimitata]]
 	- [[half-duplex]]
 - **[[restrizione di affidabilità|Affidabilità]]**
 	- [[affidabilità totale]]

@@ -1,4 +1,34 @@
 {
-	"nodes":[],
-	"edges":[]
+	"nodes":[
+		{"id":"1b02df69b1abf291","type":"group","x":2060,"y":-1100,"width":1560,"height":1560,"label":"Concetti"},
+		{"id":"bb569fef44f295e1","x":2060,"y":580,"width":440,"height":1000,"type":"group","label":"Generale"},
+		{"id":"68acbd213e07eb80","x":2060,"y":1700,"width":440,"height":1000,"type":"group","label":"Diametro noto"},
+		{"id":"dfe1179e8607aab5","x":2060,"y":2820,"width":440,"height":1000,"type":"group","label":"Costo non-negativo"},
+		{"id":"a2f4ec1d9ef4fca5","x":2060,"y":3940,"width":440,"height":1000,"type":"group","label":"Costo unitario"},
+		{"id":"d89867fdda35cdde","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/routing.md","x":960,"y":-800,"width":960,"height":5720},
+		{"id":"8bf228c354e56f9e","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/funzione di routing.md","x":2080,"y":-520,"width":400,"height":400},
+		{"id":"977d445b9efd3c63","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/routing memory.md","x":2640,"y":-800,"width":400,"height":400},
+		{"id":"c9ae37a9e586a72d","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/search time.md","x":2640,"y":-240,"width":400,"height":400},
+		{"id":"cb0fa8b1f3b67bdd","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/pacchetto.md","x":2080,"y":40,"width":400,"height":400},
+		{"id":"a5fe4cabc58e4ded","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/router.md","x":2080,"y":-1080,"width":400,"height":400},
+		{"id":"781c1e8e5acea10a","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/routing table.md","x":3200,"y":-800,"width":400,"height":960},
+		{"id":"bb4745ef27a83d75","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/gossiping routing.md","x":2080,"y":600,"width":400,"height":960},
+		{"id":"aad122a35d265477","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/iterating routing.md","x":2080,"y":1720,"width":400,"height":960},
+		{"id":"a64242492150bbbd","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/centralized routing.md","x":2080,"y":2840,"width":400,"height":960},
+		{"id":"5602d9da9f18a97d","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/min-hops routing.md","x":2080,"y":3960,"width":400,"height":960},
+		{"id":"ea475183f7c55a25","x":1240,"y":-1360,"width":400,"height":400,"color":"3","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/comunicazione del routing.md"}
+	],
+	"edges":[
+		{"id":"58a76a4228ed6e62","fromNode":"d89867fdda35cdde","fromSide":"right","toNode":"8bf228c354e56f9e","toSide":"left"},
+		{"id":"a9ded24e83178bcd","fromNode":"8bf228c354e56f9e","fromSide":"right","toNode":"977d445b9efd3c63","toSide":"left"},
+		{"id":"cdab59da9351844e","fromNode":"8bf228c354e56f9e","fromSide":"right","toNode":"c9ae37a9e586a72d","toSide":"left"},
+		{"id":"ba114b8d66b34d81","fromNode":"d89867fdda35cdde","fromSide":"right","toNode":"a5fe4cabc58e4ded","toSide":"left"},
+		{"id":"820e0566dd3893d7","fromNode":"d89867fdda35cdde","fromSide":"right","toNode":"cb0fa8b1f3b67bdd","toSide":"left"},
+		{"id":"951773f2dfb01c66","fromNode":"8bf228c354e56f9e","fromSide":"right","toNode":"781c1e8e5acea10a","toSide":"left"},
+		{"id":"618c83092da33be8","fromNode":"d89867fdda35cdde","fromSide":"right","toNode":"bb4745ef27a83d75","toSide":"left"},
+		{"id":"de8236f4437be009","fromNode":"d89867fdda35cdde","fromSide":"top","toNode":"ea475183f7c55a25","toSide":"bottom"},
+		{"id":"5f2d6351f5f2f313","fromNode":"d89867fdda35cdde","fromSide":"right","toNode":"68acbd213e07eb80","toSide":"left"},
+		{"id":"21d6efdf44e535fc","fromNode":"d89867fdda35cdde","fromSide":"right","toNode":"dfe1179e8607aab5","toSide":"left"},
+		{"id":"a86bf78728816781","fromNode":"d89867fdda35cdde","fromSide":"right","toNode":"a2f4ec1d9ef4fca5","toSide":"left"}
+	]
 }

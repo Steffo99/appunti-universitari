@@ -7,6 +7,7 @@ Si vuole scegliere un'[[entità]] che diventerà il [[leader]] per un [[algoritm
 ## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]]
 
 - **[[restrizione di comunicazione|Comunicazione]]**
+	- [[dimensione dei messaggi illimitata]]
 	- [[half-duplex]]
 - **[[restrizione di affidabilità|Affidabilità]]**
 	- [[affidabilità totale]]
@@ -15,8 +16,8 @@ Si vuole scegliere un'[[entità]] che diventerà il [[leader]] per un [[algoritm
 	- [[identificatori univoci]]
 		- il teorema [[Angluin 1980]] li pone come requisito per la risolvibilità
 - **[[restrizione di tempo|Tempo]]**
-	- [[ritardo di comunicazione unitario]]
-	- [[risveglio parziale]]
+	- [[ritardo di comunicazione illimitato]]
+	- [[risveglio multiplo]]
 	- [[terminazione locale]]
 
 ## [[algoritmo|Algoritmi]]

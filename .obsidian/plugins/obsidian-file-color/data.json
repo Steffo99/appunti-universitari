@@ -270,10 +270,6 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "steffo-file-index.json",
       "color": "me4XBNQC4rwzQFLlvIAn0"
     },
@@ -374,10 +370,6 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computazione/★ computazione.canvas",
-      "color": "7j7Pqog0VHMVVAfazMNlb"
-    },
-    {
       "path": "0 - Piano di studi/★ piano di studi.md",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
@@ -386,15 +378,43 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/leader election su anello controlled-distance.md",
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/consenso con fallimenti bizantini.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/leader election su anello di dimensione conosciuta all-the-way.md",
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/consenso con fallimenti su grafo completo.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/leader election su anello as-far-as-it-can.md",
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/edge-broadcast-possibility.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/ft-broad-election.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/leader election con fallimenti su grafo completo.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/teorema innominato.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/two steps.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computazione/★ computazione.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/4 - Strutture dati distribuite",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/centralized routing.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     }
   ]

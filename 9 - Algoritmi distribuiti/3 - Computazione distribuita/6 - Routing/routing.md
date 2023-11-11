@@ -1,28 +1,32 @@
 [[problema di ottimizzazione]] per un [[sistema distribuito]].
 
+## Terminologia aggiuntiva
+
+Le [[entità]] che partecipano al routing sono anche dette [[router]].
+
 ## Definizione
 
-Date due qualsiasi [[entità]], si vuole determinare un [[cammino]] nella [[rete di comunicazione]] che permetta alle due di comunicare persistentemente.
-
-### Terminologia
-
-Le [[entità]] che partecipano alla risoluzione del problema sono dette anche [[router]].
-
-Ogni entità ha una [[funzione di routing]], archiviata nella [[routing memory]], che richiede un dato [[tempo di ricerca]] per essere eseguita.e mi 
+Si vuole determinare una [[funzione di routing]] per tutti i [[router]] del sistema.
 
 ## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]]
 
-- [[full-duplex]]
-- [[canale di comunicazione|canali di comunicazione]] con un [[costo]]
-- ==connettività?==
-- [[affidabilità totale]]
-- [[orientamento locale]]
-- [[identificatori univoci]]
+- **[[restrizione di comunicazione|Comunicazione]]**
+	- [[dimensione dei messaggi illimitata]]
+	- [[full-duplex]]
+- **[[restrizione di affidabilità|Affidabilità]]**
+	- [[affidabilità totale]]
+- **[[restrizione di topologia|Topologia]]**
+	- [[grafo connesso]]
+	- [[identificatori univoci]]
+	- [[canale di comunicazione|canali]] con un [[funzione costo|costo]]
+- **[[restrizione di tempo|Tempo]]**
+	- [[ritardo di comunicazione illimitato]]
+	- [[risveglio singolo]]
+	- [[terminazione locale]]
 
 ## [[algoritmo|Algoritmi]]
 
-- [[broadcast routing]]
-- [[routing table gossiping]]
-- [[routing table iterating]]
-- [[shortest path spanning tree]]
-- [[min-hop routing]]
+- [[gossiping routing]]
+- [[iterating routing]]
+- [[centralized routing]]
+- [[min-hops routing]]

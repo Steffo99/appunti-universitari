@@ -1,36 +1,40 @@
 [[algoritmo]] di ==PROBLEMA==.
 
-> [!Summary]
-> ==...==
+## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]] aggiuntive
+
+==...==
 
 ## [[Comportamento]]
+
+> [!Summary]
+> ==...==
 
 ### ==`STATO1`==
 
 ==...==
-```rust
-
-```
 
 ### ==`STATO2`==
 
 ==...==
-```rust
-
-```
 
 ## [[algoritmo corretto|Correttezza]]
 
-==...==
+> [!Success]
+> ==...==
 
+> [!Failure]
+> ==...==
 ## [[costo computazionale distribuito|Costo computazionale]]
+
+| Costo | [[notazione O-grande]] | 
+|-|-|
+| [[comunicazione]] | ==...== |
+| [[tempo]] | ==...== |
 
 ### [[Comunicazione]]
 
 ==...==
-### [[Spazio]]
 
-==...==
 ### [[Tempo]]
 
 ==...==
