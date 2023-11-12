@@ -1,4 +1,4 @@
-Classe di [[attacco]] in cui l'[[avversario]] si interfaccia con il [[servizio di autenticazione]] per [[bruteforce|bruteforceare]] o [[enumerazione|enumerare]] le [[credenziale|credenziali]] degli [[utente|utenti]].
+Classe di [[attacco]] in cui l'[[avversario]] si interfaccia con il [[servizio di autenticazione]] per [[bruteforce|bruteforceare]] o [[enumeration attack|enumerare]] le [[credenziale|credenziali]] degli [[utente|utenti]].
 
 ## Livello di sicurezza
 

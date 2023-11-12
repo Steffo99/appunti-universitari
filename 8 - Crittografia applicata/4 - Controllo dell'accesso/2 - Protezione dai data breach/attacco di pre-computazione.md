@@ -11,6 +11,6 @@ aliases: ["pre-computation attack"]
 
 ## Funzionamento
 
-1. L'avversario [[enumerazione|enumera]] anticipatamente numerosi [[hash]], creando una [[rainbow table]].
+1. L'avversario [[enumeration attack|enumera]] anticipatamente numerosi [[hash]], creando una [[rainbow table]].
 2. L'avvesario causa un [[data breach]] del [[database delle credenziali]].
 3. L'avversario usa la [[rainbow table]] per trovare le [[password]] corrispondenti a ciascun hash.

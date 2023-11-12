@@ -6,7 +6,7 @@ aliases: ["PIN"]
 
 ## Livello di sicurezza
 
-Per via della sua bassisima entropia, è [[8 - Crittografia applicata/1 - Concetti/2 - Dimostrare la validità delle soluzioni/debolezza|debole]] contro attacchi di [[bruteforce]] e di [[enumerazione]], entrambi solitamente in forma [[attacco interattivo|interattiva]].
+Per via della sua bassisima entropia, è [[8 - Crittografia applicata/1 - Concetti/2 - Dimostrare la validità delle soluzioni/debolezza|debole]] contro attacchi di [[bruteforce]] e di [[enumeration attack]], entrambi solitamente in forma [[attacco interattivo|interattiva]].
 
 ## Casi d'uso
 

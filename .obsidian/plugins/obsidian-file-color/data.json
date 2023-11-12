@@ -386,10 +386,6 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/edge-broadcast-possibility.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/ft-broad-election.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
@@ -415,6 +411,14 @@
     },
     {
       "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/centralized routing.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/★ guasti.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/consenso.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     }
   ]

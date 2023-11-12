@@ -1,0 +1,1 @@
+Funzionamento incorretto di qualcosa all'interno del [[sistema distribuito]].

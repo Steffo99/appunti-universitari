@@ -7,5 +7,5 @@ Le password decise manualmente dall'[[utente]] hanno generalmente bassa [[entrop
 Perchè siano efficaci, devono essere:
 
 - resistenti a [[bruteforce]]
-- resistenti a [[enumerazione]]
+- resistenti a [[enumeration attack]]
 
