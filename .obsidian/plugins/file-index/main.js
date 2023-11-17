@@ -37,12 +37,12 @@ var __privateAdd = (obj, member, value) => {
 // main.ts
 var main_exports = {};
 __export(main_exports, {
-  default: () => SteffoFileIndexPlugin
+  default: () => FileIndexPlugin
 });
 module.exports = __toCommonJS(main_exports);
 var import_obsidian = require("obsidian");
 var _reloadIgnoreRegExpsIfIgnoreFileChangedBinding, _recreateFileIndexBinding;
-var _SteffoFileIndexPlugin = class extends import_obsidian.Plugin {
+var _FileIndexPlugin = class extends import_obsidian.Plugin {
   constructor() {
     super(...arguments);
     this.ignoreRegExps = [];
@@ -50,24 +50,24 @@ var _SteffoFileIndexPlugin = class extends import_obsidian.Plugin {
     __privateAdd(this, _recreateFileIndexBinding, this.recreateFileIndex.bind(this));
   }
   async reloadIgnoreRegExps() {
-    const ignoreFile = this.app.vault.getAbstractFileByPath(_SteffoFileIndexPlugin.FILE_IGNORE_PATH);
+    const ignoreFile = this.app.vault.getAbstractFileByPath(_FileIndexPlugin.FILE_IGNORE_PATH);
     if (ignoreFile === null) {
-      console.debug("[SteffoFileIndexPlugin] Ignore file does not exist, not ignoring anything:", _SteffoFileIndexPlugin.FILE_IGNORE_PATH);
+      console.debug("[FileIndexPlugin] Ignore file does not exist, not ignoring anything:", _FileIndexPlugin.FILE_IGNORE_PATH);
       this.ignoreRegExps = [];
     } else if (ignoreFile instanceof import_obsidian.TFolder) {
-      console.debug("[SteffoFileIndexPlugin] Ignore file is actually a folder, not ignoring anything:", _SteffoFileIndexPlugin.FILE_IGNORE_PATH);
+      console.debug("[FileIndexPlugin] Ignore file is actually a folder, not ignoring anything:", _FileIndexPlugin.FILE_IGNORE_PATH);
       this.ignoreRegExps = [];
     } else if (ignoreFile instanceof import_obsidian.TFile) {
       const ignoreJSON = await this.app.vault.cachedRead(ignoreFile);
       const ignoreContents = JSON.parse(ignoreJSON);
       this.ignoreRegExps = ignoreContents.map((re) => new RegExp(re));
-      console.debug("[SteffoFileIndexPlugin] Determined ignore list to be:", this.ignoreRegExps);
+      console.debug("[FileIndexPlugin] Determined ignore list to be:", this.ignoreRegExps);
     } else {
-      console.error("[SteffoFileIndexPlugin] Ignore file is of an unknown type, not doing anything:", _SteffoFileIndexPlugin.FILE_IGNORE_PATH);
+      console.error("[FileIndexPlugin] Ignore file is of an unknown type, not doing anything:", _FileIndexPlugin.FILE_IGNORE_PATH);
     }
   }
   async reloadIgnoreRegExpsIfIgnoreFileChanged(file) {
-    if (file.path === _SteffoFileIndexPlugin.FILE_IGNORE_PATH) {
+    if (file.path === _FileIndexPlugin.FILE_IGNORE_PATH) {
       await this.reloadIgnoreRegExps();
     }
   }
@@ -87,32 +87,37 @@ var _SteffoFileIndexPlugin = class extends import_obsidian.Plugin {
         continue;
       }
       paths.push(file.path);
-      const basename = file.basename.toLocaleLowerCase();
+      let basename;
+      if (file.extension === "md") {
+        basename = file.basename.toLocaleLowerCase();
+      } else {
+        basename = file.basename.toLocaleLowerCase() + "." + file.extension.toLocaleLowerCase();
+      }
       if (basenames.hasOwnProperty(basename)) {
-        console.warn("[SteffoFileIndexPlugin] Multiple files with the same basename detected:", basenames[basename], file.path);
+        console.warn("[FileIndexPlugin] Multiple files with the same basename detected:", basenames[basename], file.path);
       }
       basenames[basename] = file.path;
     }
     paths.sort();
     const index = { basenames, paths };
-    console.debug("[SteffoFileIndexPlugin] Determined index to be:", index);
+    console.debug("[FileIndexPlugin] Determined index to be:", index);
     const indexContents = JSON.stringify(index, null, "	");
-    const indexFile = this.app.vault.getAbstractFileByPath(_SteffoFileIndexPlugin.FILE_INDEX_PATH);
+    const indexFile = this.app.vault.getAbstractFileByPath(_FileIndexPlugin.FILE_INDEX_PATH);
     if (indexFile === null) {
-      console.debug("[SteffoFileIndexPlugin] File index does not exist, creating it right now at:", _SteffoFileIndexPlugin.FILE_INDEX_PATH);
-      await this.app.vault.create(_SteffoFileIndexPlugin.FILE_INDEX_PATH, indexContents);
+      console.debug("[FileIndexPlugin] File index does not exist, creating it right now at:", _FileIndexPlugin.FILE_INDEX_PATH);
+      await this.app.vault.create(_FileIndexPlugin.FILE_INDEX_PATH, indexContents);
     } else if (indexFile instanceof import_obsidian.TFolder) {
-      console.debug("[SteffoFileIndexPlugin] Cannot create file index, as there's a folder at:", _SteffoFileIndexPlugin.FILE_INDEX_PATH);
+      console.debug("[FileIndexPlugin] Cannot create file index, as there's a folder at:", _FileIndexPlugin.FILE_INDEX_PATH);
     } else if (indexFile instanceof import_obsidian.TFile) {
-      console.debug("[SteffoFileIndexPlugin] File index already exists, overwriting contents of:", _SteffoFileIndexPlugin.FILE_INDEX_PATH);
+      console.debug("[FileIndexPlugin] File index already exists, overwriting contents of:", _FileIndexPlugin.FILE_INDEX_PATH);
       await this.app.vault.modify(indexFile, indexContents);
     } else {
-      console.error("[SteffoFileIndexPlugin] File index is of an unknown type, not doing anything:", _SteffoFileIndexPlugin.FILE_INDEX_PATH);
+      console.error("[FileIndexPlugin] File index is of an unknown type, not doing anything:", _FileIndexPlugin.FILE_INDEX_PATH);
     }
   }
   async onload() {
     this.addCommand({
-      id: "steffo-file-index-recreate",
+      id: "recreate",
       name: "Force file index recreation",
       callback: this.recreateFileIndex.bind(this)
     });
@@ -142,8 +147,8 @@ var _SteffoFileIndexPlugin = class extends import_obsidian.Plugin {
   onunload() {
   }
 };
-var SteffoFileIndexPlugin = _SteffoFileIndexPlugin;
+var FileIndexPlugin = _FileIndexPlugin;
 _reloadIgnoreRegExpsIfIgnoreFileChangedBinding = new WeakMap();
 _recreateFileIndexBinding = new WeakMap();
-SteffoFileIndexPlugin.FILE_IGNORE_PATH = "steffo-file-index-ignore.json";
-SteffoFileIndexPlugin.FILE_INDEX_PATH = "steffo-file-index.json";
+FileIndexPlugin.FILE_IGNORE_PATH = "file-index-ignore.json";
+FileIndexPlugin.FILE_INDEX_PATH = "file-index.json";

@@ -1,6 +1,34 @@
 {
 	"nodes":[
-		{"id":"4d3c216659c17596","x":-480,"y":-160,"width":400,"height":400,"color":"#ffffff","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/algoritmo di approssimazione.md"}
+		{"id":"2ec6b855516359a3","type":"file","file":"9 - Algoritmi distribuiti/1 - Problemi/classe di problemi NP-difficili.md","x":-480,"y":-720,"width":400,"height":400},
+		{"id":"4d3c216659c17596","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/algoritmo di approssimazione.md","x":-480,"y":400,"width":400,"height":400},
+		{"id":"3a9e9d4caa20fff8","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/soluzione approssimata.md","x":-1040,"y":400,"width":400,"height":400},
+		{"id":"e7e31b7a24989fdd","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/fattore di approssimazione.md","x":-1040,"y":960,"width":400,"height":400},
+		{"id":"e10c70a79599cd67","type":"file","file":"9 - Algoritmi distribuiti/1 - Problemi/soluzione ottima.md","x":-1040,"y":-160,"width":400,"height":400},
+		{"id":"28e50cced4c59e84","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/schema di approssimazione.md","x":-480,"y":1520,"width":400,"height":400},
+		{"id":"92105d11d24eed0c","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/schema di approssimazione interamente polinomiale.md","x":-480,"y":2080,"width":400,"height":400},
+		{"id":"ace76303d024c700","type":"file","file":"9 - Algoritmi distribuiti/1 - Problemi/istanza.md","x":80,"y":960,"width":400,"height":400},
+		{"id":"46482c7ee4ebfa26","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/vertex cover.md","x":80,"y":-720,"width":400,"height":400},
+		{"id":"44c2fa4093fc9c04","x":640,"y":-720,"width":960,"height":960,"type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/vertex cover problem.md"},
+		{"id":"7b3091391cc8a19b","x":1760,"y":-720,"width":400,"height":960,"type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/algoritmo senza nome approssimato greedy di vertex cover.md"},
+		{"id":"2fab0947414cdffe","x":2320,"y":-720,"width":400,"height":400,"type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/proprietà triangolare per il costo degli archi.md"},
+		{"id":"08d98d147d3e6b08","x":2880,"y":-720,"width":960,"height":960,"type":"file","file":"9 - Algoritmi distribuiti/1 - Problemi/problema del commesso viaggiatore.md"},
+		{"id":"4fdea1de022751c5","x":4000,"y":-720,"width":400,"height":960,"type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/approssimazione del problema del commesso viaggiatore.md"}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"dd32bf1c67ce9804","fromNode":"2ec6b855516359a3","fromSide":"bottom","toNode":"4d3c216659c17596","toSide":"top"},
+		{"id":"88ffe70b34d17035","fromNode":"4d3c216659c17596","fromSide":"left","toNode":"3a9e9d4caa20fff8","toSide":"right"},
+		{"id":"7738916e116e2bd4","fromNode":"4d3c216659c17596","fromSide":"bottom","toNode":"28e50cced4c59e84","toSide":"top"},
+		{"id":"75607cc5a94b547c","fromNode":"28e50cced4c59e84","fromSide":"bottom","toNode":"92105d11d24eed0c","toSide":"top"},
+		{"id":"0314808b4eaaa2eb","fromNode":"e10c70a79599cd67","fromSide":"bottom","toNode":"3a9e9d4caa20fff8","toSide":"top"},
+		{"id":"ab5860af8ef2d7e1","fromNode":"3a9e9d4caa20fff8","fromSide":"bottom","toNode":"e7e31b7a24989fdd","toSide":"top"},
+		{"id":"7b6ac34c15336a5c","fromNode":"ace76303d024c700","fromSide":"left","toNode":"28e50cced4c59e84","toSide":"top"},
+		{"id":"960603f27b98be25","fromNode":"e7e31b7a24989fdd","fromSide":"right","toNode":"28e50cced4c59e84","toSide":"top"},
+		{"id":"b55d2cd3533c09b2","fromNode":"46482c7ee4ebfa26","fromSide":"right","toNode":"44c2fa4093fc9c04","toSide":"left"},
+		{"id":"63b3b0fb2b86b36c","fromNode":"44c2fa4093fc9c04","fromSide":"right","toNode":"7b3091391cc8a19b","toSide":"left"},
+		{"id":"362ab5f832d84f4c","fromNode":"4d3c216659c17596","fromSide":"right","toNode":"7b3091391cc8a19b","toSide":"bottom"},
+		{"id":"cfa6bc1368db658a","fromNode":"08d98d147d3e6b08","fromSide":"right","toNode":"4fdea1de022751c5","toSide":"left"},
+		{"id":"6ab3bf8ecaa5f8e3","fromNode":"4d3c216659c17596","fromSide":"right","toNode":"08d98d147d3e6b08","toSide":"bottom"},
+		{"id":"502b52ee867f9d64","fromNode":"2fab0947414cdffe","fromSide":"right","toNode":"08d98d147d3e6b08","toSide":"left"}
+	]
 }

@@ -1,29 +1,29 @@
-Problema per un [[sistema distribuito]].
+Problema per un [[sistema distribuito]], che estende la [[leader election]] a un sistema con [[affidabilità nulla]].
 
 ## Definizione
 
-Si vuole effettuare [[broadcast problem|broadcast]] in un [[grafo completo]] con [[affidabilità nulla]].
+Si vuole scegliere un'[[entità]] che diventerà il [[leader]] per un [[algoritmo]] futuro.
 
 ## [[restrizioni al modello dei sistemi distribuiti|Restrizioni]]
 
 - **[[restrizione di comunicazione|Comunicazione]]**
 	- [[dimensione dei messaggi illimitata]]
-	- [[half-duplex]] 
+	- [[half-duplex]]
 - **[[restrizione di affidabilità|Affidabilità]]**
-	- [[affidabilità nulla]]
+	- ***[[affidabilità nulla]]***
 		- [[guasti ubiqui]]
 		- [[guasti permanenti]]
-		- [[guasti di esecuzione]]
-			- [[node-broadcast-possibility]]
+		- [[niente guasti di esecuzione]]
 		- [[guasti di trasmissione]]
 			- [[edge-broadcast-possibility]]
 - **[[restrizione di topologia|Topologia]]**
-	- [[grafo completo]]
+	- [[grafo connesso]]
+	- [[identificatori univoci]]
 - **[[restrizione di tempo|Tempo]]**
 	- [[ritardo di comunicazione illimitato]]
-	- [[risveglio singolo]]
-	- [[terminazione ignorata]]
+	- [[risveglio multiplo]]
+	- [[terminazione locale]]
 
 ## [[algoritmo|Algoritmi]]
 
-- [[two-steps broadcast]]
+- [[fault-tolerant broadcast election]]

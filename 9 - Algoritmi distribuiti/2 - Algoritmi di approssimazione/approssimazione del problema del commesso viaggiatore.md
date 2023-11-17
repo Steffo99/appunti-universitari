@@ -1,6 +1,6 @@
 [[algoritmo di approssimazione]] per il [[problema del commesso viaggiatore]].
 
-Per questo problema, il [[fattore di approsimazione]] $\alpha$ può essere costante solo se [[P=NP]].
+Per questo problema, il [[fattore di approssimazione]] $\alpha$ può essere costante solo se [[P=NP]].
 
 > L'algoritmo di approssimazione a fattore costante è riducibile alla [[ricerca di ciclo hamiltoniano]].
 
@@ -26,7 +26,7 @@ Si trova il [[ciclo hamiltoniano]] per $Tree$, usando *shortcut*:
 
 - Si selezionano i nodi di $Euler$ mantenendoli nello stesso ordine, ma scartando quelli che vi appaiono due volte, e poi connettendo l'ultimo al primo.
 
-$Hamilton$ è la soluzione approssimata, con [[fattore di approsimazione]] $2$.
+$Hamilton$ è la soluzione approssimata, con [[fattore di approssimazione]] $2$.
 
 ### Dimostrazione
 
@@ -72,4 +72,4 @@ Si trova il [[ciclo hamiltoniano]] per $Tree$, usando *shortcut*:
 
 - Si selezionano i nodi di $Euler$ mantenendoli nello stesso ordine, ma scartando quelli che vi appaiono due volte, e poi connettendo l'ultimo al primo.
 
-$Hamilton$ è la soluzione approssimata, con [[fattore di approsimazione]] $2$.
+$Hamilton$ è la soluzione approssimata, con [[fattore di approssimazione]] $2$.

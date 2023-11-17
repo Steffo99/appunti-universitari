@@ -266,19 +266,7 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "steffo-file-index.json",
-      "color": "me4XBNQC4rwzQFLlvIAn0"
-    },
-    {
-      "path": "steffo-file-index-ignore.json",
-      "color": "me4XBNQC4rwzQFLlvIAn0"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/★ concetti.canvas",
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/★ concetti di computazione distribuita.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
@@ -386,22 +374,6 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/ft-broad-election.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/leader election con fallimenti su grafo completo.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/teorema innominato.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/two steps.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computazione/★ computazione.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
@@ -418,7 +390,47 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/consenso.md",
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/algoritmo senza nome di consenso sincrono deterministico.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/protocollo di Ben-Or Las Vegas.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/protocollo di Ben-Or Monte Carlo.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/consenso sincrono deterministico bizantino.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/TellZero Byz.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/algoritmo senza nome Las Vegas di consenso asincrono non-deterministico bizantino.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "0 - Template/◍ algoritmo di approssimazione.md",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/approssimazione del problema del commesso viaggiatore.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/proprietà triangolare per il costo degli archi.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "0 - Template/◍ problema algoritmico.md",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/algoritmo senza nome approssimato greedy di vertex cover.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     }
   ]
