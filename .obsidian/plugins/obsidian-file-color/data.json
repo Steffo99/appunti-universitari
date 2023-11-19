@@ -346,7 +346,7 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "README.md",
+      "path": "★ appunti magistrali.md",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
@@ -432,6 +432,14 @@
     {
       "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/algoritmo senza nome approssimato greedy di vertex cover.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "file-index-ignore.json",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
+    },
+    {
+      "path": "file-index.json",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
     }
   ]
 }
