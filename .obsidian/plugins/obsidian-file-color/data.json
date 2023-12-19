@@ -238,35 +238,11 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "9 - Algoritmi distribuiti/1 - Problemi/★ problemi.canvas",
+      "path": "9 - Algoritmi distribuiti/1 - Problemi algoritmici/★ problemi algoritmici.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/relax and round.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/vertex cover problem.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/relax and round per vertex cover problem.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/minimum perfect matching.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/★ algoritmi di approssimazione.canvas",
-      "color": "7j7Pqog0VHMVVAfazMNlb"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti/★ concetti di computazione distribuita.canvas",
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/1 - Concetti di computazione distribuita/★ concetti di computazione distribuita.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
@@ -286,19 +262,19 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Broadcast/★ broadcast.canvas",
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Algoritmi di broadcast/★ algoritmi di broadcast.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Spanning tree/★ spanning tree.canvas",
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Algoritmi di spanning tree construction/★ algoritmi di spanning tree construction.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Leader election/★ leader election.canvas",
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/5 - Algoritmi di leader election/★ algoritmi di leader election.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/★ routing.canvas",
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Algoritmi di routing/★ algoritmi di routing.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
@@ -362,76 +338,20 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/consenso con fallimenti bizantini.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/consenso con fallimenti su grafo completo.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Computazione/★ computazione.canvas",
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/4 - Algoritmi di computazione distribuita/★ algoritmi di computazione distribuita.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "9 - Algoritmi distribuiti/4 - Strutture dati distribuite",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/6 - Routing/centralized routing.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/★ guasti.canvas",
+      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Algoritmi affidabili/★ algoritmi affidabili.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/algoritmo senza nome di consenso sincrono deterministico.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/protocollo di Ben-Or Las Vegas.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/protocollo di Ben-Or Monte Carlo.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/consenso sincrono deterministico bizantino.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/TellZero Byz.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/7 - Guasti/algoritmo senza nome Las Vegas di consenso asincrono non-deterministico bizantino.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
       "path": "0 - Template/◍ algoritmo di approssimazione.md",
       "color": "me4XBNQC4rwzQFLlvIAn0"
     },
     {
-      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/approssimazione del problema del commesso viaggiatore.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/proprietà triangolare per il costo degli archi.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "0 - Template/◍ problema algoritmico.md",
       "color": "me4XBNQC4rwzQFLlvIAn0"
-    },
-    {
-      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/algoritmo senza nome approssimato greedy di vertex cover.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
       "path": "file-index-ignore.json",
@@ -440,6 +360,34 @@
     {
       "path": "file-index.json",
       "color": "me4XBNQC4rwzQFLlvIAn0"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/4 - Strutture dati distribuite/★ strutture dati distribuite.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/4 - Strutture dati distribuite/Chord finger table.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/1 - Concetti di approssimazione/★ concetti di approssimazione.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/2 - Approssimazione di vertex cover/★ approssimazione di vertex cover.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/3 - Approssimazione di commesso viaggiatore/★ approssimazione di commesso viaggiatore.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/3 - Approssimazione di commesso viaggiatore/Media",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
+    },
+    {
+      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/3 - Approssimazione di commesso viaggiatore/approssimazione di problema del commesso viaggiatore con branch-and-bound.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
     }
   ]
 }

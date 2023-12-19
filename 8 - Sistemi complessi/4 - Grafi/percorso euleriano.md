@@ -1,1 +1,1 @@
-Particolare [[percorso]] in un [[grafo]] che attraversa ogni [[arco di un grafo|arco]] una volta sola.
+Particolare [[percorso di un grafo]] che attraversa ogni [[arco di un grafo|arco]].

@@ -21,17 +21,17 @@
 
 ==[Come è stato determinato?]==
 
-## [[Costo computazionale]]
+## [[costo computazionale]]
 
 | Costo | [[notazione O-grande]] | 
 |-|-|
-| [[spazio]] | ==[O()]== |
-| [[tempo]] | ==[O()]== |
+| [[9 - Algoritmi distribuiti/1 - Problemi algoritmici/spazio]] | ==[O()]== |
+| [[9 - Algoritmi distribuiti/1 - Problemi algoritmici/tempo]] | ==[O()]== |
 
-### [[9 - Algoritmi distribuiti/1 - Problemi/spazio|Spazio]]
+### [[9 - Algoritmi distribuiti/1 - Problemi algoritmici/spazio|Spazio]]
 
 ==[Dimostrazione del costo di spazio]==
 
-### [[9 - Algoritmi distribuiti/1 - Problemi/tempo|Tempo]]
+### [[9 - Algoritmi distribuiti/1 - Problemi algoritmici/tempo|Tempo]]
 
 ==[Dimostrazione del costo di tempo]==

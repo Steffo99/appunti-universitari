@@ -1,1 +1,30 @@
-{}
+{
+	"nodes":[
+		{"id":"4f99ae3b87befaa3","type":"file","file":"9 - Algoritmi distribuiti/4 - Strutture dati distribuite/struttura dati distribuita scalabile.md","x":-680,"y":-220,"width":400,"height":400},
+		{"id":"0e55309b82ed9440","type":"file","file":"9 - Algoritmi distribuiti/4 - Strutture dati distribuite/struttura dati distribuita.md","x":-1240,"y":-220,"width":400,"height":400},
+		{"id":"75f2cafa7a14e1fc","type":"file","file":"9 - Algoritmi distribuiti/4 - Strutture dati distribuite/Napster.md","x":-680,"y":340,"width":400,"height":400},
+		{"id":"845acebe5114d802","type":"file","file":"9 - Algoritmi distribuiti/4 - Strutture dati distribuite/Gnutella.md","x":-120,"y":340,"width":400,"height":400},
+		{"id":"bd0553ba3091effa","type":"file","file":"9 - Algoritmi distribuiti/4 - Strutture dati distribuite/overlay network.md","x":-120,"y":900,"width":400,"height":400},
+		{"id":"a11a803f3466ecc2","type":"file","file":"9 - Algoritmi distribuiti/4 - Strutture dati distribuite/KaZaA.md","x":440,"y":340,"width":400,"height":400},
+		{"id":"37ef5d4b9b2263af","type":"file","file":"9 - Algoritmi distribuiti/4 - Strutture dati distribuite/distributed hash table.md","x":1000,"y":-220,"width":400,"height":400},
+		{"id":"19a1231c1d3e010d","type":"file","file":"0 - Generale/hash table.md","x":1000,"y":-780,"width":400,"height":400},
+		{"id":"5a8240719d0e4d16","type":"file","file":"9 - Algoritmi distribuiti/4 - Strutture dati distribuite/Chord.md","x":1560,"y":340,"width":400,"height":400},
+		{"id":"e260aff5ca0a7f09","type":"file","file":"9 - Algoritmi distribuiti/4 - Strutture dati distribuite/Chord finger table.md","x":1280,"y":900,"width":400,"height":400},
+		{"id":"3b65a2eb79316afe","x":1840,"y":900,"width":400,"height":400,"type":"file","file":"9 - Algoritmi distribuiti/4 - Strutture dati distribuite/Chord node join.md"},
+		{"id":"5ec9db8b1620e319","x":1840,"y":1460,"width":400,"height":400,"type":"file","file":"9 - Algoritmi distribuiti/4 - Strutture dati distribuite/Chord stabilization.md"}
+	],
+	"edges":[
+		{"id":"0f9497dd708bd5e5","fromNode":"19a1231c1d3e010d","fromSide":"bottom","toNode":"37ef5d4b9b2263af","toSide":"top"},
+		{"id":"8a44d0985448d395","fromNode":"0e55309b82ed9440","fromSide":"right","toNode":"4f99ae3b87befaa3","toSide":"left"},
+		{"id":"0687782f84e5a77f","fromNode":"4f99ae3b87befaa3","fromSide":"bottom","toNode":"75f2cafa7a14e1fc","toSide":"top"},
+		{"id":"537463e719a81d25","fromNode":"75f2cafa7a14e1fc","fromSide":"right","toNode":"845acebe5114d802","toSide":"left"},
+		{"id":"e33e8b4d9521a3b9","fromNode":"845acebe5114d802","fromSide":"bottom","toNode":"bd0553ba3091effa","toSide":"top"},
+		{"id":"3fded28add9e56df","fromNode":"845acebe5114d802","fromSide":"right","toNode":"a11a803f3466ecc2","toSide":"left"},
+		{"id":"ca9a06f709d0694e","fromNode":"a11a803f3466ecc2","fromSide":"right","toNode":"37ef5d4b9b2263af","toSide":"left"},
+		{"id":"566bffed2e0c6d0c","fromNode":"4f99ae3b87befaa3","fromSide":"right","toNode":"37ef5d4b9b2263af","toSide":"left"},
+		{"id":"afaff7cc1ed5a35c","fromNode":"37ef5d4b9b2263af","fromSide":"right","toNode":"5a8240719d0e4d16","toSide":"left"},
+		{"id":"2f70ea036c1bb5e4","fromNode":"5a8240719d0e4d16","fromSide":"bottom","toNode":"e260aff5ca0a7f09","toSide":"top"},
+		{"id":"e21dbb399e421907","fromNode":"5a8240719d0e4d16","fromSide":"bottom","toNode":"3b65a2eb79316afe","toSide":"top"},
+		{"id":"f4cb9559f644586a","fromNode":"3b65a2eb79316afe","fromSide":"bottom","toNode":"5ec9db8b1620e319","toSide":"top"}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"1ae79343ecdc2ecf","type":"group","x":1040,"y":540,"width":1640,"height":1000,"label":"Flooding"},
+		{"id":"1bf892659093d611","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Algoritmi di broadcast/flooding v1.md","x":1060,"y":560,"width":480,"height":960},
+		{"id":"a1841455be06b505","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Algoritmi di broadcast/flooding v2.md","x":1620,"y":560,"width":480,"height":960},
+		{"id":"ea39c9f9c9d31ba6","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Algoritmi di broadcast/flooding v3.md","x":2180,"y":560,"width":480,"height":960},
+		{"id":"f3ab5010d2f02e70","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Algoritmi di broadcast/broadcast problem.md","x":-120,"y":560,"width":960,"height":960},
+		{"id":"11f8175c0f53986b","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Algoritmi di broadcast/wake-up problem.md","x":-120,"y":1680,"width":960,"height":960}
+	],
+	"edges":[
+		{"id":"35072e6a9d31a026","fromNode":"1bf892659093d611","fromSide":"right","toNode":"a1841455be06b505","toSide":"left"},
+		{"id":"3dc6b0d3f79913da","fromNode":"a1841455be06b505","fromSide":"right","toNode":"ea39c9f9c9d31ba6","toSide":"left"},
+		{"id":"29e162f3ecbad77b","fromNode":"11f8175c0f53986b","fromSide":"right","toNode":"1ae79343ecdc2ecf","toSide":"left"},
+		{"id":"b064dba571d8d37f","fromNode":"f3ab5010d2f02e70","fromSide":"right","toNode":"1ae79343ecdc2ecf","toSide":"left"},
+		{"id":"34325df0153caeb1","fromNode":"f3ab5010d2f02e70","fromSide":"left","toNode":"11f8175c0f53986b","toSide":"left"}
+	]
+}

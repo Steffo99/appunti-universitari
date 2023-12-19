@@ -1,1 +1,0 @@
-[[Insieme]] di [[nodo di un grafo|nodi di un grafo]] tale che l'[[unione]] di tutti i loro [[arco di un grafo|archi]] adiacenti coincide con gli [[arco di un grafo|archi]] presenti nel [[grafo]] stesso.

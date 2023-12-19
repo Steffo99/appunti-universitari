@@ -5,7 +5,7 @@
 - **==[Categoria]==**
 	- ==[Restrizione]==
 
-## [[Comportamento]]
+## [[comportamento]]
 
 > [!Summary]
 > ==[Riassunto]==
@@ -31,12 +31,12 @@
 | Costo | [[notazione O-grande]] | 
 |-|-|
 | [[comunicazione]] | ==[O()]== |
-| [[tempo]] | ==[O()]== |
+| [[9 - Algoritmi distribuiti/1 - Problemi algoritmici/tempo]] | ==[O()]== |
 
-### [[Comunicazione]]
+### [[comunicazione]]
 
 ==[Dimostrazione del costo di comunicazione]==
 
-### [[Tempo]]
+### [[9 - Algoritmi distribuiti/1 - Problemi algoritmici/tempo]]
 
 ==[Dimostrazione del costo di tempo]==

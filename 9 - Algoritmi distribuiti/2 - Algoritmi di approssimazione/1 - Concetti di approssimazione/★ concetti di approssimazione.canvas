@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"f27083423b5ce0b0","type":"group","x":340,"y":-1060,"width":1000,"height":1000,"label":"Tecniche algoritmiche"},
+		{"id":"9451981bfdd2a981","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/1 - Concetti di approssimazione/relax-and-round.md","x":360,"y":-1040,"width":400,"height":400},
+		{"id":"fbf5dbbfad6f9348","type":"file","file":"9 - Algoritmi distribuiti/1 - Problemi algoritmici/classe di problemi NP-difficili.md","x":-200,"y":-1600,"width":400,"height":400},
+		{"id":"68c6aaac015c3c1b","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/1 - Concetti di approssimazione/algoritmo di approssimazione.md","x":-200,"y":-480,"width":400,"height":400},
+		{"id":"25e770ef03bf6f6a","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/1 - Concetti di approssimazione/soluzione approssimata.md","x":-760,"y":-480,"width":400,"height":400},
+		{"id":"3b3a3fee0c686002","type":"file","file":"9 - Algoritmi distribuiti/1 - Problemi algoritmici/soluzione ottima.md","x":-760,"y":-1040,"width":400,"height":400},
+		{"id":"d3a66736ae1b4178","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/1 - Concetti di approssimazione/branch-and-bound.md","x":360,"y":-480,"width":400,"height":400},
+		{"id":"a2aa2311769dcada","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/1 - Concetti di approssimazione/execution tree.md","x":920,"y":-480,"width":400,"height":400},
+		{"id":"993de4b86699c86f","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/1 - Concetti di approssimazione/fattore di approssimazione.md","x":-760,"y":80,"width":400,"height":400},
+		{"id":"75c5c12b132e10d6","type":"file","file":"9 - Algoritmi distribuiti/1 - Problemi algoritmici/istanza.md","x":360,"y":80,"width":400,"height":400},
+		{"id":"c4962bc76f879e6a","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/1 - Concetti di approssimazione/schema di approssimazione.md","x":-200,"y":640,"width":400,"height":400},
+		{"id":"3a20406700085b56","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/1 - Concetti di approssimazione/schema di approssimazione interamente polinomiale.md","x":-200,"y":1200,"width":400,"height":400},
+		{"id":"0ee41dbc522181e0","x":920,"y":-1040,"width":400,"height":400,"type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/1 - Concetti di approssimazione/integrality gap.md"}
+	],
+	"edges":[
+		{"id":"014d3b710b06d441","fromNode":"fbf5dbbfad6f9348","fromSide":"bottom","toNode":"68c6aaac015c3c1b","toSide":"top"},
+		{"id":"63fcf31ba1d446d8","fromNode":"68c6aaac015c3c1b","fromSide":"left","toNode":"25e770ef03bf6f6a","toSide":"right"},
+		{"id":"931731cb3eb43519","fromNode":"68c6aaac015c3c1b","fromSide":"bottom","toNode":"c4962bc76f879e6a","toSide":"top"},
+		{"id":"8a4546eb31bab92a","fromNode":"25e770ef03bf6f6a","fromSide":"bottom","toNode":"993de4b86699c86f","toSide":"top"},
+		{"id":"3fb773cdf50d71a5","fromNode":"3b3a3fee0c686002","fromSide":"bottom","toNode":"25e770ef03bf6f6a","toSide":"top"},
+		{"id":"cd23738869da4cba","fromNode":"993de4b86699c86f","fromSide":"right","toNode":"c4962bc76f879e6a","toSide":"top"},
+		{"id":"2fc7166da3c3eccd","fromNode":"c4962bc76f879e6a","fromSide":"bottom","toNode":"3a20406700085b56","toSide":"top"},
+		{"id":"33715763c097e85d","fromNode":"75c5c12b132e10d6","fromSide":"left","toNode":"c4962bc76f879e6a","toSide":"top"},
+		{"id":"a5e5e63333c4ce58","fromNode":"d3a66736ae1b4178","fromSide":"right","toNode":"a2aa2311769dcada","toSide":"left"},
+		{"id":"ae35ca332370768a","fromNode":"68c6aaac015c3c1b","fromSide":"right","toNode":"d3a66736ae1b4178","toSide":"left"},
+		{"id":"af1dac33e491fbc2","fromNode":"68c6aaac015c3c1b","fromSide":"right","toNode":"9451981bfdd2a981","toSide":"left"},
+		{"id":"93eb9d5bfbf5c5bc","fromNode":"9451981bfdd2a981","fromSide":"right","toNode":"0ee41dbc522181e0","toSide":"left"}
+	]
+}

@@ -1,6 +1,6 @@
 [[Misura]] in un [[grafo]].
 
-Corrisponde alla [[lunghezza]] di ciascun [[percorso]] tra due [[nodo di un grafo|nodi]].
+Corrisponde alla [[lunghezza]] di ciascun [[percorso di un grafo]] tra due [[nodo di un grafo|nodi]].
 $$
 \def \source {{\color{cyan} src}}
 \def \destination {{\color{magenta} dst}}

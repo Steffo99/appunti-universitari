@@ -1,0 +1,1 @@
+Lo [[spanning tree]] di un [[grafo]] avente [[funzione costo|costo]] [[problema di minimizzazione|minimo]].

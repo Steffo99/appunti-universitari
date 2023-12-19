@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"b25bb64c9f5bc302","type":"group","x":1060,"y":-660,"width":2040,"height":1000,"label":"Sfruttando il costo degli archi triangolare"},
+		{"id":"893931b449bf3c63","type":"group","x":1060,"y":460,"width":1000,"height":1000,"label":"Tramite branch-and-bound"},
+		{"id":"bd87b1da1c431a85","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/3 - Approssimazione di commesso viaggiatore/problema del commesso viaggiatore.md","x":-40,"y":-640,"width":960,"height":2080},
+		{"id":"b089cdb40c506587","type":"file","file":"0 - Generale/circuito di un grafo.md","x":-360,"y":-2880,"width":400,"height":400},
+		{"id":"d099898df66dc9cc","type":"file","file":"0 - Generale/percorso di un grafo.md","x":-920,"y":-2880,"width":400,"height":400},
+		{"id":"3b4852d50323a117","type":"file","file":"0 - Generale/cammino di un grafo.md","x":-1480,"y":-2880,"width":400,"height":400},
+		{"id":"aeac6e1e60ddbf00","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/3 - Approssimazione di commesso viaggiatore/esistenza di circuito hamiltoniano.md","x":-40,"y":-1760,"width":960,"height":960},
+		{"id":"50d405f3cb7cb6c0","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/3 - Approssimazione di commesso viaggiatore/approssimazione a 2 di problema del commesso viaggiatore con costo degli archi triangolare.md","x":1080,"y":-640,"width":960,"height":960},
+		{"id":"4f8551ae7f073a9f","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/3 - Approssimazione di commesso viaggiatore/circuito hamiltoniano.md","x":-360,"y":-2320,"width":400,"height":400},
+		{"id":"545f4af8470c7722","type":"file","file":"8 - Sistemi complessi/4 - Grafi/percorso euleriano.md","x":-920,"y":-2320,"width":400,"height":400},
+		{"id":"297e054d8009e8dd","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/3 - Approssimazione di commesso viaggiatore/algoritmo di Christofides.md","x":2120,"y":-640,"width":960,"height":960},
+		{"id":"e1f07a145882e6c3","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/3 - Approssimazione di commesso viaggiatore/costo degli archi triangolare.md","x":1880,"y":-1200,"width":400,"height":400},
+		{"id":"ab93fe836c88a87e","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/3 - Approssimazione di commesso viaggiatore/minimum spanning tree.md","x":1360,"y":-1200,"width":400,"height":400},
+		{"id":"ae212e65d2316773","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/3 - Approssimazione di commesso viaggiatore/approssimazione di problema del commesso viaggiatore con branch-and-bound.md","x":1080,"y":480,"width":960,"height":960},
+		{"id":"a95a6a3b742e3363","x":1360,"y":1600,"width":400,"height":400,"type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/3 - Approssimazione di commesso viaggiatore/1-tree.md"}
+	],
+	"edges":[
+		{"id":"2b25e88a4fdcbe85","fromNode":"b089cdb40c506587","fromSide":"bottom","toNode":"4f8551ae7f073a9f","toSide":"top"},
+		{"id":"bd3829ab3d478855","fromNode":"d099898df66dc9cc","fromSide":"right","toNode":"b089cdb40c506587","toSide":"left"},
+		{"id":"76f1cb7da2569754","fromNode":"d099898df66dc9cc","fromSide":"bottom","toNode":"545f4af8470c7722","toSide":"top"},
+		{"id":"c9501e7b36442f96","fromNode":"3b4852d50323a117","fromSide":"right","toNode":"d099898df66dc9cc","toSide":"left"},
+		{"id":"1cce36f242747259","fromNode":"4f8551ae7f073a9f","fromSide":"bottom","toNode":"aeac6e1e60ddbf00","toSide":"left"},
+		{"id":"5fccd78c02892d7c","fromNode":"4f8551ae7f073a9f","fromSide":"bottom","toNode":"bd87b1da1c431a85","toSide":"left"},
+		{"id":"1ac9a6185f30026a","fromNode":"aeac6e1e60ddbf00","fromSide":"bottom","toNode":"bd87b1da1c431a85","toSide":"top"},
+		{"id":"69f4b491372e31a8","fromNode":"e1f07a145882e6c3","fromSide":"bottom","toNode":"b25bb64c9f5bc302","toSide":"top"},
+		{"id":"39c780796c9416c4","fromNode":"ab93fe836c88a87e","fromSide":"bottom","toNode":"50d405f3cb7cb6c0","toSide":"top"},
+		{"id":"9bd76f7538bdac64","fromNode":"bd87b1da1c431a85","fromSide":"right","toNode":"b25bb64c9f5bc302","toSide":"left"},
+		{"id":"ed87adeabf24b0b4","fromNode":"50d405f3cb7cb6c0","fromSide":"right","toNode":"297e054d8009e8dd","toSide":"left"},
+		{"id":"260cffb576fea90d","fromNode":"bd87b1da1c431a85","fromSide":"right","toNode":"893931b449bf3c63","toSide":"left"},
+		{"id":"709221eaa86dccfa","fromNode":"a95a6a3b742e3363","fromSide":"top","toNode":"ae212e65d2316773","toSide":"bottom"}
+	]
+}

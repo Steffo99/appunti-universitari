@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"6221db7b45511f2d","type":"group","x":780,"y":-340,"width":1000,"height":1000,"label":"Creando un abbinamento massimale"},
+		{"id":"74f5796de3293a66","x":780,"y":780,"width":1000,"height":1000,"type":"group","label":"Tramite relax-and-round"},
+		{"id":"73a99c0a14178a2b","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/2 - Approssimazione di vertex cover/minimal vertex cover problem.md","x":-320,"y":-320,"width":960,"height":960},
+		{"id":"48fd7f9755552296","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/2 - Approssimazione di vertex cover/vertex cover.md","x":-40,"y":-880,"width":400,"height":400},
+		{"id":"7ba621fac863e8d2","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/2 - Approssimazione di vertex cover/approssimazione a 2 di minimal vertex cover standard.md","x":800,"y":-320,"width":960,"height":960},
+		{"id":"970bd24b72f8c5f2","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/2 - Approssimazione di vertex cover/abbinamento.md","x":1080,"y":-1440,"width":400,"height":400},
+		{"id":"72fb1bbb10967056","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/2 - Approssimazione di vertex cover/abbinamento perfetto.md","x":1640,"y":-880,"width":400,"height":400},
+		{"id":"fa8df1320b3ed088","type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/2 - Approssimazione di vertex cover/abbinamento massimale.md","x":1080,"y":-880,"width":400,"height":400},
+		{"id":"f96879f056fe7aa8","x":800,"y":800,"width":960,"height":960,"type":"file","file":"9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/2 - Approssimazione di vertex cover/approssimazione a 2 di minimal vertex cover con relax-and-round.md"}
+	],
+	"edges":[
+		{"id":"4c850dafac1de915","fromNode":"48fd7f9755552296","fromSide":"bottom","toNode":"73a99c0a14178a2b","toSide":"top"},
+		{"id":"93de889933822bfc","fromNode":"970bd24b72f8c5f2","fromSide":"bottom","toNode":"fa8df1320b3ed088","toSide":"top"},
+		{"id":"c9e31190f4515460","fromNode":"970bd24b72f8c5f2","fromSide":"bottom","toNode":"72fb1bbb10967056","toSide":"top"},
+		{"id":"f67fbfb93a1d887e","fromNode":"fa8df1320b3ed088","fromSide":"bottom","toNode":"6221db7b45511f2d","toSide":"top"},
+		{"id":"dac608e861af27c2","fromNode":"73a99c0a14178a2b","fromSide":"right","toNode":"6221db7b45511f2d","toSide":"left"},
+		{"id":"e92e7e13b95d340b","fromNode":"73a99c0a14178a2b","fromSide":"right","toNode":"74f5796de3293a66","toSide":"left"}
+	]
+}
