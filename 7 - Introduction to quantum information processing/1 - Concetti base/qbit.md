@@ -1,8 +1,14 @@
-[[Valore]] di un sistema quantistico che può trovarsi contemporaneamente in due [[stato|stati]] con intensità complementari.
+---
+aliases:
+  - qubit
+  - quantum bit
+---
 
-Le intensità sono rappresentate attraverso gli elementi di un [[vettore]] colonna: 
-- il primo è detto "stato $0$"
-- il secondo è detto "stato $1$"
+[[Valore]] di un sistema quantistico che può trovarsi contemporaneamente in due [[stato di un qbit|stati]] con intensità complementari tra loro.
+
+Le intensità sono rappresentate attraverso gli elementi di un [[vettore colonna]]: 
+- il primo è detto "stato $0$" o "stato $\uparrow$"
+- il secondo è detto "stato $1$" o "stato $\downarrow$"
 
 $$
 \begin{bmatrix}
@@ -10,3 +16,5 @@ $$
 	intensita'\ stato\ 1
 \end{bmatrix}
 $$
+
+Può essere [[misurare un qbit|misurato]] per essere collassato a un [[bit]] classico.

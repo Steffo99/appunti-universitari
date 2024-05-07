@@ -1,3 +1,5 @@
+![](.media/icon-128x128_round.png)
+
 # Appunti magistrali
 
 Collezione di appunti presi durante i corsi di Laurea e Laurea Magistrale in Informatica a Unimore

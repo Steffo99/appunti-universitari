@@ -1,7 +1,7 @@
 {
 	"nodes":[
-		{"id":"f48243a62762bc6a","type":"group","x":780,"y":-1300,"width":920,"height":1000,"label":"shout protocol"},
-		{"id":"a7b374601b504754","type":"group","x":780,"y":-180,"width":920,"height":1000,"label":"traversal protocol"},
+		{"id":"f48243a62762bc6a","type":"group","x":780,"y":-1300,"width":920,"height":1000,"label":"output simultaneo"},
+		{"id":"a7b374601b504754","type":"group","x":780,"y":-180,"width":920,"height":1000,"label":"output sequenziale"},
 		{"id":"e4db85d4dd9cb928","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Algoritmi di spanning tree construction/spanning tree construction.md","x":-320,"y":-1280,"width":960,"height":2080},
 		{"id":"42f2908da34c9d4d","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Algoritmi di spanning tree construction/spanning tree.md","x":-40,"y":-1840,"width":400,"height":400},
 		{"id":"975c4e916151d0da","type":"file","file":"9 - Algoritmi distribuiti/3 - Computazione distribuita/3 - Algoritmi di spanning tree construction/shout protocol.md","x":800,"y":-1280,"width":400,"height":960},

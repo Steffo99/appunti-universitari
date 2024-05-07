@@ -28,7 +28,7 @@ Tutte le [[entità]] non [[guasto|guaste]] devono:
 			- [[niente guasti di esecuzione di omissione]]
 			- [[niente guasti di esecuzione bizantini]]
 		- [[niente guasti di trasmissione]]
-		- ***meno di $\frac{Entities}{2}$ guasti***
+		- ***meno di $Entities$ guasti***
 - **[[restrizione di topologia|Topologia]]**
 	- [[grafo connesso]]
 	- [[grafo completo]]

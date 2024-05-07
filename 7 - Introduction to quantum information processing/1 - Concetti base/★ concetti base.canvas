@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"bf8486f1d14fd86c","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/bit.md","x":-620,"y":-260,"width":400,"height":400},
+		{"id":"e4fea56f5f076093","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/qbit.md","x":-60,"y":-260,"width":400,"height":400},
+		{"id":"93c57c42392b8135","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/ket.md","x":500,"y":300,"width":400,"height":400},
+		{"id":"8f83a29609c7b25b","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/stato base di un qbit.md","x":-60,"y":300,"width":400,"height":400},
+		{"id":"5f2016741408e9b8","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/bra.md","x":1060,"y":300,"width":400,"height":400},
+		{"id":"4fff856246c3cb0f","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/braket.md","x":780,"y":-260,"width":400,"height":400},
+		{"id":"c054748db591a9a8","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/prodotto scalare.md","x":1340,"y":-260,"width":400,"height":400},
+		{"id":"6760e1a2e3bc62b5","x":500,"y":860,"width":400,"height":400,"type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/prodotto tensoriale.md"},
+		{"id":"f5a0dbf66a5cd454","x":-60,"y":-820,"width":400,"height":400,"type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/misurare un qbit.md"}
+	],
+	"edges":[
+		{"id":"cc2c8485866dcdfc","fromNode":"bf8486f1d14fd86c","fromSide":"right","toNode":"e4fea56f5f076093","toSide":"left"},
+		{"id":"6010a093d41edf8e","fromNode":"8f83a29609c7b25b","fromSide":"right","toNode":"93c57c42392b8135","toSide":"left"},
+		{"id":"9bc1e22569ac256e","fromNode":"e4fea56f5f076093","fromSide":"bottom","toNode":"8f83a29609c7b25b","toSide":"top"},
+		{"id":"429537b1e5f65560","fromNode":"93c57c42392b8135","fromSide":"top","toNode":"4fff856246c3cb0f","toSide":"bottom"},
+		{"id":"9cb16f2667975772","fromNode":"93c57c42392b8135","fromSide":"right","toNode":"5f2016741408e9b8","toSide":"left"},
+		{"id":"d62ab0bbdbf39777","fromNode":"5f2016741408e9b8","fromSide":"top","toNode":"4fff856246c3cb0f","toSide":"bottom"},
+		{"id":"8abb1b7ebbb2aad3","fromNode":"4fff856246c3cb0f","fromSide":"right","toNode":"c054748db591a9a8","toSide":"left"},
+		{"id":"163bbc029831a983","fromNode":"93c57c42392b8135","fromSide":"bottom","toNode":"6760e1a2e3bc62b5","toSide":"top"},
+		{"id":"a7027ad12b410ff6","fromNode":"e4fea56f5f076093","fromSide":"top","toNode":"f5a0dbf66a5cd454","toSide":"bottom"}
+	]
+}

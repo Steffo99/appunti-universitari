@@ -258,10 +258,6 @@
       "color": "me4XBNQC4rwzQFLlvIAn0"
     },
     {
-      "path": "9 - Algoritmi distribuiti",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "9 - Algoritmi distribuiti/3 - Computazione distribuita/2 - Algoritmi di broadcast/★ algoritmi di broadcast.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
@@ -386,8 +382,16 @@
       "color": "me4XBNQC4rwzQFLlvIAn0"
     },
     {
-      "path": "9 - Algoritmi distribuiti/2 - Algoritmi di approssimazione/3 - Approssimazione di commesso viaggiatore/approssimazione di problema del commesso viaggiatore con branch-and-bound.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
+      "path": "7 - Introduction to quantum information processing/1 - Concetti base/★ concetti base.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "README.md",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
     }
   ]
 }

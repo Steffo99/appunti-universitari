@@ -1,7 +1,7 @@
-Quando un [[qbit]] si trova in uno stato con massima intensità, si dice che esso si trova in uno stato base:
+Quando un [[qbit]] si trova in uno [[stato di un qbit|stato]] con massima intensità, si dice che esso si trova in uno stato base:
 
 $$
-\Large
+\Huge
 \begin{bmatrix}
 	1\\
 	0
@@ -13,9 +13,4 @@ $$
 \end{bmatrix}
 $$
 
-Gli stati base solitamente vengono rappresentati con un [[ket]] dedicato:
-
-$$
-\LARGE
-\ket{0} \qquad \ket{1}
-$$
+Si trovano rappresentati spesso in notazione [[ket]].
