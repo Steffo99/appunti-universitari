@@ -1,4 +1,4 @@
-Notazione per rappresentare rapidamente [[vettore riga|vettori riga]] trasposti da uno [[stato base di un qbit]]:
+Notazione per rappresentare rapidamente [[vettore riga|vettori riga]] trasposti da uno [[stato base di un qubit]]:
 $$
 \begin{bmatrix}
 	1 & 0

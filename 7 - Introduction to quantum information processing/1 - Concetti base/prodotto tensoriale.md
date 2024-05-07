@@ -59,7 +59,7 @@ $$
 \end{bmatrix}
 $$
 
-Rappresenta la combinazione di due o più [[qbit]].
+Rappresenta la combinazione di due o più [[qubit]].
 $$
 \ket{0} \otimes \ket{1} 
 = 

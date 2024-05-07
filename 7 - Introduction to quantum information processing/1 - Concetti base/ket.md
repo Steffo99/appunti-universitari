@@ -1,4 +1,4 @@
-Notazione per rappresentare rapidamente [[vettore colonna|vettori colonna]] associati a uno [[stato base di un qbit]]:
+Notazione per rappresentare rapidamente [[vettore colonna|vettori colonna]] associati a uno [[stato base di un qubit]]:
 $$
 \begin{bmatrix}
 	1\\

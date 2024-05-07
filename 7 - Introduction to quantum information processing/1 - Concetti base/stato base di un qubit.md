@@ -1,4 +1,4 @@
-Quando un [[qbit]] si trova in uno [[stato di un qbit|stato]] con massima intensità, si dice che esso si trova in uno stato base:
+Quando un [[qubit]] si trova in uno [[stato di un qbit|stato]] con massima intensità, si dice che esso si trova in uno stato base:
 
 $$
 \Huge

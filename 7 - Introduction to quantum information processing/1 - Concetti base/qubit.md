@@ -1,7 +1,7 @@
 ---
 aliases:
-  - qubit
   - quantum bit
+  - qbit
 ---
 
 [[Valore]] di un sistema quantistico che può trovarsi contemporaneamente in due [[stato di un qbit|stati]] con intensità complementari tra loro.
@@ -17,4 +17,4 @@ $$
 \end{bmatrix}
 $$
 
-Può essere [[misurare un qbit|misurato]] per essere collassato a un [[bit]] classico.
+Può essere [[misurare un qubit|misurato]] per essere collassato a un [[bit]] classico.
