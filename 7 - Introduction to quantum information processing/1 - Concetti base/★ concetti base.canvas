@@ -1,15 +1,17 @@
 {
 	"nodes":[
 		{"id":"bf8486f1d14fd86c","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/bit.md","x":-620,"y":-260,"width":400,"height":400},
-		{"id":"e4fea56f5f076093","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/qubit.md","x":-60,"y":-260,"width":400,"height":400},
+		{"id":"e4fea56f5f076093","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/qbit.md","x":-60,"y":-260,"width":400,"height":400},
 		{"id":"93c57c42392b8135","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/ket.md","x":500,"y":300,"width":400,"height":400},
 		{"id":"8f83a29609c7b25b","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/stato base di un qubit.md","x":-60,"y":300,"width":400,"height":400},
 		{"id":"5f2016741408e9b8","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/bra.md","x":1060,"y":300,"width":400,"height":400},
 		{"id":"4fff856246c3cb0f","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/braket.md","x":780,"y":-260,"width":400,"height":400},
 		{"id":"c054748db591a9a8","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/prodotto scalare.md","x":1340,"y":-260,"width":400,"height":400},
 		{"id":"6760e1a2e3bc62b5","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/prodotto tensoriale.md","x":500,"y":860,"width":400,"height":400},
-		{"id":"f5a0dbf66a5cd454","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/misurare un qubit.md","x":-60,"y":-820,"width":400,"height":400},
-		{"id":"504f9e94a14be918","x":-620,"y":300,"width":400,"height":400,"type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/sfera di Bloch.md"}
+		{"id":"f5a0dbf66a5cd454","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/misura.md","x":-60,"y":-820,"width":400,"height":400},
+		{"id":"504f9e94a14be918","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/sfera di Bloch.md","x":-620,"y":300,"width":400,"height":400},
+		{"id":"c48d34ed0532b214","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/entanglement.md","x":500,"y":-820,"width":400,"height":400},
+		{"id":"fc1e056a05a52114","x":-60,"y":-1380,"width":400,"height":400,"type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/regola di Born.md"}
 	],
 	"edges":[
 		{"id":"cc2c8485866dcdfc","fromNode":"bf8486f1d14fd86c","fromSide":"right","toNode":"e4fea56f5f076093","toSide":"left"},
@@ -21,6 +23,8 @@
 		{"id":"8abb1b7ebbb2aad3","fromNode":"4fff856246c3cb0f","fromSide":"right","toNode":"c054748db591a9a8","toSide":"left"},
 		{"id":"163bbc029831a983","fromNode":"93c57c42392b8135","fromSide":"bottom","toNode":"6760e1a2e3bc62b5","toSide":"top"},
 		{"id":"a7027ad12b410ff6","fromNode":"e4fea56f5f076093","fromSide":"top","toNode":"f5a0dbf66a5cd454","toSide":"bottom"},
-		{"id":"4b514e7567125228","fromNode":"8f83a29609c7b25b","fromSide":"left","toNode":"504f9e94a14be918","toSide":"right"}
+		{"id":"4b514e7567125228","fromNode":"8f83a29609c7b25b","fromSide":"left","toNode":"504f9e94a14be918","toSide":"right"},
+		{"id":"89e8728ad85da206","fromNode":"e4fea56f5f076093","fromSide":"right","toNode":"c48d34ed0532b214","toSide":"bottom"},
+		{"id":"2367b805ec25f0a5","fromNode":"f5a0dbf66a5cd454","fromSide":"top","toNode":"fc1e056a05a52114","toSide":"bottom"}
 	]
 }

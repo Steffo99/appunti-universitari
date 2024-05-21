@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"d1d50a48dd6ecf09","type":"file","file":"7 - Introduction to quantum information processing/4 - Modello computazionale/superposizione uguale.md","x":-220,"y":-200,"width":400,"height":400},
+		{"id":"54d76b9382fca131","x":340,"y":-200,"width":400,"height":400,"type":"file","file":"7 - Introduction to quantum information processing/4 - Modello computazionale/modello computazionale generale.md"}
+	],
+	"edges":[
+		{"id":"98d33b727c39128e","fromNode":"54d76b9382fca131","fromSide":"left","toNode":"d1d50a48dd6ecf09","toSide":"right"}
+	]
+}

@@ -4,7 +4,7 @@
 
 # Appunti magistrali
 
-Collezione di appunti presi durante i corsi di Laurea e Laurea Magistrale in Informatica a Unimore
+Collezione di appunti presi durante i corsi di Laurea Triennale e Laurea Magistrale in Informatica a Unimore
 
 </div>
 
