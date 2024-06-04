@@ -1,0 +1,144 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{centernot}
+% New symbols
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}
+{\box0\lower0.4pt\box2}}
+% End new symbols
+
+\begin{document}
+\section{Definizione}
+
+\[f : A \subseteq dom(f) \to \mathbb{R}, continua\]
+\[A = [a, b]\]
+
+f è derivabile in \(x_0\) se \textbf{esiste ed è finito} il limite del rapporto incrementale:
+\[f'(x) = \lim_{h \to 0}\frac{f(x+h) - f(x)}{h}\]
+
+f è il \textbf{coefficiente angolare} della retta tangente a \(f(x_0)\).
+
+\subsection{Equazione retta tangente al grafico di f in \(x_0, f(x_0)\)}
+\[y = f(x_0) + f'(x_0) * (x - x_0)\]
+
+\section{Derivate particolari}
+\(f = costante\); \(f' = 0\)\\
+\(f = x\); \(f' = 1\)\\
+\(f = x^2\); \(f' = 2x\)\\
+\(f = x^n\); \(f' = nx^{n-1}\)\\
+
+\subsubsection{Dimostrazione di \(x^n\)}
+[todo]
+\[\lim_{h \to 0} \frac{(x+h)^\alpha - x^\alpha}{h}\]
+\[\lim_{h \to 0} x^\alpha * (\frac{\frac{(x+h)}{x}^\alpha - 1}{h})\]
+\[\lim_{h \to 0} x^\alpha * (\frac{e^{\log(\frac{(x+h)}{x}^\alpha)} - 1}{h})\]
+\[\lim_{h \to 0} x^\alpha * (\frac{e^{\alpha \log(\frac{(x+h)}{x})} - 1}{h})\]
+\[\lim_{h \to 0} x^\alpha * (\frac{e^\frac{\alpha h}{x}) - 1}{h})\]
+
+\subsubsection{Non derivate il valore assoluto}
+Campagna pubblicitaria: chi deriva il valore assoluto muore (accademicamente).
+\(|x|\) non è derivabile in \(x = 0\).
+\[\lim_{h \to 0} \frac{|h|}{h} = \nexists\]
+\[\lim_{h \to 0^+} \frac{|h|}{h} = 1\]
+\[\lim_{h \to 0^-} \frac{|h|}{h} = -1\]
+
+\section{Derivate sinistra e destra}
+Derivata destra:
+\[f_+'(x) = \lim_{h \to 0^+}\frac{f(x+h) - f(x)}{h}\]
+Derivata sinistra:
+\[f_-'(x) = \lim_{h \to 0^-}\frac{f(x+h) - f(x)}{h}\]
+
+[todo: migliorare un po']
+\begin{itemize}
+\item Se sono uguali e finite, esiste la derivata in quel punto;\\
+\item se sono diverse e almeno una delle due finita, si ha un \textbf{punto angoloso};\\
+\item se sono diverse e infinite, la tangente esiste ed è completamente verticale;\\
+\item se sono uguali e infinite, si forma una cuspide.
+\end{itemize}
+
+\section{Teorema di continuità}
+Se \(f\) è derivabile in \(x_0\), allora \(f\) è continua.
+
+\paragraph{Tesi}
+\[\lim_{x \to x_0} f(x) = f(x_0)\]
+
+\paragraph{Dimostrazione}
+\[\lim_{x \to x_0} f(x) - f(x_0) = 0\]
+\[\lim_{x \to x_0} (f(x) - f(x_0)) * \frac{x - x_0}{x - x_0}\]
+\[\lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0} * (x - x_0)\]
+\[f'(x_0) * 0 = 0\]
+
+\subsection{Conseguenze}
+\(f\) derivabile in \(x_0\) \(\implies\) \(f\) continua in \(x_0\)\\
+\(f\) non continua \(\implies\) \(f\) non derivabile\\
+\(f\) continua \(\centernot\implies\) \(f\) derivabile\\
+\(f\) non derivabile \(\centernot\implies\) \(f\) non continua\\
+
+\subsubsection{Esempio}
+\[f(x) = 
+\begin{cases}
+    1 \qquad x > 0\\
+    0 \qquad x \leq 0
+\end{cases}\]
+
+Non continua in \(x = 0\), quindi non derivabile in quel punto.\\
+In tutti gli altri casi, \(f'(x) = 0\).
+
+\section{Regole di calcolo}
+\[(f + g)' = f' + g'\]
+\[(kf)' = kf'\]
+\[(f * g)' = (f' * g) + (f * g')\]
+\[(\frac{f}{g})' = \frac{(f' * g) - (f * g')}{g^2}\]
+
+\subsection{Regola della catena}
+Se \(f\) è derivabile in \(x_0\) e g è derivabile in \(f(x_0)\) e \(x_0\) è punto di accumulazione per \(dom(g \circ f)\), allora \(g \circ f\) è derivabile in \(x_0\) e vale:
+\[(g \circ f)'(x_0) = g'(f(x_0)) * f'(x_0)\]
+
+\subsubsection{Esempio}
+\[f(x) = \sin^2(4 \sqrt{x} + 2\]
+\[f'(x) = 2 \sin (4 \sqrt{x} + 2) * \cos (4 \sqrt{x} + 2) * (4 * \frac{1}{2 \sqrt{x}})\]
+
+\subsubsection{Esempio}
+\[f(x) = \arctan \frac{2x}{\sqrt{x^3+1}}\]
+\[f'(x) = \cfrac{1}{1 + (\cfrac{2x}{\sqrt{x^3 + 1}}} * \frac{2 \sqrt{x^3 + 1} - 2x}{x^3+1} * \frac{3 x^2}{2} * \frac{1}{\sqrt{x^3+1}}\]
+
+\subsection{Derivata della funzione inversa}
+\(f : (a, b) \to \mathbb{R}\) continua e strettamente monotona \(\implies f\) invertibile\\
+\(f^{-1}\) funzione di \(f\)\\
+\(f\) derivabile in \(x_0 \implies f^{-1}\) derivabile in \(f(x_0) = y_0\)\\\\
+\((f^{-1})'(y_0) = \frac{1}{f'(x_0)}\)\\
+
+\subsubsection{Esempio}
+\[f(x) = x + e^x\]
+\[\exists f^{-1}\]
+Determinare l'equazione della tangente al grafico di \(f^{-1}\) in (1, 0).\\
+
+\[y_0 = f(x_0) = 0 + e^0 = 1\]
+\[x_0 = f^{-1}(y_0) = 0\]
+
+\[f^{-1}'(y_0) = \frac{1}{1 + e^x}\]
+\[y - f^{-1}(y_0) = (f^{-1})'(y_0) * (x - y_0)\]
+\[y - 0 = \frac{1}{1 + e^{1}} * (x - 1)\]
+\[y = \frac{1}{1 + e} * (x - 1)\]
+
+\section{O piccolo}
+Date due funzioni \(f\) e \(g\) definite in un intorno di \(x_0\), diciamo che \(f(x) = o(g(x))\), f è \textbf{o piccolo} di \(g\) per \(x \to x_0\) se \(\lim_{x \to x_0} \frac{f(x)}{g(x)} = 0\).
+
+\subsubsection{Esempio}
+\[x^2 = o(x) \qquad x \to 0\]
+Sì, perchè \(\lim_{x \to 0} \frac{x^2}{x} = 0\).
+
+\subsubsection{Esempio}
+\[sin x = o(x) \qquad x \to 0\]
+No, perchè \(\lim_{x \to 0} \frac{sin x}{x} = 1\).
+
+\subsection{Proposizione}
+\[f(x) \sim g(x) \Rleftarrow f(x) = g(x) + o(g(x)) \Rleftarrow \lim_{x \to x_0} \frac{f(x)}{g(x)} = 1 \Rleftarrow \lim_{x \to x_0} - 1 = 0 \Rleftarrow \lim_{x \to x_0} \frac{f(x) - g(x)}{g(x)} = 0\]
+
+\end{document}

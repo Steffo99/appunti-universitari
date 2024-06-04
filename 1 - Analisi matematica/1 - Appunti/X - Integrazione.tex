@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{centernot}
+% New symbols
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}
+{\box0\lower0.4pt\box2}}
+\newcommand{\iu}{\mathrm{i}\mkern1mu}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+\let\oldnorm\norm
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
+\makeatother
+\newcommand*{\Value}{\frac{1}{2}x^2}
+\newcommand{\intab}{\int_a^b}
+% End new symbols
+\begin{document}
+
+\section{\(\delta < 0, denominatore II grado\)}
+\[\int \frac{1}{x^2 + 4x + 9} dx\]
+Osserviamo che \(\int \frac{1}{x^2 + 1} dx = \arctan x + c\).
+Provo allora a costruire qualcosa di simile all'arcotangente.
+\[\int \frac{1}{x^2 + 4x + 9} dx = \int \frac{1}{x^2 + 4x + 4 + 5} dx = 5 \int \frac{1}{\frac{(x + 2)^2}{5} + 1} = 5 \arctan (\frac{x + 2}{\sqrt{5}}) + c\]
+
+\section{Integrale generalizzato}
+Vogliamo ampliare la nostra definizione di integrale, applicandolo a una \(f\) non limitata.
+\[\int_a^{b-\epsilon} f(x) dx\]
+Ha senso; la funzione è limitata in \([a, b - \epsilon]\).\\
+Allora, possiamo fare l'integrale \textbf{generalizzato} o improprio, se \textsc{esiste} ed è \textsc{finito}:
+\[\lim_{\epsilon \to 0^+} \int_a^{b - \epsilon} f(x) dx = \int_a^b f(x) dx\]
+
+\subsection{Esercizi}
+
+\subsubsection{Uso di parametri}
+Dire per quali valori del \textit{parametro} \(\alpha\)...
+\[\int_0^1 \frac{1}{x^{\alpha}} dx\]
+Per \(\alpha \leq 0\), si ha che \(\int_0^1 x^-\alpha dx\), e quindi è un integrale standard.\\
+Per \(\alpha > 0\), si ha che \(\int_0^1 \frac{1}{x^\alpha} dx\).\\
+C'è un problema in \(x = 0\); la funzione non è limitata! Usiamo allora la definizione di integrale generalizzato.\\
+
+\subsubsection{Calcolo integrali generalizzati con la definizione}
+\textit{Calcola} l'integrale...
+\[\int_0^1 \frac{1}{x^\alpha} dx = \lim_{\epsilon \to 0^+} \int_\epsilon^1 \frac{1}{x^\alpha} dx\]
+
+Trovo l'insieme delle sue primitive:
+\[\int x^{-\alpha} dx = \begin{cases}
+    \log \abs{x} + c \qquad \alpha = 1\\
+    \frac{x^{1-\alpha}{1 - \alpha} + c \qquad \alpha \neq 1
+\end{cases}\]
+
+Infine, applico il teorema fondamentale del calcolo:\\
+Per \(\alpha = 1\):
+\[\lim_{\epsilon \to 0^+} \int_\epsilon^1 \frac{1}{x^\alpha} dx = [\log \abs{x}]^1_\epsilon = \log 1 - \log \epsilon = - \log \epsilon\]
+Per \(\alpha \neq 1\):
+[mi sa fatica scriverlo ma è uguale a sopra... credo]
+
+\subsubsection{Uso dei criteri}
+\textit{Studiare} l'integrabilità...
+
+
+\end{document}

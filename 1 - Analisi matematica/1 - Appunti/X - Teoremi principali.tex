@@ -1,0 +1,288 @@
+% !TeX root = ./teoremiprincipali.tex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{centernot}
+\usepackage{bm}
+\usepackage{fullpage}
+\usepackage{multicol}
+
+\begin{document}
+
+\section{Teorema di Bolzano-Weierstrass}
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Successione \(a_n\) \textbf{limitata} (superiormente e inferiormente).
+\columnbreak
+    \subsection{Tesi}
+    Esistono \textsc{infinite sottosuccessioni} (relative alla successione iniziale) convergenti.
+\end{multicols}
+
+\subsection{Dimostrazione}
+
+Chiamiamo \(A_0\) l'insieme che contiene tutti i punti della successione.\\
+Eseguiamo la seguente procedura per \(k = 0\).
+\begin{enumerate}
+    \item Chiamiamo \([\alpha_k, \beta_k]\) i due estremi dell'intervallo della successione.\\
+          Prendiamo il punto medio tra i due estremi, e chiamiamolo \(\gamma_k\).\\
+          Osserviamo che \(\alpha_k \leq \gamma_k \leq \beta_k\), e che la dimensione \(d_k\) dell'intervallo \([\alpha_k, \gamma_k] = [\gamma_k, \beta_k]\) è la metà di \([\alpha_k, \beta_k]\).
+    \item Creiamo due insiemi di punti della successione: uno con i punti tra \([\alpha_k, \gamma_k]\) e uno con i punti tra \(]\gamma_k, \beta_k]\).
+    \item Almeno uno dei due insiemi ha un numero infinito di punti: prendiamolo, e chiamiamolo \(A_{k+1}\).
+\end{enumerate}
+Possiamo ripetere questa procedura un numero infinito di volte: possiamo notare che le dimensioni dell'intervallo \(d_k = (\frac{d_0}{2^k}) \to 0\); dato che \(A_k\) contiene infiniti punti, possiamo creare una sottosuccessione che includa solo punti contenuti in \(A_k\).\\
+Essa sarà convergente per il teorema dei carabinieri ad un valore \(L\) tale che \(\alpha_0 \leq \dots \leq \alpha_k \leq L \leq \beta_k \leq \dots \leq \beta_0\).
+
+\newpage
+
+\section{Polinomio di Taylor con resto di Peano}
+
+\subsection{Definizioni preliminari}
+\[P_{n, x_0}(x) = (\sum^{n}_{m = 0} \frac{f^{(m)}(x_0) * (x - x_0)^m}{m!})\]
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzione \(f(x) :\ ]a, b[ \to \mathbb{R}\), \textbf{derivabile} \(n\) volte in \(x_0\) e \(n - 1\) volte in \(]a, b[\).\\
+    Punto \(x_0 \in\ ]a, b[\).
+\columnbreak
+    \subsection{Tesi}
+    La funzione \(f(x)\) è \textsc{approssimabile} nel punto \(x_0\) con il polinomio \(P_{n, x_0}(x) + o(x - x_0)^n\) di grado \(n\).
+\end{multicols}
+
+\subsection{Dimostrazione}
+
+Notiamo che \(P^{n}_{n, x_0}(x_0) = f^{(n)}(x_0)\).\\
+Proviamo a calcolare il seguente limite, che ci sarà utile nel prossimo passaggio:
+\[\lim_{x \to x_0} \frac{f(x) - P_{n - 1, x_0}(x)}{(x - x_0)^n} =^{DH} \lim_{x \to x_0} \frac{f^{(1)}(x) - P^{(1)}_{n - 1, x_0}(x)}{n * (x - x_0)^{n - 1}} =^{\infty DH} \lim_{x \to x_0} \frac{f^{(n - 1)}(x) - P^{(n - 1)}_{n - 1, x_0}(x)}{n! * (x - x_0)^{1}} =\]
+\[= \lim_{x \to x_0} \frac{f^{(n - 1)}(x) - f^{(n - 1)}(x_0)}{n! * (x - x_0)}\]
+Ora siamo pronti a calcolare il limite con \(n\) invece che \(n - 1\):
+\[\lim_{x \to x_0} \frac{f(x) - P_{n, x_0}(x)}{(x - x_0)^n}\]
+Estraiamo un termine dal polinomio:
+\[\lim_{x \to x_0} \frac{f(x) - P_{n - 1, x_0}(x) - \frac{f^{(n)}(x_0) * (x - x_0)^n}{n!}}{(x - x_0)^n}\]
+Raccogliamo termini in modo da formare il limite precedente:
+\[\lim_{x \to x_0} ( \frac{f(x) - P_{n - 1, x_0}(x)}{(x - x_0)^n} - \frac{\frac{f^{(n)}(x_0) * (x - x_0)^n}{n!}}{(x - x_0)^n} ) \]
+Facciamo uscire dal limite le costanti:
+\[- \frac{f^{(n)}(x_0)}{n!} + \lim_{x \to x_0} \frac{f(x) - P_{n - 1, x_0}(x)}{(x - x_0)^n}\]
+Per il limite precedente:
+\[- \frac{f^{(n)}(x_0)}{n!} + \lim_{x \to x_0} \frac{f^{(n - 1)}(x) - f^{(n - 1)}(x_0)}{n! * (x - x_0)}\]
+Raccogliamo \(\frac{1}{n!}\):
+\[\frac{1}{n!} (- f^{(n)}(x_0) + \lim_{x \to x_0} \frac{f^{(n - 1)}(x) - f^{(n - 1)}(x_0)}{(x - x_0)})\]
+Abbiamo ottenuto un rapporto incrementale, il che significa che:
+\[\frac{1}{n!} (- f^{(n)}(x_0) + f^{(n)}(x_0)) = 0\]
+
+\newpage
+
+\section{Teorema di esistenza degli zeri}
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzione \(f(x) : [a_0, b_0] \to \mathbb{R}\) \textbf{continua}.\\
+    \(f(a_0) = f(b_0)\).
+\columnbreak
+    \subsection{Tesi}
+    Esiste \textsc{almeno un punto} in cui \(f(x) = 0\).
+\end{multicols}
+
+\subsection{Dimostrazione}
+
+Notiamo che \(f(a_0) * f(b_0) \leq 0\) (ovvero è negativa, cioè hanno due segni diversi).\\
+Definiamo la seguente procedura:
+\begin{enumerate}
+    \item Bisezioniamo l'intervallo \([a_n, b_n]\) in \([a_n, z_n]\) e \([z_n, b_n]\).
+    \item Almeno uno dei due intervalli è tale che \(f(inizio) * f(fine) \leq 0\) (negativo).
+    \item Prendiamo un intervallo per il quale il prodotto precedente è negativo, e chiamiamolo \([a_{n+1}, b_{n+1}]\).
+\end{enumerate}
+Ripetendo infinite volte la procedura, partendo dall'intervallo \([a_0, b_0]\), otterremo un intervallo sempre più "verticalmente stretto" \([a_n, b_n]\).\\
+Possiamo notare che \(a_0 \leq a_n \leq b_n \leq b_0\), e che entrambe le successioni tendono allo stesso numero \(a_n \to x\) e \(b_n \to x\).\\
+Calcoliamo nuovamente \(f(a_n) * f(b_n)\): sappiamo che risulta essere \(\leq 0\), ma possiamo sostituire il limite: \(f(x) * f(x) \leq 0\).\\
+Dunque, abbiamo che \(f(x)^2 \leq 0\), e quindi che \(\exists x : f(x) = 0\).
+
+\newpage
+
+\section{Teorema di Weierstrass}
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzione \(f(x) : [a, b] \to \mathbb{R}\) \textbf{continua}.
+\columnbreak
+    \subsection{Tesi}
+    \(f(x)\) assume entro \([a, b]\) un \textsc{valore massimo} e un \textsc{valore minimo}.
+\end{multicols}
+
+\subsection{Dimostrazione per il massimo}
+Chiamiamo \(M = sup(f)\) l'estremo superiore della funzione f: vogliamo dimostrare che esso è anche il massimo, e che quindi il massimo esiste per la funzione.\\
+Dobbiamo quindi \textsc{trovare un valore} \(x\) tale che \(f(x) = M\).\\
+Creiamo una successione \(y_n\) che ci aiuti a trovare il valore di \(f(x)\):
+\begin{itemize}
+    \item Se \(M = +\infty\), allora \(y_n = n\) (in modo che la successione \(\to +\infty\)).
+    \item Se \(M \neq +\infty\), allora \(y_n = M - \frac{1}{n}\) (in modo che la successione \(\to M\)).
+\end{itemize}
+Possiamo dire che \(y_n < M\), ed essendo \(M\) il minimo dei maggioranti di \(f : [a, b]\):
+\[\forall n, \exists x_n : (y_n < f(x_n) \leq M) \land (a < x_n \leq b) \]
+Passando al limite, per il \textit{teorema dei carabinieri} abbiamo che \(f(x_n) \to M\).\\
+Inoltre, per il \textit{teorema di Bolzano-Weierstrass} sappiamo che esiste una sottosuccessione convergente \(x_{k_n} \to x\) di \(x_n\).\\
+Essendo la funzione \textit{continua}, allora \(x_{k_n} \to x \implies f(x_{k_n}) \to f(x)\).\\
+Essendo però la sottosuccessione \textit{un'estratta}, allora abbiamo anche che \(f(x_{k_n}) \to M\).\\
+Per il \textit{teorema dell'unicità del limite} allora deduciamo che \(M = f(x_{k_n})\), e quindi che \(x_{k_n} = x\).
+
+\subsection{Dimostrazione per il minimo}
+La stessa cosa, ma con \(inf(f) = -sup(-f)\).
+
+\newpage
+
+\section{Teorema di Fermat}
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzione \(f(x) : [a, b] \to \mathbb{R}\) \textbf{derivabile} in un punto \(x_0 \in\ ]a, b[\).\\
+    \(x_0\) punto di estremo locale.
+\columnbreak
+    \subsection{Tesi}
+    \(f'(x_0) = 0\).
+
+\end{multicols}
+
+\subsection{Dimostrazione per il minimo locale}
+Sappiamo che se \(x_0\) è un \textbf{minimo locale}, esiste obbligatoriamente un intorno \(I \subset [a, b]\) in cui \(\forall x \in I, f(x_0) \leq f(x)\).\\
+Possiamo provare a calcolare il suo rapporto incrementale: \(\lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}\).\\
+Notiamo che mentre il numeratore è sempre positivo, il denominatore cambia in base a se \(x > x_0\).\\
+Allora, \(f'_-(x_0) \leq 0\), e \(f'_+(x_0) \geq 0\).\\
+Essendo la funzione \textbf{derivabile}, e quindi \(f'_-(x) = f'_+(x)\) l'unica possibilità è che \(f(x_0) = 0\).
+
+\subsection{Dimostrazione per il massimo locale}
+La stessa cosa, ma con \(-f\).
+
+\newpage
+
+\section{Teorema di Rolle}
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzione \(f(x)\) tale che
+    \begin{itemize}
+        \item sia \textbf{continua} in \([a, b]\)
+        \item sia \textbf{derivabile} in \([a, b]\)
+        \item \(f(a) = f(b)\)    
+    \end{itemize}
+\columnbreak
+    \subsection{Tesi}
+    \(\exists x_0 : f'(x_0) = 0\) (ovvero la funzione è \textsc{costante} o ha \textsc{almeno un punto stazionario})
+\end{multicols}
+
+\subsection{Dimostrazione}
+Se la funzione è \textbf{continua}, allora per il \textit{teorema di Weierstrass} sappiamo che ha almeno un punto di massimo \(x_M\) e uno di minimo \(x_m\) in \([a, b]\).\\
+Se i valori di entrambi i due punti coincidono con \(f(a) = f(b)\), allora la funzione è \textsc{costante}.\\
+Se almeno uno dei due valori è diverso da \(f(a) = f(b)\), allora per il \textit{teorema di Fermat} \(f'(x_0) = 0\).
+
+\newpage
+
+\section{Teorema di Cauchy}
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzioni \(f(x)\) e \(g(x)\) tale che
+    \begin{itemize}
+        \item siano \textbf{continue} in \([a, b]\)
+        \item siano \textbf{derivabili} in \([a, b]\)
+    \end{itemize}
+\columnbreak
+    \subsection{Tesi}
+    \(\exists c : ((f(a) - f(b))g'(c) = (g(a) - g(b))f'(c))\)
+\end{multicols}
+
+\subsection{Dimostrazione}
+Creiamo una funzione \(w\) tale che \(w(x) = (f(a) - f(b))g(x) - (g(a) - g(b))f(x))\).\\
+Essendo formata dalla differenza di due funzioni \textbf{continue}, è anche essa continua.\\
+Essendo formata dalla differenza di due funzioni \textbf{derivabili}, è anche essa derivabile.\\
+Sostituendo, notiamo che \(w(a) = w(b)\).\\
+Allora, per il teorema di Rolle, sappiamo che ha un punto stazionario \(c\) tale che \(w'(c) = 0\).\\
+Con \(w'(c) = 0\), abbiamo che \(\exists c : ((f(a) - f(b))g'(c) = (g(a) - g(b))f'(c))\).
+
+\subsection{Significato geometrico}
+Il significato geometrico del teorema di Cauchy è che presa una qualsiasi curva, essa ha almeno un punto in cui la pendenza è uguale alla pendenza della retta tra i punti a e b.
+
+\newpage
+
+\section{Teorema di Lagrange}
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzione \(f(x)\) tale che
+    \begin{itemize}
+        \item sia \textbf{continua} in \([a, b]\)
+        \item sia \textbf{derivabile} in \([a, b]\)
+    \end{itemize}
+\columnbreak
+    \subsection{Tesi}
+    \(\exists c : f'(c) = \frac{f(b) - f(a)}{b - a}\)
+\end{multicols}
+
+\subsection{Dimostrazione}
+Il \textit{Teorema di Cauchy}, con \(g(x) = x\).
+
+\newpage
+
+\section{Teorema della media integrale}
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    \begin{enumerate}
+        \item Funzione \(f(x)\) \textbf{integrabile} in \([a, b]\)
+        \item Funzione \(f(x)\) \textbf{continua}
+    \end{enumerate}
+\columnbreak
+    \subsection{Tesi}
+    \begin{enumerate}
+        \item \(inf(f) \leq \frac{1}{b - a} \int_a^b f(x) \leq sup(f) \)
+        \item \(\exists z : (\frac{1}{b - a} \int_a^b f(x) = f(z))\)
+    \end{enumerate}
+\end{multicols}
+
+\subsection{Dimostrazione}
+Per la definizione di integrale, \(inf(f) < f(x) < sup(f)\), quindi anche \(inf(f) < \frac{1}{b - a} \int_a^b f(x) < sup(f) \).\\
+Se la funzione è anche \textbf{continua}, allora per \textit{Weierstrass} esistono un massimo \(M\) e un minimo \(m\).\\
+Allora, \(\forall x, m \leq f(x) \leq M\).\\
+Ma per la definizione di integrale, \(m = \int_a^b m dx \leq \int_a^b f(x) dx \leq \int_a^b M dx = M \).\\
+E in particolare, \(m \leq \frac{1}{b - a} \int_a^b f(x) dx \leq M\).
+
+\newpage
+
+\section{Teorema fondamentale del calcolo integrale}
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzione \(f(x)\) \textbf{integrabile} in \(]a, b[\)\\
+    Funzione \(G(x) : ]a, b[\) \textbf{primitiva} di \(f(x)\)
+\columnbreak
+    \subsection{Tesi}
+    \(\int_a^b f(x) dx = G(b) - G(a) = [G(x)]^b_a\)
+\end{multicols}
+
+\subsection{Dimostrazione}
+Prolunghiamo la primitiva \(G(x)\) per continuità:
+\begin{itemize}
+    \item \(G(a^+) = \lim_{x \to a^+} f(x)\)
+    \item \(G(b^-) = \lim_{x \to b^-} f(x)\)
+\end{itemize}
+La primitiva ora è continua in \([a, b]\).\\
+Possiamo allora partizionarla in un numero infinito di intervalli \([a, x_i] = \dots = [x_j, b]\).\\
+Per il \textit{teorema di Lagrange}, \(\forall\ partizione\ "n" [c, d], \exists z : G(d_n) - G(c_n) = G'(z_n)(d_n - c_n) = f(z_n)(d_n - c_n)\).\\
+Allora, possiamo dire che \(G(b) - G(a) = \sum_{j = 0}^n f(z_j)(d_j - c_j) = S_j\).\\
+Abbiamo dunque una somma di Cauchy-Riemann, e possiamo dire che \(G(b) - G(a) = \int_a^b f(x)\).
+
+\newpage
+
+\section{Secondo teorema fondamentale del calcolo integrale}
+
+\begin{multicols}{2}
+    \subsection{Ipotesi}
+    Funzione \(f(x)\) \textbf{integrabile}.\\
+    Funzione \(F(x) = \int_{x_0}^x f(x) dx\)
+\columnbreak
+    \subsection{Tesi}
+    Funzione \(F(x)\) \textsc{continua}
+    \(f(x)\ continua \implies F'(x) = f(x)\)
+\end{multicols}
+
+\end{document}

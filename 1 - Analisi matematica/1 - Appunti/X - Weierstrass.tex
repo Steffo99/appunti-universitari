@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{centernot}
+% New symbols
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}
+{\box0\lower0.4pt\box2}}
+\newcommand{\iu}{\mathrm{i}\mkern1mu}
+% End new symbols
+\begin{document}
+
+\section{Teorema di Weierstrass}
+
+\paragraph{Ipotesi}
+\footnotesize Devo scrivere per forza qualcosa qua.\\\normalsize
+\([a, b]\) intervallo \textit{chiuso} e \textit{limitato}\\
+\(f\) continua su \([a, b]\)
+
+\paragraph{Tesi}
+\(f\) ha \textit{massimo} e \textit{minimo} su \([ a, b ]\)\\
+\[\exists x_M, \exists x_n : f(x_M) \leq f(x) \leq f(x_n)\]
+
+\paragraph{Tabella lettere}
+\footnotesize Per capirci qualcosa in più.\\\normalsize
+\(f\) \quad funzione\\
+\(M\) \quad reale, estremo superiore della funzione\\
+\(x_M\) \quad reale, punto in cui la funzione raggiunge il valore di \(M\)\\
+\(x_n\) \quad successione, ???\\
+\(y_n\) \quad successione, ???
+
+\paragraph{Dimostrazione}
+\footnotesize Dimostrazione per il minimo omessa, in quanto opposta di questa.\\\\\normalsize
+Sia \(M = sup(f) = sup \{f(x) : x \in [a, b]\}\).\\\\
+Devo dimostrare che M venga raggiunto in almeno un punto della funzione: \(\exists x_M \in [a, b]\) tale che \(f(x_M) = M\).\\\\
+\(M\) è il minimo dei maggioranti; se considero un qualsiasi numero \(y_n < M\), questo \textit{non è un maggiorante} per la definizione di estremo superiore.\\\\
+Allora, creo una successione \(x_n\) in modo che \(y_n < f(x_n) \leq M\).\\\\
+Dato che \(y_n\) tende ad \(M\), per il \textsc{Teorema dei Carabinieri} \(f(x_n) \to M\).\\\\
+Il fatto che \(x_n\) sia \(\in [a, b]\) ci fa dire che la successione sia \textit{limitata}.\\\\
+Essendo limitata, per il \textsc{Teorema di Bolzano-Weierstrass} possiamo estrarre sicuramente una sottosuccessione \(x_{n_k}\) tale che essa tenda a un valore finito \(\to x_M\).\\\\
+Essendo \(f\) una funzione continua, allora \(f(x_{n_k} \to f(x_n)\).\\\\
+Dato che tutte le sottosuccessioni estratte tendono allo stesso valore, allora possiamo dire che \(M = f(x_M)\).
+
+\end{document}

@@ -1,0 +1,129 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{centernot}
+% New symbols
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}
+{\box0\lower0.4pt\box2}}
+\newcommand{\iu}{\mathrm{i}\mkern1mu}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+\let\oldnorm\norm
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
+\makeatother
+\newcommand*{\Value}{\frac{1}{2}x^2}
+\newcommand{\intab}{\int_a^b}
+% End new symbols
+
+\begin{document}
+
+\section{Proprietà dell'integrale}
+Siano \(f, g : [a, b] \to \mathbb{R}\).\\
+Siano \(\alpha, \beta, a, r, b \in \mathbb{R}\).\\
+Allora:
+\begin{itemize}
+\item \(\alpha f + \beta g\) è integrabile:\\
+      \[\int_a^b (\alpha f(x) + \beta g(x)) dx = \alpha \int_a^b f(x) dx + \beta \int_a^b g(x) dx\]
+\item Se \(a \leq r \leq b\), allora f è integrabile su \([a, r]\) e \([r, b]\), e in particolare:
+      \[\int_a^b f(x) dx = \int_a^r f(x) dx + \int_r^b f(x) dx\]
+\item Se \(f \geq g\), allora \(\int_a^b f(x) dx \geq \int_a^b g(x) dx\).
+\item Se \(f\) è integrabile in \([a, b]\), allora \(\abs{f}\) è integrabile (ma non il contrario!).
+\end{itemize}
+
+\section{Teorema della media integrale}
+\subsection{Prima parte}
+\paragraph{Ipotesi}
+\(f\) integrabile su \([a, b]\)
+
+\paragraph{Tesi}
+\[inf f \leq \frac{1}{b - a} \int_a^b f(x) dx \leq sup f\]
+
+\paragraph{Dimostrazione}
+Sappiamo che \(inf f \leq f(x) \leq sup f\).\\
+Per la 3a proprietà dell'integrale, allora:
+\[\intab inf f dx \leq \intab f(x) dx \leq \intab sup f dx\]
+Possiamo portare fuori le costanti per la 1a proprietà:
+\[inf f \intab 1 dx \leq \intab f(x) dx \leq sup f \intab 1 dx\]
+Allora:
+\[inf f (b - a) \leq \intab f(x) dx \leq sup f (b - a)\]
+E se \(b - a \neq 0\)...
+\[inf f \leq \frac{1}{b - a} \int_a^b f(x) dx \leq sup f\]
+
+
+\subsection{Seconda parte}
+
+\paragraph{Ipotesi}
+\begin{itemize}
+\item \(inf f \leq \frac{1}{b - a} \int_a^b f(x) dx \leq sup f\)
+\item \(f\) continua su \([a, b]\)
+\end{itemize}
+
+\paragraph{Tesi}
+\(\exists z : \frac{1}{b - a} \int_a^b f(x) dx = f(z)\)
+
+\paragraph{Dimostrazione}
+Cambiamo forma alla tesi:
+\[\exists z : \intab f(x) dx = f(z) * (b - a)\]
+Se la funzione è continua in \([a, b]\), per il teorema di Weierstrass sappiamo che:
+\[\exists x_m, x_M : min f = m = f(x_m) \leq f(x) \leq f(x_M) = M = max f\]
+Per la prima ipotesi, allora:
+\[min f = inf f \leq \frac{1}{b - a} \intab f(x) dx \leq sup f = max f\]
+Essendoci un minimo e un massimo, ed essendo la funzione continua, possiamo dire per il teorema dei valori intermedi che:
+\[\exists z : \frac{1}{b - a} \int_a^b f(x) dx = f(z)\]
+
+\section{Funzione primitiva}
+Sia \(f : [a, b] \to \mathbb{R}\).\\
+Si dice che \(G\) è \textbf{primitiva} di \(f\) se:
+\begin{itemize}
+\item \(G\) è \textsc{derivabile}
+\item \(\forall x \in [a, b] G' = f(x)\)
+\end{itemize}
+
+\subsection{Proposizione}
+Due primitive della stessa funzione definite sullo stesso intervallo differiscono per una costante.
+
+\paragraph{Dimostrazione}
+\(G_1, G_2\) primitive di \(f\)
+\[\forall x \in \mathbb{R}, G_1'(x) = f(x), G_2'(x) = f(x)\]
+\[G_1'(x) - G_2'(x) = 0\]
+\[(G_1 - G_2)'(x) = 0\]
+\[G_1 = G_2 + C\]
+
+\subsubsection{Se non si è su un intervallo...}
+Esistono primitive di una funzione che non differiscono per una costante, ma per qualcosa di più.
+\paragraph{Esempio}
+\[G_1(x) = \begin{cases}
+    log(x) \qquad se\ x > 0\\
+    log(-x) \qquad se\ x < 0
+\end{cases}\]
+
+\[G_2(x) = \begin{cases}
+    1 + log(x) \qquad se\ x > 0\\
+    log(-x) \qquad se\ x < 0
+\end{cases}\]
+
+\subsection{Funzioni senza primitiva}
+\[\delta(x)\qquad delta\ di\ Dirac\]
+\paragraph{Dimostrazione}
+Per assurdo, immaginiamo esista una primitiva \(F\) di \(f\).\\
+Negli intervalli \(]-\infty, 0[\) e \(]0, +\infty[\) si ha che \(F'(x) = 0\), e quindi che la funzione è costante.\\
+Se la funzione è una \textsc(primitiva), significa che dev'essere \textsc{derivabile}, e quindi \textsc{continua}.\\
+Ma la funzione originale non è continua, perchè ha un salto in \(x = 0\). Assurdo.
+
+\section{Integrale indefinito}
+\[\int f(x) dx\]
+L'integrale indefinito qui sopra indica l'insieme di tutte le primitive di \(f(x)\).\\
+\\
+Esistono funzioni che hanno primitiva, ma non è esprimibile:
+\[\int \frac{sin t}{t} dt\]
+
+\end{document}

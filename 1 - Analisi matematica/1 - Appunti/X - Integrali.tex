@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{centernot}
+% New symbols
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}
+{\box0\lower0.4pt\box2}}
+\newcommand{\iu}{\mathrm{i}\mkern1mu}
+% End new symbols
+
+\begin{document}
+
+\section{Integrale}
+
+\[f : [a, b] \to \mathbb{R} \qquad f\ limitata\]
+
+Definiamo \textbf{suddivisione} o partizione di \([a, b]\):
+\[\mathcal{A} = \{ x_0, x_1, ..., x_n \}\]
+tale che:
+\[a = x_0 < x_1 < ... < x_n = b\]
+\\
+Sono praticamente tanti pezzetti dell'intervallo \([a, b]\).\\
+
+\subsection{Primo modo}
+Prendiamo una suddivisione equispaziata \(h = \frac{b - a}{n}\): dunque, gli intervallini saranno \(x_j = a + jh\) per \(j = 0, 1, ..., n\).\\
+\(x_n = a + nh = a + n \frac{b - a}{n} = b\)
+
+[VSC crashed.]\\
+
+\subsection{Secondo modo}
+
+[VSC crashed.]\\
+
+f è integrabile se \(s(f)\) (integrale inferiore) \(= S(f)\) (integrale superiore).
+
+\section{Classi di funzioni integrabili}
+\[f : [a, b] \to \mathbb{R}\ limitata\]
+Allora:
+\(f\ integrabile\ su\ [a, b] \implies \forall \epsilon > 0, \exists \mathcal{A}\ suddivisione\ di\ [a, b]\ : S(f, \mathcal{A}) - s(f, \mathcal{A}) \leq \epsilon\)
+
+\paragraph{Dimostrazione}
+Per semplicità, \(\mathcal{A}\) è equispaziata.\\
+\(S(f, \mathcal{A}_n) = \sum_{j=1}^n (x_j - x_{j-1}) sup(f) = \frac{b - a}{n} \sum_{j=1}^n sup(f) = \frac{b - a}{n} \sum_{j=1}^n f(x_j)\)\\
+\(s(f, \mathcal{A}) = \sum_{j=1}^n (x_j - x_{j-1}) inf(f) = \frac{b - a}{n} \sum_{j=1}^n sup(f) = \frac{b - a}{n} \sum_{j=1}^n f(x_{j-1})\)\\
+Effettuiamo un cambio di variabile: \(j-1 = i\), e poi rinominiamolo nuovamente in \(j\).\\
+\(s(f, \mathcal{A}) = \sum_{j=1}^n (x_j - x_{j-1}) inf(f) = \frac{b - a}{n} \sum_{j=1}^n sup(f) = \frac{b - a}{n} \sum_{j=1}^n f(x_{j-1}) = \frac{b - a}{n} \sum^{n-1}_{i=0} f(x_i) = \frac{b - a}{n} \sum_{j = 0}^{n - 1} f(x_m) = \frac{b - a}{n} \sum_{j = 0}^{n - 1} = \frac{b - a}{n} ( \sum_{j = 0}^{n - 1} f(x_m) + f(x_0) )\)\\
+\(S(f, \mathcal{A}) - s(f, \mathcal{A}) = \frac{b - a}{n} (f(x_n) - f(x_0)) = \frac{b - a}{n} (f(b) - f(a))\)\\
+\\
+Potrebbe essere da ripassare bene.
+
+\section{Teorema}
+\[f : [a, b] \to \mathbb{R}\ continua \implies integrabile\ in\ [a, b]\]
+
+\section{Teorema}
+\[\int_a^b f(x) dx = 0\]
+\[f\ continua\ in\ [a, b] \implies f = 0\ in\ [a, b]\]
+
+\paragraph{Dimostrazione}
+Supponiamo per assurdo che \(\exists x_0 \in [a, b]\).
+Allora, \(f(x_0) > 0\), e per la proprietà di continuità, \(\exists [a', b'] : \forall x \in [a', b'], \int_a^b f(x) dx \neq 0\).
+
+\end{document}
+

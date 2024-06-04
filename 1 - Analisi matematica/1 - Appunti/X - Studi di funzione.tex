@@ -1,0 +1,137 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{centernot}
+% New symbols
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}
+{\box0\lower0.4pt\box2}}
+\newcommand{\iu}{\mathrm{i}\mkern1mu}
+% End new symbols
+
+\begin{document}
+
+\section{Studi di funzione}
+
+\subsection{Studio di funzione classico}
+
+\[f(x) = 2 arctan(x) - x\]
+
+\subsubsection{Funzione \(f\)}
+
+\paragraph{Dominio}
+Il dominio in un punto è il più grande insieme possibile su cui è valida la funzione \(f\).\\\\
+In questo caso, il dominio è \(\mathbb{R}\)
+
+\paragraph{Simmetrie}
+Verifichiamo se la funzione ha simmetrie: è pari? È dispari?\\\\
+\(arctan(x)\) è dispari, e \(x\) è anch'esso dispari, quindi andiamo a verificare.\\
+\[f(-x) = 2 arctan(-x) + x = -2 arctan(x) + x = -f(x)\]
+E' dunque dispari.
+
+\paragraph{Positività}
+Troviamo dove la funzione è positiva o negativa.\\
+Spesso richiede calcoli molto complessi, quindi potrebbe non valer la pena perderci tempo.\\\\
+Ad esempio, in questo caso.
+
+\paragraph{Periodicità}
+Controlliamo se e dove la funzione è periodica.\\
+Come per la positività, potrebbe richiedere calcoli complessi, quindi non è particolarmente importante.\\\\
+Come qui.
+
+\paragraph{Intersezioni con gli assi}
+Troviamo dove la funzione \(f\) interseca gli assi \(x\) e \(y\).\\
+Vedi sopra; non è fondamentale...\\\\
+E indovina un po'? Anche qui lo saltiamo.
+
+\paragraph{Asintoti verticali e orizzontali}
+Vediamo se la funzione ha degli asintoti.\\
+Troviamo tutti i limiti rilevanti di \(f\).\\
+A \(+\infty\) e a \(-\infty\), in punti di non derivabilità, etc...\\\\
+\[\lim_{x \to +\infty} (2 arctan(x) - x) = -\infty\]
+Essendo una funzione dispari, allora...
+\[\lim_{x \to -\infty} f(x) = +\infty\]
+
+\paragraph{Asintoto obliquo}
+Controlliamo se esiste un asintoto obliquo.\\
+Non è fondamentale, ma potrebbe essere interessante da calcolare.\\
+E' presente solo se \(\lim_{x \to \infty} = \pm\infty\).\\
+Se lo fa, possiamo calcolarlo.\\\\
+\[m = \lim_{x \to +\infty} \frac{2 arctan(x) - x}{x} = -1\]
+\[q = \lim_{x \to +\infty} (2 arctan(x) - x) + x = \pi\]
+Dunque, l'asintoto obliquo è la retta \(y = -x + \pi\).
+
+\subsubsection{Derivata prima \(f'\)}
+\[f'(x) = \frac{2}{1 + x^2} - 1\]
+
+\paragraph{Crescenza}
+Troviamo dove la funzione è crescente o decrescente.\\
+\[\frac{2 - 1 - x^2}{1 + x^2} \geq 0\]
+\[\frac{1 - x^2}{1 + x^2} \geq 0\]
+\[x^2 \leq 1\]
+\[-1 \leq x \leq 1\]
+
+\paragraph{Punti di estremo}
+Troviamo i punti di massimo e i punti di minimo, e se possibile il loro valore.\\\\
+Nel nostro caso, \(x = -1\) è un punto di minimo locale e \(x = 1\) è un punto di massimo locale.\\
+Vediamo quanto valgono:
+\[f(1) = 2 arctan(1) - 1 = 2 \frac{\pi}{4} - 1 = \frac{\pi - 2}{2} \approx 0.6\]
+\[f(-1) = 2 arctan(-1) + 1 = - 2 \frac{\pi}{4} + 1 = \frac{- \pi + 2}{2} \approx -0.6\]
+
+\subsubsection{Derivata seconda \(f''\)}
+Potrebbe non essere richiesta, se si creerebbe un calcolo complicato.
+\[f''(x) = -\frac{4x}{(1 + x^2)^2}\]
+
+\paragraph{Concavità}
+Troviamo dove la funzione è concava e dove è convessa.\\
+\[-\frac{4x}{(1 + x^2)^2} \geq 0\]
+\[x \geq 0\]
+
+\paragraph{Punti di flesso}
+Troviamo i punti di flesso:\\\\
+Nel nostro caso, l'unico è \(x = 0\).
+
+\subsection{Esercizio}
+Fai un grafico qualitativo di \(log | 4 - x | + \frac{2}{|x - 4|}\).
+
+\paragraph{Simmetrie}
+E' simmetrica per l'asse \(x = 4\), ma il punto nell'asse stesso è fuori dal dominio.
+Possiamo però traslare il tutto ponendo \(x - 4 = t\)...
+\[f(t) = \log(|t|) + \frac{2}{|t|}\].
+Ora la funzione \(f(t)\) è pari.
+
+\paragraph{Dominio}
+\[{t \in \mathbb{R} : t \neq 0}\]
+
+\paragraph{Positività}
+\begin{quote}
+    E' un casino!
+\end{quote}
+
+\paragraph{Limiti}
+[todo]
+
+\subsubsection{Derivata prima}
+\begin{quote}
+    Il valore assoluto è una specie protetta; gli informatici non hanno la licenza di derivarlo.
+\end{quote}
+Dividiamo la funzione in casi.
+\[\tilde{f}(t) = \begin{cases}
+    \log t + \frac{2}{t} \qquad t > 0\\
+    \log (-t) - \frac{2}{t} \qquad t < 0
+\end{cases}\]
+Deriviamo i due rami separatamente:
+\[\tilde{f}'(t) = \begin{cases}
+    \frac{1}{t} - \frac{2}{t^2} \qquad t > 0\\
+    [todo] \qquad t < 0
+\end{cases}\]
+
+\subsection{Studio di funzione qualitativo in un punto}
+Esiste, ma non l'abbiamo fatto.
+
+\end{document}
