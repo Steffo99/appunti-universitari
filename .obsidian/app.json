@@ -1,9 +1,9 @@
 {
   "alwaysUpdateLinks": true,
   "useMarkdownLinks": false,
-  "defaultViewMode": "source",
+  "defaultViewMode": "preview",
   "showFrontmatter": true,
-  "attachmentFolderPath": "9 - Algoritmi distribuiti/0 - Materiale di studio/Appunti esterni",
+  "attachmentFolderPath": "./",
   "newFileLocation": "current",
   "strictLineBreaks": true,
   "showLineNumber": true,
