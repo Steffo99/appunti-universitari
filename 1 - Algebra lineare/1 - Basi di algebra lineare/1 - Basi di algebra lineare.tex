@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+% New symbols
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}
+{\box0\lower0.4pt\box2}}
+% End new symbols
+
+\begin{document}
+
+\section{Vettori}
+Un vettore è una struttura costituita da \textbf{n scalari}, tutti nello \textbf{stesso campo numerico} \(\mathbb{K}\).\\
+Possiamo chiamare un vettore costituito da n scalari una \textbf{n-upla} ("ennupla").\\
+Ad esempio, diciamo che un vettore costituito da 3 numeri naturali è in \(\mathbb{N}^3\), e lo rappresentiamo scrivendo \(\mathbf{v} = (3, 5, 12)\).\\
+
+\section{Spazi vettoriali}
+Uno spazio vettoriale è una struttura costituita da \textbf{un campo numerico}, \textbf{un insieme di vettori} non vuoto e le operazioni di \textbf{somma} e \textbf{prodotto per scalare}.\\
+\\
+Si dice che un vettore \textbf{appartiene} allo spazio vettoriale se questo è presente all'interno dell'insieme dello spazio vettoriale.\\
+Tutti i vettori appartenenti allo spazio sono tutti definiti nello \textbf{stesso campo numerico}: non è possibile che un vettore appartenga ad uno spazio definito nel campo \(\mathbb{K}\) e sia esso stesso definito nel campo \(\mathbb{L}\).\\
+\\
+La somma in uno spazio vettoriale \(\mathbf{v} + \mathbf{w}\) è tra due vettori appartenenti a quest'ultimo; il prodotto per scalare \(\alpha \mathbf{v}\) invece è tra un vettore appartenente allo spazio vettoriale e uno degli scalari del campo dello spazio vettoriale.
+Le proprietà della somma e del prodotto sono le stesse che siamo abituati a vedere normalmente.\\\\
+Per l'addizione:
+\begin{itemize}
+    \item Commutativa \(\mathbf{a} + \mathbf{b} = \mathbf{b} + \mathbf{a}\)
+    \item Associativa (e dissociativa) \((\mathbf{a} + \mathbf{b}) + \mathbf{c} = \mathbf{a} + (\mathbf{b} + \mathbf{c})\)
+    \item Esistenza dell'opposto \(\mathbf{a} + (-\mathbf{a}) = \mathbf{0}\)
+    \item Esistenza del neutro \(\mathbf{a} + \mathbf{0} = \mathbf{a}\)
+\end{itemize}
+Per la moltiplicazione tra vettore e scalare:
+\begin{itemize}
+    \item Associativa \((\alpha \beta) \mathbf{a} = \alpha (\beta \mathbf{a})\)
+    \item Esistenza dello scalare nullo \(0 \mathbf{a} = \mathbf{0}\)
+    \item Esistenza dello scalare neutro \(1 \mathbf{a} = \mathbf{a}\)
+    \item Distributività per vettori \(\alpha (\mathbf{a} + \mathbf{b}) = \alpha \mathbf{a} + \alpha \mathbf{b}\)
+    \item Distributività per scalari \((\alpha + \beta) \mathbf{a} = \alpha \mathbf{a} + \beta \mathbf{a}\)
+\end{itemize}
+
+\section{Sottospazi vettoriali}
+Un sottospazio vettoriale è una struttura che rappresenta \textbf{un sottoinsieme di spazio vettoriale}.\\
+Perchè uno spazio vettoriale \(\mathbf{W}\) sia effettivamente sottospazio di un altro spazio \(\mathbf{V}\), deve soddisfare i seguenti requisiti:
+\begin{itemize}
+    \item I due spazi sono definiti nello stesso campo
+    \item Tutti i vettori appartenenti a \(\mathbf{W}\) sono presenti anche in \(\mathbf{V}\)
+    \item \(\mathbf{W}\) contiene tutti i possibili vettori risultanti da somma e prodotto (e quindi da combinazioni lineari) dei suoi elementi
+\end{itemize}
+
+\section{Sistema di generatori}
+Un sistema di generatori per uno spazio vettoriale è un insieme di vettori che tramite una loro combinazione lineare possono dare come risultato un qualsiasi elemento di uno spazio.
+[TODO]
+
+\section{Base di spazio vettoriale}
+Una base di uno spazio vettoriale è [TODO]
+
+\end{document}
