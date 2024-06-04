@@ -1,0 +1,17 @@
+[[gate quantistico universale]] che opera condizionalmente su un [[qbit]] in base allo stato di un altro [[qbit]]:
+$$
+\def \varX {{\color{coral} \theta}}
+\def \varY {{\color{cornflowerblue} \phi}}
+\def \varZ {{\color{yellowgreen} \lambda}}
+\def \varI {{\color{hotpink} i}}
+\Huge
+\mathbf{U}_{0 \to 1}(\varX, \varY, \varZ)
+=
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & e^{\varI \varY} \sin \left( \frac{\varX}{2} \right) & e^{\varI \varY + \varI \varZ} \sin \left( \frac{\varX}{2} \right) \\
+0 & 0 & \cos \left( \frac{\varX}{2} \right) &
+	- e^{\varI \varZ} \sin \left( \frac{\varX}{2} \right)
+\end{bmatrix}
+$$

@@ -20,7 +20,7 @@ $$
 \mathbf{U}_f \left( \varB \otimes \ket{0} \right) = \varB \otimes \varB
 $$
 
-Creando una [[superposizione]] generica, e usando la [[linearità]] per risolverla:
+Creando una [[superposizione]] generica, e usando [[proprietà distributiva]] data dalla [[linearità]] per risolverla:
 $$
 \displaylines{
 	\mathbf{U}_f \left(
@@ -68,8 +68,52 @@ $$
 	ab \cdot ( \varA \otimes \varB )
 	+
 	ab \cdot ( \varB \otimes \varA )
-	
 }
 $$
 
-I risultati sono diversi, il che è impossibile!
+I risultati possono essere uguali solo se:  
+$$
+\small
+a \cdot \left(
+	\varA \otimes \varA
+\right)
++
+b \cdot \left(
+	\varB \otimes \varB
+\right)
+= 
+a^2 \cdot ( \varA \otimes \varA )
++
+b^2 \cdot ( \varB \otimes \varB )
++
+ab \cdot ( \varA \otimes \varB )
++
+ab \cdot ( \varB \otimes \varA )
+$$
+Ovvero, quando:
+$$
+\begin{cases}
+a &=& a^2 \\
+b &=& b^2
+\end{cases}
+$$
+Cioè:
+$$
+\begin{cases}
+a \cdot b = 0 \\\\
+a = 0 \\
+b = 1
+\end{cases}
+\quad
+\bigcup
+\quad
+\begin{cases}
+a \cdot b = 0 \\\\
+a = 1 \\
+b = 0
+\end{cases}
+$$
+Il gate $\mathbf{U}_f$ esiste quindi solo per gli stati [[ortogonale|ortogonali]].
+
+> [!Note]
+> Per gli stati $\ket{0}$ e $\ket{1}$, il gate $\mathbf{U}_f$ è il [[controlled Pauli X gate]] $\mathbf{X}_n$!

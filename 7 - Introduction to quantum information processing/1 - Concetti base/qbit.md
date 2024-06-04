@@ -4,6 +4,7 @@ aliases:
   - qubit
   - stato di un qbit
   - fase di un qbit
+  - stato
 ---
 [[Valore]] di un sistema quantistico che può trovarsi contemporaneamente in due [[stato di un qbit|stati]] con intensità complementari tra loro.
 

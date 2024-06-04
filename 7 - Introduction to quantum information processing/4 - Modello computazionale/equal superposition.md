@@ -1,9 +1,3 @@
----
-aliases:
-  - equal superposition
----
-
-
 Particolare [[entanglement]] usato per computare in parallelo tanti possibili [[9 - Algoritmi distribuiti/1 - Problemi algoritmici/parametro|input]] a un problema.
 
 $$

@@ -91,3 +91,12 @@ $$
 	\bra{11111111} = \bra{255}_8
 }
 $$
+Corrispondono all'[[operatore aggiunto]] applicato ad un [[ket]]:
+$$
+\Huge
+\bra{0} = \ket{0}^\dagger
+$$
+$$
+\Huge
+\ket{0} = \bra{0}^\dagger
+$$
