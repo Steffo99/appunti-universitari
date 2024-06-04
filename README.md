@@ -10,7 +10,7 @@ Collezione di appunti presi durante i corsi di Laurea Triennale e Laurea Magistr
 
 ## Visualizza
 
-Al momento, gli appunti sono visualizzabili solo attraverso [Obsidian](https://obsidian.md/), lo strumento che uso per modificarli.
+Al momento, gli appunti sono visualizzabili correttamente solo attraverso [Obsidian](https://obsidian.md/), lo strumento che uso per modificarli.
 
 Per aprirli, [scarica](https://github.com/Steffo99/appunti-magistrali/archive/refs/heads/main.zip) questo repository sul tuo computer, poi aprilo su Obsidian.
 
