@@ -1,4 +1,4 @@
-Appunti del corso di **_Ottimizzazione Lineare Intera_**, tenuto da ==chi?== nel secondo semestre dell'anno accademico 2019/2020.
+Appunti del corso di **_Sistemi Operativi_**, tenuto da [[Mauro Andreolini]] nel secondo semestre dell'anno accademico 2019/2020.
 
 ## Indice
 
