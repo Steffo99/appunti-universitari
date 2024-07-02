@@ -1,5 +1,3 @@
-# Sistema operativo
-
 Un _sistema operativo_ è un software che fa da intermediario tra il software dell'utente e l'hardware, fornendo un ambiente di lavoro **comodo**, **performante** e **sicuro** e **mascherando i dettagli dell'hardware**.
 
 ## Allocamento risorse

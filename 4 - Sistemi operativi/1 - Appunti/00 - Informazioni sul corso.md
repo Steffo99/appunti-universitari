@@ -1,5 +1,3 @@
-# Sistemi Operativi
-
 > Lasciate ogni speranza, voi ch'entrate.  
 > Siete appena entrati nella prima bolgia dell'inferno.
 

@@ -1,5 +1,3 @@
-# Forma di Backus Naur
-
 La _forma di Backus Naur_ è una forma univoca di scrivere la sintassi di comandi.
 
 - `[stringhe]`: la stringa può comparire 0 o 1 volta (**opzionale**)
