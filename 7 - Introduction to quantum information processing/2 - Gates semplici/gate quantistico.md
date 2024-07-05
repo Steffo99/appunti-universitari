@@ -2,8 +2,10 @@
 aliases:
   - quantum gate
 ---
+[[Matrice unitaria]] che può essere applicata a un [[qbit]] per modificarne lo [[qbit|stato]].
 
-[[Trasformazione unitaria]] che può essere applicata a un [[qbit]] per modificarne lo [[stato di un'entità|stato]].
+> [!Note]
+> Deve essere unitaria perchè così lo [[qbit|stato]] del [[qbit]] a cui viene applicata rimane [[vettore normalizzato|normalizzato]].
 
 ## Visualizzazioni
 
@@ -17,4 +19,4 @@ Un qubit a cui viene applicato un gate ruota il proprio vettore nella [[sfera di
 
 ## Particolarità
 
-Essendo una [[trasformazione unitaria]], è sempre reversibile applicandolo nuovamente.
+Essendo una [[matrice unitaria]], è sempre reversibile applicandolo nuovamente.

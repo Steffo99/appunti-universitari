@@ -6,3 +6,6 @@ $$
 \Huge
 e^{\varI \varX} = \cos \varX + \varI \sin \varX
 $$
+
+> [!Note]
+> Si può notare che è la formula di una circonferenza sul [[piano di Gauss]]!

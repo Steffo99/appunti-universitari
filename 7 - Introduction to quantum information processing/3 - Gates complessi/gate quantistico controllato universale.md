@@ -1,8 +1,8 @@
-[[gate quantistico universale]] che opera condizionalmente su un [[qbit]] in base allo stato di un altro [[qbit]]:
+[[gate quantistico universale]] che opera condizionalmente su un [[qbit]] in base allo stato di un altro [[qbit]], in modo simile a un [[controlled Pauli X gate]]:
 $$
-\def \varX {{\color{coral} \theta}}
-\def \varY {{\color{cornflowerblue} \phi}}
-\def \varZ {{\color{yellowgreen} \lambda}}
+\def \varX {{\color{coral} a}}
+\def \varY {{\color{cornflowerblue} b}}
+\def \varZ {{\color{yellowgreen} c}}
 \def \varI {{\color{hotpink} i}}
 \Huge
 \mathbf{U}_{0 \to 1}(\varX, \varY, \varZ)

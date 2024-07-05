@@ -4,7 +4,7 @@
 		{"id":"96c7d797bc15d6e1","type":"file","file":"7 - Introduction to quantum information processing/5 - Cose strane/no-approximation theorem.md","x":60,"y":-760,"width":400,"height":400},
 		{"id":"f5f1124784cec784","type":"file","file":"7 - Introduction to quantum information processing/5 - Cose strane/spooky action at a distance.md","x":-500,"y":-200,"width":400,"height":400},
 		{"id":"8b258eb2d00ed5d1","type":"file","file":"7 - Introduction to quantum information processing/5 - Cose strane/Hardy state.md","x":-500,"y":360,"width":400,"height":400},
-		{"id":"d2d7c26dfbb69410","x":60,"y":360,"width":400,"height":400,"type":"file","file":"7 - Introduction to quantum information processing/5 - Cose strane/costruire un Hardy state.md"}
+		{"id":"d2d7c26dfbb69410","type":"file","file":"7 - Introduction to quantum information processing/5 - Cose strane/costruire un Hardy state.md","x":60,"y":80,"width":960,"height":960}
 	],
 	"edges":[
 		{"id":"97ecf707335a9c9f","fromNode":"5aeaa4ce3c4d70d8","fromSide":"right","toNode":"96c7d797bc15d6e1","toSide":"left"},

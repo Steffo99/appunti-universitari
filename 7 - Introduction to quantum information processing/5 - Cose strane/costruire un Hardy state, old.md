@@ -507,3 +507,59 @@ Richiederebbe però $\sum_{i=1}^n n$ gates $\mathbf{U}$, e degli $\mathbf{U}$ ga
   
 
 </aside>
+
+
+---
+
+
+
+1. Determinare la somma dei quadrati dei coefficienti:
+   $$
+   \frac{\sqrt{\kzero^2 + \ktwo^2}}{\sqrt{12}} = \frac{\sqrt{10}}{\sqrt{12}}
+   $$
+   $$
+   \frac{\sqrt{\kone^2 + \kthree^2}}{\sqrt{12}} = \frac{\sqrt{2}}{\sqrt{12}}
+   $$
+4. Determinare i parametri del [[gate quantistico universale]] per il secondo qbit $\mathbf{U}_\noteB (\theta, \phi, \lambda)$:
+   $$
+   \large
+   \displaylines{
+	   \begin{cases}
+		\cos \frac{\phi}{2} &=& \frac{\sqrt{10}}{\sqrt{12}} \\
+		e^{i \theta} \sin \frac{\phi}{2} &=& \frac{\sqrt{2}}{\sqrt{12}} \\
+	   \end{cases}
+	   \\\\\updownarrow\\\\
+	   \begin{cases}
+		\phi &=& 2 \arccos \frac{\sqrt{10}}{\sqrt{12}} \\
+		\theta &=& 0 \\
+		\lambda &=& 0
+	   \end{cases}
+   }
+   $$
+5. Determinare la somma dei quadrati dei coefficienti quando il bit $\noteB$ è $\ket{0}$:
+
+   $$
+   \large
+   \begin{matrix}
+	   \ket{0}_\noteA \otimes \ket{0}_\noteB & : & \frac{3}{\sqrt{12}} \\
+	   \ket{1}_\noteA \otimes \ket{0}_\noteB & : & \frac{1}{\sqrt{12}}
+   \end{matrix}
+   $$
+6. Determinare i parametri del [[gate quantistico universale]] per il primo qbit $\mathbf{U}_\noteA$:
+   $$
+	\large
+	\displaylines{
+	   \begin{cases}
+		  \cos \frac{\phi}{2} &=& \frac{3}{\sqrt{12}} \\
+		  e^{i \theta} \sin \frac{\phi}{2} &=& \frac{1}{\sqrt{12}} \\
+	   \end{cases}
+	   \\\\\updownarrow\\\\
+	   \begin{cases}
+		  \phi &=& 2 \arccos \frac{3}{\sqrt{10}} \\
+		  \theta &=& 0 \\
+		  \lambda &=& 0
+	   \end{cases}
+	}
+   $$
+
+==TODO: Non lo so, mi sono perso.==
