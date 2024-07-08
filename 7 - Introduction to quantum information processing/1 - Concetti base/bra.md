@@ -100,3 +100,6 @@ $$
 \Huge
 \ket{0} = \bra{0}^\dagger
 $$
+
+> [!Hint] Typesetting
+> In $\TeX$, puoi rappresentare un bra con `\bra{NUMERO}`.

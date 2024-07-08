@@ -1,3 +1,9 @@
+---
+aliases:
+  - basis state of a qbit
+---
+
+
 Quando un [[qbit]] si trova in uno stato con massima intensità, si dice che esso si trova in uno stato base:
 
 $$

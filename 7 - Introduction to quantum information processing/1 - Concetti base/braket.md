@@ -23,3 +23,6 @@ $$
 \Huge
 \bra{10}_4 \cdot \ket{11}_4 = \braket{10|11}_4
 $$
+
+> [!Hint] Typesetting
+> In $\TeX$, puoi rappresentare un braket con `\braket{SINISTRA|DESTRA}`.

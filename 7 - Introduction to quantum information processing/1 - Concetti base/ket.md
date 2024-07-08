@@ -132,3 +132,6 @@ $$
 $$
 \Huge \ket{{\color{DodgerBlue} -}} = \frac{1}{\sqrt{2}} \left( \ket{0}\ {\color{DodgerBlue} -}\ \ket{1} \right)
 $$
+
+> [!Hint] Typesetting
+> In $\TeX$, puoi rappresentare un ket con `\ket{NUMERO}`.

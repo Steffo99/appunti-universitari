@@ -35,6 +35,6 @@ k
 \ket{\psi}
 $$
 
-Il [[potenza|quadrato]] della [[parte reale]] di ciascuno stato ne rappresenta l'intensità, ovvero la probabilità che il qubit, se [[misura|misurato]], risulti in quello stato.
+Il [[potenza|quadrato]] della [[parte reale]] di ciascuno stato ne rappresenta l'==intensità==, ovvero la probabilità che il qubit, se [[misura|misurato]], risulti in quello stato.
 
-Il [[segno]] e dalla [[parte immaginaria]] di ciascuno stato ne rappresentano invece la fase, una variabile interna dello stato non direttamente misurabile che però influenza alcune operazioni.
+Il [[segno]] e dalla [[parte immaginaria]] di ciascuno stato ne rappresentano invece la [[fase]], una variabile interna dello stato non direttamente misurabile che però influenza alcune operazioni.
