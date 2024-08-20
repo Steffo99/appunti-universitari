@@ -8,7 +8,7 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:\"7 - Introduction to quantum information processing\"  ",
+      "query": "path:\"8 - Crittografia applicata\"  ",
       "color": {
         "a": 1,
         "rgb": 14701138
@@ -25,6 +25,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.0948360950603675,
-  "close": false
+  "scale": 0.0944029852823346,
+  "close": true
 }

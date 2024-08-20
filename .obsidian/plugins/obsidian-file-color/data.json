@@ -302,10 +302,6 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "9 - Fondamenti di machine learning/★ fondamenti di machine learning.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "9 - Kernel hacking/★ kernel hacking.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
@@ -379,10 +375,6 @@
     },
     {
       "path": "7 - Introduction to quantum information processing/1 - Concetti base/★ concetti base.canvas",
-      "color": "7j7Pqog0VHMVVAfazMNlb"
-    },
-    {
-      "path": "7 - Introduction to quantum information processing",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
@@ -482,14 +474,6 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "9 - Fondamenti di machine learning",
-      "color": "7j7Pqog0VHMVVAfazMNlb"
-    },
-    {
-      "path": "9 - Kernel hacking",
-      "color": "7j7Pqog0VHMVVAfazMNlb"
-    },
-    {
       "path": "1 - Algebra lineare/★ algebra lineare.md",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
@@ -527,6 +511,90 @@
     },
     {
       "path": "4 - Sistemi operativi/★ sistemi operativi.md",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "9 - Kernel hacking/1 - Cercando di capire le cose/Patchwork.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "9 - Kernel hacking/1 - Cercando di capire le cose/kernel e Visual Studio Code.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/★ fondamenti di machine learning.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/2 - Support vector machines/support vector machine.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/2 - Support vector machines/kernel lineare.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/2 - Support vector machines/kernel polinomiale.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/2 - Support vector machines/kernel gaussiano.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/02 - Richiami di calcolo vettoriale.pdf",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/03 - Metodi del gradiente in ambito deterministico.pdf",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/04 - Accelerazione dei metodi del gradiente.pdf",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/05 - Metodologia SVM per classificazione binaria.pdf",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/06 - Ottimizzazione vincolata.pdf",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/07 - Introduzione a MatLab.pdf",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/08 - Laboratorio Logistic Regression.pdf",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/09 - Gradiente stocastico.pdf",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/10 - Laboratorio gradiente stocastico.pdf",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/11 - Deep learning.pdf",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/12 - Laboratorio deep learning.pdf",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/13 - SVR per problemi di regressione.pdf",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/1 - Concetti base/★ glossario simboli matematici.md",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/1 - Concetti base/★ mappa concettuale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     }
   ]

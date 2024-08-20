@@ -1,4 +1,4 @@
-[[dominio|Contesto]] in cui:
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/dominio|Contesto]] in cui:
 
 - i [[squadra blu|difensori]] desiderano scambiarsi privatamente messaggi con determinate [[garanzia|garanzie]]
 - gli [[squadra rossa|attaccanti]] desiderano [[violazione|violare]] la segretezza dei messaggi inviati, ricavando delle informazioni

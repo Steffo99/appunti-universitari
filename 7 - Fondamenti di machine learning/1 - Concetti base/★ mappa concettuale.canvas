@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"aa08ea82fd2ff1df","type":"file","file":"9 - Algoritmi distribuiti/1 - Problemi algoritmici/problema di minimizzazione.md","x":-960,"y":-1360,"width":400,"height":400},
+		{"id":"158d8da07bba10f9","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/problema di supervised learning.md","x":-960,"y":-800,"width":400,"height":400},
+		{"id":"a28d708ff4f64391","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/data set per supervised learning.md","x":-1520,"y":-800,"width":400,"height":400},
+		{"id":"9ebbcb1a4cb0f500","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/training set.md","x":-2080,"y":-980,"width":400,"height":200},
+		{"id":"099a5e4ec9accaf5","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/testing set.md","x":-2080,"y":-700,"width":400,"height":200},
+		{"id":"84aff7b9f416b138","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/validation set.md","x":-2080,"y":-420,"width":400,"height":200},
+		{"id":"21a4d817d35a7f4d","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/modello di supervised learning.md","x":-960,"y":-240,"width":400,"height":400},
+		{"id":"8cbab7d637ee76e1","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/algoritmo di supervised learning.md","x":-1520,"y":-240,"width":400,"height":400},
+		{"id":"4225469a33c497ee","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/perdita.md","x":-960,"y":320,"width":400,"height":400},
+		{"id":"38a97c29b755cc04","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/problema di classificazione binaria.md","x":-400,"y":-980,"width":400,"height":200},
+		{"id":"c92bbbdcd9f512e6","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/problema di classificazione multi-classe.md","x":-400,"y":-700,"width":400,"height":200},
+		{"id":"096c6707131defca","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/problema di regressione.md","x":-400,"y":-420,"width":400,"height":200},
+		{"id":"b360f9268a0f52ab","x":-1520,"y":320,"width":400,"height":400,"type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/overfitting.md"}
+	],
+	"edges":[
+		{"id":"c4f9077cee804220","fromNode":"aa08ea82fd2ff1df","fromSide":"bottom","toNode":"158d8da07bba10f9","toSide":"top"},
+		{"id":"f56800b452ddb99b","fromNode":"158d8da07bba10f9","fromSide":"bottom","toNode":"21a4d817d35a7f4d","toSide":"top"},
+		{"id":"019b625f8b0205c2","fromNode":"158d8da07bba10f9","fromSide":"left","toNode":"a28d708ff4f64391","toSide":"right"},
+		{"id":"cce6de49435ce780","fromNode":"a28d708ff4f64391","fromSide":"left","toNode":"9ebbcb1a4cb0f500","toSide":"right"},
+		{"id":"05ddef88355d8edb","fromNode":"a28d708ff4f64391","fromSide":"left","toNode":"099a5e4ec9accaf5","toSide":"right"},
+		{"id":"087e8f7acc8b514e","fromNode":"a28d708ff4f64391","fromSide":"left","toNode":"84aff7b9f416b138","toSide":"right"},
+		{"id":"3a2453bd09ee39fb","fromNode":"21a4d817d35a7f4d","fromSide":"left","toNode":"8cbab7d637ee76e1","toSide":"right"},
+		{"id":"7e4efe8ea2545561","fromNode":"21a4d817d35a7f4d","fromSide":"bottom","toNode":"4225469a33c497ee","toSide":"top"},
+		{"id":"07bf45ee5439ca26","fromNode":"158d8da07bba10f9","fromSide":"right","toNode":"38a97c29b755cc04","toSide":"left"},
+		{"id":"27e9987ac6d9fafd","fromNode":"158d8da07bba10f9","fromSide":"right","toNode":"c92bbbdcd9f512e6","toSide":"left"},
+		{"id":"cf48fc781605492c","fromNode":"158d8da07bba10f9","fromSide":"right","toNode":"096c6707131defca","toSide":"left"},
+		{"id":"4c02d6463c22e641","fromNode":"4225469a33c497ee","fromSide":"left","toNode":"b360f9268a0f52ab","toSide":"right"}
+	]
+}
