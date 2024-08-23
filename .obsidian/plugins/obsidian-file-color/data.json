@@ -526,19 +526,19 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/2 - Support vector machines/support vector machine.md",
+      "path": "7 - Fondamenti di machine learning/3 - Support vector machines/support vector machine.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/2 - Support vector machines/kernel lineare.md",
+      "path": "7 - Fondamenti di machine learning/3 - Support vector machines/kernel lineare.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/2 - Support vector machines/kernel polinomiale.md",
+      "path": "7 - Fondamenti di machine learning/3 - Support vector machines/kernel polinomiale.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/2 - Support vector machines/kernel gaussiano.md",
+      "path": "7 - Fondamenti di machine learning/3 - Support vector machines/kernel gaussiano.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
@@ -595,6 +595,26 @@
     },
     {
       "path": "7 - Fondamenti di machine learning/1 - Concetti base/★ mappa concettuale.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/★ glossario simboli matematici.md",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/matrice Iacobiana.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/derivata direzionale unilaterale.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/varietà affine reale.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/★ mappa concettuale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     }
   ]

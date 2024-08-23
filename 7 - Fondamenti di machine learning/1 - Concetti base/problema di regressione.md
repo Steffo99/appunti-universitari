@@ -2,5 +2,5 @@
 
 $$
 \Huge
-\mathbb{Y} \subseteq \mathbb{R}
+\fmlOutputField \subseteq \mathbb{R}
 $$

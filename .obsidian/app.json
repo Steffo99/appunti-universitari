@@ -1,7 +1,7 @@
 {
   "alwaysUpdateLinks": true,
   "useMarkdownLinks": false,
-  "defaultViewMode": "preview",
+  "defaultViewMode": "source",
   "showFrontmatter": true,
   "attachmentFolderPath": "./",
   "newFileLocation": "current",

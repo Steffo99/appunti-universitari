@@ -3,23 +3,25 @@ aliases:
   - modello
 ---
 [[modello matematico]].
+$$
+\Huge
+\fmlModel
+$$
 
 [[funzione]] che [[problema di minimizzazione|minimizza]] la [[perdita]] in un [[problema di supervised learning]]:
 
 $$
 \Large
-f^* 
+\fmlModel
 =
-\min_{f \in \mathcal{H}}
+\min_{\fmlClassifier \in \fmlHypothesisSpace}
 \ 
-\sum_{(\mathbf{X},\ y) \in D}
-	\left(\ 
-		V(y, f(\mathbf{X}))
+\sum_{(\fmlInput,\ \fmlOutput) \in D}
+	\par{
+		V(\fmlOutput, \fmlClassifier(\fmlInput)))
 		+
-		\lambda
-		\left\lVert
-			f
-		\right\rVert
-		^2
-	\ \right)
+		\fmlComplexity
+		\cdot
+		\abs{f}^2
+	}
 $$

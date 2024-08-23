@@ -4,5 +4,5 @@ Le funzioni aventi come [[0 - Generale/dominio|dominio]] $\mathbb{X}^n$ e come [
 
 $$
 \Huge
-\mathcal{H} = f : \mathbb{X}^n \to \mathbb{Y}
+\mathcal{H} = \mathbb{X}^n \to \mathbb{Y}
 $$

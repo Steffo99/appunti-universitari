@@ -1,4 +1,4 @@
-[[bra]] e [[ket]] possono essere combinati per rappresentare efficientemente il [[prodotto scalare]] tra un [[vettore riga]] e un [[vettore colonna]]:
+[[bra]] e [[ket]] possono essere combinati per rappresentare efficientemente il [[prodotto scalare matriciale tra vettori]] tra un [[vettore riga]] e un [[vettore colonna]]:
 $$
 \begin{bmatrix}
 	0 & 1
@@ -26,3 +26,4 @@ $$
 
 > [!Hint] Typesetting
 > In $\TeX$, puoi rappresentare un braket con `\braket{SINISTRA|DESTRA}`.
+

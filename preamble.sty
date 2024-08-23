@@ -1,0 +1,41 @@
+\newcommand{\par}[1] {\left({#1}\right)}
+\newcommand{\arr}[1] {\left[{#1}\right]}
+\newcommand{\hsh}[1] {\left\{{#1}\right\}}
+\newcommand{\abs}[1] {\left|{#1}\right|}
+
+\newcommand{\basisCanon} {\mathbf{\hat{e}}}
+\newcommand{\basisCanonElement}[1][i] {\basisCanon_{#1}}
+
+\newcommand{\smol} {\epsilon}
+\newcommand{\derivativeDirectionalSimple}[3][f] {{#1}'\par{#2_0; #3}}
+\newcommand{\derivativeDirectional}[3][f] {\frac{d #1 \par{#2_0; #3}}{d \smol}}
+\newcommand{\derivativePartial}[3][f] {\frac{\partial #1 \par{#2_0}}{\partial x_{#3}}}
+\newcommand{\derivativePartialOutput}[4][f] {\frac{\partial #1_{#3} \par{#2_0}}{\partial x_{#4}}}
+\newcommand{\derivativeGradientSimple}[2][f] {\nabla_{#1} \par{#2_0}}
+\newcommand{\continueField}[1][1] {\mathcal{C}^{#1}}
+\newcommand{\hessianSimple}[2][f] {\mathbf{\nabla}^2_{#1} \par{#2}}
+\newcommand{\hessianElement}[4][f] {\frac{\partial^2 #1 \par{#2}}{\partial #2_{#3}\ \cdot\ \partial #2_{#4}}}
+\newcommand{\iacobianSimple}[2][f] {\mathbf{J}_{#1} \par{#2}}
+
+\newcommand{\fmlDataset} {\mathbf{D}}
+\newcommand{\fmlDatasetSize} {P}
+\newcommand{\fmlDatasetTrain} {\fmlDataset_{train}}
+\newcommand{\fmlDatasetValidate} {\fmlDataset_{validate}}
+\newcommand{\fmlDatasetTest} {\fmlDataset_{test}}
+\newcommand{\fmlInputs} {\mathbf{X}}
+\newcommand{\fmlIndex} {i}
+\newcommand{\fmlInput}[1][\fmlIndex] {\mathbf{x}_{#1}}
+\newcommand{\fmlInputSize} {N}
+\newcommand{\fmlInputField}[1][\fmlInputSize] {\mathbb{X}^{#1}}
+\newcommand{\fmlElementIndex} {j}
+\newcommand{\fmlInputElement}[1][\fmlIndex\fmlElementIndex] {x_{#1}}
+\newcommand{\fmlInputElementField} {\mathbb{X}}
+\newcommand{\fmlOutputs} {\mathbf{y}}
+\newcommand{\fmlOutput}[1][\fmlIndex] {y_{#1}}
+\newcommand{\fmlOutputField} {\mathbb{Y}}
+\newcommand{\fmlClassifier} {f}
+\newcommand{\fmlModel} {\fmlClassifier^*}
+\newcommand{\fmlHypothesisSpace} {\mathcal{H}}
+\newcommand{\fmlComplexity} {c}
+\newcommand{\fmlComplexityCoefficient} {\lambda}
+\newcommand{\fmlLoss} {V}

@@ -2,5 +2,5 @@
 
 $$
 \Huge
-\mathbb{Y} = \{ -1, 1 \}
+\fmlOutputField = \hsh{ -1, 1 }
 $$

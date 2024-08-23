@@ -11,4 +11,4 @@ aliases:
 Significa che essi sono tutti [[vettore normalizzato|normalizzati]] e [[perpendicolarità|perpendicolari]] tra loro.
 
 > [!Note]
-> Essendo perpendicolari, il loro [[prodotto scalare]] sarà sempre $0$!
+> Essendo perpendicolari, il loro [[prodotto scalare matriciale tra vettori]] sarà sempre $0$!

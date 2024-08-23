@@ -3,7 +3,12 @@ aliases:
   - trasformazione identità
 ---
 
-Particolare [[matrice quadrata]] avente [[elemento neutro|elementi neutri]] della [[moltiplicazione]] sulla [[diagonale principale]], ed [[elemento nullo|elementi nulli]] della [[moltiplicazione]] altrove.
+Particolare [[matrice quadrata]].
+$$
+\Huge \mathbf{I}
+$$
+
+Ha [[elemento neutro|elementi neutri]] della [[moltiplicazione]] sulla [[diagonale principale]], ed [[elemento nullo|elementi nulli]] della [[moltiplicazione]] altrove.
 
 $$
 \Large

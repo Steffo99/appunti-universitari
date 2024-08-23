@@ -1,18 +1,22 @@
 
-| Simbolo        | Significato                                                |
-| -------------- | ---------------------------------------------------------- |
-| $D$            | [[data set per supervised learning]]                                               |
-| $\mathbf{x}$   | [[array]] di [[array\|vettori]] degli [[input]] di $D$     |
-| $N$            | [[cardinalità di un insieme\|cardinalità]] di $\mathbf{X}$ |
-| $\mathbf{x}_i$ | $i$-esimo [[array]] di $\mathbf{x}$                        |
-| $i$            | [[indice]] di $\mathbf{x}$ da $1$ a $N$                    |
-| $\mathbb{X}^N$ | [[campo matematico]] di $\mathbf{x}_i$                     |
-| $x_{ij}$       | $j$-esimo [[scalare]] di $\mathbf{x}_i$                    |
-| $j$            | [[indice]] di $\mathbf{x}_i$                               |
-| $\mathbb{X}$   | [[campo matematico]] di $x_{ij}$                           |
-| $y$            | [[scalare]] di [[output]] di $D$                           |
-| $\mathbb{Y}$   | [[campo matematico]] di $y$                                |
-| $f$            | [[classificatore]]                                         |
-| $\mathcal{H}$  | [[spazio delle ipotesi]]                                   |
-| $\lambda$      | [[parametro]] che configura la [[complessità del modello]] |
-| $f^*$          | [[modello di supervised learning]]                         |
+|                     Simbolo | Significato                                                      |
+| --------------------------: | ---------------------------------------------------------------- |
+|               $\fmlDataset$ | [[data set per supervised learning]]                             |
+|           $\fmlDatasetSize$ | [[cardinalità]] di $\fmlDataset$                                 |
+|                $\fmlInputs$ | [[array]] di [[array\|vettori]] degli [[input]] di $\fmlDataset$ |
+|                 $\fmlIndex$ | [[indice]] da $1$ a $\                                           |
+|                 $\fmlInput$ | $\fmlIndex$-esimo [[array]] di $\fmlInputs$                      |
+|             $\fmlInputSize$ | [[cardinalità di un insieme\|cardinalità]] di $\fmlInput$        |
+|            $\fmlInputField$ | [[campo matematico]] di $\fmlInput$                              |
+|          $\fmlElementIndex$ | [[indice]] di $\fmlInput$                                        |
+|          $\fmlInputElement$ | $\fmlElementIndex$-esimo [[scalare]] di $\fmlInput$              |
+|     $\fmlInputElementField$ | [[campo matematico]] di $\fmlInputElement$                       |
+|               $\fmlOutputs$ | [[array]] degli [[output]] di $\fmlDataset$                      |
+|                $\fmlOutput$ | $\fmlIndex$-esimo [[scalare]] di $\fmlOutputs$                   |
+|           $\fmlOutputField$ | [[campo matematico]] di $\fmlOutput$                             |
+|            $\fmlClassifier$ | [[classificatore]]                                               |
+|                 $\fmlModel$ | [[modello di supervised learning]]                               |
+|       $\fmlHypothesisSpace$ | [[spazio delle ipotesi]]                                         |
+|            $\fmlComplexity$ | [[complessità]]                                                  |
+| $\fmlComplexityCoefficient$ | [[coefficiente di complessità]]                                  |
+|                  $\fmlLoss$ | [[perdita]]                                                      |

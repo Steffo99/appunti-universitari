@@ -2,5 +2,5 @@
 
 $$
 \Huge
-\mathbb{Y} = \{ 1, 2, \dots, N \}
+\fmlOutputField = \hsh{ 1, 2, \dots, N }
 $$
