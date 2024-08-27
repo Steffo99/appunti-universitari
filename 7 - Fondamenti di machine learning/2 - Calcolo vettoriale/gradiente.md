@@ -1,7 +1,7 @@
 [[vettore colonna]].
 $$
 \Huge
-\derivativeGradient
+\derivativeGradientSimple{x}
 $$
 
 Contiene le [[derivata parziale|derivate parziali]] per tutti gli elementi della [[base canonica]].

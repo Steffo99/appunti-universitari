@@ -6,6 +6,8 @@
 \newcommand{\basisCanon} {\mathbf{\hat{e}}}
 \newcommand{\basisCanonElement}[1][i] {\basisCanon_{#1}}
 
+\newcommand{\varietyAffine}[2][X] {\mathscr{#1}\par{#2}}
+
 \newcommand{\smol} {\epsilon}
 \newcommand{\derivativeDirectionalSimple}[3][f] {{#1}'\par{#2_0; #3}}
 \newcommand{\derivativeDirectional}[3][f] {\frac{d #1 \par{#2_0; #3}}{d \smol}}
@@ -13,7 +15,7 @@
 \newcommand{\derivativePartialOutput}[4][f] {\frac{\partial #1_{#3} \par{#2_0}}{\partial x_{#4}}}
 \newcommand{\derivativeGradientSimple}[2][f] {\nabla_{#1} \par{#2_0}}
 \newcommand{\continueField}[1][1] {\mathcal{C}^{#1}}
-\newcommand{\hessianSimple}[2][f] {\mathbf{\nabla}^2_{#1} \par{#2}}
+\newcommand{\hessianSimple}[2][f] {\mathbf{\nabla}^2_{#1} \par{#2_0}}
 \newcommand{\hessianElement}[4][f] {\frac{\partial^2 #1 \par{#2}}{\partial #2_{#3}\ \cdot\ \partial #2_{#4}}}
 \newcommand{\iacobianSimple}[2][f] {\mathbf{J}_{#1} \par{#2}}
 
@@ -25,7 +27,7 @@
 \newcommand{\fmlInputs} {\mathbf{X}}
 \newcommand{\fmlIndex} {i}
 \newcommand{\fmlInput}[1][\fmlIndex] {\mathbf{x}_{#1}}
-\newcommand{\fmlInputSize} {N}
+\newcommand{\fmlInputSize} {n}
 \newcommand{\fmlInputField}[1][\fmlInputSize] {\mathbb{X}^{#1}}
 \newcommand{\fmlElementIndex} {j}
 \newcommand{\fmlInputElement}[1][\fmlIndex\fmlElementIndex] {x_{#1}}

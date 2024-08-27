@@ -8,7 +8,7 @@ $$
 \hessianSimple{x}
 $$
 
-I suoi elementi sono definiti come le $(riga,colonna)$-esime [[derivata parziale|derivate parziali]] della funzione $f$:
+I suoi elementi sono definiti come le $(riga,colonna)$-esime [[derivata parziale|derivate parziali]] della [[funzione]] $f$:
 $$
 \Large
 \hessianSimple{x}
