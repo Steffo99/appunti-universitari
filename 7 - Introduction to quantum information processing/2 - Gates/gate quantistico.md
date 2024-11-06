@@ -9,7 +9,7 @@ aliases:
 
 ## Visualizzazioni
 
-### [[Circuito quantistico]]
+### [[circuito quantistico]]
 
 Un gate quantistico è rappresentato in un circuito quantistico come un quadrato con scritto dentro il nome del gate, da cui entra l'input a sinistra ed esce l'output a destra.
 

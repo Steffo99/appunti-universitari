@@ -1,4 +1,5 @@
 [[gate quantistico universale]] che opera condizionalmente su un [[qbit]] in base allo stato di un altro [[qbit]], in modo simile a un [[controlled Pauli X gate]]:
+
 $$
 \def \varX {{\color{coral} a}}
 \def \varY {{\color{cornflowerblue} b}}
@@ -15,3 +16,5 @@ $$
 	- e^{\varI \varZ} \sin \left( \frac{\varX}{2} \right)
 \end{bmatrix}
 $$
+
+==Deutsch gate?==

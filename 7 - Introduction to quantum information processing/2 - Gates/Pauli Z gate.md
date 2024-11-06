@@ -38,4 +38,4 @@ Un quadrato con una Z sopra.
 
 ### Nella [[sfera di Bloch]]
 
-Corrisponde a una [[rotazione]] sull'[[asse Z]], quello dal basso all'alto.
+Corrisponde a una [[rotazione]] di $\pi$ sull'[[asse Z]], quello dal basso all'alto.

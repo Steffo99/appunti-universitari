@@ -20,4 +20,4 @@ Un quadrato con una Y sopra.
 
 ### Nella [[sfera di Bloch]]
 
-Corrisponde a una [[rotazione]] sull'[[asse Y]], quello da dentro a fuori.
+Corrisponde a una [[rotazione]] di $\pi$ sull'[[asse Y]], quello da dentro a fuori.

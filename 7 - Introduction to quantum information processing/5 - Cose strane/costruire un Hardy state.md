@@ -42,7 +42,7 @@ $$
 $$
 
 > [!Note]
-> I [[gate quantistico controllato universale|gate controllati]] costano di più dei [[gate quantistico universale|gate normali]], quindi per minimizzare il costo del [[circuito quantistico]] si:
+> I [[universal gate|gate controllati]] costano di più dei [[gate quantistico universale|gate normali]], quindi per minimizzare il costo del [[circuito quantistico]] si:
 > 1. $\ufirst$: utilizza un gate normale per configurare lo stato di $\noteb$
 > 2. $\usecond$: utilizza un gate normale per configurare lo stato di $\notea$ quando $\ket{0}_\noteb$
 > 3. $\uthird$: utilizza un gate controllato per annullare le modifiche del passo precedente e inoltre configurare lo stato di $\notea$ quando $\ket{1}_\noteb$.
@@ -348,7 +348,7 @@ $$
 
 ## Costruzione di $\uthird$
 
-Infine, vogliamo costruire il [[gate quantistico controllato universale]] $\uthird$ da applicare al [[qbit]] $\notea$.
+Infine, vogliamo costruire il [[universal gate]] $\uthird$ da applicare al [[qbit]] $\notea$.
 
 Ci troviamo nello stato configurato dal gate $\usecond$ per $\ket{0}_\noteb$:
 $$

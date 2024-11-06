@@ -44,4 +44,4 @@ Un quadrato con una X sopra, oppure occasionalmente un cerchio con una X sopra.
 
 ### Nella [[sfera di Bloch]]
 
-Corrisponde a una [[rotazione]] sull'[[asse X]], quello da sinistra a destra.
+Corrisponde a una [[rotazione]] di $\pi$ sull'[[asse X]], quello da sinistra a destra.

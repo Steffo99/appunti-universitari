@@ -19,7 +19,8 @@
 		{"id":"6760e1a2e3bc62b5","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/prodotto tensoriale.md","x":1600,"y":1440,"width":400,"height":400},
 		{"id":"1ec8b31da5bdc6ea","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/entanglement.md","x":480,"y":320,"width":400,"height":400},
 		{"id":"2b4e8e28d1158ebf","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/ampiezza.md","x":760,"y":-240,"width":400,"height":400},
-		{"id":"8435c9fb83f437b9","x":-60,"y":1440,"width":400,"height":400,"type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/ortonormalità.md"}
+		{"id":"8435c9fb83f437b9","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/ortonormalità.md","x":-60,"y":1440,"width":400,"height":400},
+		{"id":"34a7a76adedaea15","type":"file","file":"7 - Introduction to quantum information processing/1 - Concetti base/qbit e quaternioni.md","x":-620,"y":880,"width":400,"height":400,"color":"5"}
 	],
 	"edges":[
 		{"id":"cc2c8485866dcdfc","fromNode":"bf8486f1d14fd86c","fromSide":"right","toNode":"e4fea56f5f076093","toSide":"left"},
@@ -42,6 +43,7 @@
 		{"id":"ec9f111aba5531ae","fromNode":"8f83a29609c7b25b","fromSide":"bottom","toNode":"93c57c42392b8135","toSide":"left"},
 		{"id":"bece9be7dae04b58","fromNode":"e4fea56f5f076093","fromSide":"right","toNode":"2b4e8e28d1158ebf","toSide":"left"},
 		{"id":"eefb382410147aa8","fromNode":"e4fea56f5f076093","fromSide":"right","toNode":"1ec8b31da5bdc6ea","toSide":"top"},
-		{"id":"d2e360e3d510d823","fromNode":"8f83a29609c7b25b","fromSide":"bottom","toNode":"8435c9fb83f437b9","toSide":"top"}
+		{"id":"d2e360e3d510d823","fromNode":"8f83a29609c7b25b","fromSide":"bottom","toNode":"8435c9fb83f437b9","toSide":"top"},
+		{"id":"a580244be2f32d56","fromNode":"8f83a29609c7b25b","fromSide":"left","toNode":"34a7a76adedaea15","toSide":"right","color":"5"}
 	]
 }
