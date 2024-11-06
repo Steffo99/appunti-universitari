@@ -6,38 +6,46 @@ Particolare [[matrice]] definita relativa a una [[funzione]] i cui [[output]] so
 
 $$
 \Huge
-\iacobianSimple{x}
+\iacobianOf{\mathbf{x}}
 $$
 
-==Controllare che sia giusto.== I suoi elementi sono definiti come le $colonna$-esime [[derivata parziale|derivate parziali]] della funzione $f$ rispetto all'elemento $riga$-esimo in output:
+Corrisponde alla [[trasposta]] del [[vettore riga]] risultante come [[gradiente]] di $\mathrm{f}(x)$:
 $$
 \Large
-\iacobianSimple{x}
+\iacobianOf{x} 
+= 
+\gradientOf{x}
 =
 \begin{bmatrix}
-	\derivativePartialOutput{x}{1}{1} &
-	\derivativePartialOutput{x}{1}{2} &
+	\gradientOf[\mathrm{f}_1]{x} &
+	\gradientOf[\mathrm{f}_2]{x} &
 	\dots &
-	\derivativePartialOutput{x}{1}{n} \\
-	\derivativePartialOutput{x}{2}{1} &
-	\derivativePartialOutput{x}{2}{2} &
+	\gradientOf[\mathrm{f}_M]{x}
+\end{bmatrix}
+$$
+
+I suoi elementi sono definiti come le $colonna$-esime [[derivata parziale|derivate parziali]] della funzione $f$ rispetto all'elemento $riga$-esimo in output:
+$$
+\Large
+\iacobianOf{x}
+=
+\begin{bmatrix}
+	\iacobianElement{x}{1}{1} &
+	\iacobianElement{x}{1}{2} &
 	\dots &
-	\derivativePartialOutput{x}{2}{n} \\
+	\iacobianElement{x}{1}{n} \\
+	\iacobianElement{x}{2}{1} &
+	\iacobianElement{x}{2}{2} &
+	\dots &
+	\iacobianElement{x}{2}{n} \\
 	\vdots &
 	\vdots &
 	\ddots &
 	\vdots \\
-	\derivativePartialOutput{x}{M}{1} &
-	\derivativePartialOutput{x}{M}{2} &
+	\iacobianElement{x}{M}{1} &
+	\iacobianElement{x}{M}{2} &
 	\dots &
-	\derivativePartialOutput{x}{M}{n} \\
+	\iacobianElement{x}{M}{n} \\
 \end{bmatrix}
 $$
 
-In particolare, abbiamo che:
-$$
-\Large
-\iacobianSimple{x}
-= 
-\derivativeGradientSimple{x}'
-$$

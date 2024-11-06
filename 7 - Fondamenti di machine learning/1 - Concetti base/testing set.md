@@ -3,7 +3,7 @@ aliases:
   - test set
 ---
 
-[[data set per supervised learning]] usato per [[benchmarking]] in un [[problema di supervised learning]].
+[[dataset per supervised learning]] usato per [[benchmarking]] in un [[problema di supervised learning]].
 $$
 \Huge 
 \fmlDatasetTest

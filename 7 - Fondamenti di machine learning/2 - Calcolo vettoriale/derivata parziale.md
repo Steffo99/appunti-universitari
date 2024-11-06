@@ -1,13 +1,19 @@
 Particolare [[derivabilità direzionale|derivata direzionale]].
 $$
 \Huge
-\derivativePartial{x}{\fmlElementIndex}
+\derivativePartial
+	{\mathbf{x}}
+	{\fmlInputElementIndex}
 $$
 
 È determinata rispetto a uno specifico [[array|vettore]] della [[base canonica]]:
 $$
 \Large
-\derivativePartial{x}{\color{cyan} \fmlElementIndex}
+\derivativePartial
+	{x}
+	{\color{cyan} \fmlInputElementIndex}
 =
-\derivativeDirectional{x}{\basisCanonElement[\color{cyan} \fmlElementIndex]}
+\derivativeDirectional
+	{x}
+	{\basisCanonElement{\color{cyan} \fmlInputElementIndex}}
 $$

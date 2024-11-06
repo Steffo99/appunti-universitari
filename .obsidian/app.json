@@ -13,5 +13,6 @@
   "showUnsupportedFiles": true,
   "newLinkFormat": "shortest",
   "trashOption": "system",
-  "promptDelete": false
+  "promptDelete": false,
+  "readableLineLength": true
 }

@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"ebcbe217d83e0e9f","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/varietà affine reale.md","x":-480,"y":-480,"width":400,"height":400},
+		{"id":"ebcbe217d83e0e9f","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/varietà affine.md","x":-640,"y":-480,"width":720,"height":400},
 		{"id":"fdb6fa9ce7c20562","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/derivata direzionale unilaterale.md","x":-640,"y":80,"width":720,"height":400},
 		{"id":"521f5249b09e89c0","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/derivabilità direzionale.md","x":-640,"y":640,"width":720,"height":400},
 		{"id":"f48d08c563e4ddd8","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/derivata parziale.md","x":-640,"y":1200,"width":720,"height":400},
@@ -8,7 +8,7 @@
 		{"id":"2144c3dd20108bba","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/differenziabilità.md","x":-640,"y":2320,"width":720,"height":400},
 		{"id":"cc7adce67dbf5e26","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/regolarità.md","x":-640,"y":2880,"width":720,"height":400},
 		{"id":"9a420d351662d679","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/matrice Hessiana.md","x":240,"y":2880,"width":720,"height":400},
-		{"id":"aa4aa530cb8f448e","x":240,"y":2320,"width":720,"height":400,"type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/matrice Iacobiana.md"}
+		{"id":"aa4aa530cb8f448e","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/matrice Iacobiana.md","x":240,"y":2320,"width":720,"height":400}
 	],
 	"edges":[
 		{"id":"7961409b3e9f8878","fromNode":"ebcbe217d83e0e9f","fromSide":"bottom","toNode":"fdb6fa9ce7c20562","toSide":"top"},

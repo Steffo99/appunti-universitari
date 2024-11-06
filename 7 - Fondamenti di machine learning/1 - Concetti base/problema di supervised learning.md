@@ -1,33 +1,16 @@
 [[problema di minimizzazione]].
 
-Si vuole determinare un [[classificatore]] che minimizzi una [[perdita|funzione perdita]] e una [[complessità]].
+Si vuole determinare un [[classificatore]] che minimizzi una certa [[perdita|funzione perdita]] e una certa [[complessità]].
 
-$$
-\Large
-\fmlModel 
-=
-\min_{\fmlClassifier \in \fmlHypothesisSpace}
-\par{
-	\sum_{i=1}^N
-	\fmlLoss(\fmlOutput, \fmlClassifier(\fmlInput))
-	+
-	\par{
-		\fmlComplexityCoefficient
-		\cdot
-		\fmlComplexity(\fmlClassifier)
-	}
-}
-$$
-
-Per scegliere il modello, vengono usati [[campione|campioni]] di coppie [[input]]-[[output]] conosciute, detti [[data set per supervised learning|data set]].
+A tale scopo, si crea un [[modello di supervised learning]], al quale vengono dati in input usati [[campione|campioni]] di coppie [[input]]-[[output]] conosciute, detti [[dataset per supervised learning|data set]].
 
 $$
 \Large
 \fmlDataset \in (\fmlInputField, \fmlOutputField)^{\fmlDatasetSize} 
 $$
 
-Il [[campo matematico]] di tutti i modelli possibili è detto [[spazio delle ipotesi]].
+Il [[campo matematico]] di tutti i classificatori ammissibili è detto [[spazio delle ipotesi]].
 $$
 \Large
-f \in \fmlHypothesisSpace
+\fmlClassifier \in \fmlHypothesisSpace
 $$

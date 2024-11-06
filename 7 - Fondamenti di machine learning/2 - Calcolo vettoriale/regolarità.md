@@ -10,7 +10,7 @@ aliases:
 [[proprietà]] di una [[funzione]], che generalizza la [[differenziabilità]].
 $$
 \Huge
-f \in \continueField
+f \in \continueField{1}
 $$
 
 Una funzione ha questa proprietà quando:
@@ -22,8 +22,8 @@ Se anche la [[derivata parziale]] della funzione è una [[regolarità|regolare]]
 $$
 \Large
 \displaylines{
-	f' \in \continueField \\
-	f \in \continueField[2]
+	f^{(1)} \in \continueField{1} \\
+	f \in \continueField{2}
 }
 $$
 
@@ -31,7 +31,7 @@ Generalizzando ulteriormente:
 $$
 \Large
 \displaylines{
-	f^{(n)} \in \continueField \\
-	f \in \continueField[n]
+	f^{(z)} \in \continueField{1} \\
+	f \in \continueField{z}
 }
 $$

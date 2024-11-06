@@ -2,5 +2,5 @@
 
 $$
 \Huge
-\fmlOutputField = \hsh{ -1, 1 }
+\fmlOutputField = \set{ -1, 1 }
 $$

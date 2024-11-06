@@ -1,6 +1,7 @@
 ---
 aliases:
   - data set
+  - dataset
 ---
 [[insieme]] di [[coppie]] [[input]]-[[output]] per un [[modello di supervised learning]].
 $$

@@ -14,6 +14,11 @@
       "id": "fc3lLaITDn62PYbzBhqxl",
       "name": "To do",
       "value": "#d7a628"
+    },
+    {
+      "id": "e_YcdvxbhfDN77-giOday",
+      "name": "Extra",
+      "value": "#53dfdd"
     }
   ],
   "fileColors": [
@@ -382,7 +387,7 @@
       "color": "me4XBNQC4rwzQFLlvIAn0"
     },
     {
-      "path": "7 - Introduction to quantum information processing/2 - Gates semplici/★ gates semplici.canvas",
+      "path": "7 - Introduction to quantum information processing/2 - Gates/★ gates.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
@@ -440,10 +445,6 @@
     {
       "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/18 - Corso_QIP___Lesson_9__2022_.pdf",
       "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Introduction to quantum information processing/3 - Gates complessi/★ gates complessi.canvas",
-      "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
       "path": "7 - Introduction to quantum information processing/4 - Modello computazionale/★ modello computazionale.canvas",
@@ -602,20 +603,44 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/matrice Iacobiana.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/derivata direzionale unilaterale.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/varietà affine reale.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/★ calcolo vettoriale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/varietà affine.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/1 - Concetti base/qbit e quaternioni.md",
+      "color": "e_YcdvxbhfDN77-giOday"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/XX - Synthesis of Quantum Logic Circuits.pdf",
+      "color": "e_YcdvxbhfDN77-giOday"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/2 - Gates/X-axis rotation gate.md",
+      "color": "e_YcdvxbhfDN77-giOday"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/2 - Gates/Y-axis rotation gate.md",
+      "color": "e_YcdvxbhfDN77-giOday"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/2 - Gates/Z-axis rotation gate.md",
+      "color": "e_YcdvxbhfDN77-giOday"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/2 - Gates/circuito quantistico.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/2 - Gates/Pauli Y gate.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/2 - Gates/universal gate.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
     }
   ]
 }

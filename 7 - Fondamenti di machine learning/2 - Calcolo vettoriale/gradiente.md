@@ -1,20 +1,28 @@
 [[vettore colonna]].
 $$
 \Huge
-\derivativeGradientSimple{x}
+\gradientOf{\mathbf{x}}
 $$
 
 Contiene le [[derivata parziale|derivate parziali]] per tutti gli elementi della [[base canonica]].
 
 $$
 \Large
-\derivativeGradientSimple{x}
+\gradientOf{\mathbf{x}}
 =
 \begin{bmatrix}
-	\derivativePartial{x}{1}\\
-	\derivativePartial{x}{2}\\
-	\derivativePartial{x}{3}\\
+	\derivativePartial
+		{x}
+		{1}\\
+	\derivativePartial
+		{x}
+		{2}\\
+	\derivativePartial
+		{x}
+		{3}\\
 	\vdots\\
-	\derivativePartial{x}{\fmlInputSize}\\
+	\derivativePartial
+		{x}
+		{\fmlInputSize}\\
 \end{bmatrix}
 $$

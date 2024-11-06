@@ -12,5 +12,8 @@ Misura quanto si allontana il [[classificatore]] dal risultato desiderato.
 
 $$
 \Large
-\fmlLoss(\fmlOutput, \fmlClassifier(\fmlInput))
+\fmlLoss \par{
+	\fmlOutput,\ 
+	\fmlClassifier (\fmlInput{\fmlDatasetIndex})
+}
 $$

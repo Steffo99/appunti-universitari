@@ -16,12 +16,16 @@ $$
 =
 \min_{\fmlClassifier \in \fmlHypothesisSpace}
 \ 
-\sum_{(\fmlInput,\ \fmlOutput) \in D}
+\sum_{(\fmlInput{\fmlDatasetIndex},\ \fmlOutput{\fmlDatasetIndex}) \in D}
 	\par{
-		V(\fmlOutput, \fmlClassifier(\fmlInput)))
+		\fmlLoss \par{
+			\fmlOutput{\fmlDatasetIndex},\ \fmlClassifier(\fmlInput{\fmlDatasetIndex})
+		}
 		+
-		\fmlComplexity
-		\cdot
-		\abs{f}^2
+		\par{
+			\fmlComplexityCoefficient
+			\cdot
+			\abs{\fmlClassifier}^2
+		}
 	}
 $$

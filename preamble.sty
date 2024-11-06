@@ -1,43 +1,230 @@
-\newcommand{\par}[1] {\left({#1}\right)}
-\newcommand{\arr}[1] {\left[{#1}\right]}
-\newcommand{\hsh}[1] {\left\{{#1}\right\}}
-\newcommand{\abs}[1] {\left|{#1}\right|}
+% Parentesi tonde
+\newcommand{\par}[1] {
+	\left({#1}\right)
+}
 
-\newcommand{\basisCanon} {\mathbf{\hat{e}}}
-\newcommand{\basisCanonElement}[1][i] {\basisCanon_{#1}}
+% Parentesi quadre; liste
+\newcommand{\arr}[1] {
+	\left[{#1}\right]
+}
 
-\newcommand{\varietyAffine}[2][X] {\mathscr{#1}\par{#2}}
+% Parentesi verticali; norme
+\newcommand{\abs}[1] {
+	\left|{#1}\right|
+}
 
-\newcommand{\smol} {\epsilon}
-\newcommand{\derivativeDirectionalSimple}[3][f] {{#1}'\par{#2_0; #3}}
-\newcommand{\derivativeDirectional}[3][f] {\frac{d #1 \par{#2_0; #3}}{d \smol}}
-\newcommand{\derivativePartial}[3][f] {\frac{\partial #1 \par{#2_0}}{\partial x_{#3}}}
-\newcommand{\derivativePartialOutput}[4][f] {\frac{\partial #1_{#3} \par{#2_0}}{\partial x_{#4}}}
-\newcommand{\derivativeGradientSimple}[2][f] {\nabla_{#1} \par{#2_0}}
-\newcommand{\continueField}[1][1] {\mathcal{C}^{#1}}
-\newcommand{\hessianSimple}[2][f] {\mathbf{\nabla}^2_{#1} \par{#2_0}}
-\newcommand{\hessianElement}[4][f] {\frac{\partial^2 #1 \par{#2}}{\partial #2_{#3}\ \cdot\ \partial #2_{#4}}}
-\newcommand{\iacobianSimple}[2][f] {\mathbf{J}_{#1} \par{#2}}
+% Base canonica
+\newcommand{\basisCanon} {
+	\mathbf{\hat{e}}
+}
 
-\newcommand{\fmlDataset} {\mathbf{D}}
-\newcommand{\fmlDatasetSize} {P}
-\newcommand{\fmlDatasetTrain} {\fmlDataset_{train}}
-\newcommand{\fmlDatasetValidate} {\fmlDataset_{validate}}
-\newcommand{\fmlDatasetTest} {\fmlDataset_{test}}
-\newcommand{\fmlInputs} {\mathbf{X}}
-\newcommand{\fmlIndex} {i}
-\newcommand{\fmlInput}[1][\fmlIndex] {\mathbf{x}_{#1}}
-\newcommand{\fmlInputSize} {n}
-\newcommand{\fmlInputField}[1][\fmlInputSize] {\mathbb{X}^{#1}}
-\newcommand{\fmlElementIndex} {j}
-\newcommand{\fmlInputElement}[1][\fmlIndex\fmlElementIndex] {x_{#1}}
-\newcommand{\fmlInputElementField} {\mathbb{X}}
-\newcommand{\fmlOutputs} {\mathbf{y}}
-\newcommand{\fmlOutput}[1][\fmlIndex] {y_{#1}}
-\newcommand{\fmlOutputField} {\mathbb{Y}}
-\newcommand{\fmlClassifier} {f}
-\newcommand{\fmlModel} {\fmlClassifier^*}
-\newcommand{\fmlHypothesisSpace} {\mathcal{H}}
-\newcommand{\fmlComplexity} {c}
-\newcommand{\fmlComplexityCoefficient} {\lambda}
-\newcommand{\fmlLoss} {V}
+% Elemento della base canonica
+\newcommand{\basisCanonElement}[1] {
+	\basisCanon_{#1}
+}
+
+% Infinitesimo
+\newcommand{\smol} {
+	\epsilon
+}
+
+% Varietà affine
+\newcommand{\affineVariety}[2] {
+	{\mathbf{#1}} \par{#2}
+}
+
+% Derivata
+\newcommand{\derivative}[2] {
+	\frac
+		{\mathrm{d}\ {#1}}
+		{\mathrm{d}\ {#2}}
+}
+
+% Funzione che è stata derivata
+\newcommand{\derivativeOf}[2][\mathrm{f}] {
+	{#1}' \par{#2}
+}
+
+% Derivata direzionale
+\newcommand{\derivativeDirectional}[3][\mathrm{f}] {
+	\derivative
+		{{#1} \par{\mathbf{#2}; \mathbf{#3}}}
+		{\smol}
+}
+
+% Funzione che è stata derivata direzionalmente
+\newcommand{\derivativeDirectionalOf}[3][\mathrm{f}] {
+	\derivativeOf
+		[#1]
+		{\mathbf{#2};\ \mathbf{#3}}
+}
+
+% Derivata parziale
+\newcommand{\derivativePartial}[3][\mathrm{f}] {
+	\frac
+		{\mathrm{\partial}\ {#1} \par{\mathbf{#2}}}
+		{\mathrm{\partial}\ {#2}_{#3}}
+}
+
+% Funzione che è stata derivata parzialmente
+\newcommand{\derivativePartialOf}[3][\mathrm{f}] {
+	\derivativeDirectionalOf
+		[#1]
+		{#2}
+		{\basisCanonElement{#3}}
+}
+
+% Gradiente di una funzione
+\newcommand{\gradientOf}[2][\mathrm{f}] {
+	\mathbf{\nabla}_{#1} \par{\mathbf{#2}}
+}
+
+% Campo in cui le funzioni sono continue fino all'ordine #1
+\newcommand{\continueField}[1] {
+	\mathcal{C}^{#1}
+}
+
+% Hessiana di una funzione
+\newcommand{\hessianOf}[2][\mathrm{f}] {
+	\mathbf{\nabla}^{2}_{#1} \par{\mathbf{#2}}
+}
+
+% Elemento dell'Hessiana di una funzione
+\newcommand{\hessianElement}[4][\mathrm{f}] {
+	\par{
+		\derivativePartial
+			[#1] 
+			{#2}
+			{#3}
+		\cdot
+		\derivativePartial
+			[#1]
+			{#2}
+			{#4}
+	}
+}
+
+% Iacobiana di una funzione
+\newcommand{\iacobianOf}[2][\mathrm{f}] {
+	\mathbf{J}_{#1} \par{\mathbf{#2}}
+}
+
+% Elemento della Iacobiana di una funzione
+\newcommand{\iacobianElement}[4][\mathrm{f}] {
+	\par{
+		\derivativePartial
+			[{#1}_{#3}]
+			{#2}
+			{#4}
+	}
+}
+
+% Dataset
+\newcommand{\fmlDataset} {
+	\mathbf{D}
+}
+
+% Cardinalità del dataset
+\newcommand{\fmlDatasetSize} {
+	p
+}
+
+% Training set
+\newcommand{\fmlDatasetTrain} {
+	\fmlDataset_{train}
+}
+
+% Validation set
+\newcommand{\fmlDatasetValidate} {
+	\fmlDataset_{validate}
+}
+
+% Testing set
+\newcommand{\fmlDatasetTest} {
+	\fmlDataset_{test}
+}
+
+% Matrice degli input
+\newcommand{\fmlInputs} {
+	\mathbf{X}
+}
+
+% Indice campione della matrice degli input
+\newcommand{\fmlDatasetIndex} {
+	i
+}
+
+% Campione della matrice degli input
+\newcommand{\fmlInput}[1] {
+	\mathbf{x}_{#1}
+}
+
+% Cardinalità di un vettore di input
+\newcommand{\fmlInputSize} {
+	n
+}
+
+% Campo dei campioni della matrice degli input
+\newcommand{\fmlInputField}[1][\fmlInputSize] {
+	\mathbb{X}^{#1}
+}
+
+% Indice elemento di un campione di input
+\newcommand{\fmlInputElementIndex} {
+	j
+}
+
+% Elemento di un campione di input
+\newcommand{\fmlInputElement}[2] {
+	x_{{#1}{#2}}
+}
+
+% Campo di un elemento di un campione di input
+\newcommand{\fmlInputElementField} {
+	\mathbb{X}
+}
+
+% Vettore degli output
+\newcommand{\fmlOutputs} {
+	\mathbf{y}
+}
+
+% Elemento del vettore degli output
+\newcommand{\fmlOutput}[1] {
+	y_{#1}
+}
+
+% Campo del vettore degli output
+\newcommand{\fmlOutputField} {
+	\mathbb{Y}
+}
+
+% Classificatore
+\newcommand{\fmlClassifier}[1][f] {
+	\mathrm{#1}
+}
+
+% Modello
+\newcommand{\fmlModel}[1][f] {
+	\fmlClassifier[#1]^*
+}
+
+% Campo dei classificatori
+\newcommand{\fmlHypothesisSpace} {
+	\mathcal{H}
+}
+
+% Complessità
+\newcommand{\fmlComplexity} {
+	c
+}
+
+% Parametro di complessità della funzione perdita
+\newcommand{\fmlComplexityCoefficient} {
+	\lambda
+}
+
+% Funzione perdita
+\newcommand{\fmlLoss} {
+	\mathrm{V}
+}
