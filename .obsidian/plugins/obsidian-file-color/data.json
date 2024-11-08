@@ -18,6 +18,11 @@
     {
       "id": "e_YcdvxbhfDN77-giOday",
       "name": "Extra",
+      "value": "#a881ff"
+    },
+    {
+      "id": "Hxvedg7o3eD0ANkvmPHJJ",
+      "name": "Tip",
       "value": "#53dfdd"
     }
   ],
@@ -463,15 +468,7 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "7 - Introduction to quantum information processing/5 - Cose strane/costruire un Hardy state.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/04 - IntroQIP4.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Introduction to quantum information processing/5 - Cose strane/costruire un Hardy state, old.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
@@ -631,15 +628,27 @@
       "color": "e_YcdvxbhfDN77-giOday"
     },
     {
-      "path": "7 - Introduction to quantum information processing/2 - Gates/circuito quantistico.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "7 - Introduction to quantum information processing/2 - Gates/Pauli Y gate.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Introduction to quantum information processing/2 - Gates/universal gate.md",
+      "path": "7 - Introduction to quantum information processing/2 - Gates/universal controlled gate.md",
+      "color": "e_YcdvxbhfDN77-giOday"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/2 - Gates/visualizzare l'applicazione di un gate.md",
+      "color": "Hxvedg7o3eD0ANkvmPHJJ"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/1 - Concetti base/proiezione.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/1 - Concetti base/proiezione inversa.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/5 - Cose strane/costruire un Hardy state.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     }
   ]

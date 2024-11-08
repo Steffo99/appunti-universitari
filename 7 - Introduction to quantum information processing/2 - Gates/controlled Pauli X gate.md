@@ -4,7 +4,7 @@ aliases:
   - quantum controlled NOT gate
   - Feynman gate
 ---
-[[gate quantistico complesso]], un [[Pauli X gate]] che opera condizionalmente su un [[qbit]] in base allo stato di un altro [[qbit]]:
+[[gate quantistico complesso]], un [[Pauli X gate]] che opera [[controlled gate|condizionalmente]] su un [[qbit]] in base allo stato di un altro [[qbit]]:
 
 $$
 \Huge

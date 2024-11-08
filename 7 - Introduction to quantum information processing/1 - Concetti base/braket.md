@@ -24,6 +24,8 @@ $$
 \bra{10}_4 \cdot \ket{11}_4 = \braket{10|11}_4
 $$
 
-> [!Hint] Typesetting
+> [!Note] Typesetting
 > In $\TeX$, puoi rappresentare un braket con `\braket{SINISTRA|DESTRA}`.
 
+> [!Tip]
+> $\braket{10|\psi}$ può essere letto come "prendi il valore dello stato $\ket{10}$ di $\ket{\psi}$"!

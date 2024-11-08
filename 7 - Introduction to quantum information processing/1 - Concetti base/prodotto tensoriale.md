@@ -1,3 +1,10 @@
+---
+aliases:
+  - prodotto di Kronecker
+  - prodotto matriciale diretto
+---
+
+
 [[Operazione]] tra due [[matrice|matrici]] che risulta in una matrice più grande:
 $$
 \Huge \otimes
