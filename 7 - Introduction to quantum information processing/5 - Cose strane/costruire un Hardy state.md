@@ -525,7 +525,7 @@ $$
 \end{bmatrix}
 $$
 
-==Credo che quel $\sqrt{5}$ sia sbagliato...
+==Credo che quel $\sqrt{5}$ sia sbagliato...==
 
 Risolvendo il [[prodotto matriciale]]:
 $$
