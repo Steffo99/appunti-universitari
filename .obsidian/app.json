@@ -6,7 +6,7 @@
   "attachmentFolderPath": "./",
   "newFileLocation": "current",
   "strictLineBreaks": true,
-  "showLineNumber": true,
+  "showLineNumber": false,
   "spellcheckLanguages": null,
   "spellcheck": false,
   "autoConvertHtml": true,
