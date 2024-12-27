@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"6971e807b87ad493","x":-320,"y":-160,"width":400,"height":400,"type":"file","file":"7 - Introduction to quantum information processing/2 - Circuiti in serie/circuito quantistico.md"},
+		{"id":"0852851203d1ab99","x":80,"y":-160,"width":400,"height":400,"type":"file","file":"7 - Introduction to quantum information processing/3 - Circuiti in parallelo/circuito quantistico in parallelo.md"}
+	],
+	"edges":[]
+}
