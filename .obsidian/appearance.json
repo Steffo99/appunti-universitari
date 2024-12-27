@@ -1,6 +1,6 @@
 {
   "accentColor": "#d14224",
-  "textFontFamily": "",
+  "textFontFamily": "Noto Sans,Noto Color Emoji",
   "monospaceFontFamily": "",
   "theme": "system",
   "baseFontSize": 16,
