@@ -1,4 +1,4 @@
-[[Misura]] in un [[grafo]].
+[[operatore misura]] in un [[grafo]].
 
 Corrisponde alla [[lunghezza]] di ciascun [[percorso di un grafo]] tra due [[nodo di un grafo|nodi]].
 $$

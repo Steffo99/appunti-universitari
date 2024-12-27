@@ -1,4 +1,4 @@
-[[Misura]] in un [[grafo]].
+[[operatore misura]] in un [[grafo]].
 
 Il rapporto tra il numero di [[arco di un grafo|archi]] presenti e possibili nei nodi adiacenti, esclusi quelli diretti al nodo su cui si sta effettuando la misura.
 $$

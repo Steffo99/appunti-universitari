@@ -8,6 +8,6 @@ $$
 > [!EXAMPLE]
 > Se ti trovi nello [[stato di un'entità|stato]] `SLEEPING`, e ricevi un [[messaggio]] `"Hello!"`, rispondi con `"Hi!"`.
 
-È **[[determinismo|deterministico]]**: stessa coppia di [[evento]] e [[stato]] producono la stessa azione.
+È **[[determinismo|deterministico]]**: stessa coppia di [[evento]] e [[stato quantistico]] producono la stessa azione.
 
-È **[[completo]]**: ogni coppia di [[evento]] e [[stato]] deve avere un'azione definita.
+È **[[completo]]**: ogni coppia di [[evento]] e [[stato quantistico]] deve avere un'azione definita.

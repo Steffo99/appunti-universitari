@@ -1,4 +1,4 @@
-[[Misura]] di un [[grafo]].
+[[operatore misura]] di un [[grafo]].
 
 L'[[eccentricità di un nodo|eccentricità]] minima tra tutti i [[nodo di un grafo|nodi]].
 $$

@@ -1,5 +1,7 @@
 [
 	"[.](?!md|canvas).+$",
 	"0 - Materiale di studio/",
-	"0 - Piano di studi/"
+	"0 - Piano di studi/",
+	"0 - Emails/",
+	"10 - Tirocinio/"
 ]

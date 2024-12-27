@@ -1,4 +1,4 @@
-[[Misura]] in un [[grafo]].
+[[operatore misura]] in un [[grafo]].
 
 È la [[mediana]] della [[media]] delle [[distanza tra nodi di un grafo|distanze]] tra ogni nodo.
 $$

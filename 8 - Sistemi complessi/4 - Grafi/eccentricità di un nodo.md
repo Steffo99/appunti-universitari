@@ -1,4 +1,4 @@
-[[Misura]] in un [[grafo]] relativa a un nodo.
+[[operatore misura]] in un [[grafo]] relativa a un nodo.
 
 È il massimo delle distanze tra il nodo scelto e ogni altro nodo del grafo.
 

@@ -1,4 +1,4 @@
-Risposta di un'[[entità]] a un [[evento]], dipendente dall'[[evento]] stesso e dal suo [[stato]].
+Risposta di un'[[entità]] a un [[evento]], dipendente dall'[[evento]] stesso e dal suo [[stato quantistico]].
 
 Consiste in una sequenza di zero o più tra le seguenti operazioni:
 - [[computazione]]
