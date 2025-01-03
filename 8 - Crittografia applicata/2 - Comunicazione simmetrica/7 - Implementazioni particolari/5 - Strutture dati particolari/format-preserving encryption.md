@@ -2,9 +2,7 @@
 aliases: ["FPE"]
 ---
 
-# #Extra
-
-[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/problema]] di [[crittografia simmetrica moderna]] che vuole che il [[ciphertext]] abbia un formato compatibile con quello del [[plaintext]].
+[[problema]] di [[crittografia simmetrica moderna]] che vuole che il [[ciphertext]] abbia un formato compatibile con quello del [[plaintext]].
 
 ## Casi d'uso
 

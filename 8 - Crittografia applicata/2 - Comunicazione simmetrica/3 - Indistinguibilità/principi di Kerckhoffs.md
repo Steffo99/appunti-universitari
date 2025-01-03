@@ -1,5 +1,3 @@
-# #Extra 
-
 Principi (obsoleti) da cui nasce la [[crittografia simmetrica moderna]].
 
 > 1. Il sistema deve essere *praticamente*, se non *matematicamente*, indecifrabile.

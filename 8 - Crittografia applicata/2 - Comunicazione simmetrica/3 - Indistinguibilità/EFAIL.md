@@ -1,4 +1,4 @@
-#Extra [[padding oracle attack]] ai protocolli [[S/MIMe]] e [[OpenPGP]] utilizzati nelle email.
+[[padding oracle attack]] ai protocolli [[S/MIMe]] e [[OpenPGP]] utilizzati nelle email.
 
 ## Vedi anche
 

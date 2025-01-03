@@ -16,4 +16,4 @@ Ha le seguenti caratteristiche:
 
 ## Vedi anche
 
-- #Extra [**ConwayLife Wiki**](https://conwaylife.com/wiki/Main_Page)
+- [**ConwayLife Wiki**](https://conwaylife.com/wiki/Main_Page)

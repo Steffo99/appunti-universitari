@@ -4,7 +4,7 @@ aliases: ["module test", "white box test"]
 
 [[test]] che verifica il corretto funzionamento di una piccola parte (*unità*) di codice, conoscendo come essa si comporta internamente (*a scatola aperta* o *bianca*).
 
-#Extra In linguaggi con elementi a [[visibilità]] variabile, solitamente gli unit test possono accedere agli [[elemento protetto|elementi protetti]] e [[elemento pubblico|pubblici]].
+In linguaggi con elementi a [[visibilità]] variabile, solitamente gli unit test possono accedere agli [[elemento protetto|elementi protetti]] e [[elemento pubblico|pubblici]].
 
 ## Esempio
 

@@ -38,6 +38,6 @@ fn func(data: [u8; 128]) -> bool {
 ```
 
 
-## #Extra Relazioni con altri concetti
+## Relazioni con altri concetti
 
 È l'inverso del [[fattore di compressione]] di un'[[informazione]]: più entropia essa ha, meno è possibile comprimerla.

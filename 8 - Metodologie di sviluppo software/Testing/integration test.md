@@ -4,7 +4,7 @@ aliases: ["sub-system test", "system test", "black box test"]
 
 [[test]] che verifica la corretta connessione (*integrazione*) tra più parti di codice, senza conoscere come esse si comportano internamente (*a scatola chiusa* o *nera*).
 
-#Extra In linguaggi con elementi a [[visibilità]] variabile, solitamente gli integration test possono accedere soltanto agli [[elemento pubblico|elementi pubblici]].
+In linguaggi con elementi a [[visibilità]] variabile, solitamente gli integration test possono accedere soltanto agli [[elemento pubblico|elementi pubblici]].
 
 ## Esempio
 

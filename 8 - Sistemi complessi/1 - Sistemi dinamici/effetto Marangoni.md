@@ -11,4 +11,4 @@ Cambiamenti di [[tensione superficiale]] in un [[fluido]] portano particelle all
 
 ## Vedi anche
 
-- #Extra [Wikipedia EN: **Marangoni effect**](https://en.wikipedia.org/wiki/Marangoni_effect)
+- [Wikipedia EN: **Marangoni effect**](https://en.wikipedia.org/wiki/Marangoni_effect)

@@ -4,6 +4,6 @@
 
 Sviluppato da [[Google]], disponibile nel [[kernel Linux]].
 
-## #Extra Vedi anche
+## Vedi anche
 
 - International Association for Cryptologic Research: **[Length-preserving encryption with HCTR2](https://eprint.iacr.org/2021/1441)**

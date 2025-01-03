@@ -1,9 +1,6 @@
 ---
 aliases: ["MHT"]
 ---
-
-# #Extra
-
 Struttura dati ad [[albero]] che include in ciascun nodo l'[[hash]] di tutto il ramo sottostante.
 
 ## Utilizzi

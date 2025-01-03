@@ -1,5 +1,3 @@
-# #Extra
-
 [[attacco]] in cui l'[[avversario]] presenta allo [[sfidante]] [[punto|punti]] non appartenenti alla [[curva ellittica]] scelta.
 
 ## Prevenzione

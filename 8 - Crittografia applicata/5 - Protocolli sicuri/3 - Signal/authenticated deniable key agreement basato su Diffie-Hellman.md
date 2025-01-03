@@ -2,5 +2,5 @@
 
 ## Funzionamento
 
-#TODO: Non riesco a capire dalla figura!
+==Non riesco a capire dalla figura!==
 

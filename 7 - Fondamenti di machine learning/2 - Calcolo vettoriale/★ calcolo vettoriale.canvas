@@ -1,5 +1,7 @@
 {
 	"nodes":[
+		{"id":"5aed62f73ae8cb1f","x":220,"y":1180,"width":760,"height":1000,"type":"group","label":"Singolo output"},
+		{"id":"01887909b11c5e5b","x":1100,"y":1180,"width":760,"height":1000,"type":"group","label":"Più output"},
 		{"id":"ebcbe217d83e0e9f","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/varietà affine.md","x":-640,"y":-480,"width":720,"height":400},
 		{"id":"fdb6fa9ce7c20562","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/derivata direzionale unilaterale.md","x":-640,"y":80,"width":720,"height":400},
 		{"id":"521f5249b09e89c0","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/derivabilità direzionale.md","x":-640,"y":640,"width":720,"height":400},
@@ -7,8 +9,11 @@
 		{"id":"1adbd5228bf71c44","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/differenziabilità in un punto.md","x":-640,"y":1760,"width":720,"height":400},
 		{"id":"2144c3dd20108bba","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/differenziabilità.md","x":-640,"y":2320,"width":720,"height":400},
 		{"id":"cc7adce67dbf5e26","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/regolarità.md","x":-640,"y":2880,"width":720,"height":400},
-		{"id":"9a420d351662d679","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/matrice Hessiana.md","x":240,"y":2880,"width":720,"height":400},
-		{"id":"aa4aa530cb8f448e","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/matrice Iacobiana.md","x":240,"y":2320,"width":720,"height":400}
+		{"id":"260fa8ea83c18bc6","x":240,"y":1200,"width":720,"height":400,"type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/gradiente.md"},
+		{"id":"1de16b1d32a103d7","x":1120,"y":1200,"width":720,"height":400,"type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/matrice Iacobiana.md"},
+		{"id":"b686d34fc15d70ef","x":240,"y":1760,"width":720,"height":400,"type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/matrice Hessiana.md"},
+		{"id":"2e90bb46bac0ce87","x":240,"y":80,"width":720,"height":400,"type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/curva di livello.md"},
+		{"id":"f1ad96d2617b95bb","x":240,"y":640,"width":720,"height":400,"type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/insieme di livello.md"}
 	],
 	"edges":[
 		{"id":"7961409b3e9f8878","fromNode":"ebcbe217d83e0e9f","fromSide":"bottom","toNode":"fdb6fa9ce7c20562","toSide":"top"},
@@ -17,7 +22,9 @@
 		{"id":"0fe19a4c7bbab335","fromNode":"f48d08c563e4ddd8","fromSide":"bottom","toNode":"1adbd5228bf71c44","toSide":"top"},
 		{"id":"a31a91b75813fda5","fromNode":"1adbd5228bf71c44","fromSide":"bottom","toNode":"2144c3dd20108bba","toSide":"top"},
 		{"id":"ef2da580dda50c9d","fromNode":"2144c3dd20108bba","fromSide":"bottom","toNode":"cc7adce67dbf5e26","toSide":"top"},
-		{"id":"9c70a974dc271668","fromNode":"cc7adce67dbf5e26","fromSide":"right","toNode":"9a420d351662d679","toSide":"left"},
-		{"id":"49e22c6690709299","fromNode":"2144c3dd20108bba","fromSide":"right","toNode":"aa4aa530cb8f448e","toSide":"left"}
+		{"id":"234244c1fb229eb0","fromNode":"f48d08c563e4ddd8","fromSide":"right","toNode":"260fa8ea83c18bc6","toSide":"left"},
+		{"id":"03fc84eaa5deccff","fromNode":"260fa8ea83c18bc6","fromSide":"right","toNode":"1de16b1d32a103d7","toSide":"left"},
+		{"id":"573badc909cf89cf","fromNode":"260fa8ea83c18bc6","fromSide":"bottom","toNode":"b686d34fc15d70ef","toSide":"top"},
+		{"id":"6828f14733844d14","fromNode":"2e90bb46bac0ce87","fromSide":"bottom","toNode":"f1ad96d2617b95bb","toSide":"top"}
 	]
 }

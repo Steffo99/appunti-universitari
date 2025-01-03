@@ -1,6 +1,8 @@
 
 |                                            Simbolo | Significato                                                       |
 | -------------------------------------------------: | ----------------------------------------------------------------- |
+|                                                $+$ | [[somma tra vettori]]                                             |
+|                                            $\cdot$ | [[prodotto scalare tra vettori]]                                  |
 |                                      $\basisCanon$ | [[base canonica]]                                                 |
 |                            $\basisCanonElement{i}$ | $i$-esimo elemento della [[base canonica]]                        |
 |                                            $\smol$ | [[infinitesimo]]                                                  |
@@ -13,3 +15,4 @@
 |                                $\continueField{z}$ | [[insieme]] delle [[regolarità\|funzioni regolari]] di ordine $z$ |
 |                           $\hessianOf{\mathbf{x}}$ | [[matrice Hessiana]]                                              |
 |                          $\iacobianOf{\mathbf{x}}$ | [[matrice Iacobiana]]                                             |
+| $\fmlContour{C}$ | [[curva di livello]] $C$

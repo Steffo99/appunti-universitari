@@ -8,5 +8,5 @@ Il processo di sviluppo è solitamente composto dalle seguenti fasi:
 - ***[[fase di design]]***
 - ***[[fase di implementazione]]***
 - ***[[fase di testing]]***
-- #Extra ***[[fase di rilascio]]***
+- ***[[fase di rilascio]]***
 - ***[[fase di manutenzione]]***

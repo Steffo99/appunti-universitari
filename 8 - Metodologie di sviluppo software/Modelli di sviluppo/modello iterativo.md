@@ -8,7 +8,7 @@ I modelli iterativi si distinguono generalmente in:
 - [[modello evolutivo|modelli evolutivi]]
 - [[modello incrementale|modelli incrementali]]
 
-## #Extra Casi d'uso
+## Casi d'uso
 
 Applicabile con successo quando i [[requisito|requisiti]] sono soggetti a frequenti cambiamenti.
 

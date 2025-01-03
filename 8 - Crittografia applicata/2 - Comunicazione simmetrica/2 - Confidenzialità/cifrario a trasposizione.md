@@ -1,3 +1,1 @@
-# #Extra
-
 [[funzione]] di [[crittografia classica]] in cui gli elementi del [[plaintext]] sono [[permutazione|permutati]] in un modo conosciuto solo agli [[sfidante|sfidanti]] per formare il [[ciphertext]].

@@ -1,11 +1,7 @@
 ---
 aliases: ["CFB"]
 ---
-
-# #Extra
-
 [[operation mode di un cifrario a blocchi]] deprecato.
-
 
 ## Diagramma
 

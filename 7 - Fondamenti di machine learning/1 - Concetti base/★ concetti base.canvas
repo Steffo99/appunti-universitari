@@ -12,7 +12,7 @@
 		{"id":"38a97c29b755cc04","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/problema di classificazione binaria.md","x":-400,"y":-980,"width":400,"height":200},
 		{"id":"c92bbbdcd9f512e6","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/problema di classificazione multi-classe.md","x":-400,"y":-700,"width":400,"height":200},
 		{"id":"096c6707131defca","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/problema di regressione.md","x":-400,"y":-420,"width":400,"height":200},
-		{"id":"b360f9268a0f52ab","x":-1520,"y":320,"width":400,"height":400,"type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/overfitting.md"}
+		{"id":"b360f9268a0f52ab","type":"file","file":"7 - Fondamenti di machine learning/1 - Concetti base/overfitting.md","x":-1520,"y":320,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"c4f9077cee804220","fromNode":"aa08ea82fd2ff1df","fromSide":"bottom","toNode":"158d8da07bba10f9","toSide":"top"},

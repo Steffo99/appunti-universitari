@@ -2,7 +2,7 @@
 aliases:
   - Hessiana
 ---
-Particolare [[matrice]] [[matrice quadrata|quadrata]] e [[matrice simmetrica|simmetrica]] definita relativa a una [[funzione]] dalla [[regolarità]] di almeno secondo ordine e una [[variabile]], di ordine uguale a quello della [[base canonica]] del [[0 - Generale/dominio|dominio]] della [[funzione]].
+Particolare [[matrice]] [[matrice quadrata|quadrata]] e [[matrice simmetrica|simmetrica]] definita relativa a una [[funzione]] **a singolo output** dalla [[regolarità]] di almeno secondo ordine e una [[variabile]], di ordine uguale a quello della [[base canonica]] del [[0 - Generale/dominio|dominio]] della [[funzione]].
 $$
 \Huge
 \hessianOf{\mathbf{x}}

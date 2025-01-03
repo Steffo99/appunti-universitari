@@ -30,4 +30,4 @@ Viene usato solitamente nei [[general purpose computer]].
 
 ## Vedi anche
 
-- #Extra [RFC 2104: **HMAC: Keyed-Hashing for Message Authentication**](https://datatracker.ietf.org/doc/html/rfc2104)
+- [RFC 2104: **HMAC: Keyed-Hashing for Message Authentication**](https://datatracker.ietf.org/doc/html/rfc2104)

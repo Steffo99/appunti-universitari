@@ -1,5 +1,3 @@
-# #Extra
-
 [[cifrario a sostituzione]] che codifica e decodifica un messaggio sostituendo ciascuna sua lettera con quella tre posizioni dopo nell'alfabeto.
 
 | [[plaintext]] | [[ciphertext]] |

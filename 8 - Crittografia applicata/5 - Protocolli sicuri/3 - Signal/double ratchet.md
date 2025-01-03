@@ -13,6 +13,6 @@ aliases: ["axolotl ratchet"]
 		- **receiving chain**
 			- ricezione di messaggi dall'altra parte, corrispondente all'altra sending chain
 
-## #Extra Vedi anche
+## Vedi anche
 
 - [Signal → Specifications: **The Double Ratchet Algorithm**](https://signal.org/docs/specifications/doubleratchet/)

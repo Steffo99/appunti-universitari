@@ -13,7 +13,8 @@ Un [[fluido]] riscaldato dal basso e raffreddato dall'alto crea movimenti di [[c
 	- [[feedback negativo]] · **[[conduzione]]**: il fluido più caldo tende a distribuire il calore alle particelle adiacenti rimanendo fermo
 5. Il [[fluido]] con gradiente di temperatura è [[metastabilità|metastabile]].
 
-#TODO Ma sono veramente feedback? Ciò che li incentiva è fuori dal sistema...
+==Ma sono veramente feedback? Ciò che li incentiva è fuori dal sistema...==
+
 ## Vedi anche
 
-- #Extra [Wikipedia EN: **Rayleigh-Bénard convection**](https://en.wikipedia.org/wiki/Rayleigh%E2%80%93B%C3%A9nard_convection)
+- [Wikipedia EN: **Rayleigh-Bénard convection**](https://en.wikipedia.org/wiki/Rayleigh%E2%80%93B%C3%A9nard_convection)

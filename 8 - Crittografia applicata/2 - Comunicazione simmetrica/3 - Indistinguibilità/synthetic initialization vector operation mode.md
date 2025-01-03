@@ -14,6 +14,6 @@ Consuma **due** [[chiave simmetrica|chiavi simmetriche]], in quanto la prima vie
 
 L'intero plaintext deve essere conosciuto all'inizio della cifratura, in quanto è necessario per generare il [[synthetic initialization vector]].
 
-## #Extra Vedi anche
+## Vedi anche
 
 - [RFC 5297](https://www.rfc-editor.org/rfc/rfc5297)

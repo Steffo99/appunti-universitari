@@ -1,3 +1,3 @@
 [[operatore misura]] di [[robustezza biologica]] per un [[genotipo]] in una [[rete neutrale]].
 
-#TODO Il prof non ha elaborato oltre...
+==Il prof non ha elaborato oltre...==

@@ -1,5 +1,3 @@
-# #Extra
-
 [[attacco]] in cui l'[[avversario]] presenta allo [[sfidante]] [[punto|punti]] appartenenti ad un [[sottogruppo]] contenente un numero ridotto di elementi, detto *debole*.
 
 ## Prevenzione

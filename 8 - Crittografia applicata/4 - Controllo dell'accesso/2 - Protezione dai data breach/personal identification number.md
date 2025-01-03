@@ -13,6 +13,6 @@ Per via della sua bassisima entropia, è [[8 - Crittografia applicata/1 - Concet
 - [[Bancomat]]
 - [[Blocco schermo]]
 
-## #Extra Vedi anche
+## Vedi anche
 
 - [Atalla Box](https://utimaco.com/products/categories/hardware-security-modules-hsm/hsms-payment-use-cases/atalla-at1000), un abominio hardware proprietario che verifica i PIN dei Bancomat

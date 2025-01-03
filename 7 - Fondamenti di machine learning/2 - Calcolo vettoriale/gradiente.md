@@ -4,7 +4,7 @@ $$
 \gradientOf{\mathbf{x}}
 $$
 
-Contiene le [[derivata parziale|derivate parziali]] per tutti gli elementi della [[base canonica]].
+Contiene le [[derivata parziale|derivate parziali]] relative ad una data [[funzione]] **a singolo output** per tutti gli elementi della [[base canonica]].
 
 $$
 \Large
@@ -26,3 +26,8 @@ $$
 		{\fmlInputSize}\\
 \end{bmatrix}
 $$
+
+
+> [!Note]
+> 
+> Sempre [[vettori ortogonali|ortogonale]] alla [[curva di livello]] nel punto $\mathbf{x}$.

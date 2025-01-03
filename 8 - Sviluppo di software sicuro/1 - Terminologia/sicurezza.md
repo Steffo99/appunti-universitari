@@ -1,4 +1,4 @@
-#TODO Inverso del [[rischio]].
+==Inverso del [[rischio]].==
 
 ## Garanzie tipiche
 

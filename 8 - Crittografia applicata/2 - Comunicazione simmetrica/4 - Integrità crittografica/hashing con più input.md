@@ -24,4 +24,4 @@ Se si conosce l'hash fino a un certo blocco, determinare l'hash per una quantitÃ
 
 ## Vedi anche
 
-> #Extra [AWS signature version 1 is insecure](http://www.daemonology.net/blog/2008-12-18-AWS-signature-version-1-is-insecure.html)
+> [AWS signature version 1 is insecure](http://www.daemonology.net/blog/2008-12-18-AWS-signature-version-1-is-insecure.html)

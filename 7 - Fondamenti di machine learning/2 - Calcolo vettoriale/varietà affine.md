@@ -7,7 +7,7 @@ aliases:
 $$
 \Huge
 \affineVariety
-	{X}
+	{x}
 	{d}
 $$
 

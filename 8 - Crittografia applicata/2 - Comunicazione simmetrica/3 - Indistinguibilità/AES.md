@@ -12,6 +12,6 @@ Utilizza blocchi fissi di 128 bit, mentre può avere una chiave di dimensioni di
 
 È comunemente supportato a livello hardware.
 
-## #Extra Vedi anche
+## Vedi anche
 
 - [[Damien, Rijmen - The Design of Rijndael (2001).pdf]]

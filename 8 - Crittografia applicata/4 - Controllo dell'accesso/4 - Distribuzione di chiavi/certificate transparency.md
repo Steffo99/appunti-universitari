@@ -15,7 +15,7 @@ Si identificano i seguenti ruoli in un sistema di *certificate transparency*:
 - ***client***: verificano la presenza dei certificati necessari nei log
 
 
-## #Extra Vedi anche
+## Vedi anche
 
 - [Certificate Transparency](https://certificate.transparency.dev/)
 - [RFC 6962](https://www.rfc-editor.org/rfc/rfc6962)

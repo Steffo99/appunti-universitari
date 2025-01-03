@@ -1,3 +1,3 @@
 [[Caratteristica]] matematica.
 
-#TODO Cosa significa?
+==Cosa significa?==

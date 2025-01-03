@@ -11,6 +11,6 @@ $$
 \end{cases}
 $$
 
-## #Extra Curve escluse
+## Curve escluse
 
 Le curve non ottenibili con questa equazione sono le [[curva binaria|curve binarie]] e le [[curva di caratteristica 3|curve di caratteristica 3]].

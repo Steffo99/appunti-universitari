@@ -1,1 +1,1 @@
-#TODO Non ho capito di cosa si tratta.
+==Non ho capito di cosa si tratta.==

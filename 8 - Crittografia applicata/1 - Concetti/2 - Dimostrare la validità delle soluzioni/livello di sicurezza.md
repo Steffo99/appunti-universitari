@@ -13,7 +13,7 @@ Si misura in "*bit*", che rappresentano il numero medio di operazioni richiesto 
 | $112$ | $2^{112}$ | $5\ 192\ 296\ 858\ 534\ 827\ 628\ 530\ 496\ 329\ 220\ 096$ |
 | $128$ | $2^{128}$ | $34\ 028\ 236\ 692\ 093\ 846\ 346\ 374\ 607\ 431\ 768\ 211\ 456$ |
 
-## #Extra Vedi anche
+## Vedi anche
 
 - **Stack Exchange**: [Is 80 bits of key size considered safe against brute force attacks?](https://crypto.stackexchange.com/questions/13299/is-80-bits-of-key-size-considered-safe-against-brute-force-attacks)
 - **Stack Exchange**: [80-bit security and attack time](https://crypto.stackexchange.com/questions/79834/80-bit-security-and-attack-time)
