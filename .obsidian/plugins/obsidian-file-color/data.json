@@ -503,19 +503,19 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/3 - Support vector machines/support vector machine.md",
+      "path": "7 - Fondamenti di machine learning/4 - Support vector machines/support vector machine.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/3 - Support vector machines/kernel lineare.md",
+      "path": "7 - Fondamenti di machine learning/4 - Support vector machines/kernel lineare.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/3 - Support vector machines/kernel polinomiale.md",
+      "path": "7 - Fondamenti di machine learning/4 - Support vector machines/kernel polinomiale.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/3 - Support vector machines/kernel gaussiano.md",
+      "path": "7 - Fondamenti di machine learning/4 - Support vector machines/kernel gaussiano.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
@@ -583,10 +583,6 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/varietà affine.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/XX - Synthesis of Quantum Logic Circuits.pdf",
       "color": "e_YcdvxbhfDN77-giOday"
     },
@@ -631,7 +627,15 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/inclinazione.md",
+      "path": "7 - Fondamenti di machine learning",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/derivata a valore vettoriale.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/problema dei minimi quadrati.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     }
   ]

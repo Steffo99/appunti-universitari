@@ -28,6 +28,16 @@
 	\epsilon
 }
 
+% Funzione
+\newcommand{\func}[1][f] {
+	\mathrm{#1}
+}
+
+% Funzione lineare
+\newcommand{\funcLinear} {
+	\ell
+}
+
 % Varietà affine
 \newcommand{\affineVariety}[2] {
 	{\mathbf{#1}} \par{#2}
@@ -41,33 +51,33 @@
 }
 
 % Funzione che è stata derivata
-\newcommand{\derivativeOf}[2][\mathrm{f}] {
+\newcommand{\derivativeOf}[2][\func] {
 	{#1}' \par{#2}
 }
 
 % Derivata direzionale
-\newcommand{\derivativeDirectional}[3][\mathrm{f}] {
+\newcommand{\derivativeDirectional}[3][\func] {
 	\derivative
 		{{#1} \par{\mathbf{#2}; \mathbf{#3}}}
 		{\smol}
 }
 
 % Funzione che è stata derivata direzionalmente
-\newcommand{\derivativeDirectionalOf}[3][\mathrm{f}] {
+\newcommand{\derivativeDirectionalOf}[3][\func] {
 	\derivativeOf
 		[#1]
 		{\mathbf{#2};\ \mathbf{#3}}
 }
 
 % Derivata parziale
-\newcommand{\derivativePartial}[3][\mathrm{f}] {
+\newcommand{\derivativePartial}[3][\func] {
 	\frac
 		{\mathrm{\partial}\ {#1} \par{\mathbf{#2}}}
 		{\mathrm{\partial}\ {#2}_{#3}}
 }
 
 % Funzione che è stata derivata parzialmente
-\newcommand{\derivativePartialOf}[3][\mathrm{f}] {
+\newcommand{\derivativePartialOf}[3][\func] {
 	\derivativeDirectionalOf
 		[#1]
 		{#2}
@@ -75,7 +85,7 @@
 }
 
 % Gradiente di una funzione
-\newcommand{\gradientOf}[2][\mathrm{f}] {
+\newcommand{\gradientOf}[2][\func] {
 	\mathbf{\nabla}_{#1} \par{\mathbf{#2}}
 }
 
@@ -85,12 +95,12 @@
 }
 
 % Hessiana di una funzione
-\newcommand{\hessianOf}[2][\mathrm{f}] {
+\newcommand{\hessianOf}[2][\func] {
 	\mathbf{\nabla}^{2}_{#1} \par{\mathbf{#2}}
 }
 
 % Elemento dell'Hessiana di una funzione
-\newcommand{\hessianElement}[4][\mathrm{f}] {
+\newcommand{\hessianElement}[4][\func] {
 	\par{
 		\derivativePartial
 			[#1] 
@@ -105,12 +115,12 @@
 }
 
 % Iacobiana di una funzione
-\newcommand{\iacobianOf}[2][\mathrm{f}] {
+\newcommand{\iacobianOf}[2][\func] {
 	\mathbf{J}_{#1} \par{\mathbf{#2}}
 }
 
 % Elemento della Iacobiana di una funzione
-\newcommand{\iacobianElement}[4][\mathrm{f}] {
+\newcommand{\iacobianElement}[4][\func] {
 	\par{
 		\derivativePartial
 			[{#1}_{#3}]

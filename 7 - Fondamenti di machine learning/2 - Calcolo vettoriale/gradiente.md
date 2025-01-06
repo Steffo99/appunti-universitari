@@ -31,3 +31,6 @@ $$
 > [!Note]
 > 
 > Sempre [[vettori ortogonali|ortogonale]] alla [[curva di livello]] nel punto $\mathbf{x}$.
+
+> [!Tip]
+> Analogo alla [[derivata]] in tutte le direzioni!

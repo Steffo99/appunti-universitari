@@ -41,3 +41,6 @@ $$
 	\iacobianElement{x}{M}{n} \\
 \end{bmatrix}
 $$
+
+> [!Tip]
+> Analogo al [[gradiente]] per una [[funzione a valore vettoriale]].

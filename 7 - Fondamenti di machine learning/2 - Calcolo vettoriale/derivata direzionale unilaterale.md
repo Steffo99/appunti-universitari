@@ -9,19 +9,19 @@ $$
 \Large
 \Huge
 \derivativeDirectionalOf
-	[\color{lime} \mathrm{f}]
+	[\color{lime} \func]
 	{\color{cyan} x}
 	{\color{orange} +s}
 =
 \lim_{\smol \to 0^{\color{orange} +}}
 \frac
 	{
-		{\color{lime} \mathrm{f}} 
+		{\color{lime} \func} 
 			\par{
 				{\color{cyan} x} + \smol \cdot {\color{orange} s}
 			}
 		- 
-		{\color{lime} \mathrm{f}} 
+		{\color{lime} \func} 
 		\par{
 			{\color{cyan} x}
 		}
@@ -33,17 +33,17 @@ $$
 La derivata negativa è invece definita come:
 $$
 \Large
-\derivativeDirectionalOf[\color{lime} -f]{{\color{cyan} x_0}}{{\color{orange} -s}}
+\derivativeDirectionalOf[\color{lime} -\func]{{\color{cyan} x_0}}{{\color{orange} -s}}
 =
 \lim_{\smol \to 0^{\color{orange} -}}
 \frac
 	{
-		{\color{lime} \mathrm{f}} 
+		{\color{lime} \func} 
 			\par{
 				{\color{cyan} x} + \smol \cdot {\color{orange} s}
 			}
 		- 
-		{\color{lime} \mathrm{f}} 
+		{\color{lime} \func} 
 		\par{
 			{\color{cyan} x}
 		}

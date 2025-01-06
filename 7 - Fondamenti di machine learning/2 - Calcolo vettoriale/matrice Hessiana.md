@@ -59,3 +59,8 @@ $$
 		{N}
 \end{bmatrix}
 $$
+
+> [!Tip]
+> Analogo alla [[derivata seconda]].
+
+==Dovrebbe dare informazioni sulla curvatura... Immagino c'entri il determinante?==
