@@ -2,13 +2,13 @@
 aliases:
   - Hessiana
 ---
-Particolare [[matrice]] [[matrice quadrata|quadrata]] e [[matrice simmetrica|simmetrica]] definita relativa a una [[funzione]] **a singolo output** dalla [[regolarità]] di almeno secondo ordine e una [[variabile]], di ordine uguale a quello della [[base canonica]] del [[0 - Generale/dominio|dominio]] della [[funzione]].
+Particolare [[matrice]] [[matrice quadrata|quadrata]] e [[matrice simmetrica|simmetrica]] definita relativa a una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] **a singolo output** dalla [[regolarità]] di almeno secondo ordine e una [[variabile]], di ordine uguale a quello della [[base canonica]] del [[0 - Generale/dominio|dominio]] della [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]].
 $$
 \Huge
 \hessianOf{\mathbf{x}}
 $$
 
-I suoi elementi sono definiti come le $(riga,colonna)$-esime [[derivata parziale|derivate parziali]] della [[funzione]] $f$:
+I suoi elementi sono definiti come le $(riga,colonna)$-esime [[derivata parziale|derivate parziali]] della [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] $f$:
 $$
 \Large
 \hessianOf{x}

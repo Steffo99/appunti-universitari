@@ -1,4 +1,4 @@
-[[funzione]] che implementa un [[signature scheme]] in modo [[operation framework deterministico|deterministico]] usando una [[key derivation function]] per i numeri casuali.
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] che implementa un [[signature scheme]] in modo [[operation framework deterministico|deterministico]] usando una [[key derivation function]] per i numeri casuali.
 
 ## Requisiti
 

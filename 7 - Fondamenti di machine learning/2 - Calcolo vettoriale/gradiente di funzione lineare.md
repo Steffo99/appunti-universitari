@@ -1,6 +1,6 @@
-Dimostriamo che il [[gradiente]] di una [[funzione]] [[linearità|lineare]] $\funcLinear (\mathbf{x})$ è $\mathbf{0}$.
+Dimostriamo che il [[gradiente]] di una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] [[linearità|lineare]] $\funcLinear (\mathbf{x})$ è $\mathbf{0}$.
 
-Dati $\mathbf{a}$ e $\mathbf{b}$ [[vettore|vettori]] costanti, una [[funzione]] [[linearità|lineare]] è definita come:
+Dati $\mathbf{a}$ e $\mathbf{b}$ [[vettore|vettori]] costanti, una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] [[linearità|lineare]] è definita come:
 $$
 \funcLinear (\mathbf{x}) 
 =\

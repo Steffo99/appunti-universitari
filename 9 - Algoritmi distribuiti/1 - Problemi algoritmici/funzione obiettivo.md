@@ -1,4 +1,4 @@
-[[Funzione]] che si vuole ottimizzare in un [[problema di ottimizzazione]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] che si vuole ottimizzare in un [[problema di ottimizzazione]].
 
 $$
 \Huge

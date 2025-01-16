@@ -1,4 +1,4 @@
-[[Funzione]] di [[key rotation]] nel [[double ratchet]] che garantisce [[forward secrecy]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] di [[key rotation]] nel [[double ratchet]] che garantisce [[forward secrecy]].
 
 ## Funzionamento
 

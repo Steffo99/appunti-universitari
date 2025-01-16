@@ -6,7 +6,7 @@ Un [[insieme]] ha *entropia* uguale alla sua [[cardinalità]].
 $$
 entropy = log_2 ( possible )
 $$
-Il [[risultato]] di una [[funzione]] ha *entropia* uguale al minimo di entropia tra il suo dominio e il suo codominio.
+Il [[risultato]] di una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] ha *entropia* uguale al minimo di entropia tra il suo dominio e il suo codominio.
 $$ 
 entropy(f : \mathrm{D} \rightarrow \mathrm{C}) = 
 \min

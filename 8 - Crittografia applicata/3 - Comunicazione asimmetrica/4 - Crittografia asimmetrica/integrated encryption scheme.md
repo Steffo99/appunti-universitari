@@ -2,7 +2,7 @@
 aliases: ["IES"]
 ---
 
-[[funzione|Protocollo]] di [[crittografia ibrida]] che utilizza sia [[scambio di chiave autenticato basato su Diffie-Hellman]] sia [[crittografia simmetrica moderna]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione|Protocollo]] di [[crittografia ibrida]] che utilizza sia [[scambio di chiave autenticato basato su Diffie-Hellman]] sia [[crittografia simmetrica moderna]].
 
 ## Funzionamento
 

@@ -14,7 +14,7 @@
 		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/3 - Signal/registrazione X3DH.md","id":"ab6ef23ff8e1ba0c","x":-1720,"y":2600,"width":640,"height":760},
 		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/3 - Signal/invio X3DH.md","id":"e1d31edd49bf7d6e","x":-1000,"y":2600,"width":640,"height":760},
 		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/3 - Signal/X3DH.md","id":"3625c37f33b56deb","x":-1000,"y":2040,"width":640,"height":440},
-		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/2 - Operation framework/authenticated encryption with associated data.md","id":"c66a600f5323f6a8","x":440,"y":2600,"width":640,"height":760},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/2 - Operation framework/authenticated encryption with associated data.md","id":"c66a600f5323f6a8","x":440,"y":2600,"width":640,"height":760},
 		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/3 - Signal/Signal AEAD.md","id":"130dc92c4ce521e5","x":440,"y":2040,"width":640,"height":440},
 		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/3 - Signal/double ratchet.md","id":"01f5d595be9aefc4","x":560,"y":920,"width":400,"height":960},
 		{"type":"file","file":"8 - Crittografia applicata/5 - Protocolli sicuri/3 - Signal/Diffie-Hellman ratchet.md","id":"ff9f766dd413a342","x":1120,"y":1440,"width":400,"height":480},

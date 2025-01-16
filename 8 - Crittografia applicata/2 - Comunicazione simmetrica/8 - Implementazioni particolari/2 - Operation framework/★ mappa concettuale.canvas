@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"type":"group","id":"9e5fbc286eb5e35a","x":340,"y":300,"width":2040,"height":1560,"color":"6","label":"Operation framework deterministico"},
+		{"type":"group","id":"889a95126b161e04","x":340,"y":1980,"width":2040,"height":1000,"color":"6","label":"Operation framework probabilistico"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/2 - Operation framework/operation framework deterministico per crittografia simmetrica a flusso con nonce.md","id":"7760739a84a371db","x":920,"y":320,"width":880,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/2 - Operation framework/operation framework deterministico per crittografia simmetrica a blocchi con initialization vector.md","id":"c0ae505db204e894","x":920,"y":880,"width":880,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/cifrario a blocchi.md","id":"5fe4a2d4ceebb70a","x":1960,"y":495,"width":400,"height":50},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/cifrario a flusso.md","id":"583c0b322ccb22b0","x":1960,"y":1055,"width":400,"height":50},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/2 - Operation framework/operation framework probabilistico.md","id":"9c92ab450c5a6ef1","x":360,"y":2280,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/2 - Operation framework/operation framework deterministico.md","id":"0d2a5893eb99697d","x":360,"y":880,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/2 - Operation framework/operation framework.md","id":"1f92a75b965ce075","x":-200,"y":1440,"width":400,"height":400,"color":"#ffffff"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/2 - Operation framework/deterministic authenticated encryption with associated data.md","id":"93d5eb392ec4cded","x":920,"y":1440,"width":880,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/2 - Operation framework/operation framework probabilistico per la crittografia simmetrica.md","id":"017228ade7d96c15","x":920,"y":2560,"width":880,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/2 - Operation framework/authenticated encryption with associated data.md","id":"0999976e3fc8f9ff","x":920,"y":2000,"width":880,"height":400}
+	],
+	"edges":[
+		{"id":"c08ed4d00ecb243e","fromNode":"1f92a75b965ce075","fromSide":"right","toNode":"0d2a5893eb99697d","toSide":"left"},
+		{"id":"2191c33d85a26c42","fromNode":"0d2a5893eb99697d","fromSide":"right","toNode":"7760739a84a371db","toSide":"left","toEnd":"none"},
+		{"id":"3d1584309711c4e9","fromNode":"0d2a5893eb99697d","fromSide":"right","toNode":"c0ae505db204e894","toSide":"left","toEnd":"none"},
+		{"id":"a3ba9de9a3553c5e","fromNode":"7760739a84a371db","fromSide":"right","toNode":"5fe4a2d4ceebb70a","toSide":"left","toEnd":"none"},
+		{"id":"8110ff7c204e0b8f","fromNode":"c0ae505db204e894","fromSide":"right","toNode":"583c0b322ccb22b0","toSide":"left","toEnd":"none"},
+		{"id":"d99c6e836e7d6058","fromNode":"9c92ab450c5a6ef1","fromSide":"right","toNode":"017228ade7d96c15","toSide":"left","toEnd":"none"},
+		{"id":"a061c401f726a334","fromNode":"1f92a75b965ce075","fromSide":"right","toNode":"9c92ab450c5a6ef1","toSide":"left"},
+		{"id":"5cc61548a633e645","fromNode":"9c92ab450c5a6ef1","fromSide":"right","toNode":"0999976e3fc8f9ff","toSide":"left","toEnd":"none"},
+		{"id":"49273d9428c132a9","fromNode":"0d2a5893eb99697d","fromSide":"right","toNode":"93d5eb392ec4cded","toSide":"left","toEnd":"none"},
+		{"id":"4d9581259d681bd9","fromNode":"0999976e3fc8f9ff","fromSide":"top","toNode":"93d5eb392ec4cded","toSide":"bottom"}
+	]
+}

@@ -23,7 +23,9 @@
 		{"id":"dc6512f19d5ff584","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/curva di livello.md","x":-1400,"y":40,"width":800,"height":400},
 		{"id":"b4a86c1e3a79810a","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/gradiente di funzione lineare.md","x":-1400,"y":600,"width":800,"height":400},
 		{"id":"7f43f404f2518eaf","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/gradiente di funzione quadratica.md","x":-2360,"y":600,"width":800,"height":400},
-		{"id":"b3bb46d754a4f95b","x":-2360,"y":1160,"width":800,"height":400,"type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/problema dei minimi quadrati.md"}
+		{"id":"b3bb46d754a4f95b","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/problema dei minimi quadrati.md","x":-2360,"y":1160,"width":800,"height":400},
+		{"id":"5083f0a316505bbf","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/polinomio di Taylor a più variabili.md","x":-3320,"y":-240,"width":800,"height":400},
+		{"id":"4e90883de5592233","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/varietà affine.md","x":-4280,"y":-240,"width":800,"height":400}
 	],
 	"edges":[
 		{"id":"df2faeb253ec0e13","fromNode":"b5b6c9ca87abdda9","fromSide":"bottom","toNode":"31a565eaadd3d803","toSide":"top","color":"1"},
@@ -50,6 +52,8 @@
 		{"id":"d19869dcb91fc96f","fromNode":"1253c56c53c4da90","fromSide":"bottom","toNode":"24dc7f152d8c97c1","toSide":"top","color":"2"},
 		{"id":"e24e4be967093bee","fromNode":"398b5c9300fd8f9e","fromSide":"left","toNode":"b4a86c1e3a79810a","toSide":"right"},
 		{"id":"92950f5d4ab2bd6f","fromNode":"b4a86c1e3a79810a","fromSide":"left","toNode":"7f43f404f2518eaf","toSide":"right"},
-		{"id":"9dcc8a08c4bc4a60","fromNode":"7f43f404f2518eaf","fromSide":"bottom","toNode":"b3bb46d754a4f95b","toSide":"top"}
+		{"id":"9dcc8a08c4bc4a60","fromNode":"7f43f404f2518eaf","fromSide":"bottom","toNode":"b3bb46d754a4f95b","toSide":"top"},
+		{"id":"b3c5f664bbb82a59","fromNode":"ef3d7af293f6cf0a","fromSide":"bottom","toNode":"5083f0a316505bbf","toSide":"top"},
+		{"id":"ef9736c5d7de317c","fromNode":"4e90883de5592233","fromSide":"right","toNode":"5083f0a316505bbf","toSide":"left"}
 	]
 }

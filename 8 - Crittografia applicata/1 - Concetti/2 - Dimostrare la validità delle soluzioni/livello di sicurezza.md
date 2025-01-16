@@ -1,5 +1,5 @@
 [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/parametro]] che scala:
-- il [[costo]] per l'[[utilizzo]] di una [[funzione]] *(idealmente [[polinomiale|polinomialmente]])*
+- il [[costo]] per l'[[utilizzo]] di una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] *(idealmente [[polinomiale|polinomialmente]])*
 - il [[costo]] per l'[[attacco]] dello stesso *(idealmente [[esponenziale|esponenzialmente]])*
 	- la soglia di probabilità che una [[garanzia computazionale]] venga violata *(idealmente [[inversa polinomiale|inversamente a una polinomiale]])*
 

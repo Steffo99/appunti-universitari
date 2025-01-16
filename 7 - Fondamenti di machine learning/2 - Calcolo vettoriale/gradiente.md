@@ -4,7 +4,7 @@ $$
 \gradientOf{\mathbf{x}}
 $$
 
-Contiene le [[derivata parziale|derivate parziali]] relative ad una data [[funzione]] **a singolo output** per tutti gli elementi della [[base canonica]].
+Contiene le [[derivata parziale|derivate parziali]] relative ad una data [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] **a singolo output** per tutti gli elementi della [[base canonica]].
 
 $$
 \Large

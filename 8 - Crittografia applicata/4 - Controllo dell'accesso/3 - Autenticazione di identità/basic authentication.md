@@ -1,4 +1,4 @@
-[[funzione|Protocollo]] in cui si dimostra una [[credenziale]] trasmettendola direttamente al [[servizio di autenticazione]] attraverso un canale di [[comunicazione simmetrica]] sicuro.
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione|Protocollo]] in cui si dimostra una [[credenziale]] trasmettendola direttamente al [[servizio di autenticazione]] attraverso un canale di [[comunicazione simmetrica]] sicuro.
 
 La credenziale inviata assume spesso il nome di [[bearer token]].
 

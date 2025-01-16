@@ -1,4 +1,4 @@
-[[Funzione]] di [[reseeding]] nel [[double ratchet]] che garantisce [[backward secrecy]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] di [[reseeding]] nel [[double ratchet]] che garantisce [[backward secrecy]].
 
 ## Funzionamento
 

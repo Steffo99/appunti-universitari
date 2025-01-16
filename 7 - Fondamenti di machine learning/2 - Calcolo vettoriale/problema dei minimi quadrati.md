@@ -44,9 +44,9 @@ $$
 \mathbf{V} \times \mathbf{a}
 $$
 
-La distanza tra i valori corrisponderà quindi a:
+La [[modulo vettoriale|distanza]] tra i valori corrisponderà quindi a:
 $$
-\mathbf{y} - \mathbf{V} \times \mathbf{a}
+\abs{\mathbf{y} - \mathbf{V} \times \mathbf{a}}
 $$
 
 E dunque, il nostro problema consisterà in:
@@ -54,39 +54,65 @@ $$
 \min \abs{\mathbf{y} - \mathbf{V} \times \mathbf{a}}^2
 $$
 
-Che è [[gradiente di funzione quadratica|quadratico]], come possiamo vedere applicando la [[proprietà distributiva]]:
+Che è [[gradiente di funzione quadratica|quadratico]]:
 $$
 \displaylines{
 	\abs{\mathbf{y} - \mathbf{V} \times \mathbf{a}}^2 
+	
 	=\\
-	\par{\mathbf{y} - \mathbf{V} \times \mathbf{a}}^\dagger \cdot \par{\mathbf{y} - \mathbf{V} \times \mathbf{a}}
+	
+	\par{\mathbf{y} - \mathbf{V} \times \mathbf{a}}^\dagger \times \par{\mathbf{y} - \mathbf{V} \times \mathbf{a}}
+	
 	=\\
-	\par{\mathbf{y}^\dagger \cdot \mathbf{y} }
+	
+	\par{\mathbf{y}^\dagger \times \mathbf{y} }
 	-
-	\par{\mathbf{y}^\dagger \cdot \par{\mathbf{V} \times \mathbf{a}}}
+	\par{\mathbf{y}^\dagger \times \par{\mathbf{V} \times \mathbf{a}}}
 	-
-	\par{\par{\mathbf{V} \times \mathbf{a}}^\dagger \cdot \mathbf{y}}
+	\par{\par{\mathbf{a} \times \mathbf{V}}^\dagger \times \mathbf{y}}
 	+
-	\par{\par{\mathbf{V} \times \mathbf{a}}^\dagger \cdot \par{\mathbf{V} \times \mathbf{a}}}
+	\par{\par{\mathbf{a} \times \mathbf{V}}^\dagger \times \par{\mathbf{V} \times \mathbf{a}}}
+	
 	=\\
-	\par{\mathbf{y}^\dagger \cdot \mathbf{y}}
-	- 2
-	\par{\mathbf{y}^\dagger \cdot \par{\mathbf{V} \times \mathbf{a}}}
+	
+	\par{\mathbf{y}^\dagger \times \mathbf{y} }
+	-
+	\par{\mathbf{y}^\dagger \times \par{\mathbf{V} \times \mathbf{a}}}
 	+
-	\par{\mathbf{a}^\dagger \cdot \mathbf{V}^\dagger \cdot \mathbf{V} \cdot \mathbf{a}}
+	\par{\par{\mathbf{V} \times \mathbf{a}}^\dagger \times \mathbf{y}}
+	+
+	\par{\par{\mathbf{a} \times \mathbf{V}}^\dagger \times \par{\mathbf{V} \times \mathbf{a}}}
+	
 	=\\
-	\par{\mathbf{a}^\dagger \cdot {\color{red} \par{\mathbf{V}^\dagger \cdot \mathbf{V}}} \cdot \mathbf{a}}
+	
+	\par{\mathbf{y}^\dagger \times \mathbf{y} }
+	-
+	\par{\mathbf{y}^\dagger \times \par{\mathbf{V} \times \mathbf{a}}}
+	-
+	\par{\mathbf{y}^\dagger \times \par{\mathbf{V} \times \mathbf{a}}}
+	+
+	\par{\par{\mathbf{a} \times \mathbf{V}}^\dagger \times \par{\mathbf{V} \times \mathbf{a}}}	
+	
+	=\\
+	
+	\par{\mathbf{y}^\dagger \times \mathbf{y}}
+	- 
+	2 \cdot	\par{\mathbf{y}^\dagger \times \par{\mathbf{V} \times \mathbf{a}}}
+	+
+	\par{\mathbf{a}^\dagger \times \mathbf{V}^\dagger \times \mathbf{V} \times \mathbf{a}}
+	
+	=\\
+	
+	\par{\mathbf{a}^\dagger \times {\color{red} \par{\mathbf{V}^\dagger \times \mathbf{V}}} \times \mathbf{a}}
 	+ 
-	\par{2 \cdot {\color{orange} \par{\mathbf{y}^\dagger \cdot \mathbf{V}}} \cdot \mathbf{a}} 
+	\par{2 \times {\color{orange} \par{\mathbf{y}^\dagger \times \mathbf{V}}} \times \mathbf{a}} 
 	+
-	{\color{yellow} \par{\mathbf{y}^\dagger \cdot \mathbf{y}}}
+	{\color{yellow} \par{\mathbf{y}^\dagger \times \mathbf{y}}}
 	= \\
-	\par{\mathbf{a}^\dagger \cdot {\color{red} \mathbf{Q}} \cdot \mathbf{a}}
+	\par{\mathbf{a}^\dagger \times {\color{red} \mathbf{Q}} \times \mathbf{a}}
 	+
-	\par{2 \cdot {\color{orange} \mathbf{b}} \cdot \mathbf{a}}
+	\par{2 \times {\color{orange} \mathbf{b}} \times \mathbf{a}}
 	+
 	{\color{yellow} \mathbf{c}}
 }
 $$
-
-==Il secondo termine non dovrebbe scomparire?? Viene + e -, che significa che dovrebbero annullarsi... a me no che non ci siano shenanigan di trasposizione?==

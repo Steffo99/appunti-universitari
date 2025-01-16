@@ -6,7 +6,7 @@ $$
 $$
 
 
-Data una [[funzione]] $f$ a più input, e una [[costante]] $C$, è l'insieme degli [[input]] per cui la funzione dà $C$ o meno in [[output]]:
+Data una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] $f$ a più input, e una [[costante]] $C$, è l'insieme degli [[input]] per cui la funzione dà $C$ o meno in [[output]]:
 
 $$
 \Large

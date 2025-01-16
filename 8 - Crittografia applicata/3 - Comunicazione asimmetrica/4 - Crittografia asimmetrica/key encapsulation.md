@@ -1,4 +1,4 @@
-Famiglia di [[funzione|protocolli]] di [[crittografia ibrida]] che cifrano una [[chiave simmetrica]] attraverso un [[funzione|protocollo]] di [[crittografia asimmetrica]].
+Famiglia di [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione|protocolli]] di [[crittografia ibrida]] che cifrano una [[chiave simmetrica]] attraverso un [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione|protocollo]] di [[crittografia asimmetrica]].
 
 ## Requisiti
 

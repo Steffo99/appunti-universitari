@@ -1,1 +1,1 @@
-[[funzione]] di [[crittografia classica]] in cui ciascun elemento del [[plaintext]] è sostituito biunivocamente nel [[ciphertext]] da un altro scelto dallo [[sfidante]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] di [[crittografia classica]] in cui ciascun elemento del [[plaintext]] è sostituito biunivocamente nel [[ciphertext]] da un altro scelto dallo [[sfidante]].

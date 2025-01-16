@@ -1,1 +1,1 @@
-[[funzione]] di [[crittografia classica]] in cui gli elementi del [[plaintext]] sono [[permutazione|permutati]] in un modo conosciuto solo agli [[sfidante|sfidanti]] per formare il [[ciphertext]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] di [[crittografia classica]] in cui gli elementi del [[plaintext]] sono [[permutazione|permutati]] in un modo conosciuto solo agli [[sfidante|sfidanti]] per formare il [[ciphertext]].

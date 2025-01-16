@@ -1,4 +1,4 @@
-[[funzione]] di [[challenge-response based on password]] basata sulla [[crittografia simmetrica moderna]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] di [[challenge-response based on password]] basata sulla [[crittografia simmetrica moderna]].
 
 È insicura, in quanto pubblica il [[salt]] all'inizio della procedura.
 

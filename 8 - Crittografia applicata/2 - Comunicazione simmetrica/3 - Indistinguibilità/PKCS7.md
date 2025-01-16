@@ -1,4 +1,4 @@
-[[funzione]] di [[padding]] che riempie gli spazi vuoti con il byte equivalente al numero di byte mancante.
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] di [[padding]] che riempie gli spazi vuoti con il byte equivalente al numero di byte mancante.
 
 ## Caso peggiore
 

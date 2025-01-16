@@ -1,0 +1,3 @@
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] il cui output può essere differenziato con uno o più [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/parametro|parametri]].
+
+Questi parametri possono essere impostati dall'analista che realizza un nuovo [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione|protocollo]], oppure dallo sviluppatore che li utilizza in una sua [[applicazione]].

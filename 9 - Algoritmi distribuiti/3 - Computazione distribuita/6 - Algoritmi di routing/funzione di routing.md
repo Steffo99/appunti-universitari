@@ -2,7 +2,7 @@
 aliases:
   - routing function
 ---
-[[Funzione]] [[individuale|specifica ogni singola entità]] che, associa ogni [[entità]] con il [[canale di comunicazione]] da utilizzare per raggiungerla.
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] [[individuale|specifica ogni singola entità]] che, associa ogni [[entità]] con il [[canale di comunicazione]] da utilizzare per raggiungerla.
 
 $$
 \def \varEntity {{\color{LimeGreen} Entity}}

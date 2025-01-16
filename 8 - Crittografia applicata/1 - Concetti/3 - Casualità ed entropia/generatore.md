@@ -1,1 +1,1 @@
-[[Funzione]] la cui esecuzione non termina al primo [[risultato]] restituito, ma che continua ad emetterne altri, dando origine ad un [[flusso]] di [[risultato|risultati]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] la cui esecuzione non termina al primo [[risultato]] restituito, ma che continua ad emetterne altri, dando origine ad un [[flusso]] di [[risultato|risultati]].

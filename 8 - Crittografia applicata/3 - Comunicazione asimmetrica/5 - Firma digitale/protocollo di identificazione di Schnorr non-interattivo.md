@@ -1,4 +1,4 @@
-[[funzione]] di [[zero-knowledge proof]] [[non-interattivo]] con [[honest verifier]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] di [[zero-knowledge proof]] [[non-interattivo]] con [[honest verifier]].
 
 Aggiunge la [[trasformazione di Fiat-Shamir]] al [[protocollo di identificazione di Schnorr interattivo]].
 

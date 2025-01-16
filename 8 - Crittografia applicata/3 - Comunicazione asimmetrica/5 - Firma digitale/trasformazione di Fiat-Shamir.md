@@ -2,7 +2,7 @@
 aliases: ["Fiat-Shamir transform", "Fiat-Shamir transformation", "Fiat-Shamir heuristic"]
 ---
 
-[[Trasformazione]] attraverso la quale è possibile cambiare una [[funzione]] di [[zero-knowledge proof]] [[interattiva]] in una [[non-interattiva]].
+[[Trasformazione]] attraverso la quale è possibile cambiare una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] di [[zero-knowledge proof]] [[interattiva]] in una [[non-interattiva]].
 
 ## Requisiti
 

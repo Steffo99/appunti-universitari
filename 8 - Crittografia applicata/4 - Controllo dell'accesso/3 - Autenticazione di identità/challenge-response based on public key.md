@@ -1,4 +1,4 @@
-[[funzione]] di [[challenge-response]] in cui la [[challenge]] è implicita, in quanto fa uso di [[problema di firma digitale|firma digitale]] e della [[chiave pubblica]] archiviata nel [[servizio di autenticazione]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] di [[challenge-response]] in cui la [[challenge]] è implicita, in quanto fa uso di [[problema di firma digitale|firma digitale]] e della [[chiave pubblica]] archiviata nel [[servizio di autenticazione]].
 
 Impedisce al [[servizio di autenticazione]] di impersonare l'utente.
 

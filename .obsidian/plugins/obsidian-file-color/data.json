@@ -35,11 +35,11 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/2 - Operation framework/★ mappa concettuale.canvas",
+      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/2 - Operation framework/★ mappa concettuale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/1 - Indistinguibilità su disco/★ mappa concettuale.canvas",
+      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/1 - Indistinguibilità su disco/★ mappa concettuale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
@@ -55,23 +55,23 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/4 - Integrità crittografica/★ mappa concettuale.canvas",
+      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/5 - Integrità crittografica/★ mappa concettuale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/5 - Autenticazione/★ mappa concettuale.canvas",
+      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/6 - Autenticazione/★ mappa concettuale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/6 - Indistinguibilità autenticata/★ mappa concettuale.canvas",
+      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Indistinguibilità autenticata/★ mappa concettuale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/3 - Contestualizzazione ed estendibilità/★ mappa concettuale.canvas",
+      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/3 - Contestualizzazione ed estendibilità/★ mappa concettuale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/4 - Derivazione di chiave/★ mappa concettuale.canvas",
+      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/4 - Derivazione di chiave/★ mappa concettuale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
@@ -127,7 +127,7 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/7 - Implementazioni particolari/5 - Strutture dati particolari/★ mappa concettuale.canvas",
+      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/5 - Strutture dati particolari/★ mappa concettuale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
@@ -147,7 +147,7 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Integrità semplice/★ mappa concettuale.canvas",
+      "path": "8 - Crittografia applicata/2 - Comunicazione simmetrica/4 - Integrità semplice/★ mappa concettuale.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
@@ -288,7 +288,7 @@
     },
     {
       "path": "8 - Crittografia applicata/★ crittografia applicata.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
+      "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
       "path": "8 - Metodologie di sviluppo software/★ metodologie di sviluppo software.md",
@@ -503,19 +503,19 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/4 - Support vector machines/support vector machine.md",
+      "path": "7 - Fondamenti di machine learning/X - Support vector machines/support vector machine.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/4 - Support vector machines/kernel lineare.md",
+      "path": "7 - Fondamenti di machine learning/X - Support vector machines/kernel lineare.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/4 - Support vector machines/kernel polinomiale.md",
+      "path": "7 - Fondamenti di machine learning/X - Support vector machines/kernel polinomiale.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/4 - Support vector machines/kernel gaussiano.md",
+      "path": "7 - Fondamenti di machine learning/X - Support vector machines/kernel gaussiano.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
@@ -635,7 +635,35 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/problema dei minimi quadrati.md",
+      "path": "7 - Fondamenti di machine learning/3 - Calcolo convesso/★ calcolo convesso.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/★ metodi di discesa.canvas",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "0 - Template/◍ metodo di discesa.md",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/metodo di discesa di Newton.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/metodo di discesa quasi Newton.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/metodo di discesa di Newton scalato con la diagonale dell'Hessiana.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/metodo di discesa di Newton modificato.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/scelta di lunghezza di passo.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     }
   ]

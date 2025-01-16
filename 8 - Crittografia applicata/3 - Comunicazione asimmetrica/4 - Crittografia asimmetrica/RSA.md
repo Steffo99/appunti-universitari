@@ -1,4 +1,4 @@
-[[funzione]] di [[crittografia asimmetrica]]
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] di [[crittografia asimmetrica]]
 
 Fa uso di una [[coppia di esponenti]], formata da:
 - un [[esponente pubblico]] e il relativo [[modulo pubblico]], conosciuti da tutti

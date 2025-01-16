@@ -5,9 +5,7 @@ aliases:
   - funzione regolare
   - regolare
 ---
-
-
-[[proprietà]] di una [[funzione]], che generalizza la [[differenziabilità]].
+[[proprietà]] di una [[0 - Generale/funzione|funzione]], che generalizza la [[differenziabilità]].
 $$
 \Huge
 f \in \continueField{1}

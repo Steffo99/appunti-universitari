@@ -2,7 +2,7 @@
 aliases: ["Schnorr identification protocol"]
 ---
 
-[[funzione]] di [[zero-knowledge proof]] [[interattivo]] con [[honest verifier]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] di [[zero-knowledge proof]] [[interattivo]] con [[honest verifier]].
 
 Sfrutta la [[congettura Diffie-Hellman decisionale]].
 

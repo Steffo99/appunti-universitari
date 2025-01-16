@@ -2,7 +2,7 @@
 aliases: ["X3DH start conversation message sending"]
 ---
 
-[[Funzione]] [[X3DH]] di [[crittografia ibrida]] attraverso la quale un [[user agent]] avvia una nuova conversazione con un altro.
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] [[X3DH]] di [[crittografia ibrida]] attraverso la quale un [[user agent]] avvia una nuova conversazione con un altro.
 
 ## Funzionamento
 

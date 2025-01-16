@@ -2,7 +2,7 @@
 aliases:
   - loss
 ---
-[[funzione]] in un [[problema di supervised learning]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] in un [[problema di supervised learning]].
 $$
 \Huge
 \fmlLoss

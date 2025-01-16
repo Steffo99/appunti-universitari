@@ -5,10 +5,10 @@ aliases:
   - differenziabile in
 ---
 
-[[proprietà]] di una [[funzione]].
+[[proprietà]] di una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]].
 
-Una [[funzione]] ha questa proprietà rispetto in $x_0$ quando:
-- per qualsiasi direzione $s$, la [[funzione]] ha [[derivabilità direzionale]].
+Una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] ha questa proprietà rispetto in $x_0$ quando:
+- per qualsiasi direzione $s$, la [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] ha [[derivabilità direzionale]].
 
 Per via delle proprietà della [[base canonica]], questo è equivalente a dire che:
-- per qualsiasi [[array|vettore]] $\basisCanonElement{i}$ della [[base canonica]] $\basisCanon$, la [[funzione]] ha [[derivabilità direzionale]].
+- per qualsiasi [[array|vettore]] $\basisCanonElement{i}$ della [[base canonica]] $\basisCanon$, la [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] ha [[derivabilità direzionale]].

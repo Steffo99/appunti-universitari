@@ -1,9 +1,9 @@
-Dimostriamo che il [[gradiente]] di una [[funzione]] [[funzione quadratica|quadratica]] $q (\mathbf{x})$ è $\mathbf{0}$.
+Dimostriamo che il [[gradiente]] di una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] [[funzione quadratica|quadratica]] $q (\mathbf{x})$ è $\mathbf{0}$.
 
 Dati: 
 - $\mathbf{b}$ e $\mathbf{c}$ [[vettore|vettori]] costanti,
 - $\mathbf{Q}$ una [[matrice simmetrica]] dello stesso ordine di $\mathbf{x}$;
-una [[funzione]] [[funzione quadratica|quadratica]] è definita come:
+una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] [[funzione quadratica|quadratica]] è definita come:
 $$
 q (\mathbf{x}) 
 =\

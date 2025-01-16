@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"type":"group","id":"f6229a27e7403b4e","x":-880,"y":-640,"width":1000,"height":1000,"color":"6","label":"Merkle hash tree"},
+		{"type":"group","id":"2b305a79165297c9","x":200,"y":-640,"width":440,"height":440,"color":"6","label":"Partial disclosure"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/5 - Strutture dati particolari/merkle hash tree.md","id":"7dd5f4845acda0d7","x":-300,"y":-60,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/4 - Integrità semplice/hash.md","id":"768a576ded528f36","x":-300,"y":-620,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/5 - Strutture dati particolari/struttura dati autenticata.md","id":"7f5dd3437fac296d","x":-860,"y":-60,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/8 - Implementazioni particolari/5 - Strutture dati particolari/partial disclosure.md","id":"37c6fde065869afb","x":220,"y":-620,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"75cd2d25f021e36f","fromNode":"768a576ded528f36","fromSide":"bottom","toNode":"7dd5f4845acda0d7","toSide":"top","toEnd":"none"},
+		{"id":"1a9d6e2467c2f8a8","fromNode":"7f5dd3437fac296d","fromSide":"right","toNode":"7dd5f4845acda0d7","toSide":"left","toEnd":"none"}
+	]
+}

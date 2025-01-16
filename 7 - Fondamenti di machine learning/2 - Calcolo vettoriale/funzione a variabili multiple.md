@@ -1,4 +1,4 @@
-[[funzione]] con più [[parametro|parametri]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] con più [[parametro|parametri]].
 
 $$
 \Huge

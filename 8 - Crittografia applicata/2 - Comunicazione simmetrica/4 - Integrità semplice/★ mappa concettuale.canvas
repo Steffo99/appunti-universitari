@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"type":"group","id":"2d8f73df521a69d0","x":-220,"y":-230,"width":460,"height":460,"color":"5","label":"Difesa"},
+		{"type":"group","id":"07fbff18d4556d47","x":900,"y":-220,"width":440,"height":440,"color":"1","label":"Attacco"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/4 - Integrità semplice/verifica dell'integrità.md","id":"18325ffbb7d0c795","x":360,"y":-200,"width":400,"height":400,"color":"#ffffff"},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/4 - Integrità semplice/funzione di hashing.md","id":"22ae2b13bd5c112b","x":80,"y":360,"width":960,"height":760},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/4 - Integrità semplice/bit di parità.md","id":"219070f46a7475d3","x":1200,"y":360,"width":400,"height":200},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/irrational attacker.md","id":"3d0a972b40f0b095","x":920,"y":-200,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/4 - Integrità semplice/checksum.md","id":"15b2de39065b77e0","x":1200,"y":640,"width":400,"height":200},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/4 - Integrità semplice/cyclic redundancy check.md","id":"a0eeb49c7a083d9b","x":1200,"y":920,"width":400,"height":200},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/4 - Integrità semplice/hash.md","id":"b2c479119ab42681","x":-480,"y":540,"width":400,"height":400},
+		{"type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/1 - Modello/integrità.md","id":"ceda81191faf7bb2","x":-200,"y":-210,"width":420,"height":420}
+	],
+	"edges":[
+		{"id":"6b31c2dc92642fc4","fromNode":"18325ffbb7d0c795","fromSide":"bottom","toNode":"22ae2b13bd5c112b","toSide":"top","toEnd":"none"},
+		{"id":"2a085de7c550a408","fromNode":"22ae2b13bd5c112b","fromSide":"left","toNode":"b2c479119ab42681","toSide":"right","toEnd":"none"},
+		{"id":"6e26f0928ae1b202","fromNode":"22ae2b13bd5c112b","fromSide":"right","toNode":"15b2de39065b77e0","toSide":"left","toEnd":"none"},
+		{"id":"7190d91e388e6084","fromNode":"22ae2b13bd5c112b","fromSide":"right","toNode":"219070f46a7475d3","toSide":"left","toEnd":"none"},
+		{"id":"dfd6891f2c841b36","fromNode":"219070f46a7475d3","fromSide":"bottom","toNode":"15b2de39065b77e0","toSide":"top"},
+		{"id":"d1f0e9037ea9bfed","fromNode":"22ae2b13bd5c112b","fromSide":"right","toNode":"a0eeb49c7a083d9b","toSide":"left","toEnd":"none"},
+		{"id":"34f953296d451693","fromNode":"18325ffbb7d0c795","fromSide":"left","toNode":"ceda81191faf7bb2","toSide":"right","toEnd":"none"},
+		{"id":"fc4dbd2c5682e4e1","fromNode":"18325ffbb7d0c795","fromSide":"right","toNode":"3d0a972b40f0b095","toSide":"left","toEnd":"none"}
+	]
+}

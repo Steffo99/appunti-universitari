@@ -1,1 +1,1 @@
-Caratteristica di una [[funzione]] i cui possibili [[risultato|risultati]] hanno tutti la stessa [[probabilità]] di essere emessi.
+Caratteristica di una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] i cui possibili [[risultato|risultati]] hanno tutti la stessa [[probabilità]] di essere emessi.

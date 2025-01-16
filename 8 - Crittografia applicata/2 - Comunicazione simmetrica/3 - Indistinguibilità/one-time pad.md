@@ -1,4 +1,4 @@
-[[funzione]] che implementa una [[famiglia di funzioni pseudo-casuali]] in modo semplice ed efficiente, ma [[malleabilità|malleabile]] ed [[riutilizzo di chiavi nell'one-time pad|efficace per un singolo messaggio]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] che implementa una [[famiglia di funzioni pseudo-casuali]] in modo semplice ed efficiente, ma [[malleabilità|malleabile]] ed [[riutilizzo di chiavi nell'one-time pad|efficace per un singolo messaggio]].
 
 ## Funzionamento
 

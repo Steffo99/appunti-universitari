@@ -4,13 +4,13 @@ aliases:
   - avente derivata direzionale
   - ha derivata direzionale
 ---
-[[proprietà]] di una [[funzione]].
+[[proprietà]] di una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]].
 $$
 \Huge
 \derivativeDirectionalOf{x}{s}
 $$
 
-Una [[funzione]] ha questa [[proprietà]] rispetto alla [[direzione]] $s$ in $x_0$ quando:
+Una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] ha questa [[proprietà]] rispetto alla [[direzione di discesa]] $s$ in $x_0$ quando:
 - $\derivativeDirectionalOf{x}{s}$ e $\derivativeDirectionalOf{x}{-s}$ esistono
 - $\derivativeDirectionalOf{x}{s}$ e $\derivativeDirectionalOf{x}{-s}$ sono finite
 - $\derivativeDirectionalOf{x}{s}$ e $\derivativeDirectionalOf{x}{-s}$ sono uguali

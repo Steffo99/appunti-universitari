@@ -2,7 +2,7 @@
 aliases: ["X3DH registration"]
 ---
 
-[[Funzione]] [[X3DH]] attraverso la quale un [[user agent]] comunica la sua esistenza al [[server di interscambio]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] [[X3DH]] attraverso la quale un [[user agent]] comunica la sua esistenza al [[server di interscambio]].
 
 ## Funzionamento
 

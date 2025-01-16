@@ -1,4 +1,4 @@
-[[funzione]] di [[crittografia asimmetrica]] basata sul [[problema RSA]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] di [[crittografia asimmetrica]] basata sul [[problema RSA]].
 
 ## Funzionamento
 

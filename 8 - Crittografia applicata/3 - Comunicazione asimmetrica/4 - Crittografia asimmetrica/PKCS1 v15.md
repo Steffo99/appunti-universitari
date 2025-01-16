@@ -4,7 +4,7 @@ aliases: ["PKCS#1 v1.5"]
 
 # PKCS#1 v1.5
 
-[[funzione]] di [[crittografia asimmetrica]] basata su [[textbook RSA]] che ne aumenta la sicurezza aggiungendo un [[padding]] di dimensioni non deterministiche al messaggio.
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] di [[crittografia asimmetrica]] basata su [[textbook RSA]] che ne aumenta la sicurezza aggiungendo un [[padding]] di dimensioni non deterministiche al messaggio.
 
 ## Funzionamento
 

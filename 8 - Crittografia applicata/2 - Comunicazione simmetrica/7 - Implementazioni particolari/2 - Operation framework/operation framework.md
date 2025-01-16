@@ -1,1 +1,0 @@
-Interfaccia di programmazione ad alto livello per [[funzione|funzioni]] di [[crittografia]].

@@ -3,7 +3,7 @@ aliases:
   - X3DH start conversation message receiving
 ---
 
-[[Funzione]] [[X3DH]] di [[crittografia ibrida]] attraverso la quale un [[user agent]] riesce a ricevere i messaggi di una conversazione avviata in sua assenza.
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] [[X3DH]] di [[crittografia ibrida]] attraverso la quale un [[user agent]] riesce a ricevere i messaggi di una conversazione avviata in sua assenza.
 
 ## Funzionamento
 

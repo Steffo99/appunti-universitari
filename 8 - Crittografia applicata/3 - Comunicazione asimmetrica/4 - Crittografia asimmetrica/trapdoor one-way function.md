@@ -1,1 +1,1 @@
-[[funzione]] [[invertibile]] solo se si conosce un dato parametro.
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] [[invertibile]] solo se si conosce un dato parametro.
