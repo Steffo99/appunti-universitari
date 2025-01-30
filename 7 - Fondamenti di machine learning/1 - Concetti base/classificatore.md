@@ -1,4 +1,4 @@
-[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] che associa un [[array|vettore]] in [[input]] a un singolo [[output]].
+[[0 - Generale/funzione|funzione]] che associa un [[array|vettore]] in [[input]] a un [[output]].
 $$
 \Huge
 \fmlClassifier

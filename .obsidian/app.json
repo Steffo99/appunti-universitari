@@ -14,5 +14,6 @@
   "newLinkFormat": "shortest",
   "trashOption": "system",
   "promptDelete": false,
-  "readableLineLength": true
+  "readableLineLength": true,
+  "mobilePullAction": "workspace:next-tab"
 }

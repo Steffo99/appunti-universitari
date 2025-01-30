@@ -1,0 +1,1 @@
+Dati due [[insiemi linearmente separabili]], l'[[iperpiano]] che massimizza la [[distanza segnata tra punto e iperpiano|distanza]] tra i [[punto|punti]] più vicini all'[[iperpiano]] di ciascun [[insieme]].

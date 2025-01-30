@@ -2,6 +2,7 @@
 aliases:
   - distanza dall'origine
   - norma vettoriale
+  - distanza
 ---
 
 [[proprietà]] di un [[vettore]].

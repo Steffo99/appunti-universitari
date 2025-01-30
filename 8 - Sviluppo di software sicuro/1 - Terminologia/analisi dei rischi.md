@@ -1,1 +1,1 @@
-Documento che stima i possibili [[rischio|rischi]] a cui è esposto un [[asset]].
+Documento che stima i possibili [[8 - Sviluppo di software sicuro/1 - Terminologia/rischio|rischi]] a cui è esposto un [[asset]].

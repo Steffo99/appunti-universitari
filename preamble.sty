@@ -209,11 +209,6 @@
 	\mathrm{#1}
 }
 
-% Modello
-\newcommand{\fmlModel}[1][f] {
-	\fmlClassifier[#1]^*
-}
-
 % Campo dei classificatori
 \newcommand{\fmlHypothesisSpace} {
 	\mathcal{H}
@@ -230,8 +225,23 @@
 }
 
 % Funzione perdita
-\newcommand{\fmlLoss} {
-	\mathrm{V}
+\newcommand{\loss} {
+	\func[loss]
+}
+
+% Funzione rischio
+\newcommand{\risk}[1][] {
+	\func[risk]_{#1}
+}
+
+% Funzione rischio empirico
+\newcommand{\riske}[1][] {
+	\overline{\func[risk]_{#1}}
+}
+
+% Probabilità
+\newcommand{\prob}[1] {
+	\func[P] \par{#1}
 }
 
 % Curva di livello
@@ -242,6 +252,11 @@
 % Insieme di livello
 \newcommand{\fmlContourSet}[2] {
 	\mathcal{L}_{\leq #1} \par{#2}
+}
+
+% Proiezione
+\newcommand{\fmlProjection}[2][\Omega] {
+	\func[P]_{#1} \par{#2}
 }
 
 % Vettore normalizzato
@@ -267,4 +282,9 @@
 % Unità immaginaria
 \newcommand{\i} {
 	{\color{Pink} i}
+}
+
+% Clamp
+\newcommand{\clamp}[2] {
+	{\func[clamp]_{#1}^{#2}}
 }

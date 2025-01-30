@@ -296,15 +296,15 @@
     },
     {
       "path": "8 - Sistemi complessi/★ sistemi complessi.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
+      "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
       "path": "8 - Sviluppo di software sicuro/★ sviluppo di software sicuro.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
+      "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
       "path": "9 - Cloud and edge computing/★ cloud and edge computing.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
+      "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
       "path": "9 - Kernel hacking/★ kernel hacking.md",
@@ -312,7 +312,7 @@
     },
     {
       "path": "9 - Programmazione mobile/★ programmazione mobile.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
+      "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
       "path": "★ appunti magistrali.md",
@@ -500,66 +500,10 @@
     },
     {
       "path": "7 - Fondamenti di machine learning/★ fondamenti di machine learning.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/X - Support vector machines/support vector machine.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/X - Support vector machines/kernel lineare.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/X - Support vector machines/kernel polinomiale.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/X - Support vector machines/kernel gaussiano.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/02 - Richiami di calcolo vettoriale.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/03 - Metodi del gradiente in ambito deterministico.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/04 - Accelerazione dei metodi del gradiente.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/05 - Metodologia SVM per classificazione binaria.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/06 - Ottimizzazione vincolata.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/07 - Introduzione a MatLab.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/08 - Laboratorio Logistic Regression.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
+      "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
       "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/09 - Gradiente stocastico.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/10 - Laboratorio gradiente stocastico.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/11 - Deep learning.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/12 - Laboratorio deep learning.pdf",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
@@ -640,30 +584,118 @@
     },
     {
       "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/★ metodi di discesa.canvas",
-      "color": "fc3lLaITDn62PYbzBhqxl"
+      "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
       "path": "0 - Template/◍ metodo di discesa.md",
       "color": "me4XBNQC4rwzQFLlvIAn0"
     },
     {
-      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/metodo di discesa di Newton.md",
+      "path": "7 - Introduction to quantum information processing",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/metodo di discesa quasi Newton.md",
+      "path": "9 - Kernel hacking",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/metodo di discesa di Newton scalato con la diagonale dell'Hessiana.md",
+      "path": "0 - Template/◍ regola per lunghezza di passo.md",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/gradiente di funzione quadratica.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/metodo di discesa di Newton modificato.md",
+      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/2 - Direzione di ricerca/metodo di Newton.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/scelta di lunghezza di passo.md",
+      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/2 - Direzione di ricerca/metodo Barzilai-Borwein lungo.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/2 - Direzione di ricerca/metodo di discesa ripida scalata diagonalmente approssimando Newton.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/2 - Direzione di ricerca/metodo Barzilai-Borwein corto.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/5 - Support vector machines/condizioni di Karush-Kuhn-Tucker.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/5 - Support vector machines/★ support vector machines.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/5 - Support vector machines/support vector machine estesa per insiemi linearmente separabili.png",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/5 - Support vector machines/support vector machine.png",
+      "color": "me4XBNQC4rwzQFLlvIAn0"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/5 - Support vector machines/support vector machine duale.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/6 - Ottimizzazione vincolata/★ ottimizzazione vincolata.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/6 - Ottimizzazione vincolata/sufficiente ottimalità del secondo ordine.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/6 - Ottimizzazione vincolata/ottimalità del secondo ordine.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/6 - Ottimizzazione vincolata/ottimalità del primo ordine.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/7 - Gradiente proiettato/proiezione su n-palla.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/7 - Gradiente proiettato/proiezione su n-rettangolo ristretto a iperpiano.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/7 - Gradiente proiettato/metodo del gradiente proiettato.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/7 - Gradiente proiettato/★ gradiente proiettato.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/8 - Gradiente stocastico/★ gradiente stocastico.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/11 - Deep learning.pdf",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/8 - Gradiente stocastico/metodo del gradiente stocastico.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/8 - Gradiente stocastico/funzione fortemente convessa.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/8 - Gradiente stocastico/continuità di Lipschitz.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/8 - Gradiente stocastico/metodo di discesa stocastico.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     }
   ]

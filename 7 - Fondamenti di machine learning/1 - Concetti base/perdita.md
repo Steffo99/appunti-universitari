@@ -1,18 +1,19 @@
 ---
 aliases:
   - loss
+  - residuo
 ---
-[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] in un [[problema di supervised learning]].
+[[funzione obiettivo]] di un [[problema di supervised learning]].
 $$
 \Huge
-\fmlLoss
+\loss
 $$
 
 Misura quanto si allontana il [[classificatore]] dal risultato desiderato.
 
 $$
 \Large
-\fmlLoss \par{
+\loss \par{
 	\fmlOutput,\ 
 	\fmlClassifier (\fmlInput{\fmlDatasetIndex})
 }

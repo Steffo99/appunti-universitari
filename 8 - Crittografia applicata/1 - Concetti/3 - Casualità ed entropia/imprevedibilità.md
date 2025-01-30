@@ -1,1 +1,1 @@
-[[Vincolo]] [[soggettività|soggettivo]] per cui il [[soggetto]] non deve essere in grado di determinare anticipatamente l'output di una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]].
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/vincolo]] [[soggettività|soggettivo]] per cui il [[soggetto]] non deve essere in grado di determinare anticipatamente l'output di una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]].

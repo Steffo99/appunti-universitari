@@ -2,8 +2,7 @@
 
 Si vuole determinare un [[classificatore]] che minimizzi una certa [[perdita|funzione perdita]] e una certa [[complessità]].
 
-A tale scopo, si crea un [[modello di supervised learning]], al quale vengono dati in input usati [[campione|campioni]] di coppie [[input]]-[[output]] conosciute, detti [[dataset per supervised learning|data set]].
-
+A tale scopo, si crea un [[modello di supervised learning]], al quale vengono dati in input [[campione|campioni]] di coppie [[input]]-[[output]] conosciute, detti [[dataset per supervised learning|data set]].
 $$
 \Large
 \fmlDataset \in (\fmlInputField, \fmlOutputField)^{\fmlDatasetSize} 

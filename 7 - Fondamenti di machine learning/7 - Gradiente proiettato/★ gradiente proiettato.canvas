@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"id":"e82b0fe60dac2eda","x":-1740,"y":-500,"width":3240,"height":1560,"color":"2","type":"group","label":"Metodo del gradiente proiettato"},
+		{"id":"bffbb756cdbce3f5","type":"file","file":"7 - Fondamenti di machine learning/4 - Metodi di discesa/metodo di discesa.md","x":-600,"y":-1040,"width":960,"height":400},
+		{"id":"154b66f8a7a4624f","type":"file","file":"7 - Fondamenti di machine learning/7 - Gradiente proiettato/metodo del gradiente proiettato.md","x":-600,"y":-480,"width":960,"height":960},
+		{"id":"2ef1e7fbb7ffd165","type":"file","file":"7 - Fondamenti di machine learning/7 - Gradiente proiettato/metodo di lunghezza di proiezione.md","x":520,"y":-200,"width":400,"height":400},
+		{"id":"27493593ba2e7a26","type":"file","file":"7 - Fondamenti di machine learning/4 - Metodi di discesa/3 - Lunghezza di passo/metodo di lunghezza di passo.md","x":520,"y":-1040,"width":400,"height":400},
+		{"id":"6afdead044797bba","type":"file","file":"7 - Fondamenti di machine learning/7 - Gradiente proiettato/regola di lunghezza di proiezione di backtracking Armijo.md","x":1080,"y":80,"width":400,"height":400},
+		{"id":"6dbf25b65af00fb0","type":"file","file":"7 - Fondamenti di machine learning/7 - Gradiente proiettato/regola di lunghezza di proiezione di minimizzazione limitata.md","x":1080,"y":-480,"width":400,"height":400},
+		{"id":"dfbbcd7b7d7528ab","x":1640,"y":-480,"width":400,"height":400,"type":"file","file":"7 - Fondamenti di machine learning/4 - Metodi di discesa/3 - Lunghezza di passo/regola di lunghezza di passo di minimizzazione limitata.md"},
+		{"id":"0d88f2ef5ab96154","x":1640,"y":80,"width":400,"height":400,"type":"file","file":"7 - Fondamenti di machine learning/4 - Metodi di discesa/3 - Lunghezza di passo/metodo di lunghezza di passo di backtracking Armijo.md"},
+		{"id":"ec3acaed2042071c","type":"file","file":"7 - Fondamenti di machine learning/7 - Gradiente proiettato/teorema della proiezione.md","x":-1160,"y":-480,"width":400,"height":400},
+		{"id":"a885c80e81d9b72f","type":"file","file":"7 - Fondamenti di machine learning/7 - Gradiente proiettato/proiezione su insieme convesso.md","x":-1160,"y":80,"width":400,"height":400},
+		{"id":"c52200b4b2832d4b","type":"file","file":"7 - Fondamenti di machine learning/6 - Ottimizzazione vincolata/n-palla.md","x":-2280,"y":80,"width":400,"height":400},
+		{"id":"ea09d99528ea20e7","type":"file","file":"7 - Fondamenti di machine learning/6 - Ottimizzazione vincolata/n-rettangolo ristretto a iperpiano.md","x":-2280,"y":640,"width":400,"height":400},
+		{"id":"9788487af4a83032","type":"file","file":"7 - Fondamenti di machine learning/7 - Gradiente proiettato/proiezione su n-rettangolo.md","x":-1720,"y":-480,"width":400,"height":400},
+		{"id":"be256b270c34aff4","type":"file","file":"7 - Fondamenti di machine learning/7 - Gradiente proiettato/proiezione su n-palla.md","x":-1720,"y":80,"width":400,"height":400},
+		{"id":"a946000f622a613e","type":"file","file":"7 - Fondamenti di machine learning/7 - Gradiente proiettato/proiezione su n-rettangolo ristretto a iperpiano.md","x":-1720,"y":640,"width":400,"height":400},
+		{"id":"28711de6188cfb77","type":"file","file":"7 - Fondamenti di machine learning/6 - Ottimizzazione vincolata/n-rettangolo.md","x":-2280,"y":-480,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"b1dc7db4db5cedc6","fromNode":"28711de6188cfb77","fromSide":"right","toNode":"9788487af4a83032","toSide":"left"},
+		{"id":"0ba0938e2253cb4e","fromNode":"c52200b4b2832d4b","fromSide":"right","toNode":"be256b270c34aff4","toSide":"left"},
+		{"id":"3365d9c9c33b71de","fromNode":"ea09d99528ea20e7","fromSide":"right","toNode":"a946000f622a613e","toSide":"left"},
+		{"id":"9dc0268dd648224f","fromNode":"a885c80e81d9b72f","fromSide":"left","toNode":"a946000f622a613e","toSide":"right"},
+		{"id":"91fd765850b57957","fromNode":"a885c80e81d9b72f","fromSide":"left","toNode":"be256b270c34aff4","toSide":"right"},
+		{"id":"4ab880cc2d1df28d","fromNode":"a885c80e81d9b72f","fromSide":"left","toNode":"9788487af4a83032","toSide":"right"},
+		{"id":"84787b3deefe1be6","fromNode":"a885c80e81d9b72f","fromSide":"right","toNode":"154b66f8a7a4624f","toSide":"left"},
+		{"id":"c07b9bd625f360a6","fromNode":"bffbb756cdbce3f5","fromSide":"bottom","toNode":"154b66f8a7a4624f","toSide":"top"},
+		{"id":"8c02c6a28ffc7a88","fromNode":"27493593ba2e7a26","fromSide":"bottom","toNode":"2ef1e7fbb7ffd165","toSide":"top"},
+		{"id":"dcf2a1ed7c7ddbaf","fromNode":"154b66f8a7a4624f","fromSide":"right","toNode":"2ef1e7fbb7ffd165","toSide":"left"},
+		{"id":"9e2ef587c1e94162","fromNode":"a885c80e81d9b72f","fromSide":"top","toNode":"ec3acaed2042071c","toSide":"bottom"},
+		{"id":"4641a48e589bfcd5","fromNode":"2ef1e7fbb7ffd165","fromSide":"right","toNode":"6dbf25b65af00fb0","toSide":"left"},
+		{"id":"2f7d8929eaca7f12","fromNode":"2ef1e7fbb7ffd165","fromSide":"right","toNode":"6afdead044797bba","toSide":"left"},
+		{"id":"fedbf15119b979ad","fromNode":"0d88f2ef5ab96154","fromSide":"left","toNode":"6afdead044797bba","toSide":"right"},
+		{"id":"a21ed4dcab437988","fromNode":"dfbbcd7b7d7528ab","fromSide":"left","toNode":"6dbf25b65af00fb0","toSide":"right"}
+	]
+}

@@ -3,7 +3,7 @@ aliases:
   - casuale
 ---
 
-[[vincolo|Vincolo]] che richiede che i [[risultato|risultati]] di un [[generatore]] siano sia [[distribuzione uniforme|distribuiti uniformemente]] sia [[imprevedibilità|imprevedibili]] per tutte le parti coinvolte.
+[[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/vincolo|Vincolo]] che richiede che i [[risultato|risultati]] di un [[generatore]] siano sia [[distribuzione uniforme|distribuiti uniformemente]] sia [[imprevedibilità|imprevedibili]] per tutte le parti coinvolte.
 
 ## Esempio
 

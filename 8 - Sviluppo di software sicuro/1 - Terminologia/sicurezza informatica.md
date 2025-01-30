@@ -1,1 +1,1 @@
-[[Disciplina]] che cerca di [[mitigazione|mitigare]] i [[rischio|rischi]] agli [[asset]].
+[[Disciplina]] che cerca di [[mitigazione|mitigare]] i [[8 - Sviluppo di software sicuro/1 - Terminologia/rischio|rischi]] agli [[asset]].

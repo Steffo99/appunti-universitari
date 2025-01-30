@@ -3,7 +3,7 @@ Dimostriamo che il [[gradiente]] di una [[8 - Crittografia applicata/1 - Concett
 Dati: 
 - $\mathbf{b}$ e $\mathbf{c}$ [[vettore|vettori]] costanti,
 - $\mathbf{Q}$ una [[matrice simmetrica]] dello stesso ordine di $\mathbf{x}$;
-una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] [[funzione quadratica|quadratica]] è definita come:
+una [[funzione quadratica]] è definita come:
 $$
 q (\mathbf{x}) 
 =\
@@ -16,6 +16,7 @@ $$
 
 Vogliamo determinarne il [[gradiente]]:
 $$
+\Large
 \nabla \par{
 \par{\frac{1}{2} \cdot \mathbf{x}^\dagger \cdot \mathbf{Q} \cdot \mathbf{x}}
 + 
