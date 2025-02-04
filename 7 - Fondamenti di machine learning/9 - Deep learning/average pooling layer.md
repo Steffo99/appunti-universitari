@@ -1,0 +1,1 @@
+[[pooling layer]] che fa la [[media]] dei valori di tutti i [[neurone|neuroni]] a cui è connesso.

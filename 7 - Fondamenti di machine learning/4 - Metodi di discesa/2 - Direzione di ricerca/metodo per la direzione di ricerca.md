@@ -2,7 +2,7 @@
 
 $$
 \Huge
-\mathbf{D}_{iter}
+\mathbf{d}_{iter}
 $$
 dove:
 - $\mathbf{D}_{iter}$ è una [[matrice]] che rappresenta la [[trasformazione lineare]] dal [[gradiente]] nel punto attuale alla [[direzione di ricerca]] effettivamente applicata

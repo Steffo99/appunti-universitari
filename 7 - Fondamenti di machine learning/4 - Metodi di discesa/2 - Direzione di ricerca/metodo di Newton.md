@@ -31,7 +31,7 @@ $$
 \frac{ \par{{\color{cyan} \mathbf{x}} - \mathbf{x_{iter}}}^\dagger \times \nabla^2\ \func \par{\mathbf{x}_{iter}} \times \par{{\color{cyan} \mathbf{x}} - \mathbf{x_{iter}}} }{2}
 $$
 
-Vogliamo trovare il [[minimo globale]] di $\func[P]_2$, che è il punto $\mathbf{x}$ l'equazione: ==Qualcosa non mi torna: il minimo di una funzione convessa non è dove la sua derivata è uguale a zero? Qui non abbiamo derivato da nessuna parte, stiamo usando la definizione della funzione direttamente...== 
+Vogliamo trovare il [[minimo globale]] di $\func[P]_2$, che è il punto $\mathbf{x}$ in cui il [[gradiente]] è nullo:
 $$
 \nabla^2\ \func \par{\mathbf{x}_{iter}} \times \par{{\color{cyan} \mathbf{x}} - \mathbf{x}_{iter}} + \nabla\ \func \par{\mathbf{x}_{iter}} = \mathbf{0}
 $$

@@ -11,12 +11,12 @@
 		{"id":"0d88f2ef5ab96154","x":1640,"y":80,"width":400,"height":400,"type":"file","file":"7 - Fondamenti di machine learning/4 - Metodi di discesa/3 - Lunghezza di passo/metodo di lunghezza di passo di backtracking Armijo.md"},
 		{"id":"ec3acaed2042071c","type":"file","file":"7 - Fondamenti di machine learning/7 - Gradiente proiettato/teorema della proiezione.md","x":-1160,"y":-480,"width":400,"height":400},
 		{"id":"a885c80e81d9b72f","type":"file","file":"7 - Fondamenti di machine learning/7 - Gradiente proiettato/proiezione su insieme convesso.md","x":-1160,"y":80,"width":400,"height":400},
-		{"id":"c52200b4b2832d4b","type":"file","file":"7 - Fondamenti di machine learning/6 - Ottimizzazione vincolata/n-palla.md","x":-2280,"y":80,"width":400,"height":400},
-		{"id":"ea09d99528ea20e7","type":"file","file":"7 - Fondamenti di machine learning/6 - Ottimizzazione vincolata/n-rettangolo ristretto a iperpiano.md","x":-2280,"y":640,"width":400,"height":400},
+		{"id":"c52200b4b2832d4b","type":"file","file":"7 - Fondamenti di machine learning/5 - Ottimizzazione vincolata/n-palla.md","x":-2280,"y":80,"width":400,"height":400},
+		{"id":"ea09d99528ea20e7","type":"file","file":"7 - Fondamenti di machine learning/5 - Ottimizzazione vincolata/n-rettangolo ristretto a iperpiano.md","x":-2280,"y":640,"width":400,"height":400},
 		{"id":"9788487af4a83032","type":"file","file":"7 - Fondamenti di machine learning/7 - Gradiente proiettato/proiezione su n-rettangolo.md","x":-1720,"y":-480,"width":400,"height":400},
 		{"id":"be256b270c34aff4","type":"file","file":"7 - Fondamenti di machine learning/7 - Gradiente proiettato/proiezione su n-palla.md","x":-1720,"y":80,"width":400,"height":400},
 		{"id":"a946000f622a613e","type":"file","file":"7 - Fondamenti di machine learning/7 - Gradiente proiettato/proiezione su n-rettangolo ristretto a iperpiano.md","x":-1720,"y":640,"width":400,"height":400},
-		{"id":"28711de6188cfb77","type":"file","file":"7 - Fondamenti di machine learning/6 - Ottimizzazione vincolata/n-rettangolo.md","x":-2280,"y":-480,"width":400,"height":400}
+		{"id":"28711de6188cfb77","type":"file","file":"7 - Fondamenti di machine learning/5 - Ottimizzazione vincolata/n-rettangolo.md","x":-2280,"y":-480,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"b1dc7db4db5cedc6","fromNode":"28711de6188cfb77","fromSide":"right","toNode":"9788487af4a83032","toSide":"left"},

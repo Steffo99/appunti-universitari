@@ -1,7 +1,7 @@
 [[metodo per la direzione di ricerca]].
 $$
 \Huge
-\mathbf{D}_{iter} = {\color{orange} \rho_{iter}} \times \mathbf{I}\\
+\mathbf{D}_{iter} = {\color{orange} \rho_{iter}} \cdot \mathbf{I}\\
 $$
 Dove:
 $$
@@ -20,6 +20,7 @@ $$
 {\color{coral} \mathbf{g}_{iter}} = {\color{coral} \nabla \func \par{ \mathbf{x}_{iter} } - \nabla \func \par{ \mathbf{x}_{iter - 1} } }
 $$
 
+==Per evitare una divisione per zero, c'è bisogno che $\func$ sia una [[funzione strettamente convessa]].
 
 > [!Success] Aspetti positivi
 > 
@@ -58,7 +59,7 @@ $$
 {\color{lightcoral} \mathbf{s}_{iter}}
 $$
 
-Definiamo la funzione $\func[fa]_{iter}$ come lo [[scarto quadratico]] tra i due lati dell'approssimazione: ==Da dove viene fuori quell'1/2?==
+Definiamo la funzione $\func[fa]_{iter}$ come lo [[scarto quadratico]] tra i due lati dell'approssimazione, con un $\frac{1}{2}$ aggiuntivo perchè ci torna comodo al passo successivo:
 $$
 \func[fa]_{iter} \par{
 	{\color{gold} \overline{\rho_{iter}}}
@@ -73,7 +74,7 @@ $$
 }^2
 $$
 
-Abbiamo quindi:
+Sviluppando il quadrato, abbiamo quindi:
 $$
 \func[fa]_{iter} \par{
 	{\color{gold} \overline{\rho_{iter}}}
@@ -110,7 +111,7 @@ $$
 }
 $$
 
-Vogliamo trovare il punto per cui il valore di $\func[fa]_{iter}$ è [[minimo globale]]:
+Vogliamo trovare il punto per cui il valore di $\func[fa]_{iter}$ è [[minimo globale]], ovvero dove l'errore commesso dall'approssimazione è minore:
 $$
 \min \par{ \func[fa]_{iter} \par{\color{gold} \overline{\rho_{iter}}} }
 $$

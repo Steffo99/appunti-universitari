@@ -1,7 +1,7 @@
 [[0 - Generale/funzione|funzione]] che associa un [[array|vettore]] in [[input]] a un [[output]].
 $$
 \Huge
-\fmlClassifier
+\fmlClassifier : \mathbb{X} \to \mathbb{Y}
 $$
 
 Appartiene allo [[spazio delle ipotesi]]:

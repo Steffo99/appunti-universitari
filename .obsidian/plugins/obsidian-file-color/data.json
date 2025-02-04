@@ -503,14 +503,6 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/09 - Gradiente stocastico.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/13 - SVR per problemi di regressione.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "7 - Fondamenti di machine learning/1 - Concetti base/★ simboli per le basi di machine learning.md",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
@@ -575,10 +567,6 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/2 - Calcolo vettoriale/derivata a valore vettoriale.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "7 - Fondamenti di machine learning/3 - Calcolo convesso/★ calcolo convesso.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
@@ -607,67 +595,27 @@
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/2 - Direzione di ricerca/metodo di Newton.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/2 - Direzione di ricerca/metodo Barzilai-Borwein lungo.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/2 - Direzione di ricerca/metodo di discesa ripida scalata diagonalmente approssimando Newton.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/4 - Metodi di discesa/2 - Direzione di ricerca/metodo Barzilai-Borwein corto.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/5 - Support vector machines/condizioni di Karush-Kuhn-Tucker.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/5 - Support vector machines/★ support vector machines.canvas",
+      "path": "7 - Fondamenti di machine learning/6 - Support vector machines/★ support vector machines.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "7 - Fondamenti di machine learning/5 - Support vector machines/support vector machine estesa per insiemi linearmente separabili.png",
+      "path": "7 - Fondamenti di machine learning/6 - Support vector machines/support vector machine estesa per insiemi linearmente separabili.png",
       "color": "me4XBNQC4rwzQFLlvIAn0"
     },
     {
-      "path": "7 - Fondamenti di machine learning/5 - Support vector machines/support vector machine.png",
+      "path": "7 - Fondamenti di machine learning/6 - Support vector machines/support vector machine.png",
       "color": "me4XBNQC4rwzQFLlvIAn0"
     },
     {
-      "path": "7 - Fondamenti di machine learning/5 - Support vector machines/support vector machine duale.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/6 - Ottimizzazione vincolata/★ ottimizzazione vincolata.canvas",
+      "path": "7 - Fondamenti di machine learning/5 - Ottimizzazione vincolata/★ ottimizzazione vincolata.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "7 - Fondamenti di machine learning/6 - Ottimizzazione vincolata/sufficiente ottimalità del secondo ordine.md",
+      "path": "7 - Fondamenti di machine learning/5 - Ottimizzazione vincolata/sufficiente ottimalità del secondo ordine.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/6 - Ottimizzazione vincolata/ottimalità del secondo ordine.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/6 - Ottimizzazione vincolata/ottimalità del primo ordine.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/7 - Gradiente proiettato/proiezione su n-palla.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/7 - Gradiente proiettato/proiezione su n-rettangolo ristretto a iperpiano.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/7 - Gradiente proiettato/metodo del gradiente proiettato.md",
+      "path": "7 - Fondamenti di machine learning/5 - Ottimizzazione vincolata/ottimalità del secondo ordine.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
@@ -679,23 +627,31 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "7 - Fondamenti di machine learning/0 - Materiale di studio/Slides/2023/11 - Deep learning.pdf",
+      "path": "7 - Fondamenti di machine learning/9 - Deep learning/★ deep learning.canvas",
+      "color": "7j7Pqog0VHMVVAfazMNlb"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/6 - Support vector machines/support vector machine duale.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/8 - Gradiente stocastico/metodo del gradiente stocastico.md",
+      "path": "7 - Fondamenti di machine learning/6 - Support vector machines/soft margin loss.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/8 - Gradiente stocastico/funzione fortemente convessa.md",
+      "path": "7 - Fondamenti di machine learning/6 - Support vector machines/epsilon-insensitive loss.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/8 - Gradiente stocastico/continuità di Lipschitz.md",
+      "path": "0 - Generale/regole di derivazione.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Fondamenti di machine learning/8 - Gradiente stocastico/metodo di discesa stocastico.md",
+      "path": "0 - Generale/derivata.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/6 - Support vector machines/support vector machine di regressione.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     }
   ]

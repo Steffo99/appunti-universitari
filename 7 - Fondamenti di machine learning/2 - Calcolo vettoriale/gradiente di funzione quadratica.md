@@ -1,18 +1,4 @@
-Dimostriamo che il [[gradiente]] di una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] [[funzione quadratica|quadratica]] $q (\mathbf{x})$ è $\mathbf{0}$.
-
-Dati: 
-- $\mathbf{b}$ e $\mathbf{c}$ [[vettore|vettori]] costanti,
-- $\mathbf{Q}$ una [[matrice simmetrica]] dello stesso ordine di $\mathbf{x}$;
-una [[funzione quadratica]] è definita come:
-$$
-q (\mathbf{x}) 
-=\
-\par{\frac{1}{2} \cdot \mathbf{x}^\dagger \cdot \mathbf{Q} \cdot \mathbf{x}}
-+ 
-\par{\mathbf{b}^\dagger \cdot \mathbf{x}}
-+ 
-\par{\mathbf{c}}
-$$
+Dimostriamo che il [[gradiente]] di una [[0 - Generale/funzione|funzione]] [[funzione quadratica a variabili multiple|quadratica]] $q (\mathbf{x})$ è $\mathbf{0}$.
 
 Vogliamo determinarne il [[gradiente]]:
 $$
@@ -27,7 +13,7 @@ $$
 $$
 
 > [!Note]
-> Esiste una formulazione alternativa della [[funzione quadratica]].
+> Esiste una formulazione alternativa della [[funzione quadratica a variabili multiple]].
 > 
 > Dati:
 > - $\mathbf{b} = - \mathbf{Q} \cdot x_0$
@@ -47,13 +33,10 @@ $$
 > +
 > \bar{c}
 > $$
-> ==A cosa ci serve?==
 
 Per farlo, possiamo semplificare la formula applicando le [[regole di derivazione]] ==(per i vettori sono leggermente diverse, andrebbero specificate)==:
 $$
 \displaylines{
-	\nabla q(\mathbf{x})
-	=\\
 	\frac{1}{2} \cdot \nabla \par{ \color{SandyBrown} \mathbf{x}^\dagger \cdot \mathbf{Q} \cdot \mathbf{x} } + \nabla \par{ \color{SandyBrown} \mathbf{b}^\dagger \cdot \mathbf{x}} + 0
 	=\\
 	\frac{1}{2} \cdot \nabla \par{ \color{SandyBrown} \mathbf{x}^\dagger } \cdot \mathbf{Q} \cdot \mathbf{x} + \frac{1}{2} \cdot \mathbf{x}^\dagger \cdot \nabla \par{ \color{SandyBrown} \mathbf{Q} \cdot \mathbf{x} } + \nabla \par{ \color{SandyBrown} \mathbf{b}^\dagger} \cdot \mathbf{x} + \nabla \par{ \color{SandyBrown} \mathbf{x}^\dagger} \cdot \mathbf{b} + 0 
@@ -67,7 +50,7 @@ $$
 $$
 ==In che magico modo $\mathbf{x}$ e $\mathbf{x}^\dagger$ si sommano?==
 
-Abbiamo come risultato:
+Abbiamo come risultato un [[iperpiano]]:
 $$
 \Huge
 \mathbf{Q} \cdot \mathbf{x} + \mathbf{b}

@@ -25,7 +25,7 @@ Calcola effettivamente il [[minimo locale]] della funzione $\func \par{\mathbf{x
 
 ## In funzioni quadratiche
 
-Assumiamo che la [[funzione]] $\func$ sia una [[funzione quadratica]] $\func = \par{\frac{1}{2} \cdot \mathbf{x}^\dagger \cdot \mathbf{Q} \cdot \mathbf{x}} + \par{\mathbf{b}^\dagger \cdot \mathbf{x}} + \par{\mathbf{c}}$.
+Assumiamo che la [[funzione]] $\func$ sia una [[funzione quadratica a variabili multiple]] $\func = \par{\frac{1}{2} \cdot \mathbf{x}^\dagger \cdot \mathbf{Q} \cdot \mathbf{x}} + \par{\mathbf{b}^\dagger \cdot \mathbf{x}} + \par{\mathbf{c}}$.
 
 Svolgendo i passaggi per determinare il [[minimo globale]] $\min_{\color{orange} \alpha} \func \par{	\mathbf{x}_{iter} + {\color{orange} \alpha} \cdot \mathbf{d}_{iter}}$, abbiamo che:
 $$

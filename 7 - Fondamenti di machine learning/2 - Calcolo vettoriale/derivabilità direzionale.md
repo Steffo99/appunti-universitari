@@ -4,7 +4,7 @@ aliases:
   - avente derivata direzionale
   - ha derivata direzionale
 ---
-[[proprietà]] di una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]].
+[[proprietà]] di una [[0 - Generale/funzione|funzione]].
 $$
 \Huge
 \derivativeDirectionalOf{x}{s}

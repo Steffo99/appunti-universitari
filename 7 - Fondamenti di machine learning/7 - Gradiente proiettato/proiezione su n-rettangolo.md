@@ -12,3 +12,4 @@ $$
 	\clamp{l_n}{u_n} \par{\color{orange}  x_n} \\
 \end{bmatrix}
 $$
+L'applicazione del [[clamp|limite superiore e inferiore]] per ciascuna [[coordinata]].

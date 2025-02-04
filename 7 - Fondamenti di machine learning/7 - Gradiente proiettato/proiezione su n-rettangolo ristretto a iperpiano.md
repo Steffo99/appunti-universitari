@@ -13,5 +13,3 @@ $$
 	{2}
 }
 $$
-
-==Cosa significa in termini matematici?==

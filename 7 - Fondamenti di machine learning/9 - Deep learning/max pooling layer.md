@@ -1,0 +1,1 @@
+[[pooling layer]] che prende il valore [[massimo]] tra tutti i [[neurone|neuroni]] a cui è connesso.

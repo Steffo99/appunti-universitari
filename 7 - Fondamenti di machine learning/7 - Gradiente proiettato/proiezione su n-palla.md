@@ -11,5 +11,4 @@ $$
 {\par{r} \cdot \par{\varX - \mathbf{c}}}
 {\max \par{ r,\ \abs{\varX - \mathbf{c}} }}
 $$
-
-==Cosa significa in termini matematici?==
+Il punto stesso, oppure un punto sulla superficie della [[n-sfera]].

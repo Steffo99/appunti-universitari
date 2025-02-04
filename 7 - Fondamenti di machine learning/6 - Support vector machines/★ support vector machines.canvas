@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"5975e597225609c3","type":"file","file":"7 - Fondamenti di machine learning/6 - Support vector machines/support vector machine per insiemi linearmente separabili.md","x":-560,"y":-560,"width":800,"height":800},
+		{"id":"a85ec877bed94969","type":"file","file":"7 - Fondamenti di machine learning/6 - Support vector machines/support vector machine estesa per insiemi linearmente separabili.md","x":400,"y":-560,"width":800,"height":800},
+		{"id":"ff5348478134e356","type":"file","file":"7 - Fondamenti di machine learning/6 - Support vector machines/support vector machine ottimale per insiemi linearmente separabil.md","x":1360,"y":-560,"width":800,"height":800},
+		{"id":"561e7ece95935a45","type":"file","file":"7 - Fondamenti di machine learning/6 - Support vector machines/support vector machine.md","x":2320,"y":-560,"width":800,"height":800},
+		{"id":"15b290962553d9d8","type":"file","file":"7 - Fondamenti di machine learning/6 - Support vector machines/support vector.md","x":2280,"y":-1120,"width":400,"height":400},
+		{"id":"94d91fdd940366fa","type":"file","file":"7 - Fondamenti di machine learning/6 - Support vector machines/bound support vector.md","x":2760,"y":-1120,"width":400,"height":400},
+		{"id":"e1fa4fae40b504f4","type":"file","file":"7 - Fondamenti di machine learning/6 - Support vector machines/kernel di una support vector machine.md","x":600,"y":400,"width":400,"height":400},
+		{"id":"a22896de8b5af71e","type":"file","file":"7 - Fondamenti di machine learning/6 - Support vector machines/kernel lineare.md","x":120,"y":960,"width":400,"height":400},
+		{"id":"a3c7db3116d87d38","type":"file","file":"7 - Fondamenti di machine learning/6 - Support vector machines/kernel polinomiale.md","x":600,"y":960,"width":400,"height":400},
+		{"id":"1fb67c378211c364","type":"file","file":"7 - Fondamenti di machine learning/6 - Support vector machines/kernel gaussiano.md","x":1080,"y":960,"width":400,"height":400},
+		{"id":"427abcd365d97e89","type":"file","file":"7 - Fondamenti di machine learning/6 - Support vector machines/strategia winner-takes-all.md","x":3280,"y":-720,"width":400,"height":400},
+		{"id":"80d5269ea230dae8","type":"file","file":"7 - Fondamenti di machine learning/6 - Support vector machines/strategia max-wins-voting.md","x":3760,"y":-720,"width":400,"height":400},
+		{"id":"bcdfa83ef358916c","x":3320,"y":0,"width":800,"height":800,"type":"file","file":"7 - Fondamenti di machine learning/6 - Support vector machines/support vector machine di regressione.md"},
+		{"id":"51191e43a34afb24","x":2320,"y":400,"width":800,"height":800,"type":"file","file":"7 - Fondamenti di machine learning/6 - Support vector machines/support vector machine duale.md"}
+	],
+	"edges":[
+		{"id":"12063fa7bda566c8","fromNode":"e1fa4fae40b504f4","fromSide":"bottom","toNode":"a22896de8b5af71e","toSide":"top"},
+		{"id":"57da29074bcb1d1f","fromNode":"e1fa4fae40b504f4","fromSide":"bottom","toNode":"a3c7db3116d87d38","toSide":"top"},
+		{"id":"db5b11729d75f877","fromNode":"e1fa4fae40b504f4","fromSide":"bottom","toNode":"1fb67c378211c364","toSide":"top"},
+		{"id":"b15c3c082ff5e817","fromNode":"a85ec877bed94969","fromSide":"bottom","toNode":"e1fa4fae40b504f4","toSide":"top"},
+		{"id":"25ad0b371a0bc930","fromNode":"561e7ece95935a45","fromSide":"top","toNode":"15b290962553d9d8","toSide":"bottom"},
+		{"id":"c1305434e39d0303","fromNode":"561e7ece95935a45","fromSide":"top","toNode":"94d91fdd940366fa","toSide":"bottom"},
+		{"id":"24569f61334a27aa","fromNode":"5975e597225609c3","fromSide":"right","toNode":"a85ec877bed94969","toSide":"left"},
+		{"id":"4534015f9780e840","fromNode":"a85ec877bed94969","fromSide":"right","toNode":"ff5348478134e356","toSide":"left"},
+		{"id":"b8f6a854c0b95714","fromNode":"ff5348478134e356","fromSide":"right","toNode":"561e7ece95935a45","toSide":"left"},
+		{"id":"b51e1d49cb39c3bd","fromNode":"561e7ece95935a45","fromSide":"right","toNode":"427abcd365d97e89","toSide":"bottom"},
+		{"id":"6d169b0fe2866015","fromNode":"561e7ece95935a45","fromSide":"right","toNode":"80d5269ea230dae8","toSide":"bottom"},
+		{"id":"369657abdc41a50d","fromNode":"561e7ece95935a45","fromSide":"right","toNode":"bcdfa83ef358916c","toSide":"top"},
+		{"id":"9ebed537c2314172","fromNode":"561e7ece95935a45","fromSide":"bottom","toNode":"51191e43a34afb24","toSide":"top"}
+	]
+}

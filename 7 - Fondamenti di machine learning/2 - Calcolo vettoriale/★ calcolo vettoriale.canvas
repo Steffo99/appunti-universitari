@@ -17,15 +17,15 @@
 		{"id":"1253c56c53c4da90","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/matrice Iacobiana.md","x":520,"y":320,"width":800,"height":400,"color":"2"},
 		{"id":"7acd55b5f1586398","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/funzione a valore vettoriale.md","x":920,"y":-240,"width":400,"height":400,"color":"3"},
 		{"id":"0b261b569c4f6977","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/funzione a variabili multiple.md","x":520,"y":-240,"width":400,"height":400,"color":"1"},
-		{"id":"3be88228634ad9d6","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/derivata a valore vettoriale.md","x":1480,"y":-800,"width":800,"height":400,"color":"3"},
-		{"id":"24dc7f152d8c97c1","type":"text","text":"==Qual è l'equivalente di una Hessiana-Iacobiana?==","x":520,"y":880,"width":800,"height":400,"color":"2"},
+		{"id":"24dc7f152d8c97c1","type":"text","text":"Un tensore tri-dimensionale.","x":520,"y":880,"width":800,"height":400,"color":"2"},
 		{"id":"ca8b54091cf343ce","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/insieme di livello.md","x":-2360,"y":40,"width":800,"height":400},
 		{"id":"dc6512f19d5ff584","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/curva di livello.md","x":-1400,"y":40,"width":800,"height":400},
 		{"id":"b4a86c1e3a79810a","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/gradiente di funzione lineare.md","x":-1400,"y":600,"width":800,"height":400},
 		{"id":"7f43f404f2518eaf","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/gradiente di funzione quadratica.md","x":-2360,"y":600,"width":800,"height":400},
-		{"id":"b3bb46d754a4f95b","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/problema dei minimi quadrati.md","x":-2360,"y":1160,"width":800,"height":400},
 		{"id":"5083f0a316505bbf","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/polinomio di Taylor a più variabili.md","x":-3320,"y":-240,"width":800,"height":400},
-		{"id":"4e90883de5592233","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/varietà affine.md","x":-4280,"y":-240,"width":800,"height":400}
+		{"id":"4e90883de5592233","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/varietà affine.md","x":-4280,"y":-240,"width":800,"height":400},
+		{"id":"9a39a8d7c3f20634","type":"text","text":"Un vettore di derivate relative alle diverse dimensioni.","x":1480,"y":-800,"width":800,"height":400,"color":"3"},
+		{"id":"b3bb46d754a4f95b","type":"file","file":"7 - Fondamenti di machine learning/2 - Calcolo vettoriale/problema dei minimi quadrati.md","x":-2360,"y":1160,"width":800,"height":400}
 	],
 	"edges":[
 		{"id":"df2faeb253ec0e13","fromNode":"b5b6c9ca87abdda9","fromSide":"bottom","toNode":"31a565eaadd3d803","toSide":"top","color":"1"},
@@ -44,16 +44,16 @@
 		{"id":"caed1289e82992d3","fromNode":"7acd55b5f1586398","fromSide":"bottom","toNode":"1253c56c53c4da90","toSide":"top","color":"3"},
 		{"id":"99cf429db452e76c","fromNode":"0b261b569c4f6977","fromSide":"bottom","toNode":"1253c56c53c4da90","toSide":"top","color":"1"},
 		{"id":"6687a9815c1477c5","fromNode":"398b5c9300fd8f9e","fromSide":"right","toNode":"1253c56c53c4da90","toSide":"left","color":"1"},
-		{"id":"f6a893872db399d1","fromNode":"03c5dc54442ee6ef","fromSide":"bottom","toNode":"3be88228634ad9d6","toSide":"top","color":"3"},
-		{"id":"6b9bab33550b7a00","fromNode":"5c586c9a3126f0d9","fromSide":"bottom","toNode":"3be88228634ad9d6","toSide":"top"},
-		{"id":"5841e219d61dd627","fromNode":"3be88228634ad9d6","fromSide":"bottom","toNode":"1253c56c53c4da90","toSide":"right","color":"3"},
-		{"id":"1d93776c40e80b1a","fromNode":"921e5eb37997c476","fromSide":"right","toNode":"3be88228634ad9d6","toSide":"left","color":"3"},
 		{"id":"515cb30db7f424cf","fromNode":"96677b786ccfa812","fromSide":"right","toNode":"24dc7f152d8c97c1","toSide":"left","color":"1"},
 		{"id":"d19869dcb91fc96f","fromNode":"1253c56c53c4da90","fromSide":"bottom","toNode":"24dc7f152d8c97c1","toSide":"top","color":"2"},
 		{"id":"e24e4be967093bee","fromNode":"398b5c9300fd8f9e","fromSide":"left","toNode":"b4a86c1e3a79810a","toSide":"right"},
 		{"id":"92950f5d4ab2bd6f","fromNode":"b4a86c1e3a79810a","fromSide":"left","toNode":"7f43f404f2518eaf","toSide":"right"},
 		{"id":"9dcc8a08c4bc4a60","fromNode":"7f43f404f2518eaf","fromSide":"bottom","toNode":"b3bb46d754a4f95b","toSide":"top"},
 		{"id":"b3c5f664bbb82a59","fromNode":"ef3d7af293f6cf0a","fromSide":"bottom","toNode":"5083f0a316505bbf","toSide":"top"},
-		{"id":"ef9736c5d7de317c","fromNode":"4e90883de5592233","fromSide":"right","toNode":"5083f0a316505bbf","toSide":"left"}
+		{"id":"ef9736c5d7de317c","fromNode":"4e90883de5592233","fromSide":"right","toNode":"5083f0a316505bbf","toSide":"left"},
+		{"id":"1ef8d2bf59a86719","fromNode":"5c586c9a3126f0d9","fromSide":"bottom","toNode":"9a39a8d7c3f20634","toSide":"top"},
+		{"id":"d768041ec96e304d","fromNode":"03c5dc54442ee6ef","fromSide":"bottom","toNode":"9a39a8d7c3f20634","toSide":"top","color":"3"},
+		{"id":"b709b4a98745133a","fromNode":"921e5eb37997c476","fromSide":"right","toNode":"9a39a8d7c3f20634","toSide":"left","color":"3"},
+		{"id":"e6bd735bd1b155f7","fromNode":"9a39a8d7c3f20634","fromSide":"bottom","toNode":"1253c56c53c4da90","toSide":"right","color":"3"}
 	]
 }

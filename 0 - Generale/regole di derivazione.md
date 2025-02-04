@@ -45,3 +45,6 @@ $$
 | [[regola di derivazione della funzione inversa\|della funzione inversa]]                   | ${\color{lightgreen} \func[f]^{-1} (x)}$ | $\frac{1}{\color{forestgreen} \func[f'] \par{\color{lightgreen} \func[f]^{-1} \par{x}}}$ |                     |
 | [[regola di derivazione della catena di funzioni\|della catena di funzioni]]               | $\color{lightgreen} \func[f] \par{ \g }$ | $\color{forestgreen} \func[f'] \par{ \g } \cdot \G$                                      |                     |
 | [[regola di derivazione della potenza di funzioni\|della potenza di funzioni]]             | $\f ^ \g$                                | $\G \cdot \ln \par{\f} + \frac{\g \cdot \F}{\f}$                                         |                     |
+## Per vettori
+
+==TODO==

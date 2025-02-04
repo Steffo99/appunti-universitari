@@ -3,14 +3,12 @@
 $$
 \Huge
 \mathbf{D}_{iter} = \backslash \begin{bmatrix} 
-	\func'' \par{\mathbf{x}_{iter}; \mathbf{s}_{1}}\\
-	\func'' \par{\mathbf{x}_{iter}; \mathbf{s}_{2}}\\ 
-	\func'' \par{\mathbf{x}_{iter}; \mathbf{s}_{3}}\\
-	\vdots
+	\func''_{s_1,s_1} \par{\mathbf{x}_{iter}}\\
+	\func''_{s_2,s_2} \par{\mathbf{x}_{iter}}\\ 
+	\vdots \\
+	\func''_{s_n,s_n} \par{\mathbf{x}_{iter}}\\
 \end{bmatrix}^{-1}
 $$
-
-==Controllare formula.==
 
 Approssima il [[metodo di Newton]] calcolando solo gli elementi della diagonale dell'[[matrice Hessiana|Hessiana]].
 

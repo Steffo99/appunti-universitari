@@ -1,12 +1,12 @@
 [[metodo per la direzione di ricerca]].
 $$
 \Huge
-\mathbf{D}_{iter} = {\color{orange} \rho} \times \mathbf{I}\\
+\mathbf{D}_{iter} = {\color{orange} \rho_{iter}} \cdot \mathbf{I}\\
 $$
 Dove:
 $$
 \Huge
-{\color{orange} \rho} 
+{\color{orange} \rho_{iter}} 
 = 
 \frac
 {{\color{lightcoral} \mathbf{s}_{iter}}^\dagger \times {\color{coral} \mathbf{g}_{iter}}}
@@ -40,7 +40,7 @@ $$
 {\color{coral} \mathbf{g}_{iter}}
 $$
 
-==Applica la stessa cosa del [[metodo Barzilai-Borwein corto]].==
+Applica la stessa cosa del [[metodo Barzilai-Borwein corto]].
 
 ## Uso
 

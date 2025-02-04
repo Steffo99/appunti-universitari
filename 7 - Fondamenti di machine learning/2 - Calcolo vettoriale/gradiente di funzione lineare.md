@@ -1,6 +1,6 @@
-Dimostriamo che il [[gradiente]] di una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] [[linearità|lineare]] $\funcLinear (\mathbf{x})$ è $\mathbf{0}$.
+Dimostriamo che il [[gradiente]] di una [[0 - Generale/funzione|funzione]] [[linearità|lineare]] $\funcLinear (\mathbf{x})$ è $\mathbf{0}$.
 
-Dati $\mathbf{a}$ e $\mathbf{b}$ [[vettore|vettori]] costanti, una [[8 - Crittografia applicata/1 - Concetti/1 - Trovare soluzioni crittografiche/funzione]] [[linearità|lineare]] è definita come:
+Dati $\mathbf{a}$ e $\mathbf{b}$ [[vettore|vettori]] costanti, una [[0 - Generale/funzione|funzione]] [[linearità|lineare]] è definita come:
 $$
 \funcLinear (\mathbf{x}) 
 =\
@@ -13,7 +13,7 @@ $$
 \nabla \par{\mathbf{a}^\dagger \cdot \mathbf{x} + \mathbf{b}}
 $$
 
-Per farlo, possiamo semplificare la formula applicando le [[regole di derivazione]] ==(per i vettori sono leggermente diverse, andrebbero specificate)==:
+Per farlo, possiamo semplificare la formula applicando le [[regole di derivazione]]:
 $$
 \displaylines{
 	\nabla \par{ \color{SandyBrown} \mathbf{a}^\dagger \cdot \mathbf{x} + \mathbf{b}} =\\
