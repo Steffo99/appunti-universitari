@@ -71,7 +71,7 @@ Per utilizzare `bcc`, è necessario che il kernel che si sta utilizzando abbia l
 
 Se si sta usando il kernel Linux compilato dalla propria distribuzione, solitamente si possono installare i relativi header dal proprio package manager:
 - su ***Debian 12 Bookworm***, è possibile installarli tramite il pacchetto `linux-headers-XXX`, dove `XXX` è la versione del proprio kernel ottenibile attraverso il comando `uname --kernel-release`
-- su ***Ubuntu 24.10 Oracular Oriole***, è possibile installarli tramite il pacchetto `linux-headers-XXX`, dove `XXX` è la versione del proprio kernel ottenibile attraverso il comando `uname --kernel-release
+- su ***Ubuntu 24.10 Oracular Oriole***, è possibile installarli tramite il pacchetto `linux-headers-XXX`, dove `XXX` è la versione del proprio kernel ottenibile attraverso il comando `uname --kernel-release`
 - su ***Fedora 41***, è possibile installarli tramite il pacchetto [`kernel-devel`](https://packages.fedoraproject.org/pkgs/kernel/kernel-devel/)
 - su ***Arch Linux 2025-02-27***, è possibile installarli tramite il pacchetto [`linux-headers`](https://archlinux.org/packages/core/x86_64/linux-headers/) in `core`
 
