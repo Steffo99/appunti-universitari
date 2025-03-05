@@ -1,0 +1,598 @@
+<p><code>offwaketime</code> è un profiler per thread su Linux che
+sfrutta eBPF per catturare informazioni nei momenti in cui un thread
+entra in attesa di un evento esterno alla CPU e in quelli in cui esso
+viene risvegliato dall’attesa.</p>
+<p>È mantenuto dall’<a href="https://github.com/iovisor">IO Visor
+Project</a>.</p>
+<h2 id="installazione">Installazione</h2>
+<p><a
+href="https://github.com/iovisor/bcc/blob/master/tools/offwaketime.py"><code>offwaketime</code></a>
+è uno script del toolkit <a
+href="https://github.com/iovisor/bcc"><code>bcc</code></a>, e viene
+installato assieme ad esso.</p>
+<p>Inoltre, richiede che siano installati gli header del kernel in
+esecuzione sulla macchina che esegue il programma di cui si vuole
+effettuare il profiling.</p>
+<p>Infine, per visualizzare graficamente l’output ottenuto, è necessario
+il renderer <a
+href="https://github.com/brendangregg/FlameGraph"><code>FlameGraph</code></a>.</p>
+<h3 id="bcc"><code>bcc</code></h3>
+<p><code>bcc</code> è preparato downstream dalla grande maggioranza
+delle distribuzioni Linux: - su <strong><em>Debian 12
+Bookworm</em></strong>, è possibile installarlo tramite il pacchetto <a
+href="https://packages.debian.org/bookworm/bpfcc-tools"><code>bpfcc-tools</code></a>
+- su <strong><em>Ubuntu 24.10 Oracular Oriole</em></strong>, è possibile
+installarlo tramite il pacchetto <a
+href="https://launchpad.net/ubuntu/+source/bpfcc"><code>bpfcc-tools</code></a>
+- su <strong><em>Fedora 41</em></strong>, è possibile installarlo
+tramite il pacchetto <a
+href="https://packages.fedoraproject.org/pkgs/bcc/bcc-tools/"><code>bcc-tools</code></a>
+- su <strong><em>Arch Linux 2025-02-27</em></strong>, è possibile
+installarlo tramite il pacchetto <a
+href="https://archlinux.org/packages/extra/x86_64/bcc-tools/"><code>bcc-tools</code></a>
+in <code>extra</code></p>
+<p>IO Visor mantiene una <a
+href="https://github.com/iovisor/bcc/blob/master/INSTALL.md">lista
+completa</a> di tutti i downstream che includono <code>bcc</code>.</p>
+<h3 id="header-del-kernel">Header del kernel</h3>
+<blockquote>
+<p>[!Note] Per utilizzare <code>bcc</code>, è necessario che il kernel
+che si sta utilizzando abbia le seguenti funzionalità compilate<a
+href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>: - <code>CONFIG_BPF_SYSCALL</code> -
+<code>CONFIG_BPF_JIT</code> - <code>CONFIG_HAVE_BPF_JIT</code> -
+<code>CONFIG_HAVE_EBPF_JIT</code> - <code>CONFIG_HAVE_CBPF_JIT</code> -
+<code>CONFIG_MODULES</code> - <code>CONFIG_BPF</code> -
+<code>CONFIG_BPF_EVENTS</code> - <code>CONFIG_PERF_EVENTS</code> -
+<code>CONFIG_HAVE_PERF_EVENTS</code> - <code>CONFIG_PROFILING</code> -
+<code>CONFIG_DEBUG_INFO_BTF</code> -
+<code>CONFIG_PAHOLE_HAS_SPLIT_BTF</code> -
+<code>CONFIG_DEBUG_INFO_BTF_MODULES</code> -
+<code>CONFIG_BPF_JIT_ALWAYS_ON</code> -
+<code>CONFIG_BPF_UNPRIV_DEFAULT_OFF</code> -
+<code>CONFIG_CGROUP_BPF</code> - <code>CONFIG_BPFILTER</code> -
+<code>CONFIG_BPFILTER_UMH</code> - <code>CONFIG_NET_CLS_BPF</code> -
+<code>CONFIG_NET_ACT_BPF</code> - <code>CONFIG_BPF_STREAM_PARSER</code>
+- <code>CONFIG_LWTUNNEL_BPF</code> -
+<code>CONFIG_NETFILTER_XT_MATCH_BPF</code> -
+<code>CONFIG_IPV6_SEG6_BPF</code> - <code>CONFIG_KPROBE_EVENTS</code> -
+<code>CONFIG_KPROBES</code> - <code>CONFIG_HAVE_KPROBES</code> -
+<code>CONFIG_HAVE_REGS_AND_STACK_ACCESS_API</code> -
+<code>CONFIG_KPROBES_ON_FTRACE</code> - <code>CONFIG_FPROBE</code> -
+<code>CONFIG_BPF_KPROBE_OVERRIDE</code> -
+<code>CONFIG_UPROBE_EVENTS</code> -
+<code>CONFIG_ARCH_SUPPORTS_UPROBES</code> - <code>CONFIG_UPROBES</code>
+- <code>CONFIG_MMU</code> - <code>CONFIG_TRACEPOINTS</code> -
+<code>CONFIG_HAVE_SYSCALL_TRACEPOINTS</code> -
+<code>CONFIG_BPF_LSM</code> - <code>CONFIG_BPF_LIRC_MODE2</code></p>
+</blockquote>
+<h4 id="kernel-distribuito">Kernel distribuito</h4>
+<p>Se si sta usando il kernel Linux compilato dalla propria
+distribuzione, solitamente si possono installare i relativi header dal
+proprio package manager: - su <strong><em>Debian 12
+Bookworm</em></strong>, è possibile installarli tramite il pacchetto
+<code>linux-headers-XXX</code>, dove <code>XXX</code> è la versione del
+proprio kernel ottenibile attraverso il comando
+<code>uname --kernel-release</code> - su <strong><em>Ubuntu 24.10
+Oracular Oriole</em></strong>, è possibile installarli tramite il
+pacchetto <code>linux-headers-XXX</code>, dove <code>XXX</code> è la
+versione del proprio kernel ottenibile attraverso il comando
+<code>uname --kernel-release - su ***Fedora 41***, è possibile installarli tramite il pacchetto [</code>kernel-devel<code>](https://packages.fedoraproject.org/pkgs/kernel/kernel-devel/) - su ***Arch Linux 2025-02-27***, è possibile installarli tramite il pacchetto [</code>linux-headers<code>](https://archlinux.org/packages/core/x86_64/linux-headers/) in</code>core`</p>
+<h4 id="kernel-da-sorgente">Kernel da sorgente</h4>
+<p>Se si sta usando un proprio kernel compilato da sorgente, è possibile
+installare i relativi header attraverso <code>make</code> con il
+comando:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> headers_install</span></code></pre></div>
+<p>Eventualmente è possibile modificarne la posizione di installazione,
+specificando la variabile <code>INSTALL_HDR_PATH</code>:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> headers_install INSTALL_HDR_PATH=<span class="st">&quot;/usr/lib/modules/1.2.3-mykernel&quot;</span></span></code></pre></div>
+<h3 id="flamegraph"><code>FlameGraph</code></h3>
+<p><a
+href="https://github.com/brendangregg/FlameGraph"><code>FlameGraph</code></a>
+è un insieme di script <code>awk</code> e <code>perl</code> che non sono
+preparati downstream da nessuna distribuzione, rendendo quindi
+necessario scaricarli da sorgente:</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">--depth</span><span class="op">=</span>1 <span class="st">&#39;https://github.com/brendangregg/FlameGraph.git&#39;</span></span></code></pre></div>
+<h2 id="utilizzo">Utilizzo</h2>
+<p>Per utilizzare <code>offwaketime</code>, è prima necessario
+assicurarsi che il programma che si vuole profilare sia in esecuzione,
+poi eseguire il tool installato come superuser.</p>
+<p>In base a come si è installato il toolkit <code>bcc</code>, il
+profiler <code>offwaketime</code> si troverà in directory diverse: - su
+<strong><em>Debian 12 Bookworm</em></strong>,
+in<code>/bin/offwaketime-bpfcc</code> - su <strong><em>Ubuntu 24.10
+Oracular Oracle</em></strong>, in <code>/bin/offwaketime-bpfcc</code> -
+su <strong><em>Fedora 41</em></strong>, in
+<code>/usr/share/bcc/tools/offwaketime</code> - su <strong><em>Arch
+Linux 2025-02-27</em></strong>, in
+<code>/usr/share/bcc/tools/offwaketime</code></p>
+<p>Per convenienza, in questa guida viene usato <code>offwaketime</code>
+per indicare l’eseguibile installato:</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span></span></code></pre></div>
+<p>Allo stesso modo, lo script Perl <code>flamegraph.pl</code> si
+troverà in directory diverse in base a dove si è clonato il
+repository.</p>
+<p>Per convenienza, in questa guida viene usato <code>flamegraph</code>
+per indicare quell’eseguibile:</p>
+<pre><code>flamegraph</code></pre>
+<h3 id="selezione-delloggetto-del-profiling">Selezione dell’oggetto del
+profiling</h3>
+<p>La profilazione di <code>offwaketime</code> può essere impostata per
+includere o escludere diversi programmi in esecuzione sul proprio
+sistema operativo.</p>
+<p>Se non viene specificato nulla, la profilazione di
+<code>offwaketime</code> si applica a tutto il sistema operativo:</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span></span></code></pre></div>
+<p>L’opzione <code>-k</code> filtra la profilazione a solamente i kernel
+thread, come ad esempio i thread di <code>[kworker]</code>:</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">-k</span></span></code></pre></div>
+<p>Viceversa, l’opzione <code>-u</code> filtra la profilazione a
+solamente gli user thread, cioè quelli delle applicazioni avviate in
+user space:</p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">-u</span></span></code></pre></div>
+<p>L’opzione <code>-p</code> permette di specificare i pid di uno o più
+processi da includere, escludendo tutto il resto:</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">-p</span> 150000,150001,150002</span></code></pre></div>
+<p>L’opzione <code>-t</code> è più granulare, e permette di specificare
+i tid di uno o più <em>thread</em> da includere, escludendo il
+resto:</p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">-t</span> </span></code></pre></div>
+<blockquote>
+<p>[!Note] È possibile abilitare la visualizzazione del tid dei thread
+specificando a <code>ps</code> le opzioni <code>-m</code> e
+<code>-L</code>, e guardando la colonna <code>LWP</code>, light-weight
+process:</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ps</span> <span class="at">-m</span> <span class="at">-L</span></span></code></pre></div>
+</blockquote>
+<h3 id="selezione-della-durata-del-profiling">Selezione della durata del
+profiling</h3>
+<p>La durata del profiling di <code>offwaketime</code> può essere
+regolata per avere una certa durata, o per terminare quando richiesto
+dall’utente con <code>SIGTERM</code>.</p>
+<p>Se non viene specificato nulla, la profilazione di
+<code>offwaketime</code> dura fino alla ricezione di
+<code>SIGTERM</code> (solitamente una pressione di
+<code>Ctrl+C</code>):</p>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span></span></code></pre></div>
+<p>È possibile far terminare la profilazione dopo un certo numero di
+secondi specificandolo come primo argomento:</p>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> 2</span></code></pre></div>
+<blockquote>
+<p>[!Important] Relativamente ai programmi userspace,
+<code>offwaketime</code> è in grado di risolverne i simboli e quindi di
+visualizzare il relativo stack <strong>solo se i programmi stessi sono
+ancora in esecuzione</strong> quando la profilazione ha termine.<a
+href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a></p>
+</blockquote>
+<h3 id="selezione-formato-di-output">Selezione formato di output</h3>
+<p><code>offwaketime</code> può emettere output in due diversi formati,
+ognuno con diversi usecase.</p>
+<p>Se non viene specificato nulla, <code>offwaketime</code> emette
+output in un formato human-friendly utilizzando testo
+pre-formattato:</p>
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span></span></code></pre></div>
+<p>Se si specifica l’opzione <code>-f</code>, <code>offwaketime</code>
+emette output in un formato machine-friendly, separando le tracce con
+<code>;</code>:</p>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">-f</span></span></code></pre></div>
+<h3 id="filtraggio-delle-tracce-per-durata-delle-attese">Filtraggio
+delle tracce per durata delle attese</h3>
+<p>Il profiling di <code>offwaketime</code> può essere regolato per
+includere solo le tracce relative ad attese che rientrano in un dato
+intervallo di durata.</p>
+<p>Se non viene specificato nulla, la profilazione di
+<code>offwaketime</code> include tutte le tracce di attese dalla durata
+superiore a 1 microsecondo (µs):</p>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span></span></code></pre></div>
+<p>Qualora l’impostazione predefinita restituisse troppe tracce, è
+possibile incrementare la durata minima delle attese specificando
+l’opzione <code>-m</code> seguita dal numero di microsecondi (µ)
+desiderato:</p>
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">-m</span> 10</span></code></pre></div>
+<p>È possibile anche impostare un tetto superiore alla durata delle
+attese specificando l’opzione <code>-M</code> seguita dal numero di
+microsecondi (µ) desiderato:</p>
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">-M</span> 1000000</span></code></pre></div>
+<p>Le due possono essere combinate per filtrare un intervallo:</p>
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">-m</span> 10 <span class="at">-M</span> 1000000</span></code></pre></div>
+<h3 id="filtraggio-delle-tracce-per-stato-del-thread">Filtraggio delle
+tracce per stato del thread</h3>
+<p>Il profiling di <code>offwaketime</code> può essere regolato per
+includere solo le tracce relative ad attese relative a thread con
+determinate flag di stato.</p>
+<p>Se non viene specificato nulla, la profilazione di
+<code>offwaketime</code> include tracce di tutti i thread:</p>
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span></span></code></pre></div>
+<p>È possibile filtrare thread relativamente al loro stato specificando
+l’opzione <code>--state</code>, seguita dalla bitmask di i flag di stato
+che <strong>si richiede siano tutti presenti</strong> sui thread da
+profilare:</p>
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">--state</span> <span class="va">$((</span> <span class="dv">1</span> <span class="op">|</span> <span class="dv">2</span> <span class="va">))</span></span></code></pre></div>
+<p>Controintuitivamente, esiste un’eccezione speciale per il valore di
+<code>--state</code> <code>0</code>, che se specificato seleziona i task
+senza flag di stato, ovvero quelli in esecuzione:</p>
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">--state</span> 0</span></code></pre></div>
+<p>I valori utilizzabili per filtrare i thread in base al loro stato
+sono:</p>
+<table>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 16%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr>
+<th>Valore</th>
+<th>Costante</th>
+<th>Significato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td><code>TASK_RUNNING</code></td>
+<td>Il thread è in esecuzione</td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td><code>TASK_INTERRUPTIBLE</code></td>
+<td>Il thread è in attesa e in grado di ricevere segnali<a href="#fn3"
+class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a></td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td><code>TASK_UNINTERRUPTIBLE</code></td>
+<td>Il thread è in attesa, ma senza essere in grado di ricevere
+segnali<a href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a></td>
+</tr>
+<tr>
+<td><code>256</code></td>
+<td><code>TASK_WAKEKILL</code></td>
+<td>Il thread è in attesa, ma in grado di ricevere solo segnali che lo
+ucciderebbero<a href="#fn5" class="footnote-ref" id="fnref5"
+role="doc-noteref"><sup>5</sup></a></td>
+</tr>
+<tr>
+<td><code>4096</code></td>
+<td><code>TASK_RTLOCK_WAIT</code></td>
+<td>Solo in kernel con <code>PREEMPT_RT</code>; il thread è in attesa di
+un real-time lock<a href="#fn6" class="footnote-ref" id="fnref6"
+role="doc-noteref"><sup>6</sup></a></td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td><code>__TASK_STOPPED</code></td>
+<td>Il thread è stato messo in pausa da un segnale
+<code>SIGSTOP</code><a href="#fn7" class="footnote-ref" id="fnref7"
+role="doc-noteref"><sup>7</sup></a>; implica
+<code>TASK_WAKEKILL</code><a href="#fn8" class="footnote-ref"
+id="fnref8" role="doc-noteref"><sup>8</sup></a></td>
+</tr>
+<tr>
+<td><code>8</code></td>
+<td><code>__TASK_TRACED</code></td>
+<td>Il thread sta venendo debuggato, ed è stato messo in pausa dal
+debugger<a href="#fn9" class="footnote-ref" id="fnref9"
+role="doc-noteref"><sup>9</sup></a></td>
+</tr>
+<tr>
+<td><code>32768</code></td>
+<td><code>TASK_FROZEN</code></td>
+<td>Il sistema è stato ibernato, ed il thread è in attesa di essere
+esplicitamente scongelato <a href="#fn10" class="footnote-ref"
+id="fnref10" role="doc-noteref"><sup>10</sup></a></td>
+</tr>
+<tr>
+<td><code>8192</code></td>
+<td><code>TASK_FREEZABLE</code></td>
+<td>Quando il sistema sarà ibernato, questo thread potrà essere
+congelato e in seguito scongelato<a href="#fn11" class="footnote-ref"
+id="fnref11" role="doc-noteref"><sup>11</sup></a></td>
+</tr>
+<tr>
+<td><code>512</code></td>
+<td><code>TASK_WAKING</code></td>
+<td>Il thread sta venendo risvegliato da un’attesa<a href="#fn12"
+class="footnote-ref" id="fnref12"
+role="doc-noteref"><sup>12</sup></a></td>
+</tr>
+<tr>
+<td><code>1024</code></td>
+<td><code>TASK_NOLOAD</code></td>
+<td>Il thread è escluso dal conteggio della load average<a href="#fn13"
+class="footnote-ref" id="fnref13"
+role="doc-noteref"><sup>13</sup></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="filtraggio-delle-tracce-per-spazio">Filtraggio delle tracce per
+spazio</h3>
+<p>Talvolta si può essere interessati a solo le tracce relative
+all’userspace o al kernelspace di un determinato processo.</p>
+<p>Se non viene specificato nulla, <code>offwaketime</code> include
+tutto:</p>
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span></span></code></pre></div>
+<p>Specificando l’opzione <code>-U</code>, verranno mostrate solo le
+tracce relative a frame in userspace:</p>
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">-U</span></span></code></pre></div>
+<p>Al contrario, specificando l’opzione <code>-K</code>, verranno
+mostrate solo le tracce relative a frame in kernelspace:</p>
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">-K</span></span></code></pre></div>
+<p>Infine, specificando l’opzione <code>-d</code>, verranno inclusi
+entrambi i tipi di traccia, ma saranno separate da una traccia speciale
+dal nome di <code>--</code>:</p>
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">-d</span></span></code></pre></div>
+<h3 id="limite-del-numero-di-tracce">Limite del numero di tracce</h3>
+<p>La <a
+href="https://github.com/iovisor/bcc/blob/master/docs/reference_guide.md#5-bpf_stack_trace">struttura
+dati utilizzata internamente da <code>offwaketime</code></a> ha un
+limite superiore al numero di tracce contenute negli eventi
+profilati[^bpfstacktrace].</p>
+<p>Se non viene specificato nulla, ciascun evento potrà contenere fino a
+16384 tracce:</p>
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span></span></code></pre></div>
+<p>È possibile aumentare o diminuire il numero di tracce specificando
+l’opzione <code>--stack-storage-size</code> seguita dal numero di tracce
+desiderato:</p>
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">--stack-storage-size</span> 3</span></code></pre></div>
+<h3 id="creazione-di-un-flamegraph">Creazione di un FlameGraph</h3>
+<p>Per generare un flame graph vettoriale da una chiamata ad
+<code>offwaketime</code>, è necessario: 1. selezionare l’output
+machine-friendly su <code>offwaketime</code> usando l’opzione
+<code>-f</code> 2. <em>pipe</em>-are l’output allo script Perl
+<code>flamegraph.pl</code> precendentemente clonato da GitHub,
+specificando l’opzione <code>--color='chain'</code> per colorare
+appropriatamente le tracce<a href="#fn14" class="footnote-ref"
+id="fnref14" role="doc-noteref"><sup>14</sup></a> 3. <em>pipe</em>-are
+l’output ad un file Scalable Vector Graphics (.svg)</p>
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> <span class="at">-f</span> <span class="kw">|</span> <span class="ex">flamegraph</span> <span class="at">--color</span><span class="op">=</span><span class="st">&#39;chain&#39;</span> <span class="kw">|</span> <span class="fu">tee</span> <span class="st">&quot;offwaketime.svg&quot;</span> <span class="kw">|</span> <span class="ex">display</span></span></code></pre></div>
+<h2 id="esempio">Esempio</h2>
+<p>Innanzitutto, verifichiamo la versione del kernel attualmente in
+esecuzione:</p>
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">uname</span> <span class="at">-a</span></span></code></pre></div>
+<pre><code>Linux nitro 6.13.4-arch1-1 #1 SMP PREEMPT_DYNAMIC Sat, 22 Feb 2025 00:37:05 +0000 x86_64 GNU/Linux</code></pre>
+<p>Si vuole effettuare la profilazione di un piccolo programma Rust
+sincrono che crea un file, vi scrive all’interno, e chiude il relativo
+file descriptor, aspettando di vedere tracce delle syscall effettuate a
+tale scopo.</p>
+<p>Il programma Rust realizzato è il seguente:</p>
+<div class="sourceCode" id="cb32"><pre
+class="sourceCode rust"><code class="sourceCode rust"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> <span class="pp">std::fs::</span>File<span class="op">;</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> <span class="pp">std::io::</span><span class="bu">Write</span><span class="op">;</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> <span class="pp">std::thread::</span>sleep<span class="op">;</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> <span class="pp">std::time::</span>Duration<span class="op">;</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="kw">fn</span> main() <span class="op">{</span></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> <span class="kw">mut</span> file <span class="op">=</span> <span class="pp">File::</span>create(<span class="st">&quot;example.txt&quot;</span>)</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span>expect(<span class="st">&quot;File creation failed&quot;</span>)<span class="op">;</span></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> _ <span class="op">=</span> file<span class="op">.</span>write(<span class="st">b&quot;hello world&quot;</span>)</span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span>expect(<span class="st">&quot;File write failed&quot;</span>)<span class="op">;</span></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>    <span class="co">// unnecessary; explicitly closes the file descriptor for clarity</span></span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a>    drop(file)<span class="op">;</span></span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a>    <span class="co">// wait indefinitely so that bcc may collect debug symbols</span></span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a>    sleep(<span class="pp">Duration::</span><span class="cn">MAX</span>)</span>
+<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p>Eseguiamo il programma con un debugger, inserendo un breakpoint
+all’inizio della funzione <code>main</code>, in modo che non venga
+effettuato nulla prima che <code>offwaketime</code> sia in ascolto.</p>
+<p>Con il programma in pausa, avviamo un terminale come superutente:</p>
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> <span class="at">-i</span></span></code></pre></div>
+<p>Da lì, usiamo <code>ps</code> per identificare il processo del
+programma che abbiamo avviato:</p>
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ps</span> <span class="at">-m</span> <span class="at">-L</span> <span class="at">-u</span> steffo</span></code></pre></div>
+<pre><code>PID   LWP   TTY TIME     CMD
+...
+22353       - ? 00:00:00 wakedemo
+-     22353 -   00:00:00 -
+...</code></pre>
+<p>Osserviamo che ha il process id <code>22353</code>, e utilizza un
+singolo thread con il thread id <code>22353</code>.</p>
+<p>Possiamo quindi avviare <code>offwaketime</code> in modo che monitori
+il processo per 30 secondi e generi un flamegraph:</p>
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="ex">offwaketime</span> 30 <span class="at">-p</span> 22353 <span class="at">-f</span> <span class="kw">|</span> <span class="ex">flamegraph</span> <span class="at">--color</span><span class="op">=</span><span class="st">&#39;chain&#39;</span> <span class="op">&gt;</span> /root/wakedemo.svg</span></code></pre></div>
+<p>Ora che <code>offwaketime</code> è in ascolto, effettuiamo step di
+una linea di codice alla volta fino a quando il programma non raggiunge
+l’ultima riga.</p>
+<p>Una volta fatto, senza chiudere il nostro programma<a href="#fn15"
+class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>,
+aspettiamo che <code>offwaketime</code> termini la profilazione.</p>
+<p>Alleghiamo poi l’immagine prodotta a questo documento:</p>
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> /root/wakedemo.svg ~/wakedemo.svg</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chown</span> steffo: ~/wakedemo.svg</span></code></pre></div>
+<p>![[wakedemo.svg]] &gt; [!Note] &gt; L’immagine dovrebbe essere
+interattiva; se non è possibile interagirvi, si consiglia di aprirla in
+un browser come pagina.</p>
+<p>Infine, analizziamo l’immagine.</p>
+<p>Guardando la parte blu dal basso verso l’alto, possiamo osservare lo
+stack del nostro programma nei momenti in cui si è verificata
+un’attesa.</p>
+<p>In ordine: 1. <code>wakedemo</code>, la chiamata di avvio al nostro
+programma 2. <code>_start</code>, l’entrypoint del programma 3.
+<code>__libc_start_main</code>, l’inizializzazione di glibc<a
+href="#fn16" class="footnote-ref" id="fnref16"
+role="doc-noteref"><sup>16</sup></a> 4.
+<code>std::rt::lang_start::_</code>, l’entrypoint del runtime di Rust<a
+href="#fn17" class="footnote-ref" id="fnref17"
+role="doc-noteref"><sup>17</sup></a> e l’ultima funzione dello stack in
+user space</p>
+<p>Poi, c’è una divisione, che indica che nei momenti di attesa per
+attività off-CPU lo stack è stato diverso: 1.
+<code>asm_exc_debug</code>, seguito da <code>exc_debug_user</code>, era
+presente 69.81% del tempo; è l’handler della <code>DEBUG</code>
+exception del processore, innescata dal raggiungimento di un breakpoint
+2. <code>asm_exc_int3</code> era presente 30.19% del tempo; è l’handler
+della <code>INT3</code> exception del processore, innescata anch’essa
+dal raggiungimento di un breakpoint</p>
+<p>Entrambi gli stack poi chiamano entrambi: 1.
+<code>irqentry_exit_to_user_mode</code>, che configura il kernel per
+delegare la gestione di un interrupt<a href="#fn18" class="footnote-ref"
+id="fnref18" role="doc-noteref"><sup>18</sup></a> 2.
+<code>arch_do_signal_or_restart</code>, che verifica che ci sia un
+segnale da inviare a un processo prima di provare a consegnarlo<a
+href="#fn19" class="footnote-ref" id="fnref19"
+role="doc-noteref"><sup>19</sup></a> 3. <code>get_signal</code>, che
+controlla quale segnale deve essere inviato<a href="#fn20"
+class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a>,
+determinando <code>SIGTRAP</code><a href="#fn21" class="footnote-ref"
+id="fnref21" role="doc-noteref"><sup>21</sup></a> 4.
+<code>ptrace_stop</code>, che mette in pausa un processo impostandogli
+lo stato <code>TASK_TRACED</code><a href="#fn22" class="footnote-ref"
+id="fnref22" role="doc-noteref"><sup>22</sup></a> 5.
+<code>schedule</code>, corrispondente al lavoro dello scheduler<a
+href="#fn23" class="footnote-ref" id="fnref23"
+role="doc-noteref"><sup>23</sup></a> 6. <code>__schedule</code>,
+corrispondente a una iterazione dello scheduler<a href="#fn24"
+class="footnote-ref" id="fnref24"
+role="doc-noteref"><sup>24</sup></a></p>
+<p>Il separatore in grigio <code>--</code> denota che lo stack del
+programma ha termine lì.</p>
+<p>Possiamo capire quindi che tutti gli eventi off-CPU che sono avvenuti
+sono le interruzioni avvenute in corrispondenza al nostro stepping del
+programma tramite il debugger.</p>
+<p>Guardiamo ora cos’ha causato il risveglio del nostro programma; lo
+stack del processo risvegliante è parte in azzurro in cima al flame
+graph, con le tracce dei frame elencate dall’alto verso il basso.</p>
+<p>Questo significa che, in entrambi i casi, il processo del nostro
+programma è stato risvegliato dal seguente stack: 1.
+<code>lldb-server</code>, il nostro debugger in user space 2.
+<code>[unknown]</code>, probabilmente una funzione di LLDB che effettua
+una syscall <code>ptrace</code> 3.
+<code>entry_SYSCALL_64_after_hwframe</code>, l’entrypoint in kernel
+space della syscall 4. <code>do_syscall_64</code>, il gestore delle
+syscall 5. <code>__x64_sys_ptrace</code>, il gestore della syscall
+<code>ptrace</code> per l’architettura <code>x86_64</code> 6.
+<code>arch_ptrace</code>, il gestore della syscall <code>ptrace</code>
+agnostico all’architettura del processore 7.
+<code>ptrace_request</code>, che elabora la syscall, probabilmente
+<code>PTRACE_SINGLESTEP</code>, rimuovendo lo stato
+<code>TASK_TRACED</code><a href="#fn25" class="footnote-ref"
+id="fnref25" role="doc-noteref"><sup>25</sup></a></p>
+<p>Capiamo quindi che la causa del risveglio è stata quindi una
+richiesta del nostro debugger di far continuare il nostro processo.</p>
+<h2 id="struttura-interna">Struttura interna</h2>
+<p><code>offwaketime</code> consiste in: - uno script <a
+href="https://www.python.org/">Python</a> - che fa uso del <a
+href="https://github.com/iovisor/bcc/tree/master/src/python/bcc">package
+<code>bcc</code></a><br />
+- per generare e poi compilare un programma <a
+href="https://ebpf.io/">eBPF</a> - contenente strutture dati per
+immagazzinare tracce - e contenente funzioni che scrivono sulle
+strutture dati la traccia del frame attuale - che usa <a
+href="https://www.kernel.org/doc/html/latest/trace/kprobetrace.html#">kprobe</a>
+per registrare dei callback alle funzioni del programma generato - per
+poi attendere fino al termine del profiling - e infine stampare nel
+formato desiderato i contenuti delle strutture dati del programma
+eBPF</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li
+id="fn1"><p>https://github.com/iovisor/bcc/blob/master/docs/kernel_config.md<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn2"><p>https://github.com/iovisor/bcc/issues/1694#issuecomment-384478735<a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>https://stackoverflow.com/a/224042<a href="#fnref3"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>https://stackoverflow.com/a/224042<a href="#fnref4"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>https://yarchive.net/comp/linux/wakekill.html<a
+href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn6"><p>https://lore.kernel.org/all/20210815211302.144989915@linutronix.de/<a
+href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>https://www.baeldung.com/linux/process-states<a
+href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn8"><p>https://github.com/torvalds/linux/blob/master/include/linux/sched.h<a
+href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>https://unix.stackexchange.com/a/535271<a href="#fnref9"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>https://docs.kernel.org/power/freezing-of-tasks.html<a
+href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>https://docs.kernel.org/power/freezing-of-tasks.html<a
+href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn12"><p>https://lore.kernel.org/lkml/tip-e9c8431185d6c406887190519f6dbdd112641686@git.kernel.org/<a
+href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn13"><p>https://lore.kernel.org/lkml/alpine.LFD.2.11.1505112154420.1749@ja.home.ssi.bg/T/<a
+href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn14"><p>https://www.brendangregg.com/FlameGraphs/offcpuflamegraphs.html#Chain<a
+href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn15"><p>https://github.com/iovisor/bcc/issues/1694#issuecomment-384478735<a
+href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn16"><p>https://refspecs.linuxfoundation.org/LSB_1.3.0/gLSB/gLSB/baselib—libc-start-main-.html<a
+href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn17"><p>https://github.com/rust-lang/rust/blob/2010bba8868fa714bb4b07be463a8923b26d44db/library/std/src/rt.rs#L192-L204<a
+href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn18"><p>https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/arch/arm64/kernel/entry-common.c#L122<a
+href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn19"><p>https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/arch/x86/kernel/signal.c#L333<a
+href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn20"><p>https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/signal.c#L2801<a
+href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn21"><p>https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/signal.c#L2670<a
+href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn22"><p>https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/signal.c#L2351<a
+href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn23"><p>https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/sched/core.c#L6847<a
+href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn24"><p>https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/sched/core.c#L6645<a
+href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn25"><p>https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/ptrace.c#L1011<a
+href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
