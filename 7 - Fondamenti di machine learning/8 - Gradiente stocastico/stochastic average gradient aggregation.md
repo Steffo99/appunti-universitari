@@ -4,6 +4,8 @@ aliases:
 ---
 Variante per [[metodo di discesa stocastico]].
 
+==In realtà questo è SAG, per SAGA bisogna applicare 1/n solo ai gradienti precedenti...==
+
 Tiene traccia dell'ultimo [[gradiente empirico]] incontrato per ciascun elemento del [[training set]], computandolo inizialmente per tutti.
 
 1. Per ogni elemento $elem$ del [[training set]]:

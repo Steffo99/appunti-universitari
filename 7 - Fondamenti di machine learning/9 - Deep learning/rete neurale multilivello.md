@@ -11,6 +11,6 @@ $$
 
 
 Composto da:
-- $1$ livello di [[neurone|neuroni]] input, che non processano informazioni
-- $n$ livelli di [[neuroni]] interconnessi da [[sinapsi]], che usano le loro connessioni per determinare il loro output e forniscono input ad altri [[neurone|neuroni]] a loro volta
-- $1$ livello di [[neurone|neuroni]] output, che determinano solo il proprio output
+- $1$ livello di [[percettrone|neuroni]] input, che non processano informazioni
+- $n$ livelli di [[neuroni]] interconnessi da [[sinapsi]], che usano le loro connessioni per determinare il loro output e forniscono input ad altri [[percettrone|neuroni]] a loro volta
+- $1$ livello di [[percettrone|neuroni]] output, che determinano solo il proprio output

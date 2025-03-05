@@ -563,10 +563,6 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "7 - Fondamenti di machine learning",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "7 - Fondamenti di machine learning/3 - Calcolo convesso/★ calcolo convesso.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
@@ -611,14 +607,6 @@
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
-      "path": "7 - Fondamenti di machine learning/5 - Ottimizzazione vincolata/sufficiente ottimalità del secondo ordine.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Fondamenti di machine learning/5 - Ottimizzazione vincolata/ottimalità del secondo ordine.md",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
       "path": "7 - Fondamenti di machine learning/7 - Gradiente proiettato/★ gradiente proiettato.canvas",
       "color": "7j7Pqog0VHMVVAfazMNlb"
     },
@@ -653,6 +641,10 @@
     {
       "path": "7 - Fondamenti di machine learning/6 - Support vector machines/support vector machine di regressione.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Fondamenti di machine learning/8 - Gradiente stocastico/metodo di discesa stocastico.md",
+      "color": "e_YcdvxbhfDN77-giOday"
     }
   ]
 }

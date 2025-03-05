@@ -7,7 +7,7 @@ Variante per [[metodo di discesa stocastico]].
 Ricalcola periodicamente il [[gradiente empirico]] completo, ma altrimenti lo calcola solo per un elemento del [[training set]] alla volta.
 
 Per ogni iterazione $iter$ finchè non si vuole terminare:
-1. Computa il [[gradiente empirico]] completo $\mathbf{m}_{iter}$ con i parametri attuali
+1. Computa il [[gradiente empirico]] completo $\mathbf{m}_{iter}$ con tutti i parametri attuali
 2. Crea una copia $\mathbf{q}_{0}$ dei parametri attuali $\mathbf{w}_{iter}$
 3. Per $\color{orange} s$ iterazioni $subiter$:
 	1. [[campione|Campiona]] un elemento dal [[training set]] $elem$

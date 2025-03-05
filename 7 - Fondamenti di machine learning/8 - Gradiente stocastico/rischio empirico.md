@@ -1,4 +1,4 @@
-[[approssimazione]] del [[7 - Fondamenti di machine learning/8 - Gradiente stocastico/rischio|rischio]] utilizzata se non si hanno informazioni sulla [[distribuzione di probabilità in gradiente stocastico|distribuzione di probabilità]].
+\[[approssimazione]] del [[7 - Fondamenti di machine learning/8 - Gradiente stocastico/rischio|rischio]] utilizzata se non si hanno informazioni sulla [[distribuzione di probabilità in gradiente stocastico|distribuzione di probabilità]].
 $$
 \Huge
 \riske \par{{\color{orange} \func[h]}, {\color{cyan} \mathbf{D}}} : \par{{\color{orange} \fmlHypothesisSpace}, {\color{cyan} \par{\mathbb{X}, \mathbb{Y}}^n}} \to \mathbb{R}
