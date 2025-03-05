@@ -279,7 +279,7 @@ offwaketime -d
 
 ### Limite del numero di tracce
 
-La [struttura dati utilizzata internamente da `offwaketime`](https://github.com/iovisor/bcc/blob/master/docs/reference_guide.md#5-bpf_stack_trace) ha un limite superiore al numero di tracce contenute negli eventi profilati[^bpfstacktrace].
+La struttura dati utilizzata internamente da `offwaketime` ha un limite superiore al numero di tracce contenute negli eventi profilati[^bpfstacktrace].
 
 Se non viene specificato nulla, ciascun evento potrà contenere fino a 16384 tracce:
 ```bash
@@ -290,6 +290,8 @@ offwaketime
 ```bash
 offwaketime --stack-storage-size 3
 ```
+
+[^bpfstacktrace]: https://github.com/iovisor/bcc/blob/master/docs/reference_guide.md#5-bpf_stack_trace
 
 ### Creazione di un FlameGraph
 
