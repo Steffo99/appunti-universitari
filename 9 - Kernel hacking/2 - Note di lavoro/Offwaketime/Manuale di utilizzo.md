@@ -22,48 +22,48 @@ IO Visor mantiene una [lista completa](https://github.com/iovisor/bcc/blob/maste
 
 ### Header del kernel
 
-> [!Note]
-> Per utilizzare `bcc`, è necessario che il kernel che si sta utilizzando abbia le seguenti funzionalità compilate[^bccconfig]:
-> - `CONFIG_BPF_SYSCALL`
-> - `CONFIG_BPF_JIT`
-> - `CONFIG_HAVE_BPF_JIT`
-> - `CONFIG_HAVE_EBPF_JIT`
-> - `CONFIG_HAVE_CBPF_JIT`
-> - `CONFIG_MODULES`
-> - `CONFIG_BPF`
-> - `CONFIG_BPF_EVENTS`
-> - `CONFIG_PERF_EVENTS`
-> - `CONFIG_HAVE_PERF_EVENTS`
-> - `CONFIG_PROFILING`
-> - `CONFIG_DEBUG_INFO_BTF`
-> - `CONFIG_PAHOLE_HAS_SPLIT_BTF`
-> - `CONFIG_DEBUG_INFO_BTF_MODULES`
-> - `CONFIG_BPF_JIT_ALWAYS_ON`
-> - `CONFIG_BPF_UNPRIV_DEFAULT_OFF`
-> - `CONFIG_CGROUP_BPF`
-> - `CONFIG_BPFILTER`
-> - `CONFIG_BPFILTER_UMH`
-> - `CONFIG_NET_CLS_BPF`
-> - `CONFIG_NET_ACT_BPF`
-> - `CONFIG_BPF_STREAM_PARSER`
-> - `CONFIG_LWTUNNEL_BPF`
-> - `CONFIG_NETFILTER_XT_MATCH_BPF`
-> - `CONFIG_IPV6_SEG6_BPF`
-> - `CONFIG_KPROBE_EVENTS`
-> - `CONFIG_KPROBES`
-> - `CONFIG_HAVE_KPROBES`
-> - `CONFIG_HAVE_REGS_AND_STACK_ACCESS_API`
-> - `CONFIG_KPROBES_ON_FTRACE`
-> - `CONFIG_FPROBE`
-> - `CONFIG_BPF_KPROBE_OVERRIDE`
-> - `CONFIG_UPROBE_EVENTS`
-> - `CONFIG_ARCH_SUPPORTS_UPROBES`
-> - `CONFIG_UPROBES`
-> - `CONFIG_MMU`
-> - `CONFIG_TRACEPOINTS`
-> - `CONFIG_HAVE_SYSCALL_TRACEPOINTS`
-> - `CONFIG_BPF_LSM`
-> - `CONFIG_BPF_LIRC_MODE2`
+Per utilizzare `bcc`, è necessario che il kernel che si sta utilizzando abbia le seguenti funzionalità compilate[^bccconfig]:
+
+- `CONFIG_BPF_SYSCALL`
+- `CONFIG_BPF_JIT`
+- `CONFIG_HAVE_BPF_JIT`
+- `CONFIG_HAVE_EBPF_JIT`
+- `CONFIG_HAVE_CBPF_JIT`
+- `CONFIG_MODULES`
+- `CONFIG_BPF`
+- `CONFIG_BPF_EVENTS`
+- `CONFIG_PERF_EVENTS`
+- `CONFIG_HAVE_PERF_EVENTS`
+- `CONFIG_PROFILING`
+- `CONFIG_DEBUG_INFO_BTF`
+- `CONFIG_PAHOLE_HAS_SPLIT_BTF`
+- `CONFIG_DEBUG_INFO_BTF_MODULES`
+- `CONFIG_BPF_JIT_ALWAYS_ON`
+- `CONFIG_BPF_UNPRIV_DEFAULT_OFF`
+- `CONFIG_CGROUP_BPF`
+- `CONFIG_BPFILTER`
+- `CONFIG_BPFILTER_UMH`
+- `CONFIG_NET_CLS_BPF`
+- `CONFIG_NET_ACT_BPF`
+- `CONFIG_BPF_STREAM_PARSER`
+- `CONFIG_LWTUNNEL_BPF`
+- `CONFIG_NETFILTER_XT_MATCH_BPF`
+- `CONFIG_IPV6_SEG6_BPF`
+- `CONFIG_KPROBE_EVENTS`
+- `CONFIG_KPROBES`
+- `CONFIG_HAVE_KPROBES`
+- `CONFIG_HAVE_REGS_AND_STACK_ACCESS_API`
+- `CONFIG_KPROBES_ON_FTRACE`
+- `CONFIG_FPROBE`
+- `CONFIG_BPF_KPROBE_OVERRIDE`
+- `CONFIG_UPROBE_EVENTS`
+- `CONFIG_ARCH_SUPPORTS_UPROBES`
+- `CONFIG_UPROBES`
+- `CONFIG_MMU`
+- `CONFIG_TRACEPOINTS`
+- `CONFIG_HAVE_SYSCALL_TRACEPOINTS`
+- `CONFIG_BPF_LSM`
+- `CONFIG_BPF_LIRC_MODE2`
 
 [^bccconfig]: https://github.com/iovisor/bcc/blob/master/docs/kernel_config.md
 
@@ -145,11 +145,10 @@ L'opzione `-t` è più granulare, e permette di specificare i tid di uno o più 
 offwaketime -t 
 ```
 
-> [!Note]
-> È possibile abilitare la visualizzazione del tid dei thread specificando a `ps` le opzioni `-m` e `-L`, e guardando la colonna `LWP`, light-weight process:
-> ```bash
-> ps -m -L
-> ```
+È possibile abilitare la visualizzazione del tid dei thread specificando a `ps` le opzioni `-m` e `-L`, e guardando la colonna `LWP`, light-weight process:
+```bash
+ps -m -L
+```
 
 ### Selezione della durata del profiling
 
@@ -166,6 +165,7 @@ offwaketime 2
 ```
 
 > [!Important]
+> 
 > Relativamente ai programmi userspace, `offwaketime` è in grado di risolverne i simboli e quindi di visualizzare il relativo stack **solo se i programmi stessi sono ancora in esecuzione** quando la profilazione ha termine.[^symbols]
 
 [^symbols]: https://github.com/iovisor/bcc/issues/1694#issuecomment-384478735
@@ -376,8 +376,6 @@ chown steffo: ~/wakedemo.svg
 ```
 
 ![[wakedemo.svg]]
-> [!Note] 
-> L'immagine dovrebbe essere interattiva; se non è possibile interagirvi, si consiglia di aprirla in un browser come pagina.
 
 Infine, analizziamo l'immagine.
 
