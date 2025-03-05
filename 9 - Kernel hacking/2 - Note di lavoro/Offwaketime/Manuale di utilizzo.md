@@ -164,9 +164,7 @@ offwaketime
 offwaketime 2
 ```
 
-> [!Important]
-> 
-> Relativamente ai programmi userspace, `offwaketime` è in grado di risolverne i simboli e quindi di visualizzare il relativo stack **solo se i programmi stessi sono ancora in esecuzione** quando la profilazione ha termine.[^symbols]
+Relativamente ai programmi userspace, `offwaketime` è in grado di risolverne i simboli e quindi di visualizzare il relativo stack **solo se i programmi stessi sono ancora in esecuzione** quando la profilazione ha termine.[^symbols]
 
 [^symbols]: https://github.com/iovisor/bcc/issues/1694#issuecomment-384478735
 
