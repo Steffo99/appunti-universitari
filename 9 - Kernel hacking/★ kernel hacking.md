@@ -1,1 +1,2 @@
-==Esame incompleto==
+Report realizzato:
+- [[Manuale di utilizzo]]
