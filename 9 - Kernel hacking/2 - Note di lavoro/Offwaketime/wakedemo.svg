@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1200" height="406" onload="init(evt)" viewBox="0 0 1200 406" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="1200" height="518" onload="init(evt)" viewBox="0 0 1200 518" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs>
@@ -422,157 +422,313 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="1200.0" height="406.0" fill="url(#background)"  />
+<rect x="0.0" y="0" width="1200.0" height="518.0" fill="url(#background)"  />
 <text id="title" x="600.00" y="24" >Flame Graph</text>
-<text id="details" x="10.00" y="389" > </text>
+<text id="details" x="10.00" y="501" > </text>
 <text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
 <text id="search" x="1090.00" y="24" >Search</text>
 <text id="ignorecase" x="1174.00" y="24" >ic</text>
-<text id="matched" x="1090.00" y="389" > </text>
+<text id="matched" x="1090.00" y="501" > </text>
 <g id="frames">
 <g >
-<title>wakedemo (14,617,328 samples, 100.00%)</title><rect x="10.0" y="341" width="1180.0" height="15.0" fill="rgb(139,139,254)" rx="2" ry="2" />
-<text  x="13.00" y="351.5" >wakedemo</text>
+<title>schedule (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="229" width="539.2" height="15.0" fill="rgb(139,139,254)" rx="2" ry="2" />
+<text  x="653.77" y="239.5" >schedule</text>
 </g>
 <g >
-<title>[unknown] (10,205,062 samples, 69.81%)</title><rect x="10.0" y="53" width="823.8" height="15.0" fill="rgb(91,202,202)" rx="2" ry="2" />
-<text  x="13.00" y="63.5" >[unknown]</text>
+<title>__x64_sys_ptrace (814,610 microsecs, 18.61%)</title><rect x="430.9" y="229" width="219.6" height="15.0" fill="rgb(83,195,195)" rx="2" ry="2" />
+<text  x="433.87" y="239.5" >__x64_sys_ptrace</text>
 </g>
 <g >
-<title>ptrace_stop (4,412,246 samples, 30.19%)</title><rect x="833.8" y="213" width="356.2" height="15.0" fill="rgb(121,121,239)" rx="2" ry="2" />
-<text  x="836.81" y="223.5" >ptrace_stop</text>
+<title>entry_SYSCALL_64_after_hwframe (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="325" width="539.2" height="15.0" fill="rgb(96,96,218)" rx="2" ry="2" />
+<text  x="653.77" y="335.5" >entry_SYSCALL_64_after_hwframe</text>
 </g>
 <g >
-<title>irqentry_exit_to_user_mode (10,205,062 samples, 69.81%)</title><rect x="10.0" y="245" width="823.8" height="15.0" fill="rgb(139,139,254)" rx="2" ry="2" />
-<text  x="13.00" y="255.5" >irqentry_exit_to_user_mode</text>
+<title>__x64_sys_clock_nanosleep (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="293" width="539.2" height="15.0" fill="rgb(132,132,248)" rx="2" ry="2" />
+<text  x="653.77" y="303.5" >__x64_sys_clock_nanosleep</text>
 </g>
 <g >
-<title>entry_SYSCALL_64_after_hwframe (10,205,062 samples, 69.81%)</title><rect x="10.0" y="69" width="823.8" height="15.0" fill="rgb(101,212,212)" rx="2" ry="2" />
-<text  x="13.00" y="79.5" >entry_SYSCALL_64_after_hwframe</text>
+<title>[unknown] (814,610 microsecs, 18.61%)</title><rect x="430.9" y="181" width="219.6" height="15.0" fill="rgb(91,202,202)" rx="2" ry="2" />
+<text  x="433.87" y="191.5" >[unknown]</text>
 </g>
 <g >
-<title>ptrace_request (4,412,246 samples, 30.19%)</title><rect x="833.8" y="149" width="356.2" height="15.0" fill="rgb(81,194,194)" rx="2" ry="2" />
-<text  x="836.81" y="159.5" >ptrace_request</text>
+<title>entry_SYSCALL_64_after_hwframe (814,610 microsecs, 18.61%)</title><rect x="430.9" y="197" width="219.6" height="15.0" fill="rgb(101,212,212)" rx="2" ry="2" />
+<text  x="433.87" y="207.5" >entry_SYSCALL_64_after_hwframe</text>
 </g>
 <g >
-<title>get_signal (10,205,062 samples, 69.81%)</title><rect x="10.0" y="213" width="823.8" height="15.0" fill="rgb(87,87,211)" rx="2" ry="2" />
-<text  x="13.00" y="223.5" >get_signal</text>
+<title>ktimers/6 (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="37" width="539.2" height="15.0" fill="rgb(86,198,198)" rx="2" ry="2" />
+<text  x="653.77" y="47.5" >ktimers/6</text>
 </g>
 <g >
-<title>__schedule (4,412,246 samples, 30.19%)</title><rect x="833.8" y="181" width="356.2" height="15.0" fill="rgb(107,107,227)" rx="2" ry="2" />
-<text  x="836.81" y="191.5" >__schedule</text>
+<title>arch_do_signal_or_restart (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="341" width="420.9" height="15.0" fill="rgb(137,137,252)" rx="2" ry="2" />
+<text  x="13.00" y="351.5" >arch_do_signal_or_restart</text>
 </g>
 <g >
-<title>arch_ptrace (4,412,246 samples, 30.19%)</title><rect x="833.8" y="133" width="356.2" height="15.0" fill="rgb(75,188,188)" rx="2" ry="2" />
-<text  x="836.81" y="143.5" >arch_ptrace</text>
+<title>asm_sysvec_reschedule_ipi (787 microsecs, 0.02%)</title><rect x="650.5" y="181" width="0.2" height="15.0" fill="rgb(133,133,249)" rx="2" ry="2" />
+<text  x="653.49" y="191.5" ></text>
 </g>
 <g >
-<title>arch_ptrace (10,205,062 samples, 69.81%)</title><rect x="10.0" y="117" width="823.8" height="15.0" fill="rgb(75,188,188)" rx="2" ry="2" />
-<text  x="13.00" y="127.5" >arch_ptrace</text>
+<title>hrtimer_nanosleep (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="261" width="539.2" height="15.0" fill="rgb(118,118,237)" rx="2" ry="2" />
+<text  x="653.77" y="271.5" >hrtimer_nanosleep</text>
 </g>
 <g >
-<title>lldb-server (4,412,246 samples, 30.19%)</title><rect x="833.8" y="53" width="356.2" height="15.0" fill="rgb(97,208,208)" rx="2" ry="2" />
-<text  x="836.81" y="63.5" >lldb-server</text>
+<title>__hrtimer_run_queues (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="165" width="539.2" height="15.0" fill="rgb(64,177,177)" rx="2" ry="2" />
+<text  x="653.77" y="175.5" >__hrtimer_run_queues</text>
 </g>
 <g >
-<title>do_syscall_64 (10,205,062 samples, 69.81%)</title><rect x="10.0" y="85" width="823.8" height="15.0" fill="rgb(90,201,201)" rx="2" ry="2" />
-<text  x="13.00" y="95.5" >do_syscall_64</text>
+<title>ret_from_fork (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="69" width="539.2" height="15.0" fill="rgb(52,166,166)" rx="2" ry="2" />
+<text  x="653.77" y="79.5" >ret_from_fork</text>
 </g>
 <g >
-<title>asm_exc_debug (10,205,062 samples, 69.81%)</title><rect x="10.0" y="277" width="823.8" height="15.0" fill="rgb(125,125,242)" rx="2" ry="2" />
-<text  x="13.00" y="287.5" >asm_exc_debug</text>
+<title>-- (814,610 microsecs, 18.61%)</title><rect x="430.9" y="277" width="219.6" height="15.0" fill="rgb(160,160,160)" rx="2" ry="2" />
+<text  x="433.87" y="287.5" >--</text>
 </g>
 <g >
-<title>lldb-server (10,205,062 samples, 69.81%)</title><rect x="10.0" y="37" width="823.8" height="15.0" fill="rgb(97,208,208)" rx="2" ry="2" />
-<text  x="13.00" y="47.5" >lldb-server</text>
+<title>exc_debug_user (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="373" width="420.9" height="15.0" fill="rgb(108,108,228)" rx="2" ry="2" />
+<text  x="13.00" y="383.5" >exc_debug_user</text>
 </g>
 <g >
-<title>__x64_sys_ptrace (4,412,246 samples, 30.19%)</title><rect x="833.8" y="117" width="356.2" height="15.0" fill="rgb(83,195,195)" rx="2" ry="2" />
-<text  x="836.81" y="127.5" >__x64_sys_ptrace</text>
+<title>irqentry_exit_to_user_mode (814,610 microsecs, 18.61%)</title><rect x="430.9" y="373" width="219.6" height="15.0" fill="rgb(139,139,254)" rx="2" ry="2" />
+<text  x="433.87" y="383.5" >irqentry_exit_to_user_mode</text>
 </g>
 <g >
-<title>arch_do_signal_or_restart (4,412,246 samples, 30.19%)</title><rect x="833.8" y="245" width="356.2" height="15.0" fill="rgb(137,137,252)" rx="2" ry="2" />
-<text  x="836.81" y="255.5" >arch_do_signal_or_restart</text>
+<title>-- (787 microsecs, 0.02%)</title><rect x="650.5" y="133" width="0.2" height="15.0" fill="rgb(160,160,160)" rx="2" ry="2" />
+<text  x="653.49" y="143.5" ></text>
 </g>
 <g >
-<title>get_signal (4,412,246 samples, 30.19%)</title><rect x="833.8" y="229" width="356.2" height="15.0" fill="rgb(87,87,211)" rx="2" ry="2" />
-<text  x="836.81" y="239.5" >get_signal</text>
+<title>ksys_write (1,030 microsecs, 0.02%)</title><rect x="650.5" y="293" width="0.3" height="15.0" fill="rgb(81,81,205)" rx="2" ry="2" />
+<text  x="653.49" y="303.5" ></text>
 </g>
 <g >
-<title>exc_debug_user (10,205,062 samples, 69.81%)</title><rect x="10.0" y="261" width="823.8" height="15.0" fill="rgb(108,108,228)" rx="2" ry="2" />
-<text  x="13.00" y="271.5" >exc_debug_user</text>
+<title>_start (4,376,798 microsecs, 100.00%)</title><rect x="10.0" y="437" width="1180.0" height="15.0" fill="rgb(128,128,245)" rx="2" ry="2" />
+<text  x="13.00" y="447.5" >_start</text>
 </g>
 <g >
-<title>__x64_sys_ptrace (10,205,062 samples, 69.81%)</title><rect x="10.0" y="101" width="823.8" height="15.0" fill="rgb(83,195,195)" rx="2" ry="2" />
-<text  x="13.00" y="111.5" >__x64_sys_ptrace</text>
+<title>kthread (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="85" width="539.2" height="15.0" fill="rgb(66,180,180)" rx="2" ry="2" />
+<text  x="653.77" y="95.5" >kthread</text>
 </g>
 <g >
-<title>_start (14,617,328 samples, 100.00%)</title><rect x="10.0" y="325" width="1180.0" height="15.0" fill="rgb(128,128,245)" rx="2" ry="2" />
-<text  x="13.00" y="335.5" >_start</text>
+<title>-- (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="261" width="420.9" height="15.0" fill="rgb(160,160,160)" rx="2" ry="2" />
+<text  x="13.00" y="271.5" >--</text>
 </g>
 <g >
-<title>ptrace_stop (10,205,062 samples, 69.81%)</title><rect x="10.0" y="197" width="823.8" height="15.0" fill="rgb(121,121,239)" rx="2" ry="2" />
-<text  x="13.00" y="207.5" >ptrace_stop</text>
+<title>btrfs_copy_from_user (802 microsecs, 0.02%)</title><rect x="650.5" y="229" width="0.2" height="15.0" fill="rgb(117,117,236)" rx="2" ry="2" />
+<text  x="653.49" y="239.5" ></text>
 </g>
 <g >
-<title>irqentry_exit_to_user_mode (4,412,246 samples, 30.19%)</title><rect x="833.8" y="261" width="356.2" height="15.0" fill="rgb(139,139,254)" rx="2" ry="2" />
-<text  x="836.81" y="271.5" >irqentry_exit_to_user_mode</text>
+<title>schedule (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="293" width="420.9" height="15.0" fill="rgb(139,139,254)" rx="2" ry="2" />
+<text  x="13.00" y="303.5" >schedule</text>
 </g>
 <g >
-<title>-- (4,412,246 samples, 30.19%)</title><rect x="833.8" y="165" width="356.2" height="15.0" fill="rgb(160,160,160)" rx="2" ry="2" />
-<text  x="836.81" y="175.5" >--</text>
+<title>handle_softirqs.isra.0 (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="133" width="539.2" height="15.0" fill="rgb(79,191,191)" rx="2" ry="2" />
+<text  x="653.77" y="143.5" >handle_softirqs.isra.0</text>
 </g>
 <g >
-<title>all (14,617,328 samples, 100%)</title><rect x="10.0" y="357" width="1180.0" height="15.0" fill="rgb(90,90,213)" rx="2" ry="2" />
-<text  x="13.00" y="367.5" ></text>
+<title>__schedule (787 microsecs, 0.02%)</title><rect x="650.5" y="149" width="0.2" height="15.0" fill="rgb(107,107,227)" rx="2" ry="2" />
+<text  x="653.49" y="159.5" ></text>
 </g>
 <g >
-<title>std::rt::lang_start::h06309630d8833d25 (14,617,328 samples, 100.00%)</title><rect x="10.0" y="293" width="1180.0" height="15.0" fill="rgb(81,81,206)" rx="2" ry="2" />
-<text  x="13.00" y="303.5" >std::rt::lang_start::h06309630d8833d25</text>
+<title>arch_do_signal_or_restart (814,610 microsecs, 18.61%)</title><rect x="430.9" y="357" width="219.6" height="15.0" fill="rgb(137,137,252)" rx="2" ry="2" />
+<text  x="433.87" y="367.5" >arch_do_signal_or_restart</text>
 </g>
 <g >
-<title>entry_SYSCALL_64_after_hwframe (4,412,246 samples, 30.19%)</title><rect x="833.8" y="85" width="356.2" height="15.0" fill="rgb(101,212,212)" rx="2" ry="2" />
-<text  x="836.81" y="95.5" >entry_SYSCALL_64_after_hwframe</text>
+<title>asm_exc_int3 (814,610 microsecs, 18.61%)</title><rect x="430.9" y="389" width="219.6" height="15.0" fill="rgb(107,107,227)" rx="2" ry="2" />
+<text  x="433.87" y="399.5" >asm_exc_int3</text>
 </g>
 <g >
-<title>schedule (10,205,062 samples, 69.81%)</title><rect x="10.0" y="181" width="823.8" height="15.0" fill="rgb(139,139,254)" rx="2" ry="2" />
-<text  x="13.00" y="191.5" >schedule</text>
+<title>__x64_sys_ptrace (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="213" width="420.9" height="15.0" fill="rgb(83,195,195)" rx="2" ry="2" />
+<text  x="13.00" y="223.5" >__x64_sys_ptrace</text>
 </g>
 <g >
-<title>__schedule (10,205,062 samples, 69.81%)</title><rect x="10.0" y="165" width="823.8" height="15.0" fill="rgb(107,107,227)" rx="2" ry="2" />
-<text  x="13.00" y="175.5" >__schedule</text>
+<title>write (1,030 microsecs, 0.02%)</title><rect x="650.5" y="357" width="0.3" height="15.0" fill="rgb(107,107,228)" rx="2" ry="2" />
+<text  x="653.49" y="367.5" ></text>
 </g>
 <g >
-<title>__libc_start_main (14,617,328 samples, 100.00%)</title><rect x="10.0" y="309" width="1180.0" height="15.0" fill="rgb(117,117,236)" rx="2" ry="2" />
-<text  x="13.00" y="319.5" >__libc_start_main</text>
+<title>-- (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="197" width="539.2" height="15.0" fill="rgb(160,160,160)" rx="2" ry="2" />
+<text  x="653.77" y="207.5" >--</text>
 </g>
 <g >
-<title>schedule (4,412,246 samples, 30.19%)</title><rect x="833.8" y="197" width="356.2" height="15.0" fill="rgb(139,139,254)" rx="2" ry="2" />
-<text  x="836.81" y="207.5" >schedule</text>
+<title>btrfs_buffered_write (1,030 microsecs, 0.02%)</title><rect x="650.5" y="245" width="0.3" height="15.0" fill="rgb(117,117,236)" rx="2" ry="2" />
+<text  x="653.49" y="255.5" ></text>
 </g>
 <g >
-<title>ptrace_request (10,205,062 samples, 69.81%)</title><rect x="10.0" y="133" width="823.8" height="15.0" fill="rgb(81,194,194)" rx="2" ry="2" />
-<text  x="13.00" y="143.5" >ptrace_request</text>
+<title>hrtimer_wakeup (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="181" width="539.2" height="15.0" fill="rgb(81,194,194)" rx="2" ry="2" />
+<text  x="653.77" y="191.5" >hrtimer_wakeup</text>
 </g>
 <g >
-<title>asm_exc_int3 (4,412,246 samples, 30.19%)</title><rect x="833.8" y="277" width="356.2" height="15.0" fill="rgb(107,107,227)" rx="2" ry="2" />
-<text  x="836.81" y="287.5" >asm_exc_int3</text>
+<title>__schedule (814,610 microsecs, 18.61%)</title><rect x="430.9" y="293" width="219.6" height="15.0" fill="rgb(107,107,227)" rx="2" ry="2" />
+<text  x="433.87" y="303.5" >__schedule</text>
 </g>
 <g >
-<title>do_syscall_64 (4,412,246 samples, 30.19%)</title><rect x="833.8" y="101" width="356.2" height="15.0" fill="rgb(90,201,201)" rx="2" ry="2" />
-<text  x="836.81" y="111.5" >do_syscall_64</text>
+<title>copy_page_from_iter_atomic (802 microsecs, 0.02%)</title><rect x="650.5" y="213" width="0.2" height="15.0" fill="rgb(111,111,231)" rx="2" ry="2" />
+<text  x="653.49" y="223.5" ></text>
 </g>
 <g >
-<title>[unknown] (4,412,246 samples, 30.19%)</title><rect x="833.8" y="69" width="356.2" height="15.0" fill="rgb(91,202,202)" rx="2" ry="2" />
-<text  x="836.81" y="79.5" >[unknown]</text>
+<title>smpboot_thread_fn (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="101" width="539.2" height="15.0" fill="rgb(75,188,188)" rx="2" ry="2" />
+<text  x="653.77" y="111.5" >smpboot_thread_fn</text>
 </g>
 <g >
-<title>-- (10,205,062 samples, 69.81%)</title><rect x="10.0" y="149" width="823.8" height="15.0" fill="rgb(160,160,160)" rx="2" ry="2" />
-<text  x="13.00" y="159.5" >--</text>
+<title>run_timersd (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="117" width="539.2" height="15.0" fill="rgb(63,177,177)" rx="2" ry="2" />
+<text  x="653.77" y="127.5" >run_timersd</text>
 </g>
 <g >
-<title>arch_do_signal_or_restart (10,205,062 samples, 69.81%)</title><rect x="10.0" y="229" width="823.8" height="15.0" fill="rgb(137,137,252)" rx="2" ry="2" />
-<text  x="13.00" y="239.5" >arch_do_signal_or_restart</text>
+<title>schedule (814,610 microsecs, 18.61%)</title><rect x="430.9" y="309" width="219.6" height="15.0" fill="rgb(139,139,254)" rx="2" ry="2" />
+<text  x="433.87" y="319.5" >schedule</text>
+</g>
+<g >
+<title>ret_from_fork_asm (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="53" width="539.2" height="15.0" fill="rgb(67,180,180)" rx="2" ry="2" />
+<text  x="653.77" y="63.5" >ret_from_fork_asm</text>
+</g>
+<g >
+<title>do_nanosleep (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="245" width="539.2" height="15.0" fill="rgb(137,137,253)" rx="2" ry="2" />
+<text  x="653.77" y="255.5" >do_nanosleep</text>
+</g>
+<g >
+<title>ptrace_stop (814,610 microsecs, 18.61%)</title><rect x="430.9" y="325" width="219.6" height="15.0" fill="rgb(121,121,239)" rx="2" ry="2" />
+<text  x="433.87" y="335.5" >ptrace_stop</text>
+</g>
+<g >
+<title>ptrace_request (814,610 microsecs, 18.61%)</title><rect x="430.9" y="261" width="219.6" height="15.0" fill="rgb(81,194,194)" rx="2" ry="2" />
+<text  x="433.87" y="271.5" >ptrace_request</text>
+</g>
+<g >
+<title>do_syscall_64 (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="309" width="539.2" height="15.0" fill="rgb(85,85,209)" rx="2" ry="2" />
+<text  x="653.77" y="319.5" >do_syscall_64</text>
+</g>
+<g >
+<title>entry_SYSCALL_64_after_hwframe (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="181" width="420.9" height="15.0" fill="rgb(101,212,212)" rx="2" ry="2" />
+<text  x="13.00" y="191.5" >entry_SYSCALL_64_after_hwframe</text>
+</g>
+<g >
+<title>get_signal (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="325" width="420.9" height="15.0" fill="rgb(87,87,211)" rx="2" ry="2" />
+<text  x="13.00" y="335.5" >get_signal</text>
+</g>
+<g >
+<title>vfs_write (1,030 microsecs, 0.02%)</title><rect x="650.5" y="277" width="0.3" height="15.0" fill="rgb(134,134,250)" rx="2" ry="2" />
+<text  x="653.49" y="287.5" ></text>
+</g>
+<g >
+<title>lldb-server (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="149" width="420.9" height="15.0" fill="rgb(97,208,208)" rx="2" ry="2" />
+<text  x="13.00" y="159.5" >lldb-server</text>
+</g>
+<g >
+<title>__libc_start_main (4,376,798 microsecs, 100.00%)</title><rect x="10.0" y="421" width="1180.0" height="15.0" fill="rgb(117,117,236)" rx="2" ry="2" />
+<text  x="13.00" y="431.5" >__libc_start_main</text>
+</g>
+<g >
+<title>common_nsleep (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="277" width="539.2" height="15.0" fill="rgb(107,107,227)" rx="2" ry="2" />
+<text  x="653.77" y="287.5" >common_nsleep</text>
+</g>
+<g >
+<title>arch_ptrace (814,610 microsecs, 18.61%)</title><rect x="430.9" y="245" width="219.6" height="15.0" fill="rgb(75,188,188)" rx="2" ry="2" />
+<text  x="433.87" y="255.5" >arch_ptrace</text>
+</g>
+<g >
+<title>__schedule (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="277" width="420.9" height="15.0" fill="rgb(107,107,227)" rx="2" ry="2" />
+<text  x="13.00" y="287.5" >__schedule</text>
+</g>
+<g >
+<title>[unknown] (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="165" width="420.9" height="15.0" fill="rgb(91,202,202)" rx="2" ry="2" />
+<text  x="13.00" y="175.5" >[unknown]</text>
+</g>
+<g >
+<title>wakedemo (4,376,798 microsecs, 100.00%)</title><rect x="10.0" y="453" width="1180.0" height="15.0" fill="rgb(139,139,254)" rx="2" ry="2" />
+<text  x="13.00" y="463.5" >wakedemo</text>
+</g>
+<g >
+<title>ptrace_request (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="245" width="420.9" height="15.0" fill="rgb(81,194,194)" rx="2" ry="2" />
+<text  x="13.00" y="255.5" >ptrace_request</text>
+</g>
+<g >
+<title>irqentry_exit_to_user_mode (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="357" width="420.9" height="15.0" fill="rgb(139,139,254)" rx="2" ry="2" />
+<text  x="13.00" y="367.5" >irqentry_exit_to_user_mode</text>
+</g>
+<g >
+<title>clock_nanosleep (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="341" width="539.2" height="15.0" fill="rgb(111,111,231)" rx="2" ry="2" />
+<text  x="653.77" y="351.5" >clock_nanosleep</text>
+</g>
+<g >
+<title>do_syscall_64 (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="197" width="420.9" height="15.0" fill="rgb(90,201,201)" rx="2" ry="2" />
+<text  x="13.00" y="207.5" >do_syscall_64</text>
+</g>
+<g >
+<title>asm_exc_debug (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="389" width="420.9" height="15.0" fill="rgb(125,125,242)" rx="2" ry="2" />
+<text  x="13.00" y="399.5" >asm_exc_debug</text>
+</g>
+<g >
+<title>__schedule (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="213" width="539.2" height="15.0" fill="rgb(107,107,227)" rx="2" ry="2" />
+<text  x="653.77" y="223.5" >__schedule</text>
+</g>
+<g >
+<title>arch_ptrace (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="229" width="420.9" height="15.0" fill="rgb(75,188,188)" rx="2" ry="2" />
+<text  x="13.00" y="239.5" >arch_ptrace</text>
+</g>
+<g >
+<title>do_syscall_64 (814,610 microsecs, 18.61%)</title><rect x="430.9" y="213" width="219.6" height="15.0" fill="rgb(90,201,201)" rx="2" ry="2" />
+<text  x="433.87" y="223.5" >do_syscall_64</text>
+</g>
+<g >
+<title>btrfs_do_write_iter (1,030 microsecs, 0.02%)</title><rect x="650.5" y="261" width="0.3" height="15.0" fill="rgb(118,118,237)" rx="2" ry="2" />
+<text  x="653.49" y="271.5" ></text>
+</g>
+<g >
+<title>entry_SYSCALL_64_after_hwframe (1,030 microsecs, 0.02%)</title><rect x="650.5" y="325" width="0.3" height="15.0" fill="rgb(96,96,218)" rx="2" ry="2" />
+<text  x="653.49" y="335.5" ></text>
+</g>
+<g >
+<title>[unknown] (1,030 microsecs, 0.02%)</title><rect x="650.5" y="341" width="0.3" height="15.0" fill="rgb(86,86,210)" rx="2" ry="2" />
+<text  x="653.49" y="351.5" ></text>
+</g>
+<g >
+<title>preempt_schedule_irq (787 microsecs, 0.02%)</title><rect x="650.5" y="165" width="0.2" height="15.0" fill="rgb(123,123,241)" rx="2" ry="2" />
+<text  x="653.49" y="175.5" ></text>
+</g>
+<g >
+<title>std::rt::lang_start::h06309630d8833d25 (4,376,798 microsecs, 100.00%)</title><rect x="10.0" y="405" width="1180.0" height="15.0" fill="rgb(81,81,206)" rx="2" ry="2" />
+<text  x="13.00" y="415.5" >std::rt::lang_start::h06309630d8833d25</text>
+</g>
+<g >
+<title>do_syscall_64 (1,030 microsecs, 0.02%)</title><rect x="650.5" y="309" width="0.3" height="15.0" fill="rgb(85,85,209)" rx="2" ry="2" />
+<text  x="653.49" y="319.5" ></text>
+</g>
+<g >
+<title>std::thread::sleep::h0b60591235df53ba (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="373" width="539.2" height="15.0" fill="rgb(126,126,243)" rx="2" ry="2" />
+<text  x="653.77" y="383.5" >std::thread::sleep::h0b60591235df53ba</text>
+</g>
+<g >
+<title>nanosleep (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="357" width="539.2" height="15.0" fill="rgb(109,109,229)" rx="2" ry="2" />
+<text  x="653.77" y="367.5" >nanosleep</text>
+</g>
+<g >
+<title>rep_movs_alternative (797 microsecs, 0.02%)</title><rect x="650.5" y="197" width="0.2" height="15.0" fill="rgb(80,80,205)" rx="2" ry="2" />
+<text  x="653.49" y="207.5" ></text>
+</g>
+<g >
+<title>_$LT$std..fs..File$u20$as$u20$std..io..Write$GT$::write::h02b87cc50118ecf9 (1,030 microsecs, 0.02%)</title><rect x="650.5" y="373" width="0.3" height="15.0" fill="rgb(89,89,213)" rx="2" ry="2" />
+<text  x="653.49" y="383.5" ></text>
+</g>
+<g >
+<title>wakedemo::main::h52fdaccdcfcbd854 (2,001,126 microsecs, 45.72%)</title><rect x="650.5" y="389" width="539.5" height="15.0" fill="rgb(116,116,235)" rx="2" ry="2" />
+<text  x="653.49" y="399.5" >wakedemo::main::h52fdaccdcfcbd854</text>
+</g>
+<g >
+<title>hrtimer_run_softirq (2,000,096 microsecs, 45.70%)</title><rect x="650.8" y="149" width="539.2" height="15.0" fill="rgb(68,182,182)" rx="2" ry="2" />
+<text  x="653.77" y="159.5" >hrtimer_run_softirq</text>
+</g>
+<g >
+<title>lldb-server (814,610 microsecs, 18.61%)</title><rect x="430.9" y="165" width="219.6" height="15.0" fill="rgb(97,208,208)" rx="2" ry="2" />
+<text  x="433.87" y="175.5" >lldb-server</text>
+</g>
+<g >
+<title>all (4,376,798 microsecs, 100%)</title><rect x="10.0" y="469" width="1180.0" height="15.0" fill="rgb(90,90,213)" rx="2" ry="2" />
+<text  x="13.00" y="479.5" ></text>
+</g>
+<g >
+<title>get_signal (814,610 microsecs, 18.61%)</title><rect x="430.9" y="341" width="219.6" height="15.0" fill="rgb(87,87,211)" rx="2" ry="2" />
+<text  x="433.87" y="351.5" >get_signal</text>
+</g>
+<g >
+<title>ptrace_stop (1,561,062 microsecs, 35.67%)</title><rect x="10.0" y="309" width="420.9" height="15.0" fill="rgb(121,121,239)" rx="2" ry="2" />
+<text  x="13.00" y="319.5" >ptrace_stop</text>
 </g>
 </g>
 </svg>
