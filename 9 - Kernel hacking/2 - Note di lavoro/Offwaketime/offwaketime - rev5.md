@@ -568,7 +568,14 @@ offwaketime -f | flamegraph --color='chain' --countname='microsecs' | tee "offwa
 
 ## Esempio: debug di programma Rust con LLDB
 
-Si vuole effettuare la profilazione durante il debugging di un piccolo programma Rust sincrono che crea un file, vi scrive all'interno, e chiude il relativo file descriptor, aspettando di vedere tracce delle attese avvenute per il debug e potenzialmente di attese avvenute per l'interazione con il file.
+Si vuole effettuare la profilazione durante il debugging di un piccolo programma Rust sincrono che:
+1. crea un file
+2. vi scrive all'interno
+3. chiude il relativo file descriptor
+4. attende due secondi
+5. apre il file
+6. ne rilegge i contenuti in un buffer
+7. chiude di nuovo il file descriptor
 
 ### Verifica della versione del kernel in esecuzione
 
@@ -580,38 +587,50 @@ uname -a
 Linux nitro 6.10.2-rt14-arch1-5-rt #1 SMP PREEMPT_RT Sat, 08 Feb 2025 13:50:34 +0000 x86_64 GNU/Linux
 ```
 
-### Realizzazione del programma di esempio
+### Realizzazione del programma
 
-Il programma Rust realizzato è il seguente:
+Scriviamo un programma Rust che realizzi gli obiettivi proposti, utilizzando un buffer di dimensioni sufficienti da far durare le operazioni di lettura e scrittura più di 1 µs:
 ```rust
 use std::fs::File;
-use std::io::Write;
+use std::io::{Read, Write};
 use std::thread::sleep;
 use std::time::Duration;
 
-// a 16 MiB buffer of ASCII zeroes, b"0"
-const ZEROES: [u8; 16_777_216] = [48; 16_777_216];
+// a 512 MiB buffer of ASCII zeroes, b"0"
+const ZEROES: [u8; 536870912] = [48; 536870912];
 
 fn main() {
-    let mut file = File::create("example.txt")
-        .expect("File creation failed");
+    {
+        let mut file = File::create("example.txt")
+            .expect("File creation failed");
+        
+        let _bytes_written = file.write(&ZEROES)
+            .expect("File write failed");
+    }
     
-    // sleep to be displayed in the output
     sleep(Duration::from_secs(2));
     
-    let _bytes_written = file.write(&ZEROES)
-        .expect("File write failed");
+    {
+        let mut file = File::open("example.txt")
+            .expect("File open failed");
+        
+        let mut buffer = Vec::<u8>::new();
+        file.read_to_end(&mut buffer)
+            .expect("File read failed");
+        
+        assert_eq!(buffer, ZEROES);
+    }
     
     // wait indefinitely so that bcc may collect debug symbols
     sleep(Duration::MAX)
 }
 ```
 
-### Esecuzione del programma di esempio
+### Esecuzione del programma
 
 Eseguiamo il programma con un debugger, inserendo un breakpoint all'inizio della funzione `main`, in modo che non venga effettuato nulla prima che `offwaketime` sia in ascolto.
 
-### Identificazione del pid del programma di esempio
+### Identificazione del pid del programma
 
 Usiamo `ps` per identificare il processo del programma che abbiamo avviato:
 ```bash
@@ -634,23 +653,29 @@ Possiamo quindi avviare `offwaketime` in modo che monitori il processo per 30 se
 sudo offwaketime 30 -p 22353 -f | flamegraph --color='chain' --countname='microsecs' > wakedemo.svg
 ```
 
-Ora che `offwaketime` è in ascolto, effettuiamo step di una linea di codice alla volta fino a quando il programma non raggiunge l'ultima riga.
+Ora che `offwaketime` è in ascolto, facciamo riprendere al debugger l'esecuzione del nostro programma.
 
 Una volta fatto, senza chiudere il nostro programma[^symbols], aspettiamo che `offwaketime` termini la profilazione.
 
-Alleghiamo poi l'immagine prodotta a questo documento:
+### Immagine prodotta
 
-![[wakedemo.svg]]
+Alleghiamo l'immagine prodotta da `offwaketime` a questo documento:
 
-Infine, analizziamo l'immagine (aprendola in un browser web grafico con JavaScript abilitato per garantirne l'interattività).
-
-### Descrizione dell'immagine
+![[wakedemo3.svg]]
 
 Possiamo vedere due gruppi di blocchi colorati, uno blu e uno azzurro, separati da un blocco grigio.
 
 Ciascun blocco corrisponde alla traccia di un frame catturato durante il profiling.  
 
 I blocchi blu sono i frame del momento di inizio attesa, i blocchi azzurri sono frame del momento di fine attesa.
+
+Mentre lo stack dei blocchi blu cresce dal basso verso l'alto come è solito nei flame graph, lo stack dei blocchi azzurri è disposto dall'alto verso il basso, commettendo un abuso di notazione che però facilita la lettura del diagramma[^notation].
+
+[^notation]: https://www.brendangregg.com/FlameGraphs/offcpuflamegraphs.html#Chain
+
+#### Interattività
+
+Ci accorgiamo che l'immagine prodotta contiene anche degli `<script>` che la rendono interattiva, che per motivi di compatibilità funzionano solo se essa viene aperta individualmente come scheda di un browser; pertanto, la apriamo in questo modo.
 
 Mettendo il mouse su ciascuno di questi blocchi, possiamo vedere comparire in basso il testo `Function: NOMEFUNZIONE (DURATA microsecs, PERCENTUALE%)`; ciò ci permette di capire:
 - `NOMEFUNZIONE`: il nome completo della funzione nel frame ispezionato, qualora non ci fosse sufficiente spazio nell'immagine per visualizzarlo
@@ -665,7 +690,7 @@ In alto a destra, in grigio molto molto chiaro, possiamo trovare un bottone `Sea
 
 A destra del bottone `Search`, troviamo un bottone `ic`, che aggiunge/toglie [il flag `ignoreCase`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase) alla Regular Expression.
 
-### Tracce comuni
+### Tracce: entrypoint del programma
 
 Guardando la parte blu dal basso verso l'alto, possiamo osservare lo stack del nostro programma nei momenti in cui è iniziata un'attesa.
 
@@ -677,102 +702,168 @@ In ordine:
 
 I quattro blocchi riempiono il 100% dello spazio orizzontale dell'immagine, indicando che quei frame sono stati presenti in tutte le cause di inizio attesa del nostro programma.
 
-Mettendo il mouse sopra ad essi, possiamo vedere la loro durata, ovvero il tempo totale che il nostro programma è stato in attesa di eventi off-CPU: `(14.718.328 microsecs, 100.00%)`.
+Mettendo il mouse sopra ad essi, possiamo scoprire la durata di tutte le attese off-CPU avvenute nel corso dell'esecuzione del programma: `(9.249.467 microsecs, 100.00%)`.
 
-### Tracce di debugging
+[^libcstart]: https://refspecs.linuxfoundation.org/LSB_1.3.0/gLSB/gLSB/baselib---libc-start-main-.html
+[^rustlangstart]: https://github.com/rust-lang/rust/blob/2010bba8868fa714bb4b07be463a8923b26d44db/library/std/src/rt.rs#L192-L204
 
-#### Stack di attesa (blu)
+### Tracce: cause di attesa
 
-Continuando a ispezionare l'immagine, possiamo vedere una divisione, che indica che nei momenti di attesa per attività off-CPU lo stack è stato diverso.
+Continuando a ispezionare l'immagine, possiamo vedere una divisione al livello superiore a `std::rt::lang_start::*`, che la causa delle attese off-CPU è stata diversa in momenti diversi.
 
-In particolare, per questa sezione, ci concentriamo sui seguenti due:
-- `asm_exc_debug`, seguito da `exc_debug_user`, l'handler della `DEBUG` exception del processore, innescata dal raggiungimento di un breakpoint impostato attraverso uno dei registri `DR0`, `DR1`, `DR2` o `DR3` del processore[^wikidebug]
-- `asm_exc_int3`, l'handler della `INT3` exception del processore, innescata anch'essa dal raggiungimento di un breakpoint, ma impostato a livello software con l'omonima istruzione
+Da sinistra a destra, possiamo vedere:
+- `alloc::vec::partial_eq`, l'implementazione di confronto tra slice di Rust[^rustvecpartialeq], utilizzata dall'asserzione `assert_eq!` alla fine del programma
+- `asm_exc_debug`, l'handler di un interrupt configurato dal debugger[^wikidebug]
+- `wakedemo::main`, la funzione main del nostro programma
+	- `std::io::Read::read_to_end`, l'implementazione della lettura su un buffer in Rust[^rustread], utilizzata per leggere il file
+	- `std::io::Write::write`, l'implementazione della scrittura da un buffer in Rust[^rustwrite], utilizzata per creare e scrivere sul file
+	- `std::thread::sleep`, l'implementazione di un'attesa per un tempo predefinito in Rust[^rustsleep], utilizzata per attendere due secondi tra scrittura e lettura
 
-Osserviamo i loro parametri mettendo il mouse sopra ad essi:
-- `asm_exc_debug` è stato la causa di attese per una durata totale di `(814.610 microsecs, 18.61%)`
-- `asm_exc_int3` è stato la causa di attese per una durata totale di `(1.561.062 microsecs, 35.67%)`
+[^rustvecpartialeq]: https://doc.rust-lang.org/src/alloc/vec/partial_eq.rs.html
+[^wikidebug]: https://en.wikipedia.org/wiki/X86_debug_register
+[^rustread]: https://doc.rust-lang.org/std/io/trait.Read.html#method.read_to_end
+[^rustwrite]: https://doc.rust-lang.org/std/io/trait.Write.html#tymethod.write
+[^rustsleep]: https://doc.rust-lang.org/std/thread/fn.sleep.html
 
-Entrambi gli stack poi chiamano:
-1. `irqentry_exit_to_user_mode`, che configura il kernel per delegare la gestione di un interrupt[^irqexit]
-2. `arch_do_signal_or_restart`, che verifica che ci sia un segnale da inviare a un processo prima di provare a consegnarlo[^signalrestart]
-3. `get_signal`, che controlla quale segnale deve essere inviato[^getsignal], determinando `SIGTRAP`[^dojobctl]
-4. `ptrace_stop`, che mette in pausa un processo impostandogli lo stato `TASK_TRACED`[^ptracestop]
-5. `schedule`, corrispondente al lavoro dello scheduler[^schedule]
-6. `__schedule`,  corrispondente a una iterazione dello scheduler[^uschedule]
+### Tracce: confronto tra slice
 
-#### Separatore (grigio)
+Osserviamo che `alloc::vec::partial_eq` è stata causa di attese per `(1.686 microsecs, 0.08%)`.
 
-Il separatore in grigio `--` denota che lo stack del programma ha termine lì.
+Clicchiamo su `alloc::vec::partial_eq` per zoomarla, e continuiamo a salire ai livelli superiori per comprendere lo stack che ha causato l'attesa.
 
-Possiamo capire quindi che tutti gli eventi off-CPU che sono avvenuti sono le interruzioni avvenute in corrispondenza al nostro stepping del programma tramite il debugger.
+Vediamo una ulteriore divisione in tre:
+- `asm_common_interrupt`, l'handler di un generico interrupt hardware, `(797 microsecs, 0.04%)`
+- `asm_sysvec_apic_timer_interrupt`, l'handler di un interrupt dovuto a un timer ad alta precisione[^wikiapic], `(571 microsecs, 0.03%)`
+- `asm_sysvec_reschedule_ipi`, l'handler per la ricezione e il rescheduling di un interrupt hardware[^ghresipi], `(318 microsecs, 0.02%)`
 
-#### Stack di risveglio (azzurro)
+Possiamo capire che durante il confronto tra la slice `ZEROES` in-RAM e quella letta dal file si è verificato un interrupt hardware esterno, la cui gestione è stata rimandata a dopo.
 
-Guardiamo ora cos'ha causato il risveglio del nostro programma.
+[^wikiapic]: https://en.wikipedia.org/wiki/Advanced_Programmable_Interrupt_Controllerù
+[^ghresipi]: https://github.com/torvalds/linux/blob/4701f33a10702d5fc577c32434eb62adde0a1ae1/arch/x86/kernel/idt.c#L135
 
-Lo stack del processo risvegliante è la parte in azzurro in cima al flame graph, in cui viene commesso un abuso di notazione per facilitare la lettura delle tracce elencando i frame dall'alto verso il basso[^notation].
+Tutti e tre gli stack continuano con:
+1. `irqentry_exit_to_user_mode`, che configura il kernel per tornare in usermode in seguito ad un interrupt[^ghirqexit]
+2. `schedule`, corrispondente al lavoro dello scheduler[^ghschedule]
+3. `__schedule`,  corrispondente a una iterazione dello scheduler[^ghuschedule]
 
-Questo significa che, in entrambi i casi, il processo del nostro programma è stato risvegliato dal seguente stack:
+Essendo la gestione stata rimandata a dopo, questo è il kernel che rischedula l'esecuzione del nostro programma al primo momento possibile.
+
+[^ghirqexit]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/arch/arm64/kernel/entry-common.c#L122
+[^ghschedule]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/sched/core.c#L6847
+[^ghuschedule]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/sched/core.c#L6645
+
+Sopra a `__schedule`, troviamo in grigio il separatore `--`, che separa lo stack che ha causato l'inizio di un'attesa da quello che ne ha causata la fine.
+
+Poichè il thread è stato risvegliato nello stesso momento in cui è stato messo in attesa, non troviamo nulla sopra al separatore.
+
+### Tracce: debugging
+
+Osserviamo che `asm_exc_debug` è stata causa di attese per `(915 microsecs, 0.04%)`.
+
+Zoomandola, ne osserviamo lo stack:
+1. `exc_debug_user`, funzione che delega la gestione dell'interrupt di un'eccezione di debug a un programma in user space
+2. `irqentry_exit_to_user_mode`, che configura il kernel per tornare in usermode in seguito ad un interrupt[^ghirqexit]
+3. `arch_do_signal_or_restart`, che verifica che ci sia un segnale da inviare a un processo prima di provare a consegnarlo[^ghsignalrestart]
+4. `get_signal`, che controlla quale segnale deve essere inviato[^ghgetsignal], determinando `SIGTRAP`[^ghdojobctl]
+5. `ptrace_stop`, che mette in pausa un processo impostandogli lo stato `TASK_TRACED`[^ghptracestop]
+6. `schedule`, corrispondente al lavoro dello scheduler[^ghschedule]
+7. `__schedule`,  corrispondente a una iterazione dello scheduler[^ghuschedule]
+
+Capiamo che si è tratta di un breakpoint hardware, impostato attraverso uno dei registri `DR*` della CPU.
+
+[^ghsignalrestart]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/arch/x86/kernel/signal.c#L333
+[^ghgetsignal]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/signal.c#L2801
+[^ghdojobctl]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/signal.c#L2670
+[^ghptracestop]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/signal.c#L2351
+
+#### Risveglio
+
+Possiamo osservare nuovamente il separatore in grigio `--`, ma questa volta sopra ad esso ci sono dei blocchi azzurri, che descrivono cosa ha risvegliato il nostro programma:
 1. `lldb-server`, il nostro debugger in user space
 2. `[unknown]`, probabilmente una funzione di LLDB che effettua una syscall `ptrace`
 3. `entry_SYSCALL_64_after_hwframe`, l'entrypoint in kernel space della syscall
 4. `do_syscall_64`, il gestore delle syscall
 5. `__x64_sys_ptrace`, il gestore della syscall `ptrace` per l'architettura `x86_64`
 6. `arch_ptrace`, il gestore della syscall `ptrace` agnostico all'architettura del processore
-7. `ptrace_request`, che elabora la syscall, probabilmente `PTRACE_SINGLESTEP`, rimuovendo lo stato `TASK_TRACED`[^ptracerequest]
+7. `ptrace_request`, che elabora la syscall, probabilmente `PTRACE_CONT`[^manptracecont], rimuovendo lo stato `TASK_TRACED`[^ghptracerequest]
 
-Capiamo quindi che la causa del risveglio è stata quindi una richiesta del nostro debugger di far continuare il nostro processo.
+Capiamo quindi che si tratta di un breakpoint che `lldb` ha deciso di ignorare silenziosamente.
 
-[^libcstart]: https://refspecs.linuxfoundation.org/LSB_1.3.0/gLSB/gLSB/baselib---libc-start-main-.html
-[^rustlangstart]: https://github.com/rust-lang/rust/blob/2010bba8868fa714bb4b07be463a8923b26d44db/library/std/src/rt.rs#L192-L204
-[^irqexit]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/arch/arm64/kernel/entry-common.c#L122
-[^signalrestart]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/arch/x86/kernel/signal.c#L333
-[^getsignal]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/signal.c#L2801
-[^dojobctl]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/signal.c#L2670
-[^ptracestop]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/signal.c#L2351
-[^schedule]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/sched/core.c#L6847
-[^uschedule]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/sched/core.c#L6645
-[^ptracerequest]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/ptrace.c#L1011
-[^notation]: https://www.brendangregg.com/FlameGraphs/offcpuflamegraphs.html#Chain
-[^wikidebug]: https://en.wikipedia.org/wiki/X86_debug_register
+[^manptracecont]: https://man.archlinux.org/man/core/man-pages/ptrace.2.en#PTRACE_CONT
+[^ghptracerequest]: https://github.com/torvalds/linux/blob/48a5eed9ad584315c30ed35204510536235ce402/kernel/ptrace.c#L1011
 
-### Tracce di sleep
+### Tracce: lettura
 
-#### Stack di attesa (blu)
+Osserviamo che `std::io::Read::read_to_end` è stata causa di attese per `(11.996 microsecs, 0.59%)`.
 
-Osserviamo come nell'immagine sia presente un'altra divisione dopo `std::rt::lang_start::*, questa volta con il seguente stack:
-1. `wakedemo::main::*`, la funzione main del nostro programma
-2. `std::thread::sleep::*`, della standard library di Rust, che mette in attesa il programma per la `Duration` specificata[^rustsleep]
-3. `nanosleep`, chiamata di sistema che sospende l'esecuzione del programma per una certa durata[^nanosleep]
-4. `clock_nanosleep`, altra chiamata di sistema che sospende l'esecuzione del programma fino a un certo momento[^clocknanosleep]
-5. `entry_SYSCALL_64_after_hwframe`
-6. `do_syscall_64`
-7. `__x64_sys_clock_nanosleep`, il gestore della syscall `clock_nanosleep`
-8. `common_nsleep`, che gestisce nanosleep per i real-time clock[^commonnsleep]
-9. `hrtimer_nanosleep`, che configura un timer ad alta risoluzione per gestire la nanosleep[^hrtimernanosleep]
-10. `do_nanosleep`, che modifica effettivamente lo stato del thread per poi avviare il timer ad alta risoluzione[^donanosleep]
-11. `schedule`
-12. `__schedule`
+La zoomiamo, e otteniamo una bella visualizzazione di tutte le funzioni kernel coinvolte nella lettura di dati da file in un filesystem btrfs.
 
-Tutte queste hanno una durata di `(2.000.096 microsecs, 45.70%)`, compatibile con i 2.000.000 microsecondi di durata della `sleep` del nostro programma.
+Ancora, in ordine gerarchico, alcune che notiamo sono:
+1. `std::io::default_read_to_end`, metodo privato della standard library di Rust
+2. `read`, syscall di glibc
+3. `[unknown]`, probabilmente una funzione interna di glibc che effettua la syscall vera e propria
+4. `entry_SYSCALL_64_after_hwframe`, l'entrypoint in kernel space della syscall
+5. `do_syscall_64`, il gestore delle syscall
+6. `ksys_read`, funzione principale per la lettura da disco
+7. ...
 
-Per spiegare i restanti 96 microsecondi dobbiamo aprire una parentesi su quando `offwaketime` prende misure del tempo:
+Notiamo anche che nessuna di queste stack ha blocchi sopra il separatore `--`, ma anche che tutti gli stack terminano con `preempt_schedule_irq`[^preemptsched]; questo indica che tutte le attese sono terminate su un altro core prima che il processo potesse essere interrotto e schedulato da quello attuale[^soreschedule].
+
+[^soreschedule]: https://stackoverflow.com/a/18441617
+[^preemptsched]: https://github.com/torvalds/linux/blob/695caca9345a160ecd9645abab8e70cfe849e9ff/kernel/sched/core.c#L7075
+
+### Tracce: scrittura
+
+Osserviamo che `std::io::Write::write` è stata causa di attese per `(18.697 microsecs, 0.92%)`.
+
+Zoomiamo anche su questo, e vediamo una stack estremamente simile a quella per la lettura:
+1. `write`, syscall di glibc
+2. `[unknown]`, probabilmente una funzione interna di glibc che effettua la syscall vera e propria`
+3. `entry_SYSCALL_64_after_hwframe`, l'entrypoint in kernel space della syscall
+4. `do_syscall_64`, il gestore delle syscall
+5. `ksys_write`, funzione principale per la scrittura su disco
+6. ...
+
+Anche qui si verifica lo stesso fenomeno svoltosi in lettura: tutti gli stack di attesa terminano con `preempt_schedule_irq`[^preemptsched], e non hanno uno stack di risveglio.
+
+### Tracce: sleep
+
+Osserviamo che `std::thread::sleep` è stata causa di attese per `(2.000.062 microsecs, 98.34%)`.
+
+Il suo stack è visibile senza bisogno di zoom, essendo larga il `98.34%` dell'immagine:
+1. `nanosleep`, chiamata di sistema che sospende l'esecuzione del programma per una certa durata[^nanosleep]
+2. `clock_nanosleep`, altra chiamata di sistema che sospende l'esecuzione del programma fino a un certo momento[^clocknanosleep]
+3. `entry_SYSCALL_64_after_hwframe`, l'entrypoint in kernel space della syscall
+4. `do_syscall_64`, il gestore delle syscall`
+5. `__x64_sys_clock_nanosleep`, il gestore della syscall `clock_nanosleep`
+6. `common_nsleep`, che gestisce nanosleep per i real-time clock[^commonnsleep]
+7. `hrtimer_nanosleep`, che configura un timer ad alta risoluzione per gestire la nanosleep[^hrtimernanosleep]
+8. `do_nanosleep`, che modifica effettivamente lo stato del thread per poi avviare il timer ad alta risoluzione[^donanosleep]
+9. `schedule`, corrispondente al lavoro dello scheduler[^ghschedule]
+10. `__schedule`,  corrispondente a una iterazione dello scheduler[^ghuschedule]
+
+[^nanosleep]: https://man.archlinux.org/man/core/man-pages/nanosleep.2.en
+[^clocknanosleep]: https://man.archlinux.org/man/core/man-pages/clock_nanosleep.2.en
+[^commonnsleep]: https://github.com/torvalds/linux/blob/695caca9345a160ecd9645abab8e70cfe849e9ff/kernel/time/posix-timers.c#L1351
+[^hrtimernanosleep]: https://github.com/torvalds/linux/blob/695caca9345a160ecd9645abab8e70cfe849e9ff/kernel/time/hrtimer.c#L2179
+[^donanosleep]: https://github.com/torvalds/linux/blob/695caca9345a160ecd9645abab8e70cfe849e9ff/kernel/time/hrtimer.c#L2132
+
+#### Tempo in eccesso
+
+Stranamente, però, la durata misurata dell'attesa è stata più lunga di `2.000.000 microsecs`, nonostante `nanosleep` permetta di creare attese dalla durata ad alta risoluzione.
+
+Per spiegare i restanti 62 microsecondi dobbiamo aprire una parentesi su quando `offwaketime` prende misure del tempo:
 - la misura di inizio viene presa prima che la funzione kernel [`finish_task_switch`](https://github.com/torvalds/linux/blob/695caca9345a160ecd9645abab8e70cfe849e9ff/kernel/sched/core.c#L5209) venga eseguita[^bccfts], ovvero dopo l'esecuzione dello stack di attesa e dopo aver cambiato stato al thread
 - la misura di fine viene presa prima che la funzione kernel [`try_to_wake_up`](https://github.com/torvalds/linux/blob/695caca9345a160ecd9645abab8e70cfe849e9ff/kernel/sched/core.c#L4176) venga eseguita[^bccttwu], ovvero dopo l'esecuzione dello stack di risveglio e prima di aver cambiato stato al thread
 
-Il tempo di esecuzione del cambio di stato e dello stack di risveglio è quindi incluso nella misura, e corrisponde ai 96 microsecondi in eccesso.
+Il tempo di esecuzione del cambio di stato e dello stack di risveglio è quindi incluso nella misura, e corrisponde ai 62 microsecondi in eccesso.
 
 [^bccfts]: https://github.com/iovisor/bcc/blob/82f9d1cb633aa3b4ebcbbc5d8b809f48d3dfa222/tools/offwaketime.py#L296
 [^bccttwu]: https://github.com/iovisor/bcc/blob/82f9d1cb633aa3b4ebcbbc5d8b809f48d3dfa222/tools/offwaketime.py#L298
 
-#### Separatore (grigio)
+#### Risveglio
 
-Ancora una volta, troviamo il separatore, `--`.
-
-#### Stack di risveglio (azzurro)
-
-Nello stack di risveglio invece troviamo:
+Ancora una volta troviamo il separatore, `--`, ma questa volta è seguito dallo stack di risveglio, dato che il thread è stato effettivamente messo in attesa:
 1. `ktimers/*`
 2. `ret_from_fork_asm`
 3. `ret_from_fork`
@@ -784,66 +875,23 @@ Nello stack di risveglio invece troviamo:
 9. `__hrtimer_run_queues`
 10. `hrtimer_wakeup`
 
-Senza entrare in dettaglio su come funzioni la gestione degli interrupt in un kernel `PREEMPT_RT`, possiamo capire che la causa del risveglio è stato un interrupt (software) dovuto al completamento del timer.
+Senza entrare in dettaglio su come funzioni la gestione degli interrupt dovuti ai timer ad alta precisione in un kernel `PREEMPT_RT`, possiamo capire che la causa del risveglio è stato un interrupt software dovuto al completamento del timer.
 
-[^rustsleep]: https://doc.rust-lang.org/std/thread/fn.sleep.html
-[^nanosleep]: https://man.archlinux.org/man/core/man-pages/nanosleep.2.en
-[^clocknanosleep]: https://man.archlinux.org/man/core/man-pages/clock_nanosleep.2.en
-[^commonnsleep]: https://github.com/torvalds/linux/blob/695caca9345a160ecd9645abab8e70cfe849e9ff/kernel/time/posix-timers.c#L1351
-[^hrtimernanosleep]: https://github.com/torvalds/linux/blob/695caca9345a160ecd9645abab8e70cfe849e9ff/kernel/time/hrtimer.c#L2179
-[^donanosleep]: https://github.com/torvalds/linux/blob/695caca9345a160ecd9645abab8e70cfe849e9ff/kernel/time/hrtimer.c#L2132
+### Altre tracce
 
-### Tracce di write
+Notiamo che nel flamegraph non appaiono nè il debugger che ha messo il processo in pausa inizialmente, nè la chiamata per la creazione del file, nè quelle per la chiusura dei file descriptor, nè la chiamata finale a `sleep`.
 
-#### Stack di attesa (blu)
+Le chiamate di creazione e chiusura non sono presenti in quanto l'attesa relativa ad esse ha avuto una durata inferiore a 1 microsecondo; sarebbe stato lo stesso per `read` e `write` se il buffer scritto all'interno nel file non avesse avuto la dimensione esagerata di 512 MiB.
 
-Non si vede da nessuna parte nell'immagine la traccia della chiamata `write`...  
-Utilizzando gli strumenti per sviluppatori del browser ci si può però accorgere della sua presenza in una minuscola fettina tra le tracce di debugging e le tracce di sleep!
-
-Troviamo il seguente stack, dalla durata di `(1,030 microsecs, 0.02%)`:
-1. `std::io::Write::write`, della standard library di Rust, che scrive sul file descriptor dato[^rustwrite]
-2. `write`, chiamata di sistema che scrive su un file descriptor
-3. `[unknown]`
-4. `entry_SYSCALL_64_after_hwframe`
-5. `do_syscall_64`
-6. `ksys_write`
-7. `vfs_write`
-8. `btrfs_do_write_iter`
-9. `btrfs_do_buffered_write`
-10. `btrfs_copy_from_user`
-11. `copy_page_from_iter_atomic`
-12. `rep_movs_alternative`, assembly per la copia di memoria con gestione delle eccezioni[^movsalternative]
-13. `asm_sysvec_reschedule_ipi`, l'handler di un interrupt di rescheduling inter-processore[^soreschedule]
-14. `preempt_schedule_irq`, ingresso alternativo allo scheduler quando esso avviene in risposta a un rescheduling inter-processore[^preemptsched]
-15. `__schedule`
-
-[^rustwrite]: https://doc.rust-lang.org/std/io/trait.Write.html#tymethod.write
-[^archwrite]: https://man.archlinux.org/man/core/man-pages/write.2.en
-[^ksyswrite]: https://github.com/torvalds/linux/blob/695caca9345a160ecd9645abab8e70cfe849e9ff/fs/read_write.c#L720
-[^vfswrite]: https://github.com/torvalds/linux/blob/695caca9345a160ecd9645abab8e70cfe849e9ff/fs/read_write.c#L659
-[^movsalternative]: https://github.com/torvalds/linux/blob/695caca9345a160ecd9645abab8e70cfe849e9ff/arch/x86/lib/copy_user_64.S#L16
-[^soreschedule]: https://stackoverflow.com/a/18441617
-[^preemptsched]: https://github.com/torvalds/linux/blob/695caca9345a160ecd9645abab8e70cfe849e9ff/kernel/sched/core.c#L7075
-
-#### Separatore (grigio)
-
-È presente nuovamente il separatore, `--`.
-
-#### Stack di risveglio (azzurro)
-
-Dato che il nostro programma è stato risvegliato immediatamente da un interrupt inter-processore, esso non ha uno stack di risveglio.
-
-### Tracce mancanti
-
-Notiamo che nel flamegraph non appaiono nè la chiamata a `sleep` finale, nè chiamate ad `open` per aprire o chiudere il file descriptor.
-
-`sleep` è assente perchè l'attesa relativa ad essa ha termine *dopo* la chiusura del profiler, e quindi non viene registrata.[^woke]
-
-Le chiamate relative al file descriptor non sono presenti in quanto l'attesa relativa ad esse ha una durata inferiore a 1 microsecondo; la `write` potenzialmente avrebbe potuto dare lo stesso risultato, ma scrivere con essa 16 MiB è stato sufficiente per rendere la durata significativa.
+L'interrupt del debugger e la seconda `sleep` invece sono assenti perchè l'attesa relativa ad esse ha rispettivamente *inizio prima dell'inizio della profilazione* e *fine dopo la fine della stessa*, che porta `offwaketime` a ignorarle[^woke].
 
 [^woke]: https://github.com/iovisor/bcc/blob/82f9d1cb633aa3b4ebcbbc5d8b809f48d3dfa222/tools/offwaketime.py#L223
 
-## Esempio: timer ad alta risoluzione su diversi kernel
+## Ricerca: timer ad alta risoluzione su diversi kernel
+
+Vogliamo farci un'idea di come si comportino i timer ad alta risoluzione su diverse build del kernel.
+
+### Realizzazione del programma
 
 Creiamo un piccolo programma C che esegua un milione di nanosleep dalla durata di 10 nanosecondi ciascuno, per un totale di 10 secondi:
 ```c
@@ -862,6 +910,8 @@ int main(void) {
 	return 0;
 }
 ```
+
+### Esecuzione del programma
 
 Creiamo poi uno script shell che compili il programma, lo esegua in background, e vi connetta la pipeline `offwaketime`-`flamegraph` appena possibile:
 ```fish
@@ -885,28 +935,132 @@ sudo offwaketime 10 \
 
 Eseguiamo infine lo script con kernel diversi per vedere come cambia il risultato.
 
-### [`linux`](https://archlinux.org/packages/core/x86_64/linux/)
+### Kernel [`linux`](https://archlinux.org/packages/core/x86_64/linux/)
 
 Possiamo vedere che nella gran parte dei casi il programma viene schedulato (`schedule`) e poi risvegliato da un interrupt (`asm_sysvec_apic_timer_interrupt`) mentre la CPU è idle (`acpi_idle_enter` e simili), ma in una frazione molto ridotta dei casi (circa 76 dei 822845 catturati) il task viene direttamente risvegliato dalla stessa chiamata che lo ha messo in attesa (`schedule` sia sopra sia sotto).
 
 ![[linux.svg]]
 
-### [`linux-zen`](https://archlinux.org/packages/extra/x86_64/linux-zen/)
+### Kernel [`linux-zen`](https://archlinux.org/packages/extra/x86_64/linux-zen/)
 
 Non si presentano differenze significative negli stack di risveglio dal precedente kernel.
 
 ![[linux-zen.svg]]
 
-### [`linux-lts`](https://archlinux.org/packages/extra/x86_64/linux-lts/)
+### Kernel [`linux-lts`](https://archlinux.org/packages/extra/x86_64/linux-lts/)
 
 Neanche con questo kernel possiamo osservare differenze significative dagli stack degli altri due, con l'eccezione di circa 150 casi in cui il call stack del risveglio è sconosciuto (`[unknown]`).
-
 ![[linux-lts.svg]]
 
-### [`linux-rt`](https://archlinux.org/packages/extra/x86_64/linux-rt/)
+### Kernel [`linux-rt`](https://archlinux.org/packages/extra/x86_64/linux-rt/)
 
 Questo kernel, che ha `CONFIG_PREEMPT_RT` abilitato, si comporta in maniera significativamente diversa dagli altri, che invece usano `CONFIG_PREEMPT_DYNAMIC`: non sono interrupt a risvegliare il nostro programma, bensì thread dedicati alla gestione dei timer ad alta risoluzione (`run_timersd`), che poi effettuano un "interrupt" a livello di software (`hrtimer_run_softirq`)[^ktimers].
 
 ![[linux-rt.svg]]
 
 [^ktimers]: https://wiki.linuxfoundation.org/realtime/documentation/technical_details/hr_timers
+
+## Ricerca: stima del tempo di risveglio necessario in seguito a nanosleep
+
+È possibile sfruttare il modo in cui `offwaketime` prende le misure di tempo per determinare quanto tempo viene impiegato per risvegliare il task dalle attese.
+
+Quando usiamo `nanosleep`, siamo a conoscenza a priori della durata dell'attesa, quindi possiamo sottrarre quel tempo alla misura presa per ottenere il tempo di risveglio:
+$$
+nanosleep + wakeup = measure
+$$
+
+Ovvero, ipotizzando di chiamare `nanosleep` con una attesa di 1 secondo:
+$$
+wakeup = measure - 1\ 000\ 000\ {\mathrm{\mu s}}
+$$
+
+### Realizzazione del programma
+
+Ricordando che `offwaketime` cattura tracce solamente delle attese che iniziano e finiscono mentre è attivo, e che impiega tra i 2 e i 4 secondi per attivarsi, realizziamo un programma C che gli dia sufficiente tempo di avviarsi e connettersi, poi chiami una `nanosleep` dalla durata fissa di 1 secondo:
+
+```c
+#include <time.h>
+
+int main(void) {
+	// empirically determined, may require different values on different systems
+	const struct timespec init = {
+		.tv_sec = 5L,
+		.tv_nsec = 0L,
+	};
+
+	nanosleep(&init, NULL);
+
+	const struct timespec wait = {
+		.tv_sec = 1L,
+		.tv_nsec = 0L,
+	};
+	
+	nanosleep(&wait, NULL);
+	
+	return 0;
+}
+```
+
+L'idea è quella di trovarci in casi come il seguente:
+![[good.png]]
+
+E non come i seguenti:
+![[bad2.png]]
+![[bad1.png]]
+
+### Esecuzione del programma
+
+Innanzitutto, creiamo uno script shell che esegua il programma ed emetta in output il numero di microsecondi misurati da `offwaketime`:
+```fish
+#!/usr/bin/env fish
+
+sudo echo
+
+make nanosleep
+
+./nanosleep &
+
+sudo /usr/share/bcc/tools/offwaketime 7 --pid "$last_pid" --folded | string trim | grep do_nanosleep | cut --delimiter=" " --fields=2
+```
+
+Ora, facciamo in modo che ripeta la misura 1000 volte, saltando i casi in cui essa viene persa, catturata due volte, o `nanosleep` viene interrotta anticipatamente, e facendogli scrivere i risultati su file:
+```fish
+#!/usr/bin/env fish
+
+sudo echo
+
+make nanosleep
+
+set kernel (uname -r)
+
+for i in (seq 1000)
+	./nanosleep &
+	
+	set time (sudo /usr/share/bcc/tools/offwaketime 7 --pid "$last_pid" --folded | string trim | grep do_nanosleep | cut --delimiter=" " --fields=2)
+
+	for t in $time
+		set adjusted (math "$t - 1_000_000")
+
+		if [ "$adjusted" -gt 0 ]
+			echo "$adjusted" | tee --append "$kernel.txt"
+		else
+			echo "[invalid]" > /dev/stderr
+		end
+	end
+end
+
+```
+
+### Kernel [`linux-rt`](https://archlinux.org/packages/extra/x86_64/linux-rt/)
+
+Dopo un'esecuzione, otteniamo un file con 849 misure, che si riportano qui senza newline per evitare di allungare il report:
+```text
+99 69 68 69 181 90 78 71 86 67 73 208 78 75 70 70 175 70 70 70 75 82 69 73 71 71 70 73 88 87 95 95 73 102 74 75 85 69 66 81 79 63 221 79 92 74 73 82 91 77 67 70 72 95 65 96 84 102 187 86 89 109 81 67 71 233 67 90 96 181 96 521 105 177 93 69 81 137 77 76 74 66 72 89 86 74 190 67 68 81 69 93 68 67 73 107 100 72 105 106 99 81 71 117 104 88 106 98 75 192 101 101 71 102 101 87 104 113 66 226 101 103 82 99 104 167 104 103 90 557 224 103 70 107 216 98 86 89 196 227 86 104 105 104 116 110 303 86 108 81 82 90 89 75 217 69 99 67 121 92 105 74 103 104 208 89 237 92 69 74 83 251 104 212 186 102 88 80 104 70 92 122 331 203 217 71 80 104 104 66 122 105 120 220 100 102 97 684 108 80 82 107 98 70 73 105 105 98 216 82 112 103 223 73 99 241 111 202 107 103 71 199 101 756 206 282 110 148 163 96 112 72 87 85 125 103 72 100 70 121 84 69 107 71 100 205 96 800 110 175 150 100 217 105 100 105 82 114 96 94 94 182 60 107 102 80 89 165 97 96 73 90 87 210 248 107 226 523 90 83 93 105 61 102 116 80 81 104 91 105 199 66 73 222 111 128 88 72 91 706 98 78 76 104 108 88 105 99 89 220 117 119 103 70 125 107 109 87 98 102 226 90 92 80 72 106 184 89 105 87 216 108 88 86 107 88 96 217 175 106 217 222 88 132 106 86 99 100 147 530 224 106 85 86 111 229 107 93 218 86 113 95 238 92 121 87 66 106 233 105 114 77 108 88 509 68 96 71 284 167 118 569 221 84 108 96 216 66 261 82 336 105 105 86 70 100 98 87 111 69 70 77 83 84 124 73 122 63 103 100 70 106 107 87 68 84 218 234 86 116 181 86 87 94 87 84 86 175 68 90 181 1006 88 82 108 101 189 106 73 70 99 88 111 82 69 80 87 75 86 89 90 66 95 74 79 82 84 88 88 75 172 84 69 286 73 83 83 173 116 83 81 67 82 112 71 102 108 69 245 108 105 122 96 70 69 105 335 109 166 310 74 82 225 104 74 101 84 89 73 86 82 86 102 108 111 117 148 113 105 68 111 95 102 104 86 68 282 89 245 83 67 245 100 212 78 102 161 93 69 105 124 677 69 97 69 215 109 103 80 142 152 652 90 86 66 103 80 104 77 75 82 786 74 80 79 114 254 93 83 224 79 105 81 101 91 94 107 107 234 104 166 80 106 502 70 93 215 104 105 199 530 73 106 99 69 72 255 119 107 82 146 81 88 71 73 118 90 91 86 478 102 104 106 67 113 82 92 99 159 97 97 107 73 77 263 430 98 65 216 133 105 225 513 82 74 128 214 103 72 86 164 520 71 85 293 91 111 85 113 524 104 102 107 124 117 114 83 177 104 209 83 94 206 68 112 97 200 108 105 280 75 88 68 69 87 172 71 106 74 100 61 91 82 78 222 79 166 87 104 86 199 77 239 100 94 89 76 73 75 74 92 260 174 171 91 301 87 94 72 71 57 86 66 122 106 68 70 112 103 298 80 116 95 91 82 71 76 86 72 92 150 85 75 67 75 85 73 70 70 76 73 90 77 82 88 79 113 79 90 99 69 85 76 92 72 65 77 80 168 71 82 86 176 95 78 105 74 79 73 65 73 77 72 78 100 74 85 77 187 91 100 68 70 69 115 73 88 71 70 68 69 67 73 107 69 75 84 68 102 90 75 71 87 239 67 100 170 69 78 87 88 70 86 72 281 83 77 94 69 74 86 387 72 86 108 72 167 241 106 84 76 71 71 88 78 90 60 154 177 75 93 73 69 80 72 65 68 69 90 86 68 74 84 70 74 82 72 78 92
+```
+
+Da esse, ricaviamo:
+- media: ***120 μs***
+- deviazione standard: ***95 μs***
+- mediana: ***92 μs***
+- 90esima percentile: ***216 μs***
+- 99esima percentile: ***563 μs***
