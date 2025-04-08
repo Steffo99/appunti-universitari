@@ -1,0 +1,108 @@
+{
+  "biggerIcons": "mobile",
+  "clickableIcons": "desktop",
+  "showAllFileIcons": false,
+  "showAllFolderIcons": true,
+  "minimalFolderIcons": true,
+  "showItemName": "desktop",
+  "biggerSearchResults": "mobile",
+  "maxSearchResults": 50,
+  "colorPicker1": "list",
+  "colorPicker2": "rgb",
+  "uncolorHover": false,
+  "uncolorDrag": false,
+  "uncolorSelect": false,
+  "uncolorQuick": false,
+  "rememberDeletedItems": false,
+  "dialogState": {
+    "iconMode": true,
+    "emojiMode": false,
+    "rulePage": "file"
+  },
+  "appIcons": {},
+  "tabIcons": {},
+  "fileIcons": {
+    "LICENSE.txt": {
+      "icon": "lucide-gavel",
+      "unsynced": [
+        "2a7c7cbc231fd11d"
+      ]
+    },
+    "file-index-ignore.json": {
+      "icon": "lucide-list-x",
+      "unsynced": [
+        "2a7c7cbc231fd11d"
+      ]
+    },
+    "file-index.json": {
+      "icon": "lucide-list-tree",
+      "unsynced": [
+        "2a7c7cbc231fd11d"
+      ]
+    },
+    "preamble.sty": {
+      "icon": "lucide-scroll-text",
+      "color": "gray",
+      "unsynced": [
+        "2a7c7cbc231fd11d"
+      ]
+    }
+  },
+  "bookmarkIcons": {},
+  "tagIcons": {},
+  "propertyIcons": {},
+  "ribbonIcons": {},
+  "fileRules": [
+    {
+      "id": "rIOE7",
+      "name": "To do",
+      "match": "any",
+      "conditions": [
+        {
+          "source": "tags",
+          "operator": "includes",
+          "value": "TODO"
+        },
+        {
+          "source": "tags",
+          "operator": "includes",
+          "value": "ToDo"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-file-question",
+      "color": "#d7a628"
+    },
+    {
+      "id": "4vUCi",
+      "name": "To study",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "name",
+          "operator": "contains",
+          "value": "~"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-file-text",
+      "color": "#d7a628"
+    },
+    {
+      "id": "Od2HO",
+      "name": "Summary canvas",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "name",
+          "operator": "startsWith",
+          "value": "★ "
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-layout-dashboard",
+      "color": "#d14224"
+    }
+  ],
+  "folderRules": []
+}

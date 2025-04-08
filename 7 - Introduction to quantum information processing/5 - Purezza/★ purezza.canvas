@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"14ef098cba35120a","type":"file","file":"7 - Introduction to quantum information processing/5 - Purezza/stato puro.md","x":-640,"y":-640,"width":400,"height":400,"color":"4"},
+		{"id":"677c2b02c9d61bd4","type":"file","file":"7 - Introduction to quantum information processing/5 - Purezza/stato misto.md","x":-80,"y":-640,"width":400,"height":400,"color":"4"},
+		{"id":"38df8604a4348f29","type":"file","file":"7 - Introduction to quantum information processing/5 - Purezza/matrice di densità.md","x":-80,"y":-1200,"width":400,"height":400},
+		{"id":"e998388eb683df5e","type":"file","file":"7 - Introduction to quantum information processing/5 - Purezza/proiezione.md","x":-80,"y":-1760,"width":400,"height":400,"color":"4"},
+		{"id":"2d261b12121b7009","type":"file","file":"7 - Introduction to quantum information processing/5 - Purezza/proiezione inversa.md","x":480,"y":-1760,"width":400,"height":400},
+		{"id":"3a044fb7fddd8a01","type":"file","file":"7 - Introduction to quantum information processing/5 - Purezza/matrice di densità ridotta.md","x":-640,"y":-1200,"width":400,"height":400},
+		{"id":"484f07232549ada4","type":"file","file":"7 - Introduction to quantum information processing/5 - Purezza/entropia di Von Neumann.md","x":480,"y":-1200,"width":400,"height":400},
+		{"id":"26560456afe291c2","type":"file","file":"7 - Introduction to quantum information processing/5 - Purezza/qbit osservabile.md","x":480,"y":-640,"width":400,"height":400},
+		{"id":"e8d619b2de859578","type":"file","file":"7 - Introduction to quantum information processing/5 - Purezza/operatore misura con densità.md","x":1040,"y":-640,"width":400,"height":400},
+		{"id":"53cf2d1a14a622fe","type":"file","file":"7 - Introduction to quantum information processing/5 - Purezza/livello di entanglement.md","x":-1200,"y":-80,"width":400,"height":400},
+		{"id":"a07d2fccb8d39325","x":-80,"y":-80,"width":400,"height":400,"type":"file","file":"7 - Introduction to quantum information processing/5 - Purezza/valore atteso di uno stato misto.md"}
+	],
+	"edges":[
+		{"id":"33b7e53545b120ef","fromNode":"14ef098cba35120a","fromSide":"right","toNode":"677c2b02c9d61bd4","toSide":"left"},
+		{"id":"66e1daa41f76a86a","fromNode":"677c2b02c9d61bd4","fromSide":"top","toNode":"38df8604a4348f29","toSide":"bottom"},
+		{"id":"a86875052ce3699d","fromNode":"38df8604a4348f29","fromSide":"left","toNode":"3a044fb7fddd8a01","toSide":"right"},
+		{"id":"22150abbbc696774","fromNode":"38df8604a4348f29","fromSide":"right","toNode":"484f07232549ada4","toSide":"left"},
+		{"id":"f3812cf3795e7942","fromNode":"38df8604a4348f29","fromSide":"top","toNode":"e998388eb683df5e","toSide":"bottom"},
+		{"id":"0c3d3cfa37a093b0","fromNode":"e998388eb683df5e","fromSide":"right","toNode":"2d261b12121b7009","toSide":"left"},
+		{"id":"76362e08225e42f9","fromNode":"677c2b02c9d61bd4","fromSide":"right","toNode":"26560456afe291c2","toSide":"left"},
+		{"id":"69dcdee9a38aa6d4","fromNode":"26560456afe291c2","fromSide":"right","toNode":"e8d619b2de859578","toSide":"left"},
+		{"id":"56c65d0c8e746bf4","fromNode":"677c2b02c9d61bd4","fromSide":"bottom","toNode":"53cf2d1a14a622fe","toSide":"right"},
+		{"id":"1ecee962dc5e162d","fromNode":"14ef098cba35120a","fromSide":"bottom","toNode":"53cf2d1a14a622fe","toSide":"right"},
+		{"id":"d4c8537bc2837e83","fromNode":"53cf2d1a14a622fe","fromSide":"top","toNode":"3a044fb7fddd8a01","toSide":"left"},
+		{"id":"30badb1bca8d4cd5","fromNode":"677c2b02c9d61bd4","fromSide":"bottom","toNode":"a07d2fccb8d39325","toSide":"top"}
+	]
+}

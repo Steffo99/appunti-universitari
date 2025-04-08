@@ -15,10 +15,10 @@ $$
 
 ==Come viene ruotato il vettore a cui è applicato?==
 
-## ✏️ Simbolo per [[circuito quantistico]]
+## ✏️ Simbolo in [[IBM Quantum Composer]]
 
 ==Che simbolo usa questo gate?==
 
-## ⛎ Utilizzo
+## ⛎ Equivalenze
 
-==Per cosa viene usato questo gate?==
+==A cosa equivale questo gate?==

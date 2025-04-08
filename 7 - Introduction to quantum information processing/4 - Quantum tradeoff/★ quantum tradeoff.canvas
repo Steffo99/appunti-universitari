@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"71ab093cda525abc","type":"file","file":"7 - Introduction to quantum information processing/4 - Quantum tradeoff/modello computazionale generale.md","x":-240,"y":-160,"width":400,"height":400,"color":"4"},
+		{"id":"9576eb78a93dc97e","type":"file","file":"7 - Introduction to quantum information processing/3 - Circuiti in parallelo/registri quantistici.md","x":-800,"y":-160,"width":400,"height":400},
+		{"id":"96d3811867f61dc4","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/misura.md","x":320,"y":-160,"width":400,"height":400},
+		{"id":"b99e97ce6306eba0","type":"file","file":"7 - Introduction to quantum information processing/4 - Quantum tradeoff/misura a più qbit.md","x":880,"y":-160,"width":400,"height":400},
+		{"id":"e1bbff1cc087c161","type":"file","file":"7 - Introduction to quantum information processing/4 - Quantum tradeoff/costo computazionale probabilistico.md","x":-40,"y":400,"width":400,"height":400},
+		{"id":"acce834e1b63b5fa","type":"file","file":"7 - Introduction to quantum information processing/4 - Quantum tradeoff/classe di problemi BQP.md","x":520,"y":960,"width":400,"height":400},
+		{"id":"9bee2b94e7471f1d","type":"file","file":"7 - Introduction to quantum information processing/4 - Quantum tradeoff/quantum tradeoff.md","x":-40,"y":960,"width":400,"height":400,"color":"4"},
+		{"id":"123943a542fba1e8","type":"file","file":"7 - Introduction to quantum information processing/4 - Quantum tradeoff/classe di problemi BPP.md","x":520,"y":400,"width":400,"height":400},
+		{"id":"277f70b33c4e21db","type":"file","file":"7 - Introduction to quantum information processing/4 - Quantum tradeoff/problema di Deutsch.md","x":520,"y":1520,"width":960,"height":960,"color":"4"},
+		{"id":"a11bec84c6ab83e0","type":"file","file":"7 - Introduction to quantum information processing/4 - Quantum tradeoff/problema di Bernstein-Vazirani.md","x":520,"y":2640,"width":960,"height":960,"color":"4"},
+		{"id":"f9c5ce4272d9bbec","type":"file","file":"7 - Introduction to quantum information processing/4 - Quantum tradeoff/problema di Simon.md","x":520,"y":3760,"width":960,"height":960,"color":"4"}
+	],
+	"edges":[
+		{"id":"f128f58ff53583c2","fromNode":"9576eb78a93dc97e","fromSide":"right","toNode":"71ab093cda525abc","toSide":"left"},
+		{"id":"f6cb760d9f5083cc","fromNode":"71ab093cda525abc","fromSide":"right","toNode":"96d3811867f61dc4","toSide":"left"},
+		{"id":"64f107d5c6e3bb77","fromNode":"96d3811867f61dc4","fromSide":"right","toNode":"b99e97ce6306eba0","toSide":"left"},
+		{"id":"35b4dd3ccf67ec29","fromNode":"e1bbff1cc087c161","fromSide":"right","toNode":"123943a542fba1e8","toSide":"left"},
+		{"id":"e75f7c2227848e71","fromNode":"9bee2b94e7471f1d","fromSide":"right","toNode":"acce834e1b63b5fa","toSide":"left"},
+		{"id":"279feece1b4460e7","fromNode":"123943a542fba1e8","fromSide":"bottom","toNode":"acce834e1b63b5fa","toSide":"top"},
+		{"id":"dda5fdb2f02e3307","fromNode":"71ab093cda525abc","fromSide":"bottom","toNode":"9bee2b94e7471f1d","toSide":"left"},
+		{"id":"dd45f3780e3a2d19","fromNode":"9bee2b94e7471f1d","fromSide":"bottom","toNode":"277f70b33c4e21db","toSide":"left"},
+		{"id":"ff119b48d9cf67c6","fromNode":"9bee2b94e7471f1d","fromSide":"bottom","toNode":"a11bec84c6ab83e0","toSide":"left"},
+		{"id":"f4706e097b8256dc","fromNode":"277f70b33c4e21db","fromSide":"bottom","toNode":"a11bec84c6ab83e0","toSide":"top"},
+		{"id":"1e2cbd9d26097404","fromNode":"a11bec84c6ab83e0","fromSide":"bottom","toNode":"f9c5ce4272d9bbec","toSide":"top"},
+		{"id":"614e6e6ece40c5ff","fromNode":"9bee2b94e7471f1d","fromSide":"bottom","toNode":"f9c5ce4272d9bbec","toSide":"left"}
+	]
+}

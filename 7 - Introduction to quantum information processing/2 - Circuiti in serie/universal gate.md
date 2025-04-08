@@ -6,7 +6,7 @@ $$
 \def \varZ {\axisZ{z}}
 \displaylines{
 	\Huge
-	\mathbf{U}(\varX, \varY, \varZ) 
+	\qU (\varX, \varY, \varZ) 
 	=\\\\ 
 	\Large
 	\begin{bmatrix}
@@ -20,33 +20,33 @@ $$
 		\cos \frac{\varX}{2} &
 		- (\cos \varZ + \i \sin \varZ) \cdot \sin \frac{\varX}{2} \\
 		(\cos \varY + \i \sin \varY) \cdot \sin \frac{\varX}{2} &
-		(cos (\varY + \varZ) + \i \sin (\varY + \varZ)) \cdot \cos \frac{\varX}{2}
+		(\cos (\varY + \varZ) + \i \sin (\varY + \varZ)) \cdot \cos \frac{\varX}{2}
 	\end{bmatrix}
 }
 $$
-
-> [!Tip]
-> - Con $\varY = 0$ e $\varZ = 0$, abbiamo un [[rotation X gate]].
-> - Con $\varX = 0$ e $\varZ = 0$, abbiamo un [[rotation Y gate]].
-> - Con $\varX = 0$ e $\varY = 0$, abbiamo un [[rotation Z gate]].
-> - Con $\varX = \frac{\pi}{2}$, $\varY = 0$ e $\varZ = 0$, abbiamo un [[Pauli X gate]].
-> - Con $\varY = \frac{\pi}{2}$, $\varX = 0$ e $\varZ = 0$, abbiamo un [[Pauli Y gate]].
-> - Con $\varZ = \frac{\pi}{2}$, $\varX = 0$ e $\varY = 0$, abbiamo un [[Pauli Z gate]].
-
-## 👁️ Effetto in [[qbit|rappresentazione matriciale]]
-
-==Come altera la matrice a cui viene applicato?==
 
 ## 🌐 Effetto in [[sfera di Bloch]]
 
 Ruota il [[qbit]] a cui è applicato di $\varX$ sull'[[asse X in quantum computing|asse X]], $\varY$ sull'[[asse Y]], e $\varZ$ sull'[[asse Z]].
 
-## ✏️ Simbolo per [[circuito quantistico]]
+## ✏️ Simbolo in [[IBM Quantum Composer]]
 
 ![[universal gate.png]]
 
-## ⛎ Utilizzo
+## ⛎ Equivalenze
 
-Essendo un gate ancora **solamente teorico**, si cerca di evitarne l'utilizzo in circuiti effettivi.
+### A [[rotation gate]]
 
-==Verificare che non sia stato scoperto.==
+Con $\varY = 0$ e $\varZ = 0$, abbiamo un [[rotation X gate]] $\qRX$.
+
+Con $\varX = 0$ e $\varZ = 0$, abbiamo un [[rotation Y gate]] $\qRY$.
+
+Con $\varX = 0$ e $\varY = 0$, abbiamo un [[rotation Z gate]] $\qRZ$.
+
+### A [[Pauli gate]]
+
+Con $\varX = \frac{\pi}{2}$, $\varY = 0$ e $\varZ = 0$, abbiamo un [[Pauli X gate]] $\qX$.
+
+Con $\varY = \frac{\pi}{2}$, $\varX = 0$ e $\varZ = 0$, abbiamo un [[Pauli Y gate]] $\qY$.
+
+Con $\varZ = \frac{\pi}{2}$, $\varX = 0$ e $\varY = 0$, abbiamo un [[Pauli Z gate]] $\qZ$.

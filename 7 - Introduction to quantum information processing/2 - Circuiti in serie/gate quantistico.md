@@ -5,7 +5,7 @@ aliases:
 [[matrice]] [[unitarietà di una matrice|unitaria]].
 $$
 \Huge
-\mathbf{U}
+\qU
 $$
 
 > [!Note]

@@ -1,10 +1,9 @@
-[[gate quantistico]] che appartiene alla famiglia dei [[rotation gates]].
+[[gate quantistico]] che appartiene alla famiglia dei [[rotation gate]].
 
 $$\Huge
 \def \u {\axisY{y}}
-\def \varI {{\color{DeepPink} \i}}
 
-\mathbf{R_Y} (\u) = \begin{bmatrix}
+\qRY (\u) = \begin{bmatrix}
 	\cos \frac{\u}{2} & - \sin \frac{\u}{2} \\
 	\sin \frac{\u}{2} & \cos \frac{\u}{2}
 \end{bmatrix}
@@ -22,20 +21,6 @@ $$
 
 Ruota il [[qbit]] a cui è applicato di $\u$ sull'[[asse Y in quantum computing|asse Y]].
 
-## ✏️ Simbolo per [[circuito quantistico]]
+## ✏️ Simbolo in [[IBM Quantum Composer]]
 
 ![[rotation Y gate.png]]
-
-## ⛎ Utilizzo
-
-==Per cosa viene usato questo gate?==
-
-
-## Effetto
-
-
-
-## Pauli
-
-- Con $\u = 0$, abbiamo un [[Identity gate]].
-- Con $\u = 1$, abbiamo un [[Pauli Y gate]].

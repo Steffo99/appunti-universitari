@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"6634964b02a15ae8","type":"file","file":"7 - Introduction to quantum information processing/6 - Crittografia quantistica/algoritmo Bennett-Brassard 1984.md","x":-840,"y":-360,"width":960,"height":960,"color":"4"},
+		{"id":"5309f6a69c0a84d0","type":"file","file":"7 - Introduction to quantum information processing/6 - Crittografia quantistica/algoritmo di Grover.md","x":-840,"y":760,"width":960,"height":960,"color":"4"},
+		{"id":"85b22af660bfcabf","type":"file","file":"7 - Introduction to quantum information processing/6 - Crittografia quantistica/problema di ricerca in insieme finito.md","x":-1400,"y":1040,"width":400,"height":400},
+		{"id":"ac5dc441d4a6fd19","type":"file","file":"7 - Introduction to quantum information processing/6 - Crittografia quantistica/algoritmo di Grover generalizzato.md","x":280,"y":760,"width":960,"height":960},
+		{"id":"f97f2428473ae3c0","type":"file","file":"8 - Crittografia applicata/2 - Comunicazione simmetrica/3 - Indistinguibilità/one-time pad.md","x":280,"y":-80,"width":960,"height":400},
+		{"id":"72f87d993550c84c","type":"file","file":"7 - Introduction to quantum information processing/6 - Crittografia quantistica/trasformata di Fourier quantistica.md","x":-840,"y":1880,"width":960,"height":960,"color":"4"},
+		{"id":"30486c25ed5664bd","type":"file","file":"7 - Introduction to quantum information processing/6 - Crittografia quantistica/trasformata di Fourier discreta.md","x":-1400,"y":2160,"width":400,"height":400},
+		{"id":"e858d856c2580013","type":"file","file":"7 - Introduction to quantum information processing/6 - Crittografia quantistica/problema di ricerca del periodo discreto.md","x":-1960,"y":2160,"width":400,"height":400},
+		{"id":"f5af80b8da88808b","type":"file","file":"7 - Introduction to quantum information processing/6 - Crittografia quantistica/trasformata di Fourier veloce.md","x":-1400,"y":2720,"width":400,"height":400},
+		{"id":"f89b59ca796f7018","type":"file","file":"7 - Introduction to quantum information processing/6 - Crittografia quantistica/rompere RSA tramite QFT.md","x":280,"y":1880,"width":960,"height":960},
+		{"id":"1bb5545490687277","type":"file","file":"7 - Introduction to quantum information processing/6 - Crittografia quantistica/armonica.md","x":-1400,"y":1600,"width":400,"height":400},
+		{"id":"6e7b5f00897f45c3","type":"file","file":"7 - Introduction to quantum information processing/6 - Crittografia quantistica/funzione periodica.md","x":-1960,"y":1600,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"d01f55c86dca1b4f","fromNode":"85b22af660bfcabf","fromSide":"right","toNode":"5309f6a69c0a84d0","toSide":"left"},
+		{"id":"d1655d2409c85cbd","fromNode":"5309f6a69c0a84d0","fromSide":"right","toNode":"ac5dc441d4a6fd19","toSide":"left"},
+		{"id":"c1bd39d35ef01f91","fromNode":"6634964b02a15ae8","fromSide":"right","toNode":"f97f2428473ae3c0","toSide":"left"},
+		{"id":"9ff4db6f128cb2c6","fromNode":"e858d856c2580013","fromSide":"right","toNode":"30486c25ed5664bd","toSide":"left"},
+		{"id":"07d0ce84329f02ea","fromNode":"30486c25ed5664bd","fromSide":"right","toNode":"72f87d993550c84c","toSide":"left"},
+		{"id":"b5c7f42fdc6387e4","fromNode":"30486c25ed5664bd","fromSide":"bottom","toNode":"f5af80b8da88808b","toSide":"top"},
+		{"id":"796060f453b44362","fromNode":"72f87d993550c84c","fromSide":"right","toNode":"f89b59ca796f7018","toSide":"left"},
+		{"id":"2db718b2a6c36f5e","fromNode":"30486c25ed5664bd","fromSide":"top","toNode":"1bb5545490687277","toSide":"bottom"},
+		{"id":"c4b388a12b16bff2","fromNode":"6e7b5f00897f45c3","fromSide":"bottom","toNode":"e858d856c2580013","toSide":"top"}
+	]
+}

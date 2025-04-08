@@ -387,59 +387,35 @@
       "color": "me4XBNQC4rwzQFLlvIAn0"
     },
     {
-      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/05 - IntroQIP5.pdf",
+      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/11 - Lesson 16-11-22~.pdf",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/06 - IntroQIP6.pdf",
+      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/12 - Lesson 18-11-22~.pdf",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/07 - IntroQIP7.pdf",
+      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/13 - Lesson 23-11-22~.pdf",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/08 - IntroQIP8 - entanglementVNentropy.pdf",
+      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/14 - output (9)~.pdf",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/09 - IntroQIP9.pdf",
+      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/15 - Corso_QIP___Lesson_6__2022_~.pdf",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/10 - Lesson 11-11-22.pdf",
+      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/16 - Corso_QIP___Lesson_7__2022_~.pdf",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/11 - Lesson 16-11-22.pdf",
+      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/17 - Corso_QIP___Lesson_8__2022_~.pdf",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
-      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/12 - Lesson 18-11-22.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/13 - Lesson 23-11-22.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/14 - output (9).pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/15 - Corso_QIP___Lesson_6__2022_.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/16 - Corso_QIP___Lesson_7__2022_.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/17 - Corso_QIP___Lesson_8__2022_.pdf",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/18 - Corso_QIP___Lesson_9__2022_.pdf",
+      "path": "7 - Introduction to quantum information processing/0 - Materiale di studio/18 - Corso_QIP___Lesson_9__2022_~.pdf",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
@@ -523,10 +499,6 @@
       "color": "e_YcdvxbhfDN77-giOday"
     },
     {
-      "path": "7 - Introduction to quantum information processing/X - Non classificati/universal controlled gate.md",
-      "color": "e_YcdvxbhfDN77-giOday"
-    },
-    {
       "path": "7 - Introduction to quantum information processing/X - Non classificati/proiezione.md",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
@@ -544,7 +516,7 @@
     },
     {
       "path": "7 - Introduction to quantum information processing/X - Non classificati",
-      "color": "fc3lLaITDn62PYbzBhqxl"
+      "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
       "path": "7 - Introduction to quantum information processing/2 - Circuiti in serie/★ circuiti in serie.canvas",
@@ -553,14 +525,6 @@
     {
       "path": "0 - Template/◍ quantum gate.md",
       "color": "me4XBNQC4rwzQFLlvIAn0"
-    },
-    {
-      "path": "7 - Introduction to quantum information processing/2 - Circuiti in serie/visualizzare l'applicazione di un gate.md",
-      "color": "e_YcdvxbhfDN77-giOday"
-    },
-    {
-      "path": "7 - Introduction to quantum information processing/3 - Circuiti in parallelo/★ circuiti in parallelo.canvas",
-      "color": "7j7Pqog0VHMVVAfazMNlb"
     },
     {
       "path": "7 - Fondamenti di machine learning/3 - Calcolo convesso/★ calcolo convesso.canvas",
@@ -576,10 +540,6 @@
     },
     {
       "path": "7 - Introduction to quantum information processing",
-      "color": "fc3lLaITDn62PYbzBhqxl"
-    },
-    {
-      "path": "9 - Kernel hacking",
       "color": "fc3lLaITDn62PYbzBhqxl"
     },
     {
@@ -645,6 +605,50 @@
     {
       "path": "7 - Fondamenti di machine learning/8 - Gradiente stocastico/metodo di discesa stocastico.md",
       "color": "e_YcdvxbhfDN77-giOday"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/X - Non classificati/costruire un Hardy state, i know matrix math edition.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/3 - Circuiti in parallelo/★ circuiti in parallelo.canvas",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/4 - Quantum tradeoff/★ quantum tradeoff.canvas",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/3 - Circuiti in parallelo/Toffoli gate from qS.png",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/5 - Purezza/★ purezza.canvas",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/4 - Quantum tradeoff/problema di Simon.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/4 - Quantum tradeoff/operatore misura a più qbit.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/5 - Purezza/stato misto.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/3 - Circuiti in parallelo/dense coding attraverso stati di Bell.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/5 - Purezza/valore atteso di uno stato misto.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
+    },
+    {
+      "path": "7 - Introduction to quantum information processing/5 - Purezza/qbit osservabile.md",
+      "color": "fc3lLaITDn62PYbzBhqxl"
     }
   ]
 }

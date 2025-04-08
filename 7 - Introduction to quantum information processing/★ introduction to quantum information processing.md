@@ -2,7 +2,13 @@ Appunti del corso di ***Algoritmi distribuiti***, tenuto da [[Andrea Bertoni]] e
 
 ## Indice
 
-> [!Warning] Ordine non sequenziale
+> [!Note] Ordine non sequenziale
 > Gli appunti sono nell'ordine in cui mi sembra più naturale capire le cose, non nell'ordine utilizzato dai docenti per la didattica.
 
-1. [[7 - Introduction to quantum information processing/1 - Qbit/★ qbit.canvas]]
+1. [[★ qbit.canvas|★ qbit]]
+2. [[★ circuiti in serie.canvas|★ circuiti in serie]]
+3. [[★ circuiti in parallelo.canvas|★ circuiti in parallelo]]
+4. [[★ quantum tradeoff.canvas|★ quantum tradeoff]]
+5. [[★ purezza.canvas|★ purezza]]
+6. [[★ crittografia quantistica.canvas|★ crittografia quantistica]]
+7. [[★ correzione degli errori.canvas|★ correzione degli errori]]

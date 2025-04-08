@@ -260,5 +260,13 @@
       ],
       "key": "R"
     }
+  ],
+  "window:reset-zoom": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "0"
+    }
   ]
 }

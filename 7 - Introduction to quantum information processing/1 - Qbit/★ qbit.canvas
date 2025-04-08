@@ -1,25 +1,24 @@
 {
 	"nodes":[
 		{"id":"bf2a3c33e855bc77","type":"group","x":-120,"y":-820,"width":1580,"height":1000,"label":"Lo stato quantistico"},
-		{"id":"28543b234d68e3ee","type":"group","x":-1240,"y":-820,"width":1000,"height":1560,"label":"Un nuovo modello di calcolo"},
 		{"id":"98caf5140b443f32","type":"group","x":460,"y":-1940,"width":1000,"height":1000,"label":"Notazione bra-ket"},
 		{"id":"8737045848ba41a0","type":"group","x":1580,"y":-1380,"width":1880,"height":440,"label":"Ket comuni"},
+		{"id":"28543b234d68e3ee","type":"group","x":-1240,"y":-820,"width":1000,"height":1560,"label":"Un nuovo modello di calcolo"},
 		{"id":"c4560c6a8ac0b8e1","type":"group","x":1580,"y":-820,"width":1880,"height":440,"label":"Stati quantistici comuni"},
 		{"id":"e4fea56f5f076093","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/qbit.md","x":-660,"y":-240,"width":400,"height":400,"color":"4"},
 		{"id":"fb9448ebcaed863c","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/modello di calcolo classico.md","x":-1220,"y":320,"width":400,"height":400},
 		{"id":"0248f2378cabd519","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/modello di calcolo quantistico.md","x":-660,"y":320,"width":400,"height":400},
 		{"id":"bf8486f1d14fd86c","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/bit.md","x":-1220,"y":-240,"width":400,"height":400},
-		{"id":"10dcd537bbc120d7","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/operatore misura.md","x":-940,"y":-800,"width":400,"height":400},
+		{"id":"10dcd537bbc120d7","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/misura.md","x":-940,"y":-800,"width":400,"height":400},
 		{"id":"d17727eb61b7d6ad","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/ket -.md","x":3040,"y":-1360,"width":400,"height":400},
 		{"id":"4048e2f56b4515f8","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/ket 1.md","x":2560,"y":-1360,"width":400,"height":400,"color":"4"},
 		{"id":"ccace9982a645791","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/ket +.md","x":1600,"y":-1360,"width":400,"height":400},
 		{"id":"0b0cc7469abf19d7","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/ampiezza di uno stato quantistico.md","x":480,"y":-800,"width":400,"height":400},
 		{"id":"6f39d3413a20cd0f","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/stato quantistico base.md","x":1040,"y":-800,"width":400,"height":400},
-		{"id":"c6667460ea0eeb53","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/braket.md","x":480,"y":-1360,"width":400,"height":400},
-		{"id":"c02f5515316ae726","type":"file","file":"0 - Generale/operatore aggiunto.md","x":1040,"y":-2480,"width":400,"height":400},
+		{"id":"c6667460ea0eeb53","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/bra-ket.md","x":480,"y":-1360,"width":400,"height":400},
 		{"id":"8d6cbe6f9c8dc89f","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/bra.md","x":1040,"y":-1920,"width":400,"height":400},
 		{"id":"7575fb1a9df9dd44","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/ket.md","x":1040,"y":-1360,"width":400,"height":400,"color":"4"},
-		{"id":"405c168396164467","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/ketbra.md","x":480,"y":-1920,"width":400,"height":400},
+		{"id":"405c168396164467","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/ket-bra.md","x":480,"y":-1920,"width":400,"height":400},
 		{"id":"5020ac3fceade8c5","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/ket 0.md","x":2080,"y":-1360,"width":400,"height":400,"color":"4"},
 		{"id":"5c9579346720df5c","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/stato Hadamard passivo.md","x":1600,"y":-800,"width":400,"height":400},
 		{"id":"ddfcb7a0542a38d9","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/stato base passivo.md","x":2080,"y":-800,"width":400,"height":400,"color":"4"},
@@ -28,7 +27,11 @@
 		{"id":"ef93e3a3ca5b418d","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/stato quantistico.md","x":480,"y":-240,"width":960,"height":400,"color":"4"},
 		{"id":"65897e7e1df242f5","type":"file","file":"0 - Generale/ortonormalità.md","x":1600,"y":-240,"width":400,"height":400},
 		{"id":"ab41fd6869f5c1ee","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/intensità di uno stato quantistico.md","x":-100,"y":-800,"width":420,"height":200},
-		{"id":"bd337d014632e039","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/fase di uno stato quantistico.md","x":-100,"y":-600,"width":420,"height":200}
+		{"id":"bd337d014632e039","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/fase di uno stato quantistico.md","x":-100,"y":-600,"width":420,"height":200},
+		{"id":"c02f5515316ae726","type":"file","file":"0 - Generale/matrice aggiunta.md","x":1040,"y":-2480,"width":400,"height":400},
+		{"id":"14c9f0f74b5c9dca","type":"file","file":"7 - Introduction to quantum information processing/1 - Qbit/matrice proiettore.md","x":480,"y":-2480,"width":400,"height":400},
+		{"id":"55741c18b0121f20","type":"file","file":"0 - Generale/matrice Hermitiana.md","x":760,"y":-3040,"width":400,"height":400},
+		{"id":"bf5c7ea306577f53","type":"file","file":"0 - Generale/matrice idempotente.md","x":200,"y":-3040,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"2a2cc754457e2758","fromNode":"bf8486f1d14fd86c","fromSide":"right","toNode":"e4fea56f5f076093","toSide":"left"},
@@ -58,6 +61,10 @@
 		{"id":"b5405a7076fb62ce","fromNode":"8d6cbe6f9c8dc89f","fromSide":"left","toNode":"405c168396164467","toSide":"right"},
 		{"id":"5b9770de8b397aa2","fromNode":"0b0cc7469abf19d7","fromSide":"left","toNode":"bd337d014632e039","toSide":"right"},
 		{"id":"707f2ddc729cdf9a","fromNode":"0b0cc7469abf19d7","fromSide":"left","toNode":"ab41fd6869f5c1ee","toSide":"right"},
-		{"id":"65e20079516230cb","fromNode":"ab41fd6869f5c1ee","fromSide":"top","toNode":"10dcd537bbc120d7","toSide":"top"}
+		{"id":"65e20079516230cb","fromNode":"ab41fd6869f5c1ee","fromSide":"top","toNode":"10dcd537bbc120d7","toSide":"top"},
+		{"id":"eefb3cc5c86e66ab","fromNode":"405c168396164467","fromSide":"top","toNode":"14c9f0f74b5c9dca","toSide":"bottom"},
+		{"id":"710c5b1ade40f0b3","fromNode":"55741c18b0121f20","fromSide":"right","toNode":"c02f5515316ae726","toSide":"top"},
+		{"id":"ee914453664ad89c","fromNode":"14c9f0f74b5c9dca","fromSide":"top","toNode":"55741c18b0121f20","toSide":"left"},
+		{"id":"e9215acd023f8df9","fromNode":"14c9f0f74b5c9dca","fromSide":"top","toNode":"bf5c7ea306577f53","toSide":"right"}
 	]
 }

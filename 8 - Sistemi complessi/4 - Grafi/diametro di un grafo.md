@@ -1,4 +1,4 @@
-[[operatore misura]] di un [[grafo]].
+[[misura]] di un [[grafo]].
 
 L'[[eccentricità di un nodo|eccentricità]] massima tra tutti i [[nodo di un grafo|nodi]].
 $$

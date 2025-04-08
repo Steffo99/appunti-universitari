@@ -2,7 +2,7 @@
 
 $$
 \Huge
-\mathbf{Z} = \begin{bmatrix}
+\qZ = \begin{bmatrix}
 1 & 0 \\
 0 & -1
 \end{bmatrix}
@@ -12,13 +12,13 @@ $$
 
 Inverte la fase dello [[stato attivo]] del [[qbit]] a cui è applicato:
 $$
-\mathbf{Z} \ket{0} = \ket{0}
+\qZ \ket{0} = \ket{0}
 $$
 $$
-\mathbf{Z} \ket{1} = - \ket{1}
+\qZ \ket{1} = - \ket{1}
 $$
 $$
-\mathbf{Z} 
+\qZ 
 \begin{bmatrix}
 	\alpha \\
 	\beta
@@ -35,10 +35,15 @@ $$
 
 Corrisponde a una [[rotazione]] di $\pi$ sull'[[asse Z]], quello dal basso all'alto.
 
-## ✏️ Simbolo per [[circuito quantistico]]
+## ✏️ Simbolo in [[IBM Quantum Composer]]
 
 ![[Pauli Z gate.png]]
-## ⛎ Utilizzo
+## ⛎ Equivalenze
+
+Due Pauli Z consecutivi si annullano:
+$$
+\qZ \times \qZ = \qI
+$$
 
 Può essere usato insieme al [[Pauli X gate]] per ottenere un [[Pauli Y gate]]:
 $$

@@ -12,7 +12,7 @@
   "autoConvertHtml": true,
   "showUnsupportedFiles": true,
   "newLinkFormat": "shortest",
-  "trashOption": "system",
+  "trashOption": "local",
   "promptDelete": false,
   "readableLineLength": true,
   "mobilePullAction": "workspace:next-tab"

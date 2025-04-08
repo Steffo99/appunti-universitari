@@ -8,7 +8,7 @@ aliases:
 [[gate quantistico]] [[elemento neutro|neutro]].
 $$
 \Huge
-\mathbf{I} = \begin{bmatrix}
+\qI = \begin{bmatrix}
 1 & 0 \\
 0 & 1
 \end{bmatrix}
@@ -18,13 +18,13 @@ $$
 
 Non ha alcun effetto:
 $$
-\mathbf{I} \ket{0} = \ket{0}
+\qI \ket{0} = \ket{0}
 $$
 $$
-\mathbf{I} \ket{1} = \ket{1}
+\qI \ket{1} = \ket{1}
 $$
 $$
-\mathbf{I} 
+\qI 
 \begin{bmatrix}
 	\alpha \\
 	\beta
@@ -40,10 +40,7 @@ $$
 
 Non viene effettuata nessuna [[rotazione]].
 
-## ✏️ Simbolo per [[circuito quantistico]]
+## ✏️ Simbolo in [[IBM Quantum Composer]]
 
 ![[Identity gate filled.png]]
 ![[Identity gate empty.png]]
-## ⛎ Utilizzo
-
-[[No-op]].

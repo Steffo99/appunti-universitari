@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"321da86f70ed98de","type":"file","file":"7 - Introduction to quantum information processing/7 - Correzione degli errori/problema di correzione degli errori quantistici.md","x":-720,"y":-240,"width":400,"height":400},
+		{"id":"1d6aaa38c77ce665","x":-160,"y":-520,"width":960,"height":960,"type":"file","file":"7 - Introduction to quantum information processing/7 - Correzione degli errori/3-qbit bitflip correction.md"},
+		{"id":"910f96d7172075ee","x":960,"y":-520,"width":960,"height":960,"type":"file","file":"7 - Introduction to quantum information processing/7 - Correzione degli errori/5-qbit rotation correction.md"}
+	],
+	"edges":[
+		{"id":"9105906a048de94e","fromNode":"321da86f70ed98de","fromSide":"right","toNode":"1d6aaa38c77ce665","toSide":"left"},
+		{"id":"be1e2ac03bcdc8f2","fromNode":"1d6aaa38c77ce665","fromSide":"right","toNode":"910f96d7172075ee","toSide":"left"}
+	]
+}

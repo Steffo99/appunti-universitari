@@ -3,15 +3,12 @@ aliases:
   - prodotto di Kronecker
   - prodotto matriciale diretto
 ---
-
-
 [[Operazione]] tra due [[matrice|matrici]] che risulta in una matrice più grande:
 $$
 \Huge \otimes
 $$
 
-==Si calcola nel seguente modo:==
-
+Si calcola nel seguente modo:
 $$
 \begin{bmatrix}
 	{\color{navy} 0} & {\color{blue} 1} \\
@@ -63,28 +60,5 @@ $$
 	8 & 12 & 10 & 15 \\
 	0 & 6 & 0 & 7 \\
 	12 & 18 & 14 & 21
-\end{bmatrix}
-$$
-
-==Rappresenta la combinazione di due o più [[qbit]].==
-$$
-\ket{0} \otimes \ket{1} 
-= 
-\ket{01}
-= 
-\begin{bmatrix}
-1 \\ 0
-\end{bmatrix}
-\otimes
-\begin{bmatrix}
-0 \\ 1
-\end{bmatrix}
-=
-\begin{bmatrix}
-0 \cdot 0 \\ 1 \cdot 1 \\ 0 \cdot 1 \\ 0 \cdot 1
-\end{bmatrix}
-=
-\begin{bmatrix}
-0 \\ 1 \\ 0 \\ 0
 \end{bmatrix}
 $$

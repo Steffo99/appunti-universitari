@@ -8,7 +8,7 @@ aliases:
 
 $$
 \Huge
-\mathbf{X} = \begin{bmatrix}
+\qX = \begin{bmatrix}
 	0 & 1 \\
 	1 & 0
 \end{bmatrix}
@@ -18,13 +18,13 @@ $$
 
 Inverte i due [[stato quantistico|stati]] del [[qbit]] a cui è applicato:
 $$
-\mathbf{X} \ket{0} = \ket{1}
+\qX \ket{0} = \ket{1}
 $$
 $$
-\mathbf{X} \ket{1} = \ket{0}
+\qX \ket{1} = \ket{0}
 $$
 $$
-\mathbf{X} 
+\qX 
 \begin{bmatrix}
 	\alpha \\
 	\beta
@@ -38,12 +38,17 @@ $$
 
 ## 🌐 Effetto in [[sfera di Bloch]]
 
-Corrisponde a una [[rotazione]] di $\pi$ sull'[[asse X]], quello da sinistra a destra.
+Corrisponde a una [[rotazione]] di $\pi$ sull'[[asse X]], quello da dentro a fuori.
 
-## ✏️ Simbolo per [[circuito quantistico]]
+## ✏️ Simbolo in [[IBM Quantum Composer]]
 
 ![[Pauli X gate.png]]
-## ⛎ Utilizzo
+## ⛎ Equivalenze
+
+Due Pauli X consecutivi si annullano:
+$$
+\qX \times \qX = \qI
+$$
 
 Può essere usato insieme al [[Pauli Y gate]] per ottenere un [[Pauli Z gate]]:
 $$

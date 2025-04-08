@@ -16,3 +16,47 @@ I punti notevoli sono i seguenti:
 ## Corrispondenze fisiche
 
 - **[[stato di un qubit]]**: polarizzazione di un atomo
+
+## Forma polare
+
+Rappresentazione alternativa per uno [[stato quantistico|stato di un qbit]], attraverso [[latitudine]] $\ell$ e [[longitudine]] $\theta$ nella sfera di Bloch:
+$$
+\Large
+\cos \par{\frac{\theta}{2}} \cdot \ket{0} + e^{\i \ell} \sin \par{\frac{\theta}{2}} \cdot \ket{1}
+$$
+
+## Forma vettoriale
+
+Rappresentazione alternativa per uno [[stato quantistico|stato di un qbit]], attraverso [[coordinate]] polari sulla sfera di Bloch:
+$$
+\Large
+\arr{
+	\axisX{
+		\sin \par{\theta} \cdot \cos \par{\ell}
+	},\ 
+	\axisY{
+		\sin \par{\theta} \cdot \sin \par{\ell}
+	},\ 
+	\axisZ{
+		\cos \par{\theta}
+	}
+}
+$$
+
+Le coordinate possono essere ottenute anche direttamente a partire dallo stato $\ket{\phi}$:
+
+==È giusto mettere i gate qui?==
+$$
+\Large
+\arr{
+	\axisX{
+		\braket{\phi | \mathbf{X} | \phi}
+	},\ 
+	\axisY{
+		\braket{\phi | \mathbf{Y} | \phi}
+	},\ 
+	\axisZ{
+		\braket{\phi | \mathbf{Z} | \phi}
+	}
+}
+$$

@@ -1,3 +1,8 @@
+% Uguale spaziato
+\newcommand{\qeq} {
+	\quad = \quad
+}
+
 % Parentesi tonde
 \newcommand{\par}[1] {
 	\left({#1}\right)
@@ -281,10 +286,186 @@
 
 % Unità immaginaria
 \newcommand{\i} {
-	{\color{Pink} i}
+	{\color{pink} i}
 }
 
 % Clamp
 \newcommand{\clamp}[2] {
 	{\func[clamp]_{#1}^{#2}}
+}
+
+% Identity
+\newcommand{\qI}[1][] {
+	{\color{darkgrey} \mathbf{1}_{#1}}
+}
+
+% Asse X
+\newcommand{\qAX} {
+	\axisX{ \mathbf{x} }
+}
+
+% Pauli X
+\newcommand{\qX}[1][] {
+	\axisX{ \mathbf{X}_{#1} }
+}
+
+% Rotation X
+\newcommand{\qRX}[1][] {
+	\axisX{ \mathbf{R}_{\mathbf{X}_{#1}} }
+}
+
+% Controlled X
+\newcommand{\qCX}[2] {
+	\axisX{ \mathbf{C}_{\mathbf{X}_{{#1} \Rightarrow \overline{#2}}} }
+}
+
+% Toffoli
+\newcommand{\qTX}[3] {
+	\axisX{ \mathbf{C}_{\mathbf{X}_{{#1} \land {#2} \Rightarrow \overline{#3}}} }
+}
+
+% Asse Y
+\newcommand{\qAY} {
+	\axisY{ \mathbf{y} }
+}
+
+% Pauli Y
+\newcommand{\qY}[1][] {
+	\axisY{ \mathbf{Y}_{#1} }
+}
+
+% Rotation Y
+\newcommand{\qRY}[1][] {
+	\axisY{ \mathbf{R}_{\mathbf{Y}_{#1}} }
+}
+
+% Asse Z
+\newcommand{\qAZ} {
+	\axisZ{ \mathbf{z} }
+}
+
+% Pauli Z
+\newcommand{\qZ}[1][] {
+	\axisZ{ \mathbf{Z}_{#1} }
+}
+
+% Rotation Z
+\newcommand{\qRZ}[1][] {
+	\axisZ{ \mathbf{R}_{\mathbf{Z}_{#1}} }
+}
+
+% Controlled Z
+\newcommand{\qCZ}[2] {
+	\axisZ{ \mathbf{C}_{\mathbf{Z}_{{#1} \Rightarrow \overline{#2}}} }
+}
+
+% Controlled S
+\newcommand{\qCS}[2] {
+	\axisZ{ \mathbf{C}_{\mathbf{S}_{{#1} \Rightarrow \overline{#2}}} }
+}
+
+% Controlled T
+\newcommand{\qCT}[2] {
+	\axisZ{ \mathbf{C}_{\mathbf{T}_{{#1} \Rightarrow \overline{#2}}} }
+}
+
+% Controlled rotation Z
+\newcommand{\qCRZ}[2] {
+	\axisZ{ 
+		\mathbf{C}_{
+			\mathbf{R}_{
+				\mathbf{Z}_{
+					{#1} \Rightarrow \overline{#2}
+				}
+			}
+		} 
+	}
+}
+
+% Half Z
+\newcommand{\qS}[1][] {
+	\axisZ{ \mathbf{S}_{#1} }
+}
+
+% Quarter Z
+\newcommand{\qT}[1][] {
+	\axisZ{ \mathbf{T}_{#1} }
+}
+
+% Hadamard
+\newcommand{\qH}[1][] {
+	{\color{deeppink} \mathbf{H}_{#1}}
+}
+
+% Universal
+\newcommand{\qU}[1][] {
+	{\color{brown} \mathbf{U}_{#1}}
+}
+
+% Universal alternate
+\newcommand{\qV}[1][] {
+	{\color{saddlebrown} \mathbf{V}_{#1}}
+}
+
+% Yet another universal alternate
+\newcommand{\qW}[1][] {
+	{\color{rosybrown} \mathbf{W}_{#1}}
+}
+
+% Controlled universal
+\newcommand{\qCU}[2] {
+	{\color{brown} \mathbf{C}_{\mathbf{U}_{{#1} \Rightarrow \overline{#2}}} }
+}
+
+% Swap
+\newcommand{\qSwap}[2] {
+	{\color{peachpuff} \mathbf{W}_{{#1} \Leftrightarrow {#2}}}
+}
+
+% Density
+\newcommand{\qD}[2][] {
+	{\rho_{#1} \par{#2}}
+}
+
+% Trace
+\newcommand{\trace}[1] {
+	{\mathrm{Tr} \par{#1}}
+}
+
+% Von Neumann Entropy
+\newcommand{\qVNEntropy}[1] {
+	{\mathrm{VNEnt} \par{#1}}
+}
+
+% Entanglement
+\newcommand{\qEntanglement}[3] {
+	{\mathrm{Entng}_{{#1},{#2}} \par{#3}}
+}
+
+% Stato di Bell 00
+\newcommand{\qBoo} {
+	\ket{\psi_{00}}
+}
+
+% Stato di Bell 01
+\newcommand{\qBoi} {
+	\ket{\psi_{01}}
+}
+
+% Stato di Bell 10
+\newcommand{\qBio} {
+	\ket{\psi_{10}}
+}
+
+% Stato di Bell 11
+\newcommand{\qBii} {
+	\ket{\psi_{11}}
+}
+
+% Misura
+\newcommand{\qM}[1][] {
+	{\color{plum} \mathbf{M}_{#1}}
+}
+\newcommand{\qMeasure}[1][] {
+	{\color{plum} \mathrm{measure}_{#1} }
 }

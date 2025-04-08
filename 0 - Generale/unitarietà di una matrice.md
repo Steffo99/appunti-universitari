@@ -4,7 +4,7 @@ aliases:
 ---
 [[Proprietà]] di una [[matrice quadrata]].
 
-Il [[prodotto matriciale]] tra sè stessa e la sua [[operatore aggiunto|aggiunta]] è uguale alla [[matrice identità]].
+Il [[prodotto matriciale]] tra sè stessa e la sua [[matrice aggiunta|aggiunta]] è uguale alla [[matrice identità]].
 
 $$
 \Huge

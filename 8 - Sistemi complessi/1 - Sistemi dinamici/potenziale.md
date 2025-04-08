@@ -1,4 +1,4 @@
-[[operatore misura]] di quanto manca ad un [[sistema dinamico]] prima di raggiungere l'[[attrattore]] massimo globale.
+[[misura]] di quanto manca ad un [[sistema dinamico]] prima di raggiungere l'[[attrattore]] massimo globale.
 
 Definito con la seguente equazione:
 $$

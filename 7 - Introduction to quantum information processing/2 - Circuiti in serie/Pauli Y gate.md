@@ -2,24 +2,25 @@
 
 $$
 \Huge
-\mathbf{Y} = \begin{bmatrix}
+\qY = \begin{bmatrix}
 	0 & -\i \\
 	\i & 0
 \end{bmatrix}
 $$
 
-## 👁️ Effetto in [[qbit|rappresentazione matriciale]]
-
-==Come altera la matrice a cui viene applicato?==
-
 ## 🌐 Effetto in [[sfera di Bloch]]
 
-Corrisponde a una [[rotazione]] di $\pi$ sull'[[asse Y]], quello da dentro a fuori.
+Corrisponde a una [[rotazione]] di $\pi$ sull'[[asse Y]], quello da sinistra a destra.
 
-## ✏️ Simbolo per [[circuito quantistico]]
+## ✏️ Simbolo in [[IBM Quantum Composer]]
 
 ![[Pauli Y gate.png]]
-## ⛎ Utilizzo
+## ⛎ Equivalenze
+
+Due Pauli-Y consecutivi si annullano:
+$$
+\qY \times \qY = \qI
+$$
 
 Può essere usato insieme al [[Pauli X gate]] per ottenere un [[Pauli Z gate]]:
 $$

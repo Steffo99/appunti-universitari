@@ -1,4 +1,4 @@
-[[Simbolo]] usato per rappresentare l'[[operatore aggiunto|aggiunto]] di uno [[stato quantistico]].
+[[Simbolo]] usato per rappresentare l'[[matrice aggiunta|aggiunto]] di uno [[stato quantistico]].
 $$
 \quad
 \ket{\psi}^\dagger

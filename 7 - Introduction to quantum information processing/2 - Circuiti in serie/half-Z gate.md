@@ -7,9 +7,9 @@ aliases:
 
 $$
 \Huge
-\mathbf{S} 
+\qS 
 =
-\sqrt{\mathbf{Z}} 
+\sqrt{\qZ} 
 = 
 \begin{bmatrix}
 1 & 0 \\
@@ -21,15 +21,13 @@ $$
 
 Si comporta come mezzo [[Pauli Z gate]]:
 $$
-\mathbf{S} \ket{0} = \ket{0}
+\qS \ket{0} = \ket{0}
 $$
 $$
-\mathbf{S} \ket{1} = i \cdot \ket{1}
-$$$$
-\mathbf{S}\ \mathbf{S} \ket{1} = \mathbf{Z} \ket{1}
+\qS \ket{1} = \i \cdot \ket{1}
 $$
 $$
-\mathbf{S}
+\qS
 \begin{bmatrix}
 	\alpha \\
 	\beta
@@ -37,7 +35,7 @@ $$
 =
 \begin{bmatrix}
 	\alpha \\
-	i \cdot \beta
+	\i \cdot \beta
 \end{bmatrix}
 $$
 
@@ -47,8 +45,16 @@ Corrisponde a una [[rotazione]] di $\frac{\pi}{2}$ sull'[[asse Z]], quello dal b
 
 ## ✏️ Simbolo per [[circuito quantistico]]
 
-![[S gate.png]]
+![[half-Z gate.png]]
 
-## ⛎ Utilizzo
+## ⛎ Equivalenze
 
-==Per cosa viene usato questo gate?==
+Due half-Z diventano un [[Pauli Z gate]]:
+$$
+\qS \times \qS = \qZ
+$$
+
+Quattro half-Z consecutivi si annullano:
+$$
+\qS \times \qS \times \qS \times \qS = \qI
+$$
